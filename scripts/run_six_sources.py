@@ -1,5 +1,6 @@
-"""Run one fresh six-source cohort; retain failures and never overwrite a run."""
+"""Run the fixed six-source cohort or one supplied unseen source, once."""
 
+import argparse
 import getpass
 import json
 import os
@@ -25,9 +26,19 @@ from firmable_runtime.workflow import (
 
 
 def main():
-    root = PROJECT / "runs/six-source"
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--request",
+        type=Path,
+        help="Single-source inference request; no source-specific runtime rules.",
+    )
+    args = parser.parse_args()
+    supplied = json.loads(args.request.read_text()) if args.request else None
+    root = PROJECT / (
+        "runs/unseen-source" if supplied is not None else "runs/six-source"
+    )
     if root.exists():
-        raise SystemExit("runs/six-source already exists; do not overwrite or resend.")
+        raise SystemExit(f"{root} already exists; do not overwrite or resend.")
     key = os.environ.get("OPENROUTER_API_KEY") or getpass.getpass(
         "OpenRouter API key (not saved): "
     )
@@ -35,27 +46,62 @@ def main():
         raise SystemExit("Missing API key")
     original = json.loads((PROJECT / "evidence/six-source-protocol.json").read_text())
     started = time.monotonic()
-    sources = original["sources"]
-    tracked = [
-        *sorted((PROJECT / "data/assessment-inputs").rglob("*")),
+    sources = (
+        [
+            {
+                "source_id": supplied["source_id"],
+                "required_fields": supplied.get("required_fields", []),
+            }
+        ]
+        if supplied is not None
+        else original["sources"]
+    )
+    workers = min(3, len(sources))
+    tracked = (
+        list(Path(supplied["evidence_root"]).rglob("*")) + [args.request]
+        if supplied is not None
+        else [
+            *sorted((PROJECT / "data/assessment-inputs").rglob("*")),
+            PROJECT / "evidence/six-source-frozen-labels.json",
+            PROJECT / "evidence/six-source-frozen-field-dispositions.json",
+        ]
+    )
+    tracked += [
         PROJECT / "schema/firmable_ontology.yaml",
-        PROJECT / "evidence/six-source-frozen-labels.json",
-        PROJECT / "evidence/six-source-frozen-field-dispositions.json",
     ]
     hashes = {
-        str(path.relative_to(PROJECT)): byte_hash(path.read_bytes())
-        for path in tracked if path.is_file()
+        str(path.resolve().relative_to(PROJECT)): byte_hash(path.read_bytes())
+        for path in tracked
+        if path.is_file()
     }
     protocol = {
-        "started_at": utc_now(), "runtime_fingerprint": runtime_fingerprint(),
-        "model": original["model"], "reasoning_effort": "low", "stream": False,
-        "max_output_tokens": 16000, "provider_allowlist": ["Anthropic"],
-        "repetitions_per_source": 1, "worker_concurrency": 3,
-        "synthetic_approval_only": True, "human_gold": False,
+        "started_at": utc_now(),
+        "runtime_fingerprint": runtime_fingerprint(),
+        "model": original["model"],
+        "reasoning_effort": "low",
+        "stream": False,
+        "max_output_tokens": 16000,
+        "provider_allowlist": ["Anthropic"],
+        "repetitions_per_source": 1,
+        "worker_concurrency": workers,
+        "evaluation_scope": "unseen_source"
+        if supplied is not None
+        else "six_development_sources",
+        "runner_sha256": byte_hash(Path(__file__).read_bytes()),
+        "synthetic_approval_only": True,
+        "human_gold": False,
         "inputs_and_labels_sha256": hashes,
-        "sources": [{"source_id": s["source_id"], "required_fields": s["required_fields"]} for s in sources],
-        "limits": {"calls": 180, "per_source_calls": 60, "new_send_seconds": 1200,
-                   "observed_cost_guard_usd": 2.0, "per_call_reserve_usd": 0.25},
+        "sources": [
+            {"source_id": s["source_id"], "required_fields": s["required_fields"]}
+            for s in sources
+        ],
+        "limits": {
+            "calls": 180,
+            "per_source_calls": 60,
+            "new_send_seconds": 1200,
+            "observed_cost_guard_usd": 2.0,
+            "per_call_reserve_usd": 0.25,
+        },
         "cost_guard_limitation": "Receipt-based stop with reservation; not a provider-enforced billing limit.",
         "unknown_outcome_policy": "Stop new calls globally; never resend an unknown outcome.",
         "labels_policy": "Frozen labels are read only by the subsequent scoring step, never by the planner.",
@@ -69,8 +115,11 @@ def main():
         nonlocal stop_reason
         with lock:
             cost = sum(r.get("cost_usd") or 0 for r in receipts)
-            if (time.monotonic() - started >= 1200 or sum(calls.values()) >= 180
-                    or cost + 0.25 * (len(reservations) + 1) > 2.0):
+            if (
+                time.monotonic() - started >= 1200
+                or sum(calls.values()) >= 180
+                or cost + 0.25 * (len(reservations) + 1) > 2.0
+            ):
                 stop_reason = stop_reason or "cohort_resource_limit"
             if stop_reason or calls.get(source_id, 0) >= 60:
                 error = Failure("resource_limit", stop_reason or "source_call_limit")
@@ -94,15 +143,24 @@ def main():
         source_started = time.monotonic()
         source_input = PROJECT / "data/assessment-inputs" / source_id
         request = {
-            "source_id": source_id, "state_dir": str(source_root),
+            "source_id": source_id,
+            "state_dir": str(source_root),
             "evidence_root": str(source_input / "evidence"),
             "ontology_path": str(PROJECT / "schema/firmable_ontology.yaml"),
-            "catalogue_metadata": json.loads((source_input / "catalogue_metadata.json").read_text()),
+            "catalogue_metadata": (
+                {}
+                if supplied is not None
+                else json.loads((source_input / "catalogue_metadata.json").read_text())
+            ),
             "required_fields": source["required_fields"],
             "execution_scope": "onboarding_development",
         }
+        if supplied is not None:
+            request = {**supplied, "state_dir": str(source_root)}
         provider = OpenRouterProvider(
-            api_key=key, model_id=protocol["model"], stream=False,
+            api_key=key,
+            model_id=protocol["model"],
+            stream=False,
             receipt_callback=lambda value: receipt(source_id, value),
             gate=lambda: gate(source_id),
         )
@@ -110,45 +168,72 @@ def main():
         print(json.dumps(result), flush=True)
         try:
             onboard = infer_source(request, provider)
-            result.update(onboarding_status=onboard["status"], task_status=onboard["task_status"],
-                          candidate_status=onboard.get("candidate_status"))
+            result.update(
+                onboarding_status=onboard["status"],
+                task_status=onboard["task_status"],
+                candidate_status=onboard.get("candidate_status"),
+            )
             if onboard.get("candidate_status") != "validated":
                 result["status"] = "no_validated_candidate"
             else:
                 review = review_source(source_root)
                 atomic_json(source_root / "review.json", review)
-                approve_source(source_root, review["review_fingerprint"],
-                               "synthetic-six-source-benchmark",
-                               notes="Automated evaluation only; not human approval.", synthetic=True)
-                extracted = extract_source(source_root, provider=provider, allow_synthetic=True)
-                result.update(status="extracted", extraction_status=extracted["status"],
-                              task_status=extracted["task_status"],
-                              execution_status=extracted["execution_status"],
-                              observations=len(extracted["observations"]))
+                approve_source(
+                    source_root,
+                    review["review_fingerprint"],
+                    "synthetic-source-benchmark",
+                    notes="Automated evaluation only; not human approval.",
+                    synthetic=True,
+                )
+                extracted = extract_source(
+                    source_root, provider=provider, allow_synthetic=True
+                )
+                result.update(
+                    status="extracted",
+                    extraction_status=extracted["status"],
+                    task_status=extracted["task_status"],
+                    execution_status=extracted["execution_status"],
+                    observations=len(extracted["observations"]),
+                )
         except Exception as error:
-            result.update(status="failed", error={"kind": getattr(error, "kind", type(error).__name__),
-                          "message": str(error).replace(key, "[REDACTED]")[:1000]})
-        result.update(completed_at=utc_now(), wall_seconds=time.monotonic() - source_started)
+            result.update(
+                status="failed",
+                error={
+                    "kind": getattr(error, "kind", type(error).__name__),
+                    "message": str(error).replace(key, "[REDACTED]")[:1000],
+                },
+            )
+        result.update(
+            completed_at=utc_now(), wall_seconds=time.monotonic() - source_started
+        )
         atomic_json(source_root / "result.json", result)
         print(json.dumps(result), flush=True)
         return result
 
-    with ThreadPoolExecutor(max_workers=3) as executor:
+    with ThreadPoolExecutor(max_workers=workers) as executor:
         results = list(executor.map(run, sources))
     paths = [root / s["source_id"] / "observations.jsonl" for s in sources]
     available = [p for p in paths if p.exists()]
     downstream = build_outputs(available, root / "downstream") if available else None
     sent = [r for r in receipts if r.get("request_started")]
     summary = {
-        "completed_at": utc_now(), "wall_seconds": time.monotonic() - started,
-        "results": results, "downstream": downstream, "stop_reason": stop_reason,
+        "completed_at": utc_now(),
+        "wall_seconds": time.monotonic() - started,
+        "results": results,
+        "downstream": downstream,
+        "stop_reason": stop_reason,
         "model_calls": len(sent),
         "reported_cost_usd": sum(r.get("cost_usd") or 0 for r in sent),
         "cost_complete": all(r.get("cost_usd") is not None for r in sent),
         "reported_tokens": sum(sum(r.get("usage", {}).values()) for r in sent),
         "runtime_unchanged": runtime_fingerprint() == protocol["runtime_fingerprint"],
-        "inputs_and_labels_unchanged": all(byte_hash((PROJECT / p).read_bytes()) == h for p, h in hashes.items()),
-        "human_approved_configs": 0, "human_link_reviews": 0,
+        "runner_unchanged": byte_hash(Path(__file__).read_bytes())
+        == protocol["runner_sha256"],
+        "inputs_and_labels_unchanged": all(
+            byte_hash((PROJECT / p).read_bytes()) == h for p, h in hashes.items()
+        ),
+        "human_approved_configs": 0,
+        "human_link_reviews": 0,
         "cost_basis": "Provider receipts; not invoice",
     }
     atomic_json(root / "summary.json", summary)

@@ -1,0 +1,38 @@
+{
+  "source": "Cooperatives registered in ACT",
+  "publisher": "Access Canberra",
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International",
+    "logoUrl": "images/licenses/cc30by.png",
+    "termsLink": "http://creativecommons.org/licenses/by/4.0/legalcode"
+  },
+  "freeze_at": "2026-10-14T06:08:30.718525+00:00",
+  "runtime_fingerprint_before_download": "18984daebde13d47999f8bdbc3b4758074db27e0159799ee4506c185ff9e75b3",
+  "downloads": [
+    {
+      "url": "https://www.data.act.gov.au/api/views/758m-5a8y.json",
+      "path": "catalogue_metadata.json",
+      "downloaded_at": "2026-10-14T06:09:06.079097+00:00",
+      "bytes": 7174,
+      "sha256": "57eee8a7a4aa248d1aa99990ab32ae87ef7ef6440d0a896b197aef794e0fe37e",
+      "tls_verification": true
+    },
+    {
+      "url": "https://www.data.act.gov.au/api/v3/views/758m-5a8y/export.csv?accessType=DOWNLOAD",
+      "path": "evidence/native.csv",
+      "downloaded_at": "2026-10-14T06:09:07.089174+00:00",
+      "bytes": 1020,
+      "sha256": "ab17d75e3ff5eeb35ab2c6aad0324684372a2884d2de3c6d4058daf74f231e41",
+      "tls_verification": true
+    }
+  ],
+  "native_rows": 17,
+  "native_columns": [
+    "Coop Registeration Number",
+    "Name of Cooperative",
+    "Registration Status"
+  ],
+  "preparation": "CSV preserved byte-for-byte; official-metadata.txt is a mechanical projection of dataset metadata and every non-system column definition. No canonical-field suggestions or mapping config.",
+  "required_fields_policy": "Empty; planner discovers fields. Evaluation labels are outside evidence_root and never supplied to inference.",
+  "unseen_scope": "Selected from dataset-level metadata before final code freeze. No native/field inspection or retained development/model-test history before freeze; not a claim about pretraining."
+}

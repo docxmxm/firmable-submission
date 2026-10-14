@@ -1,0 +1,1418 @@
+{
+  "after_groups": 225,
+  "before_groups": 232,
+  "code_freeze": {
+    "at": "2026-10-14T05:45:05.384449+00:00",
+    "check_log_sha256": "892c5003a19bdb441ebf48628c0478887136d9aa09da51f7e24a053a23a478d1",
+    "diff_check": "passed",
+    "held_out_history_limitation": "Dataset-level catalogue metadata seen previously; no retained native development/model test history. This is not a claim about model pretraining.",
+    "held_out_native_inspected_before_freeze": false,
+    "held_out_source": "ACT NoWaste Licences & Registrations",
+    "offline_tests_passed": 388,
+    "runner_sha256": "019d6f01a562c983da289ee2855b080e51fe3a6153f552bcfb3775abd7024322",
+    "runtime_fingerprint": "e8e29bf23ad9f2a153934e0f082c27043c3b559242d117cca5aa0276ef10a1cd",
+    "static_check": "F401,F821,F811,F841 passed"
+  },
+  "final_code_freeze": {
+    "at": "2026-10-14T06:08:30.718525+00:00",
+    "check_log_sha256": "7c6ada0bf6123cd60196e0a9c9ca65a93c5dc4c275bd881875c337ae2d61f826",
+    "diff_check": "passed",
+    "held_out_history_limitation": "Dataset-level catalogue metadata was previously seen; no retained native development/model-test history. Not a claim about model pretraining.",
+    "held_out_native_inspected_before_freeze": false,
+    "held_out_source": "Cooperatives registered in ACT",
+    "independent_code_review": "no blocking findings",
+    "offline_tests_passed": 394,
+    "runner_sha256": "019d6f01a562c983da289ee2855b080e51fe3a6153f552bcfb3775abd7024322",
+    "runtime_fingerprint": "18984daebde13d47999f8bdbc3b4758074db27e0159799ee4506c185ff9e75b3",
+    "scorer_sha256": "a9cae67d578e97db719b7587ade6af1dfebffe6314bb6dfe64c1aababa0ed6ee",
+    "static_check": "passed"
+  },
+  "final_held_out_evaluation_freeze": {
+    "at": "2026-10-14T06:12:48.614219+00:00",
+    "before_model_call": true,
+    "label_source": "Official register/field-role source agreement; not human gold; labels isolated from inference evidence",
+    "labels_sha256": "356bf29ae3be6eaa6ec0d65220a211195604233688ccb17157e57e5e7c71ca1b",
+    "request_sha256": "42f26350b957125859100eacd0bacd9d648caa0138e21900a68a0cba043e4d68",
+    "scorer_sha256": "a9cae67d578e97db719b7587ade6af1dfebffe6314bb6dfe64c1aababa0ed6ee"
+  },
+  "final_holdout_diagnosis": {
+    "accuracy_status": "N/A",
+    "acquisition": "Original metadata had Program Website URL, but metadata only reached inspection, not later planning/mapping. Available lookup was local; separate acquire_source_evidence workflow was not called.",
+    "agent_decisions": 2,
+    "candidates": 1,
+    "limitation": "Empty column descriptions in this snapshot do not establish that further official evidence does not exist.",
+    "name": "Omitted by model in manifests before independent name review; legal/trading role unresolved.",
+    "next_general_capability": "Connect existing bounded acquisition and citation workflow using observed original metadata URLs before freezing inference evidence; do not add source-specific aliases or hand-written mappings.",
+    "source_id": "unseen-act-cooperatives",
+    "status": "Model proposed Active to active; host finite entity-status evidence rule rejected the mapping.",
+    "validated_config": false
+  },
+  "final_planner_observation": {
+    "business_names": {
+      "candidates": 1,
+      "cosmetic_only_revisions": 0,
+      "interpretation": "First candidate passed; no evidence that repair_progress caused recovery.",
+      "repair_progress_request": "runs/six-source/real-asic-business-names/artifacts/request-652ee21d5cae4691c8f60f67.json",
+      "trading_names": 888
+    },
+    "companies": {
+      "candidates": 2,
+      "cosmetic_only_revisions": 0,
+      "initial_errors": 3,
+      "interpretation": "Feedback was present and actual revision fixed observed errors. No causal comparison or demonstration of escaping repeated cosmetic repair.",
+      "repair": "Model changed current/historical name branch and current-name companion; corrected ACN dependencies.",
+      "repair_progress_request": "runs/six-source/real-asic-companies/artifacts/request-d4b017b231063989e961a465.json"
+    }
+  },
+  "final_real_six_source_risk_check": {
+    "current_pair_reason_counts": {
+      "person_company_subject_conflict": 29
+    },
+    "distinct_native_records": 29,
+    "downstream_counts": {
+      "groups": 225,
+      "profiles": 50,
+      "unlinked_records": 22278
+    },
+    "limitation": "Final real run recovered company types, exercising the existing person/company branch. New person/unknown behavior is covered by the earlier immutable-observation policy replay and anonymous regressions; these are review cases, not confirmed false links.",
+    "observations_binding_verified": true,
+    "pairs_rejected": 29,
+    "records_in_linked_groups": 0,
+    "records_present_in_observations": 29,
+    "records_unlinked": 29,
+    "risk_pairs": 29
+  },
+  "held_out_evaluation_freeze": {
+    "at": "2026-10-14T05:49:35.832916+00:00",
+    "before_first_source_model_call": true,
+    "labels_sha256": "6d5e8e0fad2e404b1fbdb12f76fd079ae39d92b8dbab63790b063dc4130f2e5d",
+    "missing_output_guard": "N/A with frozen denominators; passed",
+    "scorer_sha256": "a9cae67d578e97db719b7587ade6af1dfebffe6314bb6dfe64c1aababa0ed6ee"
+  },
+  "input_observations": 22925,
+  "limitations": [
+    "No human correctness labels; these are risk cases, not confirmed false links.",
+    "Both-unknown subjects retain the existing shared-identifier policy."
+  ],
+  "new_review_candidates": 29,
+  "prior_archive": "evidence/evaluation-traces.tar.gz#before-general-fix",
+  "review_cases": [
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "44134888976"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:69b4855a8917708a847ddd78051404582d19218d77c9a2fc8e911a950b4272ef"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:2a2d112851e0659e586ad5ed63702b3fa64b60bdffaa041f5b4b8d1e53edc1c5"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:69b4855a8917708a847ddd78051404582d19218d77c9a2fc8e911a950b4272ef"
+        ],
+        [
+          "real-qbcc",
+          "native:2a2d112851e0659e586ad5ed63702b3fa64b60bdffaa041f5b4b8d1e53edc1c5"
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "44134888976"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:69b4855a8917708a847ddd78051404582d19218d77c9a2fc8e911a950b4272ef"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:4b3df636f78f8c9af13e2acc4dcaf2a4fac8185e0adccdc74acfc4f01de5a17f"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:69b4855a8917708a847ddd78051404582d19218d77c9a2fc8e911a950b4272ef"
+        ],
+        [
+          "real-qbcc",
+          "native:4b3df636f78f8c9af13e2acc4dcaf2a4fac8185e0adccdc74acfc4f01de5a17f"
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "44134888976"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:f3601ef37b140b89d7c51968ea6aa1d681609d24d6ea09f0a9e6006696f2a739"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:2a2d112851e0659e586ad5ed63702b3fa64b60bdffaa041f5b4b8d1e53edc1c5"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:f3601ef37b140b89d7c51968ea6aa1d681609d24d6ea09f0a9e6006696f2a739"
+        ],
+        [
+          "real-qbcc",
+          "native:2a2d112851e0659e586ad5ed63702b3fa64b60bdffaa041f5b4b8d1e53edc1c5"
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "44134888976"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:f3601ef37b140b89d7c51968ea6aa1d681609d24d6ea09f0a9e6006696f2a739"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:4b3df636f78f8c9af13e2acc4dcaf2a4fac8185e0adccdc74acfc4f01de5a17f"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:f3601ef37b140b89d7c51968ea6aa1d681609d24d6ea09f0a9e6006696f2a739"
+        ],
+        [
+          "real-qbcc",
+          "native:4b3df636f78f8c9af13e2acc4dcaf2a4fac8185e0adccdc74acfc4f01de5a17f"
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "46164534089"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:5c0302a9edce1cd3604494c43f22738fcef606386bb7af89785c6ff0cb8b9aa3"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:08a79c505b88810289561134646c18acc2e0669a755df16e30db07d4450a6c30"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:5c0302a9edce1cd3604494c43f22738fcef606386bb7af89785c6ff0cb8b9aa3"
+        ],
+        [
+          "real-qbcc",
+          "native:08a79c505b88810289561134646c18acc2e0669a755df16e30db07d4450a6c30"
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "46164534089"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:5c0302a9edce1cd3604494c43f22738fcef606386bb7af89785c6ff0cb8b9aa3"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:3c4aa20139ec48f3c29d8426bd988c0dac4ff0331b494cf9e9ed63bced62b22f"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:5c0302a9edce1cd3604494c43f22738fcef606386bb7af89785c6ff0cb8b9aa3"
+        ],
+        [
+          "real-qbcc",
+          "native:3c4aa20139ec48f3c29d8426bd988c0dac4ff0331b494cf9e9ed63bced62b22f"
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "46164534089"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:5c0302a9edce1cd3604494c43f22738fcef606386bb7af89785c6ff0cb8b9aa3"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:7e0fcff689e05a02074d73acd5365cdb22fc06473537d34e8e3c309320726251"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:5c0302a9edce1cd3604494c43f22738fcef606386bb7af89785c6ff0cb8b9aa3"
+        ],
+        [
+          "real-qbcc",
+          "native:7e0fcff689e05a02074d73acd5365cdb22fc06473537d34e8e3c309320726251"
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "46164534089"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:5c0302a9edce1cd3604494c43f22738fcef606386bb7af89785c6ff0cb8b9aa3"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:7e72b9ec652e37126725dec872ae59aa61c88731f3cdf204becda0072f77af5f"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:5c0302a9edce1cd3604494c43f22738fcef606386bb7af89785c6ff0cb8b9aa3"
+        ],
+        [
+          "real-qbcc",
+          "native:7e72b9ec652e37126725dec872ae59aa61c88731f3cdf204becda0072f77af5f"
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "46164534089"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:5c0302a9edce1cd3604494c43f22738fcef606386bb7af89785c6ff0cb8b9aa3"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:848cac0e547c5bb1794e01b8e3821a8b5e3f6dbff94a296a98f39080b69c4716"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:5c0302a9edce1cd3604494c43f22738fcef606386bb7af89785c6ff0cb8b9aa3"
+        ],
+        [
+          "real-qbcc",
+          "native:848cac0e547c5bb1794e01b8e3821a8b5e3f6dbff94a296a98f39080b69c4716"
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "46164534089"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:5c0302a9edce1cd3604494c43f22738fcef606386bb7af89785c6ff0cb8b9aa3"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:c555ede40465caa63f7fae9f2f6685e60053b61da239b32c1359601f314d3c2a"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:5c0302a9edce1cd3604494c43f22738fcef606386bb7af89785c6ff0cb8b9aa3"
+        ],
+        [
+          "real-qbcc",
+          "native:c555ede40465caa63f7fae9f2f6685e60053b61da239b32c1359601f314d3c2a"
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "46164534089"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:5c0302a9edce1cd3604494c43f22738fcef606386bb7af89785c6ff0cb8b9aa3"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:dd221034913cabff527c781b27dd02c2c10f7003831eb3f6b0f97b51a60058da"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:5c0302a9edce1cd3604494c43f22738fcef606386bb7af89785c6ff0cb8b9aa3"
+        ],
+        [
+          "real-qbcc",
+          "native:dd221034913cabff527c781b27dd02c2c10f7003831eb3f6b0f97b51a60058da"
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "46164534089"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:7a73dbe59f99bf8e726a0d97efd1c46ca29b96be664d192321c9386a4b199fde"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:08a79c505b88810289561134646c18acc2e0669a755df16e30db07d4450a6c30"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:7a73dbe59f99bf8e726a0d97efd1c46ca29b96be664d192321c9386a4b199fde"
+        ],
+        [
+          "real-qbcc",
+          "native:08a79c505b88810289561134646c18acc2e0669a755df16e30db07d4450a6c30"
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "46164534089"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:7a73dbe59f99bf8e726a0d97efd1c46ca29b96be664d192321c9386a4b199fde"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:3c4aa20139ec48f3c29d8426bd988c0dac4ff0331b494cf9e9ed63bced62b22f"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:7a73dbe59f99bf8e726a0d97efd1c46ca29b96be664d192321c9386a4b199fde"
+        ],
+        [
+          "real-qbcc",
+          "native:3c4aa20139ec48f3c29d8426bd988c0dac4ff0331b494cf9e9ed63bced62b22f"
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "46164534089"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:7a73dbe59f99bf8e726a0d97efd1c46ca29b96be664d192321c9386a4b199fde"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:7e0fcff689e05a02074d73acd5365cdb22fc06473537d34e8e3c309320726251"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:7a73dbe59f99bf8e726a0d97efd1c46ca29b96be664d192321c9386a4b199fde"
+        ],
+        [
+          "real-qbcc",
+          "native:7e0fcff689e05a02074d73acd5365cdb22fc06473537d34e8e3c309320726251"
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "46164534089"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:7a73dbe59f99bf8e726a0d97efd1c46ca29b96be664d192321c9386a4b199fde"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:7e72b9ec652e37126725dec872ae59aa61c88731f3cdf204becda0072f77af5f"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:7a73dbe59f99bf8e726a0d97efd1c46ca29b96be664d192321c9386a4b199fde"
+        ],
+        [
+          "real-qbcc",
+          "native:7e72b9ec652e37126725dec872ae59aa61c88731f3cdf204becda0072f77af5f"
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "46164534089"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:7a73dbe59f99bf8e726a0d97efd1c46ca29b96be664d192321c9386a4b199fde"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:848cac0e547c5bb1794e01b8e3821a8b5e3f6dbff94a296a98f39080b69c4716"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:7a73dbe59f99bf8e726a0d97efd1c46ca29b96be664d192321c9386a4b199fde"
+        ],
+        [
+          "real-qbcc",
+          "native:848cac0e547c5bb1794e01b8e3821a8b5e3f6dbff94a296a98f39080b69c4716"
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "46164534089"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:7a73dbe59f99bf8e726a0d97efd1c46ca29b96be664d192321c9386a4b199fde"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:c555ede40465caa63f7fae9f2f6685e60053b61da239b32c1359601f314d3c2a"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:7a73dbe59f99bf8e726a0d97efd1c46ca29b96be664d192321c9386a4b199fde"
+        ],
+        [
+          "real-qbcc",
+          "native:c555ede40465caa63f7fae9f2f6685e60053b61da239b32c1359601f314d3c2a"
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "46164534089"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:7a73dbe59f99bf8e726a0d97efd1c46ca29b96be664d192321c9386a4b199fde"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:dd221034913cabff527c781b27dd02c2c10f7003831eb3f6b0f97b51a60058da"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:7a73dbe59f99bf8e726a0d97efd1c46ca29b96be664d192321c9386a4b199fde"
+        ],
+        [
+          "real-qbcc",
+          "native:dd221034913cabff527c781b27dd02c2c10f7003831eb3f6b0f97b51a60058da"
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "47145501006"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:7b96ff06ecc33b1691b02418636b9b747a9cc18344990281f30d1d13c30b5c13"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:0c5bba87e548be1e7b983ef7cc8c5d63c404f20313bc7679ad548c2e518006c2"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:7b96ff06ecc33b1691b02418636b9b747a9cc18344990281f30d1d13c30b5c13"
+        ],
+        [
+          "real-qbcc",
+          "native:0c5bba87e548be1e7b983ef7cc8c5d63c404f20313bc7679ad548c2e518006c2"
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "69639086927"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:b6ab3da68e76b9375155e16763d2b196587edf8eafe34b8e20926810291db00b"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:d65cd73d2f546f9d954eae3c29dc062109f8efab5f4baef679f952de28e772dc"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:b6ab3da68e76b9375155e16763d2b196587edf8eafe34b8e20926810291db00b"
+        ],
+        [
+          "real-qbcc",
+          "native:d65cd73d2f546f9d954eae3c29dc062109f8efab5f4baef679f952de28e772dc"
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "89119354022"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:3051d1b9374a46758f301c943e4a966d623d55b012562e6aa147437f79188961"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:27c7b0929c166c4f377e7031690a0f6dfc1bec1fdd334887177f65973552c8fd"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:3051d1b9374a46758f301c943e4a966d623d55b012562e6aa147437f79188961"
+        ],
+        [
+          "real-qbcc",
+          "native:27c7b0929c166c4f377e7031690a0f6dfc1bec1fdd334887177f65973552c8fd"
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "93629510756"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:b0a7fe5de7bab9f4c16f3d05be770db7be92606dde9c6ad7ec47a5ba84b5842e"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:fb8cba4c6ef3550dc72bde2685961783edcf30019ea308c951b108928a30327b"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:b0a7fe5de7bab9f4c16f3d05be770db7be92606dde9c6ad7ec47a5ba84b5842e"
+        ],
+        [
+          "real-qbcc",
+          "native:fb8cba4c6ef3550dc72bde2685961783edcf30019ea308c951b108928a30327b"
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "93640984854"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:4c61f94de45fbcd4e0eb90b3c2f403c291c74974a31fb7f77335418584fa7df0"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:15405eca3cefb9d1b4cff6dbe631d1488a8393c1e8ac626e32087c423ad66a2d"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:4c61f94de45fbcd4e0eb90b3c2f403c291c74974a31fb7f77335418584fa7df0"
+        ],
+        [
+          "real-qbcc",
+          "native:15405eca3cefb9d1b4cff6dbe631d1488a8393c1e8ac626e32087c423ad66a2d"
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "93640984854"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:4c61f94de45fbcd4e0eb90b3c2f403c291c74974a31fb7f77335418584fa7df0"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:1e6ca9445543393712f2e7faf0294324f88d304de9efd9966070a4167d33d957"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:4c61f94de45fbcd4e0eb90b3c2f403c291c74974a31fb7f77335418584fa7df0"
+        ],
+        [
+          "real-qbcc",
+          "native:1e6ca9445543393712f2e7faf0294324f88d304de9efd9966070a4167d33d957"
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "93640984854"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:4c61f94de45fbcd4e0eb90b3c2f403c291c74974a31fb7f77335418584fa7df0"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:1f0620d6a001b478de6bcc8a00300f70416e2e33f9dacc6e66b994bb336ad957"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:4c61f94de45fbcd4e0eb90b3c2f403c291c74974a31fb7f77335418584fa7df0"
+        ],
+        [
+          "real-qbcc",
+          "native:1f0620d6a001b478de6bcc8a00300f70416e2e33f9dacc6e66b994bb336ad957"
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "93640984854"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:4c61f94de45fbcd4e0eb90b3c2f403c291c74974a31fb7f77335418584fa7df0"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:6d35ee63394f3d5caba13682de2b16ca0debad211e24c760942ed2c6391410f9"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:4c61f94de45fbcd4e0eb90b3c2f403c291c74974a31fb7f77335418584fa7df0"
+        ],
+        [
+          "real-qbcc",
+          "native:6d35ee63394f3d5caba13682de2b16ca0debad211e24c760942ed2c6391410f9"
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "93640984854"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:4c61f94de45fbcd4e0eb90b3c2f403c291c74974a31fb7f77335418584fa7df0"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:81049779fccd4c0a7c675ba9635a6d22817d90b6eed54c58a0695139ba366be4"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:4c61f94de45fbcd4e0eb90b3c2f403c291c74974a31fb7f77335418584fa7df0"
+        ],
+        [
+          "real-qbcc",
+          "native:81049779fccd4c0a7c675ba9635a6d22817d90b6eed54c58a0695139ba366be4"
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "93640984854"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:4c61f94de45fbcd4e0eb90b3c2f403c291c74974a31fb7f77335418584fa7df0"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:aba35d40d8681e7c0c581f4ca72672427557b0905534047aee9a3663f6ac09fd"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:4c61f94de45fbcd4e0eb90b3c2f403c291c74974a31fb7f77335418584fa7df0"
+        ],
+        [
+          "real-qbcc",
+          "native:aba35d40d8681e7c0c581f4ca72672427557b0905534047aee9a3663f6ac09fd"
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "anchor": [
+        "entity.abn",
+        "93640984854"
+      ],
+      "left": [
+        "real-asic-companies",
+        "native:4c61f94de45fbcd4e0eb90b3c2f403c291c74974a31fb7f77335418584fa7df0"
+      ],
+      "link_confidence": 0.0,
+      "reason": "person_unknown_subject_needs_review",
+      "right": [
+        "real-qbcc",
+        "native:bf893b01632b8c356c0cbaaa6f8122e69ec637885225fc57ef1f9ce566ad7523"
+      ],
+      "subject_kind_evidence": {
+        "left": [],
+        "right": [
+          {
+            "basis": "explicit_licence_holder_type",
+            "field": "Licence Type DESC",
+            "holder_name_fields": [
+              "Licensee Name"
+            ],
+            "kind": "person",
+            "licence_number_fields": [
+              "Licence Number"
+            ],
+            "limitation": "Identifies the licensed subject; does not establish ownership of an ABN in the same row.",
+            "value": "Individual"
+          }
+        ]
+      },
+      "support": [
+        [
+          "real-asic-companies",
+          "native:4c61f94de45fbcd4e0eb90b3c2f403c291c74974a31fb7f77335418584fa7df0"
+        ],
+        [
+          "real-qbcc",
+          "native:bf893b01632b8c356c0cbaaa6f8122e69ec637885225fc57ef1f9ce566ad7523"
+        ]
+      ]
+    }
+  ],
+  "same_members_as_selected_r2": true,
+  "scope": "Offline policy replay of immutable real-model observations, not a fresh model run or human link review",
+  "selected_r2_groups": 225,
+  "single_source_scorer_regression": [
+    "complete original output",
+    "missing record N/A",
+    "duplicate record N/A",
+    "raw drift N/A",
+    "wrong labelled value counted",
+    "missing labelled value counted",
+    "failed extraction N/A"
+  ]
+}

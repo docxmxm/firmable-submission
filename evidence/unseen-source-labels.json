@@ -1,0 +1,708 @@
+{
+  "catalogue_metadata_sha256": "57eee8a7a4aa248d1aa99990ab32ae87ef7ef6440d0a896b197aef794e0fe37e",
+  "evidence_basis": {
+    "column_definition_limit": "All three official column descriptions are empty. Roles are interpreted from the official register subject and explicit column headings, without inventing a field-level quotation.",
+    "corroborating_program_page": {
+      "checked_at": "2026-10-14T06:12:15.892496+00:00",
+      "exact_support": [
+        "Active co-operatives registered in the ACT",
+        "Once registered you’ll receive a Certificate of Registration"
+      ],
+      "retained_excerpt_sha256": "d24fe429d28ee2f04675dbd89f3bbba258b05bd2a31992f7255776d99352b72c",
+      "retrieval_method": "Web browser tool opened the official page; direct Python HTML retrieval returned HTTP403, so no fetched-HTML hash is claimed.",
+      "role": "Corroborates the entity-registration subject and status. Only these short excerpts are retained for evaluation; no analysis or extra text is appended to inference evidence.",
+      "url": "https://www.accesscanberra.act.gov.au/business-and-work/associations-co-ops-and-charities/co-operative-registration"
+    },
+    "dataset_description": "This dataset contains information on cooperatives registered in the ACT under the Co-operatives National Law (ACT) Act 2017.",
+    "official_metadata_url": "https://www.data.act.gov.au/api/views/758m-5a8y.json",
+    "original_column_metadata": [
+      {
+        "description": "",
+        "field": "coop_registeration_number",
+        "name": "Coop Registeration Number",
+        "type": "text"
+      },
+      {
+        "description": "",
+        "field": "name_of_cooperative",
+        "name": "Name of Cooperative",
+        "type": "text"
+      },
+      {
+        "description": "",
+        "field": "registration_status",
+        "name": "Registration Status",
+        "type": "text"
+      }
+    ],
+    "publisher": "Access Canberra",
+    "registered_name_reasoning": "The dataset registers cooperative entities under the stated Act. Name of Cooperative denotes that registered subject, matching ontology legal_name As registered, rather than an unrelated party or stated trading name. This is a finite source-agreement interpretation, not a human legal determination.",
+    "status_reasoning": "Registration Status describes the cooperative entity in its registration register, rather than an operating permit. Active maps directly to active, without claiming solvency, trading activity or continued validity after the snapshot."
+  },
+  "field_dispositions": {
+    "coverage_only": {
+      "address.country": "AU is permitted by the ontology default, without a positive source-cell label.",
+      "all_other_unlabelled_canonical_fields": "Coverage only, with no correctness credit."
+    },
+    "no_ontology_counterpart": [
+      "Coop Registeration Number"
+    ],
+    "observation_time_limit": "No registration date or whole-observation valid_from/valid_to is supplied. Temporal-envelope accuracy is not scored.",
+    "semantic_unresolved": {
+      "entity.entity_type": "Cooperative is the documented form, but no forced ontology crosswalk is labelled. Do not infer company or another type from Limited/Ltd suffixes. Informative emissions remain unscored and require separate review."
+    },
+    "source_agreement_scored": {
+      "entity.legal_name": 17,
+      "entity.status": 17
+    }
+  },
+  "frozen_at": "2026-10-14T06:12:15.892496+00:00",
+  "human_gold": false,
+  "labels_private_to_evaluation": true,
+  "native_reader_runtime_fingerprint": "18984daebde13d47999f8bdbc3b4758074db27e0159799ee4506c185ff9e75b3",
+  "native_reader_sha256": "c918eecd66b415b1d844d9a1e83fa5c76caa88358836d1d28ec3a8f2cd5abc9f",
+  "normalization": "Registered name: whitespace collapse only, retaining case, punctuation and spelling. Registration Status Active maps to canonical active. No suffix-based classification, identifier reconstruction, external entity lookup or deduplication.",
+  "ontology_sha256": "2a2d2db45cb0c5e7d022f6e2466c68271cc14704a09658e0d71b92ec1f130e23",
+  "preparation_method": "Independently parse the original CSV with csv.DictReader and retain every row. Expected values follow raw cells and stated evaluation semantics. Frozen runtime discover supplies only source_record_id and physical locator; its raw_record must equal the independently parsed row. Canonical raw JSON is independently SHA256 hashed. No inference config, mapping rule or model output is loaded.",
+  "prepared_without_reading_model_outputs": true,
+  "runtime_frozen_at": "2026-10-14T06:08:30.718525+00:00",
+  "scope": "One complete 17-row public cooperative-register snapshot, with two finite source-agreement targets. Registered-name interpretation follows the official registered-entity subject and field role. This is not human legal review, independent real-world truth, broad mapping accuracy or a claim about model pretraining.",
+  "scorer_sha256": "a9cae67d578e97db719b7587ade6af1dfebffe6314bb6dfe64c1aababa0ed6ee",
+  "scoring_policy": {
+    "abstention_metrics": "Separate evidence-insufficiency checks only. Omission and enum unknown count as abstention. Unsupported informative emissions are not rewarded. These checks are not real-world negative facts and are not pooled with positive accuracy.",
+    "identity_guard": "All 17 original source_record_id values exactly once with unchanged source_id, raw hash and native locator. Missing, duplicate, extra or changed rows make field accuracy N/A; frozen denominators remain visible.",
+    "positive_metrics": "Separate correct, missed and informative wrong emissions per field. Recall uses fixed positive opportunities. Precision uses informative emissions within these opportunities; zero emissions yields null, not 100 percent. No pooled all-field accuracy.",
+    "unscored_values": "Report informative coverage only. In particular, no forced entity_type label is supplied."
+  },
+  "sources": {
+    "unseen-act-cooperatives": {
+      "abstention_opportunities": {
+        "address.full": 17,
+        "address.locality": 17,
+        "address.postcode": 17,
+        "address.state": 17,
+        "entity.abn": 17,
+        "entity.acn": 17,
+        "entity.date_registered": 17,
+        "entity.industry_code": 17,
+        "entity.nzbn": 17,
+        "entity.trading_name": 17,
+        "entity.website": 17
+      },
+      "evidence_file_sha256": {
+        "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/data/unseen-source/evidence/native.csv": "ab17d75e3ff5eeb35ab2c6aad0324684372a2884d2de3c6d4058daf74f231e41",
+        "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/data/unseen-source/evidence/official-metadata.txt": "7b02dc26157f155e28af58c8f3fd6da3ba6e36d30f7bfe0a6530ac8273512659"
+      },
+      "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/data/unseen-source/evidence",
+      "excluded_documentary_records": [],
+      "invalid_identifiers": [],
+      "native_record_count": 17,
+      "population_note": "Every row of the original 1020-byte CSV, without filters or deduplication. All 17 Registration Status values are Active. Local cooperative register numbers are not ABN/ACN/NZBN identifiers.",
+      "positive_branches": {
+        "explicit_active_registration_status": 17,
+        "registered_cooperative_name": 17
+      },
+      "positive_opportunities": {
+        "entity.legal_name": 17,
+        "entity.status": 17
+      },
+      "records": {
+        "native:0b2e9104d462d71d20f49b800c243888bcc0d6c6bd67b05c82aa9257c294b2d6": {
+          "abstention": {
+            "address.full": "No cooperative address text is supplied.",
+            "address.locality": "No cooperative locality is supplied.",
+            "address.postcode": "No cooperative postcode is supplied.",
+            "address.state": "ACT is the register jurisdiction, not an asserted cooperative address state.",
+            "entity.abn": "No ABN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ABN.",
+            "entity.acn": "No ACN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ACN.",
+            "entity.date_registered": "Registration Status is not a date; no registration date is supplied.",
+            "entity.industry_code": "No industry classification is supplied; a name cannot establish ANZSIC.",
+            "entity.nzbn": "No NZBN is supplied; the local register identifier cannot establish one.",
+            "entity.trading_name": "Only the registered cooperative name is supplied; no distinct trading-name claim is given.",
+            "entity.website": "No cooperative website is supplied; publisher/program URLs are not subject websites."
+          },
+          "expected": {
+            "entity.legal_name": {
+              "branch": "registered_cooperative_name",
+              "source_field": "Name of Cooperative",
+              "value": "Jacaranda Cooperative Housing Society Limited"
+            },
+            "entity.status": {
+              "branch": "explicit_active_registration_status",
+              "source_field": "Registration Status",
+              "value": "active"
+            }
+          },
+          "native_key": {
+            "Coop Registeration Number": "CO-0302"
+          },
+          "native_locator": {
+            "file": "native.csv",
+            "row": 18
+          },
+          "raw_sha256": "eba9b277e435da11674c519e133113f8a37234e487490500562684afd594a8ea"
+        },
+        "native:13749c062010ee01d1c1a60c56ccfeaaae94ac07f2ebc447610f26e43ee074cb": {
+          "abstention": {
+            "address.full": "No cooperative address text is supplied.",
+            "address.locality": "No cooperative locality is supplied.",
+            "address.postcode": "No cooperative postcode is supplied.",
+            "address.state": "ACT is the register jurisdiction, not an asserted cooperative address state.",
+            "entity.abn": "No ABN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ABN.",
+            "entity.acn": "No ACN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ACN.",
+            "entity.date_registered": "Registration Status is not a date; no registration date is supplied.",
+            "entity.industry_code": "No industry classification is supplied; a name cannot establish ANZSIC.",
+            "entity.nzbn": "No NZBN is supplied; the local register identifier cannot establish one.",
+            "entity.trading_name": "Only the registered cooperative name is supplied; no distinct trading-name claim is given.",
+            "entity.website": "No cooperative website is supplied; publisher/program URLs are not subject websites."
+          },
+          "expected": {
+            "entity.legal_name": {
+              "branch": "registered_cooperative_name",
+              "source_field": "Name of Cooperative",
+              "value": "Builders Trading Co-operative Limited"
+            },
+            "entity.status": {
+              "branch": "explicit_active_registration_status",
+              "source_field": "Registration Status",
+              "value": "active"
+            }
+          },
+          "native_key": {
+            "Coop Registeration Number": "CO-0201"
+          },
+          "native_locator": {
+            "file": "native.csv",
+            "row": 2
+          },
+          "raw_sha256": "04163b1a274ab7e59ae4add555d6fa2abe94ebf9f7f8da8c735c8686b69d119a"
+        },
+        "native:1617d92c31428cc4d535f64ec62c2e9fc38e4a65e733fabc32debb30b5457fe7": {
+          "abstention": {
+            "address.full": "No cooperative address text is supplied.",
+            "address.locality": "No cooperative locality is supplied.",
+            "address.postcode": "No cooperative postcode is supplied.",
+            "address.state": "ACT is the register jurisdiction, not an asserted cooperative address state.",
+            "entity.abn": "No ABN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ABN.",
+            "entity.acn": "No ACN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ACN.",
+            "entity.date_registered": "Registration Status is not a date; no registration date is supplied.",
+            "entity.industry_code": "No industry classification is supplied; a name cannot establish ANZSIC.",
+            "entity.nzbn": "No NZBN is supplied; the local register identifier cannot establish one.",
+            "entity.trading_name": "Only the registered cooperative name is supplied; no distinct trading-name claim is given.",
+            "entity.website": "No cooperative website is supplied; publisher/program URLs are not subject websites."
+          },
+          "expected": {
+            "entity.legal_name": {
+              "branch": "registered_cooperative_name",
+              "source_field": "Name of Cooperative",
+              "value": "Islamic Co-operative Finance Australia Limited"
+            },
+            "entity.status": {
+              "branch": "explicit_active_registration_status",
+              "source_field": "Registration Status",
+              "value": "active"
+            }
+          },
+          "native_key": {
+            "Coop Registeration Number": "CO-0301"
+          },
+          "native_locator": {
+            "file": "native.csv",
+            "row": 17
+          },
+          "raw_sha256": "871ba74f9ca4a3b08b832e3b01065f0b3cefc87773779a8f2e8caba30b89bd36"
+        },
+        "native:209aeef1df2938ed9d8fef09c514c20c89d4cf8d118a6d1111f098240fb7cf92": {
+          "abstention": {
+            "address.full": "No cooperative address text is supplied.",
+            "address.locality": "No cooperative locality is supplied.",
+            "address.postcode": "No cooperative postcode is supplied.",
+            "address.state": "ACT is the register jurisdiction, not an asserted cooperative address state.",
+            "entity.abn": "No ABN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ABN.",
+            "entity.acn": "No ACN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ACN.",
+            "entity.date_registered": "Registration Status is not a date; no registration date is supplied.",
+            "entity.industry_code": "No industry classification is supplied; a name cannot establish ANZSIC.",
+            "entity.nzbn": "No NZBN is supplied; the local register identifier cannot establish one.",
+            "entity.trading_name": "Only the registered cooperative name is supplied; no distinct trading-name claim is given.",
+            "entity.website": "No cooperative website is supplied; publisher/program URLs are not subject websites."
+          },
+          "expected": {
+            "entity.legal_name": {
+              "branch": "registered_cooperative_name",
+              "source_field": "Name of Cooperative",
+              "value": "Pre Power One Co-op Limited"
+            },
+            "entity.status": {
+              "branch": "explicit_active_registration_status",
+              "source_field": "Registration Status",
+              "value": "active"
+            }
+          },
+          "native_key": {
+            "Coop Registeration Number": "CO-0210"
+          },
+          "native_locator": {
+            "file": "native.csv",
+            "row": 10
+          },
+          "raw_sha256": "31bcf2825ad6bfb5b5ab2d2aa1e62bc4a51d09ed26cc595bcd31f3b10d73b6de"
+        },
+        "native:26ac23e2c72a043a5f589c8eb315e2151f60f7abe30a45ae9f40fa95f0913c9b": {
+          "abstention": {
+            "address.full": "No cooperative address text is supplied.",
+            "address.locality": "No cooperative locality is supplied.",
+            "address.postcode": "No cooperative postcode is supplied.",
+            "address.state": "ACT is the register jurisdiction, not an asserted cooperative address state.",
+            "entity.abn": "No ABN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ABN.",
+            "entity.acn": "No ACN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ACN.",
+            "entity.date_registered": "Registration Status is not a date; no registration date is supplied.",
+            "entity.industry_code": "No industry classification is supplied; a name cannot establish ANZSIC.",
+            "entity.nzbn": "No NZBN is supplied; the local register identifier cannot establish one.",
+            "entity.trading_name": "Only the registered cooperative name is supplied; no distinct trading-name claim is given.",
+            "entity.website": "No cooperative website is supplied; publisher/program URLs are not subject websites."
+          },
+          "expected": {
+            "entity.legal_name": {
+              "branch": "registered_cooperative_name",
+              "source_field": "Name of Cooperative",
+              "value": "National Health Cooperative Limited"
+            },
+            "entity.status": {
+              "branch": "explicit_active_registration_status",
+              "source_field": "Registration Status",
+              "value": "active"
+            }
+          },
+          "native_key": {
+            "Coop Registeration Number": "CO-0206"
+          },
+          "native_locator": {
+            "file": "native.csv",
+            "row": 6
+          },
+          "raw_sha256": "05d77fc000f5897a2a64d0352b1d7b10b371962a1f0740cdcac7f9f4a8229d46"
+        },
+        "native:2e777b8a1083dc0a5671e015c866d585934d82e21364bbc9b3ec5801551ef5ea": {
+          "abstention": {
+            "address.full": "No cooperative address text is supplied.",
+            "address.locality": "No cooperative locality is supplied.",
+            "address.postcode": "No cooperative postcode is supplied.",
+            "address.state": "ACT is the register jurisdiction, not an asserted cooperative address state.",
+            "entity.abn": "No ABN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ABN.",
+            "entity.acn": "No ACN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ACN.",
+            "entity.date_registered": "Registration Status is not a date; no registration date is supplied.",
+            "entity.industry_code": "No industry classification is supplied; a name cannot establish ANZSIC.",
+            "entity.nzbn": "No NZBN is supplied; the local register identifier cannot establish one.",
+            "entity.trading_name": "Only the registered cooperative name is supplied; no distinct trading-name claim is given.",
+            "entity.website": "No cooperative website is supplied; publisher/program URLs are not subject websites."
+          },
+          "expected": {
+            "entity.legal_name": {
+              "branch": "registered_cooperative_name",
+              "source_field": "Name of Cooperative",
+              "value": "GetRealty Cooperative Limited"
+            },
+            "entity.status": {
+              "branch": "explicit_active_registration_status",
+              "source_field": "Registration Status",
+              "value": "active"
+            }
+          },
+          "native_key": {
+            "Coop Registeration Number": "CO-0205"
+          },
+          "native_locator": {
+            "file": "native.csv",
+            "row": 5
+          },
+          "raw_sha256": "7fe5709443913cc6fdd56b1bddedabce866481d78ae48996c8149224f38f5619"
+        },
+        "native:3b2f9f87ae4f03fb9fe8eae14963ae5acea3b4c904cf13f00adeb656eb30c913": {
+          "abstention": {
+            "address.full": "No cooperative address text is supplied.",
+            "address.locality": "No cooperative locality is supplied.",
+            "address.postcode": "No cooperative postcode is supplied.",
+            "address.state": "ACT is the register jurisdiction, not an asserted cooperative address state.",
+            "entity.abn": "No ABN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ABN.",
+            "entity.acn": "No ACN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ACN.",
+            "entity.date_registered": "Registration Status is not a date; no registration date is supplied.",
+            "entity.industry_code": "No industry classification is supplied; a name cannot establish ANZSIC.",
+            "entity.nzbn": "No NZBN is supplied; the local register identifier cannot establish one.",
+            "entity.trading_name": "Only the registered cooperative name is supplied; no distinct trading-name claim is given.",
+            "entity.website": "No cooperative website is supplied; publisher/program URLs are not subject websites."
+          },
+          "expected": {
+            "entity.legal_name": {
+              "branch": "registered_cooperative_name",
+              "source_field": "Name of Cooperative",
+              "value": "Food Cooperative Shop Ltd"
+            },
+            "entity.status": {
+              "branch": "explicit_active_registration_status",
+              "source_field": "Registration Status",
+              "value": "active"
+            }
+          },
+          "native_key": {
+            "Coop Registeration Number": "CO-0202"
+          },
+          "native_locator": {
+            "file": "native.csv",
+            "row": 3
+          },
+          "raw_sha256": "d4f8e2f1d609c2a638f3a4bf9e9a86937b7a1003ddf01d5841e3cce6725c6c33"
+        },
+        "native:5f8ae842072b1dd059c84c8e248ae4c25b81e29527bf8aca2fa7b63d2fdf828a": {
+          "abstention": {
+            "address.full": "No cooperative address text is supplied.",
+            "address.locality": "No cooperative locality is supplied.",
+            "address.postcode": "No cooperative postcode is supplied.",
+            "address.state": "ACT is the register jurisdiction, not an asserted cooperative address state.",
+            "entity.abn": "No ABN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ABN.",
+            "entity.acn": "No ACN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ACN.",
+            "entity.date_registered": "Registration Status is not a date; no registration date is supplied.",
+            "entity.industry_code": "No industry classification is supplied; a name cannot establish ANZSIC.",
+            "entity.nzbn": "No NZBN is supplied; the local register identifier cannot establish one.",
+            "entity.trading_name": "Only the registered cooperative name is supplied; no distinct trading-name claim is given.",
+            "entity.website": "No cooperative website is supplied; publisher/program URLs are not subject websites."
+          },
+          "expected": {
+            "entity.legal_name": {
+              "branch": "registered_cooperative_name",
+              "source_field": "Name of Cooperative",
+              "value": "The Elysian Co-op Limited"
+            },
+            "entity.status": {
+              "branch": "explicit_active_registration_status",
+              "source_field": "Registration Status",
+              "value": "active"
+            }
+          },
+          "native_key": {
+            "Coop Registeration Number": "CO-0216"
+          },
+          "native_locator": {
+            "file": "native.csv",
+            "row": 16
+          },
+          "raw_sha256": "065de204ee5cf54a05739d72f7ae04a1d30fdff43c68a4ae14f75d000afbb199"
+        },
+        "native:67a5aa985642ce178a9857c3f770d2b11310895e75ff315ebf70477ccdf7fa45": {
+          "abstention": {
+            "address.full": "No cooperative address text is supplied.",
+            "address.locality": "No cooperative locality is supplied.",
+            "address.postcode": "No cooperative postcode is supplied.",
+            "address.state": "ACT is the register jurisdiction, not an asserted cooperative address state.",
+            "entity.abn": "No ABN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ABN.",
+            "entity.acn": "No ACN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ACN.",
+            "entity.date_registered": "Registration Status is not a date; no registration date is supplied.",
+            "entity.industry_code": "No industry classification is supplied; a name cannot establish ANZSIC.",
+            "entity.nzbn": "No NZBN is supplied; the local register identifier cannot establish one.",
+            "entity.trading_name": "Only the registered cooperative name is supplied; no distinct trading-name claim is given.",
+            "entity.website": "No cooperative website is supplied; publisher/program URLs are not subject websites."
+          },
+          "expected": {
+            "entity.legal_name": {
+              "branch": "registered_cooperative_name",
+              "source_field": "Name of Cooperative",
+              "value": "Trove Canberra Cooperative Limited"
+            },
+            "entity.status": {
+              "branch": "explicit_active_registration_status",
+              "source_field": "Registration Status",
+              "value": "active"
+            }
+          },
+          "native_key": {
+            "Coop Registeration Number": "CO-0207"
+          },
+          "native_locator": {
+            "file": "native.csv",
+            "row": 7
+          },
+          "raw_sha256": "d753d60c056267c7847984cad45c5199ff5d6948fc6daf3d23682c267f2ec546"
+        },
+        "native:69d64ba4a015fb1ffa258874f7495a841cccbac2d014ed0dab0a49069533361c": {
+          "abstention": {
+            "address.full": "No cooperative address text is supplied.",
+            "address.locality": "No cooperative locality is supplied.",
+            "address.postcode": "No cooperative postcode is supplied.",
+            "address.state": "ACT is the register jurisdiction, not an asserted cooperative address state.",
+            "entity.abn": "No ABN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ABN.",
+            "entity.acn": "No ACN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ACN.",
+            "entity.date_registered": "Registration Status is not a date; no registration date is supplied.",
+            "entity.industry_code": "No industry classification is supplied; a name cannot establish ANZSIC.",
+            "entity.nzbn": "No NZBN is supplied; the local register identifier cannot establish one.",
+            "entity.trading_name": "Only the registered cooperative name is supplied; no distinct trading-name claim is given.",
+            "entity.website": "No cooperative website is supplied; publisher/program URLs are not subject websites."
+          },
+          "expected": {
+            "entity.legal_name": {
+              "branch": "registered_cooperative_name",
+              "source_field": "Name of Cooperative",
+              "value": "AMAR CARE Limited"
+            },
+            "entity.status": {
+              "branch": "explicit_active_registration_status",
+              "source_field": "Registration Status",
+              "value": "active"
+            }
+          },
+          "native_key": {
+            "Coop Registeration Number": "CO-0215"
+          },
+          "native_locator": {
+            "file": "native.csv",
+            "row": 15
+          },
+          "raw_sha256": "c62fa3bf5f44d6f51e8d8df4bb5b270cc5328cb2626883404cab16613947099b"
+        },
+        "native:7c2cbd5c895d5278b95559718237cd15ec94ab4ba3a93c6ab667f628ae3d1ef1": {
+          "abstention": {
+            "address.full": "No cooperative address text is supplied.",
+            "address.locality": "No cooperative locality is supplied.",
+            "address.postcode": "No cooperative postcode is supplied.",
+            "address.state": "ACT is the register jurisdiction, not an asserted cooperative address state.",
+            "entity.abn": "No ABN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ABN.",
+            "entity.acn": "No ACN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ACN.",
+            "entity.date_registered": "Registration Status is not a date; no registration date is supplied.",
+            "entity.industry_code": "No industry classification is supplied; a name cannot establish ANZSIC.",
+            "entity.nzbn": "No NZBN is supplied; the local register identifier cannot establish one.",
+            "entity.trading_name": "Only the registered cooperative name is supplied; no distinct trading-name claim is given.",
+            "entity.website": "No cooperative website is supplied; publisher/program URLs are not subject websites."
+          },
+          "expected": {
+            "entity.legal_name": {
+              "branch": "registered_cooperative_name",
+              "source_field": "Name of Cooperative",
+              "value": "ACT 30K/40K Narrative Gaming Limited"
+            },
+            "entity.status": {
+              "branch": "explicit_active_registration_status",
+              "source_field": "Registration Status",
+              "value": "active"
+            }
+          },
+          "native_key": {
+            "Coop Registeration Number": "CO-0214"
+          },
+          "native_locator": {
+            "file": "native.csv",
+            "row": 14
+          },
+          "raw_sha256": "2a5e65035e829131c4e1fd202257cac567d2db8ee0c5db63ea5cc655649385b4"
+        },
+        "native:8e2cfc41a0b0d23b97a063bc912bf9f6ac00f6741bcfa15086ca296cdf5bb0ed": {
+          "abstention": {
+            "address.full": "No cooperative address text is supplied.",
+            "address.locality": "No cooperative locality is supplied.",
+            "address.postcode": "No cooperative postcode is supplied.",
+            "address.state": "ACT is the register jurisdiction, not an asserted cooperative address state.",
+            "entity.abn": "No ABN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ABN.",
+            "entity.acn": "No ACN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ACN.",
+            "entity.date_registered": "Registration Status is not a date; no registration date is supplied.",
+            "entity.industry_code": "No industry classification is supplied; a name cannot establish ANZSIC.",
+            "entity.nzbn": "No NZBN is supplied; the local register identifier cannot establish one.",
+            "entity.trading_name": "Only the registered cooperative name is supplied; no distinct trading-name claim is given.",
+            "entity.website": "No cooperative website is supplied; publisher/program URLs are not subject websites."
+          },
+          "expected": {
+            "entity.legal_name": {
+              "branch": "registered_cooperative_name",
+              "source_field": "Name of Cooperative",
+              "value": "Ethical Wheels Cooperative Limited"
+            },
+            "entity.status": {
+              "branch": "explicit_active_registration_status",
+              "source_field": "Registration Status",
+              "value": "active"
+            }
+          },
+          "native_key": {
+            "Coop Registeration Number": "CO-0208"
+          },
+          "native_locator": {
+            "file": "native.csv",
+            "row": 8
+          },
+          "raw_sha256": "434587d14e50a66dca96deacabef8ac6d220f654b1698f303ff3632658fe35da"
+        },
+        "native:9ed0d2502defb72f15a73018f89c2afcf3d393e5525e9b59e962349e5de94bbe": {
+          "abstention": {
+            "address.full": "No cooperative address text is supplied.",
+            "address.locality": "No cooperative locality is supplied.",
+            "address.postcode": "No cooperative postcode is supplied.",
+            "address.state": "ACT is the register jurisdiction, not an asserted cooperative address state.",
+            "entity.abn": "No ABN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ABN.",
+            "entity.acn": "No ACN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ACN.",
+            "entity.date_registered": "Registration Status is not a date; no registration date is supplied.",
+            "entity.industry_code": "No industry classification is supplied; a name cannot establish ANZSIC.",
+            "entity.nzbn": "No NZBN is supplied; the local register identifier cannot establish one.",
+            "entity.trading_name": "Only the registered cooperative name is supplied; no distinct trading-name claim is given.",
+            "entity.website": "No cooperative website is supplied; publisher/program URLs are not subject websites."
+          },
+          "expected": {
+            "entity.legal_name": {
+              "branch": "registered_cooperative_name",
+              "source_field": "Name of Cooperative",
+              "value": "RealKM Cooperative Limited"
+            },
+            "entity.status": {
+              "branch": "explicit_active_registration_status",
+              "source_field": "Registration Status",
+              "value": "active"
+            }
+          },
+          "native_key": {
+            "Coop Registeration Number": "CO-0213"
+          },
+          "native_locator": {
+            "file": "native.csv",
+            "row": 13
+          },
+          "raw_sha256": "602cfc6e2fc3425456c9a61a99e2b3f5eff0583fa63df7a3a3fbf0f9e4286e69"
+        },
+        "native:b8693a298abcae7d79411d63a0ec0076482c0322e8337a2db5ecdffe0eeb51b0": {
+          "abstention": {
+            "address.full": "No cooperative address text is supplied.",
+            "address.locality": "No cooperative locality is supplied.",
+            "address.postcode": "No cooperative postcode is supplied.",
+            "address.state": "ACT is the register jurisdiction, not an asserted cooperative address state.",
+            "entity.abn": "No ABN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ABN.",
+            "entity.acn": "No ACN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ACN.",
+            "entity.date_registered": "Registration Status is not a date; no registration date is supplied.",
+            "entity.industry_code": "No industry classification is supplied; a name cannot establish ANZSIC.",
+            "entity.nzbn": "No NZBN is supplied; the local register identifier cannot establish one.",
+            "entity.trading_name": "Only the registered cooperative name is supplied; no distinct trading-name claim is given.",
+            "entity.website": "No cooperative website is supplied; publisher/program URLs are not subject websites."
+          },
+          "expected": {
+            "entity.legal_name": {
+              "branch": "registered_cooperative_name",
+              "source_field": "Name of Cooperative",
+              "value": "Canberra Student Housing Co-operative Ltd"
+            },
+            "entity.status": {
+              "branch": "explicit_active_registration_status",
+              "source_field": "Registration Status",
+              "value": "active"
+            }
+          },
+          "native_key": {
+            "Coop Registeration Number": "CO-0203"
+          },
+          "native_locator": {
+            "file": "native.csv",
+            "row": 4
+          },
+          "raw_sha256": "be80397661f572311fac95c24095a6f705c5b3d92f35b62d73ee86d27d2ed4ff"
+        },
+        "native:d12f8bfee6c583331565c261198ba66ee6ac4737a7f40c6dbc47966c49deaa91": {
+          "abstention": {
+            "address.full": "No cooperative address text is supplied.",
+            "address.locality": "No cooperative locality is supplied.",
+            "address.postcode": "No cooperative postcode is supplied.",
+            "address.state": "ACT is the register jurisdiction, not an asserted cooperative address state.",
+            "entity.abn": "No ABN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ABN.",
+            "entity.acn": "No ACN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ACN.",
+            "entity.date_registered": "Registration Status is not a date; no registration date is supplied.",
+            "entity.industry_code": "No industry classification is supplied; a name cannot establish ANZSIC.",
+            "entity.nzbn": "No NZBN is supplied; the local register identifier cannot establish one.",
+            "entity.trading_name": "Only the registered cooperative name is supplied; no distinct trading-name claim is given.",
+            "entity.website": "No cooperative website is supplied; publisher/program URLs are not subject websites."
+          },
+          "expected": {
+            "entity.legal_name": {
+              "branch": "registered_cooperative_name",
+              "source_field": "Name of Cooperative",
+              "value": "ACT Water Rewards Cooperative Limited"
+            },
+            "entity.status": {
+              "branch": "explicit_active_registration_status",
+              "source_field": "Registration Status",
+              "value": "active"
+            }
+          },
+          "native_key": {
+            "Coop Registeration Number": "CO-0209"
+          },
+          "native_locator": {
+            "file": "native.csv",
+            "row": 9
+          },
+          "raw_sha256": "fbb363c6f327f3d88e18ebc0a158b3b7448bb84c17f9f8b8d20ffe559d09b263"
+        },
+        "native:d4bc31774dc6d66da2942e5af669f007bcf4ed75f996454d2c87bc23e1f165b0": {
+          "abstention": {
+            "address.full": "No cooperative address text is supplied.",
+            "address.locality": "No cooperative locality is supplied.",
+            "address.postcode": "No cooperative postcode is supplied.",
+            "address.state": "ACT is the register jurisdiction, not an asserted cooperative address state.",
+            "entity.abn": "No ABN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ABN.",
+            "entity.acn": "No ACN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ACN.",
+            "entity.date_registered": "Registration Status is not a date; no registration date is supplied.",
+            "entity.industry_code": "No industry classification is supplied; a name cannot establish ANZSIC.",
+            "entity.nzbn": "No NZBN is supplied; the local register identifier cannot establish one.",
+            "entity.trading_name": "Only the registered cooperative name is supplied; no distinct trading-name claim is given.",
+            "entity.website": "No cooperative website is supplied; publisher/program URLs are not subject websites."
+          },
+          "expected": {
+            "entity.legal_name": {
+              "branch": "registered_cooperative_name",
+              "source_field": "Name of Cooperative",
+              "value": "Interchange Health Co-operative Limited"
+            },
+            "entity.status": {
+              "branch": "explicit_active_registration_status",
+              "source_field": "Registration Status",
+              "value": "active"
+            }
+          },
+          "native_key": {
+            "Coop Registeration Number": "CO-0211"
+          },
+          "native_locator": {
+            "file": "native.csv",
+            "row": 11
+          },
+          "raw_sha256": "c661c8bbcde8c62c5b237cbf5cde2b435a412b7e861cb0db925152c1e879d23a"
+        },
+        "native:e4c8355ff15a272c32694c4b3c0eb00cde4af05768d669689ae27fceb1b1ed0c": {
+          "abstention": {
+            "address.full": "No cooperative address text is supplied.",
+            "address.locality": "No cooperative locality is supplied.",
+            "address.postcode": "No cooperative postcode is supplied.",
+            "address.state": "ACT is the register jurisdiction, not an asserted cooperative address state.",
+            "entity.abn": "No ABN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ABN.",
+            "entity.acn": "No ACN is supplied. Coop Registeration Number is a local cooperative-register identifier, not an ACN.",
+            "entity.date_registered": "Registration Status is not a date; no registration date is supplied.",
+            "entity.industry_code": "No industry classification is supplied; a name cannot establish ANZSIC.",
+            "entity.nzbn": "No NZBN is supplied; the local register identifier cannot establish one.",
+            "entity.trading_name": "Only the registered cooperative name is supplied; no distinct trading-name claim is given.",
+            "entity.website": "No cooperative website is supplied; publisher/program URLs are not subject websites."
+          },
+          "expected": {
+            "entity.legal_name": {
+              "branch": "registered_cooperative_name",
+              "source_field": "Name of Cooperative",
+              "value": "Canberra Seed Savers Co-operative Limited"
+            },
+            "entity.status": {
+              "branch": "explicit_active_registration_status",
+              "source_field": "Registration Status",
+              "value": "active"
+            }
+          },
+          "native_key": {
+            "Coop Registeration Number": "CO-0212"
+          },
+          "native_locator": {
+            "file": "native.csv",
+            "row": 12
+          },
+          "raw_sha256": "9ecd56115147b170fa967d77969b584f9e18d05c11b8d2a7bc5816023b29af25"
+        }
+      }
+    }
+  }
+}

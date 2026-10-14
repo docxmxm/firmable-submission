@@ -1,0 +1,395 @@
+{
+  "artifact_bindings": {
+    "runs/unseen-source/protocol.json": "034942178d83b12784fb8455decc30c6b95f1c79bdff52588a57e1fc4be2636c",
+    "runs/unseen-source/provider-receipts.json": "c2664d7eebc76bc9501dd30a9b3acd12a69c0c5f32878dcd19cd5ce9b2d8b6a3",
+    "runs/unseen-source/scores.json": "3aec140775f1cbe0961812e8765e1120813b975d0305523f44684838f8c52576",
+    "runs/unseen-source/summary.json": "ee187d41ca148b03292e4dfde9cdeab9cc5dfae27ef87cf5f685b940437af955",
+    "runs/unseen-source/unseen-act-cooperatives/onboard.json": "5dfa64beed9e66ecf3b09dc83c9aaf0790128456c478a8412e1bbbe6c28a927a",
+    "runs/unseen-source/unseen-act-cooperatives/request.json": "52dc0017087419ffa4d4cf1ed5ddb06cf750ef5a96ee0a7da14d406cfb21cf23",
+    "runs/unseen-source/unseen-act-cooperatives/result.json": "58b3373008c17431e53b098b06d9be08af61e93148533d44b364f353ea97263b",
+    "runs/unseen-source/unseen-act-cooperatives/trace.json": "cab18393cdc6257a741bd4441e7affba6b5f33b20b445b99c5fadd2e5ba68c33"
+  },
+  "configurations": {},
+  "full_run_archive": "evidence/evaluation-traces.tar.gz#current",
+  "full_run_directory": "runs/unseen-source",
+  "full_run_directory_git_tracked": false,
+  "human_gold": false,
+  "kind": "real-source-evaluation",
+  "limitation": "One frozen-runtime evaluation. Exact source-agreement labels only; no human approval or link precision claim. A later runtime change requires new validation.",
+  "model_calls_are_new": true,
+  "per_source_usage": {
+    "unseen-act-cooperatives": {
+      "calls": 6,
+      "reported_cost_usd": 0.0078227,
+      "reported_tokens": 59435
+    }
+  },
+  "protocol": {
+    "cost_guard_limitation": "Receipt-based stop with reservation; not a provider-enforced billing limit.",
+    "evaluation_scope": "unseen_source",
+    "human_gold": false,
+    "inputs_and_labels_sha256": {
+      "data/unseen-source/evidence/native.csv": "ab17d75e3ff5eeb35ab2c6aad0324684372a2884d2de3c6d4058daf74f231e41",
+      "data/unseen-source/evidence/official-metadata.txt": "7b02dc26157f155e28af58c8f3fd6da3ba6e36d30f7bfe0a6530ac8273512659",
+      "data/unseen-source/request.json": "42f26350b957125859100eacd0bacd9d648caa0138e21900a68a0cba043e4d68",
+      "schema/firmable_ontology.yaml": "2a2d2db45cb0c5e7d022f6e2466c68271cc14704a09658e0d71b92ec1f130e23"
+    },
+    "labels_policy": "Frozen labels are read only by the subsequent scoring step, never by the planner.",
+    "limits": {
+      "calls": 180,
+      "new_send_seconds": 1200,
+      "observed_cost_guard_usd": 2.0,
+      "per_call_reserve_usd": 0.25,
+      "per_source_calls": 60
+    },
+    "max_output_tokens": 16000,
+    "model": "anthropic/claude-haiku-5.5",
+    "provider_allowlist": [
+      "Anthropic"
+    ],
+    "reasoning_effort": "low",
+    "repetitions_per_source": 1,
+    "runner_sha256": "019d6f01a562c983da289ee2855b080e51fe3a6153f552bcfb3775abd7024322",
+    "runtime_fingerprint": "18984daebde13d47999f8bdbc3b4758074db27e0159799ee4506c185ff9e75b3",
+    "sources": [
+      {
+        "required_fields": [],
+        "source_id": "unseen-act-cooperatives"
+      }
+    ],
+    "started_at": "2026-10-14T06:13:12.955328+00:00",
+    "stream": false,
+    "synthetic_approval_only": true,
+    "unknown_outcome_policy": "Stop new calls globally; never resend an unknown outcome.",
+    "worker_concurrency": 1
+  },
+  "provider_receipts": [
+    {
+      "backend_provider": "Anthropic",
+      "call_id": "371ee14cd6a3bfe2512661ef",
+      "cost_basis": "OpenRouter reported cost, not invoice",
+      "cost_usd": 0.0004097,
+      "finish_reason": "stop",
+      "generation_id": "gen-1791958393-abpNCjCrMkiClWlrhYGf",
+      "host_schema_sha256": "eae1852a6aa9bb67875d60bfdf6d490b741fb2ef8d79e23e7e36a1a59c6c6b71",
+      "http_status": 200,
+      "model": "anthropic/claude-haiku-5.5",
+      "outcome": "success",
+      "outer_wall_seconds": 1.800850250001531,
+      "phase": "validated",
+      "provider": "openrouter",
+      "provider_allowlist": [
+        "Anthropic"
+      ],
+      "request_byte_limit": 524288,
+      "request_bytes": 9661,
+      "request_sha256": "e7001b7f74e07e6d75591e57fdffed9b8e6d6b30e63be9223e690536383737ea",
+      "request_started": true,
+      "requested_model": "anthropic/claude-haiku-5.5:reasoning=low:wire=openrouter-strict-flat-ast-5:providers=e50a4d52ae3c32830e74ac1c403634f872dcd68f94f2ca11c8e771c2bd30915a",
+      "require_parameters": true,
+      "response_complete": true,
+      "response_format": "json_schema",
+      "source_id": "unseen-act-cooperatives",
+      "stream": false,
+      "strict": true,
+      "ttft_seconds": 1.8007102079864126,
+      "usage": {
+        "input_tokens": 3667,
+        "output_tokens": 86
+      },
+      "wire_protocol": "openrouter-strict-flat-ast-5",
+      "wire_schema_complexity": {
+        "optional_parameters": 0,
+        "union_parameters": 0
+      },
+      "wire_schema_sha256": "09b93e0db30bfbd27503bfd31bce0a3aa8130e76d05d829fe2cd7be15cc37156"
+    },
+    {
+      "backend_provider": "Anthropic",
+      "call_id": "a79e18e0e1b032ea8b002f82",
+      "cost_basis": "OpenRouter reported cost, not invoice",
+      "cost_usd": 0.0011866,
+      "finish_reason": "stop",
+      "generation_id": "gen-1791958394-Lf4qrv1rLSyMcIj83atx",
+      "host_schema_sha256": "14fd070011077a71e14d2883c2cc28ab108d4e7c65a9fc7fcd24cc3fb74ad32c",
+      "http_status": 200,
+      "model": "anthropic/claude-haiku-5.5",
+      "outcome": "success",
+      "outer_wall_seconds": 4.840354458981892,
+      "phase": "validated",
+      "provider": "openrouter",
+      "provider_allowlist": [
+        "Anthropic"
+      ],
+      "request_byte_limit": 524288,
+      "request_bytes": 26482,
+      "request_sha256": "b1638591882b393ab891bbf00f54dc485c88f2f6fef1dd68f21b79e6ef89e28c",
+      "request_started": true,
+      "requested_model": "anthropic/claude-haiku-5.5:reasoning=low:wire=openrouter-strict-flat-ast-5:providers=e50a4d52ae3c32830e74ac1c403634f872dcd68f94f2ca11c8e771c2bd30915a",
+      "require_parameters": true,
+      "response_complete": true,
+      "response_format": "json_schema",
+      "source_id": "unseen-act-cooperatives",
+      "stream": false,
+      "strict": true,
+      "ttft_seconds": 4.840204084001016,
+      "usage": {
+        "input_tokens": 9621,
+        "output_tokens": 449
+      },
+      "wire_protocol": "openrouter-strict-flat-ast-5",
+      "wire_schema_complexity": {
+        "optional_parameters": 0,
+        "union_parameters": 1
+      },
+      "wire_schema_sha256": "9b0d348ea734407032aa2113115ceb21aa59bba714de424dffad1db212f7e76f"
+    },
+    {
+      "backend_provider": "Anthropic",
+      "call_id": "72a9ba417c3c319c3af07eef",
+      "cost_basis": "OpenRouter reported cost, not invoice",
+      "cost_usd": 0.0016079,
+      "finish_reason": "stop",
+      "generation_id": "gen-1791958399-XQ57QloBxIbXCMOUCJSd",
+      "host_schema_sha256": "a1bca7fef6679705d40c568b0cc49e68a16c64d9cf0d6b3211d4b368f9c13a09",
+      "http_status": 200,
+      "model": "anthropic/claude-haiku-5.5",
+      "outcome": "success",
+      "outer_wall_seconds": 12.899357124988455,
+      "phase": "validated",
+      "provider": "openrouter",
+      "provider_allowlist": [
+        "Anthropic"
+      ],
+      "request_byte_limit": 524288,
+      "request_bytes": 24189,
+      "request_sha256": "6da8224444710f91a04b36f02497e31b18df48723a5cb66437e16d5c1718dbe0",
+      "request_started": true,
+      "requested_model": "anthropic/claude-haiku-5.5:reasoning=low:wire=openrouter-strict-flat-ast-5:providers=e50a4d52ae3c32830e74ac1c403634f872dcd68f94f2ca11c8e771c2bd30915a",
+      "require_parameters": true,
+      "response_complete": true,
+      "response_format": "json_schema",
+      "source_id": "unseen-act-cooperatives",
+      "stream": false,
+      "strict": true,
+      "ttft_seconds": 12.898768542014295,
+      "usage": {
+        "input_tokens": 9039,
+        "output_tokens": 1408
+      },
+      "wire_protocol": "openrouter-strict-flat-ast-5",
+      "wire_schema_complexity": {
+        "optional_parameters": 0,
+        "union_parameters": 0
+      },
+      "wire_schema_sha256": "f5f4136b6e4fe798d4e0f606490a1d422704d83b13a88300c7793a561fbc629b"
+    },
+    {
+      "backend_provider": "Anthropic",
+      "call_id": "a1396a24440a9baa37cf2e90",
+      "cost_basis": "OpenRouter reported cost, not invoice",
+      "cost_usd": 0.001422,
+      "finish_reason": "stop",
+      "generation_id": "gen-1791958412-JzgA182cdSkzmFvPUhEL",
+      "host_schema_sha256": "a1bca7fef6679705d40c568b0cc49e68a16c64d9cf0d6b3211d4b368f9c13a09",
+      "http_status": 200,
+      "model": "anthropic/claude-haiku-5.5",
+      "outcome": "success",
+      "outer_wall_seconds": 7.211134957993636,
+      "phase": "validated",
+      "provider": "openrouter",
+      "provider_allowlist": [
+        "Anthropic"
+      ],
+      "request_byte_limit": 524288,
+      "request_bytes": 24585,
+      "request_sha256": "1408efacef20f9b49f217c3e2388436c5bafc70906b2b31c81edbd077b1bea6a",
+      "request_started": true,
+      "requested_model": "anthropic/claude-haiku-5.5:reasoning=low:wire=openrouter-strict-flat-ast-5:providers=e50a4d52ae3c32830e74ac1c403634f872dcd68f94f2ca11c8e771c2bd30915a",
+      "require_parameters": true,
+      "response_complete": true,
+      "response_format": "json_schema",
+      "source_id": "unseen-act-cooperatives",
+      "stream": false,
+      "strict": true,
+      "ttft_seconds": 7.210720749979373,
+      "usage": {
+        "input_tokens": 9175,
+        "output_tokens": 1009
+      },
+      "wire_protocol": "openrouter-strict-flat-ast-5",
+      "wire_schema_complexity": {
+        "optional_parameters": 0,
+        "union_parameters": 0
+      },
+      "wire_schema_sha256": "f5f4136b6e4fe798d4e0f606490a1d422704d83b13a88300c7793a561fbc629b"
+    },
+    {
+      "backend_provider": "Anthropic",
+      "call_id": "179db24255271e51d14a28c7",
+      "cost_basis": "OpenRouter reported cost, not invoice",
+      "cost_usd": 0.001525,
+      "finish_reason": "stop",
+      "generation_id": "gen-1791958419-ni21u3UH5SZZVyXh92T0",
+      "host_schema_sha256": "6d429eedfbe4a468975048f2f263679104180e1b1c4fee6e01586baa08246445",
+      "http_status": 200,
+      "model": "anthropic/claude-haiku-5.5",
+      "outcome": "success",
+      "outer_wall_seconds": 6.419846000004327,
+      "phase": "validated",
+      "provider": "openrouter",
+      "provider_allowlist": [
+        "Anthropic"
+      ],
+      "request_byte_limit": 524288,
+      "request_bytes": 24320,
+      "request_sha256": "b93949170a88bd0a8e5a0afea5b720cb780e17cb06a11899f7ea4aae3ac3d325",
+      "request_started": true,
+      "requested_model": "anthropic/claude-haiku-5.5:reasoning=low:wire=openrouter-strict-flat-ast-5:providers=e50a4d52ae3c32830e74ac1c403634f872dcd68f94f2ca11c8e771c2bd30915a",
+      "require_parameters": true,
+      "response_complete": true,
+      "response_format": "json_schema",
+      "source_id": "unseen-act-cooperatives",
+      "stream": false,
+      "strict": true,
+      "ttft_seconds": 6.417410833004396,
+      "usage": {
+        "input_tokens": 9515,
+        "output_tokens": 1147
+      },
+      "wire_protocol": "openrouter-strict-flat-ast-5",
+      "wire_schema_complexity": {
+        "optional_parameters": 0,
+        "union_parameters": 0
+      },
+      "wire_schema_sha256": "e97afbfe60d7805eade82b4b6c29121dfd5a60a1976f1fa6c005a5df67e910c5"
+    },
+    {
+      "backend_provider": "Anthropic",
+      "call_id": "64ffbd5b4a01e3b54c675306",
+      "cost_basis": "OpenRouter reported cost, not invoice",
+      "cost_usd": 0.0016715,
+      "finish_reason": "stop",
+      "generation_id": "gen-1791958426-bXKa27NNufctiHlyh85p",
+      "host_schema_sha256": "14fd070011077a71e14d2883c2cc28ab108d4e7c65a9fc7fcd24cc3fb74ad32c",
+      "http_status": 200,
+      "model": "anthropic/claude-haiku-5.5",
+      "outcome": "success",
+      "outer_wall_seconds": 4.271194375003688,
+      "phase": "validated",
+      "provider": "openrouter",
+      "provider_allowlist": [
+        "Anthropic"
+      ],
+      "request_byte_limit": 524288,
+      "request_bytes": 36871,
+      "request_sha256": "cfb43f6e004f581b9f2d7f290bb081a8f16ba955856eb03f7d81e5dededa4b15",
+      "request_started": true,
+      "requested_model": "anthropic/claude-haiku-5.5:reasoning=low:wire=openrouter-strict-flat-ast-5:providers=e50a4d52ae3c32830e74ac1c403634f872dcd68f94f2ca11c8e771c2bd30915a",
+      "require_parameters": true,
+      "response_complete": true,
+      "response_format": "json_schema",
+      "source_id": "unseen-act-cooperatives",
+      "stream": false,
+      "strict": true,
+      "ttft_seconds": 4.270190083014313,
+      "usage": {
+        "input_tokens": 13720,
+        "output_tokens": 599
+      },
+      "wire_protocol": "openrouter-strict-flat-ast-5",
+      "wire_schema_complexity": {
+        "optional_parameters": 0,
+        "union_parameters": 1
+      },
+      "wire_schema_sha256": "9b0d348ea734407032aa2113115ceb21aa59bba714de424dffad1db212f7e76f"
+    }
+  ],
+  "recorded_at": "2026-10-14T06:14:22.119774+00:00",
+  "scores": {
+    "frozen_labels_sha256": "356bf29ae3be6eaa6ec0d65220a211195604233688ccb17157e57e5e7c71ca1b",
+    "human_gold": false,
+    "limitation": "One labelled source, one execution. Source-agreement labels are not human gold or a broad generalisation claim. Missing/invalid output remains N/A with frozen denominators.",
+    "results": [
+      {
+        "abstention_opportunities": {
+          "address.full": 17,
+          "address.locality": 17,
+          "address.postcode": 17,
+          "address.state": 17,
+          "entity.abn": 17,
+          "entity.acn": 17,
+          "entity.date_registered": 17,
+          "entity.industry_code": 17,
+          "entity.nzbn": 17,
+          "entity.trading_name": 17,
+          "entity.website": 17
+        },
+        "accuracy_status": "N/A",
+        "configuration": {
+          "exists": false,
+          "mapped_targets": [],
+          "mapping_count": 0
+        },
+        "coverage": null,
+        "guard_errors": {},
+        "metrics": null,
+        "native_record_count": 17,
+        "output_exists": false,
+        "positive_branches": {
+          "explicit_active_registration_status": 17,
+          "registered_cooperative_name": 17
+        },
+        "positive_opportunities": {
+          "entity.legal_name": 17,
+          "entity.status": 17
+        },
+        "run": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/unseen-source/unseen-act-cooperatives",
+        "source_id": "unseen-act-cooperatives",
+        "status": "missing_output",
+        "workflow": {
+          "candidate_status": "unavailable",
+          "error": null,
+          "execution_status": null,
+          "extraction_error_count": 0,
+          "onboarding_status": "partial",
+          "runner_status": "no_validated_candidate",
+          "task_status": "not_configured",
+          "unresolved_requirements": []
+        }
+      }
+    ],
+    "scorer_sha256": "a9cae67d578e97db719b7587ade6af1dfebffe6314bb6dfe64c1aababa0ed6ee",
+    "status_counts": {
+      "missing_output": 1
+    }
+  },
+  "summary": {
+    "completed_at": "2026-10-14T06:13:50.518713+00:00",
+    "cost_basis": "Provider receipts; not invoice",
+    "cost_complete": true,
+    "downstream": null,
+    "human_approved_configs": 0,
+    "human_link_reviews": 0,
+    "inputs_and_labels_unchanged": true,
+    "model_calls": 6,
+    "reported_cost_usd": 0.0078227,
+    "reported_tokens": 59435,
+    "results": [
+      {
+        "candidate_status": "unavailable",
+        "completed_at": "2026-10-14T06:13:50.517815+00:00",
+        "onboarding_status": "partial",
+        "source_id": "unseen-act-cooperatives",
+        "started_at": "2026-10-14T06:13:12.967964+00:00",
+        "status": "no_validated_candidate",
+        "task_status": "not_configured",
+        "wall_seconds": 37.56018979201326
+      }
+    ],
+    "runner_unchanged": true,
+    "runtime_unchanged": true,
+    "stop_reason": null,
+    "wall_seconds": 37.56474916599109
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "archive": "evidence/evaluation-traces.tar.gz",
+  "prior_reference": {
+    "archive_prefix": "before-general-fix",
+    "six_sources": {
+      "runtime_fingerprint": "bec320c33a982dcfd5e31f9e0c8c74d68401ea0855643a07028855adbf5e40de",
+      "started_at": "2026-10-14T05:13:33.659324+00:00",
+      "calls": 75,
+      "reported_cost_usd": 0.1914494,
+      "wall_seconds": 220.76128620901727,
+      "status_counts": {
+        "complete_output": 6
+      },
+      "fields": {
+        "real-act-contracts-historical": {
+          "entity.abn": 759
+        },
+        "real-asic-business-names": {
+          "entity.abn": 802,
+          "entity.trading_name": 888
+        },
+        "real-asic-companies": {
+          "entity.abn": 389,
+          "entity.acn": 389,
+          "entity.date_registered": 389,
+          "entity.legal_name": 389
+        },
+        "real-ato-corporate-tax": {
+          "entity.abn": 4400
+        },
+        "real-qbcc": {
+          "address.full": 1000,
+          "entity.abn": 623,
+          "entity.acn": 326
+        },
+        "real-suitable-operators": {
+          "address.locality": 14825,
+          "address.postcode": 14825,
+          "address.state": 14825,
+          "entity.abn": 299,
+          "entity.acn": 7901,
+          "entity.entity_type": 8184
+        }
+      },
+      "human_gold": false,
+      "human_link_reviews": 0
+    }
+  },
+  "repair_attempts": [
+    {
+      "archive_prefix": "first-general-fix",
+      "six_sources": {
+        "runtime_fingerprint": "e8e29bf23ad9f2a153934e0f082c27043c3b559242d117cca5aa0276ef10a1cd",
+        "started_at": "2026-10-14T05:45:12.688252+00:00",
+        "calls": 83,
+        "reported_cost_usd": 0.2279006,
+        "wall_seconds": 252.29758995899465,
+        "status_counts": {
+          "complete_output": 6
+        },
+        "fields": {
+          "real-act-contracts-historical": {
+            "entity.abn": 759
+          },
+          "real-asic-business-names": {
+            "entity.abn": 802
+          },
+          "real-asic-companies": {
+            "entity.abn": 389,
+            "entity.acn": 389,
+            "entity.date_registered": 389,
+            "entity.entity_type": 386,
+            "entity.legal_name": 389,
+            "entity.status": 3
+          },
+          "real-ato-corporate-tax": {
+            "entity.abn": 4400
+          },
+          "real-qbcc": {
+            "address.full": 1000,
+            "entity.abn": 623,
+            "entity.acn": 326
+          },
+          "real-suitable-operators": {
+            "address.locality": 14825,
+            "address.postcode": 14825,
+            "address.state": 14825,
+            "entity.abn": 299,
+            "entity.acn": 7901,
+            "entity.entity_type": 8184
+          }
+        },
+        "human_gold": false,
+        "human_link_reviews": 0
+      },
+      "held_out": {
+        "runtime_fingerprint": "e8e29bf23ad9f2a153934e0f082c27043c3b559242d117cca5aa0276ef10a1cd",
+        "started_at": "2026-10-14T05:49:55.996291+00:00",
+        "calls": 10,
+        "reported_cost_usd": 0.0209386,
+        "wall_seconds": 67.4039244580199,
+        "status_counts": {
+          "complete_output": 1
+        },
+        "fields": {
+          "unseen-act-nowaste": {
+            "entity.abn": 193,
+            "entity.acn": 158,
+            "entity.legal_name": 193,
+            "entity.trading_name": 127
+          }
+        },
+        "human_gold": false,
+        "human_link_reviews": 0
+      },
+      "decision": "Do not promote as stable: BN trading names regressed 888 to 0. Keep its successful held-out result bound only to this runtime. Add general planner feedback for unchanged execution, binding/evidence changes and recurring diagnostics; retain existing semantic review criteria."
+    }
+  ],
+  "policy": "One active runtime and current run directories. All attempted cohorts remain counted; no best-per-source mixing or hidden retries.",
+  "current": {
+    "archive_prefix": "current",
+    "six_sources": {
+      "runtime_fingerprint": "18984daebde13d47999f8bdbc3b4758074db27e0159799ee4506c185ff9e75b3",
+      "started_at": "2026-10-14T06:08:42.056930+00:00",
+      "calls": 66,
+      "reported_cost_usd": 0.1580661,
+      "wall_seconds": 227.97379366701352,
+      "status_counts": {
+        "complete_output": 6
+      },
+      "fields": {
+        "real-act-contracts-historical": {
+          "entity.abn": 759
+        },
+        "real-asic-business-names": {
+          "entity.abn": 802,
+          "entity.trading_name": 888
+        },
+        "real-asic-companies": {
+          "entity.abn": 389,
+          "entity.acn": 389,
+          "entity.date_registered": 389,
+          "entity.entity_type": 389,
+          "entity.legal_name": 389,
+          "entity.status": 3
+        },
+        "real-ato-corporate-tax": {
+          "entity.abn": 4400
+        },
+        "real-qbcc": {
+          "address.full": 1000,
+          "entity.abn": 623,
+          "entity.acn": 326
+        },
+        "real-suitable-operators": {
+          "address.locality": 14825,
+          "address.postcode": 14825,
+          "address.state": 14825,
+          "entity.abn": 299,
+          "entity.acn": 7901,
+          "entity.entity_type": 8184
+        }
+      },
+      "human_gold": false,
+      "human_link_reviews": 0
+    },
+    "held_out": {
+      "runtime_fingerprint": "18984daebde13d47999f8bdbc3b4758074db27e0159799ee4506c185ff9e75b3",
+      "started_at": "2026-10-14T06:13:12.955328+00:00",
+      "calls": 6,
+      "reported_cost_usd": 0.0078227,
+      "wall_seconds": 37.56474916599109,
+      "status_counts": {
+        "missing_output": 1
+      },
+      "fields": {
+        "unseen-act-cooperatives": null
+      },
+      "human_gold": false,
+      "human_link_reviews": 0
+    },
+    "decision": "Six-source labelled fields recovered, with four unresolved legal-name tasks. Frozen-runtime Cooperatives holdout failed to produce a validated config. Generalisation and repeatability remain unproven; retain the failure and do not replace it with the earlier NoWaste success."
+  },
+  "this_change_validation_usage": {
+    "calls": 165,
+    "reported_tokens": 3116204,
+    "reported_cost_usd": 0.414728,
+    "scope": "Both repair attempts, including both holdouts; excludes preceding reference run and older project development. Provider receipts, not invoice."
+  }
+}

@@ -1,4 +1,4 @@
-"""Score one six-source development run offline against frozen, narrow labels.
+"""Score a six-source run or one supplied source against frozen, narrow labels.
 
 Labels never enter inference. Missing or invalid output has no quality score;
 coverage of unlabelled fields is not correctness or human approval.
@@ -52,8 +52,8 @@ def coverage(rows):
     }
 
 
-def input_records(project, source_id, labels):
-    root = project / "data/assessment-inputs" / source_id / "evidence"
+def input_records(project, source_id, labels, evidence_root=None):
+    root = evidence_root or project / "data/assessment-inputs" / source_id / "evidence"
     original = Path(labels["evidence_root"])
     expected = {
         Path(path).relative_to(original).as_posix(): sha
@@ -160,7 +160,7 @@ def labelled_metrics(rows, labels):
     }
 
 
-def score_source(project, run_root, source_id, labels):
+def score_source(project, run_root, source_id, labels, evidence_root=None):
     run = run_root / source_id
     result = {
         "source_id": source_id,
@@ -176,7 +176,7 @@ def score_source(project, run_root, source_id, labels):
         "guard_errors": {},
     }
     try:
-        native = input_records(project, source_id, labels)
+        native = input_records(project, source_id, labels, evidence_root)
     except (ValueError, Failure, OSError) as exc:
         result.update(status="input_binding_failed", error=str(exc))
         return result
@@ -268,18 +268,29 @@ def score_source(project, run_root, source_id, labels):
         return result
 
 
-def score_run(run_root, project=PROJECT):
-    label_path = project / "evidence/six-source-frozen-labels.json"
+def score_run(run_root, project=PROJECT, *, label_path=None, evidence_root=None):
+    supplied_labels = label_path is not None
+    label_path = label_path or project / "evidence/six-source-frozen-labels.json"
     labels = read_json(label_path)
-    historical = read_json(project / "evidence/six-source-scores.json")
+    if supplied_labels and (evidence_root is None or len(labels["sources"]) != 1):
+        raise ValueError(
+            "Supplied labels require exactly one source and its evidence root"
+        )
+    historical = (
+        {"results": []}
+        if supplied_labels
+        else read_json(project / "evidence/six-source-scores.json")
+    )
     previous = {
         r["source_id"]: r for r in historical["results"] if r["repetition"] == 2
     }
     results = [
-        score_source(project, run_root, source, data)
+        score_source(project, run_root, source, data, evidence_root)
         for source, data in sorted(labels["sources"].items())
     ]
     for result in results:
+        if result["source_id"] not in previous:
+            continue
         old = previous[result["source_id"]]
         result["selected_r2_reference"] = {
             k: old.get(k)
@@ -297,18 +308,30 @@ def score_run(run_root, project=PROJECT):
         "scorer_sha256": byte_hash(Path(__file__).read_bytes()),
         "status_counts": dict(Counter(r["status"] for r in results)),
         "results": results,
-        "limitation": "Single seen-source repetition, not stability or unseen generalisation. No pooled accuracy. Companies names389, current business names888 and SOR types8184 have positive labels; ATO/QBCC/ACT have coverage only. Missing/invalid output remains N/A with frozen denominators. Historical reference is a separate earlier run.",
+        "limitation": (
+            "One labelled source, one execution. Source-agreement labels are not human gold or a broad generalisation claim. Missing/invalid output remains N/A with frozen denominators."
+            if supplied_labels
+            else "Single seen-source repetition, not stability or unseen generalisation. No pooled accuracy. Companies names389, current business names888 and SOR types8184 have positive labels; ATO/QBCC/ACT have coverage only. Missing/invalid output remains N/A with frozen denominators. Historical reference is a separate earlier run."
+        ),
     }
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("run_root", type=Path)
+    parser.add_argument(
+        "--labels", type=Path, help="Frozen single-source evaluation labels"
+    )
+    parser.add_argument(
+        "--evidence-root", type=Path, help="Original evidence for the labelled source"
+    )
     args = parser.parse_args()
+    if (args.labels is None) != (args.evidence_root is None):
+        parser.error("--labels and --evidence-root must be supplied together")
     root = args.run_root.resolve()
     if not root.is_dir():
         parser.error("run_root must be an existing directory")
-    result = score_run(root)
+    result = score_run(root, label_path=args.labels, evidence_root=args.evidence_root)
     destination = root / "scores.json"
     destination.write_bytes(canonical(result) + b"\n")
     print(

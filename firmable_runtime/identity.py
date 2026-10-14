@@ -14,7 +14,7 @@ from datetime import datetime
 from .common import Failure, canonical, digest
 from .engine import ENUMS, canonical_valid, parse_typed_identifier
 
-IDENTITY_VERSION = "common-anchor-0.2-subject-kind"
+IDENTITY_VERSION = "common-anchor-0.3-subject-review"
 PROFILE_VERSION = "evidence-order-0.2-informative"
 MAX_ID_BUCKET = 200
 
@@ -183,6 +183,11 @@ def _pair_reason(left, right, anchor):
         return "inconsistent_record_subject_kind"
     if kinds[0] and kinds[1] and kinds[0] != kinds[1]:
         return "person_company_subject_conflict"
+    # A person's row can carry an associated business identifier. Losing the
+    # other record's type does not establish that it describes the same person.
+    # Leave ownership unresolved instead of treating missing evidence as assent.
+    if any(kinds[index] == {"person"} and not kinds[1 - index] for index in (0, 1)):
+        return "person_unknown_subject_needs_review"
     if left["names"] and right["names"]:
         pairs = [
             (_normal_name(a), _normal_name(b))
@@ -255,6 +260,7 @@ def link_records(
                     if reason in {
                         "person_company_subject_conflict",
                         "inconsistent_record_subject_kind",
+                        "person_unknown_subject_needs_review",
                     }:
                         decisions[-1]["subject_kind_evidence"] = {
                             "left": copy.deepcopy(
@@ -321,7 +327,7 @@ def link_records(
                 "anchor": list(anchor),
                 "link_confidence": 0.99,
                 "pairs": pairs,
-                "evidence": "Every member shares the qualified same-type anchor; all pairs checked for conflicts",
+                "evidence": "Every member shares the qualified same-type anchor; all pairs checked for conflicts. The fixed policy score is not a calibrated identity probability.",
             }
         )
     for decision in decisions:

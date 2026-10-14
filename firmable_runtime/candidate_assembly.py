@@ -48,9 +48,11 @@ native header. A condition flag's definition cannot replace the value field's de
 intended transformation and whether the claim is informative or an explicit unknown_abstention.
 unknown_abstention is only for a canonical enum that permits the literal "unknown".
 Within the selected backend's capabilities, an explicit natural-language category directly equivalent
-to a canonical enum may be normalized without a separate code crosswalk; opaque codes still require
-a source-defined crosswalk. Abstain on each mixed or ambiguous category individually; its ambiguity
-does not invalidate other clear categories in that field.
+to a canonical enum may be normalized without a separate code crosswalk. A code may also be
+normalized when its own original field definition explicitly gives that equivalent meaning;
+the source need not name the canonical field or enum. An unexplained code remains unresolved.
+Abstain on each mixed or ambiguous category individually; its ambiguity does not invalidate other
+clear categories in that field.
 A field with no supported output, including an unresolved name, belongs in unmapped_fields;
 do not create an empty name mapping. Its frozen task requirement still remains unresolved.
 For llm_task, provide exactly one mapping per canonical field; combine its source fields and
@@ -84,8 +86,10 @@ are fixed for this task; every expression must use exactly its declared source_f
 complete original documentation, including all conditions, rather than treating the manifest's
 rationale as proof. Use supported operations, exact native field names and source-backed enums.
 An explicit natural-language category directly equivalent to a canonical enum may be normalized
-without a separate code crosswalk; opaque codes still require a source-defined crosswalk. Abstain
-only on mixed or ambiguous categories, preserving supported alternatives in the same field.
+without a separate code crosswalk. For codes, require an explicit code-to-meaning relation in that
+field's original definition and a directly equivalent canonical enum; the source need not use
+canonical schema names. Unexplained codes remain unresolved. Abstain only on mixed or ambiguous
+categories, preserving supported alternatives in the same field.
 Do not silently copy a historical name where a current name is required. Omit unsupported values.
 For repairs, locate feedback in its actual candidate using mapping_index, canonical_field,
 source_fields and the supplied AST pointer, branch or enum entry, then match the current manifest
@@ -121,8 +125,14 @@ field and documented condition for additional in-scope targets, including clear 
 within an otherwise ambiguous field. Caller-required fields are a minimum, not the entire
 discovery scope. Do not infer names, subject ownership, dates or category crosswalks to raise
 coverage. Return a complete revised manifest, retaining its existing target groups; their
-remain unvalidated and must be checked by the compiler/reviewer. New mappings need exact source evidence
-and all predicate/value dependencies. Fields used only as conditions need no separate target.
+meaning remains unvalidated and must be checked by the compiler/reviewer. New mappings need exact
+source evidence and all predicate/value dependencies. A field used as a predicate or other
+dependency may also supply an independent canonical value. Its use in source_fields does not
+establish that its own meaning has been assessed. dependency_only_native_fields lists fields
+not yet proposed as any mapping's primary source_field; it does not establish that they are
+condition-only or unsupported. Reconsider their original definitions for independent outputs,
+including documented code meanings. If no independent output is supported, keep the dependency
+without inventing a target and explain the omission in unmapped_fields.
 No ontology counterpart, different subject/event, insufficient evidence and an unexplored
 opportunity are different reasons; don't declare an opportunity unsupported because it was
 absent from the prior manifest. This review still needs execution and semantic checks."""
@@ -480,10 +490,26 @@ def generate_candidate(runtime, candidate_id, backend, turn, context):
                         "prior_target_groups": [
                             {
                                 "canonical_field": item["canonical_field"],
+                                "source_field": item["source_field"],
                                 "source_fields": item["source_fields"],
                             }
                             for item in previous["field_mappings"]
                         ],
+                        # Dependency use is not independent value coverage. Keep
+                        # this opportunity visible even if the prior proposal
+                        # omitted it from unmapped_fields; reasons stay in the
+                        # original manifest, not as evidence for this fresh pass.
+                        "dependency_only_native_fields": sorted(
+                            {
+                                field
+                                for item in previous["field_mappings"]
+                                for field in item["source_fields"]
+                            }
+                            - {
+                                item["source_field"]
+                                for item in previous["field_mappings"]
+                            }
+                        ),
                         "unmapped_native_fields": [
                             item["source_field"] for item in previous["unmapped_fields"]
                         ],

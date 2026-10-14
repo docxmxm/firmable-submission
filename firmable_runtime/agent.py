@@ -11,8 +11,8 @@ from pathlib import Path
 
 from .common import Failure, canonical, digest
 from .acceptance import evaluate_acceptance, freeze_requirements, unresolved_history
-from .candidate_assembly import generate_candidate
-from .engine import canonical_valid
+from .candidate_assembly import TIME_SLOTS, generate_candidate
+from .engine import ast_nodes, canonical_valid
 from .native import public_structure
 from .field_evidence import inspect_field_evidence
 from .runtime import source_output_summary
@@ -109,6 +109,11 @@ INSTRUCTIONS += """ New field-lookup quota and decision quota are separate. Exha
 does not remove original documentation, headers or cached evidence, and does not prevent revising
 an expression or evidence reference using that existing material. Diagnose representation errors
 separately from absence of semantic evidence before stopping."""
+INSTRUCTIONS += """ Use repair_progress to distinguish actual AST/binding/evidence changes from
+cosmetic revisions. Repeated structural diagnostics do not prove the same semantic root cause.
+Reviewer repair_hint text is a suggestion to verify against original evidence, not a source rule.
+For unchanged execution with repeated errors, inspect available field evidence or use cached
+original context to make a supported revision; if support is insufficient, explain the gap."""
 
 
 def decision_schema():
@@ -652,6 +657,212 @@ def _candidate_material(runtime, candidate):
         else None
     )
     return config, review
+
+
+def _repair_signatures(config):
+    """Describe candidate changes without judging semantics or executing its AST."""
+    from .execution import pointer_get
+
+    def expression(value):
+        value = copy.deepcopy(value)
+        for _, node in ast_nodes(value):
+            if node["op"] == "omit":
+                node.pop("reason", None)
+        return value
+
+    result = {"status": "unavailable"}
+    try:
+        mappings = config["field_mappings"]
+        bindings = [
+            {
+                "canonical_field": mapping["canonical_field"],
+                "source_field": mapping["source_field"],
+                "source_fields": sorted(mapping["source_fields"]),
+            }
+            for mapping in mappings
+        ]
+        result["target_binding"] = digest(
+            {
+                "source_schema": config["source_schema"],
+                "mappings": sorted(bindings, key=canonical),
+            }
+        )
+        result["semantic_evidence"] = digest(
+            sorted(
+                [
+                    [
+                        binding,
+                        mapping.get("semantic_evidence"),
+                        mapping.get("claim_kind", "informative"),
+                    ]
+                    for binding, mapping in zip(bindings, mappings)
+                ],
+                key=canonical,
+            )
+        )
+        execution = config["execution"]
+        if execution.get("kind", "ast") != "ast":
+            result["reason"] = (
+                "AST execution comparison is unavailable for this backend"
+            )
+            return result
+        metadata = copy.deepcopy(
+            {
+                key: value
+                for key, value in execution.items()
+                if key not in {"kind", "transforms"}
+            }
+        )
+        for slot in TIME_SLOTS:
+            if slot in metadata:
+                metadata[slot]["ast"] = expression(metadata[slot]["ast"])
+        result["execution"] = digest(
+            {
+                "mappings": sorted(
+                    [
+                        [
+                            binding,
+                            expression(
+                                pointer_get(config, mapping["execution_pointer"])
+                            ),
+                        ]
+                        for binding, mapping in zip(bindings, mappings)
+                    ],
+                    key=canonical,
+                ),
+                "execution_metadata": metadata,
+            }
+        )
+        result["status"] = "available"
+    except (Failure, KeyError, IndexError, TypeError, ValueError, AttributeError):
+        # A malformed candidate is existing repair feedback, not a new fatal error.
+        result["reason"] = "Candidate bindings or AST cannot be structurally compared"
+    return result
+
+
+def _repair_progress(runtime, state, lookups):
+    """Purely derive planner feedback from immutable candidate and lookup artifacts."""
+    ordered = sorted(
+        state["candidates"],
+        key=lambda ident: (state["candidates"][ident]["decision_turn"], ident),
+    )
+    if not ordered:
+        return {"status": "no_prior_candidate"}
+
+    def lookup_snapshot(ident):
+        name = "candidate-context-" + ident
+        if name not in runtime.run.state["artifacts"]:
+            return None
+        saved = runtime.run.load_artifact(name)
+        if (
+            saved.get("candidate_id") != ident
+            or saved.get("decision_turn") != state["candidates"][ident]["decision_turn"]
+        ):
+            return None
+        return {
+            item["source_field"]: digest(item["receipt_ref"])
+            for item in saved["context"].get("field_evidence_memory", [])
+        }
+
+    def added_lookups(before, after):
+        return (
+            None
+            if before is None or after is None
+            else sorted(
+                field
+                for field, receipt in after.items()
+                if before.get(field) != receipt
+            )
+        )
+
+    summaries = {}
+    for ident in ordered:
+        candidate = state["candidates"][ident]
+        config, _ = _candidate_material(runtime, candidate)
+        feedback = candidate.get("validation_feedback", candidate["feedback"])
+        diagnostics = [
+            {
+                key: copy.deepcopy(error[key])
+                for key in (
+                    "reason_code",
+                    "canonical_field",
+                    "source_fields",
+                    "pointer",
+                    "error_scope",
+                )
+                if key in error
+            }
+            | {
+                "branch_ids": sorted(
+                    {
+                        branch["branch_id"]
+                        for branch in error.get("branch_diagnostics", [])
+                        if "branch_id" in branch
+                    }
+                )
+            }
+            for error in feedback.get("errors", [])
+        ]
+        error_count = feedback.get("error_count", len(diagnostics))
+        summaries[ident] = {
+            "config_hash": candidate["config_hash"],
+            **_repair_signatures(config),
+            "diagnostics": digest(
+                {
+                    "scope": "development_validation"
+                    if "validation_feedback" in candidate
+                    else "proposal",
+                    "errors": sorted(diagnostics, key=canonical),
+                    "error_count": error_count,
+                }
+            )
+            if diagnostics or error_count
+            else None,
+        }
+    latest_id = ordered[-1]
+    latest = summaries[latest_id]
+    previous_id = ordered[-2] if len(ordered) > 1 else None
+    previous = summaries[previous_id] if previous_id else {}
+    latest_lookups = lookup_snapshot(latest_id)
+    return {
+        "scope": "Structural comparison only, not semantic equivalence or approval. Execution includes target bindings and time/subject metadata; descriptions, confidence and omit reasons are excluded. Changed evidence declarations are not verified source evidence.",
+        "latest_candidate_id": latest_id,
+        "latest_signatures": latest,
+        "compared_candidate_id": previous_id,
+        "compared_config_hash": previous.get("config_hash"),
+        "changes": {
+            key + "_changed": None
+            if not previous.get(key) or not latest.get(key)
+            else previous[key] != latest[key]
+            for key in (
+                "execution",
+                "target_binding",
+                "semantic_evidence",
+            )
+        },
+        "same_execution_candidate_ids": [
+            ident
+            for ident in ordered[:-1]
+            if latest.get("execution") is not None
+            and summaries[ident].get("execution") == latest["execution"]
+        ],
+        "repeated_structured_diagnostic_candidate_ids": [
+            ident
+            for ident in ordered[:-1]
+            if latest["diagnostics"] is not None
+            and summaries[ident]["diagnostics"] == latest["diagnostics"]
+        ],
+        "new_lookup_receipts_between_candidates": added_lookups(
+            lookup_snapshot(previous_id), latest_lookups
+        )
+        if previous_id
+        else None,
+        "new_lookup_receipts_since_latest_candidate": added_lookups(
+            latest_lookups,
+            {item["source_field"]: digest(item["receipt_ref"]) for item in lookups},
+        ),
+        "lookup_limitation": "Receipt changes show inspection, not new semantic support. Original docs and cached field_evidence_memory remain usable when tool_availability has no new lookup quota; null means no candidate lookup snapshot.",
+    }
 
 
 def _candidate_execution(runtime, candidate, records, *, development=False):
@@ -1542,6 +1753,7 @@ def onboard_source(request, provider=None):
             "task_requirements": requirements,
             "unresolved_requirement_history": unresolved_history(state["candidates"]),
             "candidates": candidates,
+            "repair_progress": _repair_progress(runtime, state, lookups),
             "feedback": state["feedback"],
             "decision_turn": state["turn"],
             "field_evidence_memory": lookups,
