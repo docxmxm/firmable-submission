@@ -330,7 +330,9 @@ class CandidateRepairTests(unittest.TestCase):
             raw_label = "Individual/~or sole trader"
             docs = (
                 form + ": Legal form of the business; unknown means company.\n"
-                "Alternative Type: Legal form of the business.\n"
+                # Give the fallback its own role definition without an ambiguous
+                # mention of the separate native field named "Legal Form".
+                "Alternative Type: Entity type of the business.\n"
                 "ABN: Australian Business Number.\n"
             )
             for position in ("predicate", "outer_conversion"):

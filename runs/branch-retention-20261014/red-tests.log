@@ -1,0 +1,35 @@
+FFF
+======================================================================
+FAIL: test_local_name_repair_preserves_condition_and_requires_fresh_review (test_branch_retention.BranchRetentionTests.test_local_name_repair_preserves_condition_and_requires_fresh_review) (labels=('label_a', 'label_b', 'mode'))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/tests/test_branch_retention.py", line 97, in test_local_name_repair_preserves_condition_and_requires_fresh_review
+    self.assertEqual(result['task_status'], 'complete', 'Supported current branch was lost with the disputed branch')
+AssertionError: 'partial' != 'complete'
+- partial
++ complete
+ : Supported current branch was lost with the disputed branch
+
+======================================================================
+FAIL: test_local_name_repair_preserves_condition_and_requires_fresh_review (test_branch_retention.BranchRetentionTests.test_local_name_repair_preserves_condition_and_requires_fresh_review) (labels=('x91', 'z42', 'switch_8'))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/tests/test_branch_retention.py", line 97, in test_local_name_repair_preserves_condition_and_requires_fresh_review
+    self.assertEqual(result['task_status'], 'complete', 'Supported current branch was lost with the disputed branch')
+AssertionError: 'partial' != 'complete'
+- partial
++ complete
+ : Supported current branch was lost with the disputed branch
+
+======================================================================
+FAIL: test_same_target_loss_still_probes_supported_enum_alternative (test_branch_retention.BranchRetentionTests.test_same_target_loss_still_probes_supported_enum_alternative)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/tests/test_branch_retention.py", line 131, in test_same_target_loss_still_probes_supported_enum_alternative
+    self.assertTrue((artifacts/'host-subset-repair-plan.json').exists(), 'Keeping the target must not hide lost supported enum values')
+AssertionError: False is not true : Keeping the target must not hide lost supported enum values
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.292s
+
+FAILED (failures=3)

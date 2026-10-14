@@ -8,15 +8,21 @@ same-origin references in captured originals; source code is never executed.
 from __future__ import annotations
 
 import copy
+import io
 import mimetypes
 import re
+import ssl
 import time
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urldefrag, urljoin, urlsplit
-from urllib.request import HTTPRedirectHandler, Request, build_opener
+from urllib.request import HTTPRedirectHandler, HTTPSHandler, Request, build_opener
+
+import certifi
+from pypdf import PdfReader
 
 from .common import atomic_json, byte_hash, digest, safe_path, strict_json, utc_now
+from .source_document_tools import MAX_DOCUMENT_PAGES
 
 
 DEFAULT_LIMITS = {
@@ -37,6 +43,9 @@ TEXT_TYPES = {
     "application/ld+json",
     "text/plain",
 }
+CAPTURE_TYPES = TEXT_TYPES | {"application/pdf"}
+MAX_PDF_TEXT_CHARS = 2_000_000
+MAX_PDF_CONTENT_BYTES = 16_000_000
 LITERAL_ASSET = re.compile(
     r"(?P<quote>['\"])(?P<value>(?:\.{0,2}/|https://|[A-Za-z0-9_~-])[^'\"\s<>\\]{1,2000}"
     r"\.(?:m?js|json|html?|css)(?:\?[^'\"\s<>\\]*)?)(?P=quote)"
@@ -88,6 +97,70 @@ def _media(value, url):
     return value.split(";", 1)[0].strip().lower()
 
 
+def _capture_text(data, media):
+    if media != "application/pdf":
+        return data.decode("utf-8", errors="replace"), {}
+    try:
+        reader = PdfReader(io.BytesIO(data))
+        if reader.is_encrypted:
+            raise ValueError("Encrypted PDF capture is unsupported")
+        if len(reader.pages) > MAX_DOCUMENT_PAGES:
+            raise ValueError("PDF capture exceeds page limit")
+        texts, pages, total, content_bytes = [], [], 0, 0
+        for number, page in enumerate(reader.pages, 1):
+            contents = page.get_contents()
+            if contents is not None:
+                content_bytes += len(contents.get_data())
+                if content_bytes > MAX_PDF_CONTENT_BYTES:
+                    raise ValueError("PDF capture exceeds decoded content limit")
+            text = (
+                page.extract_text(extraction_mode="layout") or ""
+                if contents is not None
+                else ""
+            )
+            start = total + bool(texts)
+            total = start + len(text)
+            if total > MAX_PDF_TEXT_CHARS:
+                raise ValueError("PDF capture exceeds extracted text limit")
+            texts.append(text)
+            pages.append(
+                {
+                    "page_number": number,
+                    "start": start,
+                    "end": total,
+                    "text_sha256": byte_hash(text.encode("utf-8")),
+                    "ocr_required": not text.strip(),
+                }
+            )
+    except ValueError:
+        raise
+    except Exception as exc:
+        raise ValueError("PDF text extraction failed: " + type(exc).__name__) from exc
+    if not any(text.strip() for text in texts):
+        raise ValueError("PDF has no extractable text; OCR is unsupported")
+    text = "\f".join(texts)
+    return text, {
+        "extraction": "pypdf_layout",
+        "offset_unit": "Unicode characters in pypdf_layout page text joined with formfeed",
+        "text_sha256": byte_hash(text.encode("utf-8")),
+        "pdf_pages": pages,
+    }
+
+
+def _pdf_page_spans(asset, start, end):
+    return [
+        {
+            "page_number": page["page_number"],
+            "page_text_sha256": page["text_sha256"],
+            "start": max(start, page["start"]) - page["start"],
+            "end": min(end, page["end"]) - page["start"],
+            "offset_unit": "Unicode characters in this pypdf_layout page",
+        }
+        for page in asset["pdf_pages"]
+        if page["start"] < end and page["end"] > start
+    ]
+
+
 class _HTMLIndex(HTMLParser):
     def __init__(self, text):
         super().__init__(convert_charrefs=True)
@@ -95,6 +168,8 @@ class _HTMLIndex(HTMLParser):
         self.starts = [0] + [m.end() for m in re.finditer("\n", text)]
         self.script = None
         self.bases = []
+        self.sections = []
+        self.reading_blocks = []
 
     def source_offset(self):
         line, column = self.getpos()
@@ -121,6 +196,22 @@ class _HTMLIndex(HTMLParser):
                 "embedded_json" if "json" in attrs.get("type", "") else "inline_script"
             )
             self.script = (kind, end)
+        if tag in {
+            "title",
+            "h1",
+            "h2",
+            "h3",
+            "h4",
+            "main",
+            "article",
+            "p",
+            "dt",
+            "dd",
+            "caption",
+            "th",
+            "a",
+        }:
+            self.sections.append((tag, start, end))
 
     def handle_endtag(self, tag):
         if tag == "script" and self.script is not None:
@@ -129,6 +220,25 @@ class _HTMLIndex(HTMLParser):
                 {"kind": kind, "start": start, "end": self.source_offset()}
             )
             self.script = None
+        for index in range(len(self.sections) - 1, -1, -1):
+            name, start, content_start = self.sections[index]
+            if name != tag:
+                continue
+            end = self.source_offset()
+            if self.text[content_start:end].strip():
+                self.reading_blocks.append(
+                    {
+                        "kind": "html_" + tag,
+                        "start": start,
+                        "end": end,
+                        "source_preview": self.text[
+                            content_start : min(end, content_start + 240)
+                        ],
+                        "preview_truncated": end - content_start > 240,
+                    }
+                )
+            del self.sections[index:]
+            break
 
     def finish(self):
         self.close()
@@ -202,11 +312,51 @@ def _index(asset, text, limits):
         return _navigation_index(asset, text, limits)
     refs, blocks, omissions = [], [], []
     base_url = asset["url"]
+    if asset["media_type"] == "application/pdf":
+        blocks = [
+            {
+                **page,
+                "kind": "pdf_page",
+                "preview": text[page["start"] : min(page["end"], page["start"] + 180)],
+                "offset_unit": asset["offset_unit"],
+            }
+            for page in asset["pdf_pages"]
+        ]
+        empty_pages = [p["page_number"] for p in asset["pdf_pages"] if p["ocr_required"]]
+        if empty_pages:
+            omissions.append({"kind": "pdf_pages_require_ocr", "pages": empty_pages})
     if asset["media_type"] in {"text/html", "application/xhtml+xml"}:
         parser = _HTMLIndex(text)
         parser.feed(text)
         parser.finish()
         refs, blocks = parser.references, parser.blocks
+        # Original section offsets make a page navigable even when its wording
+        # differs from native headers. Previews are navigation, not exported quotes.
+        ranked = sorted(
+            parser.reading_blocks,
+            key=lambda block: (
+                block["kind"]
+                not in {
+                    "html_title",
+                    "html_h1",
+                    "html_h2",
+                    "html_h3",
+                    "html_h4",
+                    "html_caption",
+                    "html_th",
+                    "html_dt",
+                },
+                block["start"],
+            ),
+        )
+        if len(blocks) > 32 or len(ranked) > 32:
+            omissions.append(
+                {
+                    "kind": "document_outline_limit",
+                    "omitted": max(0, len(blocks) - 32) + max(0, len(ranked) - 32),
+                }
+            )
+        blocks = blocks[:32] + ranked[:32]
         for base in parser.bases:
             try:
                 candidate = urldefrag(urljoin(asset["url"], base["href"]))[0]
@@ -258,6 +408,12 @@ def _index(asset, text, limits):
             "fetchable": blocked is None,
             "blocked_reason": blocked,
         }
+        if asset["media_type"] == "application/pdf":
+            item.update(
+                extraction=asset["extraction"],
+                offset_unit=asset["offset_unit"],
+                pages=_pdf_page_spans(asset, start, end),
+            )
         item["reference_id"] = "ref-" + digest(item)[:24]
         if len(result) < limits["max_references_per_asset"]:
             result.append(item)
@@ -292,8 +448,12 @@ def _fetch_http(url, max_bytes):
             "Accept-Encoding": "identity",
         },
     )
+    # Use the pinned public CA bundle; host Python installations can expose a
+    # stale default trust store. Verification failures still stop this attempt.
+    context = ssl.create_default_context(cafile=certifi.where())
+    opener = build_opener(_SameOriginRedirect(), HTTPSHandler(context=context))
     deadline = time.monotonic() + 30
-    with build_opener(_SameOriginRedirect()).open(request, timeout=15) as response:
+    with opener.open(request, timeout=15) as response:
         chunks, size = [], 0
         while size <= max_bytes:
             if time.monotonic() > deadline:
@@ -355,9 +515,9 @@ def prepare_capture(capture_root, sources, *, limits=None):
             media = _media(source.get("media_type"), url)
         else:
             raise ValueError("Unknown capture seed kind")
-        if media not in TEXT_TYPES:
+        if media not in CAPTURE_TYPES:
             raise ValueError(
-                "Only original HTML/JavaScript/JSON/plain text is supported"
+                "Only original HTML/JavaScript/JSON/plain text/PDF is supported"
             )
         originals.append((url, data, media, kind))
     if sum(len(item[1]) for item in originals) > chosen["max_total_bytes"]:
@@ -414,17 +574,20 @@ class SourceAcquisition:
         data = safe_path(self.root, asset["path"]).read_bytes()
         if len(data) != asset["bytes"] or byte_hash(data) != asset["sha256"]:
             raise ValueError("Captured original hash mismatch")
-        return data.decode("utf-8", errors="replace")
+        text, extraction = _capture_text(data, asset["media_type"])
+        if any(asset.get(key) != value for key, value in extraction.items()):
+            raise ValueError("Captured PDF text or page bindings changed")
+        return text
 
     def _add(self, url, data, media, reference, *, kind="original"):
         asset_id = "asset-" + digest({"url": url, "sha256": byte_hash(data)})[:24]
         if any(a["asset_id"] == asset_id for a in self.manifest["assets"]):
             return self._asset(asset_id)
+        text, extraction = _capture_text(data, media)
         relative = f"assets/{asset_id}.source"
         path = self.root / relative
         with path.open("xb") as handle:
             handle.write(data)
-        text = data.decode("utf-8", errors="replace")
         asset = {
             "asset_id": asset_id,
             "url": url,
@@ -442,8 +605,9 @@ class SourceAcquisition:
             else reference["reference_id"],
             "parent_sha256": None if reference is None else reference["parent_sha256"],
             "text_encoding": "utf-8",
-            "decode_replacement": text.encode("utf-8") != data,
+            "decode_replacement": media != "application/pdf" and text.encode("utf-8") != data,
             "total_chars": len(text),
+            **extraction,
         }
         refs, blocks, omissions = _index(asset, text, self.limits)
         asset["embedded_blocks"] = blocks
@@ -498,7 +662,7 @@ class SourceAcquisition:
             and r["start"] >= start
             and r["end"] <= end
         ]
-        return {
+        result = {
             "asset_id": asset["asset_id"],
             "url": asset["url"],
             "sha256": asset["sha256"],
@@ -511,8 +675,17 @@ class SourceAcquisition:
             "references": references[:32],
             "reference_total": len(references),
             "reference_truncated": len(references) > 32,
-            "offset_unit": "Unicode characters in UTF-8 decoded original",
+            "offset_unit": asset.get(
+                "offset_unit", "Unicode characters in UTF-8 decoded original"
+            ),
         }
+        if asset["media_type"] == "application/pdf":
+            result.update(
+                extraction=asset["extraction"],
+                document_text_sha256=asset["text_sha256"],
+                pages=_pdf_page_spans(asset, start, end),
+            )
+        return result
 
     def read(self, asset_id, start=0, max_chars=12000):
         if (
@@ -670,7 +843,7 @@ class SourceAcquisition:
                 response["status"] != 200
                 or not isinstance(data, bytes)
                 or len(data) > bound
-                or media not in TEXT_TYPES
+                or media not in CAPTURE_TYPES
             ):
                 raise ValueError(
                     "Response status, media type or size is outside capture limits"

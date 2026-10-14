@@ -133,9 +133,17 @@ not yet proposed as any mapping's primary source_field; it does not establish th
 condition-only or unsupported. Reconsider their original definitions for independent outputs,
 including documented code meanings. If no independent output is supported, keep the dependency
 without inventing a target and explain the omission in unmapped_fields.
-No ontology counterpart, different subject/event, insufficient evidence and an unexplored
+prior_mappings contains the actual original proposals, including their category and condition
+plans. Preserve source-supported alternatives within each mapping, not just its target name.
+These plans are fallible: remove unsupported claims using original evidence, never by assuming
+that an unobserved category is unavailable. No ontology counterpart, different subject/event, insufficient evidence and an unexplored
 opportunity are different reasons; don't declare an opportunity unsupported because it was
 absent from the prior manifest. This review still needs execution and semantic checks."""
+INSTRUCTIONS["candidate_manifest"] += """ Read identifier_repair_options when revising.
+They bind a compiler-checked identifier type to the original mapping and exact same-field
+evidence. A native type-bearing header can support ordinary parse_typed_id with require_label:false;
+failure of a mixed-type union parser does not require abandoning that supported single type.
+Keep applicable mappings in the manifest for a new probe; this feedback is not validation or approval."""
 
 
 def manifest_schema(backend):
@@ -444,6 +452,170 @@ def _stage(runtime, name, purpose, payload, schema, binding):
     return saved["response"]
 
 
+def _changed_discovery_enum(previous, revised):
+    from .engine import ENUMS
+
+    def meaning(mapping):
+        return {key: value for key, value in mapping.items() if key != "confidence"}
+
+    return any(
+        mapping["canonical_field"] in ENUMS
+        and mapping.get("claim_kind") != "unknown_abstention"
+        and not any(
+            meaning(mapping) == meaning(other) for other in revised["field_mappings"]
+        )
+        for mapping in previous["field_mappings"]
+    )
+
+
+def _discovery_coverage_regressions(reference, revised, documentation):
+    """Check source-supported enum witnesses, never infer completeness from counts.
+
+    Witnesses are counterfactual execution inputs, not source records or labels.
+    An old proposal supplies possibilities; the ordinary compiler must establish
+    each field-bound conversion before it can constrain discovery. No AST is edited.
+    """
+    from .engine import ENUMS, ast_nodes, compile_ast, compile_mappings, eval_ast
+
+    inventory = [item["source_field"] for item in reference["source_schema"]["fields"]]
+    expressions = []
+    for mapping in revised["field_mappings"]:
+        ast = pointer_get(revised, mapping["execution_pointer"])
+        try:
+            compile_ast(ast, inventory, mapping["source_fields"])
+        except Failure:
+            continue  # The ordinary probe still owns malformed/invalid rules.
+        expressions.append((mapping, ast))
+    seen, regressions, regression_count = set(), [], 0
+    for index, mapping in enumerate(reference["field_mappings"]):
+        target = mapping["canonical_field"]
+        if target not in ENUMS or mapping.get("claim_kind") == "unknown_abstention":
+            continue
+        ast = pointer_get(reference, mapping["execution_pointer"])
+        try:
+            compile_ast(ast, inventory, mapping["source_fields"])
+        except Failure:
+            continue
+        for at, node in ast_nodes(ast):
+            if node["op"] != "enum_lookup" or "/condition/" in at + "/":
+                continue
+            source = node["input"]
+            while source["op"] in {"trim", "collapse_ws"}:
+                source = source["input"]
+            if source["op"] != "field":
+                continue
+            field = source["name"]
+            for raw, value in sorted(node["values"].items()):
+                key = (target, field, raw, value)
+                if value == "unknown" or key in seen:
+                    continue
+                seen.add(key)
+                if len(seen) > 256:
+                    raise Failure(
+                        "validation_error",
+                        "Discovery coverage check exceeds its bounded witness budget.",
+                        reason_code="discovery_coverage_bound",
+                        witness_limit=256,
+                    )
+                witness = {field: raw}
+                # Do not invent predicate values to activate a nested branch.
+                # An unchanged conditional must never regress against itself.
+                if eval_ast(node, witness) != value or eval_ast(ast, witness) != value:
+                    continue
+                check = {
+                    "source_field": field,
+                    "source_fields": [field],
+                    "canonical_field": target,
+                    "confidence": mapping["confidence"],
+                    "semantic_evidence": field,
+                    "ast": {
+                        "op": "enum_lookup",
+                        "input": {"op": "field", "name": field},
+                        "values": {raw: value},
+                        "default": None,
+                    },
+                }
+                try:
+                    supported = compile_mappings(
+                        [check],
+                        inventory,
+                        documentation,
+                        [
+                            {
+                                "source_field": f,
+                                "reason": "Outside this conversion check.",
+                            }
+                            for f in inventory
+                            if f != field
+                        ],
+                    )
+                except Failure:
+                    continue  # Unsupported original proposals may be removed.
+                actual = []
+                for current, expression in expressions:
+                    if (
+                        current["canonical_field"] != target
+                        or field not in current["source_fields"]
+                    ):
+                        continue
+                    try:
+                        actual.append(eval_ast(expression, witness))
+                    except Failure:
+                        continue
+                if value in actual:
+                    continue
+                regression_count += 1
+                if len(regressions) < 16:
+                    contexts = supported[0]["semantic_support"].get("contexts", [])
+                    regressions.append(
+                        {
+                            "mapping_index": index,
+                            "canonical_field": target,
+                            "source_field": field,
+                            "raw_label": raw,
+                            "canonical_value": value,
+                            "reference_pointer": mapping["execution_pointer"]
+                            + at
+                            + "/values/"
+                            + raw.replace("~", "~0").replace("/", "~1"),
+                            "actual_values": actual[:4],
+                            "evidence_binding": {
+                                "native_header": field,
+                                "documentation_hash": digest(documentation),
+                                "definition_lines": [
+                                    {"start": c["line"], "end": c["end_line"]}
+                                    for c in contexts
+                                    if c["kind"] == "document_field_definition"
+                                ][:3],
+                            },
+                        }
+                    )
+    return regressions, regression_count
+
+
+def _discovery_reference(runtime, context):
+    """Carry the same immutable comparison through later candidate IDs."""
+    owner = runtime.run.state.get("mapping_discovery_candidate")
+    name = "candidate-discovery-reference-" + str(owner)
+    if name not in runtime.run.state["artifacts"]:
+        return None, owner
+    saved_context = runtime.run.load_artifact("candidate-context-" + owner)
+    manifest = runtime.run.load_artifact("candidate-manifest-" + owner)
+    rules = runtime.run.load_artifact(name)
+    if (
+        manifest["context_hash"] != digest(saved_context)
+        or rules["context_hash"] != digest(saved_context)
+        or rules["manifest_hash"] != digest(manifest["response"])
+        or saved_context["context"]["source_schema"] != context["source_schema"]
+        or saved_context["context"]["source_documentation"]
+        != context["source_documentation"]
+    ):
+        raise Failure("checkpoint_failure", "Discovery reference binding changed")
+    return assemble_config(
+        manifest["response"], rules["response"], "ast", context["source_schema"]
+    ), owner
+
+
 def generate_candidate(runtime, candidate_id, backend, turn, context):
     """Checkpoint small tasks independently; unknown outcomes propagate unchanged."""
     name = "candidate-context-" + candidate_id
@@ -487,6 +659,7 @@ def generate_candidate(runtime, candidate_id, backend, turn, context):
                     **payload,
                     "discovery_review": {
                         "scope": "One bounded search for omitted source-supported targets; not approval or semantic gold.",
+                        "prior_mappings": copy.deepcopy(previous["field_mappings"]),
                         "prior_target_groups": [
                             {
                                 "canonical_field": item["canonical_field"],
@@ -529,6 +702,26 @@ def generate_candidate(runtime, candidate_id, backend, turn, context):
                     reason_code="discovery_review_dropped_targets",
                     omitted_targets=sorted(missing),
                 )
+            if _changed_discovery_enum(previous, manifest):
+                from .schema import ast_rules_schema
+
+                slots = expression_slots(previous)
+                original_rules = _stage(
+                    runtime,
+                    "candidate-discovery-reference-" + candidate_id,
+                    "candidate_rules",
+                    {
+                        **payload,
+                        "manifest": previous,
+                        "expression_slots": slots,
+                        "discovery_reference": "Implement the original proposal for comparison only; this is not approval or a source fact.",
+                    },
+                    ast_rules_schema(len(slots)),
+                    {"context_hash": context_hash, "manifest_hash": digest(previous)},
+                )
+                assemble_config(
+                    previous, original_rules, backend, context["source_schema"]
+                )
     manifest_hash = digest(manifest)
     rule_payload = {**payload, "manifest": manifest}
     if backend == "ast":
@@ -537,21 +730,53 @@ def generate_candidate(runtime, candidate_id, backend, turn, context):
         slots = expression_slots(manifest)
         rule_payload["expression_slots"] = slots
         purpose, schema = "candidate_rules", ast_rules_schema(len(slots))
-        if not slots:
-            return assemble_config(
-                manifest, {"expressions": []}, backend, context["source_schema"]
-            )
     else:
         rule_payload["task_bindings"] = task_bindings(manifest)
         rule_payload["execution_capabilities"] = TASK_CAPABILITIES
         rule_payload["task_budget"] = task_budget(manifest)
         purpose, schema = "candidate_task", task_schema(manifest)
-    execution = _stage(
-        runtime,
-        "candidate-execution-" + candidate_id,
-        purpose,
-        rule_payload,
-        schema,
-        {"context_hash": context_hash, "manifest_hash": manifest_hash},
+    execution = (
+        {"expressions": []}
+        if backend == "ast" and not slots
+        else _stage(
+            runtime,
+            "candidate-execution-" + candidate_id,
+            purpose,
+            rule_payload,
+            schema,
+            {"context_hash": context_hash, "manifest_hash": manifest_hash},
+        )
     )
-    return assemble_config(manifest, execution, backend, context["source_schema"])
+    config = assemble_config(manifest, execution, backend, context["source_schema"])
+    reference, owner = (
+        _discovery_reference(runtime, context) if backend == "ast" else (None, None)
+    )
+    if reference is not None:
+        regressions, count = _discovery_coverage_regressions(
+            reference, config, context["source_documentation"]
+        )
+        if count:
+            raise Failure(
+                "validation_error",
+                "Discovery removed source-supported enum behavior from an existing target. Restore these conversions in a new candidate; unsupported proposals remain removable. Counts and the reference proposal are not approval.",
+                reason_code="discovery_coverage_regression",
+                regressions=regressions,
+                regression_count=count,
+                reference_rules_ref=runtime.copy_artifact(
+                    "candidate-discovery-reference-" + owner
+                ),
+                reference_manifest_ref=runtime.copy_artifact(
+                    "candidate-manifest-" + owner
+                ),
+                revised_rules_ref=(
+                    runtime.copy_artifact("candidate-execution-" + candidate_id)
+                    if "candidate-execution-" + candidate_id
+                    in runtime.run.state["artifacts"]
+                    else None
+                ),
+                revised_manifest_ref=runtime.copy_artifact(
+                    "candidate-manifest-" + candidate_id
+                ),
+                human_gold=False,
+            )
+    return config

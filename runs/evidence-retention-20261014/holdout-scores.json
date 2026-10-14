@@ -1,0 +1,121 @@
+{
+  "runtime": "9aa20f509bd42a8f9844cb8c7a051407e16a2becc946010b1863b8ef6cb9ba28",
+  "human_gold": false,
+  "usage": {
+    "model_calls": 7,
+    "reported_cost_usd": 0.0258812,
+    "wall_seconds": 54.230051749997074,
+    "cost_complete": true,
+    "stop_reason": null,
+    "integrity_end": {
+      "changes": [],
+      "unchanged": true
+    }
+  },
+  "sources": [
+    {
+      "source_id": "cricos",
+      "status": "native_reader_gap",
+      "error_kind": "unsupported_format",
+      "reason": "Merged worksheet cells require manual parsing",
+      "quality": "N/A_no_output",
+      "positive_opportunities": {
+        "entity.trading_name_in_institutions": 1225
+      },
+      "model_calls": 0,
+      "reported_cost_usd": 0
+    },
+    {
+      "source_id": "aged-care-services",
+      "workflow": {
+        "backend": "ast",
+        "candidate_status": "validated",
+        "completed_at": "2026-10-14T12:39:50.241533+00:00",
+        "development_usage": {
+          "call_count": 7,
+          "cost_basis": "OpenRouter reported cost, not invoice",
+          "total_cost_usd": 0.0258812,
+          "total_tokens": 216636,
+          "wall_seconds": 51.83396758401068,
+          "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+        },
+        "execution_status": "complete",
+        "extraction_status": "complete",
+        "extraction_usage": {
+          "call_count": 0,
+          "cost_basis": "",
+          "total_cost_usd": 0,
+          "total_tokens": 0,
+          "wall_seconds": 0.7335477500164416,
+          "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+        },
+        "gap": null,
+        "mapping_count": 4,
+        "observations": 5378,
+        "onboarding_status": "complete",
+        "output_summary": {
+          "empty_canonical_record_count": 0,
+          "enveloped_record_count": 5378,
+          "informative_field_value_count": 21512,
+          "informative_record_count": 5378,
+          "limitation": "Emitted values are not a correctness score.",
+          "mapping_count": 4,
+          "selected_record_count": 5378,
+          "unknown_field_count": 0
+        },
+        "source_id": "aged-care-services",
+        "started_at": "2026-10-14T12:38:56.016631+00:00",
+        "status": "extracted",
+        "task_status": "not_configured",
+        "unresolved_requirements": [],
+        "wall_seconds": 54.22486816698802
+      },
+      "label_boundary": "Service-location value agreement only; no entity-owner or legal-name gold. Three-digit numeric postcodes are not padded into invented four-digit source values.",
+      "metrics": null,
+      "status": "complete_output",
+      "native_rows": 5378,
+      "output_rows": 5378,
+      "guard_errors": {
+        "raw_differs_from_original_cells": 5377
+      },
+      "coverage": {
+        "address.full": 5378,
+        "address.locality": 5378,
+        "address.postcode": 5378,
+        "address.state": 5378
+      },
+      "diagnostic_value_agreement": {
+        "address.locality": {
+          "opportunities": 5378,
+          "correct": 5378,
+          "missed": 0,
+          "wrong_emitted": 0
+        },
+        "address.state": {
+          "opportunities": 5378,
+          "correct": 5378,
+          "missed": 0,
+          "wrong_emitted": 0
+        },
+        "address.postcode": {
+          "opportunities": 5305,
+          "correct": 5305,
+          "missed": 0,
+          "wrong_emitted": 0
+        }
+      },
+      "unsupported_emissions": {
+        "entity.abn": 0,
+        "entity.acn": 0,
+        "entity.date_registered": 0,
+        "entity.website": 0,
+        "entity.status": 0
+      },
+      "mismatch_examples": [],
+      "quality": "N/A_raw_or_identity_guard_failed",
+      "semantic_review_required": {
+        "address.full": 5378
+      }
+    }
+  ]
+}

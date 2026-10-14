@@ -128,6 +128,23 @@ class SelectionProvider(ScriptedProvider):
         return super().generate(request, call_id)
 
 
+class TradeoffFixture(SelectionFixture):
+    """Equal observed IDs, but different rules on unsampled entity kinds."""
+
+    def named_config(self, name):
+        config = super().named_config(name)
+        if name == "narrow":
+            config["execution"]["transforms"][0] = {
+                "op": "when",
+                "condition": {"op": "equals", "input": {"op": "field", "name": self.kind_field}, "value": "Company"},
+                "then": config["execution"]["transforms"][0],
+                "else": {"op": "omit", "reason": "Other kinds remain unresolved."},
+            }
+            config["field_mappings"][0]["source_fields"].append(self.kind_field)
+            config["unmapped_fields"] = [m for m in config["unmapped_fields"] if m["source_field"] != self.kind_field]
+        return config
+
+
 def select(name):
     return control("select", candidate_id=name)
 
@@ -276,10 +293,10 @@ class CandidateSelectionTests(unittest.TestCase):
                 "not_run",
             )
 
-    def test_comparison_requires_explicit_choice_and_retains_known_loss(self):
+    def test_comparison_requires_explicit_choice_and_retains_nonidentical_rule_loss(self):
         for choice, renamed in (("narrow", False), ("wide", True)):
             with self.subTest(choice=choice), tempfile.TemporaryDirectory() as root:
-                fixture = SelectionFixture(root, renamed)
+                fixture = TradeoffFixture(root, renamed)
                 provider = SelectionProvider(
                     fixture, ["wide", "narrow", select("narrow"), select(choice)]
                 )

@@ -4,3 +4,5 @@ data/** -whitespace
 outputs/** -whitespace
 evidence/** -whitespace
 schema/** -whitespace
+runs/** -whitespace
+*.pdf binary

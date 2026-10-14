@@ -1,0 +1,57 @@
+{
+  "runtime": "9aa20f509bd42a8f9844cb8c7a051407e16a2becc946010b1863b8ef6cb9ba28",
+  "source_id": "aged-care-services",
+  "native_sha256": "0e71af6a3e43091553f4c8d2bf4d95336dfcace620079f931eb6e5f2b3c08f07",
+  "independent_reader": "Original XLSX XML cell values; no runtime normalization",
+  "changed_rows": 5377,
+  "changed_cells_by_field": {
+    "Restorative Care Places": 5185,
+    "Home Care Places": 5238
+  },
+  "all_observed_changes": "Whitespace-only original strings became empty strings",
+  "examples": [
+    {
+      "locator": {
+        "file": "australia-service-list-2025.xlsx",
+        "row": 4,
+        "sheet": "Service List 2025 - Australia"
+      },
+      "changed_fields": [
+        "Restorative Care Places"
+      ],
+      "original_values": [
+        " "
+      ]
+    },
+    {
+      "locator": {
+        "file": "australia-service-list-2025.xlsx",
+        "row": 5,
+        "sheet": "Service List 2025 - Australia"
+      },
+      "changed_fields": [
+        "Home Care Places",
+        "Restorative Care Places"
+      ],
+      "original_values": [
+        " ",
+        " "
+      ]
+    },
+    {
+      "locator": {
+        "file": "australia-service-list-2025.xlsx",
+        "row": 6,
+        "sheet": "Service List 2025 - Australia"
+      },
+      "changed_fields": [
+        "Restorative Care Places"
+      ],
+      "original_values": [
+        " "
+      ]
+    }
+  ],
+  "code_location": "firmable_runtime/native.py::_tabular raw_record construction",
+  "not_fixed_or_normalized_in_labels": true
+}

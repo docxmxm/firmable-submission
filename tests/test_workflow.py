@@ -43,10 +43,10 @@ class WorkflowTests(unittest.TestCase):
     def test_known_candidate_loss_stays_partial_through_approval_and_full_extraction(
         self,
     ):
-        from test_candidate_selection import SelectionFixture, SelectionProvider, select
+        from test_candidate_selection import TradeoffFixture, SelectionProvider, select
 
         with tempfile.TemporaryDirectory() as root:
-            fixture = SelectionFixture(root)
+            fixture = TradeoffFixture(root)
             provider = SelectionProvider(
                 fixture, ["wide", "narrow", select("narrow"), select("narrow")]
             )

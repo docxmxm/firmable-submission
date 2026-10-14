@@ -121,7 +121,9 @@ def parse_typed_identifier(value, kind, require_label=False):
         or isinstance(value, bool)
     ):
         return None
-    label = r"(?:" + kind + r"(?:\s*:\s*|\s+))" + ("" if require_label else "?")
+    label = r"(?:" + kind + r"(?:\s*:\s*|\s+|(?=[0-9])))" + (
+        "" if require_label else "?"
+    )
     matched = re.fullmatch(label + r"([0-9][0-9 \t-]*)", str(value).strip(), re.I)
     if not matched:
         return None
@@ -134,6 +136,8 @@ def parse_typed_identifier(value, kind, require_label=False):
 def parse_au_location(value, component):
     """Extract one explicit component of a whole AU locality/state/postcode tuple.
 
+    An explicit state name and an optional AU/Australia suffix are equivalent
+    source spellings, not inferred geographic facts.
     This finite grammar neither geocodes a place nor infers state from postcode.
     Street addresses, multiple locations and truncated tuples are abstentions.
     """
@@ -150,11 +154,28 @@ def parse_au_location(value, component):
         return None
     text = value.strip()
     locality = r"([^\W\d_][^\d,;:/|]*?)"
-    state = r"(NSW|VIC|QLD|WA|SA|TAS|ACT|NT)"
+    state_names = {
+        "NEW SOUTH WALES": "NSW",
+        "VICTORIA": "VIC",
+        "QUEENSLAND": "QLD",
+        "WESTERN AUSTRALIA": "WA",
+        "SOUTH AUSTRALIA": "SA",
+        "TASMANIA": "TAS",
+        "AUSTRALIAN CAPITAL TERRITORY": "ACT",
+        "NORTHERN TERRITORY": "NT",
+    }
+    state = (
+        "("
+        + "|".join(
+            name.replace(" ", r"[ \t]+")
+            for name in (*state_names.values(), *state_names)
+        )
+        + ")"
+    )
+    separator = r"[ \t]*,[ \t]*" if "," in text else r"[ \t]+"
     pattern = (
-        locality + r"[ \t]*,[ \t]*" + state + r"[ \t]*,[ \t]*([0-9]{4})"
-        if "," in text
-        else locality + r"[ \t]+" + state + r"[ \t]+([0-9]{4})"
+        locality + separator + state + separator + r"([0-9]{4})"
+        + "(?:" + separator + r"(?:AU|AUSTRALIA))?"
     )
     matched = re.fullmatch(pattern, text, re.I)
     if not matched:
@@ -186,9 +207,12 @@ def parse_au_location(value, component):
         )
     ):
         return None
-    return {"locality": place, "state": matched[2].upper(), "postcode": matched[3]}[
-        component
-    ]
+    source_state = " ".join(matched[2].upper().split())
+    return {
+        "locality": place,
+        "state": state_names.get(source_state, source_state),
+        "postcode": matched[3],
+    }[component]
 
 
 class CompileDiagnostics:
@@ -607,11 +631,10 @@ def _mapping_semantics(
     reviewed_name_role=False,
 ):
     from .semantic_support import (
-        address_support,
         check_support,
+        full_address_support,
         identifier_support,
         labelled_identifier_support,
-        full_address_join_support,
         location_component_support,
         mixed_identifier_support,
         name_role_reviewable,
@@ -654,24 +677,14 @@ def _mapping_semantics(
         else:
             raise Failure("validation_error", support["reason"], semantic_support=support)
     if target == "address.full":
-        if ast["op"] == "join_address":
-            support = full_address_join_support(mapping, documentation, inventory)
-            if not support["supported"]:
-                raise Failure(
-                    "validation_error",
-                    support["reason"],
-                    mapping_index=index,
-                    semantic_support=support,
-                )
-        else:
-            support = address_support(mapping, documentation, inventory)
-            if not support["supported"]:
-                raise Failure(
-                    "validation_error",
-                    support["reason"],
-                    mapping_index=index,
-                    semantic_support=support,
-                )
+        support = full_address_support(mapping, documentation, inventory)
+        if not support["supported"]:
+            raise Failure(
+                "validation_error",
+                support["reason"],
+                mapping_index=index,
+                semantic_support=support,
+            )
     if (
         target == "entity.entity_type"
         and not unknown_abstention
@@ -733,15 +746,43 @@ def _mapping_semantics(
             or node["input"]["name"] != basis["source_field"]
             or not basis["supported"]
         ):
+            direct = identifier_support(mapping, documentation, node["kind"], inventory)
+            repair_options = []
+            if (
+                target == "entity." + node["kind"]
+                and node["input"]["name"] == basis["source_field"]
+                and direct["supported"]
+            ):
+                repair_options.append({
+                    "expression": {
+                        "op": "parse_typed_id",
+                        "input": {"op": "field", "name": basis["source_field"]},
+                        "kind": node["kind"],
+                        "require_label": False,
+                    },
+                    "semantic_evidence": evidence,
+                    "semantic_support": direct,
+                    "limitation": "Same-field type support only; a revised candidate still needs full compilation, checksum execution, review and explicit selection.",
+                })
             raise Failure(
                 "validation_error",
                 "Mixed identifier parsing requires exact same-field source evidence explicitly defining an ABN or ACN union. "
                 "The complete value must match one allowed identifier grammar and checksum; arbitrary numbers, a different field, AND/composite identifiers or other identifier types are unsupported. "
+                "Failure of the union parser does not invalidate a single type explicitly established by this field's native header or own definition. "
+                "When repair_options supplies that checked type support, propose its ordinary parse_typed_id mode with require_label:false; bare cells still need the matching checksum. "
                 "If the original whole cells instead carry explicit ABN/ACN labels, use the existing parse_typed_id with the matching kind, require_label:true and direct primary-field input; "
                 "semantic_evidence must be its exact primary native header or an exact quote from its own identifier definition. That route still requires the matching whole-cell label and checksum and omits bare values. "
                 "Never infer a type from bare numbers or length, and preserve independently supported mappings.",
                 semantic_support=basis,
                 exact_primary_header=basis["source_field"],
+                identifier_evidence={
+                    "reason_code": "mixed_identifier_union_not_supported",
+                    "source_field": basis["source_field"],
+                    "input_field": node["input"]["name"],
+                    "canonical_field": target,
+                    "parser_kind": node["kind"],
+                    "repair_options": repair_options,
+                },
             )
         support = basis
     for _, node in ast_nodes(ast):

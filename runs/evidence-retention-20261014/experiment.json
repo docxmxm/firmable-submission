@@ -1,0 +1,45 @@
+{
+  "hypothesis": "Original-field evidence rebinding plus rejection of structurally contained, validated field loss improves retention without weakening semantics or selecting by counts.",
+  "baseline": "../branch-retention-20261014/after",
+  "baseline_runtime": "8c7bad9c098b4e7611f59daa0db159718a269fa7e27d29c2a203f9170c8c6289",
+  "holdouts_selected_before_changes": [
+    "cricos",
+    "aged-care-services"
+  ],
+  "holdout_policy": "Inspect contents after runtime freeze; original native inputs and original docs only; positive labels evaluator-only before model calls. Previous EPA/CER are not fresh holdouts.",
+  "model_policy": "Identical model/provider/limits/eight-source inputs to prior after arm; fixed evidence; no external acquisition.",
+  "quality_limit": "One trajectory per source/version; descriptive deltas, not statistical or causal proof. Synthetic approvals only.",
+  "baseline_summary_sha256": "4f2775c2de8e4b0c51935d41f89c8c4d6e799741505d879dc4a5eecd4be48a5e",
+  "requests_sha256": "38c0ee1a7d06a12575d0a2ae5502ac232f9bdba09a13b62de24a46604e1728be",
+  "candidate_runtime": "9aa20f509bd42a8f9844cb8c7a051407e16a2becc946010b1863b8ef6cb9ba28",
+  "offline_validation": {
+    "tests_passed": 478,
+    "new_methods": 6,
+    "red_methods": 2,
+    "red_failures": 4,
+    "static": "passed"
+  },
+  "changed_runtime_modules": [
+    "firmable_runtime/agent.py",
+    "firmable_runtime/branch_repair.py"
+  ],
+  "holdout_labels_sha256": "4ebcef4da78a630e2f0b2cfa5f71820a08c07760a8d1b2e71f72b03f2db80002",
+  "holdout_positive_opportunities": {
+    "cricos": {
+      "entity.trading_name_in_institutions": 1225
+    },
+    "aged-care-services": {
+      "address.locality": 5378,
+      "address.state": 5378,
+      "address.postcode": 5305
+    }
+  },
+  "holdout_native_failures": [
+    {
+      "source_id": "cricos",
+      "error_kind": "unsupported_format",
+      "reason": "Merged worksheet cells require manual parsing",
+      "model_calls": 0
+    }
+  ]
+}

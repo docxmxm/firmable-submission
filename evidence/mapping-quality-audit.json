@@ -1,0 +1,1223 @@
+{
+  "source_checks": {
+    "real-act-contracts-historical": {
+      "rows": 1000,
+      "metrics": {
+        "entity.abn": {
+          "supported_expected": 759,
+          "emitted": 759,
+          "agree": 759
+        },
+        "entity.acn": {
+          "supported_expected": 21,
+          "missing_supported": 21
+        }
+      },
+      "examples": [
+        {
+          "target": "entity.acn",
+          "locator": {
+            "file": "native-records.json",
+            "pointer": "/452"
+          },
+          "expected": "134567801",
+          "actual": null
+        },
+        {
+          "target": "entity.acn",
+          "locator": {
+            "file": "native-records.json",
+            "pointer": "/456"
+          },
+          "expected": "084084284",
+          "actual": null
+        },
+        {
+          "target": "entity.acn",
+          "locator": {
+            "file": "native-records.json",
+            "pointer": "/457"
+          },
+          "expected": "104475587",
+          "actual": null
+        },
+        {
+          "target": "entity.acn",
+          "locator": {
+            "file": "native-records.json",
+            "pointer": "/462"
+          },
+          "expected": "127866344",
+          "actual": null
+        },
+        {
+          "target": "entity.acn",
+          "locator": {
+            "file": "native-records.json",
+            "pointer": "/463"
+          },
+          "expected": "128809674",
+          "actual": null
+        },
+        {
+          "target": "entity.acn",
+          "locator": {
+            "file": "native-records.json",
+            "pointer": "/466"
+          },
+          "expected": "121174552",
+          "actual": null
+        },
+        {
+          "target": "entity.acn",
+          "locator": {
+            "file": "native-records.json",
+            "pointer": "/475"
+          },
+          "expected": "067255967",
+          "actual": null
+        },
+        {
+          "target": "entity.acn",
+          "locator": {
+            "file": "native-records.json",
+            "pointer": "/476"
+          },
+          "expected": "003789660",
+          "actual": null
+        }
+      ],
+      "acn_labels": {
+        "all": 21,
+        "valid": 21,
+        "invalid": []
+      },
+      "raw_identity_matches": 1000,
+      "mapping_count": 1,
+      "saved_config_current_compile": "pass",
+      "source_categories": {}
+    },
+    "real-asic-business-names": {
+      "rows": 1000,
+      "metrics": {
+        "entity.abn": {
+          "supported_expected": 802,
+          "emitted": 802,
+          "agree": 802
+        },
+        "entity.trading_name": {
+          "supported_expected": 888,
+          "emitted": 888,
+          "agree": 888
+        }
+      },
+      "examples": [],
+      "raw_identity_matches": 1000,
+      "mapping_count": 2,
+      "saved_config_current_compile": "pass",
+      "source_categories": {
+        "BN_STATUS": {
+          "Registered": 888,
+          "Deregistered": 112
+        }
+      }
+    },
+    "real-asic-companies": {
+      "rows": 389,
+      "metrics": {
+        "entity.abn": {
+          "supported_expected": 389,
+          "emitted": 389,
+          "agree": 389
+        },
+        "entity.acn": {
+          "supported_expected": 389,
+          "emitted": 389,
+          "agree": 389
+        },
+        "entity.date_registered": {
+          "supported_expected": 389,
+          "emitted": 389,
+          "agree": 389
+        },
+        "entity.entity_type": {
+          "supported_expected": 389,
+          "emitted": 386,
+          "agree": 386,
+          "missing_supported": 3
+        },
+        "entity.legal_name": {
+          "supported_expected": 389,
+          "emitted": 389,
+          "agree": 389
+        },
+        "entity.status": {
+          "supported_expected": 3,
+          "emitted": 3,
+          "agree": 3
+        }
+      },
+      "examples": [
+        {
+          "target": "entity.entity_type",
+          "locator": {
+            "file": "native-query-records.json",
+            "pointer": "/148"
+          },
+          "expected": "company",
+          "actual": null
+        },
+        {
+          "target": "entity.entity_type",
+          "locator": {
+            "file": "native-query-records.json",
+            "pointer": "/149"
+          },
+          "expected": "company",
+          "actual": null
+        },
+        {
+          "target": "entity.entity_type",
+          "locator": {
+            "file": "native-query-records.json",
+            "pointer": "/370"
+          },
+          "expected": "company",
+          "actual": null
+        }
+      ],
+      "raw_identity_matches": 389,
+      "mapping_count": 6,
+      "saved_config_current_compile": "pass",
+      "source_categories": {
+        "Type": {
+          "APTY": 333,
+          "APUB": 53,
+          "FNOS": 3
+        },
+        "Status": {
+          "REGD": 372,
+          "EXAD": 13,
+          "DRGD": 3,
+          "SOFF": 1
+        },
+        "Current Name Indicator": {
+          "None": 154,
+          "Y": 235
+        }
+      }
+    },
+    "real-ato-corporate-tax": {
+      "rows": 4436,
+      "metrics": {
+        "entity.abn": {
+          "supported_expected": 4400,
+          "emitted": 4400,
+          "agree": 4400
+        }
+      },
+      "examples": [],
+      "omitted_abn_values": {
+        "": 36
+      },
+      "raw_identity_matches": 4436,
+      "mapping_count": 1,
+      "saved_config_current_compile": "pass",
+      "source_categories": {}
+    },
+    "real-qbcc": {
+      "rows": 1000,
+      "metrics": {
+        "address.full": {
+          "supported_expected": 1000,
+          "emitted": 1000,
+          "agree": 1000
+        },
+        "entity.abn": {
+          "supported_expected": 623,
+          "emitted": 623,
+          "agree": 623
+        },
+        "entity.acn": {
+          "supported_expected": 326,
+          "emitted": 326,
+          "agree": 326
+        }
+      },
+      "examples": [],
+      "role_checks": {
+        "Individual": {
+          "rows": 670,
+          "accepted_abn": 323,
+          "accepted_acn": 0
+        },
+        "Company": {
+          "rows": 330,
+          "accepted_abn": 300,
+          "accepted_acn": 326
+        }
+      },
+      "raw_identity_matches": 1000,
+      "mapping_count": 6,
+      "saved_config_current_compile": "pass",
+      "source_categories": {
+        "Licence Type DESC": {
+          "Company": 330,
+          "Individual": 670
+        }
+      }
+    },
+    "real-suitable-operators": {
+      "rows": 15100,
+      "metrics": {
+        "address.locality": {
+          "supported_expected": 15008,
+          "emitted": 14825,
+          "agree": 14825,
+          "missing_supported": 183
+        },
+        "address.postcode": {
+          "supported_expected": 15008,
+          "emitted": 14825,
+          "agree": 14825,
+          "missing_supported": 183
+        },
+        "address.state": {
+          "supported_expected": 15008,
+          "emitted": 14825,
+          "agree": 14825,
+          "missing_supported": 183
+        },
+        "entity.acn": {
+          "supported_expected": 7901,
+          "emitted": 7901,
+          "agree": 7901
+        },
+        "entity.entity_type": {
+          "supported_expected": 8297,
+          "emitted": 8184,
+          "agree": 8184,
+          "missing_supported": 113
+        },
+        "entity.abn": {
+          "supported_expected": 299,
+          "emitted": 299,
+          "agree": 299
+        }
+      },
+      "examples": [
+        {
+          "target": "address.locality",
+          "locator": {
+            "file": "download.xlsx",
+            "row": 35,
+            "sheet": "Registered Suitable Operators"
+          },
+          "expected": "WILLAWONG",
+          "actual": null
+        },
+        {
+          "target": "address.postcode",
+          "locator": {
+            "file": "download.xlsx",
+            "row": 35,
+            "sheet": "Registered Suitable Operators"
+          },
+          "expected": "4110",
+          "actual": null
+        },
+        {
+          "target": "address.state",
+          "locator": {
+            "file": "download.xlsx",
+            "row": 35,
+            "sheet": "Registered Suitable Operators"
+          },
+          "expected": "QLD",
+          "actual": null
+        },
+        {
+          "target": "address.locality",
+          "locator": {
+            "file": "download.xlsx",
+            "row": 283,
+            "sheet": "Registered Suitable Operators"
+          },
+          "expected": "MOREE",
+          "actual": null
+        },
+        {
+          "target": "address.postcode",
+          "locator": {
+            "file": "download.xlsx",
+            "row": 283,
+            "sheet": "Registered Suitable Operators"
+          },
+          "expected": "2400",
+          "actual": null
+        },
+        {
+          "target": "address.state",
+          "locator": {
+            "file": "download.xlsx",
+            "row": 283,
+            "sheet": "Registered Suitable Operators"
+          },
+          "expected": "NSW",
+          "actual": null
+        },
+        {
+          "target": "address.locality",
+          "locator": {
+            "file": "download.xlsx",
+            "row": 425,
+            "sheet": "Registered Suitable Operators"
+          },
+          "expected": "ST KILDA EAST",
+          "actual": null
+        },
+        {
+          "target": "address.postcode",
+          "locator": {
+            "file": "download.xlsx",
+            "row": 425,
+            "sheet": "Registered Suitable Operators"
+          },
+          "expected": "3183",
+          "actual": null
+        }
+      ],
+      "raw_identity_matches": 15100,
+      "mapping_count": 6,
+      "saved_config_current_compile": "pass",
+      "source_categories": {
+        "Entity Type": {
+          "Corporation (Company)": 8114,
+          "An individual or Sole trader": 6714,
+          "Incorporated Association": 70,
+          "Local Government Authority": 100,
+          "Australian Registered (Foreign) Body": 49,
+          "Government Owned Corporation": 8,
+          "Co-operative": 22,
+          "Indigenous Corporation": 2,
+          "Federal Government Department": 3,
+          "State Government Department": 10,
+          "Body Corporate": 8
+        },
+        "Registration Status": {
+          "Registered": 15100
+        }
+      }
+    }
+  },
+  "cohort_comparisons": {
+    "runs/semantic-validation-six-source-repeat/real-asic-business-names": {
+      "rows": 1000,
+      "raw_matches": 1000,
+      "informative_counts": {
+        "entity.abn": 802,
+        "entity.trading_name": 888
+      },
+      "unknown_counts": {}
+    },
+    "runs/semantic-validation-six-source-repeat/real-asic-companies": {
+      "rows": 389,
+      "raw_matches": 389,
+      "informative_counts": {
+        "entity.abn": 389,
+        "entity.acn": 389,
+        "entity.date_registered": 389,
+        "entity.entity_type": 386,
+        "entity.legal_name": 389,
+        "entity.status": 3
+      },
+      "unknown_counts": {}
+    },
+    "runs/semantic-validation-six-source-repeat/real-ato-corporate-tax": {
+      "rows": 4436,
+      "raw_matches": 4436,
+      "informative_counts": {
+        "entity.abn": 4400
+      },
+      "unknown_counts": {}
+    },
+    "runs/semantic-validation-six-source-repeat/real-qbcc": {
+      "rows": 1000,
+      "raw_matches": 1000,
+      "informative_counts": {
+        "entity.abn": 623,
+        "entity.acn": 326,
+        "address.full": 1000
+      },
+      "unknown_counts": {}
+    },
+    "runs/semantic-validation-six-source-repeat/real-suitable-operators": {
+      "rows": 15100,
+      "raw_matches": 15100,
+      "informative_counts": {
+        "entity.acn": 7901,
+        "entity.entity_type": 8184,
+        "address.locality": 14825,
+        "address.postcode": 14825,
+        "address.state": 14825,
+        "entity.abn": 299
+      },
+      "unknown_counts": {
+        "entity.entity_type": 6916
+      }
+    },
+    "runs/act-harness-repair/real-act-contracts-historical": {
+      "rows": 1000,
+      "raw_matches": 1000,
+      "informative_counts": {
+        "entity.abn": 759
+      },
+      "unknown_counts": {}
+    }
+  },
+  "probe_support": {
+    "FNOS": {
+      "compile": "pass"
+    },
+    "ACT-labelled-ACN": {
+      "compile": "pass"
+    },
+    "Federal Government Department": {
+      "compile": "pass"
+    },
+    "State Government Department": {
+      "compile": "pass"
+    },
+    "Local Government Authority": {
+      "compile": "pass"
+    }
+  },
+  "kind": "offline-mapping-quality-audit",
+  "created_at": "2026-10-14T09:29:44.920332+00:00",
+  "human_gold": false,
+  "reviewer_kind": "independent_ai_with_deterministic_raw_checks",
+  "evaluation_only": true,
+  "planner_access": "Do not supply this evaluator artifact or its expected outputs to inference/planning.",
+  "scope": {
+    "saved_complete_cohort": "outputs",
+    "saved_complete_cohort_runtime": "e3061c95bd1865e826e92bc2bdf0a9bfac5017090c547e527341e0f7f4517d98",
+    "comparison_cohorts_separate": {
+      "runs/semantic-validation-six-source-repeat": "0c8d2ec150be64aa8da29e7f8836df2b924a14a548c587d7349875af9175cd6b",
+      "runs/act-harness-repair": "25a503d1d60373d1d814787ad7e652d9bd9915585e14e0c69b49c4ea20776baf"
+    },
+    "audited_raw_records": 22925,
+    "audited_mapping_declarations": 22,
+    "existing_informative_field_values_agreeing_with_source_rules": 71602,
+    "existing_identifier_values_checksum_and_source_checked": 15888,
+    "paid_calls": 0,
+    "external_fetches": 0,
+    "full_source_inference_or_formal_extraction": false,
+    "offline_tests_may_replay_sources_in_temporary_directories": true,
+    "current_runtime_after_fix": "374d8f2abb4ffd1da85fec4f260d2cc218be02bdb55282d55e47c708d6f1f159"
+  },
+  "findings": [
+    {
+      "id": "H1",
+      "classification": "confirmed_generic_validator_false_rejection_fixed",
+      "target": "entity.entity_type",
+      "affected_supported_rows": 100,
+      "source_evidence": "Entity Type = Local Government Authority",
+      "before": "A correctly proposed government mapping was rejected by finite legal-form normalization. The saved live trace did not propose this entry, so rejection is not proven as the cause of its live omission.",
+      "fix": "Complete government authority forms with bounded jurisdiction modifiers; no source/field/code aliases. Same-field evidence, unsupported-code and owner checks retained.",
+      "test_first": {
+        "pre_fix_tests": 18,
+        "failures": 2,
+        "negative_boundary_passed": true,
+        "post_fix_tests": 18,
+        "passed": true
+      }
+    },
+    {
+      "id": "H2",
+      "classification": "confirmed_generic_location_format_omission_fixed",
+      "targets": [
+        "address.locality",
+        "address.state",
+        "address.postcode"
+      ],
+      "affected_rows": 183,
+      "affected_field_values": 549,
+      "formats": {
+        "explicit_country": 107,
+        "full_state": 76
+      },
+      "before": "Existing selected AST omitted complete source tuples solely because a state was spelled in full or an explicit Australian country suffix was present.",
+      "fix": "Normalize only the eight explicit AU state names and optional exact AU/Australia suffix; preserve locality, state and postcode; no geocoding or typo correction.",
+      "test_first": {
+        "pre_fix_tests": 21,
+        "failures": 2,
+        "negative_boundary_passed": true,
+        "post_fix_tests": 21,
+        "passed": true
+      },
+      "targeted_replay": {
+        "scope": "275 rows without saved location output; existing AST expressions only; no formal observations written",
+        "supported_recovered_rows": 183,
+        "abstained_rows": 92,
+        "independent_expected_matches": 275,
+        "recovered_examples": [
+          {
+            "source_record_id": "native:c871cf502b83e231bc4d3acdbc534f95433de14da9bb1cca9f9477e259a1a2ac",
+            "locator": {
+              "file": "download.xlsx",
+              "row": 35,
+              "sheet": "Registered Suitable Operators"
+            },
+            "source_value": "WILLAWONG, QLD, 4110, AUSTRALIA",
+            "expected_values": {
+              "address.locality": "WILLAWONG",
+              "address.state": "QLD",
+              "address.postcode": "4110"
+            }
+          },
+          {
+            "source_record_id": "native:6dfabf2097e61b63f09b57ad02248b1589836c420096acfcaba6a474617a17ac",
+            "locator": {
+              "file": "download.xlsx",
+              "row": 283,
+              "sheet": "Registered Suitable Operators"
+            },
+            "source_value": "MOREE, NSW, 2400, AUSTRALIA",
+            "expected_values": {
+              "address.locality": "MOREE",
+              "address.state": "NSW",
+              "address.postcode": "2400"
+            }
+          },
+          {
+            "source_record_id": "native:c0d1d0a89e1a82f8287e0f39bc0d7ef56d21dc822da37e37db80dde7242e872b",
+            "locator": {
+              "file": "download.xlsx",
+              "row": 425,
+              "sheet": "Registered Suitable Operators"
+            },
+            "source_value": "ST KILDA EAST, VICTORIA, 3183",
+            "expected_values": {
+              "address.locality": "ST KILDA EAST",
+              "address.state": "VIC",
+              "address.postcode": "3183"
+            }
+          },
+          {
+            "source_record_id": "native:692f945d9b127de2d11db0c734730b4c57fa8329b57b4bbbd75b7a1d69343fa7",
+            "locator": {
+              "file": "download.xlsx",
+              "row": 501,
+              "sheet": "Registered Suitable Operators"
+            },
+            "source_value": "MOLENDINAR, QUEENSLAND, 4214",
+            "expected_values": {
+              "address.locality": "MOLENDINAR",
+              "address.state": "QLD",
+              "address.postcode": "4214"
+            }
+          },
+          {
+            "source_record_id": "native:0773c39eb3382f1977e8040734373d250b5eee06f6c6a6f0a4798008d24840c0",
+            "locator": {
+              "file": "download.xlsx",
+              "row": 718,
+              "sheet": "Registered Suitable Operators"
+            },
+            "source_value": "MOOLOOLABA, QUEENSLAND, 4557",
+            "expected_values": {
+              "address.locality": "MOOLOOLABA",
+              "address.state": "QLD",
+              "address.postcode": "4557"
+            }
+          },
+          {
+            "source_record_id": "native:7cc4bee8d9048bd9d2475a8322725b9cb2b00c694d2fc1b1d9b7e475a9c143e2",
+            "locator": {
+              "file": "download.xlsx",
+              "row": 737,
+              "sheet": "Registered Suitable Operators"
+            },
+            "source_value": "BRISBANE CITY, QLD, 4000, AUSTRALIA",
+            "expected_values": {
+              "address.locality": "BRISBANE CITY",
+              "address.state": "QLD",
+              "address.postcode": "4000"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "H3",
+      "classification": "confirmed_generic_compact_identifier_format_omission_fixed",
+      "source_id": "real-act-contracts-historical",
+      "affected_supported_rows": 1,
+      "target": "entity.acn",
+      "source_locator": {
+        "file": "native-records.json",
+        "pointer": "/452"
+      },
+      "source_value": "ACN134567801",
+      "expected_value": "134567801",
+      "fix": "Allow the exact ABN/ACN label directly adjacent to digits. Matching label kind, complete-cell grammar, same-field evidence and checksum remain mandatory. No numeric-length type inference.",
+      "test_first": {
+        "pre_fix_tests": 20,
+        "positive_subtest_failures": 6,
+        "negative_boundary_passed": true,
+        "post_fix_tests": 20,
+        "passed": true
+      },
+      "live_effect": "Saved ACT config still has no ACN mapping; the fix establishes parser capability only and does not change formal outputs."
+    },
+    {
+      "id": "C1",
+      "classification": "agent_mapping_coverage_gap_not_compiler_bug",
+      "source_id": "real-asic-companies",
+      "target": "entity.entity_type",
+      "supported_missing_rows": 3,
+      "evidence_path": "data/assessment-inputs/real-asic-companies/evidence/official-help.md",
+      "evidence_line": 163,
+      "raw_pointers": [
+        "/148",
+        "/149",
+        "/370"
+      ],
+      "compiler_route": "FNOS=company accepted before this repair; existing saved config omitted FNOS. No config edited."
+    },
+    {
+      "id": "C2",
+      "classification": "agent_mapping_coverage_gap_not_compiler_bug",
+      "source_id": "real-act-contracts-historical",
+      "target": "entity.acn",
+      "supported_missing_rows": 20,
+      "source_field": "abn",
+      "evidence": "Twenty complete ACN-labelled native values, all independently checksum-valid. Ordinary parse_typed_id(kind=acn,require_label=true) accepted before this repair. No bare-number type inference.",
+      "raw_examples": [
+        {
+          "source_record_id": "native:785b79a383046c3c422c34d367003970de4b22be03e2c779ec4783f40a72440a",
+          "locator": {
+            "file": "native-records.json",
+            "pointer": "/456"
+          },
+          "value": "ACN: 084 084 284"
+        },
+        {
+          "source_record_id": "native:7bc606bc20716307bb5602e7908c6e8e20901d5e0f0ee10eaa3015e6960b0203",
+          "locator": {
+            "file": "native-records.json",
+            "pointer": "/457"
+          },
+          "value": "ACN: 104 475 587"
+        },
+        {
+          "source_record_id": "native:69c134eb1336c16d1b2dd204fdd90887b2243f57b953a390983e77a5367c1804",
+          "locator": {
+            "file": "native-records.json",
+            "pointer": "/462"
+          },
+          "value": "ACN: 127 866 344"
+        },
+        {
+          "source_record_id": "native:926998a393876ca8da5cd95888c6c8174b706f849c0529f5ef8273b89429bca6",
+          "locator": {
+            "file": "native-records.json",
+            "pointer": "/463"
+          },
+          "value": "ACN 128 809 674"
+        }
+      ],
+      "config_changed": false
+    },
+    {
+      "id": "C3",
+      "classification": "agent_mapping_coverage_gap_not_compiler_bug",
+      "source_id": "real-suitable-operators",
+      "target": "entity.entity_type",
+      "supported_missing_rows": 13,
+      "categories": {
+        "Federal Government Department": 3,
+        "State Government Department": 10
+      },
+      "compiler_route": "Exact explicit department labels already accepted; saved config omitted them."
+    },
+    {
+      "id": "E1",
+      "classification": "legal_name_role_evidence_missing_not_required_external_enrichment",
+      "sources": [
+        "real-ato-corporate-tax",
+        "real-qbcc",
+        "real-suitable-operators",
+        "real-act-contracts-historical"
+      ],
+      "evidence": "Original Name/Licensee Name/Customer Name/contractor_name definitions do not establish as-registered legal-name role. ATO workbook Information text also inspected. Neither suffixes nor t/a splitting establish registration.",
+      "required_action": "Preserve raw and abstention; no outside-page search required."
+    },
+    {
+      "id": "E2",
+      "classification": "identifier_and_address_owner_unresolved_not_confirmed_value_error",
+      "source_id": "real-qbcc",
+      "individual_rows": 670,
+      "individual_rows_with_valid_emitted_abn": 323,
+      "individual_rows_with_emitted_acn": 0,
+      "individual_rows_sharing_abn_with_saved_companies": 20,
+      "evidence": "The local source states licensee name/business address but does not resolve whether an Individual row ABN belongs to that person or an associated business. Value-level checksum/source agreement is not ownership or link precision.",
+      "action": "Retain uncertainty and raw provenance. No fabricated owner attribution or human review."
+    },
+    {
+      "id": "E3",
+      "classification": "different_object_event_or_ambiguous_enum_not_automatic_bug",
+      "evidence": [
+        "Companies REGD=Registered is not explicitly active; EXAD includes receivership/liquidation; SOFF is not completed deregistration.",
+        "BN registration status/date are for a business name; SOR date/status are register entry events; ACT dates/classification are contract events/items.",
+        "SOR individual or Sole trader is mixed; other unclassified legal forms require their own meaning review."
+      ]
+    },
+    {
+      "id": "E4",
+      "classification": "identifier_type_or_checksum_evidence_insufficient_not_auto_repairable",
+      "source_id": "real-suitable-operators",
+      "complete_labelled_values_failing_matching_type_length_or_checksum": 170,
+      "of_those_digits_valid_as_other_type": 48,
+      "action": "Do not retype contradictory explicit labels, pad digits, or coerce ARBN into ACN.",
+      "act_bare_nine_digit_values_with_acn_checksum": 173,
+      "act_action": "Checksum alone does not establish type; these bare values are not labelled ACNs."
+    }
+  ],
+  "remaining_location_abstentions": {
+    "rows": 92,
+    "groups": {
+      "blank_or_undisclosed": {
+        "rows": 15,
+        "examples": [
+          {
+            "source_record_id": "native:fdcdcf25dbdd3660a45011cc2f2603ef31bbe0e9d013c69d2385ed6bda394e0c",
+            "locator": {
+              "file": "download.xlsx",
+              "row": 469,
+              "sheet": "Registered Suitable Operators"
+            },
+            "source_value": ""
+          },
+          {
+            "source_record_id": "native:6906f408205b14997861df624138fc464d0a620ff1c285f244a7b1335fd2bad9",
+            "locator": {
+              "file": "download.xlsx",
+              "row": 1503,
+              "sheet": "Registered Suitable Operators"
+            },
+            "source_value": ""
+          }
+        ]
+      },
+      "empty_components": {
+        "rows": 3,
+        "examples": [
+          {
+            "source_record_id": "native:6776fb9a6ca31198d41d4a859f82a5211e67989a5f20f37bfdbf77db2025fd9c",
+            "locator": {
+              "file": "download.xlsx",
+              "row": 8672,
+              "sheet": "Registered Suitable Operators"
+            },
+            "source_value": "MAREEBA,, QLD,, 4880"
+          },
+          {
+            "source_record_id": "native:2b3827aaceb8376f2f1c9eb538d35ad7a42b14e46bd322053e1a8408592561e6",
+            "locator": {
+              "file": "download.xlsx",
+              "row": 11956,
+              "sheet": "Registered Suitable Operators"
+            },
+            "source_value": "INNISFAIL,, QLD, 4860"
+          }
+        ]
+      },
+      "explicit_country_conflict": {
+        "rows": 2,
+        "examples": [
+          {
+            "source_record_id": "native:4c8f7fec1f55ed64d93c46c9cb0326edbc58db444757e1915e42edfe3d43b62d",
+            "locator": {
+              "file": "download.xlsx",
+              "row": 4567,
+              "sheet": "Registered Suitable Operators"
+            },
+            "source_value": "CAIRNS, QLD, 4870, BAHRAIN"
+          },
+          {
+            "source_record_id": "native:8b927a1571d3fc19905548a05ddb372966bdae7d4331e3187ed8b3b921984176",
+            "locator": {
+              "file": "download.xlsx",
+              "row": 6994,
+              "sheet": "Registered Suitable Operators"
+            },
+            "source_value": "BRISBANE CITY, QLD, 4000, GERMANY"
+          }
+        ]
+      },
+      "malformed_or_nonstandard_tokens": {
+        "rows": 7,
+        "examples": [
+          {
+            "source_record_id": "native:1d5063c68999caa7b34606e424836797e6940bdf058220efae4808c3378b57a1",
+            "locator": {
+              "file": "download.xlsx",
+              "row": 63,
+              "sheet": "Registered Suitable Operators"
+            },
+            "source_value": "TAMROOKUM, QLDQUEENSLAND, 4285"
+          },
+          {
+            "source_record_id": "native:59b48ee8e8477d73b3504448c438b7904a1b75c988f331cc6c63da44132a098a",
+            "locator": {
+              "file": "download.xlsx",
+              "row": 9290,
+              "sheet": "Registered Suitable Operators"
+            },
+            "source_value": "C, Q, 4721"
+          }
+        ]
+      },
+      "missing_explicit_state": {
+        "rows": 18,
+        "examples": [
+          {
+            "source_record_id": "native:1fd205ae70654c042886a954b998c105a2a2b79c5575fc16ad4334db6b83cc7d",
+            "locator": {
+              "file": "download.xlsx",
+              "row": 127,
+              "sheet": "Registered Suitable Operators"
+            },
+            "source_value": "SLACKS CREEK, 4127"
+          },
+          {
+            "source_record_id": "native:9d13060721500c05fa0aa7da98bda1cb926af604efdbbdca66217531d4ff6b23",
+            "locator": {
+              "file": "download.xlsx",
+              "row": 993,
+              "sheet": "Registered Suitable Operators"
+            },
+            "source_value": "BRISBANE CITY, 4000"
+          }
+        ]
+      },
+      "multiple_locality_components": {
+        "rows": 3,
+        "examples": [
+          {
+            "source_record_id": "native:68aca67d4a67e1f4f29fad6c1a846665249df8f95e056b00a2577dd28691aa6d",
+            "locator": {
+              "file": "download.xlsx",
+              "row": 1987,
+              "sheet": "Registered Suitable Operators"
+            },
+            "source_value": "DEPOT HILL, ROCKHAMPTON, QLD, 4700"
+          },
+          {
+            "source_record_id": "native:302695c15f689155cc8343f296a5cdca2f0645d49f1681ab545576a9b491fbcd",
+            "locator": {
+              "file": "download.xlsx",
+              "row": 5904,
+              "sheet": "Registered Suitable Operators"
+            },
+            "source_value": "MYSTERTON, TOWNSVILLE, QUEENSLAND, 4812"
+          }
+        ]
+      },
+      "nonstandard_order": {
+        "rows": 3,
+        "examples": [
+          {
+            "source_record_id": "native:ec2a453eed9b7daebba26749168e5e648516571ae9ce03903cf293496715bc25",
+            "locator": {
+              "file": "download.xlsx",
+              "row": 5564,
+              "sheet": "Registered Suitable Operators"
+            },
+            "source_value": "RUBYVALE, 4702, QLD"
+          },
+          {
+            "source_record_id": "native:55f2fee94657a43637ae1d73f6e40a82ee1a477994c754bcd625f3bf0ed20ecc",
+            "locator": {
+              "file": "download.xlsx",
+              "row": 10338,
+              "sheet": "Registered Suitable Operators"
+            },
+            "source_value": "EAGLE FARM, 4009, QLD"
+          }
+        ]
+      },
+      "outside_au_parser_scope": {
+        "rows": 20,
+        "examples": [
+          {
+            "source_record_id": "native:7b94f9f4644f0388ff1cf20830bab0887b735f04583108a8520077e479bbdff9",
+            "locator": {
+              "file": "download.xlsx",
+              "row": 1602,
+              "sheet": "Registered Suitable Operators"
+            },
+            "source_value": "CALGARY, ALBERTA, T2P 0S8, CANADA"
+          },
+          {
+            "source_record_id": "native:24461a361d0b250533ea225f0bfc068455e57456b1c4beb97249a01d93b26ce5",
+            "locator": {
+              "file": "download.xlsx",
+              "row": 2067,
+              "sheet": "Registered Suitable Operators"
+            },
+            "source_value": "AUSTIN, TEXAS, 78733, USA"
+          }
+        ]
+      },
+      "street_or_locality_ambiguous": {
+        "rows": 21,
+        "examples": [
+          {
+            "source_record_id": "native:0249e0011e3aef0b3797788c7c91ff821fb8e1368eec7d532e130ef501d3162a",
+            "locator": {
+              "file": "download.xlsx",
+              "row": 1133,
+              "sheet": "Registered Suitable Operators"
+            },
+            "source_value": "GEORGE STREET, QLD, 4003"
+          },
+          {
+            "source_record_id": "native:57627ae7d18fae784f408b7f807fcc1bf6832d0973db776461608d10767c3fd7",
+            "locator": {
+              "file": "download.xlsx",
+              "row": 2305,
+              "sheet": "Registered Suitable Operators"
+            },
+            "source_value": "PARK AVENUE, QLD, 4701"
+          }
+        ]
+      }
+    },
+    "boundary": "The nine nonstandard-order/empty-component/multiple-locality rows retain local evidence and are possible parser extensions, not labelled missing evidence. Foreign tuples are outside this AU-only operator. Incomplete, malformed, street-like and country-conflicting rows remain distinct; no blanket claim that all 92 lack evidence."
+  },
+  "verification": {
+    "focused": {
+      "command": "uv run python -m unittest discover -s tests -p test_semantic_value_paths.py",
+      "tests": 21,
+      "passed": true
+    },
+    "historical_compatibility": {
+      "command": "uv run python -m unittest discover -s tests -p test_assessment.py",
+      "tests": 1,
+      "passed": true,
+      "contract": "All historical informative claims/raw IDs preserved; added location triples must match complete original text under explicit state/country spellings. Saved archived outputs are untouched."
+    },
+    "offline_suite": {
+      "command": "uv run python -m firmable_runtime check",
+      "tests": 446,
+      "passed": true,
+      "seconds": 16.552
+    },
+    "static": {
+      "command": "uvx ruff check firmable_runtime scripts tests --select F401,F821,F811,F841",
+      "passed": true
+    },
+    "whitespace": {
+      "command": "git diff --check",
+      "passed": true
+    },
+    "identifier_evidence": {
+      "command": "uv run python -m unittest discover -s tests -p test_typed_identifier_evidence.py",
+      "tests": 20,
+      "passed": true
+    }
+  },
+  "preserved_manifest": [
+    {
+      "path": "data/assessment-inputs/real-act-contracts-historical/catalogue_metadata.json",
+      "sha256": "747b67be4325448de80baa2709716eee14193e0ba93ba7d9999f1878d47e317f"
+    },
+    {
+      "path": "data/assessment-inputs/real-act-contracts-historical/evidence/README.md",
+      "sha256": "915b13a7f45953039fcf939e800cf74dd444ef42dfbc69d445d169314b6afa39"
+    },
+    {
+      "path": "data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json",
+      "sha256": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522"
+    },
+    {
+      "path": "data/assessment-inputs/real-asic-business-names/catalogue_metadata.json",
+      "sha256": "f501478f680e2a9a618983a9d795a6c7f4ef26fe0cd4ee9d45be640929fbb19d"
+    },
+    {
+      "path": "data/assessment-inputs/real-asic-business-names/evidence/README.md",
+      "sha256": "009172d7ff2744a3d904ca564aa8d952c4eaee1a3d5a1b02bb2fa21924b16bb6"
+    },
+    {
+      "path": "data/assessment-inputs/real-asic-business-names/evidence/native-prefix.tsv",
+      "sha256": "70ebf0c95fab5b2d9274939ebe923867998189f1d6c894c35dee3a47795b5191"
+    },
+    {
+      "path": "data/assessment-inputs/real-asic-business-names/evidence/official-help.txt",
+      "sha256": "323ae30a394cd89fbabc0ac42fb9c2c53e3ef13cfbb05ab1077f44731abd87d5"
+    },
+    {
+      "path": "data/assessment-inputs/real-asic-companies/catalogue_metadata.json",
+      "sha256": "f28eb5d583a57891cca937e9753a786fc1c5258b77b7a02861c280c463729d25"
+    },
+    {
+      "path": "data/assessment-inputs/real-asic-companies/evidence/README.md",
+      "sha256": "8ae2b76f59b19dc530a84d1c88ecebb18d5fc3099c14b4ead781f71996154e03"
+    },
+    {
+      "path": "data/assessment-inputs/real-asic-companies/evidence/native-query-records.json",
+      "sha256": "a6f6a1fcf42af6ec00f756897a6330c70755e9886125b6c9499720175fa44655"
+    },
+    {
+      "path": "data/assessment-inputs/real-asic-companies/evidence/official-help.md",
+      "sha256": "87d671520e0a1a9a233fbc4c6a5640d9a949052e674cb7d78fbede37af698c59"
+    },
+    {
+      "path": "data/assessment-inputs/real-ato-corporate-tax/catalogue_metadata.json",
+      "sha256": "86417224d914b2abf3bd085b1a0dade9417571b4530a5da5b994d2dde6671fc2"
+    },
+    {
+      "path": "data/assessment-inputs/real-ato-corporate-tax/evidence/README.md",
+      "sha256": "47132542a30e055c08a0a85a072e1e649b3c3b728081c4e277df394d4c0c8dff"
+    },
+    {
+      "path": "data/assessment-inputs/real-ato-corporate-tax/evidence/download.xlsx",
+      "sha256": "d7772fa282c90be6aabaf5893c60d63bd0c896534b10256abed175f6a05fa754"
+    },
+    {
+      "path": "data/assessment-inputs/real-qbcc/catalogue_metadata.json",
+      "sha256": "83c0d025b59314b517eda9cdc28fccb25cedc2fb2afb4ae0c1f9ae4fc4a70634"
+    },
+    {
+      "path": "data/assessment-inputs/real-qbcc/evidence/README.md",
+      "sha256": "9245f34fd0ce4756f937b9f237cd4937c8566fd5b323ff502a338383bb526b2b"
+    },
+    {
+      "path": "data/assessment-inputs/real-qbcc/evidence/native-prefix.csv",
+      "sha256": "7caa4ca3caf89004205317997c9ac28a93ea6519dce9e9cbc72071a637b5789e"
+    },
+    {
+      "path": "data/assessment-inputs/real-suitable-operators/catalogue_metadata.json",
+      "sha256": "772e036dc019ffb7f904c08ab1b8245f7f33cc2d8492bee8238f3ffe349b0871"
+    },
+    {
+      "path": "data/assessment-inputs/real-suitable-operators/evidence/README.md",
+      "sha256": "c2127babf1928f3715481bf6ae3ce9ca214ac7f8a8d49d191d54fedc0c4ef2da"
+    },
+    {
+      "path": "data/assessment-inputs/real-suitable-operators/evidence/download.xlsx",
+      "sha256": "c82d2975289046ee2ae35bd7ae8fe642ece524d8fbae7438248b38a47e4aee24"
+    },
+    {
+      "path": "outputs/configs/real-act-contracts-historical.json",
+      "sha256": "77ade1d618d62191d3ffdebb5137f12d47b1bfae39774487f8cc63a2d2ee3adb"
+    },
+    {
+      "path": "outputs/configs/real-asic-business-names.json",
+      "sha256": "e121713f3bb7caebf15402310392c6e699320c132e2f2570ec1e6b545bc97520"
+    },
+    {
+      "path": "outputs/configs/real-asic-companies.json",
+      "sha256": "ef6181a594856c9110208f66b90582fd0f56348d6d2a68c311330c4781a1d884"
+    },
+    {
+      "path": "outputs/configs/real-ato-corporate-tax.json",
+      "sha256": "a1d3e7f2227925c149f5c6b8f81c87e23e6ca46550de0ff815936ea89e09b4a0"
+    },
+    {
+      "path": "outputs/configs/real-qbcc.json",
+      "sha256": "83607679b80a2aba7d134be8b80e3d5880d9b96ee6e7a68cdd3f402a31770399"
+    },
+    {
+      "path": "outputs/configs/real-suitable-operators.json",
+      "sha256": "400b3af36cc2f5e247304391cc8c6c647b286ac8114113f8a166a7f608e762ee"
+    },
+    {
+      "path": "outputs/observations/real-act-contracts-historical.jsonl",
+      "sha256": "da1a7d36f55e74e6038421270f4d3a20c3022f1a61761f4d73bceb4a29eca818"
+    },
+    {
+      "path": "outputs/observations/real-asic-business-names.jsonl",
+      "sha256": "b88ac05400aa78a40c3e9689e2139d7fa94b2d9e122813355043cd6472a42898"
+    },
+    {
+      "path": "outputs/observations/real-asic-companies.jsonl",
+      "sha256": "71133bb0670b75bd1977353a9ac735240972744ed72933b8df6c6fbd308469ca"
+    },
+    {
+      "path": "outputs/observations/real-ato-corporate-tax.jsonl",
+      "sha256": "12d31cac96db938dd72a3c148106c5bfd1089e82319fd072cf85a252906b0670"
+    },
+    {
+      "path": "outputs/observations/real-qbcc.jsonl",
+      "sha256": "fd8994340945fb04fd7e4125882b84b2dc1a748ce1180e5d8ee64cfa836979ee"
+    },
+    {
+      "path": "outputs/observations/real-suitable-operators.jsonl",
+      "sha256": "4786bc94bf1feafd3537225ccb74ba9c7ca068d4dedea48a99a4b38a855652eb"
+    },
+    {
+      "path": "runs/act-harness-repair/real-act-contracts-historical/artifacts/final-config.json",
+      "sha256": "41993a8d93dafba4ce216e9bfa7493d10093e94ecb1986f467f3047a3986e562"
+    },
+    {
+      "path": "runs/act-harness-repair/real-act-contracts-historical/observations.jsonl",
+      "sha256": "7b75a872564250a5f434bad33da860dc0451a5ebe7b4e414bcef5745152ae445"
+    },
+    {
+      "path": "runs/semantic-validation-six-source-repeat/real-asic-business-names/artifacts/final-config.json",
+      "sha256": "d131728eab2b65a2afc67553e3728abce1e0986788a0d40e289d2a74afa6307d"
+    },
+    {
+      "path": "runs/semantic-validation-six-source-repeat/real-asic-business-names/observations.jsonl",
+      "sha256": "1ee3bc3c9305f4ae14a87a9c0ada82b3e0239a9efe7ba538eb8daa09352b5426"
+    },
+    {
+      "path": "runs/semantic-validation-six-source-repeat/real-asic-companies/artifacts/final-config.json",
+      "sha256": "2d0b88e01fb489307868fe9a05c3d6694b04e47665bab881ebf65c0ec161528b"
+    },
+    {
+      "path": "runs/semantic-validation-six-source-repeat/real-asic-companies/observations.jsonl",
+      "sha256": "2db643357f3c1f58f6ad33d5df30962d9e7f8667c32a0486b55feec8c2821afb"
+    },
+    {
+      "path": "runs/semantic-validation-six-source-repeat/real-ato-corporate-tax/artifacts/final-config.json",
+      "sha256": "24af95a079056bb05ac504782e72148602b3208aa940109179d8d4914718ebb6"
+    },
+    {
+      "path": "runs/semantic-validation-six-source-repeat/real-ato-corporate-tax/observations.jsonl",
+      "sha256": "0b207850eee3852df32b81cc8bad3aaad834022415f1f11ac6f84252d43c18bf"
+    },
+    {
+      "path": "runs/semantic-validation-six-source-repeat/real-qbcc/artifacts/final-config.json",
+      "sha256": "ab9517f70ac86b8d66438f4893660a29c4c03ae30177a4442fa43fafb3e94ec5"
+    },
+    {
+      "path": "runs/semantic-validation-six-source-repeat/real-qbcc/observations.jsonl",
+      "sha256": "adbef08150be4126943d70631bebde16b17c38c8b579018eb34dc1d21a6fadfc"
+    },
+    {
+      "path": "runs/semantic-validation-six-source-repeat/real-suitable-operators/artifacts/final-config.json",
+      "sha256": "17fe14058f43d5449eb59f260a6e9794caebad3ce5f0f6122da968c80cffb28e"
+    },
+    {
+      "path": "runs/semantic-validation-six-source-repeat/real-suitable-operators/observations.jsonl",
+      "sha256": "1803fc7223a0c9cfe6288cafb0f164e2b479f24b336cb66aa67c311028070b6b"
+    },
+    {
+      "path": "schema/firmable_ontology.yaml",
+      "sha256": "2a2d2db45cb0c5e7d022f6e2466c68271cc14704a09658e0d71b92ec1f130e23"
+    }
+  ],
+  "preservation_check": {
+    "files": 45,
+    "changed": []
+  },
+  "limits": [
+    "Source agreement and finite semantic rules do not establish real-world truth, identifier ownership, all-field recall, human acceptance or unseen-source generalization.",
+    "No new official output cohort, approvals, entity links, or profiles were published. Runtime changes require fresh bound review before any formal extraction.",
+    "Parser and validator fixes are verified offline; actual Haiku discovery of omitted mappings has not been rerun."
+  ]
+}

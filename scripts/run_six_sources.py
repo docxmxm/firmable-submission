@@ -32,10 +32,20 @@ def main():
         type=Path,
         help="Single-source inference request; no source-specific runtime rules.",
     )
+    parser.add_argument(
+        "--run-dir", type=Path,
+        help="New run directory; an existing directory is never overwritten.",
+    )
+    parser.add_argument(
+        "--no-acquisition", action="store_true",
+        help="Use only supplied local evidence; do not run external source reading.",
+    )
     args = parser.parse_args()
     supplied = json.loads(args.request.read_text()) if args.request else None
-    root = PROJECT / (
-        "runs/unseen-source" if supplied is not None else "runs/six-source"
+    root = (
+        args.run_dir.resolve() if args.run_dir is not None else PROJECT / (
+            "runs/unseen-source" if supplied is not None else "runs/six-source"
+        )
     )
     if root.exists():
         raise SystemExit(f"{root} already exists; do not overwrite or resend.")
@@ -105,7 +115,10 @@ def main():
         "cost_guard_limitation": "Receipt-based stop with reservation; not a provider-enforced billing limit.",
         "unknown_outcome_policy": "Stop new calls globally; never resend an unknown outcome.",
         "labels_policy": "Frozen labels are read only by the subsequent scoring step, never by the planner.",
-        "source_acquisition": "Agent-directed reading of observed source links before inference; the agent may finish without fetching. Original inputs stay unchanged; acquired excerpts are separately hash-bound.",
+        "source_acquisition": "Disabled: supplied local evidence only."
+        if args.no_acquisition
+        else "Agent-directed reading of observed source links before inference; the agent may finish without fetching. Original inputs stay unchanged; acquired excerpts are separately hash-bound.",
+        "source_acquisition_enabled": not args.no_acquisition,
     }
     atomic_json(root / "protocol.json", protocol)
     lock = threading.Lock()
@@ -158,6 +171,8 @@ def main():
         }
         if supplied is not None:
             request = {**supplied, "state_dir": str(source_root)}
+        if args.no_acquisition:
+            request["source_acquisition_enabled"] = False
         provider = OpenRouterProvider(
             api_key=key,
             model_id=protocol["model"],

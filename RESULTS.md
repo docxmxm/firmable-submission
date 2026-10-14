@@ -10,7 +10,7 @@ Original metadata/document URLs now reach the reading agent with exact source bi
 
 Metadata links may point to another host; subsequent page references retain the existing origin restriction. Same-host HTTP-to-HTTPS upgrades are supported. Captures retain hashes and receipts, resume does not resend unknown outcomes, and original native bytes/locators remain unchanged. Acquisition is a bounded phase before inference, not a fresh fetch cycle after every failed candidate. Static-text capture does not support PDF/XLSX downloads or browser rendering.
 
-Configs came from runtime model calls. No source-specific branch, hand-written mapping, native-row edit, ontology change or label injection was added. **407 offline tests**, static checks and independent code review passed. New scripted integration tests exercise original quote → evidence snapshot → candidate revision → approval/extraction, plus optional no-fetch, fetch failure and interruption recovery. These are behavior tests, not model-quality evidence.
+Configs came from runtime model calls. No source-specific branch, hand-written mapping, native-row edit, ontology change within this experiment or label injection was added. The retained ontology includes an earlier explanatory note for `address.full`, as disclosed in README. **407 offline tests**, static checks and independent code review passed. New scripted integration tests exercise original quote → evidence snapshot → candidate revision → approval/extraction, plus optional no-fetch, fetch failure and interruption recovery. These are behavior tests, not model-quality evidence.
 
 ## Six-source result
 

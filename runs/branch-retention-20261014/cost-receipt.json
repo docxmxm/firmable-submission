@@ -1,0 +1,187 @@
+{
+  "basis": "OpenRouter reported receipts, not invoice",
+  "human_gold": false,
+  "arms": [
+    {
+      "arm": "before",
+      "runtime": "4392bdf9b7bbfdd0f70566a03c78abdf2494c8ac9e3146bc1ffcc05d769b0540",
+      "model_calls": 93,
+      "reported_cost_usd": 0.2817446,
+      "input_tokens": 2093411,
+      "output_tokens": 144807,
+      "wall_seconds": 424.0792442499951,
+      "cost_complete": true,
+      "stop_reason": null,
+      "integrity_end": {
+        "changes": [],
+        "unchanged": true
+      },
+      "per_source": {
+        "apra-superannuation": {
+          "cost_complete": true,
+          "input_tokens": 245091,
+          "model_calls": 12,
+          "output_tokens": 14989,
+          "reported_cost_usd": 0.0320036
+        },
+        "oric-corporations": {
+          "cost_complete": true,
+          "input_tokens": 576647,
+          "model_calls": 12,
+          "output_tokens": 18813,
+          "reported_cost_usd": 0.0670712
+        },
+        "real-act-contracts-historical": {
+          "cost_complete": true,
+          "input_tokens": 106031,
+          "model_calls": 7,
+          "output_tokens": 6839,
+          "reported_cost_usd": 0.0140226
+        },
+        "real-asic-business-names": {
+          "cost_complete": true,
+          "input_tokens": 305204,
+          "model_calls": 15,
+          "output_tokens": 25747,
+          "reported_cost_usd": 0.0433939
+        },
+        "real-asic-companies": {
+          "cost_complete": true,
+          "input_tokens": 308861,
+          "model_calls": 12,
+          "output_tokens": 32125,
+          "reported_cost_usd": 0.0469486
+        },
+        "real-ato-corporate-tax": {
+          "cost_complete": true,
+          "input_tokens": 196469,
+          "model_calls": 13,
+          "output_tokens": 10675,
+          "reported_cost_usd": 0.0249844
+        },
+        "real-qbcc": {
+          "cost_complete": true,
+          "input_tokens": 181354,
+          "model_calls": 11,
+          "output_tokens": 16898,
+          "reported_cost_usd": 0.0265844
+        },
+        "real-suitable-operators": {
+          "cost_complete": true,
+          "input_tokens": 173754,
+          "model_calls": 11,
+          "output_tokens": 18721,
+          "reported_cost_usd": 0.0267359
+        }
+      }
+    },
+    {
+      "arm": "after",
+      "runtime": "8c7bad9c098b4e7611f59daa0db159718a269fa7e27d29c2a203f9170c8c6289",
+      "model_calls": 106,
+      "reported_cost_usd": 0.3301252,
+      "input_tokens": 2525637,
+      "output_tokens": 155123,
+      "wall_seconds": 476.1421758339857,
+      "cost_complete": true,
+      "stop_reason": null,
+      "integrity_end": {
+        "changes": [],
+        "unchanged": true
+      },
+      "per_source": {
+        "apra-superannuation": {
+          "cost_complete": true,
+          "input_tokens": 244024,
+          "model_calls": 12,
+          "output_tokens": 14257,
+          "reported_cost_usd": 0.0315309
+        },
+        "oric-corporations": {
+          "cost_complete": true,
+          "input_tokens": 700668,
+          "model_calls": 14,
+          "output_tokens": 17199,
+          "reported_cost_usd": 0.0786663
+        },
+        "real-act-contracts-historical": {
+          "cost_complete": true,
+          "input_tokens": 253014,
+          "model_calls": 13,
+          "output_tokens": 14149,
+          "reported_cost_usd": 0.0323759
+        },
+        "real-asic-business-names": {
+          "cost_complete": true,
+          "input_tokens": 362154,
+          "model_calls": 17,
+          "output_tokens": 30645,
+          "reported_cost_usd": 0.0515379
+        },
+        "real-asic-companies": {
+          "cost_complete": true,
+          "input_tokens": 340281,
+          "model_calls": 13,
+          "output_tokens": 34977,
+          "reported_cost_usd": 0.0515166
+        },
+        "real-ato-corporate-tax": {
+          "cost_complete": true,
+          "input_tokens": 235226,
+          "model_calls": 14,
+          "output_tokens": 10456,
+          "reported_cost_usd": 0.0287506
+        },
+        "real-qbcc": {
+          "cost_complete": true,
+          "input_tokens": 180282,
+          "model_calls": 11,
+          "output_tokens": 14322,
+          "reported_cost_usd": 0.0251892
+        },
+        "real-suitable-operators": {
+          "cost_complete": true,
+          "input_tokens": 209988,
+          "model_calls": 12,
+          "output_tokens": 19118,
+          "reported_cost_usd": 0.0305578
+        }
+      }
+    },
+    {
+      "arm": "holdout",
+      "runtime": "8c7bad9c098b4e7611f59daa0db159718a269fa7e27d29c2a203f9170c8c6289",
+      "model_calls": 20,
+      "reported_cost_usd": 0.1102006,
+      "input_tokens": 1008896,
+      "output_tokens": 18622,
+      "wall_seconds": 85.30548662500223,
+      "cost_complete": true,
+      "stop_reason": null,
+      "integrity_end": {
+        "changes": [],
+        "unchanged": true
+      },
+      "per_source": {
+        "cer-nger-controlling-corporations-2024-25": {
+          "cost_complete": true,
+          "input_tokens": 257382,
+          "model_calls": 10,
+          "output_tokens": 7521,
+          "reported_cost_usd": 0.0294987
+        },
+        "epa-vic-operating-licence-points": {
+          "cost_complete": true,
+          "input_tokens": 751514,
+          "model_calls": 10,
+          "output_tokens": 11101,
+          "reported_cost_usd": 0.0807019
+        }
+      }
+    }
+  ],
+  "total_calls": 219,
+  "total_reported_cost_usd": 0.7220704,
+  "total_input_tokens": 5627944,
+  "total_output_tokens": 318552
+}

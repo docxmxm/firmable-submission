@@ -1,0 +1,93 @@
+[
+  {
+    "source_id": "cricos",
+    "native_original": "/Users/zhegoalice.ai/Desktop/personal/output/reserve-datasets-20261014/sources/cricos/raw/cricos-2026-09-01.xlsx",
+    "native_input": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/evidence-retention-20261014/holdout-inputs/cricos/evidence/cricos-2026-09-01.xlsx",
+    "native_sha256": "4be793296da535e853ef2c66e49ba22b743d26241f318422ce4e1d8cb4e0839c",
+    "native_unchanged": true,
+    "documents": [
+      {
+        "original": "/Users/zhegoalice.ai/Desktop/personal/output/reserve-datasets-20261014/sources/cricos/docs/catalogue-landing.html",
+        "original_sha256": "f1b6f43105fcd56339b8cc6d268fa865b85132caa8b395c1a0eab017f70457e8",
+        "input": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/evidence-retention-20261014/holdout-inputs/cricos/evidence/catalogue-landing.txt",
+        "input_sha256": "8b93bd8e79f4c9c404c7162c7d89388e10a01844665e7c45428a7d89d1c7146a",
+        "method": "Original HTML text nodes, scripts/styles/svg removed; whitespace only"
+      },
+      {
+        "original": "/Users/zhegoalice.ai/Desktop/personal/output/reserve-datasets-20261014/sources/cricos/docs/catalogue-package.json",
+        "original_sha256": "81466a1de76b90d158ef6287452fc2ff1f6c354e4778b3a5c916b66f7f0ec131",
+        "input": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/evidence-retention-20261014/holdout-inputs/cricos/evidence/official-metadata.txt",
+        "input_sha256": "542315e21704355baff956426cd4feae76727b30ce313a735941f37e98b40ec5",
+        "method": "Exact original metadata title and notes"
+      },
+      {
+        "original": "/Users/zhegoalice.ai/Desktop/personal/output/reserve-datasets-20261014/sources/cricos/docs/license.html",
+        "original_sha256": "78d6558f270a15570182530d2bb7ade79184314ae04d7220f0c82cda8ac370e3",
+        "input": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/evidence-retention-20261014/holdout-inputs/cricos/evidence/license.txt",
+        "input_sha256": "024628bc77da8db2016b2be8b05ae49d260cb28643befc30513e13711ce8a2c7",
+        "method": "Original HTML text nodes, scripts/styles/svg removed; whitespace only"
+      },
+      {
+        "original": "/Users/zhegoalice.ai/Desktop/personal/output/reserve-datasets-20261014/sources/cricos/docs/provider-export-purpose-dictionary.pdf",
+        "original_sha256": "45350fbf1f3af7a049f5dc0b0e44f85a559599f400fd1906e8df05f1a60ccfac",
+        "input": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/evidence-retention-20261014/holdout-inputs/cricos/evidence/provider-export-purpose-dictionary.pdf",
+        "input_sha256": "45350fbf1f3af7a049f5dc0b0e44f85a559599f400fd1906e8df05f1a60ccfac",
+        "method": "Original PDF bytes unchanged"
+      }
+    ],
+    "prior_exposure": {
+      "tested_or_native_reviewed_family_overlap_found": false,
+      "metadata_exposure": true,
+      "description": "Source e5ae7059-bfa8-4fa4-a5c0-c13cf3520193 found in 36 prior retained catalogue files/copies; parent exact-history scan found zero noncatalogue matches. This is metadata exposure, not proof of native/model exposure.",
+      "family_overlap": "Distinct Department of Education registration export; not same native template as six original sources or rejected procurement families.",
+      "history_boundary": "Retained local files only; deleted/external records and model pretraining cannot be excluded."
+    },
+    "formal_unseen_boundary": "Not asserted. Preparing agents saw raw data; independent evaluation protocol must govern later use. No model inference/evaluation/prompt tuning performed."
+  },
+  {
+    "source_id": "aged-care-services",
+    "native_original": "/Users/zhegoalice.ai/Desktop/personal/output/reserve-datasets-20261014/sources/aged-care-services/raw/australia-service-list-2025.xlsx",
+    "native_input": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/evidence-retention-20261014/holdout-inputs/aged-care-services/evidence/australia-service-list-2025.xlsx",
+    "native_sha256": "0e71af6a3e43091553f4c8d2bf4d95336dfcace620079f931eb6e5f2b3c08f07",
+    "native_unchanged": true,
+    "documents": [
+      {
+        "original": "/Users/zhegoalice.ai/Desktop/personal/output/reserve-datasets-20261014/sources/aged-care-services/docs/copyright.html",
+        "original_sha256": "a36537948a4a59fd42d26b80c9a1a0360e93af5a8b4419b3dcbfb942cda64f82",
+        "input": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/evidence-retention-20261014/holdout-inputs/aged-care-services/evidence/copyright.txt",
+        "input_sha256": "ef811131a73e099984a053eefc9d199cc3866cd31e4c3ecb4396744edc14d109",
+        "method": "Original HTML text nodes, scripts/styles/svg removed; whitespace only"
+      },
+      {
+        "original": "/Users/zhegoalice.ai/Desktop/personal/output/reserve-datasets-20261014/sources/aged-care-services/docs/glossary.html",
+        "original_sha256": "dbe869a1c840ad02d1a3a13e9ab04fcd651223645f43e5962bb65d9d345c0a95",
+        "input": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/evidence-retention-20261014/holdout-inputs/aged-care-services/evidence/glossary.txt",
+        "input_sha256": "b4ab19c8c0935cabc211795499b191f883fb15c81cca006f4a364a039d9e7202",
+        "method": "Original HTML text nodes, scripts/styles/svg removed; whitespace only"
+      },
+      {
+        "original": "/Users/zhegoalice.ai/Desktop/personal/output/reserve-datasets-20261014/sources/aged-care-services/docs/landing.html",
+        "original_sha256": "5dc5756eff49a053e727e2238ff2b6ccd102a918c82d8660b0d0e7a0e4e88bb0",
+        "input": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/evidence-retention-20261014/holdout-inputs/aged-care-services/evidence/landing.txt",
+        "input_sha256": "19c8b62b8559e67fa1f4a0aa656e3ab3ccf2eac83d7aa513af159c653831f79e",
+        "method": "Original HTML text nodes, scripts/styles/svg removed; whitespace only"
+      },
+      {
+        "original": "/Users/zhegoalice.ai/Desktop/personal/output/reserve-datasets-20261014/sources/aged-care-services/docs/providers-definitions.html",
+        "original_sha256": "93c213cc4b4ee623be8fa59cb815698a29e23a34d26643e7c8406c33533fb992",
+        "input": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/evidence-retention-20261014/holdout-inputs/aged-care-services/evidence/providers-definitions.txt",
+        "input_sha256": "da27f7ee4bb2c68f1ab39f73822457e8f194fd2e4aa20154910d21b8d2afb4be",
+        "method": "Original HTML text nodes, scripts/styles/svg removed; whitespace only"
+      }
+    ],
+    "prior_exposure": {
+      "tested_or_native_reviewed_family_overlap_found": false,
+      "metadata_exposure_in_prior_local_history_found": false,
+      "description": "Parent exact-history scan for gen-agedcaredata.gov.au, selected UUID, Service-List-2025-Australia, Aged care service list across project and retained output/firmable* text files <=50 MB/file found zero matches.",
+      "fresh_discovery_exposure": "Official web search unexpectedly returned native-record snippets from related 2025 South Australia PDF and 2024 Australia PDF. No selected Australian 2025 XLSX native records fetched/read before this selection; source family cannot be claimed completely unexposed to preparing agent. Selection based on metadata/scope/licence, no model assessment.",
+      "family_overlap": "Distinct health-service list; no original/tested source template overlap found. Shares institutional/service theme with education data but independent publisher, grain and fields.",
+      "history_boundary": "Retained local files only; deleted/external records and model pretraining cannot be excluded."
+    },
+    "formal_unseen_boundary": "Not asserted. Preparing agents saw raw data; independent evaluation protocol must govern later use. No model inference/evaluation/prompt tuning performed."
+  }
+]

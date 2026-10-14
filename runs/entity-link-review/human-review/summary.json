@@ -1,0 +1,27 @@
+{
+  "human_reviewed": 18,
+  "limitation": "Pending human decisions; precision remains unknown.",
+  "links_sha256": "01050fb2b5c7188949a8d333fea62f352d52f00b3d329dfe7537be268a3dbae6",
+  "policy_version": "common-anchor-0.4-name-roles",
+  "precision": null,
+  "proposed_pair_population": 479,
+  "sample_size": 50,
+  "samples_sha256": "da9fcd575f80e49b9d5518fc302e65a01e1af647786900a0487dc2ffb755db1f",
+  "sampling": "Ascending SHA256(seed + ':' + pair_id), without replacement",
+  "seed": "firmable-link-review",
+  "threshold": 0.99,
+  "reviews_sha256": "e6be089073fb80a9b1a81cc361ac32608f4795993628a1ab233a2b75df9078ea",
+  "review_status": "pending_human_review",
+  "decision_counts": {
+    "correct": 18,
+    "incorrect": 0,
+    "uncertain": 0,
+    "unreviewed": 32
+  },
+  "reviewers": [
+    "zheluo"
+  ],
+  "precision_basis": "Conservative confirmed-correct fraction of all 50 supplied reviews; uncertain is nonconfirmed, never correct. Precision is null until all 50 decisions and reviewer names are supplied.",
+  "judgment_origin": "Reviewer-supplied CSV judgments. This script generates no judgments and cannot attest that the entries were made by a human.",
+  "scored_at": "2026-10-14T10:59:29.895518+00:00"
+}

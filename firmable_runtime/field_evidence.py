@@ -288,7 +288,7 @@ def inspect_field_evidence(runtime, source_schema, field):
             "total_span_utf8_bytes": MAX_DOCUMENT_BYTES,
         },
         "limitations": [
-            "Literal field mentions and observed values are not same-field semantic definition support.",
+            "Literal mentions and name-looking values alone do not establish a canonical role. Interpret explicit source wording with its original context; meaning and subject still require the existing independent evidence-bound review.",
             "Absence in these documents or exposed rows does not establish source-wide absence.",
             "No validation rows, reserve rows, external lookup, mapping approval or semantic judgment.",
         ],

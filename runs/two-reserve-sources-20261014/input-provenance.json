@@ -1,0 +1,50 @@
+[
+  {
+    "source_id": "apra-superannuation",
+    "raw_source": "/Users/zhegoalice.ai/Desktop/personal/output/reserve-datasets-20261014/sources/apra-superannuation/raw/register.xlsx",
+    "raw_sha256": "f3146f83c03942346a8543a97d66e951f5991cba9ffdbe7830b0b844a3544e70",
+    "raw_copy_sha256": "f3146f83c03942346a8543a97d66e951f5991cba9ffdbe7830b0b844a3544e70",
+    "native_sampling": false,
+    "document_transformations": [
+      {
+        "original": "official-register-page.html",
+        "original_sha256": "27c27f57704f3f2b0c083d41d8e1881d0981de2637f2227c29188d6143af0703",
+        "derived": "official-register-page.txt",
+        "method": "HTMLParser article text; omit script/style/svg; trim blank lines, decode HTML entities",
+        "derived_sha256": "e893bec7db60c2958e250d39cc5d5c828107a3de4ad129e4ef266742ca32e868"
+      },
+      {
+        "original": "official-copyright.html",
+        "original_sha256": "5709f67fd43d8686e23943bda01ccb5926ef03cf0b2300e0807351cbaedd3268",
+        "derived": "official-copyright.txt",
+        "method": "HTMLParser article text; omit script/style/svg; trim blank lines, decode HTML entities",
+        "derived_sha256": "839a8d4daa84c33b4d44838d391463ca4e609fa0005bbeb45e10d94605110cf2"
+      }
+    ],
+    "expected_labels_sent_to_planner": false
+  },
+  {
+    "source_id": "oric-corporations",
+    "raw_source": "/Users/zhegoalice.ai/Desktop/personal/output/reserve-datasets-20261014/sources/oric-corporations/raw/register.csv",
+    "raw_sha256": "29be0f2a7afd6db2bca3543c3fb260aa1d6c4339e351caceb4fc6590478a0ce6",
+    "raw_copy_sha256": "29be0f2a7afd6db2bca3543c3fb260aa1d6c4339e351caceb4fc6590478a0ce6",
+    "native_sampling": false,
+    "document_transformations": [
+      {
+        "original": "official-package.json",
+        "original_sha256": "f8cc02a4b9542766ff6c8b4e4f956098c7d6ab0d817db6f8bf2c6b353edde891",
+        "derived": "official-catalogue-text.txt",
+        "method": "Exact title, notes, organization.description values; escaped CRLF decoded; no inferred definitions",
+        "derived_sha256": "7f55c03b11367f0f997ff7c35fc71939d691e0a76e8fa8f8c0f450887fcfca39"
+      },
+      {
+        "original": "official-web-tool-snapshot.json",
+        "original_sha256": "88e70276f6fe1f83a73d1b561415b0cef63f7700088db70ee0b83742df4cb1c8",
+        "derived": "official-guide-parsed-snapshot.txt",
+        "method": "Decode JSON string without changing text, prefix provenance caveat; preserves captured source line references",
+        "derived_sha256": "d9a389bf3cf5eb7fc6ae1d7981bbb2b4162dba7666917af33496682dc966a42f"
+      }
+    ],
+    "expected_labels_sent_to_planner": false
+  }
+]

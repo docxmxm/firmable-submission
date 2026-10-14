@@ -23,6 +23,13 @@ without fetching. Otherwise use the observed links to investigate specific gaps.
 Navigation assets are mechanically located links, not source definitions or proof
 of authority. Prefer source documentation over licences and bulk data downloads.
 
+Use the dataset description, column labels, source subject and original prose
+together to investigate a field's meaning; a standalone data dictionary is not
+required. Evidence may describe a whole register or a table, not repeat the exact
+native header. If a literal search has no matches, inspect relevant title/heading
+and prose offsets from the asset's embedded_blocks using read, or try the source's
+own terminology. An empty exact-name search is not evidence that a page lacks
+useful context. Read context and conditions before deciding a meaning is supported.
 Use search for exact native field names and meaningful labels across captured
 originals. HTML may contain field bindings in embedded JSON or scripts outside
 main/article. When those bindings refer to a component, inspect the observed
@@ -299,7 +306,7 @@ def _export(runtime, capture, actions):
     parts = [
         "# Original source excerpts\n",
         LIMITATION,
-        "Offsets below are Unicode character offsets in UTF-8 decoded original bytes; end is exclusive. Raw bytes are retained in the capture manifest.\n",
+        "Offsets use each excerpt's offset_unit; end is exclusive. PDF offsets refer to extracted page text, not PDF bytes. Original bytes and hashes are retained in the capture manifest.\n",
     ]
     for index, excerpt in enumerate(excerpts):
         metadata = {k: v for k, v in excerpt.items() if k not in {"text", "references"}}

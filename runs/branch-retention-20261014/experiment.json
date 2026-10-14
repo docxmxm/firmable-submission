@@ -1,0 +1,44 @@
+{
+  "hypothesis": "Bounded local removal at an attributable output branch preserves independently supported sibling values without weakening validation. All proposals require fresh probe, semantic review, selection and development validation.",
+  "baseline_policy": "Fresh unmodified current runtime, eight sources, fixed supplied evidence, no external acquisition.",
+  "candidate_policy": "Identical inputs/model/limits; one runtime for all eight and subsequent holdouts.",
+  "holdouts_selected_before_changes": [
+    "cer-nger",
+    "epa-victoria"
+  ],
+  "evaluation": "Original frozen labels and independent raw agreement, separate coverage, false acceptance, abstention, missing outputs, complete terminal state and costs. One trajectory per arm; descriptive comparison, not statistical reliability.",
+  "gold_private": true,
+  "no_source_specific_rules": true,
+  "no_promote_or_mix": true,
+  "candidate_runtime": "8c7bad9c098b4e7611f59daa0db159718a269fa7e27d29c2a203f9170c8c6289",
+  "offline_validation": {
+    "before": 465,
+    "after": 472,
+    "focused_new_tests": 7,
+    "red_methods": 2,
+    "red_subtest_failures": 3,
+    "static": "passed"
+  },
+  "runtime_changed_modules": [
+    "agent.py",
+    "branch_repair.py"
+  ],
+  "frozen_label_files": {
+    "evidence/six-source-frozen-labels.json": "7f4101097b25ee1175125917a4e32f5c9e23fefe759c1c90a976df188d7ab7a9",
+    "evidence/six-source-frozen-field-dispositions.json": "7466d57e3575a643f258982a39aed0e9504f62e0bafc11e403cd7ebda634a0bd",
+    "runs/two-reserve-sources-20261014/audit/baseline.json": "1f7f08e4fd6cdd93753e58b1817c27b0da29c10420bdd5bdd2c6cdf4dc352d40"
+  },
+  "holdout_labels_sha256": "d3fbe24af8158b85418560c64e0b7a580320c305f1c91f5dccdf71477fee7950",
+  "holdout_preparation": {
+    "runtime_frozen_before_inspection": "8c7bad9c098b4e7611f59daa0db159718a269fa7e27d29c2a203f9170c8c6289",
+    "raw_bytes_unchanged": true,
+    "epa_transport_suffix_only": ".geojson copied byte-identically as .json",
+    "positive_label_opportunities": {
+      "epa-vic-operating-licence-points": {
+        "entity.acn": 460
+      },
+      "cer-nger-controlling-corporations-2024-25": {}
+    },
+    "limitation": "CER has no independent positive semantic labels; it tests ambiguity/abstention, not positive extraction accuracy."
+  }
+}

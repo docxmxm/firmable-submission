@@ -1,0 +1,913 @@
+{
+  "human_gold": false,
+  "causal_limitation": "One fresh trajectory per arm; input/model/policy held fixed. Differences are not statistical reliability or causal proof.",
+  "arms": {
+    "before": {
+      "runtime": "8c7bad9c098b4e7611f59daa0db159718a269fa7e27d29c2a203f9170c8c6289",
+      "usage": {
+        "model_calls": 106,
+        "reported_cost_usd": 0.3301252,
+        "wall_seconds": 476.1421758339857,
+        "cost_complete": true,
+        "stop_reason": null,
+        "integrity_end": {
+          "changes": [],
+          "unchanged": true
+        }
+      },
+      "sources": [
+        {
+          "source_id": "real-act-contracts-historical",
+          "status": "extracted",
+          "task_status": "partial",
+          "usage": {
+            "cost_complete": true,
+            "input_tokens": 253014,
+            "model_calls": 13,
+            "output_tokens": 14149,
+            "reported_cost_usd": 0.0323759
+          },
+          "seconds": 102.78016637501423,
+          "audit": {
+            "status": "complete_output",
+            "native_record_count": 1000,
+            "output_record_count": 1000,
+            "guard_errors": {},
+            "metrics": {},
+            "abstention_checks": {},
+            "mismatches": []
+          },
+          "coverage": {
+            "entity.abn": 759
+          },
+          "empty_rows": 241,
+          "by_grain": {
+            "table": {
+              "rows": 1000,
+              "coverage": {
+                "entity.abn": 759
+              }
+            }
+          },
+          "retention_refusals": 0
+        },
+        {
+          "source_id": "real-asic-business-names",
+          "status": "extracted",
+          "task_status": "complete",
+          "usage": {
+            "cost_complete": true,
+            "input_tokens": 362154,
+            "model_calls": 17,
+            "output_tokens": 30645,
+            "reported_cost_usd": 0.0515379
+          },
+          "seconds": 163.2335904169886,
+          "audit": {
+            "status": "complete_output",
+            "native_record_count": 1000,
+            "output_record_count": 1000,
+            "guard_errors": {},
+            "metrics": {
+              "entity.trading_name": {
+                "opportunities": 888,
+                "correct": 888,
+                "missed": 0,
+                "wrong_emitted": 0,
+                "informative_emitted": 888,
+                "recall": 1.0,
+                "precision_within_labelled_opportunities": 1.0
+              }
+            },
+            "abstention_checks": {},
+            "mismatches": []
+          },
+          "coverage": {
+            "entity.abn": 802,
+            "entity.trading_name": 888
+          },
+          "empty_rows": 112,
+          "by_grain": {
+            "table": {
+              "rows": 1000,
+              "coverage": {
+                "entity.abn": 802,
+                "entity.trading_name": 888
+              }
+            }
+          },
+          "retention_refusals": 0
+        },
+        {
+          "source_id": "real-ato-corporate-tax",
+          "status": "extracted",
+          "task_status": "partial",
+          "usage": {
+            "cost_complete": true,
+            "input_tokens": 235226,
+            "model_calls": 14,
+            "output_tokens": 10456,
+            "reported_cost_usd": 0.0287506
+          },
+          "seconds": 72.35219070801395,
+          "audit": {
+            "status": "complete_output",
+            "native_record_count": 4436,
+            "output_record_count": 4436,
+            "guard_errors": {},
+            "metrics": {},
+            "abstention_checks": {},
+            "mismatches": []
+          },
+          "coverage": {
+            "entity.abn": 4400
+          },
+          "empty_rows": 36,
+          "by_grain": {
+            "Income tax details": {
+              "rows": 4415,
+              "coverage": {
+                "entity.abn": 4379
+              }
+            },
+            "PRRT details": {
+              "rows": 21,
+              "coverage": {
+                "entity.abn": 21
+              }
+            }
+          },
+          "retention_refusals": 0
+        },
+        {
+          "source_id": "real-asic-companies",
+          "status": "extracted",
+          "task_status": "complete",
+          "usage": {
+            "cost_complete": true,
+            "input_tokens": 340281,
+            "model_calls": 13,
+            "output_tokens": 34977,
+            "reported_cost_usd": 0.0515166
+          },
+          "seconds": 162.4799560829997,
+          "audit": {
+            "status": "complete_output",
+            "native_record_count": 389,
+            "output_record_count": 389,
+            "guard_errors": {},
+            "metrics": {
+              "entity.legal_name": {
+                "opportunities": 389,
+                "correct": 389,
+                "missed": 0,
+                "wrong_emitted": 0,
+                "informative_emitted": 389,
+                "recall": 1.0,
+                "precision_within_labelled_opportunities": 1.0
+              }
+            },
+            "abstention_checks": {},
+            "mismatches": []
+          },
+          "coverage": {
+            "entity.abn": 389,
+            "entity.acn": 389,
+            "entity.date_registered": 389,
+            "entity.entity_type": 386,
+            "entity.legal_name": 389,
+            "entity.status": 3
+          },
+          "empty_rows": 0,
+          "by_grain": {
+            "table": {
+              "rows": 389,
+              "coverage": {
+                "entity.abn": 389,
+                "entity.acn": 389,
+                "entity.date_registered": 389,
+                "entity.entity_type": 386,
+                "entity.legal_name": 389,
+                "entity.status": 3
+              }
+            }
+          },
+          "retention_refusals": 0
+        },
+        {
+          "source_id": "real-qbcc",
+          "status": "extracted",
+          "task_status": "partial",
+          "usage": {
+            "cost_complete": true,
+            "input_tokens": 180282,
+            "model_calls": 11,
+            "output_tokens": 14322,
+            "reported_cost_usd": 0.0251892
+          },
+          "seconds": 83.52968895898084,
+          "audit": {
+            "status": "complete_output",
+            "native_record_count": 1000,
+            "output_record_count": 1000,
+            "guard_errors": {},
+            "metrics": {},
+            "abstention_checks": {},
+            "mismatches": []
+          },
+          "coverage": {
+            "entity.abn": 623,
+            "entity.acn": 326,
+            "address.full": 1000
+          },
+          "empty_rows": 0,
+          "by_grain": {
+            "table": {
+              "rows": 1000,
+              "coverage": {
+                "entity.abn": 623,
+                "entity.acn": 326,
+                "address.full": 1000
+              }
+            }
+          },
+          "retention_refusals": 0
+        },
+        {
+          "source_id": "real-suitable-operators",
+          "status": "extracted",
+          "task_status": "partial",
+          "usage": {
+            "cost_complete": true,
+            "input_tokens": 209988,
+            "model_calls": 12,
+            "output_tokens": 19118,
+            "reported_cost_usd": 0.0305578
+          },
+          "seconds": 111.17373837501509,
+          "audit": {
+            "status": "complete_output",
+            "native_record_count": 15100,
+            "output_record_count": 15100,
+            "guard_errors": {},
+            "metrics": {
+              "entity.entity_type": {
+                "opportunities": 8184,
+                "correct": 8184,
+                "missed": 0,
+                "wrong_emitted": 0,
+                "informative_emitted": 8184,
+                "recall": 1.0,
+                "precision_within_labelled_opportunities": 1.0
+              }
+            },
+            "abstention_checks": {
+              "entity.legal_name": {
+                "opportunities": 15100,
+                "abstained": 15100,
+                "unsupported_emitted": 0
+              },
+              "entity.entity_type": {
+                "opportunities": 6714,
+                "abstained": 6714,
+                "unsupported_emitted": 0
+              }
+            },
+            "mismatches": []
+          },
+          "coverage": {
+            "entity.acn": 7901,
+            "entity.entity_type": 8184,
+            "address.locality": 15008,
+            "address.postcode": 15008,
+            "address.state": 15008,
+            "entity.abn": 299
+          },
+          "empty_rows": 48,
+          "by_grain": {
+            "Registered Suitable Operators": {
+              "rows": 15100,
+              "coverage": {
+                "entity.acn": 7901,
+                "entity.entity_type": 8184,
+                "address.locality": 15008,
+                "address.postcode": 15008,
+                "address.state": 15008,
+                "entity.abn": 299
+              }
+            }
+          },
+          "retention_refusals": 0
+        },
+        {
+          "source_id": "apra-superannuation",
+          "status": "extracted",
+          "task_status": "partial",
+          "usage": {
+            "cost_complete": true,
+            "input_tokens": 244024,
+            "model_calls": 12,
+            "output_tokens": 14257,
+            "reported_cost_usd": 0.0315309
+          },
+          "seconds": 80.6354960409808,
+          "audit": {
+            "native_rows": 745,
+            "output_rows": 745,
+            "output_rows_by_grain": {
+              "List of RSE": 643,
+              "List of Licensee": 52,
+              "MySuper Products": 50
+            },
+            "issue_counts": {},
+            "semantic_review_counts": {},
+            "missing_native_locators": 0,
+            "duplicate_locators": 0
+          },
+          "coverage": {
+            "entity.abn": 745
+          },
+          "empty_rows": 0,
+          "by_grain": {
+            "List of Licensee": {
+              "rows": 52,
+              "coverage": {
+                "entity.abn": 52
+              }
+            },
+            "List of RSE": {
+              "rows": 643,
+              "coverage": {
+                "entity.abn": 643
+              }
+            },
+            "MySuper Products": {
+              "rows": 50,
+              "coverage": {
+                "entity.abn": 50
+              }
+            }
+          },
+          "retention_refusals": 0
+        },
+        {
+          "source_id": "oric-corporations",
+          "status": "extracted",
+          "task_status": "partial",
+          "usage": {
+            "cost_complete": true,
+            "input_tokens": 700668,
+            "model_calls": 14,
+            "output_tokens": 17199,
+            "reported_cost_usd": 0.0786663
+          },
+          "seconds": 99.69187962499564,
+          "audit": {
+            "native_rows": 7464,
+            "output_rows": 7464,
+            "output_rows_by_grain": {
+              "CSV": 7464
+            },
+            "issue_counts": {},
+            "semantic_review_counts": {},
+            "missing_native_locators": 0,
+            "duplicate_locators": 0
+          },
+          "coverage": {
+            "entity.abn": 3322
+          },
+          "empty_rows": 4142,
+          "by_grain": {
+            "table": {
+              "rows": 7464,
+              "coverage": {
+                "entity.abn": 3322
+              }
+            }
+          },
+          "repair": {
+            "candidate_id": "host-subset-3",
+            "source_candidate_id": "ast-abn-legal-v1",
+            "trigger": "selection_omits_repairable_targets",
+            "removed_enum_entries": [],
+            "removed_output_branches": [],
+            "rebound_evidence": null,
+            "excluded_mapping_indices": [
+              1,
+              2,
+              3
+            ],
+            "probe_errors": {}
+          },
+          "retention_refusals": 0
+        }
+      ]
+    },
+    "after": {
+      "runtime": "9aa20f509bd42a8f9844cb8c7a051407e16a2becc946010b1863b8ef6cb9ba28",
+      "usage": {
+        "model_calls": 103,
+        "reported_cost_usd": 0.3157748,
+        "wall_seconds": 452.9008618329826,
+        "cost_complete": true,
+        "stop_reason": null,
+        "integrity_end": {
+          "changes": [],
+          "unchanged": true
+        }
+      },
+      "sources": [
+        {
+          "source_id": "real-act-contracts-historical",
+          "status": "extracted",
+          "task_status": "partial",
+          "usage": {
+            "cost_complete": true,
+            "input_tokens": 200729,
+            "model_calls": 11,
+            "output_tokens": 14346,
+            "reported_cost_usd": 0.0272459
+          },
+          "seconds": 80.67509708399302,
+          "audit": {
+            "status": "complete_output",
+            "native_record_count": 1000,
+            "output_record_count": 1000,
+            "guard_errors": {},
+            "metrics": {},
+            "abstention_checks": {},
+            "mismatches": []
+          },
+          "coverage": {
+            "entity.abn": 759
+          },
+          "empty_rows": 241,
+          "by_grain": {
+            "table": {
+              "rows": 1000,
+              "coverage": {
+                "entity.abn": 759
+              }
+            }
+          },
+          "retention_refusals": 0
+        },
+        {
+          "source_id": "real-asic-business-names",
+          "status": "extracted",
+          "task_status": "complete",
+          "usage": {
+            "cost_complete": true,
+            "input_tokens": 393974,
+            "model_calls": 18,
+            "output_tokens": 32646,
+            "reported_cost_usd": 0.055720399999999996
+          },
+          "seconds": 160.67691562499385,
+          "audit": {
+            "status": "complete_output",
+            "native_record_count": 1000,
+            "output_record_count": 1000,
+            "guard_errors": {},
+            "metrics": {
+              "entity.trading_name": {
+                "opportunities": 888,
+                "correct": 888,
+                "missed": 0,
+                "wrong_emitted": 0,
+                "informative_emitted": 888,
+                "recall": 1.0,
+                "precision_within_labelled_opportunities": 1.0
+              }
+            },
+            "abstention_checks": {},
+            "mismatches": []
+          },
+          "coverage": {
+            "entity.abn": 802,
+            "entity.trading_name": 888
+          },
+          "empty_rows": 112,
+          "by_grain": {
+            "table": {
+              "rows": 1000,
+              "coverage": {
+                "entity.abn": 802,
+                "entity.trading_name": 888
+              }
+            }
+          },
+          "retention_refusals": 0
+        },
+        {
+          "source_id": "real-ato-corporate-tax",
+          "status": "extracted",
+          "task_status": "partial",
+          "usage": {
+            "cost_complete": true,
+            "input_tokens": 197227,
+            "model_calls": 13,
+            "output_tokens": 10485,
+            "reported_cost_usd": 0.0249652
+          },
+          "seconds": 71.03450650000013,
+          "audit": {
+            "status": "complete_output",
+            "native_record_count": 4436,
+            "output_record_count": 4436,
+            "guard_errors": {},
+            "metrics": {},
+            "abstention_checks": {},
+            "mismatches": []
+          },
+          "coverage": {
+            "entity.abn": 4400
+          },
+          "empty_rows": 36,
+          "by_grain": {
+            "Income tax details": {
+              "rows": 4415,
+              "coverage": {
+                "entity.abn": 4379
+              }
+            },
+            "PRRT details": {
+              "rows": 21,
+              "coverage": {
+                "entity.abn": 21
+              }
+            }
+          },
+          "retention_refusals": 0
+        },
+        {
+          "source_id": "real-asic-companies",
+          "status": "extracted",
+          "task_status": "complete",
+          "usage": {
+            "cost_complete": true,
+            "input_tokens": 329878,
+            "model_calls": 13,
+            "output_tokens": 34813,
+            "reported_cost_usd": 0.0503943
+          },
+          "seconds": 156.28102133399807,
+          "audit": {
+            "status": "complete_output",
+            "native_record_count": 389,
+            "output_record_count": 389,
+            "guard_errors": {},
+            "metrics": {
+              "entity.legal_name": {
+                "opportunities": 389,
+                "correct": 389,
+                "missed": 0,
+                "wrong_emitted": 0,
+                "informative_emitted": 389,
+                "recall": 1.0,
+                "precision_within_labelled_opportunities": 1.0
+              }
+            },
+            "abstention_checks": {},
+            "mismatches": []
+          },
+          "coverage": {
+            "entity.abn": 389,
+            "entity.acn": 389,
+            "entity.date_registered": 389,
+            "entity.legal_name": 389,
+            "entity.status": 3
+          },
+          "empty_rows": 0,
+          "by_grain": {
+            "table": {
+              "rows": 389,
+              "coverage": {
+                "entity.abn": 389,
+                "entity.acn": 389,
+                "entity.date_registered": 389,
+                "entity.legal_name": 389,
+                "entity.status": 3
+              }
+            }
+          },
+          "retention_refusals": 0
+        },
+        {
+          "source_id": "real-qbcc",
+          "status": "extracted",
+          "task_status": "partial",
+          "usage": {
+            "cost_complete": true,
+            "input_tokens": 207058,
+            "model_calls": 12,
+            "output_tokens": 13905,
+            "reported_cost_usd": 0.0276583
+          },
+          "seconds": 86.328699375008,
+          "audit": {
+            "status": "complete_output",
+            "native_record_count": 1000,
+            "output_record_count": 1000,
+            "guard_errors": {},
+            "metrics": {},
+            "abstention_checks": {},
+            "mismatches": []
+          },
+          "coverage": {
+            "entity.abn": 623,
+            "entity.acn": 326,
+            "address.full": 1000
+          },
+          "empty_rows": 0,
+          "by_grain": {
+            "table": {
+              "rows": 1000,
+              "coverage": {
+                "entity.abn": 623,
+                "entity.acn": 326,
+                "address.full": 1000
+              }
+            }
+          },
+          "retention_refusals": 0
+        },
+        {
+          "source_id": "real-suitable-operators",
+          "status": "extracted",
+          "task_status": "partial",
+          "usage": {
+            "cost_complete": true,
+            "input_tokens": 215485,
+            "model_calls": 13,
+            "output_tokens": 23069,
+            "reported_cost_usd": 0.033083
+          },
+          "seconds": 117.96664033300476,
+          "audit": {
+            "status": "complete_output",
+            "native_record_count": 15100,
+            "output_record_count": 15100,
+            "guard_errors": {},
+            "metrics": {
+              "entity.entity_type": {
+                "opportunities": 8184,
+                "correct": 8184,
+                "missed": 0,
+                "wrong_emitted": 0,
+                "informative_emitted": 8184,
+                "recall": 1.0,
+                "precision_within_labelled_opportunities": 1.0
+              }
+            },
+            "abstention_checks": {
+              "entity.legal_name": {
+                "opportunities": 15100,
+                "abstained": 15100,
+                "unsupported_emitted": 0
+              },
+              "entity.entity_type": {
+                "opportunities": 6714,
+                "abstained": 6714,
+                "unsupported_emitted": 0
+              }
+            },
+            "mismatches": []
+          },
+          "coverage": {
+            "entity.acn": 7901,
+            "entity.entity_type": 8184,
+            "address.locality": 15008,
+            "address.postcode": 15008,
+            "address.state": 15008,
+            "entity.abn": 299
+          },
+          "empty_rows": 48,
+          "by_grain": {
+            "Registered Suitable Operators": {
+              "rows": 15100,
+              "coverage": {
+                "entity.acn": 7901,
+                "entity.entity_type": 8184,
+                "address.locality": 15008,
+                "address.postcode": 15008,
+                "address.state": 15008,
+                "entity.abn": 299
+              }
+            }
+          },
+          "retention_refusals": 0
+        },
+        {
+          "source_id": "apra-superannuation",
+          "status": "extracted",
+          "task_status": "partial",
+          "usage": {
+            "cost_complete": true,
+            "input_tokens": 202779,
+            "model_calls": 10,
+            "output_tokens": 9797,
+            "reported_cost_usd": 0.0251764
+          },
+          "seconds": 62.66818416598835,
+          "audit": {
+            "native_rows": 745,
+            "output_rows": 745,
+            "output_rows_by_grain": {
+              "List of RSE": 643,
+              "List of Licensee": 52,
+              "MySuper Products": 50
+            },
+            "issue_counts": {},
+            "semantic_review_counts": {},
+            "missing_native_locators": 0,
+            "duplicate_locators": 0
+          },
+          "coverage": {
+            "entity.abn": 693,
+            "address.full": 643
+          },
+          "empty_rows": 52,
+          "by_grain": {
+            "List of Licensee": {
+              "rows": 52,
+              "coverage": {}
+            },
+            "List of RSE": {
+              "rows": 643,
+              "coverage": {
+                "entity.abn": 643,
+                "address.full": 643
+              }
+            },
+            "MySuper Products": {
+              "rows": 50,
+              "coverage": {
+                "entity.abn": 50
+              }
+            }
+          },
+          "repair": {
+            "candidate_id": "host-subset-2",
+            "source_candidate_id": "ast-abn-legal-v1",
+            "trigger": "semantic_backend_switch",
+            "removed_enum_entries": [],
+            "removed_output_branches": [],
+            "rebound_evidence": [],
+            "excluded_mapping_indices": [
+              1
+            ],
+            "probe_errors": {}
+          },
+          "retention_refusals": 0
+        },
+        {
+          "source_id": "oric-corporations",
+          "status": "extracted",
+          "task_status": "partial",
+          "usage": {
+            "cost_complete": true,
+            "input_tokens": 635353,
+            "model_calls": 13,
+            "output_tokens": 15992,
+            "reported_cost_usd": 0.0715313
+          },
+          "seconds": 97.96073204098502,
+          "audit": {
+            "native_rows": 7464,
+            "output_rows": 7464,
+            "output_rows_by_grain": {
+              "CSV": 7464
+            },
+            "issue_counts": {},
+            "semantic_review_counts": {},
+            "missing_native_locators": 0,
+            "duplicate_locators": 0
+          },
+          "coverage": {
+            "entity.abn": 3322,
+            "address.postcode": 4997,
+            "address.state": 4990
+          },
+          "empty_rows": 2287,
+          "by_grain": {
+            "table": {
+              "rows": 7464,
+              "coverage": {
+                "entity.abn": 3322,
+                "address.postcode": 4997,
+                "address.state": 4990
+              }
+            }
+          },
+          "repair": {
+            "candidate_id": "host-subset-3",
+            "source_candidate_id": "ast-abn-legal-name-v1",
+            "trigger": "semantic_backend_switch",
+            "removed_enum_entries": [],
+            "removed_output_branches": [],
+            "rebound_evidence": [],
+            "excluded_mapping_indices": [
+              1,
+              2
+            ],
+            "probe_errors": {}
+          },
+          "retention_refusals": 0
+        }
+      ]
+    }
+  },
+  "paired_value_changes": {
+    "apra-superannuation": {
+      "address.full": {
+        "gained_informative": 643
+      },
+      "entity.abn": {
+        "changed_value": 693,
+        "lost_informative": 52
+      }
+    },
+    "oric-corporations": {
+      "address.postcode": {
+        "gained_informative": 4997
+      },
+      "address.state": {
+        "gained_informative": 4990
+      },
+      "entity.abn": {
+        "retained_equal": 3322
+      }
+    },
+    "real-act-contracts-historical": {
+      "entity.abn": {
+        "retained_equal": 759
+      }
+    },
+    "real-asic-business-names": {
+      "entity.abn": {
+        "retained_equal": 802
+      },
+      "entity.trading_name": {
+        "retained_equal": 878,
+        "changed_value": 10
+      }
+    },
+    "real-asic-companies": {
+      "entity.abn": {
+        "retained_equal": 389
+      },
+      "entity.acn": {
+        "retained_equal": 389
+      },
+      "entity.date_registered": {
+        "retained_equal": 389
+      },
+      "entity.entity_type": {
+        "lost_informative": 386
+      },
+      "entity.legal_name": {
+        "retained_equal": 389
+      },
+      "entity.status": {
+        "retained_equal": 3
+      }
+    },
+    "real-ato-corporate-tax": {
+      "entity.abn": {
+        "retained_equal": 4400
+      }
+    },
+    "real-qbcc": {
+      "address.full": {
+        "retained_equal": 1000
+      },
+      "entity.abn": {
+        "retained_equal": 623
+      },
+      "entity.acn": {
+        "retained_equal": 326
+      }
+    },
+    "real-suitable-operators": {
+      "address.locality": {
+        "retained_equal": 15008
+      },
+      "address.postcode": {
+        "retained_equal": 15008
+      },
+      "address.state": {
+        "retained_equal": 15008
+      },
+      "entity.abn": {
+        "retained_equal": 299
+      },
+      "entity.acn": {
+        "retained_equal": 7901
+      },
+      "entity.entity_type": {
+        "retained_equal": 8184
+      }
+    }
+  }
+}

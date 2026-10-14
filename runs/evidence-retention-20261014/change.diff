@@ -1,0 +1,254 @@
+--- before/firmable_runtime/agent.py
++++ after/firmable_runtime/agent.py
+@@ -132,6 +132,15 @@
+ alternative before declaring that field unsupported. These options do not approve values or a
+ candidate; all original checks and explicit selection remain required. The host may remind you
+ once before an early stop; you can still stop with an explained unresolved gap."""
++INSTRUCTIONS += """ A local host repair may rebind a failed evidence reference to its exact
++original primary native header only when the unchanged compiler accepts that binding; expressions,
++field identity and semantic constraints are unchanged, and fresh full validation is still required.
++Final selection cannot discard an independently development-validated strict extension of the same
++mapping rules and scope when it retains all selected values and adds observed fields without conflict.
++The host will return selection_discards_validated_extension with bound retention obligations. Explicitly
++select a qualifying retained candidate, revise/probe a real semantic concern, or stop with a gap.
++This is not a count-based ranking: different rules, subjects, time semantics, conflicting outputs,
++unvalidated candidates and LLM alternatives do not establish this retention obligation."""
+ 
+ 
+ def decision_schema():
+@@ -1138,6 +1147,68 @@
+         "human_gold": False,
+         "limitation": "Same-scope observed differences are not semantic superiority or full recall. Undeveloped alternatives remain unverified; caller requirements are unchanged.",
+     }
++
++
++def _retention_obligations(runtime, state, ident, proposal, validation):
++    """Reject proven structural loss; never merge candidates or choose by count."""
++    from .execution import pointer_get
++
++    def contract(config):
++        if config.get("execution", {}).get("kind", "ast") != "ast":
++            return None
++        rules = {}
++        for m in config["field_mappings"]:
++            value = {k: v for k, v in m.items() if k not in {
++                "execution_pointer", "validation_pass", "transformation", "confidence"
++            }}
++            value.setdefault("claim_kind", "informative")
++            value["source_fields"] = sorted(value["source_fields"])
++            value["ast"] = pointer_get(config, m["execution_pointer"])
++            rules[digest(value)] = m["canonical_field"]
++        return rules
++
++    def context(config):
++        return {
++            **{k: v for k, v in config.items() if k not in {"field_mappings", "unmapped_fields", "execution"}},
++            "execution": {k: v for k, v in config["execution"].items() if k not in {"transforms", "kind"}},
++        }
++
++    selected = state["candidates"][ident]
++    if selected.get("validation_status") != "passed" or not selected["eligible"]:
++        return []
++    config, _ = _candidate_material(runtime, selected)
++    rules = contract(config)
++    if not rules:
++        return []
++    obligations = []
++    for peer_id, peer in sorted(state["candidates"].items()):
++        if peer_id == ident or not peer["eligible"] or peer.get("validation_status") != "passed":
++            continue
++        other, _ = _candidate_material(runtime, peer)
++        extra = contract(other)
++        if not extra or context(config) != context(other) or not rules.keys() < extra.keys():
++            continue
++        added_targets = {extra[k] for k in extra.keys() - rules.keys()}
++        # Added rules cannot replace or extend an existing target's semantics.
++        if added_targets & set(rules.values()):
++            continue
++        differences = []
++        for records, development in ((proposal, False), (validation, True)):
++            chosen = _candidate_execution(runtime, selected, records, development=development)
++            retained = _candidate_execution(runtime, peer, records, development=development)
++            forward, reverse = _value_difference(chosen, retained), _value_difference(retained, chosen)
++            if any(reverse.values()) or forward["shared_value_disagreement_counts"]:
++                break
++            differences.append(forward["additional_value_counts"])
++        if len(differences) != 2 or not differences[1]:
++            continue
++        obligations.append({
++            "candidate_id": peer_id, "config_hash": peer["config_hash"],
++            "validation_ref": peer["validation_ref"],
++            "additional_value_counts": differences[1],
++            "basis": "same_scope_exact_rule_extension_no_observed_value_loss_or_conflict",
++        })
++    return obligations
+ 
+ 
+ def _compare_before_selection(
+@@ -1416,7 +1487,7 @@
+ ):
+     """One host proposal from attributable errors, never a semantic rewrite."""
+     from .execution import compile_config
+-    from .branch_repair import repair_output_branches
++    from .branch_repair import repair_evidence_bindings, repair_output_branches
+ 
+     if state.get("subset_repair_attempted") or turn + 1 >= MAX_DECISIONS:
+         return None
+@@ -1471,12 +1542,14 @@
+             local, remaining, branch_changes = repair_output_branches(
+                 config, errors, runtime.docs, audit
+             )
++            local, remaining, rebound = repair_evidence_bindings(local, remaining, runtime.docs)
+             subset, blocked, pruned = _repair_bound_findings(local, remaining)
+             branch_changes = [
+                 change
+                 for change in branch_changes
+                 if change["mapping_index"] not in blocked
+             ]
++            rebound = [change for change in rebound if change["mapping_index"] not in blocked]
+         except Failure:
+             continue
+         retained = [index for index in range(len(mappings)) if index not in blocked]
+@@ -1516,12 +1589,13 @@
+             "excluded_mapping_indices": blocked,
+             "removed_enum_entries": pruned,
+             "removed_output_branches": branch_changes,
++            "rebound_evidence": rebound,
+             "retained_mapping_indices": retained,
+             "blockers": copy.deepcopy(errors),
+             "subset_config_hash": digest(subset),
+             "subset_mapping_content_hash": content_hash,
+             "attempt_limit": 1,
+-            "authority": "host_removal_only_proposal_from_field_bound_diagnostics_not_validation_or_approval",
++            "authority": "host_bounded_local_proposal_from_field_bound_diagnostics_not_validation_or_approval",
+         }
+     return None
+ 
+@@ -1530,18 +1604,21 @@
+     original = runtime.run.load_artifact(plan["source_config_artifact"])
+     if digest(original) != plan["source_config_hash"]:
+         raise Failure("checkpoint_mismatch", "Subset source config hash changed")
+-    from .branch_repair import repair_output_branches
++    from .branch_repair import repair_evidence_bindings, repair_output_branches
+ 
+     audit = runtime.run.load_artifact("name-audit-" + plan["source_candidate_id"])
+     local, remaining, branch_changes = repair_output_branches(
+         original, plan["blockers"], runtime.docs, audit
+     )
++    local, remaining, rebound = repair_evidence_bindings(local, remaining, runtime.docs)
+     config, blocked, pruned = _repair_bound_findings(local, remaining)
+     branch_changes = [c for c in branch_changes if c["mapping_index"] not in blocked]
++    rebound = [c for c in rebound if c["mapping_index"] not in blocked]
+     if (
+         blocked != plan["excluded_mapping_indices"]
+         or pruned != plan["removed_enum_entries"]
+         or branch_changes != plan.get("removed_output_branches", [])
++        or rebound != plan.get("rebound_evidence", [])
+     ):
+         raise Failure("checkpoint_mismatch", "Host repair findings changed")
+     if digest(config) != plan["subset_config_hash"]:
+@@ -1997,7 +2074,7 @@
+                     "repair_plan_ref": ref,
+                     "candidate_id": subset_plan["candidate_id"],
+                     "source_candidate_id": subset_plan["source_candidate_id"],
+-                    "limitation": "One host removal-only proposal; it still needs a fresh probe, name review, selection and development validation. Task requirements remain unchanged.",
++                    "limitation": "One bounded host local proposal; it still needs a fresh probe, name review, selection and development validation. Task requirements remain unchanged.",
+                 }
+                 runtime.event(
+                     "host_subset_repair_proposed",
+@@ -2211,6 +2288,8 @@
+                             "trigger",
+                             "excluded_mapping_indices",
+                             "removed_enum_entries",
++                            "removed_output_branches",
++                            "rebound_evidence",
+                             "retained_mapping_indices",
+                             "authority",
+                         )
+@@ -2263,6 +2342,19 @@
+                     "validation-" + str(turn),
+                 )
+                 if validated:
++                    obligations = _retention_obligations(runtime, state, ident, proposal, validation)
++                    if obligations:
++                        state["feedback"] = {
++                            "error": "selection_discards_validated_extension",
++                            "candidate_id": ident,
++                            "retention_obligations": obligations,
++                            "repair_hint": "Explicitly select a retained candidate, revise/probe a concrete semantic concern, or stop with a gap. The exact selected mapping rules and context survive in these validated extensions; this does not rank conflicting candidates or grant approval.",
++                        }
++                        ref = runtime.artifact("selection-retention-" + str(turn), state["feedback"])
++                        runtime.event("selection_retention_required", [candidate["validation_ref"]], [ref])
++                        state["turn"] += 1
++                        runtime.persist("agent-" + str(state["turn"]))
++                        continue
+                     runtime.artifact("final-config", config)
+                     acceptance = feedback["task_acceptance"]
+                     selection = _selection_ledger(
+--- before/firmable_runtime/branch_repair.py
++++ after/firmable_runtime/branch_repair.py
+@@ -1,4 +1,4 @@
+-"""Removal-only proposals for attributable output branches, never validation."""
++"""Bounded evidence and output-branch repair proposals, never approval."""
+ 
+ import copy
+ 
+@@ -14,8 +14,57 @@
+     review_schema,
+ )
+ from .execution import pointer_get
+-from .engine import ast_nodes
++from .engine import ast_nodes, compile_mappings
+ from .schema import check_response
++
++
++def repair_evidence_bindings(config, errors, documentation):
++    """Try the exact original primary header through the unchanged compiler.
++
++    Only the evidence reference can change. No aliases, inferred definitions,
++    parser changes or name-review waivers are introduced. Every accepted local
++    proposal still needs full candidate compilation, execution and review.
++    """
++    revised = copy.deepcopy(config)
++    if config.get("execution", {}).get("kind", "ast") != "ast":
++        return revised, errors, []
++    inventory = [f["source_field"] for f in config["source_schema"]["fields"]]
++    changes = []
++    for index, mapping in enumerate(config["field_mappings"]):
++        findings = [e for e in errors if e.get("mapping_index") == index]
++        if not findings or any(
++            e.get("reason_code") not in {"semantic_rule", "exact_quote"}
++            or e.get("canonical_field") != mapping["canonical_field"]
++            or e.get("source_fields") != mapping["source_fields"]
++            or e.get("error_scope") != "mapping"
++            for e in findings
++        ):
++            continue
++        primary = mapping["source_field"]
++        if primary not in inventory or mapping["semantic_evidence"] == primary:
++            continue
++        candidate = copy.deepcopy(mapping)
++        candidate["semantic_evidence"] = primary
++        try:
++            candidate["ast"] = pointer_get(config, mapping["execution_pointer"])
++            compile_mappings(
++                [candidate], inventory, documentation,
++                [{"source_field": f, "reason": "Outside this isolated mapping check."}
++                 for f in inventory if f not in mapping["source_fields"]],
++            )
++        except (Failure, KeyError, TypeError, ValueError):
++            continue
++        revised["field_mappings"][index]["semantic_evidence"] = primary
++        revised["field_mappings"][index]["validation_pass"] = False
++        changes.append({
++            "mapping_index": index,
++            "pointer": f"/field_mappings/{index}/semantic_evidence",
++            "previous_evidence_hash": digest(mapping["semantic_evidence"]),
++            "original_header": primary,
++            "basis": "unchanged_compiler_accepts_exact_original_primary_header",
++        })
++    repaired = {c["mapping_index"] for c in changes}
++    return revised, [e for e in errors if e.get("mapping_index") not in repaired], changes
+ 
+ 
+ def _output_branch(ast, path):

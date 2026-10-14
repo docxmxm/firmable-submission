@@ -4,7 +4,10 @@ __pycache__/
 .venv/
 *.egg-info/
 .env
+.env.local
+# Selected reports/traces are tracked explicitly; ignore new scratch run files.
 runs/
+tmp/
 .ruff_cache/
 
 .pytest_cache/

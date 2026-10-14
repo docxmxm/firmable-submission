@@ -874,6 +874,14 @@ TYPE_LABELS = {
 def _legal_form_label_supported(value, labels):
     if plain(value) in labels:
         return True
+    if "government" in labels and re.fullmatch(
+        r"(?:(?:federal|national|state|territory|local|central|commonwealth) )?"
+        r"government authority",
+        plain(value),
+    ):
+        # A complete authority category identifies the government body itself;
+        # ownership, counterparties and qualified/alternative forms do not.
+        return True
     if "company" in labels:
         # Geographic/legal modifiers do not change the explicit legal form.
         # A finite demonym grammar avoids accepting arbitrary prefixes such as
@@ -1565,6 +1573,79 @@ def address_support(mapping, documentation, inventory=()):
     return result
 
 
+def full_address_support(mapping, documentation, inventory=()):
+    """Check each preserving output branch; predicates cannot supply address content."""
+
+    def walk(node, pointer=""):
+        op = node["op"]
+        if op == "omit":
+            return False, {"pointer": pointer, "supported": True, "can_emit": False}
+        if op in {"trim", "collapse_ws"}:
+            return walk(node["input"], pointer + "/input")
+        if op == "when":
+            branches = [
+                walk(node[key], pointer + "/" + key) for key in ("then", "else")
+            ]
+            can_emit = any(value[0] for value in branches)
+            failed = next(
+                (support for _, support in branches if not support["supported"]), None
+            )
+            basis = failed or next(
+                (support for emits, support in branches if emits), branches[0][1]
+            )
+            return can_emit, {
+                **basis,
+                "supported": failed is None,
+                "reason": basis.get("reason", "This address branch always omits its value."),
+                "address_branch_support": [support for _, support in branches],
+            }
+        if op in {"field", "join_address"}:
+            fields = sorted(_value_fields(node))
+            primary = mapping.get("source_field")
+            if primary not in fields:
+                primary = fields[0] if fields else ""
+            bound = {
+                **mapping,
+                "source_field": primary,
+                "source_fields": fields,
+                "semantic_evidence": primary,
+                "ast": node,
+            }
+            support = (
+                address_support(bound, documentation, inventory)
+                if op == "field"
+                else full_address_join_support(bound, documentation, inventory)
+            )
+            return True, {
+                **support,
+                "pointer": pointer,
+                "evidence_binding": {
+                    "kind": "declared_value_fields_exact_native_headers",
+                    "headers": fields,
+                },
+            }
+        return True, {
+            "target": "address.full",
+            "source_field": mapping.get("source_field"),
+            "supported": False,
+            "pointer": pointer,
+            "reason_code": "address_transform_not_whole_field",
+            "reason": "Address output paths must preserve a whole source address or a supported address join; only trim/collapse_ws and conditional omission may wrap them.",
+        }
+
+    can_emit, support = walk(mapping["ast"])
+    if not can_emit:
+        return {
+            **support,
+            "target": "address.full",
+            "source_field": mapping.get("source_field"),
+            "supported": False,
+            "reason_code": "address_mapping_has_no_value",
+            "reason": "Address mapping has no value-producing branch.",
+        }
+    return support
+
+
 def _name_branch_support(
     mapping,
     documentation,
@@ -1631,6 +1712,40 @@ def _name_branch_support(
             reason="Every value-producing name branch needs its own native-header-bound source definition; one supported primary name cannot authorize an unsupported alternate.",
         )
     return result
+
+
+def _enum_value_support(mapping, documentation, available_fields, result):
+    """Bind enum roles to actual value fields, independently of predicate evidence."""
+    from .engine import ast_nodes
+
+    bindings = {}
+    for pointer, node in ast_nodes(mapping["ast"]):
+        if node["op"] != "field" or "/condition/" in pointer + "/":
+            continue
+        name = node["name"]
+        if name in bindings:
+            continue
+        support = result
+        if name != result["source_field"]:
+            support = check_support(
+                {
+                    **mapping,
+                    "source_field": name,
+                    "semantic_evidence": name,
+                    "ast": node,
+                },
+                documentation,
+                available_fields,
+            )
+        bindings[name] = {
+            **support,
+            "pointer": pointer,
+            "evidence_binding": {
+                "kind": "declared_value_field_exact_native_header",
+                "header": name,
+            },
+        }
+    return bindings
 
 
 def name_role_reviewable(support):
@@ -1836,49 +1951,86 @@ def check_support(
     if target in {"entity.entity_type", "entity.status"}:
         from .engine import ast_nodes
 
+        bindings = _enum_value_support(mapping, documentation, available_fields, result)
+        failed = next(
+            (binding for binding in bindings.values() if not binding["supported"]), None
+        )
+        if failed is not None:
+            return {
+                **result,
+                "supported": False,
+                "reason_code": "enum_value_evidence_missing_or_ambiguous",
+                "enum_value_support": list(bindings.values()),
+                "reason": "Every value-producing enum field needs its own same-field meaning evidence; a primary or predicate field cannot authorize another field's values.",
+            }
+        # Each lookup checks its input field's code table, never another branch's.
+        # Keep predicate conversion checks: an unsupported conversion can change
+        # which output branch is selected and cannot be safely pruned.
+        result = {**result, "enum_value_support": list(bindings.values())}
         first_failure, unsupported_count = None, 0
         for at, node in ast_nodes(mapping["ast"]):
             if node.get("op") != "enum_lookup":
                 continue
-            for raw, canonical in sorted(node["values"].items()):
-                labels = (
-                    TYPE_LABELS if target == "entity.entity_type" else STATUS_LABELS
-                ).get(canonical, set())
-                if (
-                    target == "entity.entity_type"
-                    and _legal_form_label_supported(raw, labels)
-                    or target == "entity.status"
-                    and plain(raw) in labels
-                    or canonical == "unknown"
-                ):
-                    continue
-                # Source-specific codes are supported only by an explicit relation
-                # in this field's original definition, not a list of legal forms.
-                if labels and _enum_relation_supported(
-                    raw, labels, selected, legal_forms=target == "entity.entity_type"
-                ):
-                    continue
-                failure = {
-                    **result,
-                    "supported": False,
-                    "reason": "Conversion needs same-field subject and meaning evidence for each raw label/code; an unexplained or ambiguous category does not establish "
-                    + target
-                    + ". Remove any unsupported conversion or mapping in a complete revised config, list unused source fields unmapped with reasons, and revalidate the entire proposal; no partial approval is inherited.",
-                    "unsupported_conversion": {
-                        "raw_label": raw,
-                        "canonical_value": canonical,
-                    },
-                }
-                unsupported_count += 1
-                if first_failure is None:
-                    first_failure = failure
-                if on_unsupported_conversion is not None:
-                    # Stream into the caller's existing finding bound; the AST and
-                    # enum table bounds were checked before semantic admission.
-                    on_unsupported_conversion(
-                        at + "/values/" + raw.replace("~", "~0").replace("/", "~1"),
-                        failure,
+            for name in sorted(_value_fields(node["input"])):
+                binding = bindings.get(name)
+                if binding is None:
+                    binding = (
+                        result
+                        if name == primary
+                        else check_support(
+                            {
+                                **mapping,
+                                "source_field": name,
+                                "semantic_evidence": name,
+                                "ast": {"op": "field", "name": name},
+                            },
+                            documentation,
+                            available_fields,
+                        )
                     )
+                for raw, canonical in sorted(node["values"].items()):
+                    labels = (
+                        TYPE_LABELS if target == "entity.entity_type" else STATUS_LABELS
+                    ).get(canonical, set())
+                    if binding["supported"] and (
+                        target == "entity.entity_type"
+                        and _legal_form_label_supported(raw, labels)
+                        or target == "entity.status"
+                        and plain(raw) in labels
+                        or canonical == "unknown"
+                    ):
+                        continue
+                    if (
+                        binding["supported"]
+                        and labels
+                        and _enum_relation_supported(
+                            raw,
+                            labels,
+                            binding["contexts"],
+                            legal_forms=target == "entity.entity_type",
+                        )
+                    ):
+                        continue
+                    failure = {
+                        **result,
+                        "supported": False,
+                        "reason": "Conversion needs same-field subject and meaning evidence for each raw label/code; an unexplained or ambiguous category does not establish "
+                        + target
+                        + ". Remove any unsupported conversion or mapping in a complete revised config, list unused source fields unmapped with reasons, and revalidate the entire proposal; no partial approval is inherited.",
+                        "unsupported_conversion": {
+                            "source_field": name,
+                            "raw_label": raw,
+                            "canonical_value": canonical,
+                        },
+                    }
+                    unsupported_count += 1
+                    if first_failure is None:
+                        first_failure = failure
+                    if on_unsupported_conversion is not None:
+                        on_unsupported_conversion(
+                            at + "/values/" + raw.replace("~", "~0").replace("/", "~1"),
+                            failure,
+                        )
         if first_failure is not None:
             return {**first_failure, "unsupported_conversion_count": unsupported_count}
     return result

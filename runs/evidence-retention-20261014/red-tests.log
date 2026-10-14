@@ -1,0 +1,45 @@
+FFFF
+======================================================================
+FAIL: test_exact_original_binding_is_repaired_before_final_field_deletion (test_evidence_retention.EvidenceRetentionTests.test_exact_original_binding_is_repaired_before_final_field_deletion) (renamed=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/tests/test_evidence_retention.py", line 60, in test_exact_original_binding_is_repaired_before_final_field_deletion
+    self.assertEqual({m["canonical_field"] for m in result["mapping_config"]["field_mappings"]}, {"entity.abn", "address.full"})
+AssertionError: Items in the second set but not the first:
+'entity.abn'
+
+======================================================================
+FAIL: test_exact_original_binding_is_repaired_before_final_field_deletion (test_evidence_retention.EvidenceRetentionTests.test_exact_original_binding_is_repaired_before_final_field_deletion) (renamed=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/tests/test_evidence_retention.py", line 60, in test_exact_original_binding_is_repaired_before_final_field_deletion
+    self.assertEqual({m["canonical_field"] for m in result["mapping_config"]["field_mappings"]}, {"entity.abn", "address.full"})
+AssertionError: Items in the second set but not the first:
+'entity.abn'
+
+======================================================================
+FAIL: test_repeated_lossy_selection_does_not_finalize_before_retained_choice (test_evidence_retention.EvidenceRetentionTests.test_repeated_lossy_selection_does_not_finalize_before_retained_choice) (renamed=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/tests/test_evidence_retention.py", line 79, in test_repeated_lossy_selection_does_not_finalize_before_retained_choice
+    self.assertEqual(result["candidate_selection"]["selected_candidate_id"], "wide")
+AssertionError: 'narrow' != 'wide'
+- narrow
++ wide
+
+
+======================================================================
+FAIL: test_repeated_lossy_selection_does_not_finalize_before_retained_choice (test_evidence_retention.EvidenceRetentionTests.test_repeated_lossy_selection_does_not_finalize_before_retained_choice) (renamed=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/tests/test_evidence_retention.py", line 79, in test_repeated_lossy_selection_does_not_finalize_before_retained_choice
+    self.assertEqual(result["candidate_selection"]["selected_candidate_id"], "wide")
+AssertionError: 'narrow' != 'wide'
+- narrow
++ wide
+
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.436s
+
+FAILED (failures=4)

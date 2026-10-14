@@ -1,0 +1,76 @@
+[
+  {
+    "source_id": "cer-nger-controlling-corporations-2024-25",
+    "native_original": "/Users/zhegoalice.ai/Desktop/personal/output/reserve-datasets-20261014/sources/cer-nger-controlling-corporations-2024-25/raw/controlling-corporations-2024-25.csv",
+    "native_input": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/branch-retention-20261014/holdout-inputs/cer-nger-controlling-corporations-2024-25/evidence/controlling-corporations-2024-25.csv",
+    "native_sha256": "080c2c64b0b5d974bf088216cf02b13458ff061be0380c8c43d6f9bffc75748a",
+    "native_content_unchanged": true,
+    "documents": [
+      {
+        "original": "/Users/zhegoalice.ai/Desktop/personal/output/reserve-datasets-20261014/sources/cer-nger-controlling-corporations-2024-25/docs/copyright.html",
+        "original_sha256": "1220d19575449de3fbf871e340bbcde097f3054f9a3c22ad874bc4a34c9f8d89",
+        "derived": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/branch-retention-20261014/holdout-inputs/cer-nger-controlling-corporations-2024-25/evidence/copyright.txt",
+        "derived_sha256": "1ffa007c8f002f78bfe3a1a169ee5c40d9f34943c029e4a241a2aee7954e8cb4",
+        "method": "HTML text nodes, scripts/styles/svg omitted, whitespace trimmed; no inferred definitions"
+      },
+      {
+        "original": "/Users/zhegoalice.ai/Desktop/personal/output/reserve-datasets-20261014/sources/cer-nger-controlling-corporations-2024-25/docs/register-page.html",
+        "original_sha256": "bb6e97bad4f760b82c83965910ba09fc7667b4bdfd7a0b500bef86930330f88e",
+        "derived": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/branch-retention-20261014/holdout-inputs/cer-nger-controlling-corporations-2024-25/evidence/register-page.txt",
+        "derived_sha256": "672243188ba0e593f387d3171be6c76e292d93283f9263a4991e75d640fa46ce",
+        "method": "HTML text nodes, scripts/styles/svg omitted, whitespace trimmed; no inferred definitions"
+      },
+      {
+        "original": "/Users/zhegoalice.ai/Desktop/personal/output/reserve-datasets-20261014/sources/cer-nger-controlling-corporations-2024-25/docs/reporting-overview.html",
+        "original_sha256": "e309b0842978b442106805a7d29a53baad1eb7751d067767e77d9b2a8e02bed0",
+        "derived": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/branch-retention-20261014/holdout-inputs/cer-nger-controlling-corporations-2024-25/evidence/reporting-overview.txt",
+        "derived_sha256": "c46f01ec385a87b2df9ab1a69cffb22dba615c05e557d41d01fe8ff3e7713418",
+        "method": "HTML text nodes, scripts/styles/svg omitted, whitespace trimmed; no inferred definitions"
+      }
+    ]
+  },
+  {
+    "source_id": "epa-vic-operating-licence-points",
+    "native_original": "/Users/zhegoalice.ai/Desktop/personal/output/reserve-datasets-20261014/sources/epa-vic-operating-licence-points/raw/operating-licence-points.geojson",
+    "native_input": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/branch-retention-20261014/holdout-inputs/epa-vic-operating-licence-points/evidence/operating-licence-points.json",
+    "native_sha256": "e599735670ae65a17fb5013a27cd62a31d55eed6f3c0f1c04a893567e6bc664a",
+    "native_content_unchanged": true,
+    "documents": [
+      {
+        "original": "/Users/zhegoalice.ai/Desktop/personal/output/reserve-datasets-20261014/sources/epa-vic-operating-licence-points/docs/catalogue.html",
+        "original_sha256": "09fde38562ebb1f908c54c54965eafc3667fa824c9b290790221dc7cb236749a",
+        "derived": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/branch-retention-20261014/holdout-inputs/epa-vic-operating-licence-points/evidence/catalogue.txt",
+        "derived_sha256": "0eb8d30e959ef8ed353a6a5a6f9b4686b71b3a1997f5f19cb334d337782005d1",
+        "method": "HTML text nodes, scripts/styles/svg omitted, whitespace trimmed; no inferred definitions"
+      },
+      {
+        "original": "/Users/zhegoalice.ai/Desktop/personal/output/reserve-datasets-20261014/sources/epa-vic-operating-licence-points/docs/full-metadata.xml",
+        "original_sha256": "f1bab0c2537a21e81650dcbe68678e58b97e98653d9eb426868d83759d506ecf",
+        "derived": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/branch-retention-20261014/holdout-inputs/epa-vic-operating-licence-points/evidence/full-metadata.xml.txt",
+        "derived_sha256": "f1bab0c2537a21e81650dcbe68678e58b97e98653d9eb426868d83759d506ecf",
+        "method": "Original XML bytes copied as text without semantic edits"
+      },
+      {
+        "original": "/Users/zhegoalice.ai/Desktop/personal/output/reserve-datasets-20261014/sources/epa-vic-operating-licence-points/docs/license.html",
+        "original_sha256": "8dda1ccec4be91fc80821d4e4fd5c568072b9a3a74b2fdc07c249a27e920ef01",
+        "derived": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/branch-retention-20261014/holdout-inputs/epa-vic-operating-licence-points/evidence/license.txt",
+        "derived_sha256": "b07f02a2e347a08160fab898b603bf0095d1fcb491006eb14527da909c3bc5f7",
+        "method": "HTML text nodes, scripts/styles/svg omitted, whitespace trimmed; no inferred definitions"
+      },
+      {
+        "original": "/Users/zhegoalice.ai/Desktop/personal/output/reserve-datasets-20261014/sources/epa-vic-operating-licence-points/docs/metadata.snapshot",
+        "original_sha256": "d7d6151070eb8448328088cce3ba8f13f7d79901a107425b2e6eb8f6e88defd6",
+        "derived": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/branch-retention-20261014/holdout-inputs/epa-vic-operating-licence-points/evidence/official-metadata.txt",
+        "derived_sha256": "9ae5d8ae93bee64474cfbef6d7251f20ef6f1be34d2201e1240b90615fa273f2",
+        "method": "Exact original title and notes values"
+      },
+      {
+        "original": "/Users/zhegoalice.ai/Desktop/personal/output/reserve-datasets-20261014/sources/epa-vic-operating-licence-points/docs/schema.xml",
+        "original_sha256": "2de1ef12b234d35a90fe6d5698a9c54db9a45c2c4d0592ad6c98ab388b947d56",
+        "derived": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/branch-retention-20261014/holdout-inputs/epa-vic-operating-licence-points/evidence/schema.xml.txt",
+        "derived_sha256": "2de1ef12b234d35a90fe6d5698a9c54db9a45c2c4d0592ad6c98ab388b947d56",
+        "method": "Original XML bytes copied as text without semantic edits"
+      }
+    ]
+  }
+]

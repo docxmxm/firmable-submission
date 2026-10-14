@@ -1,4 +1,4 @@
-"""Replay the selected pre-scope r2 cohort; fidelity is not semantic accuracy."""
+"""Preserve r2 claims; explicitly source-bound additions are not a fresh cohort."""
 
 import json
 import tarfile
@@ -9,7 +9,8 @@ from pathlib import Path
 
 from firmable_runtime.common import byte_hash, canonical, digest
 from firmable_runtime.config_audit import validated_name_review
-from firmable_runtime.execution import discover, run_engine
+from firmable_runtime.execution import discover, pointer_get, run_engine
+from firmable_runtime.native import field_value
 from firmable_runtime.workflow import build_outputs
 
 PROJECT = Path(__file__).resolve().parents[1]
@@ -34,8 +35,32 @@ def informative_values(observation):
     }
 
 
+def explicit_location_spellings(values):
+    """Independent whole-source spellings, without invoking the runtime parser."""
+    state_names = {
+        "NSW": "NEW SOUTH WALES",
+        "VIC": "VICTORIA",
+        "QLD": "QUEENSLAND",
+        "WA": "WESTERN AUSTRALIA",
+        "SA": "SOUTH AUSTRALIA",
+        "TAS": "TASMANIA",
+        "ACT": "AUSTRALIAN CAPITAL TERRITORY",
+        "NT": "NORTHERN TERRITORY",
+    }
+    state = values["address.state"]
+    return {
+        separator.join(
+            (values["address.locality"], spelling, values["address.postcode"])
+        )
+        + suffix
+        for spelling in (state, state_names[state])
+        for separator in (",", " ")
+        for suffix in ("", separator + "AU", separator + "AUSTRALIA")
+    }
+
+
 class AssessmentReplayTests(unittest.TestCase):
-    def test_selected_r2_configs_reproduce_native_identity_and_informative_values(self):
+    def test_selected_r2_claims_preserved_and_additions_match_explicit_native_text(self):
         manifest = json.loads(
             (PROJECT / "evidence/selected-r2/manifest.json").read_text()
         )
@@ -150,15 +175,50 @@ class AssessmentReplayTests(unittest.TestCase):
                         [row["source_record_id"] for row in observations],
                         [row["source_record_id"] for row in saved],
                     )
+                    added_counts = Counter()
                     for row in observations:
                         original = saved_by_id[row["source_record_id"]]
                         for field in ("source_id", "native_locator", "raw_record"):
                             self.assertEqual(row[field], original[field])
+                        actual = informative_values(row)
+                        prior = informative_values(original)
                         self.assertEqual(
-                            informative_values(row),
-                            informative_values(original),
+                            {field: actual.get(field) for field in prior},
+                            prior,
                             row["source_record_id"],
                         )
+                        added = actual.keys() - prior.keys()
+                        if added:
+                            self.assertEqual(
+                                added,
+                                {"address.locality", "address.state", "address.postcode"},
+                            )
+                            inputs = set()
+                            for mapping in config["field_mappings"]:
+                                target = mapping["canonical_field"]
+                                if target not in added:
+                                    continue
+                                expression = pointer_get(
+                                    config, mapping["execution_pointer"]
+                                )
+                                self.assertEqual(expression["op"], "parse_au_location")
+                                self.assertEqual(
+                                    target, "address." + expression["component"]
+                                )
+                                self.assertEqual(expression["input"]["op"], "field")
+                                inputs.add(expression["input"]["name"])
+                            self.assertEqual(len(inputs), 1)
+                            raw = field_value(row["raw_record"], next(iter(inputs)))
+                            self.assertIsInstance(raw, str)
+                            normalized = ",".join(
+                                " ".join(p.split()) for p in raw.split(",")
+                            )
+                            self.assertIn(
+                                normalized.upper(),
+                                {s.upper() for s in explicit_location_spellings(actual)},
+                                row["source_record_id"],
+                            )
+                            added_counts.update(added)
                     self.assertEqual(
                         Counter(
                             field
@@ -167,7 +227,7 @@ class AssessmentReplayTests(unittest.TestCase):
                         ),
                         Counter(
                             field for row in saved for field in informative_values(row)
-                        ),
+                        ) + added_counts,
                     )
                     path = Path(directory) / (source.name + ".jsonl")
                     path.write_bytes(
@@ -182,10 +242,67 @@ class AssessmentReplayTests(unittest.TestCase):
             expected = json.loads(summary_bytes)
             for field in (
                 "observation_count",
-                "link_count",
-                "unlinked_count",
-                "profile_population",
                 "profile_count",
                 "threshold",
             ):
                 self.assertEqual(result[field], expected[field], field)
+            # History stays frozen. A repaired role contract may admit additional
+            # identifier-backed pairs, but must preserve every old pair and prove
+            # the reason for each addition rather than merely accept a new count.
+            previous = json.loads(historical_output(archive, "outputs/links.json"))
+            current = json.loads((Path(directory) / "build/links.json").read_text())
+
+            def pair_key(pair):
+                return tuple(sorted((tuple(pair["left"]), tuple(pair["right"]))))
+
+            def pair_map(graph):
+                return {
+                    pair_key(pair): pair
+                    for group in graph["links"]
+                    for pair in group["pairs"]
+                }
+
+            old_pairs, new_pairs = pair_map(previous), pair_map(current)
+            self.assertTrue(old_pairs.keys() <= new_pairs.keys())
+            rejected_names = {
+                pair_key(pair)
+                for pair in previous["candidate_decisions"]
+                if not pair["accepted"]
+                and pair["reason"] == "incompatible_names_need_review"
+            }
+            by_id = {
+                (row["source_id"], row["source_record_id"]): row
+                for path in paths
+                for row in (json.loads(line) for line in path.read_bytes().splitlines())
+            }
+            for key in new_pairs.keys() - old_pairs.keys():
+                self.assertIn(key, rejected_names)
+                pair = new_pairs[key]
+                target, identifier = pair["anchor"]
+                group, field = target.split(".")
+                records = [by_id[endpoint] for endpoint in key]
+                for row in records:
+                    self.assertEqual(row[group][field], identifier)
+                # Distinct aliases are legitimate; they never supply an anchor
+                # or permit incompatible registered names to be accepted.
+                self.assertTrue(any(row["entity"].get("trading_name") for row in records))
+                legal = [row["entity"].get("legal_name") for row in records]
+                self.assertFalse(all(legal))
+            for key in old_pairs:
+                self.assertEqual(new_pairs[key]["anchor"], old_pairs[key]["anchor"])
+
+            def members(graph):
+                return {
+                    (member["source_id"], member["source_record_id"])
+                    for group in graph["links"]
+                    for member in group["members"]
+                }
+
+            old_members, new_members = members(previous), members(current)
+            self.assertTrue(old_members <= new_members)
+            self.assertEqual(
+                result["unlinked_count"],
+                expected["unlinked_count"] - len(new_members - old_members),
+            )
+            self.assertEqual(result["link_count"], len(current["links"]))
+            self.assertEqual(result["profile_population"], result["link_count"])

@@ -169,13 +169,19 @@ def infer_source(request, provider=None):
     request.setdefault("execution_scope", "onboarding_development")
     if request["execution_scope"] != "onboarding_development":
         raise Failure("validation_error", "Inference requires development scope")
+    if type(request.get("source_acquisition_enabled", True)) is not bool:
+        raise Failure("validation_error", "source_acquisition_enabled must be boolean")
     with _run_lock(root):
         original = root / "input-request.json"
         if original.exists() and _json(original) != request:
             raise Failure("checkpoint_mismatch", "Saved input request changed")
         atomic_json(original, request)
         provider = provider or CcVibeProvider()
-        request, acquired = _acquire_for_inference(request, provider)
+        acquired = None
+        if request.get("source_acquisition_enabled", True):
+            request, acquired = _acquire_for_inference(request, provider)
+        else:
+            request["source_acquisition_policy"] = {"mode": "disabled_local_evidence_only"}
         saved = root / "request.json"
         if saved.exists() and _json(saved) != request:
             raise Failure("checkpoint_mismatch", "Saved inference request changed")

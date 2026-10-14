@@ -1,6 +1,6 @@
 # Data sources and attribution
 
-The source data remains subject to the publishers’ licences. No publisher endorsement is implied. Original source notices and official documentation are preserved alongside the native input snapshots in [replay-package/inputs](replay-package/inputs/). Generated observations, links and profiles are derived outputs; the agent-generated configs record their field-level transformations and omissions.
+The source data remains subject to the publishers’ licences. No publisher endorsement is implied. Original source notices and official documentation are preserved alongside the native input snapshots in [the six source directories](.). Generated observations, links and profiles are derived outputs; the agent-generated configs record their field-level transformations and omissions.
 
 | Source | Publisher / attribution | Declared licence | Snapshot selection |
 | --- | --- | --- | --- |
@@ -19,8 +19,6 @@ The catalogue and native resource have some different declarations. ACT’s harv
 
 The original files retain any embedded notices. Source licences are separate from the code. The full catalogue pool, shortlist and human review evidence preserve the source references used in discovery and review.
 
-## Seventh-source generalisation test
+## Later evaluation inputs
 
-[ACNC Registered Charities](https://data.gov.au/data/dataset/b050b242-4487-4306-abf5-07ca073e5594), published by the Australian Charities and Not-for-profits Commission, declares Creative Commons Attribution 3.0 Australia in the frozen acquisition metadata. The unchanged CSV, official user-notes PDF, generically extracted text and acquisition provenance are retained in [seventh-source/input-package](seventh-source/input-package/). The official PDF dates from December 2024; it predates the October 2026 CSV snapshot. The raw document and extraction provenance preserve that distinction.
-
-This dataset was selected outside the six-source shortlist and withheld from the R12 repair authors. The test supplies ordinary source metadata and evidence, without a hand-written mapping. Its outcome is recorded separately from the six-source linked-profile demonstration. Inclusion of the snapshot does not itself establish test success.
+The current pest/weed holdout and its frozen provenance are retained under [data/unseen-source](../unseen-source/). Later ORIC/APRA experiments and EPA/CER/CRICOS/Aged Care holdouts are separate from the saved six-source outputs; their original inputs, metadata, acquisition provenance and any publisher licence notices are retained with their experiment directories under [runs](../../runs/). These later datasets do not establish generalisation merely by being present in the repository. Earlier ACNC evidence is historical and is not presented as the current holdout.

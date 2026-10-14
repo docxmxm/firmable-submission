@@ -60,6 +60,47 @@ class AcquisitionWorkflowTests(unittest.TestCase):
             )
         return fixture
 
+    def test_explicit_local_evidence_mode_skips_acquisition_and_binds_approval(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            fixture = self.fixture(tmp)
+            fixture.request["source_acquisition_enabled"] = False
+            provider = CombinedProvider(fixture, [])
+            with patch("firmable_runtime.workflow._acquire_for_inference") as acquire:
+                result = infer_source(fixture.request, provider)
+                self.assertEqual(result["status"], "complete")
+                self.assertFalse(acquire.called)
+                self.assertNotIn("source_acquisition", result)
+                self.assertFalse(any(
+                    request["purpose"] == "source_evidence_decision"
+                    for request in provider.requests
+                ))
+                root = Path(fixture.request["state_dir"])
+                self.assertFalse((root / "acquisition").exists())
+                self.assertFalse((root / "capture").exists())
+                saved = json.loads((root / "request.json").read_text())
+                self.assertEqual(saved["evidence_root"], str(fixture.evidence.resolve()))
+                self.assertEqual(saved["source_acquisition_policy"], {
+                    "mode": "disabled_local_evidence_only"
+                })
+                review = review_source(root)
+                approve_source(root, review["review_fingerprint"], "test", synthetic=True)
+                extracted = extract_source(root, provider=provider, allow_synthetic=True)
+                self.assertEqual(len(extracted["observations"]), len(fixture.rows))
+                changed = {**fixture.request, "source_acquisition_enabled": True}
+                with self.assertRaises(Failure):
+                    infer_source(changed, provider)
+                self.assertFalse(acquire.called)
+
+    def test_acquisition_switch_rejects_non_boolean_before_any_model_call(self):
+        for value in ("false", 0, None):
+            with self.subTest(value=value), tempfile.TemporaryDirectory() as tmp:
+                fixture = self.fixture(tmp)
+                fixture.request["source_acquisition_enabled"] = value
+                provider = CombinedProvider(fixture, [])
+                with self.assertRaises(Failure):
+                    infer_source(fixture.request, provider)
+                self.assertEqual(provider.requests, [])
+
     def test_agent_fetches_original_then_repairs_infers_and_approves_bound_snapshot(
         self,
     ):

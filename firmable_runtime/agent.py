@@ -25,17 +25,26 @@ MAX_FIELD_LOOKUPS = 2
 MAX_FAILURE_EXAMPLES = 4
 MAX_FAILURE_EXAMPLE_BYTES = 4096
 MAX_FAILURE_EXAMPLES_BYTES = 8192
-INSTRUCTIONS = """You are a runtime onboarding planner. Choose between the existing AST
-backend and a generic llm_task extraction config. The AST contract in the input applies ONLY if you choose
+INSTRUCTIONS = """You are a runtime onboarding planner. Discover useful source-supported ontology
+mappings, including when required_fields is empty: that means task acceptance is not configured,
+not that discovery has no goal. Choose between the existing AST backend and a generic llm_task
+extraction config. The AST contract in the input applies ONLY if you choose
 AST. A llm_task uses task/subject instructions, declared native-field mappings, and /execution/task pointers;
 it does not require AST transforms. Prefer AST whenever copying, normalization, typed identifiers,
 documented conditions, dates, enums or supported location components can express the mapping. Use
-llm_task only when supported extraction cannot be expressed by those operations.
+llm_task only when supported extraction cannot be expressed by those operations. Distinguish a
+missing AST operation from missing semantic evidence; supported original-span extraction can use
+the existing llm_task route and its independent meaning/subject verification.
+Read exact native headers together with the original source description, table subject and relevant
+prose. A clear role-bearing header can support a source claim without a separate formal dictionary.
+Assess legal and trading names separately: lack of legal/registered evidence does not by itself rule
+out a supported trading name. A generic name or name-looking value alone establishes neither role.
 For AST name mappings, an independent evidence-bound review can resolve a finite
 name-role vocabulary miss before the host recompiles the identical candidate.
 This never waives known role contradictions or execution constraints.
-For names, the review may resolve an ambiguous subject header only when that
-field's own original definition explicitly identifies the business subject;
+For names, resolving an explicit foreign-subject header conflict requires a verified review and
+that field's own original definition identifying the business subject. This requirement does not
+apply to every unqualified header. Source-level context cannot override a known foreign subject;
 documented foreign subjects and mixed business roles remain blocking.
 Keep supported deterministic mappings in AST; missing original evidence remains
 an abstention, not permission to infer a legal name from a generic display name.
@@ -117,6 +126,21 @@ For unchanged execution with repeated errors, inspect available field evidence o
 original context to make a supported revision; if support is insufficient, explain the gap."""
 INSTRUCTIONS += """ catalogue_metadata is original caller-supplied context. source_url_candidates
 are literal navigation references with provenance, not retrieved definitions or semantic support."""
+INSTRUCTIONS += """ identifier_repair_options retains untried, field-bound alternatives from
+compiler diagnostics even if a later candidate drops those mappings. A supported single identifier
+type does not require a mixed-type union or an inline cell label. Propose and probe an applicable
+alternative before declaring that field unsupported. These options do not approve values or a
+candidate; all original checks and explicit selection remain required. The host may remind you
+once before an early stop; you can still stop with an explained unresolved gap."""
+INSTRUCTIONS += """ A local host repair may rebind a failed evidence reference to its exact
+original primary native header only when the unchanged compiler accepts that binding; expressions,
+field identity and semantic constraints are unchanged, and fresh full validation is still required.
+Final selection cannot discard an independently development-validated strict extension of the same
+mapping rules and scope when it retains all selected values and adds observed fields without conflict.
+The host will return selection_discards_validated_extension with bound retention obligations. Explicitly
+select a qualifying retained candidate, revise/probe a real semantic concern, or stop with a gap.
+This is not a count-based ranking: different rules, subjects, time semantics, conflicting outputs,
+unvalidated candidates and LLM alternatives do not establish this retention obligation."""
 
 
 def decision_schema():
@@ -743,6 +767,68 @@ def _repair_signatures(config):
     return result
 
 
+def _identifier_repair_options(runtime, state):
+    """Keep checked parser alternatives visible across abandoned revisions."""
+    from .execution import pointer_get
+
+    ordered = sorted(
+        state["candidates"],
+        key=lambda ident: (state["candidates"][ident]["decision_turn"], ident),
+    )
+    material = {
+        ident: _candidate_material(runtime, state["candidates"][ident])[0]
+        for ident in ordered
+    }
+    tried = set()
+    for config in material.values():
+        if config.get("execution", {}).get("kind", "ast") != "ast":
+            continue
+        for mapping in config["field_mappings"]:
+            try:
+                nodes = list(ast_nodes(pointer_get(config, mapping["execution_pointer"])))
+            except (Failure, KeyError, IndexError, TypeError):
+                # Invalid expressions remain normal candidate repair feedback.
+                continue
+            for path, node in nodes:
+                if "/condition/" not in path + "/" and node["op"] == "parse_typed_id":
+                    expression = {**node, "require_label": node.get("require_label", False)}
+                    tried.add((
+                        mapping["source_field"], mapping["canonical_field"], digest(expression)
+                    ))
+    options = {}
+    for ident in ordered:
+        candidate = state["candidates"][ident]
+        config = material[ident]
+        for error in candidate["feedback"].get("errors", []):
+            index = error.get("mapping_index")
+            if type(index) is not int or not 0 <= index < len(config["field_mappings"]):
+                continue
+            mapping = config["field_mappings"][index]
+            evidence = error.get("identifier_evidence", {})
+            if (
+                evidence.get("source_field") != mapping["source_field"]
+                or evidence.get("canonical_field") != mapping["canonical_field"]
+            ):
+                continue
+            for option in evidence.get("repair_options", []):
+                expression = option["expression"]
+                signature = (mapping["source_field"], mapping["canonical_field"], digest(expression))
+                if signature not in tried:
+                    key = digest({
+                        "field": mapping["source_field"], "target": mapping["canonical_field"], **option
+                    })
+                    options[key] = {
+                        "source_candidate_id": ident,
+                        "source_config_hash": candidate["config_hash"],
+                        "source_probe_ref": candidate["probe_ref"],
+                        "mapping_index": index,
+                        "source_field": mapping["source_field"],
+                        "canonical_field": mapping["canonical_field"],
+                        **copy.deepcopy(option),
+                    }
+    return list(options.values())[:8]
+
+
 def _repair_progress(runtime, state, lookups):
     """Purely derive planner feedback from immutable candidate and lookup artifacts."""
     ordered = sorted(
@@ -1063,6 +1149,68 @@ def _selection_ledger(runtime, state, ident, proposal, validation):
     }
 
 
+def _retention_obligations(runtime, state, ident, proposal, validation):
+    """Reject proven structural loss; never merge candidates or choose by count."""
+    from .execution import pointer_get
+
+    def contract(config):
+        if config.get("execution", {}).get("kind", "ast") != "ast":
+            return None
+        rules = {}
+        for m in config["field_mappings"]:
+            value = {k: v for k, v in m.items() if k not in {
+                "execution_pointer", "validation_pass", "transformation", "confidence"
+            }}
+            value.setdefault("claim_kind", "informative")
+            value["source_fields"] = sorted(value["source_fields"])
+            value["ast"] = pointer_get(config, m["execution_pointer"])
+            rules[digest(value)] = m["canonical_field"]
+        return rules
+
+    def context(config):
+        return {
+            **{k: v for k, v in config.items() if k not in {"field_mappings", "unmapped_fields", "execution"}},
+            "execution": {k: v for k, v in config["execution"].items() if k not in {"transforms", "kind"}},
+        }
+
+    selected = state["candidates"][ident]
+    if selected.get("validation_status") != "passed" or not selected["eligible"]:
+        return []
+    config, _ = _candidate_material(runtime, selected)
+    rules = contract(config)
+    if not rules:
+        return []
+    obligations = []
+    for peer_id, peer in sorted(state["candidates"].items()):
+        if peer_id == ident or not peer["eligible"] or peer.get("validation_status") != "passed":
+            continue
+        other, _ = _candidate_material(runtime, peer)
+        extra = contract(other)
+        if not extra or context(config) != context(other) or not rules.keys() < extra.keys():
+            continue
+        added_targets = {extra[k] for k in extra.keys() - rules.keys()}
+        # Added rules cannot replace or extend an existing target's semantics.
+        if added_targets & set(rules.values()):
+            continue
+        differences = []
+        for records, development in ((proposal, False), (validation, True)):
+            chosen = _candidate_execution(runtime, selected, records, development=development)
+            retained = _candidate_execution(runtime, peer, records, development=development)
+            forward, reverse = _value_difference(chosen, retained), _value_difference(retained, chosen)
+            if any(reverse.values()) or forward["shared_value_disagreement_counts"]:
+                break
+            differences.append(forward["additional_value_counts"])
+        if len(differences) != 2 or not differences[1]:
+            continue
+        obligations.append({
+            "candidate_id": peer_id, "config_hash": peer["config_hash"],
+            "validation_ref": peer["validation_ref"],
+            "additional_value_counts": differences[1],
+            "basis": "same_scope_exact_rule_extension_no_observed_value_loss_or_conflict",
+        })
+    return obligations
+
+
 def _compare_before_selection(
     runtime, state, ident, requirements, proposal, validation, turn
 ):
@@ -1302,13 +1450,46 @@ def _repair_bound_findings(config, errors):
     return revised, blocked, pruned
 
 
+def _repair_adds_observed_values(repaired, selected, records):
+    """Compare isolated outputs on proposal rows only, never hidden labels.
+
+    Keeping a target does not guarantee that supported values were retained.
+    This only schedules a normal probe; values and counts grant no approval.
+    """
+    from .engine import canonical_valid, eval_ast
+    from .execution import pointer_get
+
+    def values(config, raw):
+        result = set()
+        for mapping in config["field_mappings"]:
+            target = mapping["canonical_field"]
+            value = eval_ast(pointer_get(config, mapping["execution_pointer"]), raw)
+            if value != "unknown" and canonical_valid(target, value):
+                result.add((target, canonical(value)))
+        return result
+
+    if (
+        {m["canonical_field"] for m in repaired["field_mappings"]}
+        - {m["canonical_field"] for m in selected["field_mappings"]}
+    ):
+        return True
+    try:
+        return any(
+            values(repaired, r["raw_record"]) - values(selected, r["raw_record"])
+            for r in records
+        )
+    except Failure:
+        return False
+
+
 def _safe_subset_plan(
     runtime, state, turn, *, semantic_only=False, selected_config=None
 ):
     """One host proposal from attributable errors, never a semantic rewrite."""
     from .execution import compile_config
+    from .branch_repair import repair_evidence_bindings, repair_output_branches
 
-    if state.get("subset_repair_attempted"):
+    if state.get("subset_repair_attempted") or turn + 1 >= MAX_DECISIONS:
         return None
     configs = {
         ident: runtime.run.load_artifact(candidate["config_artifact"])
@@ -1358,15 +1539,20 @@ def _safe_subset_plan(
         ):
             continue
         try:
-            subset, blocked, pruned = _repair_bound_findings(config, errors)
+            local, remaining, branch_changes = repair_output_branches(
+                config, errors, runtime.docs, audit
+            )
+            local, remaining, rebound = repair_evidence_bindings(local, remaining, runtime.docs)
+            subset, blocked, pruned = _repair_bound_findings(local, remaining)
+            branch_changes = [
+                change
+                for change in branch_changes
+                if change["mapping_index"] not in blocked
+            ]
+            rebound = [change for change in rebound if change["mapping_index"] not in blocked]
         except Failure:
             continue
         retained = [index for index in range(len(mappings)) if index not in blocked]
-        if selected_config is not None and not (
-            {mappings[i]["canonical_field"] for i in retained}
-            - {m["canonical_field"] for m in selected_config["field_mappings"]}
-        ):
-            continue
         verdicts = {
             review["mapping_index"]: review["verdict"] for review in audit["reviews"]
         }
@@ -1374,6 +1560,7 @@ def _safe_subset_plan(
             mappings[index]["canonical_field"]
             in {"entity.legal_name", "entity.trading_name"}
             and verdicts.get(index) != "supported"
+            and index not in {change["mapping_index"] for change in branch_changes}
             for index in retained
         ):
             continue
@@ -1383,6 +1570,10 @@ def _safe_subset_plan(
         except Failure:
             continue
         if content_hash in attempted:
+            continue
+        if selected_config is not None and not _repair_adds_observed_values(
+            subset, selected_config, runtime.proposal_records()
+        ):
             continue
         new_id = "host-subset-" + str(turn)
         if new_id in state.get("candidate_attempts", {}):
@@ -1397,12 +1588,14 @@ def _safe_subset_plan(
             "source_audit_ref": runtime.copy_artifact("name-audit-" + ident),
             "excluded_mapping_indices": blocked,
             "removed_enum_entries": pruned,
+            "removed_output_branches": branch_changes,
+            "rebound_evidence": rebound,
             "retained_mapping_indices": retained,
             "blockers": copy.deepcopy(errors),
             "subset_config_hash": digest(subset),
             "subset_mapping_content_hash": content_hash,
             "attempt_limit": 1,
-            "authority": "host_removal_only_proposal_from_field_bound_diagnostics_not_validation_or_approval",
+            "authority": "host_bounded_local_proposal_from_field_bound_diagnostics_not_validation_or_approval",
         }
     return None
 
@@ -1411,10 +1604,21 @@ def _subset_config(runtime, plan):
     original = runtime.run.load_artifact(plan["source_config_artifact"])
     if digest(original) != plan["source_config_hash"]:
         raise Failure("checkpoint_mismatch", "Subset source config hash changed")
-    config, blocked, pruned = _repair_bound_findings(original, plan["blockers"])
+    from .branch_repair import repair_evidence_bindings, repair_output_branches
+
+    audit = runtime.run.load_artifact("name-audit-" + plan["source_candidate_id"])
+    local, remaining, branch_changes = repair_output_branches(
+        original, plan["blockers"], runtime.docs, audit
+    )
+    local, remaining, rebound = repair_evidence_bindings(local, remaining, runtime.docs)
+    config, blocked, pruned = _repair_bound_findings(local, remaining)
+    branch_changes = [c for c in branch_changes if c["mapping_index"] not in blocked]
+    rebound = [c for c in rebound if c["mapping_index"] not in blocked]
     if (
         blocked != plan["excluded_mapping_indices"]
         or pruned != plan["removed_enum_entries"]
+        or branch_changes != plan.get("removed_output_branches", [])
+        or rebound != plan.get("rebound_evidence", [])
     ):
         raise Failure("checkpoint_mismatch", "Host repair findings changed")
     if digest(config) != plan["subset_config_hash"]:
@@ -1765,6 +1969,7 @@ def onboard_source(request, provider=None):
             "unresolved_requirement_history": unresolved_history(state["candidates"]),
             "candidates": candidates,
             "repair_progress": _repair_progress(runtime, state, lookups),
+            "identifier_repair_options": _identifier_repair_options(runtime, state),
             "feedback": state["feedback"],
             "decision_turn": state["turn"],
             "field_evidence_memory": lookups,
@@ -1869,7 +2074,7 @@ def onboard_source(request, provider=None):
                     "repair_plan_ref": ref,
                     "candidate_id": subset_plan["candidate_id"],
                     "source_candidate_id": subset_plan["source_candidate_id"],
-                    "limitation": "One host removal-only proposal; it still needs a fresh probe, name review, selection and development validation. Task requirements remain unchanged.",
+                    "limitation": "One bounded host local proposal; it still needs a fresh probe, name review, selection and development validation. Task requirements remain unchanged.",
                 }
                 runtime.event(
                     "host_subset_repair_proposed",
@@ -1907,6 +2112,18 @@ def onboard_source(request, provider=None):
                     "eligible_candidate_ids": pending_selection,
                     "requested_stop_reason": action["reason"],
                     "repair_hint": "These candidates passed useful proposal checks, including partial candidates with unresolved requirements. Explicitly select an eligible candidate to run or reuse development validation, or stop again if a real gap prevents selection. The host does not select or approve a candidate for you.",
+                }
+            elif (
+                context["identifier_repair_options"]
+                and not state.get("identifier_repair_reminder_used")
+                and turn + 2 < MAX_DECISIONS
+            ):
+                state["identifier_repair_reminder_used"] = True
+                state["feedback"] = {
+                    "error": "identifier_repair_not_tried",
+                    "requested_stop_reason": action["reason"],
+                    "repair_options": context["identifier_repair_options"],
+                    "repair_hint": "A prior compiler diagnostic retains a same-field supported parser alternative that no candidate has tried. Use the original header/definition and propose a new AST candidate, then probe and explicitly select only if eligible. Exhausted lookup quota does not invalidate existing evidence. This is one reminder, not a rewritten mapping or approval; you may still stop with a real gap.",
                 }
             else:
                 state.update(
@@ -2071,6 +2288,8 @@ def onboard_source(request, provider=None):
                             "trigger",
                             "excluded_mapping_indices",
                             "removed_enum_entries",
+                            "removed_output_branches",
+                            "rebound_evidence",
                             "retained_mapping_indices",
                             "authority",
                         )
@@ -2123,6 +2342,19 @@ def onboard_source(request, provider=None):
                     "validation-" + str(turn),
                 )
                 if validated:
+                    obligations = _retention_obligations(runtime, state, ident, proposal, validation)
+                    if obligations:
+                        state["feedback"] = {
+                            "error": "selection_discards_validated_extension",
+                            "candidate_id": ident,
+                            "retention_obligations": obligations,
+                            "repair_hint": "Explicitly select a retained candidate, revise/probe a concrete semantic concern, or stop with a gap. The exact selected mapping rules and context survive in these validated extensions; this does not rank conflicting candidates or grant approval.",
+                        }
+                        ref = runtime.artifact("selection-retention-" + str(turn), state["feedback"])
+                        runtime.event("selection_retention_required", [candidate["validation_ref"]], [ref])
+                        state["turn"] += 1
+                        runtime.persist("agent-" + str(state["turn"]))
+                        continue
                     runtime.artifact("final-config", config)
                     acceptance = feedback["task_acceptance"]
                     selection = _selection_ledger(

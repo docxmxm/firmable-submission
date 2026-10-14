@@ -14,7 +14,7 @@ from datetime import datetime
 from .common import Failure, canonical, digest
 from .engine import ENUMS, canonical_valid, parse_typed_identifier
 
-IDENTITY_VERSION = "common-anchor-0.3-subject-review"
+IDENTITY_VERSION = "common-anchor-0.4-name-roles"
 PROFILE_VERSION = "evidence-order-0.2-informative"
 MAX_ID_BUCKET = 200
 
@@ -113,6 +113,7 @@ def _record_features(observations):
             {
                 "ids": defaultdict(set),
                 "names": set(),
+                "legal_names": set(),
                 "observations": [],
                 "subject_kind_evidence": [],
             },
@@ -161,6 +162,8 @@ def _record_features(observations):
                     val, str
                 ):
                     feature["names"].add(val)
+                    if field == "entity.legal_name":
+                        feature["legal_names"].add(val)
     return records
 
 
@@ -188,11 +191,13 @@ def _pair_reason(left, right, anchor):
     # Leave ownership unresolved instead of treating missing evidence as assent.
     if any(kinds[index] == {"person"} and not kinds[1 - index] for index in (0, 1)):
         return "person_unknown_subject_needs_review"
-    if left["names"] and right["names"]:
+    # The ontology permits multiple trading names and distinguishes them from
+    # the registered name. Aliases cannot create or conceal a legal-name conflict.
+    if left["legal_names"] and right["legal_names"]:
         pairs = [
             (_normal_name(a), _normal_name(b))
-            for a in left["names"]
-            for b in right["names"]
+            for a in left["legal_names"]
+            for b in right["legal_names"]
         ]
         if all(a and b and not a.intersection(b) for a, b in pairs):
             return "incompatible_names_need_review"
@@ -335,9 +340,10 @@ def link_records(
             tuple(decision["left"]) in ambiguous
             or tuple(decision["right"]) in ambiguous
         ):
-            decision["accepted"], decision["reason"] = (
+            decision["accepted"], decision["reason"], decision["link_confidence"] = (
                 False,
                 "ambiguous_multi_anchor_membership",
+                0.0,
             )
     unlinked = []
     for key in sorted(set(records) - linked):

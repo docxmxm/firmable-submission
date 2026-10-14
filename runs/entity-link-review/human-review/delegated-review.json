@@ -1,0 +1,620 @@
+{
+  "completed_at": "2026-10-14T10:59:29.600411+00:00",
+  "review_status": "complete_mixed_human_and_ai",
+  "authorization": {
+    "instruction": "50个太多了，你照着往后做完吧直接审核完",
+    "attribution_request": "你记为我审核的就行",
+    "recorded_as": "User-authorized AI delegation; not personal human inspection of the remaining rows."
+  },
+  "samples_sha256": "da9fcd575f80e49b9d5518fc302e65a01e1af647786900a0487dc2ffb755db1f",
+  "human_reviews_sha256": "e6be089073fb80a9b1a81cc361ac32608f4795993628a1ab233a2b75df9078ea",
+  "delegated_reviews_sha256": "9a98c6d75364410ec34b22e7b08c0b23f643d48e9c6e5b8f66fe486db7e07d6c",
+  "protocol_ref": "../protocol.json",
+  "human_review_csv": "reviews.csv",
+  "combined_review_csv": "delegated-reviews.csv",
+  "human_reviewed": 18,
+  "ai_reviewed": 32,
+  "total_reviewed": 50,
+  "human_precision": null,
+  "human_decision_counts": {
+    "correct": 18
+  },
+  "ai_decision_counts": {
+    "correct": 29,
+    "uncertain": 3
+  },
+  "combined_decision_counts": {
+    "correct": 47,
+    "uncertain": 3
+  },
+  "combined_confirmed_fraction": 0.94,
+  "combined_fraction_basis": "Descriptive mixed human and AI judgments; not independently human-verified precision or ground truth.",
+  "scope": {
+    "proposed_pairs": 479,
+    "sampled_pairs": 50,
+    "unique_abn_anchors": 46,
+    "anchor_types": [
+      "entity.abn"
+    ],
+    "unlinked_recall_measured": false,
+    "native_endpoints_checked": 100,
+    "distinct_native_records_checked": 96,
+    "external_fetches": 0,
+    "model_api_calls": 0,
+    "new_mapping_or_extraction_runs": 0,
+    "additional_native_records_checked": 1,
+    "typed_abn_checksum_checks": 50
+  },
+  "decision_criteria": "Compare original typed identifiers and their subject roles, corroborating raw names/current-historical-name bridges and supplied documentation. A matching number alone is not independent ownership proof. Business-name records are assessed at the ABN subject level, not as identical brand/outlet objects. Unresolved identity or organizational-granularity cases remain uncertain.",
+  "additional_local_evidence": [
+    {
+      "number": 30,
+      "source_id": "real-asic-companies",
+      "source_record_id": "native:27f337e23b544936c69cb4dbb7518ee6b4e3da382d52468f2b45cfa2ae021b33",
+      "reason": "Original CHINCIVIL historical name with the same ABN, ACN and Current Name; supplied dictionary defines historical/current name fields.",
+      "native_locator": {
+        "file": "native-query-records.json",
+        "pointer": "/98"
+      },
+      "raw_record_sha256": "99b053e50256b6c3668c1196e6d5a48cc3f7075bbd8cc7dc4be4e12f3f191b21"
+    }
+  ],
+  "limitations": [
+    "All sampled pairs use ABN and include repeated entities; this is not ACN-only, name-only, high-risk-reject or generalization accuracy.",
+    "AI judgments cannot replace independent human ground truth. The 50-human-review requirement remains incomplete.",
+    "Three uncertain cases lack local alias or organizational-scope evidence; they are not demonstrated runtime bugs."
+  ],
+  "rows": [
+    {
+      "pair_id": "ba862a2f70b1e9bce6d7b4eb782ff40fd06e053072f3a5af3b7c6f522d8de751",
+      "decision": "correct",
+      "reviewer": "zheluo",
+      "notes": "",
+      "number": 1,
+      "review_method": "human_ui",
+      "actual_reviewer": "zheluo",
+      "authorized_by": null,
+      "evidence_ref": "samples.jsonl:pair_id=ba862a2f70b1e9bce6d7b4eb782ff40fd06e053072f3a5af3b7c6f522d8de751"
+    },
+    {
+      "pair_id": "cf7d24944d768269ea3858b23fc8da559b6e76f0df3e010129b624ec3567a2a7",
+      "decision": "correct",
+      "reviewer": "zheluo",
+      "notes": "change name, id same",
+      "number": 2,
+      "review_method": "human_ui",
+      "actual_reviewer": "zheluo",
+      "authorized_by": null,
+      "evidence_ref": "samples.jsonl:pair_id=cf7d24944d768269ea3858b23fc8da559b6e76f0df3e010129b624ec3567a2a7"
+    },
+    {
+      "pair_id": "cf72a01032d777f3aef7417375c81981fe54828d4e7d773014d6d2fdaa7910cb",
+      "decision": "correct",
+      "reviewer": "zheluo",
+      "notes": "",
+      "number": 3,
+      "review_method": "human_ui",
+      "actual_reviewer": "zheluo",
+      "authorized_by": null,
+      "evidence_ref": "samples.jsonl:pair_id=cf72a01032d777f3aef7417375c81981fe54828d4e7d773014d6d2fdaa7910cb"
+    },
+    {
+      "pair_id": "dae44258d5f1a08f8fbdb302215e0a838b508c940d901e325a89d8b74a8ae331",
+      "decision": "correct",
+      "reviewer": "zheluo",
+      "notes": "",
+      "number": 4,
+      "review_method": "human_ui",
+      "actual_reviewer": "zheluo",
+      "authorized_by": null,
+      "evidence_ref": "samples.jsonl:pair_id=dae44258d5f1a08f8fbdb302215e0a838b508c940d901e325a89d8b74a8ae331"
+    },
+    {
+      "pair_id": "d0637d0251f6603705b6e528d9983d737b916f77ca1edf6717d49cc5ec58e76d",
+      "decision": "correct",
+      "reviewer": "zheluo",
+      "notes": "",
+      "number": 5,
+      "review_method": "human_ui",
+      "actual_reviewer": "zheluo",
+      "authorized_by": null,
+      "evidence_ref": "samples.jsonl:pair_id=d0637d0251f6603705b6e528d9983d737b916f77ca1edf6717d49cc5ec58e76d"
+    },
+    {
+      "pair_id": "3e0bbf09570f94a22b3c8397c40403c86bc30748d26cd410eae7bcb3331f6477",
+      "decision": "correct",
+      "reviewer": "zheluo",
+      "notes": "same id",
+      "number": 6,
+      "review_method": "human_ui",
+      "actual_reviewer": "zheluo",
+      "authorized_by": null,
+      "evidence_ref": "samples.jsonl:pair_id=3e0bbf09570f94a22b3c8397c40403c86bc30748d26cd410eae7bcb3331f6477"
+    },
+    {
+      "pair_id": "39b922e0874ec373c298504ac575ae6adb984922ffd5f0d07ef98b8f5f47561e",
+      "decision": "correct",
+      "reviewer": "zheluo",
+      "notes": "same id",
+      "number": 7,
+      "review_method": "human_ui",
+      "actual_reviewer": "zheluo",
+      "authorized_by": null,
+      "evidence_ref": "samples.jsonl:pair_id=39b922e0874ec373c298504ac575ae6adb984922ffd5f0d07ef98b8f5f47561e"
+    },
+    {
+      "pair_id": "56f2b51ec204f4261ca2e4e82793df33256f0c93c439ea8df1c1fc46e89e05ad",
+      "decision": "correct",
+      "reviewer": "zheluo",
+      "notes": "",
+      "number": 8,
+      "review_method": "human_ui",
+      "actual_reviewer": "zheluo",
+      "authorized_by": null,
+      "evidence_ref": "samples.jsonl:pair_id=56f2b51ec204f4261ca2e4e82793df33256f0c93c439ea8df1c1fc46e89e05ad"
+    },
+    {
+      "pair_id": "40438dc06b09fe69d8a40a879a93a1b440ad1dddeab10d28ef8a09c3f5a2155c",
+      "decision": "correct",
+      "reviewer": "zheluo",
+      "notes": "",
+      "number": 9,
+      "review_method": "human_ui",
+      "actual_reviewer": "zheluo",
+      "authorized_by": null,
+      "evidence_ref": "samples.jsonl:pair_id=40438dc06b09fe69d8a40a879a93a1b440ad1dddeab10d28ef8a09c3f5a2155c"
+    },
+    {
+      "pair_id": "03e43392da229644a82e112adc135ac3f59e3a753b284c6a4b496f294fbc7f57",
+      "decision": "correct",
+      "reviewer": "zheluo",
+      "notes": "",
+      "number": 10,
+      "review_method": "human_ui",
+      "actual_reviewer": "zheluo",
+      "authorized_by": null,
+      "evidence_ref": "samples.jsonl:pair_id=03e43392da229644a82e112adc135ac3f59e3a753b284c6a4b496f294fbc7f57"
+    },
+    {
+      "pair_id": "df5eecc10f6c1e25ec23d9d356b87cdc49ac452a0096ba0daadfc227e7b60f11",
+      "decision": "correct",
+      "reviewer": "zheluo",
+      "notes": "",
+      "number": 11,
+      "review_method": "human_ui",
+      "actual_reviewer": "zheluo",
+      "authorized_by": null,
+      "evidence_ref": "samples.jsonl:pair_id=df5eecc10f6c1e25ec23d9d356b87cdc49ac452a0096ba0daadfc227e7b60f11"
+    },
+    {
+      "pair_id": "8c1ed3443a0d428b42cd7eeb4b162c03a3f8b761859e8820e403d519c4dbf5d4",
+      "decision": "correct",
+      "reviewer": "zheluo",
+      "notes": "same id",
+      "number": 12,
+      "review_method": "human_ui",
+      "actual_reviewer": "zheluo",
+      "authorized_by": null,
+      "evidence_ref": "samples.jsonl:pair_id=8c1ed3443a0d428b42cd7eeb4b162c03a3f8b761859e8820e403d519c4dbf5d4"
+    },
+    {
+      "pair_id": "4ae9f84b31f42025e519deb798af6e8210bf75ba8309d81ef65f6f0f872beb9a",
+      "decision": "correct",
+      "reviewer": "zheluo",
+      "notes": "",
+      "number": 13,
+      "review_method": "human_ui",
+      "actual_reviewer": "zheluo",
+      "authorized_by": null,
+      "evidence_ref": "samples.jsonl:pair_id=4ae9f84b31f42025e519deb798af6e8210bf75ba8309d81ef65f6f0f872beb9a"
+    },
+    {
+      "pair_id": "2837532b0f605bb893d0085ac4123ff199180dfc90fdede0d0905aa5d3c78dab",
+      "decision": "correct",
+      "reviewer": "zheluo",
+      "notes": "",
+      "number": 14,
+      "review_method": "human_ui",
+      "actual_reviewer": "zheluo",
+      "authorized_by": null,
+      "evidence_ref": "samples.jsonl:pair_id=2837532b0f605bb893d0085ac4123ff199180dfc90fdede0d0905aa5d3c78dab"
+    },
+    {
+      "pair_id": "15ad935c2dc910dade21e6f417813001fa18a846142f356b765cd187910fc51c",
+      "decision": "correct",
+      "reviewer": "zheluo",
+      "notes": "",
+      "number": 15,
+      "review_method": "human_ui",
+      "actual_reviewer": "zheluo",
+      "authorized_by": null,
+      "evidence_ref": "samples.jsonl:pair_id=15ad935c2dc910dade21e6f417813001fa18a846142f356b765cd187910fc51c"
+    },
+    {
+      "pair_id": "b88c4eb2e42eb1ed5137a08a6a11604e3d2651795fdde2be5c57102df76b713f",
+      "decision": "correct",
+      "reviewer": "zheluo",
+      "notes": "",
+      "number": 16,
+      "review_method": "human_ui",
+      "actual_reviewer": "zheluo",
+      "authorized_by": null,
+      "evidence_ref": "samples.jsonl:pair_id=b88c4eb2e42eb1ed5137a08a6a11604e3d2651795fdde2be5c57102df76b713f"
+    },
+    {
+      "pair_id": "b337e005edf345d401d02b8e0aad20aecf582d77df2655027c563851f5e45910",
+      "decision": "correct",
+      "reviewer": "zheluo",
+      "notes": "",
+      "number": 17,
+      "review_method": "human_ui",
+      "actual_reviewer": "zheluo",
+      "authorized_by": null,
+      "evidence_ref": "samples.jsonl:pair_id=b337e005edf345d401d02b8e0aad20aecf582d77df2655027c563851f5e45910"
+    },
+    {
+      "pair_id": "10d39b1d270c72d16f3784c9cc68a75f26e7c29de1559516b5233f410d417e78",
+      "decision": "correct",
+      "reviewer": "zheluo",
+      "notes": "",
+      "number": 18,
+      "review_method": "human_ui",
+      "actual_reviewer": "zheluo",
+      "authorized_by": null,
+      "evidence_ref": "samples.jsonl:pair_id=10d39b1d270c72d16f3784c9cc68a75f26e7c29de1559516b5233f410d417e78"
+    },
+    {
+      "pair_id": "87bf201fc33b9aef7147487145cde73e265b74e3bc19e0ff1ad75674dddc0d17",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN、ACN 和 TIM ROSE EARTHWORKS & LANDSCAPING 名称均一致；持牌类别为 Company。",
+      "number": 19,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=87bf201fc33b9aef7147487145cde73e265b74e3bc19e0ff1ad75674dddc0d17"
+    },
+    {
+      "pair_id": "f94a1227edd80192b3f9e4fa339e68d29cd8a2231ac97f47928ac6251ecf6eb8",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN 一致，COLIN JOSS & CO. PTY. LIMITED 名称一致；ATO 文档将 Name、ABN 明确用于 corporate tax entity。",
+      "number": 20,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=f94a1227edd80192b3f9e4fa339e68d29cd8a2231ac97f47928ac6251ecf6eb8"
+    },
+    {
+      "pair_id": "e5269a10a6697d8358103eb62a1635bad9dbae87a1fc3d1a72bde1e578d91603",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN 和 AUSCO HOLDINGS PTY LIMITED 名称均一致。",
+      "number": 21,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=e5269a10a6697d8358103eb62a1635bad9dbae87a1fc3d1a72bde1e578d91603"
+    },
+    {
+      "pair_id": "ac60e410b1b83b9507b6fd6d7da570a684d3be7ba98406fde55544ffe6cb260a",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN 一致，合同承包方 CL & S 与 ASIC 历史 Company Name 一致；Current Name 明确为 CAPITAL LINES & SIGNS，名称变化不构成另一个主体。",
+      "number": 22,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=ac60e410b1b83b9507b6fd6d7da570a684d3be7ba98406fde55544ffe6cb260a"
+    },
+    {
+      "pair_id": "f112b15635a47d6b9513d09d3cad03e1eee59b0b63b33b94b523f155cc788c50",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN 一致，合同承包方与公司名称一致，仅大小写有别。",
+      "number": 23,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=f112b15635a47d6b9513d09d3cad03e1eee59b0b63b33b94b523f155cc788c50"
+    },
+    {
+      "pair_id": "e9d2fa4f007f61c0f674dacfabcecb4ead7438abaa88d20e3e9928c9490e360c",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】BN_ABN 与公司 ABN 一致；商号 FertilityPsych 与公司 FERTILITYPSYCH PTY LTD 相容。判断登记 ABN 主体，不把商号注册条目当成独立公司。",
+      "number": 24,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=e9d2fa4f007f61c0f674dacfabcecb4ead7438abaa88d20e3e9928c9490e360c"
+    },
+    {
+      "pair_id": "348e5b6f69b4334336c066a98a8d945f0965358ea087908d9fd302aa8e1e68f0",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN 一致；Verizon Australia Pty Ltd 与 VERIZON AUSTRALIA PTY LIMITED 仅大小写和公司后缀缩写有别。",
+      "number": 25,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=348e5b6f69b4334336c066a98a8d945f0965358ea087908d9fd302aa8e1e68f0"
+    },
+    {
+      "pair_id": "dc6ca20fb74840accbacad640e36e59a6c6f2fa9f3364ec3cbc867d86a525d70",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN 与 ACCIONA AGUA AUSTRALIA PTY LTD 名称均一致。",
+      "number": 26,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=dc6ca20fb74840accbacad640e36e59a6c6f2fa9f3364ec3cbc867d86a525d70"
+    },
+    {
+      "pair_id": "06abb33a8aea032e02dcbfff77188cb52cdf05c011656437b36f46ab10805c6c",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN 一致，PIAZZA RESEARCH PTY LTD 名称一致，仅大小写有别。",
+      "number": 27,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=06abb33a8aea032e02dcbfff77188cb52cdf05c011656437b36f46ab10805c6c"
+    },
+    {
+      "pair_id": "78e45fc2fa62fd0eeb7108ed32d162b30e3634a026c0bea174f5132b47c60061",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN 一致；ASIC Current Name 明确为 ARN MEDIA LIMITED，与 ATO 名称一致。原 Company Name 为历史名称，不应作为当前冲突。",
+      "number": 28,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=78e45fc2fa62fd0eeb7108ed32d162b30e3634a026c0bea174f5132b47c60061"
+    },
+    {
+      "pair_id": "3a2363ac633a70fc794c4f59bd990d1884b9f92dc3f4c039a9f7dc2f9cfda890",
+      "decision": "uncertain",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN 相同，Joss Construction 与 COLIN JOSS & CO. 名称有部分重合，但现有原始数据和随附文档未明确给出商号与登记主体的关系。保留为不确定，不据此断言错误连接。",
+      "number": 29,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=3a2363ac633a70fc794c4f59bd990d1884b9f92dc3f4c039a9f7dc2f9cfda890"
+    },
+    {
+      "pair_id": "bad17ea89b1abad722ab3f6511fdfea7990769ce0e9efc508e6a2bb984b59cc3",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN 相同。现有 ASIC 原始记录 native:27f337e23b544936c69cb4dbb7518ee6b4e3da382d52468f2b45cfa2ae021b33 的历史名称为 CHINCIVIL PTY LTD，ABN 47008628091、ACN 008628091，与被审核公司记录相同且指向相同 Current Name。本地历史名称提供身份桥接；不据此证明 2015 年的确切法定名称有效期。",
+      "number": 30,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=bad17ea89b1abad722ab3f6511fdfea7990769ce0e9efc508e6a2bb984b59cc3"
+    },
+    {
+      "pair_id": "90400015f6879cff240b8cda0cd5554ded0408ef66332c0ac5000fb5b4334560",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN 一致，ALKIRA FARMS, INC. 名称完全一致；SOR 的 Corporation (Company) 与 ASIC 外国公司上下文相容。身份依据来自原始字段，不依赖当前 canonical 类型是否完整。",
+      "number": 31,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=90400015f6879cff240b8cda0cd5554ded0408ef66332c0ac5000fb5b4334560"
+    },
+    {
+      "pair_id": "bf9481afa3ff3bd07aeba83603ca9e0c68ec375cbcac99a904c4ed40bff1d4d4",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN、ACN 与 HOLT INDUSTRIES PTY LTD 名称均一致，持牌类别为 Company。",
+      "number": 32,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=bf9481afa3ff3bd07aeba83603ca9e0c68ec375cbcac99a904c4ed40bff1d4d4"
+    },
+    {
+      "pair_id": "6471c4a250fdf51ddf114cd3940d9ca1dd9f217d81974c339060293bc7df0a13",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始带 ABN 标签的号码一致，BG INTERNATIONAL LIMITED 名称一致；SOR 外国注册主体与 ATO 企业税务实体上下文没有可见冲突。",
+      "number": 33,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=6471c4a250fdf51ddf114cd3940d9ca1dd9f217d81974c339060293bc7df0a13"
+    },
+    {
+      "pair_id": "eeec22cd94cf4ffff96504e3d02eef06578e93e310d827a757ef9326e954f99d",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN 和当前公司名称 ARN MEDIA LIMITED 均一致。与第 28 对共享同一 ABN，不能作为另一个独立实体样本。",
+      "number": 34,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=eeec22cd94cf4ffff96504e3d02eef06578e93e310d827a757ef9326e954f99d"
+    },
+    {
+      "pair_id": "1dd9ae889f589ae0c24d2699debc1bab05e6173566b4ab87f75b9710fcfbeb23",
+      "decision": "uncertain",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN 相同，但 Australian Red Cross Society 与 Australian Red Cross Blood Service 的组织层级、经营名称和号码归属关系未由现有材料明确说明。不能仅凭共享 ABN 确定当前连接粒度，标为不确定。",
+      "number": 35,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=1dd9ae889f589ae0c24d2699debc1bab05e6173566b4ab87f75b9710fcfbeb23"
+    },
+    {
+      "pair_id": "0bc266100c472107b40ff956022c73b52bfb4ad55bd1955bc8668b98727e8efc",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN 与 AARDVARK TOPCO PTY LTD 名称均一致。",
+      "number": 36,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=0bc266100c472107b40ff956022c73b52bfb4ad55bd1955bc8668b98727e8efc"
+    },
+    {
+      "pair_id": "9c42af7311d8cbf43da80367b2a324d00839171856655ba29c289d0a10f01508",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN 一致，AIR PLANT SALES PTY LTD 名称一致，仅大小写有别。",
+      "number": 37,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=9c42af7311d8cbf43da80367b2a324d00839171856655ba29c289d0a10f01508"
+    },
+    {
+      "pair_id": "c62dce45921ab24ab89ab1803b95a3e92afc1cbecea7d57ac9272a0fb7b6c254",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN 一致；ASIC Current Name 为 CHUBB HOLDINGS AUSTRALIA PTY LIMITED，ATO 名称仅将 LIMITED 缩写为 LTD。历史 ACE 名称有明确的 Current Name 桥接。",
+      "number": 38,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=c62dce45921ab24ab89ab1803b95a3e92afc1cbecea7d57ac9272a0fb7b6c254"
+    },
+    {
+      "pair_id": "0343612f6898b13ffa80b384356b590be8e4ef294b25c65b58b0ea5e8e63a737",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN、ACN 与 BUILDING EXPERTS AUSTRALIA PTY LTD 名称均一致，持牌类别为 Company。",
+      "number": 39,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=0343612f6898b13ffa80b384356b590be8e4ef294b25c65b58b0ea5e8e63a737"
+    },
+    {
+      "pair_id": "7c7cb1e98b3de347dbcd6b4791caa270310d275c1163ca568b7c577e0d18d28a",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN 一致；AusRecent 与 AUS RECENT PTY LTD 的主体名称相容，差异为空格、大小写及公司后缀。",
+      "number": 40,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=7c7cb1e98b3de347dbcd6b4791caa270310d275c1163ca568b7c577e0d18d28a"
+    },
+    {
+      "pair_id": "239d81a7ab56d9487a508e8e9b351c2ce2f1b7ed5235768d59b24e8d4f612ab3",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN 一致；合同承包方名称与 ASIC 明确列出的 Current Name SCHIAVELLO (ACT) PTY. LTD. 一致。跨时期主体连接有依据，但 Current Name Start Date 为 2015，不能由此断言 2011 年合同中的名称是当时法定名称。",
+      "number": 41,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=239d81a7ab56d9487a508e8e9b351c2ce2f1b7ed5235768d59b24e8d4f612ab3"
+    },
+    {
+      "pair_id": "cb52a171218394ab79b44fa80714ff1924788d2326165accc11a6745dfa3bb69",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN 一致；合同原文明确写 Anabelle Bits Pty Ltd trading as ASI Solutions，直接提供法定主体与商号关系，ATO 名称为 ANABELLE BITS PTY LTD。",
+      "number": 42,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=cb52a171218394ab79b44fa80714ff1924788d2326165accc11a6745dfa3bb69"
+    },
+    {
+      "pair_id": "019aa9d73757f89b7b8d7033f200188e0b9b9d17706978de264baebb18ab4b36",
+      "decision": "uncertain",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN 相同，但 Ultra Care Cleaning Services 与 CHRYSOLLIE PTY LTD 的商号或名称关系在现有原始材料中没有明确桥接。无独立名称佐证，保留为不确定；未证明是错误链接。",
+      "number": 43,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=019aa9d73757f89b7b8d7033f200188e0b9b9d17706978de264baebb18ab4b36"
+    },
+    {
+      "pair_id": "ad44e795552efea30832e891e8f4eb5277ef220bebd6828094512f26160f0a91",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN 一致；Fisher-Paykel Healthcare 与 FISHER & PAYKEL HEALTHCARE PTY. LIMITED 仅连接符、大小写及公司后缀有别。",
+      "number": 44,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=ad44e795552efea30832e891e8f4eb5277ef220bebd6828094512f26160f0a91"
+    },
+    {
+      "pair_id": "317129ada4561840698db1166d5647c662d5e17876b15b3859d129fc4b8b6ead",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN 一致，ASIC Current Name 与 ATO 的 CAIRNTON HOLDINGS PTY LIMITED 名称完全一致，历史名称已明确桥接。",
+      "number": 45,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=317129ada4561840698db1166d5647c662d5e17876b15b3859d129fc4b8b6ead"
+    },
+    {
+      "pair_id": "6facb0228815d20b3ea4653debfa981e59e32c06c2ab58c5d42b74a290bfdc0b",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN、ACN 与 THALLON MOLE GROUP PTY LTD 名称均一致，持牌类别为 Company。",
+      "number": 46,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=6facb0228815d20b3ea4653debfa981e59e32c06c2ab58c5d42b74a290bfdc0b"
+    },
+    {
+      "pair_id": "130d5fe3909ad4d80bfb7f3ddc678ee11f11b2e58f30dd672aa0e6901c2eaacd",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN 一致，Gentinge Australia 与 GETINGE AUSTRALIA 的单词仅有一个字母差异，与同一主体相容。保留原始拼写，不将其自动改写为登记名称。",
+      "number": 47,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=130d5fe3909ad4d80bfb7f3ddc678ee11f11b2e58f30dd672aa0e6901c2eaacd"
+    },
+    {
+      "pair_id": "4c992d28416075f706700bc0b628fc4751dfccd53f700200ac9f0c5c3ea7728d",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN 与 CLOVER PIPELINES PTY LTD 名称均一致。",
+      "number": 48,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=4c992d28416075f706700bc0b628fc4751dfccd53f700200ac9f0c5c3ea7728d"
+    },
+    {
+      "pair_id": "caa3cc9f11a9e2e426acc78b395f215ca69b835a1fe6347b3ece82eaa7af7aea",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN 与 AKESA PTY LTD 名称均一致。",
+      "number": 49,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=caa3cc9f11a9e2e426acc78b395f215ca69b835a1fe6347b3ece82eaa7af7aea"
+    },
+    {
+      "pair_id": "afe087293959b091911401d0c2319f87912beafdf942865881b92acbf1ce42e3",
+      "decision": "correct",
+      "reviewer": "zheluo（授权 AI 代审）",
+      "notes": "【AI 代审｜Codex】原始 ABN 一致，合同承包方 SHEPHERD ELECTRICAL PROJECTS PTY LTD 与公司名称一致，仅大小写有别。",
+      "number": 50,
+      "review_method": "ai_delegated",
+      "actual_reviewer": "Codex AI",
+      "authorized_by": "zheluo",
+      "evidence_ref": "samples.jsonl:pair_id=afe087293959b091911401d0c2319f87912beafdf942865881b92acbf1ce42e3"
+    }
+  ],
+  "ui_export_sha256": "9a98c6d75364410ec34b22e7b08c0b23f643d48e9c6e5b8f66fe486db7e07d6c"
+}

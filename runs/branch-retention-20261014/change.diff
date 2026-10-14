@@ -1,0 +1,353 @@
+--- before/firmable_runtime/agent.py
++++ after/firmable_runtime/agent.py
+@@ -1379,13 +1379,46 @@
+     return revised, blocked, pruned
+ 
+ 
++def _repair_adds_observed_values(repaired, selected, records):
++    """Compare isolated outputs on proposal rows only, never hidden labels.
++
++    Keeping a target does not guarantee that supported values were retained.
++    This only schedules a normal probe; values and counts grant no approval.
++    """
++    from .engine import canonical_valid, eval_ast
++    from .execution import pointer_get
++
++    def values(config, raw):
++        result = set()
++        for mapping in config["field_mappings"]:
++            target = mapping["canonical_field"]
++            value = eval_ast(pointer_get(config, mapping["execution_pointer"]), raw)
++            if value != "unknown" and canonical_valid(target, value):
++                result.add((target, canonical(value)))
++        return result
++
++    if (
++        {m["canonical_field"] for m in repaired["field_mappings"]}
++        - {m["canonical_field"] for m in selected["field_mappings"]}
++    ):
++        return True
++    try:
++        return any(
++            values(repaired, r["raw_record"]) - values(selected, r["raw_record"])
++            for r in records
++        )
++    except Failure:
++        return False
++
++
+ def _safe_subset_plan(
+     runtime, state, turn, *, semantic_only=False, selected_config=None
+ ):
+     """One host proposal from attributable errors, never a semantic rewrite."""
+     from .execution import compile_config
+-
+-    if state.get("subset_repair_attempted"):
++    from .branch_repair import repair_output_branches
++
++    if state.get("subset_repair_attempted") or turn + 1 >= MAX_DECISIONS:
+         return None
+     configs = {
+         ident: runtime.run.load_artifact(candidate["config_artifact"])
+@@ -1435,15 +1468,18 @@
+         ):
+             continue
+         try:
+-            subset, blocked, pruned = _repair_bound_findings(config, errors)
++            local, remaining, branch_changes = repair_output_branches(
++                config, errors, runtime.docs, audit
++            )
++            subset, blocked, pruned = _repair_bound_findings(local, remaining)
++            branch_changes = [
++                change
++                for change in branch_changes
++                if change["mapping_index"] not in blocked
++            ]
+         except Failure:
+             continue
+         retained = [index for index in range(len(mappings)) if index not in blocked]
+-        if selected_config is not None and not (
+-            {mappings[i]["canonical_field"] for i in retained}
+-            - {m["canonical_field"] for m in selected_config["field_mappings"]}
+-        ):
+-            continue
+         verdicts = {
+             review["mapping_index"]: review["verdict"] for review in audit["reviews"]
+         }
+@@ -1451,6 +1487,7 @@
+             mappings[index]["canonical_field"]
+             in {"entity.legal_name", "entity.trading_name"}
+             and verdicts.get(index) != "supported"
++            and index not in {change["mapping_index"] for change in branch_changes}
+             for index in retained
+         ):
+             continue
+@@ -1460,6 +1497,10 @@
+         except Failure:
+             continue
+         if content_hash in attempted:
++            continue
++        if selected_config is not None and not _repair_adds_observed_values(
++            subset, selected_config, runtime.proposal_records()
++        ):
+             continue
+         new_id = "host-subset-" + str(turn)
+         if new_id in state.get("candidate_attempts", {}):
+@@ -1474,6 +1515,7 @@
+             "source_audit_ref": runtime.copy_artifact("name-audit-" + ident),
+             "excluded_mapping_indices": blocked,
+             "removed_enum_entries": pruned,
++            "removed_output_branches": branch_changes,
+             "retained_mapping_indices": retained,
+             "blockers": copy.deepcopy(errors),
+             "subset_config_hash": digest(subset),
+@@ -1488,10 +1530,18 @@
+     original = runtime.run.load_artifact(plan["source_config_artifact"])
+     if digest(original) != plan["source_config_hash"]:
+         raise Failure("checkpoint_mismatch", "Subset source config hash changed")
+-    config, blocked, pruned = _repair_bound_findings(original, plan["blockers"])
++    from .branch_repair import repair_output_branches
++
++    audit = runtime.run.load_artifact("name-audit-" + plan["source_candidate_id"])
++    local, remaining, branch_changes = repair_output_branches(
++        original, plan["blockers"], runtime.docs, audit
++    )
++    config, blocked, pruned = _repair_bound_findings(local, remaining)
++    branch_changes = [c for c in branch_changes if c["mapping_index"] not in blocked]
+     if (
+         blocked != plan["excluded_mapping_indices"]
+         or pruned != plan["removed_enum_entries"]
++        or branch_changes != plan.get("removed_output_branches", [])
+     ):
+         raise Failure("checkpoint_mismatch", "Host repair findings changed")
+     if digest(config) != plan["subset_config_hash"]:
+--- before/firmable_runtime/branch_repair.py
++++ after/firmable_runtime/branch_repair.py
+@@ -0,0 +1,227 @@
++"""Removal-only proposals for attributable output branches, never validation."""
++
++import copy
++
++from .common import Failure, digest
++from .config_audit import (
++    NAME_TARGETS,
++    MAX_TRACE_BYTES,
++    _branch_evidence,
++    _branch_findings,
++    _coverage_findings,
++    _group_evidence,
++    _review_evidence,
++    review_schema,
++)
++from .execution import pointer_get
++from .engine import ast_nodes
++from .schema import check_response
++
++
++def _output_branch(ast, path):
++    """Only direct when arms: omission cannot activate another output fallback."""
++    parts = path.split("/")[1:]
++    if not parts or any(part not in {"then", "else"} for part in parts):
++        return None
++    node = ast
++    for part in parts:
++        if node.get("op") != "when":
++            return None
++        node = node[part]
++    return node
++
++
++def _name_branch_cuts(config, documentation, audit):
++    """Recheck immutable review bindings, quotes and structural coverage."""
++    expected = {
++        "candidate_config_hash": digest(config),
++        "documentation_hash": digest(documentation),
++        "scope": "independent_name_role_model_review",
++        "context_policy": "current_candidate_only",
++        "human_gold": False,
++    }
++    if not isinstance(audit, dict) or any(
++        audit.get(k) != v for k, v in expected.items()
++    ):
++        return {}
++    mappings = {
++        i: m
++        for i, m in enumerate(config["field_mappings"])
++        if m["canonical_field"] in NAME_TARGETS
++    }
++    derived = {"evidence_verified", "branch_analysis_verified", "coverage_evidence"}
++    response = {
++        "reviews": [
++            {k: v for k, v in r.items() if k not in derived}
++            for r in audit.get("reviews", [])
++        ]
++    }
++    check_response(response, review_schema(list(mappings)))
++    reviews = response["reviews"]
++    if sorted(r["mapping_index"] for r in reviews) != sorted(mappings):
++        return {}
++    inventory = {f["source_field"] for f in config["source_schema"]["fields"]}
++    proposed = []
++    for i, m in mappings.items():
++        ast = pointer_get(config, m["execution_pointer"])
++        proposed.append(
++            {
++                "mapping_index": i,
++                "canonical_field": m["canonical_field"],
++                "source_fields": m["source_fields"],
++                "executable": ast,
++                "host_branch_evidence": _branch_evidence(
++                    m, ast, [], [], inventory, "ast", MAX_TRACE_BYTES
++                ),
++            }
++        )
++    grouped = _group_evidence(proposed, [], [], "ast")
++    cuts = {}
++    for review in reviews:
++        i = review["mapping_index"]
++        m = mappings[i]
++        host = next(p for p in proposed if p["mapping_index"] == i)
++        refs, invalid = _review_evidence(review, m, documentation, inventory)
++        invalid += _branch_findings(
++            review, host["host_branch_evidence"], m, documentation, inventory
++        )
++        invalid += _coverage_findings(review, proposed, grouped, reviews, [], "ast")
++        if invalid or not refs or review["verdict"] == "supported":
++            continue
++        positive = [
++            b["branch_id"]
++            for b in review["branch_reviews"]
++            if b["verdict"] == "supported" and b["expected_value_fields"]
++        ]
++        if not positive:
++            continue
++        for b in review["branch_reviews"]:
++            path = b["branch_id"]
++            node = _output_branch(host["executable"], path)
++            # A known current-value obligation needs model repair, not deletion.
++            # Uncertain coverage also remains unresolved instead of becoming proof.
++            if (
++                b["verdict"] not in {"uncertain", "unsupported"}
++                or b["current_value_requirement"] != "not_documented"
++                or b["current_value_fields"]
++                or b["coverage_mapping_indices"]
++                or not b["evidence_quotes"]
++                or node is None
++                or node["op"] == "omit"
++                or any(p == path or p.startswith(path + "/") for p in positive)
++            ):
++                continue
++            cuts.setdefault(i, []).append(path)
++    return cuts
++
++
++def repair_output_branches(config, errors, documentation, audit):
++    """Keep predicates and supported siblings; all returned rules need new review.
++
++    This deliberately does not solve arbitrary AST equivalence or use old model
++    confidence as truth. Whole-group fallback remains for unattributable errors.
++    """
++    original = copy.deepcopy(config)
++    if config.get("execution", {}).get("kind", "ast") != "ast":
++        return original, errors, []
++    try:
++        cuts = _name_branch_cuts(config, documentation, audit)
++    except (Failure, KeyError, TypeError, ValueError):
++        return original, errors, []
++    remaining, changes = [], []
++    for i, paths in list(cuts.items()):
++        # Keep only the outermost non-overlapping safe cuts.
++        cuts[i] = [
++            p
++            for p in sorted(set(paths), key=lambda p: (len(p), p))
++            if not any(p.startswith(q + "/") for q in paths if q != p)
++        ]
++    for i, paths in list(cuts.items()):
++        m = config["field_mappings"][i]
++        if (
++            sum(
++                peer["execution_pointer"] == m["execution_pointer"]
++                for peer in config["field_mappings"]
++            )
++            != 1
++        ):
++            del cuts[i]
++            continue
++        ast = copy.deepcopy(pointer_get(config, m["execution_pointer"]))
++        for path in paths:
++            parent, arm = path.rsplit("/", 1)
++            node = ast
++            for part in parent.split("/")[1:]:
++                node = node[part]
++            node[arm] = {"op": "omit", "reason": "Unresolved branch"}
++        dependencies = {n["name"] for _, n in ast_nodes(ast) if n["op"] == "field"}
++        if m["source_field"] not in dependencies:
++            del cuts[i]  # Do not invent a new primary field/evidence binding.
++    for error in errors:
++        i = error.get("mapping_index")
++        paths = cuts.get(i, [])
++        covered = (
++            bool(paths)
++            and error.get("rule") == "independent_name_role_review"
++            and error.get("reason_code")
++            in {"name_role_uncertain", "name_role_unsupported"}
++        )
++        unsupported = error.get("semantic_support", {}).get("name_branch_support", [])
++        if paths and error.get("reason_code") == "semantic_rule" and unsupported:
++            covered = all(
++                any(
++                    b.get("pointer") == p or b.get("pointer", "").startswith(p + "/")
++                    for p in paths
++                )
++                for b in unsupported
++            )
++        if not covered:
++            remaining.append(error)
++    blocked = {e.get("mapping_index") for e in remaining}
++    for i, paths in cuts.items():
++        if i in blocked:
++            continue
++        mapping = original["field_mappings"][i]
++        for path in paths:
++            full = mapping["execution_pointer"] + path
++            node = pointer_get(config, full)
++            parent, arm = full.rsplit("/", 1)
++            pointer_get(original, parent)[arm] = {
++                "op": "omit",
++                "reason": "Unresolved output branch; source values remain in raw_record.",
++            }
++            changes.append(
++                {
++                    "mapping_index": i,
++                    "branch_id": path,
++                    "pointer": full,
++                    "removed_expression_hash": digest(node),
++                }
++            )
++        mapping["transformation"] = (
++            "Host removed only the bound unresolved output branches "
++            + ", ".join(paths)
++            + ". Original conditions and other expressions are unchanged; fresh validation and semantic review are required."
++        )
++        mapping["validation_pass"] = False
++        dependencies = {
++            n["name"]
++            for _, n in ast_nodes(pointer_get(original, mapping["execution_pointer"]))
++            if n["op"] == "field"
++        }
++        mapping["source_fields"] = [
++            f for f in mapping["source_fields"] if f in dependencies
++        ]
++    used = {f for m in original["field_mappings"] for f in m["source_fields"]}
++    for slot in ("observed_time", "valid_from", "valid_to"):
++        used.update(original["execution"].get(slot, {}).get("source_fields", []))
++    before = {f for m in config["field_mappings"] for f in m["source_fields"]}
++    unmapped = {m["source_field"] for m in original["unmapped_fields"]}
++    for field in sorted(before - used - unmapped):
++        original["unmapped_fields"].append(
++            {
++                "source_field": field,
++                "reason": "Unresolved after local branch removal; original values remain in raw_record.",
++            }
++        )
++    return original, remaining, changes

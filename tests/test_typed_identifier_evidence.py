@@ -42,6 +42,44 @@ class TypedIdentifierEvidenceTests(unittest.TestCase):
             self.compile(value, docs, inventory)
         return raised.exception.details["findings"]
 
+    def test_adjacent_explicit_type_label_keeps_checksum_and_raw_evidence(self):
+        for name in ("Reference", "ABN", "code_72"):
+            for kind, digits in (("abn", "51824753556"), ("acn", "004085616")):
+                with self.subTest(name=name, kind=kind):
+                    value = mapping(name, kind)
+                    raw = {name: kind.upper() + digits}
+                    records = [
+                        {
+                            "source_id": "invented", "source_record_id": "1",
+                            "raw_record": raw,
+                        }
+                    ]
+                    original = copy.deepcopy(records)
+                    output, report = extract_records(records, self.compile(value))
+                    self.assertEqual(report["errors"], [])
+                    self.assertEqual(output[0]["values"], {"entity." + kind: digits})
+                    self.assertEqual(output[0]["raw_record"], raw)
+                    self.assertEqual(records, original)
+
+    def test_compact_labels_do_not_allow_wrong_type_bare_or_composite_values(self):
+        for kind in ("abn", "acn"):
+            compiled = self.compile(mapping(kind=kind))
+            for raw in (
+                "ACN51824753556", "ABN004085616", "51824753556", "004085616",
+                "ACN004085617", "ABN51824753557", "ACN004085616 extra",
+                "refACN004085616", "ABN51824753556/ACN004085616",
+            ):
+                with self.subTest(kind=kind, raw=raw):
+                    records = [
+                        {
+                            "source_id": "invented", "source_record_id": "1",
+                            "raw_record": {"Reference": raw},
+                        }
+                    ]
+                    output, report = extract_records(records, compiled)
+                    self.assertEqual(report["errors"], [])
+                    self.assertEqual(output[0]["values"], {})
+
     def test_header_and_same_field_quotes_are_equivalent_after_renaming(self):
         for name in ("Reference", "Entry token", "Nested/Code"):
             definition = "ABN or ACN number"

@@ -900,6 +900,62 @@ class AgentTests(unittest.TestCase):
                     result["task_status"], "complete" if required else "not_configured"
                 )
 
+    def test_empty_requirements_keep_useful_header_mapping_and_original_context(self):
+        """Scripted discovery verifies the harness, not a real model's choices."""
+        with tempfile.TemporaryDirectory() as root:
+            fixture = MixedFixture(root)
+            fixture.request["required_fields"] = []
+            fixture.request["catalogue_metadata"]["description"] = (
+                "This register lists businesses and the names under which they trade."
+            )
+            provider = MixedProvider(
+                fixture,
+                [control("inspect_field_evidence", field="TradeName"), "good", "select"],
+            )
+            result = onboard_source(fixture.request, provider)
+            self.assertEqual(result["candidate_status"], "validated")
+            self.assertEqual(result["task_status"], "not_configured")
+            self.assertTrue(result["approval_required"])
+            self.assertIsNone(result["approval"])
+            self.assertTrue(result["observations"])
+            for row in result["observations"]:
+                self.assertEqual(
+                    row["entity"]["trading_name"], row["raw_record"]["TradeName"]
+                )
+                self.assertNotIn("legal_name", row["entity"])
+            decisions = [
+                r["payload"] for r in provider.requests if r["purpose"] == "agent_decision"
+            ]
+            proposal = decisions[0]["proposal_records"]
+            for context in decisions:
+                self.assertEqual(context["task_requirements"]["required_fields"], [])
+                self.assertEqual(context["proposal_records"], proposal)
+                self.assertEqual(
+                    context["catalogue_metadata"], fixture.request["catalogue_metadata"]
+                )
+            lookup = decisions[1]["field_evidence_memory"][0]
+            self.assertEqual(lookup["source_field"], "TradeName")
+            reviews = [
+                r["payload"] for r in provider.requests if r["purpose"] == "name_role_review"
+            ]
+            self.assertEqual(len(reviews), 1)
+            self.assertEqual(reviews[0]["proposal_records"], proposal)
+            self.assertEqual(
+                reviews[0]["name_mappings"][0]["source_field"], "TradeName"
+            )
+            self.assertNotIn("TradeName:", reviews[0]["source_documentation"])
+            audit = json.loads(
+                (Path(fixture.request["state_dir"]) / "artifacts/name-audit-good.json").read_text()
+            )
+            self.assertEqual(audit["status"], "supported")
+            self.assertEqual(
+                audit["reviews"][0]["evidence_quotes"],
+                [{"kind": "header", "quote": "TradeName"}],
+            )
+            calls = len(provider.requests)
+            self.assertEqual(onboard_source(fixture.request, provider), result)
+            self.assertEqual(len(provider.requests), calls)
+
     def test_native_execution_failure_is_revised_and_validation_stays_withheld(self):
         for field, native_format in (
             ("registered_title", "csv"),

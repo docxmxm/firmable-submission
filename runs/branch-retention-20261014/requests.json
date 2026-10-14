@@ -1,0 +1,186 @@
+[
+  {
+    "catalogue_metadata": {
+      "id": "05495e07-b6c6-4c82-8be1-b468204e10c3",
+      "license_title": "CC_40_BY",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "metadata_modified": "2017-07-07T04:32:16+00:00",
+      "publisher": "ACT Government Open Data",
+      "resource_id": "81d0cc49-586d-40cf-9054-356af17cf44e",
+      "snapshot_retrieved_at": "2026-10-09T12:10:13.471774+00:00",
+      "source_url": "https://www.data.act.gov.au/api/v3/views/8wge-3sy9/query.json?accessType=DOWNLOAD",
+      "title": "Contracts Register - 2000 to 2016"
+    },
+    "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/data/assessment-inputs/real-act-contracts-historical/evidence",
+    "execution_scope": "onboarding_development",
+    "ontology_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/schema/firmable_ontology.yaml",
+    "required_fields": [
+      "entity.legal_name",
+      "entity.abn"
+    ],
+    "source_id": "real-act-contracts-historical",
+    "source_acquisition_enabled": false
+  },
+  {
+    "catalogue_metadata": {
+      "id": "bc515135-4bb6-4d50-957a-3713709a76d3",
+      "license_title": "Creative Commons Attribution 3.0 Australia",
+      "license_url": "http://creativecommons.org/licenses/by/3.0/au/",
+      "metadata_modified": "2026-10-06T19:36:40.174691",
+      "publisher": "Australian Securities and Investments Commission (ASIC)",
+      "resource_id": "55ad4b1c-5eeb-44ea-8b29-d410da431be3",
+      "snapshot_retrieved_at": "2026-10-09T12:04:56.678664+00:00",
+      "source_url": "https://data.gov.au/data/dataset/bc515135-4bb6-4d50-957a-3713709a76d3/resource/55ad4b1c-5eeb-44ea-8b29-d410da431be3/download/business_names_202610.csv",
+      "title": "ASIC - Business Names Dataset"
+    },
+    "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/data/assessment-inputs/real-asic-business-names/evidence",
+    "execution_scope": "onboarding_development",
+    "ontology_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/schema/firmable_ontology.yaml",
+    "required_fields": [
+      "entity.trading_name",
+      "entity.abn"
+    ],
+    "source_id": "real-asic-business-names",
+    "source_acquisition_enabled": false
+  },
+  {
+    "catalogue_metadata": {
+      "id": "7b8656f9-606d-4337-af29-66b89b2eeefb",
+      "license_title": "Creative Commons Attribution 3.0 Australia",
+      "license_url": "http://creativecommons.org/licenses/by/3.0/au/",
+      "metadata_modified": "2026-10-05T13:50:21.132889",
+      "publisher": "Australian Securities and Investments Commission (ASIC)",
+      "resource_id": "5c3914e6-413e-4a2c-b890-bf8efe3eabf2",
+      "snapshot_retrieved_at": "2026-10-09T12:11:31.330741+00:00",
+      "snapshot_retrieved_through": "2026-10-09T12:11:39.475186+00:00",
+      "source_url": "https://data.gov.au/data/api/3/action/datastore_search?resource_id=5c3914e6-413e-4a2c-b890-bf8efe3eabf2",
+      "title": "ASIC - Company Dataset"
+    },
+    "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/data/assessment-inputs/real-asic-companies/evidence",
+    "execution_scope": "onboarding_development",
+    "ontology_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/schema/firmable_ontology.yaml",
+    "required_fields": [
+      "entity.legal_name",
+      "entity.acn",
+      "entity.abn"
+    ],
+    "source_id": "real-asic-companies",
+    "source_acquisition_enabled": false
+  },
+  {
+    "catalogue_metadata": {
+      "id": "c2524c87-cea4-4636-acac-599a82048a26",
+      "license_title": "Creative Commons Attribution 3.0 Australia",
+      "license_url": "http://creativecommons.org/licenses/by/3.0/au/",
+      "metadata_modified": "2026-09-30T20:47:28.394158",
+      "publisher": "Australian Taxation Office",
+      "resource_id": "15bf4eaa-7a14-48e9-8a3f-092df32a644e",
+      "snapshot_retrieved_at": "2026-10-09T12:04:57.869167+00:00",
+      "source_url": "https://data.gov.au/data/dataset/c2524c87-cea4-4636-acac-599a82048a26/resource/15bf4eaa-7a14-48e9-8a3f-092df32a644e/download/2024-25-corporate-report-of-entity-tax-information.xlsx",
+      "title": "Corporate Tax Transparency"
+    },
+    "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/data/assessment-inputs/real-ato-corporate-tax/evidence",
+    "execution_scope": "onboarding_development",
+    "ontology_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/schema/firmable_ontology.yaml",
+    "required_fields": [
+      "entity.legal_name",
+      "entity.abn"
+    ],
+    "source_id": "real-ato-corporate-tax",
+    "source_acquisition_enabled": false
+  },
+  {
+    "catalogue_metadata": {
+      "id": "980b6499-c0b4-491b-ba9c-1c7506368a50",
+      "license_title": "Creative Commons Attribution 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "metadata_modified": "2026-10-08T23:46:17.069202",
+      "publisher": "Queensland Building and Construction Commission",
+      "resource_id": "25608781-b28c-44f8-8545-0ab18d84082f",
+      "snapshot_retrieved_at": "2026-10-09T12:04:56.696912+00:00",
+      "source_url": "https://www.data.qld.gov.au/dataset/980b6499-c0b4-491b-ba9c-1c7506368a50/resource/25608781-b28c-44f8-8545-0ab18d84082f/download/active_licensees.csv",
+      "title": "QBCC Licensed Contractors Register"
+    },
+    "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/data/assessment-inputs/real-qbcc/evidence",
+    "execution_scope": "onboarding_development",
+    "ontology_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/schema/firmable_ontology.yaml",
+    "required_fields": [
+      "entity.legal_name",
+      "entity.abn",
+      "entity.acn",
+      "address.full"
+    ],
+    "source_id": "real-qbcc",
+    "source_acquisition_enabled": false
+  },
+  {
+    "catalogue_metadata": {
+      "id": "42bad3df-f2e0-4c9c-bef0-0a4328927718",
+      "license_title": "Creative Commons Attribution 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "metadata_modified": "2026-10-09T00:20:02.566557",
+      "publisher": "Environment, Tourism, Science and Innovation",
+      "resource_id": "e119647b-a2aa-4e78-b810-d3f6d60c53af",
+      "snapshot_retrieved_at": "2026-10-09T12:10:13.278098+00:00",
+      "source_url": "https://storagesolutiondocsprod.blob.core.windows.net/register-documents-rso/rso-register.xlsx?timestamp=2026-10-09T10:20:01+10:00",
+      "title": "Suitable Operator Register (SOR) for Environmentally Relevant Activities (ERAs)"
+    },
+    "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/data/assessment-inputs/real-suitable-operators/evidence",
+    "execution_scope": "onboarding_development",
+    "ontology_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/schema/firmable_ontology.yaml",
+    "required_fields": [
+      "entity.legal_name",
+      "entity.abn",
+      "entity.acn"
+    ],
+    "source_id": "real-suitable-operators",
+    "source_acquisition_enabled": false
+  },
+  {
+    "catalogue_metadata": {
+      "documentation_url": "https://www.apra.gov.au/registers/list-superannuation-institutions",
+      "license_title": "Creative Commons Attribution 4.0 International",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "metadata_modified": "2026-10-12",
+      "publisher": "Australian Prudential Regulation Authority",
+      "snapshot_retrieved_at": "2026-10-13T16:09:01.962719+00:00",
+      "source_url": "https://www.apra.gov.au/system/files/2026-10/List%20of%20RSES%20and%20RSE%20Licensees%20and%20MySuper%20Authorised%20products%2012%20October%202026.xlsx",
+      "title": "List of RSEs and RSE Licensees and MySuper Authorised products"
+    },
+    "dev_record_limit": 32,
+    "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/two-reserve-sources-20261014/execution/apra-superannuation/evidence",
+    "execution_scope": "onboarding_development",
+    "ontology_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/schema/firmable_ontology.yaml",
+    "proposal_record_limit": 8,
+    "required_fields": [
+      "entity.abn",
+      "entity.legal_name"
+    ],
+    "source_id": "apra-superannuation",
+    "source_acquisition_enabled": false
+  },
+  {
+    "catalogue_metadata": {
+      "documentation_url": "https://www.oric.gov.au/corporations-and-registers/guide-using-corporation-information",
+      "id": "2c072eed-d6d3-4f3a-a6d2-8929b0c78682",
+      "license_title": "Creative Commons Attribution 3.0 Australia",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/au/",
+      "metadata_modified": "2026-10-01T23:56:50.028705",
+      "publisher": "Office of the Registrar of Indigenous Corporations (ORIC)",
+      "snapshot_retrieved_at": "2026-10-13T16:10:38.651531+00:00",
+      "source_url": "https://data.gov.au/data/dataset/2c072eed-d6d3-4f3a-a6d2-8929b0c78682/resource/c6441c77-f484-4568-9ff3-2bcafad5ee47/download/13-september-2026-dataset-csv.csv",
+      "title": "Aboriginal and Torres Strait Islander corporations \u2014 13 September 2026 dataset"
+    },
+    "dev_record_limit": 32,
+    "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/two-reserve-sources-20261014/execution/oric-corporations/evidence",
+    "execution_scope": "onboarding_development",
+    "ontology_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/schema/firmable_ontology.yaml",
+    "proposal_record_limit": 8,
+    "required_fields": [
+      "entity.abn",
+      "entity.legal_name"
+    ],
+    "source_id": "oric-corporations",
+    "source_acquisition_enabled": false
+  }
+]
