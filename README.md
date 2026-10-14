@@ -1,5 +1,7 @@
 # Firmable schema inference
 
+**Latest real run — 14 October 2026:** [six-source results](RESULTS.md) and [tracked evidence](evidence/latest-six-source.json). All 22,925 native observations were produced; two tasks completed and four remained partial. Companies type coverage fell from 389 to zero. The saved r2 outputs below remain the reference cohort.
+
 This repository contains one **pre-scope runtime and its complete six-source repetition 2 (r2) cohort**. All six configs and observations come from the same repetition. The runtime fingerprint is `bec320c33a982dcfd5e31f9e0c8c74d68401ea0855643a07028855adbf5e40de`.
 
 Start with the [evidence index](evidence/index.json), [output summary](outputs/summary.json) and [write-up](WRITEUP.md). Original r2 requests, responses, candidates, synthetic approvals and receipts are retained in the [six-source trace archive](evidence/six-source-r2.tar.zst). The public API is `firmable_runtime.workflow`; see [architecture and contracts](docs/ARCHITECTURE.md).
