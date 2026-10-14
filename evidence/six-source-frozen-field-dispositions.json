@@ -1,0 +1,1680 @@
+{
+  "kind": "frozen-independent-source-dispositions-development-evaluation-v1",
+  "created_at": "2026-10-13T23:30:31.186408+00:00",
+  "human_gold": false,
+  "planner_access": "prohibited; evaluator-only artifact, never supplied to planner/reviewer",
+  "purpose": "Fixed six-source before/after evaluation reference. Original source meanings and native independent counts, not old model unmapped reasons. No aggregate mapping accuracy inferred.",
+  "source_rows": {
+    "real-asic-companies": 389,
+    "real-asic-business-names": 1000,
+    "real-ato-corporate-tax": 4436,
+    "real-qbcc": 1000,
+    "real-suitable-operators": 15100,
+    "real-act-contracts-historical": 1000
+  },
+  "native_raw_identity_verification": "All22925 native business record IDs and raw records independently matched F baseline observations; ATO Information6 rows excluded.",
+  "evidence_manifest": [
+    {
+      "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/README.md",
+      "sha256": "915b13a7f45953039fcf939e800cf74dd444ef42dfbc69d445d169314b6afa39"
+    },
+    {
+      "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json",
+      "sha256": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522"
+    },
+    {
+      "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/evidence/README.md",
+      "sha256": "009172d7ff2744a3d904ca564aa8d952c4eaee1a3d5a1b02bb2fa21924b16bb6"
+    },
+    {
+      "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/evidence/native-prefix.tsv",
+      "sha256": "70ebf0c95fab5b2d9274939ebe923867998189f1d6c894c35dee3a47795b5191"
+    },
+    {
+      "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/evidence/official-help.txt",
+      "sha256": "323ae30a394cd89fbabc0ac42fb9c2c53e3ef13cfbb05ab1077f44731abd87d5"
+    },
+    {
+      "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/README.md",
+      "sha256": "8ae2b76f59b19dc530a84d1c88ecebb18d5fc3099c14b4ead781f71996154e03"
+    },
+    {
+      "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/native-query-records.json",
+      "sha256": "a6f6a1fcf42af6ec00f756897a6330c70755e9886125b6c9499720175fa44655"
+    },
+    {
+      "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/official-help.md",
+      "sha256": "87d671520e0a1a9a233fbc4c6a5640d9a949052e674cb7d78fbede37af698c59"
+    },
+    {
+      "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-ato-corporate-tax/evidence/README.md",
+      "sha256": "47132542a30e055c08a0a85a072e1e649b3c3b728081c4e277df394d4c0c8dff"
+    },
+    {
+      "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-ato-corporate-tax/evidence/download.xlsx",
+      "sha256": "d7772fa282c90be6aabaf5893c60d63bd0c896534b10256abed175f6a05fa754"
+    },
+    {
+      "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/evidence/README.md",
+      "sha256": "9245f34fd0ce4756f937b9f237cd4937c8566fd5b323ff502a338383bb526b2b"
+    },
+    {
+      "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/evidence/native-prefix.csv",
+      "sha256": "7caa4ca3caf89004205317997c9ac28a93ea6519dce9e9cbc72071a637b5789e"
+    },
+    {
+      "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-suitable-operators/evidence/README.md",
+      "sha256": "c2127babf1928f3715481bf6ae3ce9ca214ac7f8a8d49d191d54fedc0c4ef2da"
+    },
+    {
+      "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-suitable-operators/evidence/download.xlsx",
+      "sha256": "c82d2975289046ee2ae35bd7ae8fe642ece524d8fbae7438248b38a47e4aee24"
+    }
+  ],
+  "ontology_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/schema/firmable_ontology.yaml",
+  "ontology_sha256": "2a2d2db45cb0c5e7d022f6e2466c68271cc14704a09658e0d71b92ec1f130e23",
+  "email_original_local_evidence": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-full-refresh-20261014/email-evaluation-criteria.json",
+  "assignment_original": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/docs/ASSESSMENT-ORIGINAL.md",
+  "metric_boundary": [
+    "No numeric rubric weights or minimum mapping accuracy/precision in original assignment/email.",
+    "Report correct/missing/wrong by frozen row-target subset, abstentions and unsupported-emission risks separately.",
+    "Typed-ID checksum/source agreement is not real-world ownership or cross-source identity accuracy.",
+    "Technical complete, accepted/informative counts, emitted field counts, raw integrity, cost/tokens/latency are not semantic accuracy.",
+    "These are six repeatedly studied development snapshots, one run/arm/source, not unseen generalisation or randomized causal evidence.",
+    "Historical49/50 human links outof448 population do not evaluate new links."
+  ],
+  "field_dispositions": [
+    {
+      "source_id": "real-asic-companies",
+      "native_field": "Company Name",
+      "disposition": "supported_conditional",
+      "canonical_target": "entity.legal_name",
+      "rationale": "Same current name target; current companion is available for historical records. This is an omitted supported branch, unlike generic name-role uncertainty.",
+      "supported_row_denominator": 389,
+      "condition": {
+        "Y": "Company Name:235",
+        "null": "Current Name:154"
+      },
+      "evidence": [
+        {
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/official-help.md",
+          "sha256": "87d671520e0a1a9a233fbc4c6a5640d9a949052e674cb7d78fbede37af698c59",
+          "exact_quote": "| Current Name | Current company name | Text | Current name has the following logic applied <br> IF 'Current Name Indicator' = null <br> THEN show current company name for historical record <br> ELSE null |",
+          "line": 184
+        }
+      ],
+      "basis": "original_source_definition_and_ontology",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/native-query-records.json",
+        "sha256": "a6f6a1fcf42af6ec00f756897a6330c70755e9886125b6c9499720175fa44655",
+        "exact_field_name": "Company Name",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-asic-companies",
+      "native_field": "Current Name",
+      "disposition": "supported_conditional",
+      "canonical_target": "entity.legal_name",
+      "rationale": "Same current name target; current companion is available for historical records. This is an omitted supported branch, unlike generic name-role uncertainty.",
+      "supported_row_denominator": 389,
+      "condition": {
+        "Y": "Company Name:235",
+        "null": "Current Name:154"
+      },
+      "evidence": [
+        {
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/official-help.md",
+          "sha256": "87d671520e0a1a9a233fbc4c6a5640d9a949052e674cb7d78fbede37af698c59",
+          "exact_quote": "| Current Name | Current company name | Text | Current name has the following logic applied <br> IF 'Current Name Indicator' = null <br> THEN show current company name for historical record <br> ELSE null |",
+          "line": 184
+        }
+      ],
+      "basis": "original_source_definition_and_ontology",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/native-query-records.json",
+        "sha256": "a6f6a1fcf42af6ec00f756897a6330c70755e9886125b6c9499720175fa44655",
+        "exact_field_name": "Current Name",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-asic-companies",
+      "native_field": "Current Name Indicator",
+      "disposition": "predicate_dependency",
+      "canonical_target": null,
+      "rationale": "Controls current-name choice; no separate entity attribute.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [
+        {
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/official-help.md",
+          "sha256": "87d671520e0a1a9a233fbc4c6a5640d9a949052e674cb7d78fbede37af698c59",
+          "exact_quote": "| Current Name Indicator | Flag indicating whether the company name shown is the current company name | Text | Y / Null. |",
+          "line": 182
+        }
+      ],
+      "basis": "original_source_definition_and_ontology",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/native-query-records.json",
+        "sha256": "a6f6a1fcf42af6ec00f756897a6330c70755e9886125b6c9499720175fa44655",
+        "exact_field_name": "Current Name Indicator",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-asic-companies",
+      "native_field": "ABN",
+      "disposition": "typed_source_agreement",
+      "canonical_target": "entity.abn",
+      "rationale": "Exact own-company typed value plus independent checksum; checksum alone is not real-world ownership proof.",
+      "supported_row_denominator": 389,
+      "condition": null,
+      "evidence": [
+        {
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/official-help.md",
+          "sha256": "87d671520e0a1a9a233fbc4c6a5640d9a949052e674cb7d78fbede37af698c59",
+          "exact_quote": "This is the ABN for the company.",
+          "line": 183
+        }
+      ],
+      "basis": "original_source_definition_and_ontology",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/native-query-records.json",
+        "sha256": "a6f6a1fcf42af6ec00f756897a6330c70755e9886125b6c9499720175fa44655",
+        "exact_field_name": "ABN",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-asic-companies",
+      "native_field": "ACN",
+      "disposition": "supported_conditional",
+      "canonical_target": "entity.acn",
+      "rationale": "Valid ACN only; Type RACN is explicitly ARBN and must abstain. Snapshot has no RACN test row.",
+      "supported_row_denominator": 389,
+      "condition": "Type != RACN and checksum-valid",
+      "evidence": [
+        {
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/official-help.md",
+          "sha256": "87d671520e0a1a9a233fbc4c6a5640d9a949052e674cb7d78fbede37af698c59",
+          "exact_quote": "Instances where the Type = 'RACN' the value contained in the ACN field is actually the Australian Registered Body Number (ARBN).",
+          "line": 162
+        }
+      ],
+      "basis": "original_source_definition_and_ontology",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/native-query-records.json",
+        "sha256": "a6f6a1fcf42af6ec00f756897a6330c70755e9886125b6c9499720175fa44655",
+        "exact_field_name": "ACN",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-asic-companies",
+      "native_field": "Type",
+      "disposition": "supported_enum_subset",
+      "canonical_target": "entity.entity_type",
+      "rationale": "All observed APTY/APUB/FNOS definitions explicitly identify companies. RACN untested; no universal code guessing.",
+      "supported_row_denominator": 389,
+      "condition": {
+        "APTY": 333,
+        "APUB": 53,
+        "FNOS": 3
+      },
+      "evidence": [
+        {
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/official-help.md",
+          "sha256": "87d671520e0a1a9a233fbc4c6a5640d9a949052e674cb7d78fbede37af698c59",
+          "exact_quote": "APTY - Australian proprietary company <br> APUB - Australian public company <br> FNOS - Foreign company (a company incorporated outside Australia but registered as a foreign company in Australia)",
+          "line": 163
+        }
+      ],
+      "basis": "original_source_definition_and_ontology",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/native-query-records.json",
+        "sha256": "a6f6a1fcf42af6ec00f756897a6330c70755e9886125b6c9499720175fa44655",
+        "exact_field_name": "Type",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-asic-companies",
+      "native_field": "Status",
+      "disposition": "supported_enum_subset",
+      "canonical_target": "entity.status",
+      "rationale": "DRGD directly supports deregistered (3). REGD does not alone prove operational active; EXAD covers receivership or liquidation and cannot universally narrow to in_liquidation; SOFF is in progress. Score determinate subset only.",
+      "supported_row_denominator": 3,
+      "condition": {
+        "DRGD": "deregistered:3",
+        "REGD/EXAD/SOFF": "not_scored_without_further_semantic_agreement"
+      },
+      "evidence": [
+        {
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/official-help.md",
+          "sha256": "87d671520e0a1a9a233fbc4c6a5640d9a949052e674cb7d78fbede37af698c59",
+          "exact_quote": "DRGD - De-registered. <br> EXAD - External administration (in receivership/liquidation).",
+          "line": 176
+        }
+      ],
+      "basis": "original_source_definition_and_ontology",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/native-query-records.json",
+        "sha256": "a6f6a1fcf42af6ec00f756897a6330c70755e9886125b6c9499720175fa44655",
+        "exact_field_name": "Status",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-asic-companies",
+      "native_field": "Date of Registration",
+      "disposition": "supported_parse",
+      "canonical_target": "entity.date_registered",
+      "rationale": "Explicit company registration event, DD/MM/YYYY.",
+      "supported_row_denominator": 389,
+      "condition": null,
+      "evidence": [
+        {
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/official-help.md",
+          "sha256": "87d671520e0a1a9a233fbc4c6a5640d9a949052e674cb7d78fbede37af698c59",
+          "exact_quote": "| Date of Registration | Date on which a company was registered | Text | Date format: DD/MM/YYYY |",
+          "line": 177
+        }
+      ],
+      "basis": "original_source_definition_and_ontology",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/native-query-records.json",
+        "sha256": "a6f6a1fcf42af6ec00f756897a6330c70755e9886125b6c9499720175fa44655",
+        "exact_field_name": "Date of Registration",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-asic-companies",
+      "native_field": "Current Name Start Date",
+      "disposition": "different_event_scope",
+      "canonical_target": null,
+      "rationale": "Name lifetime is not company registration or whole-observation validity.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [
+        {
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/official-help.md",
+          "sha256": "87d671520e0a1a9a233fbc4c6a5640d9a949052e674cb7d78fbede37af698c59",
+          "exact_quote": "Name start date for current registered company name",
+          "line": 185
+        }
+      ],
+      "basis": "original_source_definition_and_ontology",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/native-query-records.json",
+        "sha256": "a6f6a1fcf42af6ec00f756897a6330c70755e9886125b6c9499720175fa44655",
+        "exact_field_name": "Current Name Start Date",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-asic-companies",
+      "native_field": "Previous State of Registration",
+      "disposition": "different_event_scope",
+      "canonical_target": null,
+      "rationale": "Original registration state does not establish current address.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [
+        {
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/official-help.md",
+          "sha256": "87d671520e0a1a9a233fbc4c6a5640d9a949052e674cb7d78fbede37af698c59",
+          "exact_quote": "State in which the company was originally registered",
+          "line": 179
+        }
+      ],
+      "basis": "original_source_definition_and_ontology",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/native-query-records.json",
+        "sha256": "a6f6a1fcf42af6ec00f756897a6330c70755e9886125b6c9499720175fa44655",
+        "exact_field_name": "Previous State of Registration",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-asic-companies",
+      "native_field": "Class",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Liability/subcategory, lifecycle event, state identifier or dataset metadata have no equivalent target in the frozen ontology; may remain raw/provenance.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/native-query-records.json",
+        "sha256": "a6f6a1fcf42af6ec00f756897a6330c70755e9886125b6c9499720175fa44655",
+        "exact_field_name": "Class",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-asic-companies",
+      "native_field": "Sub Class",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Liability/subcategory, lifecycle event, state identifier or dataset metadata have no equivalent target in the frozen ontology; may remain raw/provenance.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/native-query-records.json",
+        "sha256": "a6f6a1fcf42af6ec00f756897a6330c70755e9886125b6c9499720175fa44655",
+        "exact_field_name": "Sub Class",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-asic-companies",
+      "native_field": "Date of Deregistration",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Liability/subcategory, lifecycle event, state identifier or dataset metadata have no equivalent target in the frozen ontology; may remain raw/provenance.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/native-query-records.json",
+        "sha256": "a6f6a1fcf42af6ec00f756897a6330c70755e9886125b6c9499720175fa44655",
+        "exact_field_name": "Date of Deregistration",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-asic-companies",
+      "native_field": "State Registration number",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Liability/subcategory, lifecycle event, state identifier or dataset metadata have no equivalent target in the frozen ontology; may remain raw/provenance.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/native-query-records.json",
+        "sha256": "a6f6a1fcf42af6ec00f756897a6330c70755e9886125b6c9499720175fa44655",
+        "exact_field_name": "State Registration number",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-asic-companies",
+      "native_field": "Modified since last report",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Liability/subcategory, lifecycle event, state identifier or dataset metadata have no equivalent target in the frozen ontology; may remain raw/provenance.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/native-query-records.json",
+        "sha256": "a6f6a1fcf42af6ec00f756897a6330c70755e9886125b6c9499720175fa44655",
+        "exact_field_name": "Modified since last report",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-asic-companies",
+      "native_field": "_id",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Liability/subcategory, lifecycle event, state identifier or dataset metadata have no equivalent target in the frozen ontology; may remain raw/provenance.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/native-query-records.json",
+        "sha256": "a6f6a1fcf42af6ec00f756897a6330c70755e9886125b6c9499720175fa44655",
+        "exact_field_name": "_id",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-asic-business-names",
+      "native_field": "BN_NAME",
+      "disposition": "supported_conditional",
+      "canonical_target": "entity.trading_name",
+      "rationale": "Source defines business-name role. Score known Registered current subset; do not convert historical rows to current name without evidence.",
+      "supported_row_denominator": 888,
+      "condition": {
+        "BN_STATUS Registered": 888,
+        "BN_STATUS Deregistered": 112,
+        "note": "Raw noncurrent label is Deregistered, not Cancelled; retained help defines Cancelled. Noncurrent rows are not positive current-name gold."
+      },
+      "evidence": [
+        {
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/evidence/official-help.txt",
+          "sha256": "323ae30a394cd89fbabc0ac42fb9c2c53e3ef13cfbb05ab1077f44731abd87d5",
+          "exact_quote": "A name used, or to be used, in relation to one or",
+          "line": 204
+        }
+      ],
+      "basis": "original_source_definition_and_ontology",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/evidence/native-prefix.tsv",
+        "sha256": "70ebf0c95fab5b2d9274939ebe923867998189f1d6c894c35dee3a47795b5191",
+        "exact_field_name": "BN_NAME",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-asic-business-names",
+      "native_field": "BN_STATUS",
+      "disposition": "predicate_dependency",
+      "canonical_target": null,
+      "rationale": "Business-name registration status is not entity corporate status. Native label/document mismatch on Deregistered must stay visible.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [
+        {
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/evidence/official-help.txt",
+          "sha256": "323ae30a394cd89fbabc0ac42fb9c2c53e3ef13cfbb05ab1077f44731abd87d5",
+          "exact_quote": "Registration Status for the Business Name",
+          "line": 216
+        }
+      ],
+      "basis": "original_source_definition_and_ontology",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/evidence/native-prefix.tsv",
+        "sha256": "70ebf0c95fab5b2d9274939ebe923867998189f1d6c894c35dee3a47795b5191",
+        "exact_field_name": "BN_STATUS",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-asic-business-names",
+      "native_field": "BN_ABN",
+      "disposition": "typed_source_agreement",
+      "canonical_target": "entity.abn",
+      "rationale": "Exact typed source ABN plus independent checksum; suppressed/missing not guessed.",
+      "supported_row_denominator": 802,
+      "condition": null,
+      "evidence": [
+        {
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/evidence/official-help.txt",
+          "sha256": "323ae30a394cd89fbabc0ac42fb9c2c53e3ef13cfbb05ab1077f44731abd87d5",
+          "exact_quote": "Suppressed ABN’s are shown as NULL",
+          "line": 281
+        }
+      ],
+      "basis": "original_source_definition_and_ontology",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/evidence/native-prefix.tsv",
+        "sha256": "70ebf0c95fab5b2d9274939ebe923867998189f1d6c894c35dee3a47795b5191",
+        "exact_field_name": "BN_ABN",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-asic-business-names",
+      "native_field": "BN_REG_DT",
+      "disposition": "different_event_scope",
+      "canonical_target": null,
+      "rationale": "Business-name start/cessation is not entity registration or whole-observation validity.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [
+        {
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/evidence/official-help.txt",
+          "sha256": "323ae30a394cd89fbabc0ac42fb9c2c53e3ef13cfbb05ab1077f44731abd87d5",
+          "exact_quote": "The date by which the Business Name started",
+          "line": 234
+        }
+      ],
+      "basis": "original_source_definition_and_ontology",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/evidence/native-prefix.tsv",
+        "sha256": "70ebf0c95fab5b2d9274939ebe923867998189f1d6c894c35dee3a47795b5191",
+        "exact_field_name": "BN_REG_DT",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-asic-business-names",
+      "native_field": "BN_CANCEL_DT",
+      "disposition": "different_event_scope",
+      "canonical_target": null,
+      "rationale": "Business-name start/cessation is not entity registration or whole-observation validity.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [
+        {
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/evidence/official-help.txt",
+          "sha256": "323ae30a394cd89fbabc0ac42fb9c2c53e3ef13cfbb05ab1077f44731abd87d5",
+          "exact_quote": "The date by which the Business Name started",
+          "line": 234
+        }
+      ],
+      "basis": "original_source_definition_and_ontology",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/evidence/native-prefix.tsv",
+        "sha256": "70ebf0c95fab5b2d9274939ebe923867998189f1d6c894c35dee3a47795b5191",
+        "exact_field_name": "BN_CANCEL_DT",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-asic-business-names",
+      "native_field": "BN_STATE_OF_REG",
+      "disposition": "different_event_scope",
+      "canonical_target": null,
+      "rationale": "Previous regulator state is not current address.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [
+        {
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/evidence/official-help.txt",
+          "sha256": "323ae30a394cd89fbabc0ac42fb9c2c53e3ef13cfbb05ab1077f44731abd87d5",
+          "exact_quote": "The state the business name was registered in by",
+          "line": 250
+        }
+      ],
+      "basis": "original_source_definition_and_ontology",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/evidence/native-prefix.tsv",
+        "sha256": "70ebf0c95fab5b2d9274939ebe923867998189f1d6c894c35dee3a47795b5191",
+        "exact_field_name": "BN_STATE_OF_REG",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-asic-business-names",
+      "native_field": "BN_STATE_NUM",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Former state business-name number and register identity have no entity target.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/evidence/native-prefix.tsv",
+        "sha256": "70ebf0c95fab5b2d9274939ebe923867998189f1d6c894c35dee3a47795b5191",
+        "exact_field_name": "BN_STATE_NUM",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-asic-business-names",
+      "native_field": "REGISTER_NAME",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Former state business-name number and register identity have no entity target.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/evidence/native-prefix.tsv",
+        "sha256": "70ebf0c95fab5b2d9274939ebe923867998189f1d6c894c35dee3a47795b5191",
+        "exact_field_name": "REGISTER_NAME",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-ato-corporate-tax",
+      "native_field": "Name",
+      "disposition": "needs_role_evidence",
+      "canonical_target": "entity.legal_name",
+      "rationale": "Tax-entity name is documented, but registered/legal versus trading role is not. 4436 nonblank names are potential evidence-review cases, not recall denominator.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [
+        {
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-ato-corporate-tax/evidence/README.md",
+          "sha256": "47132542a30e055c08a0a85a072e1e649b3c3b728081c4e277df394d4c0c8dff",
+          "exact_quote": "These reports contain the name, ABN, total income, taxable income and tax payable for corporate tax entities with a total income of $100 million or more.",
+          "line": 16
+        }
+      ],
+      "basis": "original_source_definition_and_ontology",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-ato-corporate-tax/evidence/download.xlsx",
+        "sha256": "d7772fa282c90be6aabaf5893c60d63bd0c896534b10256abed175f6a05fa754",
+        "exact_field_name": "Name",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-ato-corporate-tax",
+      "native_field": "ABN",
+      "disposition": "typed_source_agreement",
+      "canonical_target": "entity.abn",
+      "rationale": "Independent value/checksum agreement only, over both business sheets.",
+      "supported_row_denominator": 4400,
+      "condition": null,
+      "evidence": [
+        {
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-ato-corporate-tax/evidence/README.md",
+          "sha256": "47132542a30e055c08a0a85a072e1e649b3c3b728081c4e277df394d4c0c8dff",
+          "exact_quote": "They also contain the name, ABN and tax payable for any entity that has a petroleum resource rent tax (PRRT) payable amount.",
+          "line": 20
+        }
+      ],
+      "basis": "original_source_definition_and_ontology",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-ato-corporate-tax/evidence/download.xlsx",
+        "sha256": "d7772fa282c90be6aabaf5893c60d63bd0c896534b10256abed175f6a05fa754",
+        "exact_field_name": "ABN",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-ato-corporate-tax",
+      "native_field": "Income year",
+      "disposition": "different_event_scope",
+      "canonical_target": null,
+      "rationale": "Reporting year cannot silently become date_registered or whole-observation validity.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-ato-corporate-tax/evidence/download.xlsx",
+        "sha256": "d7772fa282c90be6aabaf5893c60d63bd0c896534b10256abed175f6a05fa754",
+        "exact_field_name": "Income year",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-ato-corporate-tax",
+      "native_field": "Total income $",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Frozen entity/address ontology has no financial tax amount target.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-ato-corporate-tax/evidence/download.xlsx",
+        "sha256": "d7772fa282c90be6aabaf5893c60d63bd0c896534b10256abed175f6a05fa754",
+        "exact_field_name": "Total income $",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-ato-corporate-tax",
+      "native_field": "Taxable income $",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Frozen entity/address ontology has no financial tax amount target.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-ato-corporate-tax/evidence/download.xlsx",
+        "sha256": "d7772fa282c90be6aabaf5893c60d63bd0c896534b10256abed175f6a05fa754",
+        "exact_field_name": "Taxable income $",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-ato-corporate-tax",
+      "native_field": "Tax payable $",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Frozen entity/address ontology has no financial tax amount target.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-ato-corporate-tax/evidence/download.xlsx",
+        "sha256": "d7772fa282c90be6aabaf5893c60d63bd0c896534b10256abed175f6a05fa754",
+        "exact_field_name": "Tax payable $",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-ato-corporate-tax",
+      "native_field": "PRRT Payable $",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Frozen entity/address ontology has no financial tax amount target.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-ato-corporate-tax/evidence/download.xlsx",
+        "sha256": "d7772fa282c90be6aabaf5893c60d63bd0c896534b10256abed175f6a05fa754",
+        "exact_field_name": "PRRT Payable $",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-qbcc",
+      "native_field": "Licensee Name",
+      "disposition": "needs_role_evidence",
+      "canonical_target": "entity.legal_name",
+      "rationale": "Named licensee is documented; no all-row registered legal-name guarantee. Mixed company and individual subjects must be preserved.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [
+        {
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/evidence/README.md",
+          "sha256": "9245f34fd0ce4756f937b9f237cd4937c8566fd5b323ff502a338383bb526b2b",
+          "exact_quote": "Details include licence number, name of licensee, business address, licence class and financial category.",
+          "line": 27
+        }
+      ],
+      "basis": "original_source_definition_and_ontology",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/evidence/native-prefix.csv",
+        "sha256": "7caa4ca3caf89004205317997c9ac28a93ea6519dce9e9cbc72071a637b5789e",
+        "exact_field_name": "Licensee Name",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-qbcc",
+      "native_field": "Licensee Business Address",
+      "disposition": "source_text_agreement",
+      "canonical_target": "address.full",
+      "rationale": "Whole source address preserved with whitespace normalization. Does not certify postal completeness or deliverability.",
+      "supported_row_denominator": 1000,
+      "condition": null,
+      "evidence": [
+        {
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/evidence/README.md",
+          "sha256": "9245f34fd0ce4756f937b9f237cd4937c8566fd5b323ff502a338383bb526b2b",
+          "exact_quote": "Details include licence number, name of licensee, business address, licence class and financial category.",
+          "line": 27
+        }
+      ],
+      "basis": "original_source_definition_and_ontology",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/evidence/native-prefix.csv",
+        "sha256": "7caa4ca3caf89004205317997c9ac28a93ea6519dce9e9cbc72071a637b5789e",
+        "exact_field_name": "Licensee Business Address",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-qbcc",
+      "native_field": "ABN",
+      "disposition": "typed_source_agreement_subject_split",
+      "canonical_target": "entity.abn",
+      "rationale": "623 checksum-valid source values; company300, individual323. Do not label individual association as proven same-entity ownership; 20 overlap known company ABNs in retained cohort.",
+      "supported_row_denominator": 623,
+      "condition": {
+        "Company": 300,
+        "Individual_owner_unresolved": 323
+      },
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/evidence/native-prefix.csv",
+        "sha256": "7caa4ca3caf89004205317997c9ac28a93ea6519dce9e9cbc72071a637b5789e",
+        "exact_field_name": "ABN",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-qbcc",
+      "native_field": "ACN",
+      "disposition": "typed_source_agreement",
+      "canonical_target": "entity.acn",
+      "rationale": "326 valid source ACNs all on Company licensee rows.",
+      "supported_row_denominator": 326,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/evidence/native-prefix.csv",
+        "sha256": "7caa4ca3caf89004205317997c9ac28a93ea6519dce9e9cbc72071a637b5789e",
+        "exact_field_name": "ACN",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-qbcc",
+      "native_field": "Licence Type DESC",
+      "disposition": "supported_enum_subset",
+      "canonical_target": "entity.entity_type",
+      "rationale": "Explicit Company branch330 can map company; Individual670 does not establish sole_trader. Field also relevant to subject conflict checking.",
+      "supported_row_denominator": 330,
+      "condition": {
+        "Company": "company:330",
+        "Individual": "needs_business_type_evidence:670"
+      },
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/evidence/native-prefix.csv",
+        "sha256": "7caa4ca3caf89004205317997c9ac28a93ea6519dce9e9cbc72071a637b5789e",
+        "exact_field_name": "Licence Type DESC",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-qbcc",
+      "native_field": "Licence Type CODE",
+      "disposition": "conditional_code_dependency",
+      "canonical_target": null,
+      "rationale": "Opaque native code needs same-row/definition crosswalk before independently scored; use explicit description branch for narrow type denominator.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/evidence/native-prefix.csv",
+        "sha256": "7caa4ca3caf89004205317997c9ac28a93ea6519dce9e9cbc72071a637b5789e",
+        "exact_field_name": "Licence Type CODE",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-qbcc",
+      "native_field": "id",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Source/licence IDs, licence class/grade and financial category are not ontology business identifiers, ANZSIC or entity status.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/evidence/native-prefix.csv",
+        "sha256": "7caa4ca3caf89004205317997c9ac28a93ea6519dce9e9cbc72071a637b5789e",
+        "exact_field_name": "id",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-qbcc",
+      "native_field": "Licence Number",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Source/licence IDs, licence class/grade and financial category are not ontology business identifiers, ANZSIC or entity status.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/evidence/native-prefix.csv",
+        "sha256": "7caa4ca3caf89004205317997c9ac28a93ea6519dce9e9cbc72071a637b5789e",
+        "exact_field_name": "Licence Number",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-qbcc",
+      "native_field": "Financial Category CODE",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Source/licence IDs, licence class/grade and financial category are not ontology business identifiers, ANZSIC or entity status.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/evidence/native-prefix.csv",
+        "sha256": "7caa4ca3caf89004205317997c9ac28a93ea6519dce9e9cbc72071a637b5789e",
+        "exact_field_name": "Financial Category CODE",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-qbcc",
+      "native_field": "Financial Category DESC",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Source/licence IDs, licence class/grade and financial category are not ontology business identifiers, ANZSIC or entity status.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/evidence/native-prefix.csv",
+        "sha256": "7caa4ca3caf89004205317997c9ac28a93ea6519dce9e9cbc72071a637b5789e",
+        "exact_field_name": "Financial Category DESC",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-qbcc",
+      "native_field": "Licence Grade",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Source/licence IDs, licence class/grade and financial category are not ontology business identifiers, ANZSIC or entity status.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/evidence/native-prefix.csv",
+        "sha256": "7caa4ca3caf89004205317997c9ac28a93ea6519dce9e9cbc72071a637b5789e",
+        "exact_field_name": "Licence Grade",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-qbcc",
+      "native_field": "Licence Class Type",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Source/licence IDs, licence class/grade and financial category are not ontology business identifiers, ANZSIC or entity status.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/evidence/native-prefix.csv",
+        "sha256": "7caa4ca3caf89004205317997c9ac28a93ea6519dce9e9cbc72071a637b5789e",
+        "exact_field_name": "Licence Class Type",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-suitable-operators",
+      "native_field": "Customer Name",
+      "disposition": "needs_role_evidence",
+      "canonical_target": "entity.legal_name",
+      "rationale": "Business-or-individual name is documented; this does not directly establish legal/registered rather than trading name. All nonblank names are not legal gold.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [
+        {
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-suitable-operators/evidence/README.md",
+          "sha256": "c2127babf1928f3715481bf6ae3ce9ca214ac7f8a8d49d191d54fedc0c4ef2da",
+          "exact_quote": "Data extracted from the department's permit and licensing system showing the business or individual name, suitable operator register reference number and ABN or ACN number.",
+          "line": 19
+        }
+      ],
+      "basis": "original_source_definition_and_ontology",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-suitable-operators/evidence/download.xlsx",
+        "sha256": "c82d2975289046ee2ae35bd7ae8fe642ece524d8fbae7438248b38a47e4aee24",
+        "exact_field_name": "Customer Name",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-suitable-operators",
+      "native_field": "Business Number",
+      "disposition": "supported_conditional",
+      "canonical_target": "entity.abn/entity.acn",
+      "rationale": "Cell carries explicit ABN/ACN/ARBN type. Normalize separators and independently checksum selected type. Never recast ARBN or infer ACN suffix of ABN.",
+      "supported_row_denominator": 8200,
+      "condition": {
+        "ABN_valid": 299,
+        "ACN_valid": 7901,
+        "ARBN_abstain": 27,
+        "ACN_label_total": 8068,
+        "ABN_label_total": 305,
+        "blank": 6700
+      },
+      "evidence": [
+        {
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-suitable-operators/evidence/README.md",
+          "sha256": "c2127babf1928f3715481bf6ae3ce9ca214ac7f8a8d49d191d54fedc0c4ef2da",
+          "exact_quote": "ABN or ACN number.",
+          "line": 19
+        }
+      ],
+      "basis": "original_source_definition_and_ontology",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-suitable-operators/evidence/download.xlsx",
+        "sha256": "c82d2975289046ee2ae35bd7ae8fe642ece524d8fbae7438248b38a47e4aee24",
+        "exact_field_name": "Business Number",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-suitable-operators",
+      "native_field": "Entity Type",
+      "disposition": "supported_enum_subset",
+      "canonical_target": "entity.entity_type",
+      "rationale": "Frozen narrow score uses unambiguous Corporation (Company)8114 and Incorporated Association70 only. An individual or Sole trader6714 is disjunctive, not sole_trader gold. Other enum categories not scored in this comparison; not asserted impossible.",
+      "supported_row_denominator": 8184,
+      "condition": {
+        "Corporation (Company)": "company:8114",
+        "Incorporated Association": "incorporated_association:70",
+        "An individual or Sole trader": "ambiguous:6714",
+        "remaining_categories": "not_scored"
+      },
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-suitable-operators/evidence/download.xlsx",
+        "sha256": "c82d2975289046ee2ae35bd7ae8fe642ece524d8fbae7438248b38a47e4aee24",
+        "exact_field_name": "Entity Type",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-suitable-operators",
+      "native_field": "Location",
+      "disposition": "source_component_agreement_subset",
+      "canonical_target": "address.locality/address.state/address.postcode",
+      "rationale": "14825 previously independently inspected tuples offer a fixed reproducible comparison set; 15086 nonblank locations are not all expected parsable. Do not use previous parser coverage as exhaustive attainable gold. Extra ambiguous tuples separately not_scored; no address.full inference.",
+      "supported_row_denominator": 14825,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-suitable-operators/evidence/download.xlsx",
+        "sha256": "c82d2975289046ee2ae35bd7ae8fe642ece524d8fbae7438248b38a47e4aee24",
+        "exact_field_name": "Location",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-suitable-operators",
+      "native_field": "Registration Date",
+      "disposition": "different_event_scope",
+      "canonical_target": null,
+      "rationale": "Suitable-operator registration is an ERA eligibility event, not entity incorporation/current corporate status.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [
+        {
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-suitable-operators/evidence/README.md",
+          "sha256": "c2127babf1928f3715481bf6ae3ce9ca214ac7f8a8d49d191d54fedc0c4ef2da",
+          "exact_quote": "A suitable operator is a person or corporation who has been registered by the **Department of the Environment, Tourism, Science and Innovation** as being suitable to carry out an environmentally relevant activity (ERA).",
+          "line": 16
+        }
+      ],
+      "basis": "original_source_definition_and_ontology",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-suitable-operators/evidence/download.xlsx",
+        "sha256": "c82d2975289046ee2ae35bd7ae8fe642ece524d8fbae7438248b38a47e4aee24",
+        "exact_field_name": "Registration Date",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-suitable-operators",
+      "native_field": "Registration Status",
+      "disposition": "different_event_scope",
+      "canonical_target": null,
+      "rationale": "Suitable-operator registration is an ERA eligibility event, not entity incorporation/current corporate status.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [
+        {
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-suitable-operators/evidence/README.md",
+          "sha256": "c2127babf1928f3715481bf6ae3ce9ca214ac7f8a8d49d191d54fedc0c4ef2da",
+          "exact_quote": "A suitable operator is a person or corporation who has been registered by the **Department of the Environment, Tourism, Science and Innovation** as being suitable to carry out an environmentally relevant activity (ERA).",
+          "line": 16
+        }
+      ],
+      "basis": "original_source_definition_and_ontology",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-suitable-operators/evidence/download.xlsx",
+        "sha256": "c82d2975289046ee2ae35bd7ae8fe642ece524d8fbae7438248b38a47e4aee24",
+        "exact_field_name": "Registration Status",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-suitable-operators",
+      "native_field": "RSO Number",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Operator registry reference is not ABN, ACN or NZBN.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-suitable-operators/evidence/download.xlsx",
+        "sha256": "c82d2975289046ee2ae35bd7ae8fe642ece524d8fbae7438248b38a47e4aee24",
+        "exact_field_name": "RSO Number",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "native_field": "contractor_name",
+      "disposition": "needs_role_evidence",
+      "canonical_target": "entity.legal_name",
+      "rationale": "Contractor role does not guarantee registered legal name. Nine rows equal contract title, which is a source quality flag rather than proof that every such name is wrong.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [
+        {
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/README.md",
+          "sha256": "915b13a7f45953039fcf939e800cf74dd444ef42dfbc69d445d169314b6afa39",
+          "exact_quote": "List of contracts and their details. The execution date of the contracts commence in 2000 and end in 2016. This data is a historical snapshot and no updates are to be provided.",
+          "line": 16
+        }
+      ],
+      "basis": "original_source_definition_and_ontology",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json",
+        "sha256": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522",
+        "exact_field_name": "contractor_name",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "native_field": "abn",
+      "disposition": "typed_source_agreement",
+      "canonical_target": "entity.abn",
+      "rationale": "759 exact source ABNs pass independent checksum; 238 nonblank invalid and3absent abstain. Typed value agreement does not independently certify supplier ownership.",
+      "supported_row_denominator": 759,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json",
+        "sha256": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522",
+        "exact_field_name": "abn",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "native_field": "directorate_public_authority_territory_owned_corporation",
+      "disposition": "foreign_subject",
+      "canonical_target": null,
+      "rationale": "Buyer/public-authority fields must not become the contractor entity name/address.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json",
+        "sha256": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522",
+        "exact_field_name": "directorate_public_authority_territory_owned_corporation",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "native_field": "previously_department_or_agency_prior_to_23_may_2011",
+      "disposition": "foreign_subject",
+      "canonical_target": null,
+      "rationale": "Buyer/public-authority fields must not become the contractor entity name/address.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json",
+        "sha256": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522",
+        "exact_field_name": "previously_department_or_agency_prior_to_23_may_2011",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "native_field": "execution_date",
+      "disposition": "different_event_scope",
+      "canonical_target": null,
+      "rationale": "Contract dates are not contractor incorporation nor whole-entity validity.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [
+        {
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/README.md",
+          "sha256": "915b13a7f45953039fcf939e800cf74dd444ef42dfbc69d445d169314b6afa39",
+          "exact_quote": "The execution date of the contracts commence in 2000 and end in 2016.",
+          "line": 16
+        }
+      ],
+      "basis": "original_source_definition_and_ontology",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json",
+        "sha256": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522",
+        "exact_field_name": "execution_date",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "native_field": "expiry_date",
+      "disposition": "different_event_scope",
+      "canonical_target": null,
+      "rationale": "Contract dates are not contractor incorporation nor whole-entity validity.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [
+        {
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/README.md",
+          "sha256": "915b13a7f45953039fcf939e800cf74dd444ef42dfbc69d445d169314b6afa39",
+          "exact_quote": "The execution date of the contracts commence in 2000 and end in 2016.",
+          "line": 16
+        }
+      ],
+      "basis": "original_source_definition_and_ontology",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json",
+        "sha256": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522",
+        "exact_field_name": "expiry_date",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "native_field": "unspsc_classification",
+      "disposition": "different_classification_system",
+      "canonical_target": null,
+      "rationale": "UNSPSC procurement code is not ANZSIC; ontology notes ANZSIC where available. No supported crosswalk in frozen evidence.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json",
+        "sha256": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522",
+        "exact_field_name": "unspsc_classification",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "native_field": "brief_description_of_contract",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Contract/procurement metadata, financials, internal IDs or flags have no equivalent entity/address target. Keep raw; do not force onto legal_name/status/industry.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json",
+        "sha256": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522",
+        "exact_field_name": "brief_description_of_contract",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "native_field": "confidential_text",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Contract/procurement metadata, financials, internal IDs or flags have no equivalent entity/address target. Keep raw; do not force onto legal_name/status/industry.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json",
+        "sha256": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522",
+        "exact_field_name": "confidential_text",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "native_field": "contract_amount",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Contract/procurement metadata, financials, internal IDs or flags have no equivalent entity/address target. Keep raw; do not force onto legal_name/status/industry.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json",
+        "sha256": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522",
+        "exact_field_name": "contract_amount",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "native_field": "contract_number",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Contract/procurement metadata, financials, internal IDs or flags have no equivalent entity/address target. Keep raw; do not force onto legal_name/status/industry.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json",
+        "sha256": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522",
+        "exact_field_name": "contract_number",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "native_field": "contract_title",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Contract/procurement metadata, financials, internal IDs or flags have no equivalent entity/address target. Keep raw; do not force onto legal_name/status/industry.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json",
+        "sha256": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522",
+        "exact_field_name": "contract_title",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "native_field": "exemption_from_quotation_and_tender_threshold_requirements",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Contract/procurement metadata, financials, internal IDs or flags have no equivalent entity/address target. Keep raw; do not force onto legal_name/status/industry.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json",
+        "sha256": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522",
+        "exact_field_name": "exemption_from_quotation_and_tender_threshold_requirements",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "native_field": "gst",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Contract/procurement metadata, financials, internal IDs or flags have no equivalent entity/address target. Keep raw; do not force onto legal_name/status/industry.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json",
+        "sha256": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522",
+        "exact_field_name": "gst",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "native_field": "infrastructure_or_goods_services",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Contract/procurement metadata, financials, internal IDs or flags have no equivalent entity/address target. Keep raw; do not force onto legal_name/status/industry.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json",
+        "sha256": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522",
+        "exact_field_name": "infrastructure_or_goods_services",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "native_field": "internal_matrix_number",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Contract/procurement metadata, financials, internal IDs or flags have no equivalent entity/address target. Keep raw; do not force onto legal_name/status/industry.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json",
+        "sha256": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522",
+        "exact_field_name": "internal_matrix_number",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "native_field": "panel_contract",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Contract/procurement metadata, financials, internal IDs or flags have no equivalent entity/address target. Keep raw; do not force onto legal_name/status/industry.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json",
+        "sha256": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522",
+        "exact_field_name": "panel_contract",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "native_field": "panel_contract_number",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Contract/procurement metadata, financials, internal IDs or flags have no equivalent entity/address target. Keep raw; do not force onto legal_name/status/industry.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json",
+        "sha256": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522",
+        "exact_field_name": "panel_contract_number",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "native_field": "panel_total_amount",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Contract/procurement metadata, financials, internal IDs or flags have no equivalent entity/address target. Keep raw; do not force onto legal_name/status/industry.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json",
+        "sha256": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522",
+        "exact_field_name": "panel_total_amount",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "native_field": "procurement_methodology",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Contract/procurement metadata, financials, internal IDs or flags have no equivalent entity/address target. Keep raw; do not force onto legal_name/status/industry.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json",
+        "sha256": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522",
+        "exact_field_name": "procurement_methodology",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "native_field": "procurement_type",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Contract/procurement metadata, financials, internal IDs or flags have no equivalent entity/address target. Keep raw; do not force onto legal_name/status/industry.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json",
+        "sha256": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522",
+        "exact_field_name": "procurement_type",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "native_field": "small_to_medium_enterprise_sme",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Contract/procurement metadata, financials, internal IDs or flags have no equivalent entity/address target. Keep raw; do not force onto legal_name/status/industry.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json",
+        "sha256": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522",
+        "exact_field_name": "small_to_medium_enterprise_sme",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "native_field": "social_procurement",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Contract/procurement metadata, financials, internal IDs or flags have no equivalent entity/address target. Keep raw; do not force onto legal_name/status/industry.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json",
+        "sha256": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522",
+        "exact_field_name": "social_procurement",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "native_field": "source_row_id",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Contract/procurement metadata, financials, internal IDs or flags have no equivalent entity/address target. Keep raw; do not force onto legal_name/status/industry.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json",
+        "sha256": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522",
+        "exact_field_name": "source_row_id",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "native_field": "tender_number",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Contract/procurement metadata, financials, internal IDs or flags have no equivalent entity/address target. Keep raw; do not force onto legal_name/status/industry.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json",
+        "sha256": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522",
+        "exact_field_name": "tender_number",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "native_field": "was_pre_qualification_requested_in_selection_documentation",
+      "disposition": "no_equivalent_target",
+      "canonical_target": null,
+      "rationale": "Contract/procurement metadata, financials, internal IDs or flags have no equivalent entity/address target. Keep raw; do not force onto legal_name/status/industry.",
+      "supported_row_denominator": null,
+      "condition": null,
+      "evidence": [],
+      "basis": "native_header_scope_and_frozen_ontology; not a documentary role definition",
+      "human_gold": false,
+      "native_header_evidence": {
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json",
+        "sha256": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522",
+        "exact_field_name": "was_pre_qualification_requested_in_selection_documentation",
+        "kind": "Original native field header/key as read; XLSX header text is extracted from original workbook, not byte substring. Header confirms source role only to extent its actual words do."
+      }
+    }
+  ]
+}

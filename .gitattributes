@@ -1,0 +1,6 @@
+# Preserve byte-level evidence and runtime fingerprints across checkouts.
+* -text
+data/** -whitespace
+outputs/** -whitespace
+evidence/** -whitespace
+schema/** -whitespace

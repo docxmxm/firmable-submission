@@ -1,0 +1,33 @@
+{
+  "created_at": "2026-10-12T00:30:47.858497+00:00",
+  "original_pdf_receipt_hashes_verified": true,
+  "text_equal_to_frozen_candidate_evidence": true,
+  "files": {
+    "source-notices/asic-official-documents/company-help.pdf": {
+      "sha256": "bce899f546b11dbf9e81cf7efa2fc105624f83e3608bfa778f3dc0a4c071896d",
+      "bytes": 466372
+    },
+    "source-notices/asic-official-documents/company-help.txt": {
+      "sha256": "74e4ce95379f9d753c2a2d8d50aa3bcabfbb889610f25d5d31500d1ea02c7af6",
+      "bytes": 26826
+    },
+    "source-notices/asic-official-documents/company-help-receipt.json": {
+      "sha256": "ec9e2c96808c16fa310147d167468a345e119fa7bdbfd58aceca420aa79396ff",
+      "bytes": 519
+    },
+    "source-notices/asic-official-documents/business-names-help.pdf": {
+      "sha256": "b6e6cf986c5f2640e050f7807a4cd4dea4ce28f1419b1dbfb637451bd9b5b0cf",
+      "bytes": 500476
+    },
+    "source-notices/asic-official-documents/business-names-help.txt": {
+      "sha256": "323ae30a394cd89fbabc0ac42fb9c2c53e3ef13cfbb05ab1077f44731abd87d5",
+      "bytes": 17176
+    },
+    "source-notices/asic-official-documents/business-names-help-receipt.json": {
+      "sha256": "9b424df7a037f736792e75f5d783b4e7e768ca5e2b8d541a3dfa825614c1dbb6",
+      "bytes": 561
+    }
+  },
+  "pdf_extraction_reexecuted": false,
+  "no_new_mapping_or_candidate_execution": true
+}

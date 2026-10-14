@@ -1,0 +1,593 @@
+{
+  "absolute_new_send_deadline_utc": "2026-10-14T01:09:25.040749+00:00",
+  "ancillary_evaluation": {
+    "deterministic_build": "firmable_runtime.workflow.build_outputs",
+    "human_precision": null,
+    "input_scope": "all available r1 extraction files per arm; missing source remains reported",
+    "limitation": "Pipeline link/profile counts only; no human semantic precision claim.",
+    "profile_limit": 50,
+    "threshold": 0.99
+  },
+  "automatic_retry": false,
+  "baseline_receipt": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/baseline-receipt.json",
+  "caps": {
+    "calls": 430,
+    "full_extraction_llm_calls": 40,
+    "new_send_seconds": 1363,
+    "per_job_calls": 60,
+    "per_job_seconds": 900,
+    "per_request_usd": 0.25,
+    "total_usd": 3.8154585000000005
+  },
+  "caps_finalize_instruction": "Wait until both earlier phases are terminal; set calls=900-actual earlier sent calls, total_usd=5-earlier receipts-0.0012855 reconciliation; set new_send_seconds=min(2700,floor(absolute deadline minus current UTC)-30)>0. Freeze final candidate, regenerate transport receipt, freeze all new files and final earlier calls/cost summaries. No paid sends while draft.",
+  "changed_runtime_modules": null,
+  "comparison_note": "Baseline receipt binds this round immediate pre-fix working tree, not the older semantic-baseline. Both arms use identical preserved source evidence, requirements, model policy and ontology. Request/control schemas may differ as part of the repair; shared transport implementation and its final config/AST contract dependencies must pass a separate comparability check.",
+  "continuation": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/evaluation-meta.json",
+  "created_utc": "2026-10-14T00:42:05.673925+00:00",
+  "evidence_inventories": {
+    "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence": {
+      "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/README.md": "915b13a7f45953039fcf939e800cf74dd444ef42dfbc69d445d169314b6afa39",
+      "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522"
+    },
+    "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/evidence": {
+      "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/evidence/README.md": "009172d7ff2744a3d904ca564aa8d952c4eaee1a3d5a1b02bb2fa21924b16bb6",
+      "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/evidence/native-prefix.tsv": "70ebf0c95fab5b2d9274939ebe923867998189f1d6c894c35dee3a47795b5191",
+      "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/evidence/official-help.txt": "323ae30a394cd89fbabc0ac42fb9c2c53e3ef13cfbb05ab1077f44731abd87d5"
+    },
+    "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence": {
+      "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/README.md": "8ae2b76f59b19dc530a84d1c88ecebb18d5fc3099c14b4ead781f71996154e03",
+      "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/native-query-records.json": "a6f6a1fcf42af6ec00f756897a6330c70755e9886125b6c9499720175fa44655",
+      "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/official-help.md": "87d671520e0a1a9a233fbc4c6a5640d9a949052e674cb7d78fbede37af698c59"
+    },
+    "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-ato-corporate-tax/evidence": {
+      "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-ato-corporate-tax/evidence/README.md": "47132542a30e055c08a0a85a072e1e649b3c3b728081c4e277df394d4c0c8dff",
+      "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-ato-corporate-tax/evidence/download.xlsx": "d7772fa282c90be6aabaf5893c60d63bd0c896534b10256abed175f6a05fa754"
+    },
+    "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/evidence": {
+      "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/evidence/README.md": "9245f34fd0ce4756f937b9f237cd4937c8566fd5b323ff502a338383bb526b2b",
+      "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/evidence/native-prefix.csv": "7caa4ca3caf89004205317997c9ac28a93ea6519dce9e9cbc72071a637b5789e"
+    },
+    "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-suitable-operators/evidence": {
+      "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-suitable-operators/evidence/README.md": "c2127babf1928f3715481bf6ae3ce9ca214ac7f8a8d49d191d54fedc0c4ef2da",
+      "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-suitable-operators/evidence/download.xlsx": "c82d2975289046ee2ae35bd7ae8fe642ece524d8fbae7438248b38a47e4aee24"
+    }
+  },
+  "file_sha256": {
+    "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/catalogue_metadata.json": "747b67be4325448de80baa2709716eee14193e0ba93ba7d9999f1878d47e317f",
+    "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/README.md": "915b13a7f45953039fcf939e800cf74dd444ef42dfbc69d445d169314b6afa39",
+    "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522",
+    "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/catalogue_metadata.json": "f501478f680e2a9a618983a9d795a6c7f4ef26fe0cd4ee9d45be640929fbb19d",
+    "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/evidence/README.md": "009172d7ff2744a3d904ca564aa8d952c4eaee1a3d5a1b02bb2fa21924b16bb6",
+    "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/evidence/native-prefix.tsv": "70ebf0c95fab5b2d9274939ebe923867998189f1d6c894c35dee3a47795b5191",
+    "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/evidence/official-help.txt": "323ae30a394cd89fbabc0ac42fb9c2c53e3ef13cfbb05ab1077f44731abd87d5",
+    "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/catalogue_metadata.json": "f28eb5d583a57891cca937e9753a786fc1c5258b77b7a02861c280c463729d25",
+    "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/README.md": "8ae2b76f59b19dc530a84d1c88ecebb18d5fc3099c14b4ead781f71996154e03",
+    "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/native-query-records.json": "a6f6a1fcf42af6ec00f756897a6330c70755e9886125b6c9499720175fa44655",
+    "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence/official-help.md": "87d671520e0a1a9a233fbc4c6a5640d9a949052e674cb7d78fbede37af698c59",
+    "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-ato-corporate-tax/catalogue_metadata.json": "86417224d914b2abf3bd085b1a0dade9417571b4530a5da5b994d2dde6671fc2",
+    "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-ato-corporate-tax/evidence/README.md": "47132542a30e055c08a0a85a072e1e649b3c3b728081c4e277df394d4c0c8dff",
+    "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-ato-corporate-tax/evidence/download.xlsx": "d7772fa282c90be6aabaf5893c60d63bd0c896534b10256abed175f6a05fa754",
+    "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/catalogue_metadata.json": "83c0d025b59314b517eda9cdc28fccb25cedc2fb2afb4ae0c1f9ae4fc4a70634",
+    "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/evidence/README.md": "9245f34fd0ce4756f937b9f237cd4937c8566fd5b323ff502a338383bb526b2b",
+    "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/evidence/native-prefix.csv": "7caa4ca3caf89004205317997c9ac28a93ea6519dce9e9cbc72071a637b5789e",
+    "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-suitable-operators/catalogue_metadata.json": "772e036dc019ffb7f904c08ab1b8245f7f33cc2d8492bee8238f3ffe349b0871",
+    "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-suitable-operators/evidence/README.md": "c2127babf1928f3715481bf6ae3ce9ca214ac7f8a8d49d191d54fedc0c4ef2da",
+    "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-suitable-operators/evidence/download.xlsx": "c82d2975289046ee2ae35bd7ae8fe642ece524d8fbae7438248b38a47e4aee24",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/baseline-receipt.json": "52657475180ba03d839e685e4755b669ba435aacfd7376c6fa201da44cf73a0a",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/calls.json": "11b17403b721570a4a62712c57e57de89d33ff4e76f98d54ad12ae8789edc91b",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/candidate-receipt.json": "11ce06531b8ddbd06ecc1bebb30f09e83f0ae994a01a6587b04a569764d47224",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/continuation/cost-summary.json": "e688260dc63c912d40e4410e9d60b45ef5912eda509de175381f5987fd4a990b",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/continuation/protocol.json": "e2f6d39f1d52412ac072801ea9922f84f8bccf37fcf50dcd6aea45401c1c3e16",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/cost-summary.json": "8ede42d3d8121a6ed739e51721934ab8f3f4fc9bcd0218ae94c16e0b232c9533",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-candidate-receipt.json": "c08c61fffb182fc84f28ebcc9b0b0a3cfcfdc593b2ca345ff61c9225a67ec159",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/endpoint-pricing.json": "eadc492466666eec4a71b7f9800ba7b1d359249f332d9e16b3c1809a05481086",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/evaluation-meta.json": "6941a841429127642968d1ea6cf4241b1e93a04361aca779aa95d352311397a8",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/frozen-field-dispositions.json": "7466d57e3575a643f258982a39aed0e9504f62e0bafc11e403cd7ebda634a0bd",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/frozen-labels.json": "7f4101097b25ee1175125917a4e32f5c9e23fefe759c1c90a976df188d7ab7a9",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/offline-smoke.json": "2fff8856df5b3392e35c034a3b0f35898e4e7d09f20a2d8e96e02f97efcde9c2",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/run_live.py": "803401763bb3d8e582c34f1ab34990eff541d5830f43594fd272f4ddf1fbd6e8",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/run_six.py": "8aa9f965bd2a729fa7ee2f86dc6864d79a1d35f4c5f7a4774b6a43297d2a5e8d",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/score_six.py": "3f4ab38d8b62b44435acc6fb16202521f4910ef1de804cbcdd3105970f84c972",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/transport-comparison.json": "aeb0601e5e1e5a7cef264efb4fa1160b0d5d302963a271a51f3d2ffd9b59129b",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/verify_transport.py": "d891a60797fe462c7b494ef97e257ec86cde05171cd4c47f48f928939e213b44",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/frozen-labels.json": "f01e3339b00b1fa0d64f1246af140f4905d5d87255113e84d54e98c263068733",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/protocol.json": "a98fed8222ff7022444584a08753de87069d03e729788a2a057b40c7e580fa65",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/provider-generation.json": "a57a7edf0cdbaf86ca4e4e12808937e2ec986af4807bb85ff64cc63641fda461",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runs/candidate/real-act-contracts-historical-r1/run/artifacts/request-5e151402b231d0c3136091ad.json": "3279cbea9c2761a342e269e94d30e550ee3fe867fbfa53b6ead5dab49329f1c3",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/AGENTS.md": "127848464d2f91b6c78b04dbe2445d210bf229d5ab967228b27522cae60c28c9",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/README.md": "6f72571c69fe2c4e0915f3af46d3010f2412f1c2a50ffbca09b42f2e9e65c055",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/firmable_runtime/__init__.py": "83159f37edb403e3cba052e5f14647303ea5772ec44cfd5d6176915e754bdd74",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/firmable_runtime/__main__.py": "3d2438ae92f4746e9ffaa1f837b1fe803f6281091d1f31f8c95643716f257d9a",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/firmable_runtime/acceptance.py": "b61755ec65b2ee032f4954d21762300150c78491d4fe806918f93e9da3fa0f9e",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/firmable_runtime/acquisition.py": "ac3be13755fb4bab46e1667e9940be9220d7aa99d54b6f321272f8da4e0f1a3e",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/firmable_runtime/agent.py": "d6a10f42d98d2be27d9823e8f1543784c67445210130bf9b9cce4f323ca204af",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/firmable_runtime/candidate_assembly.py": "2799a3a1794fa6887d5bf9d56699b1c1fc8e30c5a43855e7cdd8ea0845a82df6",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/firmable_runtime/cli.py": "95f7e5dec59addff4cfc1e0e7186a9fc26ff270e7ba3b6a859d778b70a160ecc",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/firmable_runtime/common.py": "8d9fa76bb362bec6aeae07a22cf6ee1d866b388105224a679e9c17daaf92f31c",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/firmable_runtime/config_audit.py": "84fe3f976f3a633020652150441f9d210a70c0e10f6158cf83613f3161966c2d",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/firmable_runtime/engine.py": "d233f0364a2ccd7e12f8b47537f97ab234c628c268b81f92ab26bb76e63d9ba1",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/firmable_runtime/execution.py": "4180d518eea4f5b8234cd3af206826098641763ab8e7ee58962b5efc2de78a37",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/firmable_runtime/field_evidence.py": "550a497d78c4ba89516d5ffcc95c200198ca249f493ea14b84d7a31f53f954d3",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/firmable_runtime/identity.py": "fc1c336db9d050ca7384b09ba5c78ad3fe75253dcc904eebf9f4845ba97c1676",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/firmable_runtime/llm_route.py": "4ef7725f0b7d83e14fe3f3435389079d20bfd3cd65e23f1c5b2564ecd69cc048",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/firmable_runtime/native.py": "c918eecd66b415b1d844d9a1e83fa5c76caa88358836d1d28ec3a8f2cd5abc9f",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/firmable_runtime/openrouter.py": "6e6cafd636a74c61b6d8b87f81cc562f9e8c96ec6d7da1343b0679b9309d0f4b",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/firmable_runtime/openrouter_wire.py": "eafa339a5ecfad951a38409da890f1a369997f67dc5d3d3087bb6c16c0e16762",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/firmable_runtime/provider.py": "cfb7a23ba0db668a6ba749a39bbf8ed8b632cd0517eae33605f01e5bfd5209dd",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/firmable_runtime/runtime.py": "d78105ce378929435868377b17024315ea8f1dc98cdbbef403448089cff37844",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/firmable_runtime/schema.py": "99b45ad8059ed9ec0abf7c941062be5b1b291d8da82e5498b1079b0cd9fef72d",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/firmable_runtime/semantic_support.py": "b9b199ac1f1afd095005e67bf2c0d2aec73e454322cc089b2305fcf89dde15ae",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/firmable_runtime/source_acquisition.py": "c70ab616bf56d7a8cd14bc9a8791163d92ef6ac2922ac7e6b211a00253f6af0e",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/firmable_runtime/source_document_tools.py": "f6c89493e05ba67fa3902f30b80c469fee059bb84543ba21fa17ada120d2fe59",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/firmable_runtime/store.py": "4d9853af097bd202f23470a04906e449973fee41c5ac68839c3c26d2557bb316",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/firmable_runtime/workflow.py": "4a15e544e305464fc0a8d1a5ac52e5ab43cf6921028b28ac671d42d0b461f1c8",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/pyproject.toml": "8624f0754f019271cd5252017b46b8b50362d58b3d6f408bdc8e4d051ec85b60",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/schema/firmable_ontology.yaml": "2a2d2db45cb0c5e7d022f6e2466c68271cc14704a09658e0d71b92ec1f130e23",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline/uv.lock": "c94a0a2d5f0a9a273214c29bf1c3887b4ea398733f6f906d6bec64b17aaf79ab",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/AGENTS.md": "127848464d2f91b6c78b04dbe2445d210bf229d5ab967228b27522cae60c28c9",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/README.md": "23cebf53f2e2c69805dbeaf6546c612af575c4b647b64fdb89f5cbe943434de7",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/firmable_runtime/__init__.py": "83159f37edb403e3cba052e5f14647303ea5772ec44cfd5d6176915e754bdd74",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/firmable_runtime/__main__.py": "3d2438ae92f4746e9ffaa1f837b1fe803f6281091d1f31f8c95643716f257d9a",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/firmable_runtime/acceptance.py": "b61755ec65b2ee032f4954d21762300150c78491d4fe806918f93e9da3fa0f9e",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/firmable_runtime/acquisition.py": "ac3be13755fb4bab46e1667e9940be9220d7aa99d54b6f321272f8da4e0f1a3e",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/firmable_runtime/agent.py": "12607cfffb0cf4055fd1ed5bfc0aa90b99e76e9acb541a32af93da6faeabfb7b",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/firmable_runtime/candidate_assembly.py": "c775aa0cf1608bcc65aa17b59d5c42f3cc05581e8506e1cb99e91b3e0c57e75b",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/firmable_runtime/cli.py": "95f7e5dec59addff4cfc1e0e7186a9fc26ff270e7ba3b6a859d778b70a160ecc",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/firmable_runtime/common.py": "8d9fa76bb362bec6aeae07a22cf6ee1d866b388105224a679e9c17daaf92f31c",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/firmable_runtime/config_audit.py": "33137b7ff76aed8f6514ca99ce9202b81c1bf4d98bc5943284363a7b0118f68e",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/firmable_runtime/engine.py": "d233f0364a2ccd7e12f8b47537f97ab234c628c268b81f92ab26bb76e63d9ba1",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/firmable_runtime/execution.py": "4180d518eea4f5b8234cd3af206826098641763ab8e7ee58962b5efc2de78a37",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/firmable_runtime/field_evidence.py": "550a497d78c4ba89516d5ffcc95c200198ca249f493ea14b84d7a31f53f954d3",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/firmable_runtime/identity.py": "fc1c336db9d050ca7384b09ba5c78ad3fe75253dcc904eebf9f4845ba97c1676",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/firmable_runtime/llm_route.py": "4ef7725f0b7d83e14fe3f3435389079d20bfd3cd65e23f1c5b2564ecd69cc048",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/firmable_runtime/native.py": "c918eecd66b415b1d844d9a1e83fa5c76caa88358836d1d28ec3a8f2cd5abc9f",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/firmable_runtime/openrouter.py": "6e6cafd636a74c61b6d8b87f81cc562f9e8c96ec6d7da1343b0679b9309d0f4b",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/firmable_runtime/openrouter_wire.py": "eafa339a5ecfad951a38409da890f1a369997f67dc5d3d3087bb6c16c0e16762",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/firmable_runtime/provider.py": "cfb7a23ba0db668a6ba749a39bbf8ed8b632cd0517eae33605f01e5bfd5209dd",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/firmable_runtime/runtime.py": "177f8f2ce0caa71632686e1773e79e6af11a85e441b9eba33a3f92860fe0d879",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/firmable_runtime/schema.py": "99b45ad8059ed9ec0abf7c941062be5b1b291d8da82e5498b1079b0cd9fef72d",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/firmable_runtime/semantic_support.py": "b9b199ac1f1afd095005e67bf2c0d2aec73e454322cc089b2305fcf89dde15ae",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/firmable_runtime/source_acquisition.py": "c70ab616bf56d7a8cd14bc9a8791163d92ef6ac2922ac7e6b211a00253f6af0e",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/firmable_runtime/source_document_tools.py": "f6c89493e05ba67fa3902f30b80c469fee059bb84543ba21fa17ada120d2fe59",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/firmable_runtime/store.py": "4d9853af097bd202f23470a04906e449973fee41c5ac68839c3c26d2557bb316",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/firmable_runtime/workflow.py": "67c2953650fe3a3171bac98757956ab6a9cb2e6448ea9e39e891137eb890affa",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/pyproject.toml": "8624f0754f019271cd5252017b46b8b50362d58b3d6f408bdc8e4d051ec85b60",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/schema/firmable_ontology.yaml": "2a2d2db45cb0c5e7d022f6e2466c68271cc14704a09658e0d71b92ec1f130e23",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/candidate/uv.lock": "c94a0a2d5f0a9a273214c29bf1c3887b4ea398733f6f906d6bec64b17aaf79ab",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/AGENTS.md": "127848464d2f91b6c78b04dbe2445d210bf229d5ab967228b27522cae60c28c9",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/README.md": "084fdcc930fdfb427c3c7d6bbf7f010c507ded3800b3f001cf877b6ddcb72814",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/firmable_runtime/__init__.py": "83159f37edb403e3cba052e5f14647303ea5772ec44cfd5d6176915e754bdd74",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/firmable_runtime/__main__.py": "3d2438ae92f4746e9ffaa1f837b1fe803f6281091d1f31f8c95643716f257d9a",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/firmable_runtime/acceptance.py": "b61755ec65b2ee032f4954d21762300150c78491d4fe806918f93e9da3fa0f9e",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/firmable_runtime/acquisition.py": "ac3be13755fb4bab46e1667e9940be9220d7aa99d54b6f321272f8da4e0f1a3e",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/firmable_runtime/agent.py": "fe973c1d60685af3c0446465e1a50b4c4450adcd54840f6f78354b945b646924",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/firmable_runtime/candidate_assembly.py": "c775aa0cf1608bcc65aa17b59d5c42f3cc05581e8506e1cb99e91b3e0c57e75b",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/firmable_runtime/cli.py": "95f7e5dec59addff4cfc1e0e7186a9fc26ff270e7ba3b6a859d778b70a160ecc",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/firmable_runtime/common.py": "8d9fa76bb362bec6aeae07a22cf6ee1d866b388105224a679e9c17daaf92f31c",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/firmable_runtime/config_audit.py": "33137b7ff76aed8f6514ca99ce9202b81c1bf4d98bc5943284363a7b0118f68e",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/firmable_runtime/engine.py": "d233f0364a2ccd7e12f8b47537f97ab234c628c268b81f92ab26bb76e63d9ba1",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/firmable_runtime/execution.py": "4180d518eea4f5b8234cd3af206826098641763ab8e7ee58962b5efc2de78a37",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/firmable_runtime/field_evidence.py": "550a497d78c4ba89516d5ffcc95c200198ca249f493ea14b84d7a31f53f954d3",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/firmable_runtime/identity.py": "fc1c336db9d050ca7384b09ba5c78ad3fe75253dcc904eebf9f4845ba97c1676",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/firmable_runtime/llm_route.py": "4ef7725f0b7d83e14fe3f3435389079d20bfd3cd65e23f1c5b2564ecd69cc048",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/firmable_runtime/native.py": "c918eecd66b415b1d844d9a1e83fa5c76caa88358836d1d28ec3a8f2cd5abc9f",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/firmable_runtime/openrouter.py": "6e6cafd636a74c61b6d8b87f81cc562f9e8c96ec6d7da1343b0679b9309d0f4b",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/firmable_runtime/openrouter_wire.py": "eafa339a5ecfad951a38409da890f1a369997f67dc5d3d3087bb6c16c0e16762",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/firmable_runtime/provider.py": "cfb7a23ba0db668a6ba749a39bbf8ed8b632cd0517eae33605f01e5bfd5209dd",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/firmable_runtime/runtime.py": "177f8f2ce0caa71632686e1773e79e6af11a85e441b9eba33a3f92860fe0d879",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/firmable_runtime/schema.py": "99b45ad8059ed9ec0abf7c941062be5b1b291d8da82e5498b1079b0cd9fef72d",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/firmable_runtime/semantic_support.py": "b9b199ac1f1afd095005e67bf2c0d2aec73e454322cc089b2305fcf89dde15ae",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/firmable_runtime/source_acquisition.py": "c70ab616bf56d7a8cd14bc9a8791163d92ef6ac2922ac7e6b211a00253f6af0e",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/firmable_runtime/source_document_tools.py": "f6c89493e05ba67fa3902f30b80c469fee059bb84543ba21fa17ada120d2fe59",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/firmable_runtime/store.py": "4d9853af097bd202f23470a04906e449973fee41c5ac68839c3c26d2557bb316",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/firmable_runtime/workflow.py": "67c2953650fe3a3171bac98757956ab6a9cb2e6448ea9e39e891137eb890affa",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/pyproject.toml": "8624f0754f019271cd5252017b46b8b50362d58b3d6f408bdc8e4d051ec85b60",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/schema/firmable_ontology.yaml": "2a2d2db45cb0c5e7d022f6e2466c68271cc14704a09658e0d71b92ec1f130e23",
+    "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate/uv.lock": "c94a0a2d5f0a9a273214c29bf1c3887b4ea398733f6f906d6bec64b17aaf79ab"
+  },
+  "forbidden_request_sha256": [
+    "106485523f445178f345f919c68803cb6cf78709292480a5c6682ee1e948723c"
+  ],
+  "historical_reference": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-six-source-comparison-20261014/protocol.json",
+  "human_gold": false,
+  "jobs": [
+    {
+      "arm": "candidate",
+      "evaluation": "All preserved business records; supported identifiers and correctly attributed current names. A missing requirement remains partial; no role guessing. All other emitted fields are evaluated too.",
+      "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence",
+      "group": "companies_sor",
+      "id": "candidate-real-asic-companies-r1",
+      "metadata_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/catalogue_metadata.json",
+      "repetition": 1,
+      "required_fields": [
+        "entity.legal_name",
+        "entity.acn",
+        "entity.abn"
+      ],
+      "source_id": "real-asic-companies"
+    },
+    {
+      "arm": "candidate",
+      "evaluation": "All preserved business records; supported identifiers and correctly attributed current names. A missing requirement remains partial; no role guessing. All other emitted fields are evaluated too.",
+      "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/evidence",
+      "group": "business_ato",
+      "id": "candidate-real-asic-business-names-r1",
+      "metadata_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/catalogue_metadata.json",
+      "repetition": 1,
+      "required_fields": [
+        "entity.trading_name",
+        "entity.abn"
+      ],
+      "source_id": "real-asic-business-names"
+    },
+    {
+      "arm": "candidate",
+      "evaluation": "All preserved business records; supported identifiers and correctly attributed current names. A missing requirement remains partial; no role guessing. All other emitted fields are evaluated too.",
+      "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-ato-corporate-tax/evidence",
+      "group": "business_ato",
+      "id": "candidate-real-ato-corporate-tax-r1",
+      "metadata_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-ato-corporate-tax/catalogue_metadata.json",
+      "repetition": 1,
+      "required_fields": [
+        "entity.legal_name",
+        "entity.abn"
+      ],
+      "source_id": "real-ato-corporate-tax"
+    },
+    {
+      "arm": "candidate",
+      "evaluation": "All preserved business records; supported identifiers and correctly attributed current names. A missing requirement remains partial; no role guessing. All other emitted fields are evaluated too.",
+      "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/evidence",
+      "group": "qbcc_act",
+      "id": "candidate-real-qbcc-r1",
+      "metadata_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/catalogue_metadata.json",
+      "repetition": 1,
+      "required_fields": [
+        "entity.legal_name",
+        "entity.abn",
+        "entity.acn",
+        "address.full"
+      ],
+      "source_id": "real-qbcc"
+    },
+    {
+      "arm": "candidate",
+      "evaluation": "All preserved business records; supported identifiers and correctly attributed current names. A missing requirement remains partial; no role guessing. All other emitted fields are evaluated too.",
+      "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-suitable-operators/evidence",
+      "group": "companies_sor",
+      "id": "candidate-real-suitable-operators-r1",
+      "metadata_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-suitable-operators/catalogue_metadata.json",
+      "repetition": 1,
+      "required_fields": [
+        "entity.legal_name",
+        "entity.abn",
+        "entity.acn"
+      ],
+      "source_id": "real-suitable-operators"
+    },
+    {
+      "arm": "candidate",
+      "evaluation": "All preserved business records; supported identifiers and correctly attributed current names. A missing requirement remains partial; no role guessing. All other emitted fields are evaluated too.",
+      "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence",
+      "group": "qbcc_act",
+      "id": "candidate-real-act-contracts-historical-r1",
+      "metadata_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/catalogue_metadata.json",
+      "repetition": 1,
+      "required_fields": [
+        "entity.legal_name",
+        "entity.abn"
+      ],
+      "source_id": "real-act-contracts-historical"
+    },
+    {
+      "arm": "candidate",
+      "evaluation": "All preserved business records; supported identifiers and correctly attributed current names. A missing requirement remains partial; no role guessing. All other emitted fields are evaluated too.",
+      "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence",
+      "group": "companies_sor",
+      "id": "candidate-real-asic-companies-r2",
+      "metadata_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/catalogue_metadata.json",
+      "repetition": 2,
+      "required_fields": [
+        "entity.legal_name",
+        "entity.acn",
+        "entity.abn"
+      ],
+      "source_id": "real-asic-companies"
+    },
+    {
+      "arm": "candidate",
+      "evaluation": "All preserved business records; supported identifiers and correctly attributed current names. A missing requirement remains partial; no role guessing. All other emitted fields are evaluated too.",
+      "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/evidence",
+      "group": "business_ato",
+      "id": "candidate-real-asic-business-names-r2",
+      "metadata_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/catalogue_metadata.json",
+      "repetition": 2,
+      "required_fields": [
+        "entity.trading_name",
+        "entity.abn"
+      ],
+      "source_id": "real-asic-business-names"
+    },
+    {
+      "arm": "candidate",
+      "evaluation": "All preserved business records; supported identifiers and correctly attributed current names. A missing requirement remains partial; no role guessing. All other emitted fields are evaluated too.",
+      "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-ato-corporate-tax/evidence",
+      "group": "business_ato",
+      "id": "candidate-real-ato-corporate-tax-r2",
+      "metadata_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-ato-corporate-tax/catalogue_metadata.json",
+      "repetition": 2,
+      "required_fields": [
+        "entity.legal_name",
+        "entity.abn"
+      ],
+      "source_id": "real-ato-corporate-tax"
+    },
+    {
+      "arm": "candidate",
+      "evaluation": "All preserved business records; supported identifiers and correctly attributed current names. A missing requirement remains partial; no role guessing. All other emitted fields are evaluated too.",
+      "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/evidence",
+      "group": "qbcc_act",
+      "id": "candidate-real-qbcc-r2",
+      "metadata_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/catalogue_metadata.json",
+      "repetition": 2,
+      "required_fields": [
+        "entity.legal_name",
+        "entity.abn",
+        "entity.acn",
+        "address.full"
+      ],
+      "source_id": "real-qbcc"
+    },
+    {
+      "arm": "candidate",
+      "evaluation": "All preserved business records; supported identifiers and correctly attributed current names. A missing requirement remains partial; no role guessing. All other emitted fields are evaluated too.",
+      "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-suitable-operators/evidence",
+      "group": "companies_sor",
+      "id": "candidate-real-suitable-operators-r2",
+      "metadata_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-suitable-operators/catalogue_metadata.json",
+      "repetition": 2,
+      "required_fields": [
+        "entity.legal_name",
+        "entity.abn",
+        "entity.acn"
+      ],
+      "source_id": "real-suitable-operators"
+    },
+    {
+      "arm": "candidate",
+      "evaluation": "All preserved business records; supported identifiers and correctly attributed current names. A missing requirement remains partial; no role guessing. All other emitted fields are evaluated too.",
+      "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence",
+      "group": "qbcc_act",
+      "id": "candidate-real-act-contracts-historical-r2",
+      "metadata_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/catalogue_metadata.json",
+      "repetition": 2,
+      "required_fields": [
+        "entity.legal_name",
+        "entity.abn"
+      ],
+      "source_id": "real-act-contracts-historical"
+    },
+    {
+      "arm": "candidate",
+      "evaluation": "All preserved business records; supported identifiers and correctly attributed current names. A missing requirement remains partial; no role guessing. All other emitted fields are evaluated too.",
+      "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence",
+      "group": "companies_sor",
+      "id": "candidate-real-asic-companies-r3",
+      "metadata_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/catalogue_metadata.json",
+      "repetition": 3,
+      "required_fields": [
+        "entity.legal_name",
+        "entity.acn",
+        "entity.abn"
+      ],
+      "source_id": "real-asic-companies"
+    },
+    {
+      "arm": "candidate",
+      "evaluation": "All preserved business records; supported identifiers and correctly attributed current names. A missing requirement remains partial; no role guessing. All other emitted fields are evaluated too.",
+      "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/evidence",
+      "group": "business_ato",
+      "id": "candidate-real-asic-business-names-r3",
+      "metadata_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/catalogue_metadata.json",
+      "repetition": 3,
+      "required_fields": [
+        "entity.trading_name",
+        "entity.abn"
+      ],
+      "source_id": "real-asic-business-names"
+    },
+    {
+      "arm": "candidate",
+      "evaluation": "All preserved business records; supported identifiers and correctly attributed current names. A missing requirement remains partial; no role guessing. All other emitted fields are evaluated too.",
+      "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-ato-corporate-tax/evidence",
+      "group": "business_ato",
+      "id": "candidate-real-ato-corporate-tax-r3",
+      "metadata_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-ato-corporate-tax/catalogue_metadata.json",
+      "repetition": 3,
+      "required_fields": [
+        "entity.legal_name",
+        "entity.abn"
+      ],
+      "source_id": "real-ato-corporate-tax"
+    },
+    {
+      "arm": "candidate",
+      "evaluation": "All preserved business records; supported identifiers and correctly attributed current names. A missing requirement remains partial; no role guessing. All other emitted fields are evaluated too.",
+      "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/evidence",
+      "group": "qbcc_act",
+      "id": "candidate-real-qbcc-r3",
+      "metadata_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/catalogue_metadata.json",
+      "repetition": 3,
+      "required_fields": [
+        "entity.legal_name",
+        "entity.abn",
+        "entity.acn",
+        "address.full"
+      ],
+      "source_id": "real-qbcc"
+    },
+    {
+      "arm": "candidate",
+      "evaluation": "All preserved business records; supported identifiers and correctly attributed current names. A missing requirement remains partial; no role guessing. All other emitted fields are evaluated too.",
+      "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-suitable-operators/evidence",
+      "group": "companies_sor",
+      "id": "candidate-real-suitable-operators-r3",
+      "metadata_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-suitable-operators/catalogue_metadata.json",
+      "repetition": 3,
+      "required_fields": [
+        "entity.legal_name",
+        "entity.abn",
+        "entity.acn"
+      ],
+      "source_id": "real-suitable-operators"
+    },
+    {
+      "arm": "candidate",
+      "evaluation": "All preserved business records; supported identifiers and correctly attributed current names. A missing requirement remains partial; no role guessing. All other emitted fields are evaluated too.",
+      "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence",
+      "group": "qbcc_act",
+      "id": "candidate-real-act-contracts-historical-r3",
+      "metadata_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/catalogue_metadata.json",
+      "repetition": 3,
+      "required_fields": [
+        "entity.legal_name",
+        "entity.abn"
+      ],
+      "source_id": "real-act-contracts-historical"
+    }
+  ],
+  "max_output_tokens": 16000,
+  "model": "anthropic/claude-haiku-5.5",
+  "native_business_records_per_six": 22925,
+  "price_bound": {
+    "input": 5e-07,
+    "output": 2.5e-06
+  },
+  "price_receipt_url": "https://openrouter.ai/api/v1/models/anthropic/claude-haiku-5.5/endpoints",
+  "pricing_status": "fresh_public_endpoint_verified",
+  "prior_spend": {
+    "original_unknown_output_retained": 1,
+    "overall_call_cap": 900,
+    "overall_cost_cap_usd": 5,
+    "reconciled_cost_usd": 1.1845415000000001,
+    "sent_calls": 470
+  },
+  "provider_allowlist": [
+    "Anthropic"
+  ],
+  "reasoning_effort": "low",
+  "runtime_fingerprint": "bec320c33a982dcfd5e31f9e0c8c74d68401ea0855643a07028855adbf5e40de",
+  "runtimes": {
+    "baseline": {
+      "root": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/baseline",
+      "runtime_fingerprint": "946b149fa22db9b9cff7c640c91fcaa4869fbc66eae54262c9b93ef521fe5715"
+    },
+    "candidate": {
+      "root": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/runtimes/final-candidate",
+      "runtime_fingerprint": "bec320c33a982dcfd5e31f9e0c8c74d68401ea0855643a07028855adbf5e40de"
+    }
+  },
+  "scope": "Fresh candidate-only six-source development evaluation, three trajectories per source after bounded scope feedback repair. Prior baseline outcomes remain separately identified; different phase/time/transport may affect comparison. No human gold or unseen-source claim.",
+  "scoring_policy": "Labels frozen before live sends, never passed to planner. Distinguish missing output from precision. Unmapped native fields include unsupported ontology concepts and predicate-only dependencies, not all are errors.",
+  "shared_transport": {
+    "continuation_stream": false,
+    "implementation_modules": [
+      "common.py",
+      "openrouter.py",
+      "openrouter_wire.py"
+    ],
+    "receipt": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/transport-comparison.json",
+    "request_schema_byte_identity_claimed": false,
+    "status": "passed",
+    "wire_contract_inputs": [
+      "WIRE_PROTOCOL",
+      "AST_KEYS",
+      "MAX_AST_DEPTH",
+      "MAX_AST_NODES",
+      "AST_RULES_SCHEMA",
+      "CONFIG_SCHEMA"
+    ]
+  },
+  "sources": [
+    {
+      "evaluation": "All preserved business records; supported identifiers and correctly attributed current names. A missing requirement remains partial; no role guessing. All other emitted fields are evaluated too.",
+      "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/evidence",
+      "metadata_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-companies/catalogue_metadata.json",
+      "required_fields": [
+        "entity.legal_name",
+        "entity.acn",
+        "entity.abn"
+      ],
+      "source_id": "real-asic-companies"
+    },
+    {
+      "evaluation": "All preserved business records; supported identifiers and correctly attributed current names. A missing requirement remains partial; no role guessing. All other emitted fields are evaluated too.",
+      "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/evidence",
+      "metadata_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-asic-business-names/catalogue_metadata.json",
+      "required_fields": [
+        "entity.trading_name",
+        "entity.abn"
+      ],
+      "source_id": "real-asic-business-names"
+    },
+    {
+      "evaluation": "All preserved business records; supported identifiers and correctly attributed current names. A missing requirement remains partial; no role guessing. All other emitted fields are evaluated too.",
+      "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-ato-corporate-tax/evidence",
+      "metadata_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-ato-corporate-tax/catalogue_metadata.json",
+      "required_fields": [
+        "entity.legal_name",
+        "entity.abn"
+      ],
+      "source_id": "real-ato-corporate-tax"
+    },
+    {
+      "evaluation": "All preserved business records; supported identifiers and correctly attributed current names. A missing requirement remains partial; no role guessing. All other emitted fields are evaluated too.",
+      "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/evidence",
+      "metadata_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-qbcc/catalogue_metadata.json",
+      "required_fields": [
+        "entity.legal_name",
+        "entity.abn",
+        "entity.acn",
+        "address.full"
+      ],
+      "source_id": "real-qbcc"
+    },
+    {
+      "evaluation": "All preserved business records; supported identifiers and correctly attributed current names. A missing requirement remains partial; no role guessing. All other emitted fields are evaluated too.",
+      "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-suitable-operators/evidence",
+      "metadata_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-suitable-operators/catalogue_metadata.json",
+      "required_fields": [
+        "entity.legal_name",
+        "entity.abn",
+        "entity.acn"
+      ],
+      "source_id": "real-suitable-operators"
+    },
+    {
+      "evaluation": "All preserved business records; supported identifiers and correctly attributed current names. A missing requirement remains partial; no role guessing. All other emitted fields are evaluated too.",
+      "evidence_root": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/evidence",
+      "metadata_path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference/data/assessment-inputs/real-act-contracts-historical/catalogue_metadata.json",
+      "required_fields": [
+        "entity.legal_name",
+        "entity.abn"
+      ],
+      "source_id": "real-act-contracts-historical"
+    }
+  ],
+  "stability_policy": {
+    "baseline_reference": "Earlier baseline trials retained as separately phased historical comparison; no baseline job is rerun here.",
+    "branch_labels": "Same frozen Companies current/history-companion, BN current registration and SOR transparent types as preceding evaluation.",
+    "no_misfill_scope": "Wrong values measured only within frozen positive opportunities; unsupported emissions only within frozen abstention opportunities; other emissions remain unscored.",
+    "planned_repetitions_per_source_arm": 3,
+    "report_per_trial_before_ranges": true,
+    "retain_failed_and_missing_trials": true,
+    "retain_original_failed_trials_in_combined_report": true,
+    "target_history": "Distinguish never proposed, proposed then absent from final, probe-informative then absent, and retained; proposed does not imply supported."
+  },
+  "status": "frozen",
+  "synthetic_approval_only": true,
+  "transport_stream": false,
+  "unknown_outcome_policy": "Stop new requests globally; never resend unknown outcome.",
+  "wire_protocol": "openrouter-strict-flat-ast-5",
+  "worker_concurrency": 3
+}

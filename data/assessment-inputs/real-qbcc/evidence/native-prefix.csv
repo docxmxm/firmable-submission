@@ -1,0 +1,1001 @@
+id,Licence Number,Licensee Name,ACN,ABN,Licensee Business Address,Licence Type DESC,Licence Type CODE,Financial Category DESC,Financial Category CODE,Licence Grade,Licence Class Type
+1,15251475,DJ Spencer Constructions Pty Ltd,126 222 786,68 126 222 786,225-227 Panguna St Trinity Beach QLD 4879,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+2,15251475,DJ Spencer Constructions Pty Ltd,126 222 786,68 126 222 786,225-227 Panguna St Trinity Beach QLD 4879,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+3,15364847,ZINC INDUSTRIES PTY LTD,602 037 570,,7 Tristania St Marcoola QLD 4564,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Concreting Restricted To Light Concreting
+4,15364847,ZINC INDUSTRIES PTY LTD,602 037 570,,7 Tristania St Marcoola QLD 4564,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Bricklaying and Blocklaying
+5,15251677,Noah Flooring Australia Pty Ltd,628 070 879,62 628 070 879,U 1  30 Lensworth St Coopers Plains QLD 4108,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+6,15367505,P3 BUILD PTY LTD,643 879 299,62 643 879 298,U 1  133 South Pine Rd Brendale QLD 4500,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+7,1313805,SIEU BA PHAM,,67 550 235 702,9 MIN MIN CRT Durack QLD 4077,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Wall and Floor Tiling
+8,1001099,ADAM DOMINIC HARNETT,,,10 Regent Ct Mt Coolum QLD 4573,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+9,1001099,ADAM DOMINIC HARNETT,,,10 Regent Ct Mt Coolum QLD 4573,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Gasfitting
+10,15305407,Bitta Constructions and Developments Pty Ltd,659 002 687,53 659 002 687,44 MOSSMAN PDE WATERFORD QLD 4133,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+11,15251213,UPRIGHT CONSTRUCTIONS QLD PTY LTD,649 274 626,58 649 274 626,37-55 chestnut road Tamborine QLD 4270,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+12,728207,MAL PRATT BUILDERS PTY LTD,079 334 624,45 079 334 624,60445 BRISBANE ROAD MOOLOOLABA QLD 4557,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+13,15365041,HYDRA-MECH SERVICES AUSTRALIA PTY LTD,665 734 109,38 665 734 109,36 Hughes Ave Main Beach QLD 4217,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Mechanical Services - Medical Gas
+14,15365041,HYDRA-MECH SERVICES AUSTRALIA PTY LTD,665 734 109,38 665 734 109,36 Hughes Ave Main Beach QLD 4217,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Mechanical Services - Plumbing
+15,15365041,HYDRA-MECH SERVICES AUSTRALIA PTY LTD,665 734 109,38 665 734 109,36 Hughes Ave Main Beach QLD 4217,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Plumbing and Drainage
+16,15251919,Mason Bright Pty Ltd,644 721 657,72 644 721 657,10A Lincoln St Brunswick East VIC 3057,Company,C,Estimated MR SC2,EMRSC2,Building Designer Licence - EAT,Building Design - Open
+17,15366093,SC7 PLUMBING PTY LTD,619 594 526,39 619 594 526,3 Arthur Tce Moggill QLD 4070,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Plumbing and Drainage
+18,15366189,Tom Buckles Concreting Pty Ltd,664 506 772,83 664 506 772,37 Station St Wyreema QLD 4352,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Concreting
+19,15366619,Emergency Plumbing Gold Coast Pty Ltd,665 742 745,60 665 742 745,14 Carlingford Pl Robina QLD 4226,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Gasfitting
+20,15366619,Emergency Plumbing Gold Coast Pty Ltd,665 742 745,60 665 742 745,14 Carlingford Pl Robina QLD 4226,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+21,15367037,MARK BAKER CARPENTRY PTY. LIMITED,117 517 405,96 117 517 405,59 Sassafras Street Pottsville NSW 2489,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+22,15367037,MARK BAKER CARPENTRY PTY. LIMITED,117 517 405,96 117 517 405,59 Sassafras Street Pottsville NSW 2489,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Joinery
+23,1313599,DANIEL ANTHONY MUSIAL,,49 913 314 276,22 PANDOREA CIRCUIT NORTH LAKES QLD 4509,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+24,1294886,STUART KHISHIN HARI,,93 629 510 756,7 Diford St Capalaba QLD 4157,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+25,49933,ROBERT WILLIAM SIMPKINS,,,134 TALLEBUDGERA DR PALM BEACH QLD 4221,Individual,I,No Financials Required,N/A,Nominee Supervisor,Plumbing and Drainage
+26,49933,ROBERT WILLIAM SIMPKINS,,,134 TALLEBUDGERA DR PALM BEACH QLD 4221,Individual,I,No Financials Required,N/A,Nominee Supervisor,Gasfitting
+27,15297023,Jason Mark Forsyth,,27 419 001 509,180 Arnaud St Granville QLD 4650,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+28,15297023,Jason Mark Forsyth,,27 419 001 509,180 Arnaud St Granville QLD 4650,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Concreting
+29,15326779,Jack Joyce,,,290 river hills rd Eagleby QLD 4207,Individual,I,No Financials Required,N/A,Nominee Supervisor,Plastering Drywall
+30,15328277,TGA Construction Pty Ltd,604 657 490,85 604 657 490,78 Klibbe Rd Tarampa QLD 4311,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+31,15137860,L MILNE CARPENTRY PTY LTD,633 865 899,,26 Rutherford St Stafford Heights QLD 4053,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+32,15250907,MARSHYS CABINETS PTY LTD,650 774 557,16 650 774 557,13B Pease Court Bethania QLD 4205,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Joinery
+33,75230,ALAN BRIND DESIGN & CAD DRAFTING PTY. LTD.,072 663 364,24 072 663 364,8 KOOYONG CT FERNY GROVE QLD 4055,Company,C,Estimated MR SC2,EMRSC2,Building Designer Licence - EAT,Building Design - Medium Rise
+34,15365559,Lucky Little Cat Pty Ltd,664 560 089,50 664 560 089,58 GORDEN ST GARBUTT QLD 4814,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Painting and Decorating
+35,15251781,BUILDING EXPERTS AUSTRALIA PTY LTD,628 950 096,57 628 950 096,2 Brookvale Cl Kenmore Hills QLD 4069,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Medium Rise
+36,15251781,BUILDING EXPERTS AUSTRALIA PTY LTD,628 950 096,57 628 950 096,2 Brookvale Cl Kenmore Hills QLD 4069,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Project Management Services
+37,15251781,BUILDING EXPERTS AUSTRALIA PTY LTD,628 950 096,57 628 950 096,2 Brookvale Cl Kenmore Hills QLD 4069,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Completed Residential Building Inspection
+38,1065621,MARRAMASS PTY LTD,068 813 749,81 068 813 749,Unit 1 16 Lavarack Crescent Buderim QLD 4556,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Fire Protection - Portables Stream - Certify
+39,1065621,MARRAMASS PTY LTD,068 813 749,81 068 813 749,Unit 1 16 Lavarack Crescent Buderim QLD 4556,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Fire Protection - Portables Stream - Install and Maintain
+40,15252068,Kokua Construction Pty Ltd,648 776 989,57 648 776 989,178 David Low Way Peregian Beach QLD 4573,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+41,15252068,Kokua Construction Pty Ltd,648 776 989,57 648 776 989,178 David Low Way Peregian Beach QLD 4573,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+42,15252229,BNC Plumbing Solutions Pty Ltd,650 127 138,20 634 009 271,1 Golden Street Caloundra West QLD 4551,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Plumbing and Drainage
+43,15252254,Nightingale & Associates Pty Ltd,644 043 818,17 644 043 818,33 Waterside Esp Caboolture South QLD 4510,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Painting and Decorating
+44,15366803,Krone Constructions Pty Ltd,666 651 261,92 666 651 261,49 Allen Rd Bunya QLD 4055,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+45,15366803,Krone Constructions Pty Ltd,666 651 261,92 666 651 261,49 Allen Rd Bunya QLD 4055,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+46,15366941,Brisbane Tiling Group Pty Ltd,666 439 416,77 666 439 416,7 Melody Street Marsden QLD 4132,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Wall and Floor Tiling
+47,1126231,PAUL LESLIE WATSON,,44 761 236 900,16 FREESIA COURT ORMEAU QLD 4208,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Mechanical Services - Air-conditioning and Refrigeration (Limited Design)
+48,51511,ROBERT GEORGE SIMMONS,,,22 RITCHIE ST BUNDABERG QLD 4670,Individual,I,No Financials Required,N/A,Nominee Supervisor,Plumbing and Drainage
+49,1205339,PETER JAMES NASH,,39 508 843 750,Unit 3 / 104 Wynyard Street Cleveland Queensland 4163,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Plumbing and Drainage
+50,1205339,PETER JAMES NASH,,39 508 843 750,Unit 3 / 104 Wynyard Street Cleveland Queensland 4163,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,"Builder Restricted to Kitchen, Bathroom and Laundry Installation"
+51,1205339,PETER JAMES NASH,,39 508 843 750,Unit 3 / 104 Wynyard Street Cleveland Queensland 4163,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Gasfitting
+52,15250965,CNJ Construction Works Pty Ltd,651 066 652,48 651 066 652,78 Toolakea Beach Rd Bluewater QLD 4818,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Bricklaying and Blocklaying
+53,15250965,CNJ Construction Works Pty Ltd,651 066 652,48 651 066 652,78 Toolakea Beach Rd Bluewater QLD 4818,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Concreting
+54,15138538,CTS Thermfresh Group Pty Ltd,630 493 104,68 630 493 104,2/61 Nealdon drive Meadowbrook QLD 4131,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Mechanical Services - Air-conditioning and Refrigeration (Limited Design)
+55,15365045,MIDAS FENCING PTY LTD,651 505 396,72 651 505 396,Lake Heron VillasU 48  2 Cassowary Dr Burleigh Waters QLD 4220,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+56,15366443,WM LANDSCAPING SERVICES PTY LTD,643 799 580,84 643 799 580,9 BARONET PL PALLARA QLD 4110,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+57,15366443,WM LANDSCAPING SERVICES PTY LTD,643 799 580,84 643 799 580,9 BARONET PL PALLARA QLD 4110,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Structural Landscaping (Trade)
+58,15366443,WM LANDSCAPING SERVICES PTY LTD,643 799 580,84 643 799 580,9 BARONET PL PALLARA QLD 4110,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+59,15367335,G WILLIAMS CONSTRUCTIONS PTY LTD,607 893 774,56 607 893 774,1560 Pumicestone Rd Toorbul QLD 4510,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+60,81020,JOHN BAXTER CAMPBELL TAYLOR,,,39 Whitehall Ave BIRKDALE QLD 4159,Individual,I,No Financials Required,N/A,Nominee Supervisor,Carpentry
+61,81020,JOHN BAXTER CAMPBELL TAYLOR,,,39 Whitehall Ave BIRKDALE QLD 4159,Individual,I,No Financials Required,N/A,Nominee Supervisor,Joinery
+62,81020,JOHN BAXTER CAMPBELL TAYLOR,,,39 Whitehall Ave BIRKDALE QLD 4159,Individual,I,No Financials Required,N/A,Nominee Supervisor,Builder - Low Rise
+63,31707,MICHAEL MITCHELL,,,27 Avon St Morningside QLD 4170,Individual,I,Self Certification - Builder/Trade,SC2,Nominee Supervisor,Completed Residential Building Inspection
+64,31707,MICHAEL MITCHELL,,,27 Avon St Morningside QLD 4170,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+65,728910,MARK GIANNI IPSA,,,4 TRUMP ST PIMPAMA QLD 4209,Individual,I,No Financials Required,N/A,Site Supervisor,Concreting
+66,728910,MARK GIANNI IPSA,,,4 TRUMP ST PIMPAMA QLD 4209,Individual,I,No Financials Required,N/A,Site Supervisor,Builder - Low Rise
+67,1309098,CHRIS WILLIAM ELLIOT COLLETT,,47 196 592 107,41 Rosella Street Wellington Point QLD 4160,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+68,1309098,CHRIS WILLIAM ELLIOT COLLETT,,47 196 592 107,41 Rosella Street Wellington Point QLD 4160,Individual,I,Self Certification - Builder/Trade,SC2,Site Supervisor,Builder - Low Rise
+69,1155642,RICKY MARK BOWDITCH,,95 160 321 299,43 CHURCH RD BLACK RIVER QLD 4818,Individual,I,Self Certification - Trade,SCT1,Site Supervisor,Builder - Low Rise
+70,1155642,RICKY MARK BOWDITCH,,95 160 321 299,43 CHURCH RD BLACK RIVER QLD 4818,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Structural Landscaping (Trade)
+71,1155642,RICKY MARK BOWDITCH,,95 160 321 299,43 CHURCH RD BLACK RIVER QLD 4818,Individual,I,Self Certification - Trade,SCT1,Nominee Supervisor,Joinery
+72,1155642,RICKY MARK BOWDITCH,,95 160 321 299,43 CHURCH RD BLACK RIVER QLD 4818,Individual,I,Self Certification - Trade,SCT1,Nominee Supervisor,Waterproofing
+73,1155642,RICKY MARK BOWDITCH,,95 160 321 299,43 CHURCH RD BLACK RIVER QLD 4818,Individual,I,Self Certification - Trade,SCT1,Nominee Supervisor,Metal Fascias and Gutters
+74,1155642,RICKY MARK BOWDITCH,,95 160 321 299,43 CHURCH RD BLACK RIVER QLD 4818,Individual,I,Self Certification - Trade,SCT1,Nominee Supervisor,Floor Finishing and Covering (Hard Sector)
+75,1155642,RICKY MARK BOWDITCH,,95 160 321 299,43 CHURCH RD BLACK RIVER QLD 4818,Individual,I,Self Certification - Trade,SCT1,Nominee Supervisor,Carpentry
+76,1155642,RICKY MARK BOWDITCH,,95 160 321 299,43 CHURCH RD BLACK RIVER QLD 4818,Individual,I,Self Certification - Trade,SCT1,Nominee Supervisor,Roof and Wall Cladding
+77,1155642,RICKY MARK BOWDITCH,,95 160 321 299,43 CHURCH RD BLACK RIVER QLD 4818,Individual,I,Self Certification - Trade,SCT1,Nominee Supervisor,"Sheds, Carports and Garages"
+78,1155642,RICKY MARK BOWDITCH,,95 160 321 299,43 CHURCH RD BLACK RIVER QLD 4818,Individual,I,Self Certification - Trade,SCT1,Nominee Supervisor,Wall and Floor Tiling
+79,15322707,Seamless Installations Pty Ltd,165 813 445,42 165 813 445,Shed 21  55 Commerce Cct Yatala QLD 4207,Company,C,Category 1,1,Trade Contractor Licence,"Glass, Glazing and Aluminium"
+80,69512,NEIL WALLACE CONCRETING PTY LTD,065 264 977,,445 Old Cleveland Rd E Birkdale QLD 4159,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Concreting
+81,15138899,HORO CONSTRUCTIONS PTY LTD,626 241 432,72 626 241 432,31 Window Rd Canina QLD 4570,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+82,15139123,WILLIAMSON FM PROPERTY GROUP PTY LTD,632 171 423,69 632 171 423,5426 Bayhill Tce Hope Island QLD 4212,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+83,15139123,WILLIAMSON FM PROPERTY GROUP PTY LTD,632 171 423,69 632 171 423,5426 Bayhill Tce Hope Island QLD 4212,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+84,15139123,WILLIAMSON FM PROPERTY GROUP PTY LTD,632 171 423,69 632 171 423,5426 Bayhill Tce Hope Island QLD 4212,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,"Builder Restricted to Kitchen, Bathroom and Laundry Installation"
+85,15139832,TMD SOLID PLASTERING PTY LTD,621 255 374,42 621 255 374,U 4  28 Activity Cres Molendinar QLD 4214,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Plastering Solid
+86,15139832,TMD SOLID PLASTERING PTY LTD,621 255 374,42 621 255 374,U 4  28 Activity Cres Molendinar QLD 4214,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+87,15365059,Athena Painting PTY LTD,612 781 521,37 612 781 521,U 4  37 Mildmay St Fairfield QLD 4103,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Painting and Decorating
+88,15365227,Star Tiling PTY LTD,664 012 686,91 664 012 686,6 Ellendale Cres Daisy Hill QLD 4127,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Wall and Floor Tiling
+89,15252258,Arctic Fox Air Conditioning And Refrigeration Pty Ltd,651 384 084,26 651 384 084,36 Macleay Cct Upper Coomera QLD 4209,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Mechanical Services - Air-conditioning and Refrigeration (Limited Design)
+90,15252286,Coastal Lifestyle Renovations Pty Ltd,649 417 845,22 649 417 845,20 Domain Rd Currumbin QLD 4223,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+91,15252286,Coastal Lifestyle Renovations Pty Ltd,649 417 845,22 649 417 845,20 Domain Rd Currumbin QLD 4223,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+92,15252286,Coastal Lifestyle Renovations Pty Ltd,649 417 845,22 649 417 845,20 Domain Rd Currumbin QLD 4223,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Joinery
+93,15367267,DESI PLUMBING & GAS PTY LTD,661 561 191,89 661 561 919,66 Hertford St Upper Mount Gravatt QLD 4122,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+94,15367267,DESI PLUMBING & GAS PTY LTD,661 561 191,89 661 561 919,66 Hertford St Upper Mount Gravatt QLD 4122,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Gasfitting
+95,15367701,SHIELD PLUMBING AND TRADE PTY LTD,666 197 673,78 666 197 673,6 Pallert St Middle Park QLD 4074,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+96,15367805,Blackburn Plumbing And Civil Pty Ltd,621 627 718,68 621 627 718,171 Raeburn Street Manly West QLD 4179,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Plumbing and Drainage
+97,1317280,LUKE ASHLEY THIELE,,87 505 953 847,12 AUER STREET BUNDABERG QLD 4670,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Painting and Decorating
+98,15302233,Dean Glenn Lee KINLYSIDE,,12 937 711 429,33 Cocos Drive Ningi QLD 4511,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+99,15309983,Terrance Edwards,,,24 Incline Dr Worongary QLD 4213,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+100,15323923,Gurinder Singh Virk,,,200 Weidlich Rd Eltham North VIC 3095,Individual,I,Self Certification - Builder/Trade,SC2,Site Supervisor,Builder - Low Rise
+101,15323923,Gurinder Singh Virk,,,200 Weidlich Rd Eltham North VIC 3095,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+102,15327413,BMA AIR ELECTRICAL & REFRIGERATION PTY LTD,658 413 435,64 658 413 435,18 Boxwood Ct Douglas QLD 4814,Company,C,Category 1,1,Trade Contractor Licence,Mechanical Services - Air-conditioning and Refrigeration (Limited Design)
+103,15329113,HOLMES CONCRETE CO. PTY LTD,661 496 260,55 661 496 260,1/67 Clifford Perske Drive Thornlands QLD 4164,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Concreting
+104,15330851,MANAGE DESIGN BUILD PTY LTD,657 290 269,32 657 290 269,T1B -13 Carnaby St Maroochydore QLD 4558,Company,C,Category 3,3,Builder Licence,Builder - Open
+105,15251068,RAEKA DEVELOPMENTS PTY LTD,632 971 861,85 632 971 861,16 Coreen Ave Tewantin QLD 4565,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+106,15251068,RAEKA DEVELOPMENTS PTY LTD,632 971 861,85 632 971 861,16 Coreen Ave Tewantin QLD 4565,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+107,895061,COLIN HARPER CONCRETING PTY. LTD.,072 788 473,93 072 788 473,173-175 Dennis Rd Springwood QLD 4127,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Concreting
+108,15139189,NARE HOLDINGS PTY LTD,164 511 988,80 164 511 988,53 Lindfield Rd Helensvale QLD 4212,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+109,15139728,Art Construction Services Pty Ltd,632 717 938,83 632 717 938,10 Scullett Dr Tin Can Bay QLD 4580,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+110,15139728,Art Construction Services Pty Ltd,632 717 938,83 632 717 938,10 Scullett Dr Tin Can Bay QLD 4580,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Structural Landscaping (Trade)
+111,15139728,Art Construction Services Pty Ltd,632 717 938,83 632 717 938,10 Scullett Dr Tin Can Bay QLD 4580,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Roof and Wall Cladding
+112,15139728,Art Construction Services Pty Ltd,632 717 938,83 632 717 938,10 Scullett Dr Tin Can Bay QLD 4580,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Metal Fascias and Gutters
+113,15139728,Art Construction Services Pty Ltd,632 717 938,83 632 717 938,10 Scullett Dr Tin Can Bay QLD 4580,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Floor Finishing and Covering (Hard Sector)
+114,15139728,Art Construction Services Pty Ltd,632 717 938,83 632 717 938,10 Scullett Dr Tin Can Bay QLD 4580,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,"Sheds, Carports and Garages"
+115,15139728,Art Construction Services Pty Ltd,632 717 938,83 632 717 938,10 Scullett Dr Tin Can Bay QLD 4580,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Mechanical Services - Air-conditioning and Refrigeration (Limited Design)
+116,15365033,NORTHMARK PTY LTD,603 217 509,50 603 217 509,17 Everley Rd Chester Hill NSW 2162,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+117,15365409,JFAM GROUP PTY. LTD.,633 081 599,79 633 081 599,4 Asher Pl Moggill QLD 4070,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+118,15365409,JFAM GROUP PTY. LTD.,633 081 599,79 633 081 599,4 Asher Pl Moggill QLD 4070,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+119,15251737,GOTCHA COVERED PROJECTS PTY LTD,650 427 991,45 650 427 991,52 Brookvale Drive Delaneys Creek QLD 4514,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Wall and Floor Tiling
+120,15252044,ALL HEIGHT ACCESS PTY LTD,624 926 512,88 624 926 512,6 Bunda St Slacks Creek QLD 4127,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Painting and Decorating
+121,15252044,ALL HEIGHT ACCESS PTY LTD,624 926 512,88 624 926 512,6 Bunda St Slacks Creek QLD 4127,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+122,15366447,SUMMERSCAPES QLD PTY LTD,656 925 316,26 656 925 316,57 Jacaranda Dr Albany Creek QLD 4035,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Structural Landscaping (Trade)
+123,15366453,JTB RENOVATION & BUILDING SERVICES PTY LTD,666 427 765,92 666 427 765,10 BLAIR ATHOL CRES BUNDALL QLD 4217,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+124,15366453,JTB RENOVATION & BUILDING SERVICES PTY LTD,666 427 765,92 666 427 765,10 BLAIR ATHOL CRES BUNDALL QLD 4217,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Wall and Floor Tiling
+125,15366453,JTB RENOVATION & BUILDING SERVICES PTY LTD,666 427 765,92 666 427 765,10 BLAIR ATHOL CRES BUNDALL QLD 4217,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Structural Landscaping (Trade)
+126,1319018,DANE ANDREW MURRAY,,,2 BALSA STREET ELANORA QLD 4221,Individual,I,No Financials Required,N/A,Fire Occupational,Fire Protection - Electrical Stream Occupational - Install and Maintain - Fire Alarm Systems
+127,1318765,WADE MACDONALD,,,1-5 Laurel drive Burpengary QLD 4505,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+128,1318765,WADE MACDONALD,,,1-5 Laurel drive Burpengary QLD 4505,Individual,I,Self Certification - Trade,SCT1,Fire Occupational,Fire Protection - Portables Stream Occupational - Install and Maintain
+129,1318765,WADE MACDONALD,,,1-5 Laurel drive Burpengary QLD 4505,Individual,I,Self Certification - Trade,SCT1,Fire Occupational,Fire Protection - Electrical Stream Occupational - Inspect and Test - Emergency Lighting
+130,1318765,WADE MACDONALD,,,1-5 Laurel drive Burpengary QLD 4505,Individual,I,Self Certification - Trade,SCT1,Fire Occupational,"Fire Detection, Alarm and Warning Systems - Occupational"
+131,1259869,MICHAEL ANTHONY REINMUTH,,54 056 108 729,u4 31 warrs rd Maribrynong VIC 3032,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+132,78365,SIMON JOSEPH GALLAGHER,,,85 COOK ST NORTH WARD QLD 4810,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+133,78365,SIMON JOSEPH GALLAGHER,,,85 COOK ST NORTH WARD QLD 4810,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Joinery
+134,78365,SIMON JOSEPH GALLAGHER,,,85 COOK ST NORTH WARD QLD 4810,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+135,70943,ANTHONY GEORGE POTTS,,,RURAL NO. 587 PEERAMON ROAD YUNGABURRA QLD 4872,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+136,70943,ANTHONY GEORGE POTTS,,,RURAL NO. 587 PEERAMON ROAD YUNGABURRA QLD 4872,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Joinery
+137,70943,ANTHONY GEORGE POTTS,,,RURAL NO. 587 PEERAMON ROAD YUNGABURRA QLD 4872,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Shopfitting (Trade)
+138,70943,ANTHONY GEORGE POTTS,,,RURAL NO. 587 PEERAMON ROAD YUNGABURRA QLD 4872,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+139,15329525,LUKE KEENAN,,86 817 522 520,3/8-10 Centenary Pl Logan Village QLD 4207,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Cabinet Making
+140,15138260,URBAN TRADE SOLUTIONS PTY LTD,615 019 219,51 615 019 219,27-31 Cherry St Wellington Point QLD 4160,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+141,1034752,P & C CARLON HOLDINGS PTY LTD,105 842 564,,LOT 2 MAISEL CLOSE SMITHFIELD QLD 4878,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,"Swimming Pool Construction, Installation and Maintenance"
+142,15364533,Knight Painting Group PTY LTD,661 043 429,52 661 043 429,U 63  111 Leitchs Rd Brendale QLD 4500,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Painting and Decorating
+143,15364889,Owen Trade PTY LTD,648 950 458,17 648 950 458,34 Marwedel St Kearneys Spring QLD 4350,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Mechanical Services - Air-conditioning and Refrigeration (Limited Design)
+144,15364931,Primo Steel Fixing Pty Ltd,663 798 936,87 663 798 936,72 Illuta Avenue Ferny Hills QLD 4055,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Steel Fixing
+145,15251843,BRISBANE INTERIOR LININGS PTY LTD,651 236 994,90 651 236 994,5/43 Bradman Street ACACIA RIDGE QLD 4110,Company,C,Category 1,1,Trade Contractor Licence,Plastering Drywall
+146,15366591,Kais Carpentry Pty Ltd,660 830 517,77 660 830 517,25 Bryant st Beachmere QLD 4510,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+147,15367337,KJWT CONSTRUCTIONS PTY LTD,666 297 516,40 666 297 516,27B Central Avenue Scarborough QLD 4020,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+148,15367353,JVE CONSTRUCTION PTY LTD,664 762 501,41 664 762 501,9 Randerson Street Forest Lake QLD 4078,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Medium Rise
+149,1235898,SHAUN DAMIEN MORRICE,,47 497 155 885,1812 Pumicestone Road Toorbul QLD 4510,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Painting and Decorating
+150,628692,LEIGH DONALD GULL,,,36 lancaster lane Cooroibah QLD 4565,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+151,628692,LEIGH DONALD GULL,,,36 lancaster lane Cooroibah QLD 4565,Individual,I,Self Certification - Builder/Trade,SC2,Nominee Supervisor,Builder - Low Rise
+152,22000,PAUL MARTIN GRIFFIN,,,U 2  85-87 Bayview St Runaway Bay QLD 4216,Individual,I,No Financials Required,N/A,Nominee Supervisor,Builder - Medium Rise
+153,15292900,Jackson Kevin Philip Smith,,,268 Central St Arundel QLD 4214,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Roof Tiling
+154,15292900,Jackson Kevin Philip Smith,,,268 Central St Arundel QLD 4214,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Roof and Wall Cladding
+155,15292900,Jackson Kevin Philip Smith,,,268 Central St Arundel QLD 4214,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Structural Landscaping (Trade)
+156,15292900,Jackson Kevin Philip Smith,,,268 Central St Arundel QLD 4214,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,"Sheds, Carports and Garages"
+157,15292900,Jackson Kevin Philip Smith,,,268 Central St Arundel QLD 4214,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Joinery
+158,15292900,Jackson Kevin Philip Smith,,,268 Central St Arundel QLD 4214,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Metal Fascias and Gutters
+159,15292900,Jackson Kevin Philip Smith,,,268 Central St Arundel QLD 4214,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Floor Finishing and Covering (Hard Sector)
+160,15292900,Jackson Kevin Philip Smith,,,268 Central St Arundel QLD 4214,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+161,15322705,Nicholas Daniel Mickle,,,Shed 21  55 Commerce Cct Yatala QLD 4207,Individual,I,No Financials Required,N/A,Nominee Supervisor,"Glass, Glazing and Aluminium"
+162,1152243,QUBD PTY LTD,133 602 605,62 133 602 605,14 KOOYAN CLOSE CURRUMBIN QLD 4223,Company,C,Self Certification - Trade,SCT1,Building Designer Licence,Building Design - Medium Rise
+163,15364439,Wilton Family Group Pty Ltd,659 209 659,46 659 209 659,9 Tivoli Ct Carrara QLD 4211,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Structural Landscaping (Trade)
+164,15364717,DTC PLUMBING PTY LTD,665 445 518,,19 Edie Terrace Wellington Point QLD 4160,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+165,79358,ZAMMATARO PLUMBING PTY LTD,060 397 293,57 060 397 293,8 THERESE DR MOSSMAN QLD 4873,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Plumbing and Drainage
+166,79358,ZAMMATARO PLUMBING PTY LTD,060 397 293,57 060 397 293,8 THERESE DR MOSSMAN QLD 4873,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Gasfitting
+167,79358,ZAMMATARO PLUMBING PTY LTD,060 397 293,57 060 397 293,8 THERESE DR MOSSMAN QLD 4873,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Fire Protection - Water-Based Fire System Stream - Install and Maintain - Restricted to Domestic and Residential Types
+168,79358,ZAMMATARO PLUMBING PTY LTD,060 397 293,57 060 397 293,8 THERESE DR MOSSMAN QLD 4873,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Fire Protection - Water-Based Fire System Stream - Install and Maintain - Restricted to Commercial and Industrial Types
+169,45363,DON HOBSON PTY LIMITED,010 777 214,96 010 777 214,8 CARMYA ST BOHLE QLD 4818,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Plumbing and Drainage
+170,45363,DON HOBSON PTY LIMITED,010 777 214,96 010 777 214,8 CARMYA ST BOHLE QLD 4818,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Gasfitting
+171,15365053,MR ROOF SOLUTIONS PTY LTD,656 868 905,76 656 868 905,109 Point O'Halloran Rd Victoria Point QLD 4165,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Painting and Decorating
+172,15365053,MR ROOF SOLUTIONS PTY LTD,656 868 905,76 656 868 905,109 Point O'Halloran Rd Victoria Point QLD 4165,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Roof and Wall Cladding
+173,15251733,PORT CITY DOORS PTY LTD,650 864 789,77 650 864 789,16 Valley Way Boyne Island QLD 4680,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Non-Structural Metal Fabrication and Installation
+174,15251778,REDCLIFFE FIRE SERVICES PTY LTD,650 662 203,90 650 662 203,6 Miller St Kippa-Ring QLD 4021,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Fire Protection - Special Hazard Fire System Stream - Install and Maintain
+175,15251778,REDCLIFFE FIRE SERVICES PTY LTD,650 662 203,90 650 662 203,6 Miller St Kippa-Ring QLD 4021,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Fire Protection - Water-Based Fire System Stream - Install and Maintain
+176,15251778,REDCLIFFE FIRE SERVICES PTY LTD,650 662 203,90 650 662 203,6 Miller St Kippa-Ring QLD 4021,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Fire Protection - Water-Based Fire System Stream - Certify
+177,15366341,BAYLINE PLUMBING CO PTY LTD,662 286 473,62 662 286 473,16 wren street Birkdale QLD 4159,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Plumbing and Drainage
+178,15366485,HALL'S PLUMBING CO PTY LTD,666 432 686,19 666 432 686,13 Hibiscus Avenue Weipa QLD 4874,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+179,15366485,HALL'S PLUMBING CO PTY LTD,666 432 686,19 666 432 686,13 Hibiscus Avenue Weipa QLD 4874,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Gasfitting
+180,15366639,MMC PLUMBING AND DRAINAGE PTY LTD,646 299 014,48 646 299 014,8 Ferguson Ave Northgate QLD 4013,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+181,15367129,G 2:10 Plumbing and Services,665 281 368,34 665 381 368,32 Macaree St Berserker QLD 4701,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+182,15367129,G 2:10 Plumbing and Services,665 281 368,34 665 381 368,32 Macaree St Berserker QLD 4701,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Roof and Wall Cladding
+183,15367129,G 2:10 Plumbing and Services,665 281 368,34 665 381 368,32 Macaree St Berserker QLD 4701,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Metal Fascias and Gutters
+184,17856,DOUGLAS KEITH PRITCHARD,,,8 Sherwood Ct Coolum Beach QLD 4573,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+185,61975,GAVIN JOHN HOBBS,,,62 Keats St Cannon Hill QLD 4170,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Plastering Drywall
+186,1300273,DANIEL WILLIAM EAREA,,,20 Tecoma St Strathpine QLD 4500,Individual,I,No Financials Required,N/A,Nominee Supervisor,Gasfitting
+187,1300273,DANIEL WILLIAM EAREA,,,20 Tecoma St Strathpine QLD 4500,Individual,I,No Financials Required,N/A,Nominee Supervisor,Plumbing and Drainage
+188,15314645,Taylor James Martin,,,UNIT 18 30 MERCURY PDE MANGO HILL QLD 4509,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+189,15314645,Taylor James Martin,,,UNIT 18 30 MERCURY PDE MANGO HILL QLD 4509,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Gasfitting
+190,15326589,ADAM LESLIE MACEDO,,41 045 933 467,1 MAHOGANY DRIVE MARCUS BEACH QLD 4573,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder Restricted to Structural Landscaping
+191,15365733,PEEL AIR PTY LTD,665 672 935,23 665 672 935,23 Atkinson Dr Karana Downs QLD 4306,Company,C,Category 1,1,Trade Contractor Licence,Mechanical Services - Air-conditioning and Refrigeration (Limited Design)
+192,15216302,Lucas John Weber,,,92 River Meadows Dr Upper Coomera QLD 4209,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+193,15234813,Sayed Jawad Sajadi,,,11 Davison court Marsden QLD 4132,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Painting and Decorating
+194,15258673,Adam Nicholas Fields,,89 700 489 439,21 Marco Polo Place Hollywell QLD 4216,Individual,I,Category 1,1,Trade Contractor Licence,Carpentry
+195,15258673,Adam Nicholas Fields,,89 700 489 439,21 Marco Polo Place Hollywell QLD 4216,Individual,I,Category 1,1,Builder Licence,Builder - Low Rise
+196,15264336,HAYDEN WAYNE MUDGWAY,,47 614 764 041,21 Sage Way White Rock QLD 4306,Individual,I,Self Certification - Trade,SCT1,Nominee Supervisor,Builder - Low Rise
+197,15264336,HAYDEN WAYNE MUDGWAY,,47 614 764 041,21 Sage Way White Rock QLD 4306,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+198,15273383,Matthew Lindsay Kent,,62 412 525 694,5 Sandringham Dr Robina QLD 4226,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+199,15124504,Bram Ashley Toohey,,41 516 939 223,4 Windsor Street Gordonvale QLD 4865,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+200,15124504,Bram Ashley Toohey,,41 516 939 223,4 Windsor Street Gordonvale QLD 4865,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+201,15124504,Bram Ashley Toohey,,41 516 939 223,4 Windsor Street Gordonvale QLD 4865,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Floor Finishing and Covering (Hard Sector)
+202,15124504,Bram Ashley Toohey,,41 516 939 223,4 Windsor Street Gordonvale QLD 4865,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Metal Fascias and Gutters
+203,15124504,Bram Ashley Toohey,,41 516 939 223,4 Windsor Street Gordonvale QLD 4865,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Roof and Wall Cladding
+204,15124504,Bram Ashley Toohey,,41 516 939 223,4 Windsor Street Gordonvale QLD 4865,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,"Sheds, Carports and Garages"
+205,15124504,Bram Ashley Toohey,,41 516 939 223,4 Windsor Street Gordonvale QLD 4865,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Structural Landscaping (Trade)
+206,15152319,PITCH-PERFECT ROOFERS PTY LTD.,634 811 840,21 634 811 840,18 Arcadia Dr Branyan QLD 4670,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Roof and Wall Cladding
+207,15162100,MAGNA CONSTRUCTIONS PTY LTD,624 332 476,20 624 332 476,UNIT 8 48 WARATAH ST KIRRAWEE NSW 2232,Company,C,Category 5,5,Builder Licence,Builder - Low Rise
+208,15183551,Jinseok Choi,,,13 WHIMBREL AVE UPPER COOMERA QLD 4209,Individual,I,Self Certification - Builder/Trade,SC2,Nominee Supervisor,Waterproofing
+209,15183551,Jinseok Choi,,,13 WHIMBREL AVE UPPER COOMERA QLD 4209,Individual,I,Self Certification - Builder/Trade,SC2,Nominee Supervisor,Wall and Floor Tiling
+210,15185306,Michael Rohan Worsley,,20 799 628 724,9 Otto Road Glenore Grove QLD 4342,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+211,15185306,Michael Rohan Worsley,,20 799 628 724,9 Otto Road Glenore Grove QLD 4342,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Metal Fascias and Gutters
+212,15185306,Michael Rohan Worsley,,20 799 628 724,9 Otto Road Glenore Grove QLD 4342,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Roof and Wall Cladding
+213,15185306,Michael Rohan Worsley,,20 799 628 724,9 Otto Road Glenore Grove QLD 4342,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,"Sheds, Carports and Garages"
+214,15185306,Michael Rohan Worsley,,20 799 628 724,9 Otto Road Glenore Grove QLD 4342,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Structural Landscaping (Trade)
+215,15185306,Michael Rohan Worsley,,20 799 628 724,9 Otto Road Glenore Grove QLD 4342,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Floor Finishing and Covering (Hard Sector)
+216,15185399,CURTIS JAMES WALKER,,,59 Higgs Rd Ebenezer QLD 4340,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+217,15185399,CURTIS JAMES WALKER,,,59 Higgs Rd Ebenezer QLD 4340,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Gasfitting
+218,15200093,Joshua James Howard,,,69-71 Johnston St Bellbird Park QLD 4300,Individual,I,No Financials Required,N/A,Mechanical Services Occupational,Mechanical Services - Medical Gas
+219,15389963,CASTAWAYS BUILDING SERVICES PTY LTD,667 088 539,47 667 088 539,26 Wavecrest Dr Castaways Beach QLD 4567,Company,C,Category 1,1,Builder Licence,Builder - Open
+220,71474,AFFINITY DESIGNER HOMES PTY LTD,066 299 198,96 066 299 198,144 MULGRAVE ROAD WESTCOURT QLD 4870,Company,C,Category 2,2,Builder Licence,Builder - Open
+221,1120226,GEMINI HOMES (QLD) PTY LTD,124 700 287,52 124 700 287,369 Mackay-Bucasia Rd Richmond QLD 4740,Company,C,Category 3,3,Builder Licence,Builder - Medium Rise
+222,1116859,MAYMAR  CONSTRUCTIONS PTY LTD,104 361 588,44 104 361 588,92 O'Quinn St Nudgee Beach QLD 4014,Company,C,Category 2,2,Builder Licence,Builder - Low Rise
+223,15001708,Teigan Mulholland,,,614 Woodbury Rd Woodbury QLD 4703,Individual,I,No Financials Required,N/A,Site Supervisor,Builder - Low Rise
+224,1182962,DAPCO METAL PRODUCTS PTY LTD,084 565 006,97 084 565 006,U 5  20 Indy Ct Carrara QLD 4211,Company,C,Category 2,2,Trade Contractor Licence,Metal Fascias and Gutters
+225,1182962,DAPCO METAL PRODUCTS PTY LTD,084 565 006,97 084 565 006,U 5  20 Indy Ct Carrara QLD 4211,Company,C,Category 2,2,Trade Contractor Licence,Roof and Wall Cladding
+226,1058824,JESEL PTY LTD,110 271 004,,12 HOLLAND STREET CHINCHILLA QLD 4413,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+227,1058824,JESEL PTY LTD,110 271 004,,12 HOLLAND STREET CHINCHILLA QLD 4413,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+228,1284529,BLUEBIRD DESIGN AND CONSTRUCTION PTY LTD,601 296 593,39 601 296 593,453 Webster Road Stafford Heights QLD 4053,Company,C,Category 2,2,Builder Licence,Builder - Low Rise
+229,1284529,BLUEBIRD DESIGN AND CONSTRUCTION PTY LTD,601 296 593,39 601 296 593,453 Webster Road Stafford Heights QLD 4053,Company,C,Category 2,2,Trade Contractor Licence,Carpentry
+230,729050,ULTIMATE CEILING & PARTITIONS PTY LTD,081 996 992,91 081 996 992,80 BAROKEE DRIVE TANAH MERAH QLD 4128,Company,C,Category 2,2,Trade Contractor Licence,Joinery
+231,15205794,Great Northern Building and Constructions Pty Ltd,642 841 405,30 642 841 405,9-11 Ebrington Cl Gordonvale QLD 4865,Company,C,Category 3,3,Builder Licence,Builder - Medium Rise
+232,1235093,ADAM JOSEPH DAVIS,,13 760 056 790,13 Coastview Pl Victoria Point QLD 4165,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+233,1100601,DARRELL LEONARD EDWICK,,46 726 542 292,38 Vallview Drive Nerang QLD 4211,Individual,I,No Financials Required,N/A,Nominee Supervisor,Carpentry
+234,1100601,DARRELL LEONARD EDWICK,,46 726 542 292,38 Vallview Drive Nerang QLD 4211,Individual,I,No Financials Required,N/A,Nominee Supervisor,Builder - Low Rise
+235,1219876,EMMA FAYE HOWARD,,70 701 537 791,10 Sierra Drive Tamborine Mountain QLD 4272,Individual,I,Self Certification - Trade,SCT1,Building Designer Licence,Building Design - Low Rise
+236,1051770,RUDOLF HAARING,,35 502 138 762,UNIT 9/25 MACHINERY DRIVE TWEED HEADS SOUTH NSW 2486,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+237,24574,EDWIN JAMES RIDINGS,,,6 NAMATJIRA ST EVERTON PARK QLD 4053,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+238,24574,EDWIN JAMES RIDINGS,,,6 NAMATJIRA ST EVERTON PARK QLD 4053,Individual,I,Self Certification - Builder/Trade,SC2,Nominee Supervisor,Completed Residential Building Inspection
+239,24574,EDWIN JAMES RIDINGS,,,6 NAMATJIRA ST EVERTON PARK QLD 4053,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+240,1296273,BROCK SAMUEL MUDGE,,65 863 401 560,3 Exton Pl Mudgeeraba QLD 4213,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+241,1296273,BROCK SAMUEL MUDGE,,65 863 401 560,3 Exton Pl Mudgeeraba QLD 4213,Individual,I,Self Certification - Builder/Trade,SC2,Nominee Supervisor,Plumbing and Drainage
+242,1296273,BROCK SAMUEL MUDGE,,65 863 401 560,3 Exton Pl Mudgeeraba QLD 4213,Individual,I,Self Certification - Builder/Trade,SC2,Nominee Supervisor,"Builder Restricted to Kitchen, Bathroom and Laundry Installation"
+243,1082682,DAVID SHANE MOORE,,70 431 675 194,6 Montague St Beaudesert QLD 4285,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Joinery
+244,1082682,DAVID SHANE MOORE,,70 431 675 194,6 Montague St Beaudesert QLD 4285,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+245,1082682,DAVID SHANE MOORE,,70 431 675 194,6 Montague St Beaudesert QLD 4285,Individual,I,Self Certification - Trade,SCT1,Site Supervisor,Builder - Open
+246,1263591,ANDREW THOMAS FORTEY,,28 376 791 668,477 Collins Street Melbourne VIC 3000,Individual,I,No Financials Required,N/A,Nominee Supervisor,Builder - Open
+247,1263591,ANDREW THOMAS FORTEY,,28 376 791 668,477 Collins Street Melbourne VIC 3000,Individual,I,No Financials Required,N/A,Nominee Supervisor,Builder - Project Management Services
+248,15355055,Lachlan Mark Landy,,,10/292 Waterford Road Wacol QLD 4124,Individual,I,No Financials Required,N/A,Nominee Supervisor,Roof and Wall Cladding
+249,15364207,Victor Wietrzyk,,40 697 600 631,25 Bowline Rd Mermaid Waters QLD 4218,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Waterproofing
+250,15370055,Siu Mau Lau,,,13 Tolverne St Rochedale South QLD 4123,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Painting and Decorating
+251,15371837,Timothy Mathieson,,,8 Oak Street Nerang QLD 4211,Individual,I,No Financials Required,N/A,Site Supervisor,Builder - Low Rise
+252,15250075,Joshua Wayne Shadbolt,,66 280 577 819,3/2 Scullett Drive Tin Can Bay QLD 4580,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Cabinet Making
+253,15251807,ANDREW JOHN ARCHER,,,248 Crane Crecent NERANG QLD 4211,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+254,15259187,OFFSET PLUMBING PTY LTD,650 363 456,21 650 363 456,26 Derrima Cres Ferny Hills QLD 4055,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Plumbing and Drainage
+255,15260615,Nathan William Cooper,,46 168 800 257,3 Sir Davidson Drive Kinka Beach QLD 4703,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Bricklaying and Blocklaying
+256,15265786,Jack Anthony Clonan,,,133 Sutton St Redcliffe QLD 4020,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+257,15272282,MK GREENHILL GLASS PTY LTD,164 375 580,14 164 375 580,12 VYNER CT FOREST GLEN QLD 4556,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Joinery
+258,15383389,Joshua Stephen Bell,,,26 The Walk Camden Park NSW 2570,Individual,I,No Financials Required,N/A,Nominee Supervisor,Builder - Open
+259,15127978,Plastcon PTY LTD,133 571 543,81 133 571 543,66 McEachan St Edmonton QLD 4869,Company,C,Category 1,1,Trade Contractor Licence,Plastering Drywall
+260,15133450,Sean Lyon-Smith,,67 597 510 283,2 Armstrong St Hermit Park QLD 4812,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+261,15133450,Sean Lyon-Smith,,67 597 510 283,2 Armstrong St Hermit Park QLD 4812,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+262,15140734,DREAM BENCH TOPS INSTALLATION PTY LTD,633 664 810,92 633 664 810,17 Wheeler Cres Currumbin Waters QLD 4223,Company,C,Category 3,3,Trade Contractor Licence,Stone Masonry
+263,15160609,Hayden Joshua Wardill,,,13 Que Close Cornubia QLD 4130,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Gasfitting
+264,15160609,Hayden Joshua Wardill,,,13 Que Close Cornubia QLD 4130,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+265,15183021,Gary John Tommasi,,90 341 726 474,93 Buchan St Portsmith QLD 4870,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,"Sheds, Carports and Garages"
+266,15183021,Gary John Tommasi,,90 341 726 474,93 Buchan St Portsmith QLD 4870,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Cabinet Making
+267,15183021,Gary John Tommasi,,90 341 726 474,93 Buchan St Portsmith QLD 4870,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Structural Landscaping (Trade)
+268,15183021,Gary John Tommasi,,90 341 726 474,93 Buchan St Portsmith QLD 4870,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+269,15200864,Andrew David Prout,,21 676 865 080,25 Barton st Sandgate QLD 4017,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+270,15200864,Andrew David Prout,,21 676 865 080,25 Barton st Sandgate QLD 4017,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+271,15200864,Andrew David Prout,,21 676 865 080,25 Barton st Sandgate QLD 4017,Individual,I,Self Certification - Builder/Trade,SC2,Site Supervisor,Builder - Low Rise
+272,15383991,Brett Michael Cramp,,,43 Deloraine Road Lismore Heights NSW 2480,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+273,1070905,DARE CO. PTY LTD,109 723 364,42 109 723 364,74 TOOLOOA STREET GLADSTONE QLD 4680,Company,C,Category 2,2,Trade Contractor Licence,"Sheds, Carports and Garages"
+274,1070905,DARE CO. PTY LTD,109 723 364,42 109 723 364,74 TOOLOOA STREET GLADSTONE QLD 4680,Company,C,Category 2,2,Trade Contractor Licence,Structural Metal Fabrication and Erection
+275,1070905,DARE CO. PTY LTD,109 723 364,42 109 723 364,74 TOOLOOA STREET GLADSTONE QLD 4680,Company,C,Category 2,2,Trade Contractor Licence,Concreting
+276,1070905,DARE CO. PTY LTD,109 723 364,42 109 723 364,74 TOOLOOA STREET GLADSTONE QLD 4680,Company,C,Category 2,2,Builder Licence,Builder - Low Rise
+277,1065679,SHARP HOMES PTY LTD,109 754 574,38 109 754 574,2301 Fingerboard Road Mt Tom QLD 4677,Company,C,Category 1,1,Builder Licence,Builder - Low Rise
+278,1236473,N.Q.U.T PTY LTD,152 934 677,83 152 934 677,51 KINNARDY STREET BURDELL QLD 4818,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Wall and Floor Tiling
+279,715097,CBS PLUMBING (QLD) PTY LTD,082 881 141,37 082 881 141,U 13  50 Parker Ct Pinkenba QLD 4008,Company,C,Category 2,2,Trade Contractor Licence,Plumbing and Drainage
+280,715097,CBS PLUMBING (QLD) PTY LTD,082 881 141,37 082 881 141,U 13  50 Parker Ct Pinkenba QLD 4008,Company,C,Category 2,2,Trade Contractor Licence,Gasfitting
+281,1078727,NELSON BUILDING PTY LTD,114 935 661,,12169 CARNARVON HIGHWAY ST GEORGE QLD 4487,Company,C,Category 1,1,Builder Licence,Builder - Low Rise
+282,1185308,REMAC 1 PTY LTD,142 404 715,24 142 404 715,160 NEWBEITH ROAD GREENBANK QLD 4124,Company,C,Category 1,1,Builder Licence,Builder - Medium Rise
+283,1233460,SX CONSTRUCTIONS PTY LTD,158 550 291,69 158 550 291,4/13 Commerce Ave Warana QLD 4575,Company,C,Category 2,2,Builder Licence,Builder - Low Rise
+284,1233460,SX CONSTRUCTIONS PTY LTD,158 550 291,69 158 550 291,4/13 Commerce Ave Warana QLD 4575,Company,C,Category 2,2,Trade Contractor Licence,Carpentry
+285,1233460,SX CONSTRUCTIONS PTY LTD,158 550 291,69 158 550 291,4/13 Commerce Ave Warana QLD 4575,Company,C,Category 2,2,Trade Contractor Licence,Joinery
+286,62822,DE LUCA CORPORATION PTY LTD,055 193 514,80 055 193 514,G  61 Park Rd Milton QLD 4064,Company,C,Category 6,6,Builder Licence,Builder - Medium Rise
+287,62822,DE LUCA CORPORATION PTY LTD,055 193 514,80 055 193 514,G  61 Park Rd Milton QLD 4064,Company,C,Category 6,6,Builder Licence,Builder - Open
+288,1189230,GAZZMAR PTY LTD,092 909 950,67 092 909 950,165 SCHOOL ROAD LOGAN RESERVE QLD 4133,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Concreting
+289,15206348,Chadd Bertrum Hudson,,82 052 022 178,101 GLENFIELDS BVD MOUNTAIN CREEK QLD 4557,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,"Builder Restricted to Kitchen, Bathroom and Laundry Installation"
+290,15206348,Chadd Bertrum Hudson,,82 052 022 178,101 GLENFIELDS BVD MOUNTAIN CREEK QLD 4557,Individual,I,Self Certification - Builder/Trade,SC2,Site Supervisor,Builder - Low Rise
+291,15206348,Chadd Bertrum Hudson,,82 052 022 178,101 GLENFIELDS BVD MOUNTAIN CREEK QLD 4557,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+292,20240,GRAEME JOHN GIBSON,,,1 CLAY ST INGHAM QLD 4850,Individual,I,Category 2,2,Builder Licence,Builder - Open
+293,1283201,MARK DARYL LUGOWSKI,,,21 Ferrier St Aspley QLD 4034,Individual,I,No Financials Required,N/A,Nominee Supervisor,Air Handling Duct Installation
+294,15335389,Arena Projects Pty Ltd,653 640 281,19 653 640 281,level 16 The Crescent Kingsgrove NSW 2208,Company,C,Category 3,3,Builder Licence,Builder - Open
+295,15343477,RAMANDIP SINGH,,,5 bangalow St Algester QLD 4115,Individual,I,Self Certification - Trade,SCT1,Nominee Supervisor,Builder - Open
+296,15343477,RAMANDIP SINGH,,,5 bangalow St Algester QLD 4115,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+297,15343477,RAMANDIP SINGH,,,5 bangalow St Algester QLD 4115,Individual,I,Self Certification - Trade,SCT1,Site Supervisor,Builder - Open
+298,15351297,BRADLEY ELI WEYMAN,,64 513 820 108,34 Copper Pde Pimpama QLD 4209,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+299,15361763,JARROD CALE SHEEHAN,,97 922 797 572,22 MENIN RD CORINDA QLD 4075,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+300,15361763,JARROD CALE SHEEHAN,,97 922 797 572,22 MENIN RD CORINDA QLD 4075,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Joinery
+301,15361763,JARROD CALE SHEEHAN,,97 922 797 572,22 MENIN RD CORINDA QLD 4075,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,"Sheds, Carports and Garages"
+302,15361763,JARROD CALE SHEEHAN,,97 922 797 572,22 MENIN RD CORINDA QLD 4075,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Roof and Wall Cladding
+303,15361763,JARROD CALE SHEEHAN,,97 922 797 572,22 MENIN RD CORINDA QLD 4075,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Structural Landscaping (Trade)
+304,15361763,JARROD CALE SHEEHAN,,97 922 797 572,22 MENIN RD CORINDA QLD 4075,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Floor Finishing and Covering (Hard Sector)
+305,15361763,JARROD CALE SHEEHAN,,97 922 797 572,22 MENIN RD CORINDA QLD 4075,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Metal Fascias and Gutters
+306,15361763,JARROD CALE SHEEHAN,,97 922 797 572,22 MENIN RD CORINDA QLD 4075,Individual,I,Self Certification - Builder/Trade,SC2,Site Supervisor,Builder - Low Rise
+307,15219710,JOLA CONSTRUCTIONS PTY LTD,644 940 652,51 644 940 652,655 Ford Rd Priestdale QLD 4127,Company,C,Category 1,1,Builder Licence,Builder - Low Rise
+308,15233974,Matthew John Hawke,,47 145 501 006,14 MALKANA CRES BUDDINA QLD 4575,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder Restricted to Structural Landscaping
+309,15243895,Jovin Salazar Pengson,,56 134 470 261,15 Pappas Way Carrara QLD 4211,Individual,I,No Financials Required,N/A,Nominee Supervisor,Waterproofing
+310,15260362,Michael Yena,,,"Royal Village Palms,U 6  228 Main Rd Maroochydore QLD 4558",Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+311,15136674,Shannon Stephen Piper,,75 910 897 957,57 MARINA BVD BANKSIA BEACH QLD 4507,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+312,15136674,Shannon Stephen Piper,,75 910 897 957,57 MARINA BVD BANKSIA BEACH QLD 4507,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Metal Fascias and Gutters
+313,15136674,Shannon Stephen Piper,,75 910 897 957,57 MARINA BVD BANKSIA BEACH QLD 4507,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Roof and Wall Cladding
+314,15144119,Oguz Dogru,,34 806 438 159,18 Wooraka St Rochedale South QLD 4123,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Painting and Decorating
+315,15153254,Brendan John Williams,,77 601 632 423,250 ROSS RIVER RD AITKENVALE QLD 4814,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Mechanical Services - Air-conditioning and Refrigeration (Limited Design)
+316,15156172,ANDREW DAVID COX,,,4 Black Braes Ct Mount Louisa QLD 4814,Individual,I,No Financials Required,N/A,Site Supervisor,Builder - Low Rise
+317,15156172,ANDREW DAVID COX,,,4 Black Braes Ct Mount Louisa QLD 4814,Individual,I,No Financials Required,N/A,Site Supervisor,Carpentry
+318,15185161,Jack Michael DAVIES,,72 203 132 990,229 Purono Parkway yabulu QLD 4818,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Plumbing and Drainage
+319,15195017,NEW AGE BUILDING CONSTRUCTIONS PTY LTD.,148 212 917,36 148 212 917,16 RICHLAND DR BANNOCKBURN QLD 4207,Company,C,Category 1,1,Builder Licence,Builder - Medium Rise
+320,15195017,NEW AGE BUILDING CONSTRUCTIONS PTY LTD.,148 212 917,36 148 212 917,16 RICHLAND DR BANNOCKBURN QLD 4207,Company,C,Category 1,1,Builder Licence,Builder - Open
+321,15200255,Max Liam Waite,,57 501 758 997,132A MEMORIAL DR EUMUNDI QLD 4562,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+322,1086689,G DEVELOPMENTS PTY LTD,116 332 220,77 116 332 220,"1/270 Lahrs Rd, Ormeau Queensland 4208",Company,C,Category 5,5,Builder Licence,Builder - Low Rise
+323,722613,SHANE JEFFREY MAIR,,,11 Lowan St Warner QLD 4500,Individual,I,No Financials Required,N/A,Nominee Supervisor,Builder - Low Rise
+324,1099589,Squires Designer Homes Pty Ltd,120 053 554,23 120 053 554,23 YORLAMBU PARADE MAROOCHYDORE QLD 4558,Company,C,Category 2,2,Builder Licence,Builder - Low Rise
+325,75962,ROSS ALAN BAUER,,,25 SHE OAK BOULEVARD BARGARA QLD 4670,Individual,I,Category 1,1,Builder Licence,Building Restricted To Alterations And Additions
+326,75962,ROSS ALAN BAUER,,,25 SHE OAK BOULEVARD BARGARA QLD 4670,Individual,I,Category 1,1,Builder Licence,"Building Restricted To Renovations, Repairs And Maintenance"
+327,75962,ROSS ALAN BAUER,,,25 SHE OAK BOULEVARD BARGARA QLD 4670,Individual,I,Category 1,1,Trade Contractor Licence,Carpentry
+328,75962,ROSS ALAN BAUER,,,25 SHE OAK BOULEVARD BARGARA QLD 4670,Individual,I,Category 1,1,Trade Contractor Licence,Joinery
+329,75962,ROSS ALAN BAUER,,,25 SHE OAK BOULEVARD BARGARA QLD 4670,Individual,I,Category 1,1,Builder Licence,Builder - Low Rise
+330,75962,ROSS ALAN BAUER,,,25 SHE OAK BOULEVARD BARGARA QLD 4670,Individual,I,Category 1,1,Builder Licence,"Builder Restricted to Kitchen, Bathroom and Laundry Installation"
+331,1174771,CLEARFLOW PLUMBING COMPANY PTY LTD,135 929 716,35 135 929 716,9 Rialanna St Kenmore QLD 4069,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Plumbing and Drainage
+332,1214907,EVOLUTION CONCRETING INVESTMENTS PTY LTD,133 520 171,68 396 810 313,95 ALLAWAH RD CHUWAR QLD 4306,Company,C,Category 1,1,Trade Contractor Licence,Concreting
+333,1314964,EXM PTY LTD,605 893 712,32 605 893 712,10 Mocatta St Goombungee QLD 4354,Company,C,Category 1,1,Builder Licence,Builder - Low Rise
+334,1210398,ANDREW G SPENCER & CO BUILDERS PTY LTD,146 852 940,96 695 696 296,6 BLOODWOOD PLACE COOROIBAH QLD 4565,Company,C,Category 1,1,Builder Licence,Builder - Low Rise
+335,1284684,SMART DOORS & GATES PTY LTD,166 492 879,76 166 492 879,42 Ulm Street Moffat Beach QLD 4551,Company,C,Category 2,2,Trade Contractor Licence,Non-Structural Metal Fabrication and Installation
+336,1280401,JAJD BUILDERS PTY LTD,168 815 585,,12 KESWICK CLOSE MOUNT SHERIDAN QLD 4868,Company,C,Category 2,2,Trade Contractor Licence,Carpentry
+337,1280401,JAJD BUILDERS PTY LTD,168 815 585,,12 KESWICK CLOSE MOUNT SHERIDAN QLD 4868,Company,C,Category 2,2,Builder Licence,Builder - Low Rise
+338,15205810,ON DEMAND PLUMBING & GAS PTY LTD,643 088 108,37 643 088 108,20 Sandford St Delaneys Creek QLD 4514,Company,C,Category 1,1,Trade Contractor Licence,Plumbing and Drainage
+339,15205810,ON DEMAND PLUMBING & GAS PTY LTD,643 088 108,37 643 088 108,20 Sandford St Delaneys Creek QLD 4514,Company,C,Category 1,1,Trade Contractor Licence,Gasfitting
+340,1204525,STEPHEN JON PURCELL,,,60 Manus Ave Palm Beach QLD 4221,Individual,I,No Financials Required,N/A,Nominee Supervisor,Carpentry
+341,1204525,STEPHEN JON PURCELL,,,60 Manus Ave Palm Beach QLD 4221,Individual,I,No Financials Required,N/A,Nominee Supervisor,Builder - Low Rise
+342,1025196,SHANE MICHAEL DATSON,,,12 18 Blanck St Ormeau QLD 4208,Individual,I,No Financials Required,N/A,Nominee Supervisor,Wall and Floor Tiling
+343,1025196,SHANE MICHAEL DATSON,,,12 18 Blanck St Ormeau QLD 4208,Individual,I,No Financials Required,N/A,Nominee Supervisor,Waterproofing
+344,1278971,RICHARD JOSEPH BIN DOL,,26 722 153 660,30 Shetland Place Kelso QLD 4815,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+345,1278971,RICHARD JOSEPH BIN DOL,,26 722 153 660,30 Shetland Place Kelso QLD 4815,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+346,713231,ANTHONY HERBERT RANKIN,,,18 NARRABUNDAH STREET MUDGEERABA QLD 4213,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,"Sheds, Carports and Garages"
+347,713231,ANTHONY HERBERT RANKIN,,,18 NARRABUNDAH STREET MUDGEERABA QLD 4213,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Structural Metal Fabrication and Erection
+348,713231,ANTHONY HERBERT RANKIN,,,18 NARRABUNDAH STREET MUDGEERABA QLD 4213,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Steel Fixing
+349,1013285,ADAM STUART TRIST,,,170 EDWARDS STREET SUNSHINE BEACH QLD 4567,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+350,726917,STEVEN MAXWELL SINCLAIR,,90 391 517 509,9 LIDO COURT WELLINGTON POINT QLD 4160,Individual,I,Category 2,2,Nominee Supervisor,Bricklaying and Blocklaying
+351,726917,STEVEN MAXWELL SINCLAIR,,90 391 517 509,9 LIDO COURT WELLINGTON POINT QLD 4160,Individual,I,Category 2,2,Nominee Supervisor,Builder - Low Rise
+352,75840,AARON DOUGLAS FRASER,,,9-11 EBRINGTON CLOSE GORDONVALE QLD 4865,Individual,I,No Financials Required,N/A,Nominee Supervisor,Builder - Low Rise
+353,15331189,Braydon Hinchcliff,,,9 Ellison Rd Geebung QLD 4034,Individual,I,No Financials Required,N/A,Mechanical Services Occupational,Mechanical Services - Air-conditioning and Refrigeration - Occupational
+354,15339831,DYLAN SCOTT HOY,,,94 Pebble Creek Way South Maclean QLD 4280,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+355,15344719,Brendon James PTY LTD,660 938 081,34 660 938 081,U 1302  1 Sunset Ave Paradise Point QLD 4216,Company,C,Category 2,2,Trade Contractor Licence,"Swimming Pool Construction, Installation and Maintenance"
+356,15345477,MHRT METAL ROOFING PTY LTD,664 108 534,64 664 108 534,9 Cress Ct Pimpama QLD 4209,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Roof and Wall Cladding
+357,15266083,Callan John Buckley,,,6 Spoonbill St Peregian Beach QLD 4573,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+358,15269192,GF Tiling Services Pty Ltd,619 853 146,95 619 853 146,8 Ismaeel Cct Kuraby QLD 4112,Company,C,Category 3,3,Trade Contractor Licence,Wall and Floor Tiling
+359,15289742,LUAH HOMES PTY LTD,657 288 527,89 657 288 527,6/100 Park Road Slacks Creek QLD 4127,Company,C,Category 3,3,Builder Licence,Builder - Open
+360,15118108,CONLON BUILDING & CONSTRUCTIONS PTY lTD,628 158 181,33 628 158 181,100 Strawberry Road Mudgeeraba QLD 4213,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+361,15118108,CONLON BUILDING & CONSTRUCTIONS PTY lTD,628 158 181,33 628 158 181,100 Strawberry Road Mudgeeraba QLD 4213,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+362,15184371,Daniel Robert Boyce,,32 724 079 569,"Shed 1A / 61 Hargreaves Street, Edmonton QLD 4869",Individual,I,Self Certification - Trade,SCT1,Nominee Supervisor,Builder - Low Rise
+363,15184371,Daniel Robert Boyce,,32 724 079 569,"Shed 1A / 61 Hargreaves Street, Edmonton QLD 4869",Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+364,15184371,Daniel Robert Boyce,,32 724 079 569,"Shed 1A / 61 Hargreaves Street, Edmonton QLD 4869",Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Structural Landscaping (Trade)
+365,15184371,Daniel Robert Boyce,,32 724 079 569,"Shed 1A / 61 Hargreaves Street, Edmonton QLD 4869",Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Metal Fascias and Gutters
+366,15184371,Daniel Robert Boyce,,32 724 079 569,"Shed 1A / 61 Hargreaves Street, Edmonton QLD 4869",Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Roof and Wall Cladding
+367,15184371,Daniel Robert Boyce,,32 724 079 569,"Shed 1A / 61 Hargreaves Street, Edmonton QLD 4869",Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Floor Finishing and Covering (Hard Sector)
+368,15184371,Daniel Robert Boyce,,32 724 079 569,"Shed 1A / 61 Hargreaves Street, Edmonton QLD 4869",Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,"Sheds, Carports and Garages"
+369,15392833,SOROKA PLUMBING GROUP PTY LTD,669 462 864,96 669 462 864,11 Riverside Terrace South Mission Beach QLD 4852,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Plumbing and Drainage
+370,1075577,JUSTIN WILLIAM FREDERICK STAINTON,,,212/2 Emporio Place Maroochydore QLD 4558,Individual,I,Self Certification - Builder/Trade,SC2,Site Supervisor,Builder - Open
+371,1075577,JUSTIN WILLIAM FREDERICK STAINTON,,,212/2 Emporio Place Maroochydore QLD 4558,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+372,1238244,KERRIDALE PTY. LTD.,079 291 777,48 079 291 777,59 Spencer Rd Nerang QLD 4211,Company,C,Category 2,2,Trade Contractor Licence,Carpentry
+373,1238244,KERRIDALE PTY. LTD.,079 291 777,48 079 291 777,59 Spencer Rd Nerang QLD 4211,Company,C,Category 2,2,Trade Contractor Licence,"Sheds, Carports and Garages"
+374,1238244,KERRIDALE PTY. LTD.,079 291 777,48 079 291 777,59 Spencer Rd Nerang QLD 4211,Company,C,Category 2,2,Builder Licence,Builder - Low Rise
+375,1275266,KARBELLA PTY LTD,167 192 163,65 167 192 163,124 MASON STREET MAREEBA QLD 4880,Company,C,Category 2,2,Builder Licence,Builder - Medium Rise
+376,1275266,KARBELLA PTY LTD,167 192 163,65 167 192 163,124 MASON STREET MAREEBA QLD 4880,Company,C,Category 2,2,Builder Licence,Builder - Low Rise
+377,1143920,WATSONS FENCING & PINE PTY LTD,123 128 674,94 130 684 464,2 GORDON STREET MACKAY QLD 4740,Company,C,Category 2,2,Trade Contractor Licence,Structural Landscaping (Trade)
+378,77538,Knauf Gypsum Pty Ltd,004 231 976,84 004 231 976,3 Thackeray St Camellia NSW 2142,Company,C,Category 7,7,Trade Contractor Licence,Carpentry
+379,77538,Knauf Gypsum Pty Ltd,004 231 976,84 004 231 976,3 Thackeray St Camellia NSW 2142,Company,C,Category 7,7,Trade Contractor Licence,Joinery
+380,77538,Knauf Gypsum Pty Ltd,004 231 976,84 004 231 976,3 Thackeray St Camellia NSW 2142,Company,C,Category 7,7,Trade Contractor Licence,Plastering Drywall
+381,77538,Knauf Gypsum Pty Ltd,004 231 976,84 004 231 976,3 Thackeray St Camellia NSW 2142,Company,C,Category 7,7,Trade Contractor Licence - Fire Certifier,Passive Fire Protection - Fire and Smoke Walls and Ceilings
+382,1268310,BLINDMAKERS PTY LTD,166 053 425,95 334 248 215,1/35 PROJECT AVENUE NOOSAVILLE QLD 4566,Company,C,Category 2,2,Trade Contractor Licence,"Glass, Glazing and Aluminium"
+383,1258533,ICONIC BUILDERS PTY LTD,161 756 734,76 161 756 734,14 GANNET CL WURTULLA QLD 4575,Company,C,Category 2,2,Builder Licence,Builder - Low Rise
+384,1258533,ICONIC BUILDERS PTY LTD,161 756 734,76 161 756 734,14 GANNET CL WURTULLA QLD 4575,Company,C,Category 2,2,Trade Contractor Licence,Carpentry
+385,1210160,ELROCK HOUSING PTY LTD,151 396 397,63 151 396 397,46 Fischle Road Cashmere QLD 4500,Company,C,Category 1,1,Trade Contractor Licence,Carpentry
+386,1012228,CORBETT HOMES PTY LTD,101 631 869,,1A MCCOSKER STREET EMERALD QLD 4720,Company,C,Category 3,3,Trade Contractor Licence,Carpentry
+387,1012228,CORBETT HOMES PTY LTD,101 631 869,,1A MCCOSKER STREET EMERALD QLD 4720,Company,C,Category 3,3,Trade Contractor Licence,Joinery
+388,1012228,CORBETT HOMES PTY LTD,101 631 869,,1A MCCOSKER STREET EMERALD QLD 4720,Company,C,Category 3,3,Builder Licence,Builder - Low Rise
+389,1281646,FOLA MUININ PTY LTD,165 363 020,15 204 641 192,78 bunya park drive Eatons hill QLD 4037,Company,C,Category 1,1,Trade Contractor Licence,"Glass, Glazing and Aluminium"
+390,1122088,RINNAI AUSTRALIA PTY. LTD.,005 138 769,74 005 138 769,82-88 MILLS RD BRAESIDE VIC 3195,Company,C,Category 7,7,Trade Contractor Licence,Gasfitting
+391,1122088,RINNAI AUSTRALIA PTY. LTD.,005 138 769,74 005 138 769,82-88 MILLS RD BRAESIDE VIC 3195,Company,C,Category 7,7,Trade Contractor Licence,Plumbing and Drainage
+392,899636,M J EVANS CONSTRUCTIONS PTY LTD,064 064 982,,54 BALLINGER RD BUDERIM QLD 4556,Company,C,Category 1,1,Builder Licence,Builder - Low Rise
+393,60235,DANIEL DAVID LEWIS,,,U 5  554 Marine Pde Biggera Waters QLD 4216,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Painting and Decorating
+394,1093661,ADAM CAHILL,,,16 GRENFELL STREET TIARO QLD 4650,Individual,I,No Financials Required,N/A,Site Supervisor,Builder - Open
+395,729825,SIMEON JOEL MARTIN,,84 921 652 773,7 CHURCH STREET KIPPA-RING QLD 4021,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Painting and Decorating
+396,76740,TERENCE RAYMOND KRIVAN,,,SECOND BEACHLOT 69 YARRABAH ROAD CAIRNS QLD 4870,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+397,1148596,SHANNON CHRISTOPHER BROWN,,97 790 245 149,8 CLIPPER COURT BIGGERA WATERS QLD 4216,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+398,1148596,SHANNON CHRISTOPHER BROWN,,97 790 245 149,8 CLIPPER COURT BIGGERA WATERS QLD 4216,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Joinery
+399,1148596,SHANNON CHRISTOPHER BROWN,,97 790 245 149,8 CLIPPER COURT BIGGERA WATERS QLD 4216,Individual,I,Self Certification - Trade,SCT1,Nominee Supervisor,Builder - Low Rise
+400,1145069,IHOR DROHOMYRETSKYY,,,26 BEGONIA STREET DAISY HILL QLD 4127,Individual,I,No Financials Required,N/A,Site Supervisor,Builder - Open
+401,1171818,BRENT GORDON COLVILLE,,,24 Meadowlake Dr Carrara QLD 4211,Individual,I,No Financials Required,N/A,Site Supervisor,Builder - Open
+402,1171818,BRENT GORDON COLVILLE,,,24 Meadowlake Dr Carrara QLD 4211,Individual,I,No Financials Required,N/A,Nominee Supervisor,"Swimming Pool Construction, Installation and Maintenance"
+403,1149330,MICHAEL PATRICK BARNES,,,41 St Vincent St Ashgrove QLD 4060,Individual,I,No Financials Required,N/A,Nominee Supervisor,Gasfitting
+404,1149330,MICHAEL PATRICK BARNES,,,41 St Vincent St Ashgrove QLD 4060,Individual,I,No Financials Required,N/A,Nominee Supervisor,Plumbing and Drainage
+405,15330963,Luke Stephen Meagher,,,"HIGHLAND GLEN, UNIT 10 5 BALFOUR CRES HIGHLAND PARK QLD 4211",Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+406,15337421,Cameron Charles Palmer,,,1/42 Jamieson Street Bulimba QLD 4171,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Gasfitting
+407,15337421,Cameron Charles Palmer,,,1/42 Jamieson Street Bulimba QLD 4171,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Plumbing and Drainage
+408,15360229,NO.1 ROBES PTY LTD,664 305 864,78 664 305 864,U 1  698 Ashmore Rd Molendinar QLD 4214,Company,C,Category 1,1,Trade Contractor Licence,Cabinet Making
+409,15364343,Kirkland Family Homes Pty Ltd,646 813 372,51 646 813 372,61 Atwells rd Farnsfield QLD 4660,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+410,15364343,Kirkland Family Homes Pty Ltd,646 813 372,51 646 813 372,61 Atwells rd Farnsfield QLD 4660,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+411,15228144,Robert James Stephenson,,,2 Sky Dr Highvale QLD 4520,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+412,15228144,Robert James Stephenson,,,2 Sky Dr Highvale QLD 4520,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,"Builder Restricted to Kitchen, Bathroom and Laundry Installation"
+413,15230930,Jacob Radojko Radovic,,37 951 371 397,UNIT 6 7 NYRANG AVE PALM BEACH QLD 4221,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Plumbing and Drainage
+414,15230930,Jacob Radojko Radovic,,37 951 371 397,UNIT 6 7 NYRANG AVE PALM BEACH QLD 4221,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,"Builder Restricted to Kitchen, Bathroom and Laundry Installation"
+415,15258652,MCBARKER DEVELOPMENTS PTY LTD,613 991 950,87 613 991 950,27 Orealla Crescent Sunrise Beach QLD 4567,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+416,15258652,MCBARKER DEVELOPMENTS PTY LTD,613 991 950,87 613 991 950,27 Orealla Crescent Sunrise Beach QLD 4567,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+417,15268449,Auzco Projects Pty Ltd,654 861 604,67 654 861 604,69 Hilltop Cct Pallara QLD 4110,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Painting and Decorating
+418,15268449,Auzco Projects Pty Ltd,654 861 604,67 654 861 604,69 Hilltop Cct Pallara QLD 4110,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Wall and Floor Tiling
+419,15268449,Auzco Projects Pty Ltd,654 861 604,67 654 861 604,69 Hilltop Cct Pallara QLD 4110,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Waterproofing
+420,15122203,Benjamin I'umalo,,,16 CENTRAL LAKES DR CABOOLTURE QLD 4510,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Painting and Decorating
+421,15131217,Tiancong Wu,,61 250 465 561,2/27 Dovercourt Road Toowong QLD 4066,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Shopfitting (Trade)
+422,15131217,Tiancong Wu,,61 250 465 561,2/27 Dovercourt Road Toowong QLD 4066,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Structural Landscaping (Trade)
+423,15131217,Tiancong Wu,,61 250 465 561,2/27 Dovercourt Road Toowong QLD 4066,Individual,I,Self Certification - Builder/Trade,SC2,Site Supervisor,Builder - Low Rise
+424,15131217,Tiancong Wu,,61 250 465 561,2/27 Dovercourt Road Toowong QLD 4066,Individual,I,Self Certification - Builder/Trade,SC2,Nominee Supervisor,Fire Protection - Electrical Stream - Install and Maintain - Fire Alarm Systems
+425,15131217,Tiancong Wu,,61 250 465 561,2/27 Dovercourt Road Toowong QLD 4066,Individual,I,Self Certification - Builder/Trade,SC2,Nominee Supervisor,Fire Protection - Water-Based Fire System Stream - Install and Maintain - Restricted to Commercial and Industrial Types
+426,15131217,Tiancong Wu,,61 250 465 561,2/27 Dovercourt Road Toowong QLD 4066,Individual,I,Self Certification - Builder/Trade,SC2,Nominee Supervisor,Fire Protection - Electrical Stream - Inspect and Test - Emergency Lighting
+427,15131217,Tiancong Wu,,61 250 465 561,2/27 Dovercourt Road Toowong QLD 4066,Individual,I,Self Certification - Builder/Trade,SC2,Fire Occupational,Fire Protection - Portables Stream Occupational - Install and Maintain
+428,15131217,Tiancong Wu,,61 250 465 561,2/27 Dovercourt Road Toowong QLD 4066,Individual,I,Self Certification - Builder/Trade,SC2,Fire Occupational,Fire Protection - Electrical Stream Occupational - Inspect and Test - Emergency Lighting
+429,15131217,Tiancong Wu,,61 250 465 561,2/27 Dovercourt Road Toowong QLD 4066,Individual,I,Self Certification - Builder/Trade,SC2,Fire Occupational,Fire Protection - Electrical Stream Occupational - Install and Maintain - Fire Alarm Systems
+430,15131217,Tiancong Wu,,61 250 465 561,2/27 Dovercourt Road Toowong QLD 4066,Individual,I,Self Certification - Builder/Trade,SC2,Nominee Supervisor,Cabinet Making
+431,15131217,Tiancong Wu,,61 250 465 561,2/27 Dovercourt Road Toowong QLD 4066,Individual,I,Self Certification - Builder/Trade,SC2,Nominee Supervisor,"Sheds, Carports and Garages"
+432,15131217,Tiancong Wu,,61 250 465 561,2/27 Dovercourt Road Toowong QLD 4066,Individual,I,Self Certification - Builder/Trade,SC2,Nominee Supervisor,Joinery
+433,15131217,Tiancong Wu,,61 250 465 561,2/27 Dovercourt Road Toowong QLD 4066,Individual,I,Self Certification - Builder/Trade,SC2,Nominee Supervisor,Roof and Wall Cladding
+434,15131217,Tiancong Wu,,61 250 465 561,2/27 Dovercourt Road Toowong QLD 4066,Individual,I,Self Certification - Builder/Trade,SC2,Nominee Supervisor,Metal Fascias and Gutters
+435,15131217,Tiancong Wu,,61 250 465 561,2/27 Dovercourt Road Toowong QLD 4066,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,"Builder Restricted to Kitchen, Bathroom and Laundry Installation"
+436,15131217,Tiancong Wu,,61 250 465 561,2/27 Dovercourt Road Toowong QLD 4066,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+437,15131217,Tiancong Wu,,61 250 465 561,2/27 Dovercourt Road Toowong QLD 4066,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Mechanical Services - Air-conditioning and Refrigeration (Limited Design)
+438,15131217,Tiancong Wu,,61 250 465 561,2/27 Dovercourt Road Toowong QLD 4066,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Waterproofing
+439,15131217,Tiancong Wu,,61 250 465 561,2/27 Dovercourt Road Toowong QLD 4066,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Plumbing and Drainage
+440,15131217,Tiancong Wu,,61 250 465 561,2/27 Dovercourt Road Toowong QLD 4066,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Gasfitting
+441,15131217,Tiancong Wu,,61 250 465 561,2/27 Dovercourt Road Toowong QLD 4066,Individual,I,Self Certification - Builder/Trade,SC2,Mechanical Services Occupational,Mechanical Services - Air-conditioning and Refrigeration - Occupational
+442,15131217,Tiancong Wu,,61 250 465 561,2/27 Dovercourt Road Toowong QLD 4066,Individual,I,Self Certification - Builder/Trade,SC2,Nominee Supervisor,Mechanical Services - Plumbing
+443,15131217,Tiancong Wu,,61 250 465 561,2/27 Dovercourt Road Toowong QLD 4066,Individual,I,Self Certification - Builder/Trade,SC2,Mechanical Services Occupational,Mechanical Services - Plumbing
+444,15131217,Tiancong Wu,,61 250 465 561,2/27 Dovercourt Road Toowong QLD 4066,Individual,I,Self Certification - Builder/Trade,SC2,Fire Occupational,Fire Pumps - Occupational
+445,15138729,4D Builders Pty Ltd,633 626 481,32 633 626 481,9 Alloa Ct Boronia Heights QLD 4124,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+446,15150310,KITCHEN WORKZ QLD PTY LTD,629 597 931,13 629 597 931,"2, 28 Redcliffe Gardens Drive Clontarf QLD 4019",Company,C,Category 2,2,Trade Contractor Licence,Cabinet Making
+447,15150320,Liam David Steinke,,,17 Broadleaf Place Ningi QLD 4511,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Wall and Floor Tiling
+448,15153303,Mehdi Alizada,,,16 Oakview St Parkinson QLD 4115,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+449,15183079,Adam Francis Wells,,87 604 401 971,6 Bellthorpe St South Ripley QLD 4306,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Cabinet Making
+450,15183079,Adam Francis Wells,,87 604 401 971,6 Bellthorpe St South Ripley QLD 4306,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Shopfitting (Trade)
+451,23628,GEDOUN CONSTRUCTIONS PTY LTD,011 074 829,78 011 074 829,5/264 WOOLCOCK STREET CURRAJONG QLD 4812,Company,C,Category 4,4,Builder Licence,Builder - Open
+452,1194852,HOLT INDUSTRIES PTY LTD,146 132 603,86 146 132 603,17 Fatnowna Street Andergrove QLD 4740,Company,C,Category 1,1,Trade Contractor Licence,Structural Landscaping (Trade)
+453,1194852,HOLT INDUSTRIES PTY LTD,146 132 603,86 146 132 603,17 Fatnowna Street Andergrove QLD 4740,Company,C,Category 1,1,Trade Contractor Licence,Carpentry
+454,1187340,CMFG PROJECTS PTY LTD,119 622 650,97 676 138 322,30 Homestead Drv Little Mountain QLD 4551,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+455,1187340,CMFG PROJECTS PTY LTD,119 622 650,97 676 138 322,30 Homestead Drv Little Mountain QLD 4551,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Bricklaying and Blocklaying
+456,1187340,CMFG PROJECTS PTY LTD,119 622 650,97 676 138 322,30 Homestead Drv Little Mountain QLD 4551,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,"Sheds, Carports and Garages"
+457,1317389,AM DESIGNER PROJECTS PTY LTD,606 372 865,,87 Bowden Close Tallebudgera QLD 4228,Company,C,Estimated MR SC1,EMRSC1,Building Designer Licence - EAT,Building Design - Medium Rise
+458,63943,Pro Builder Pty Ltd,059 837 071,33 059 837 071,507 ROYAL ESP MANLY QLD 4179,Company,C,Category 1,1,Builder Licence,Builder - Medium Rise
+459,1076567,JUX DEVELOPMENTS PTY LTD,105 420 728,68 105 420 728,"Unit 2, 49-53 Allgas Street Slacks Creek QLD 4127",Company,C,Category 3,3,Builder Licence,Builder - Low Rise
+460,1074560,GRANITE TARCOOLA PTY LTD,111 962 773,78 771 762 419,8 Timbertop Court Capalaba QLD 4157,Company,C,Category 2,2,Builder Licence,"Builder Restricted to Kitchen, Bathroom and Laundry Installation"
+461,1142898,MARK L DUNCAN CONSTRUCTIONS PTY LTD,129 837 609,11 129 837 609,61 EDITH STREET MILES QLD 4415,Company,C,Category 1,1,Builder Licence,Builder - Medium Rise
+462,1251323,YOUR HOUSE TABLELANDS PTY LTD,142 739 464,36 594 920 865,7 DEAN CIRCUIT MAREEBA QLD 4880,Company,C,Category 1,1,Trade Contractor Licence,Carpentry
+463,1251323,YOUR HOUSE TABLELANDS PTY LTD,142 739 464,36 594 920 865,7 DEAN CIRCUIT MAREEBA QLD 4880,Company,C,Category 1,1,Trade Contractor Licence,Joinery
+464,1251323,YOUR HOUSE TABLELANDS PTY LTD,142 739 464,36 594 920 865,7 DEAN CIRCUIT MAREEBA QLD 4880,Company,C,Category 1,1,Trade Contractor Licence,Shopfitting (Trade)
+465,648358,KP ENGINEERING PTY LTD,076 986 064,42 076 986 064,154-164 GLENELLA ROAD MACKAY QLD 4740,Company,C,Category 2,2,Builder Licence,Builder - Open
+466,726921,GLOVERS CONCRETING PTY LTD,000 982 758,96 000 982 758,13 COASTAL CRST BULLER WA 6532,Company,C,Category 1,1,Trade Contractor Licence,Concreting
+467,1316584,ALTOP FACADE PTY LTD,607 509 302,54 607 509 302,23 Fairbank St Sunnybank QLD 4109,Company,C,Category 3,3,Trade Contractor Licence,"Glass, Glazing and Aluminium"
+468,1114951,GREMLU PTY LTD,120 126 856,14 120 126 856,UNIT 21 GARDNER COURT TOOWOOMBA QLD 4350,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Mechanical Services - Air-conditioning and Refrigeration (Limited Design)
+469,1114951,GREMLU PTY LTD,120 126 856,14 120 126 856,UNIT 21 GARDNER COURT TOOWOOMBA QLD 4350,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Gasfitting
+470,1114627,FORESHORE INDUSTRIES PTY LTD,117 471 342,32 117 471 342,6/22-24 Link Crescent COOLUM BEACH QLD 4573,Company,C,Category 2,2,Trade Contractor Licence,Cabinet Making
+471,1164952,BAY HAVEN HOMES PTY LTD,135 500 079,67 135 500 079,9-15 Karinya PLace Cornubia QLD 4130,Company,C,Category 1,1,Builder Licence,Builder - Low Rise
+472,15205733,Dylan Clive Adamson,,53 167 248 901,16 Minugh Court Carrara QLD 4211,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+473,15205733,Dylan Clive Adamson,,53 167 248 901,16 Minugh Court Carrara QLD 4211,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Gasfitting
+474,31444,DAVID JOHN WASSELL,,,18 WAMBO STREET DALBY QLD 4405,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+475,31444,DAVID JOHN WASSELL,,,18 WAMBO STREET DALBY QLD 4405,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+476,1194109,MATTHEW JOHN GORDON,,88 003 231 245,108 DOOLONG RD KAWUNGAN QLD 4655,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Floor Finishing and Covering (Hard Sector)
+477,1194109,MATTHEW JOHN GORDON,,88 003 231 245,108 DOOLONG RD KAWUNGAN QLD 4655,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Wall and Floor Tiling
+478,1194109,MATTHEW JOHN GORDON,,88 003 231 245,108 DOOLONG RD KAWUNGAN QLD 4655,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Waterproofing
+479,1280244,SIMON JAMES GREEN,,44 134 888 976,10 COBBLER PLACE PACIFIC PINES QLD 4211,Individual,I,No Financials Required,N/A,Nominee Supervisor,Carpentry
+480,1280244,SIMON JAMES GREEN,,44 134 888 976,10 COBBLER PLACE PACIFIC PINES QLD 4211,Individual,I,No Financials Required,N/A,Nominee Supervisor,Builder - Low Rise
+481,1283449,BRETT WILLIAM LAWRENCE,,,31 CAHILL ST EAST INNISFAIL QLD 4860,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+482,21020,JEFFREY DAVID LEITCH,,,2 Kestrel Rd Bucca QLD 4670,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+483,731753,ADAM SCHIPPER,,38 151 726 819,4609/35 Burdett st Albion QLD 4010,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Roof Tiling
+484,1251492,JOEL ROBERT HUDSON,,51 734 255 453,12 Parkside circuit Robina QLD 4226,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+485,1251492,JOEL ROBERT HUDSON,,51 734 255 453,12 Parkside circuit Robina QLD 4226,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+486,15355057,PENROSE ROOFING PTY LTD,664 557 242,52 664 557 242,4 Hedge Lane Greenbank QLD 4124,Company,C,Category 2,2,Trade Contractor Licence,Roof and Wall Cladding
+487,15210761,Cody John Ralph Lee,,,8 Irene Street Tewantin QLD 4565,Individual,I,Self Certification - Builder/Trade,SC2,Nominee Supervisor,Builder - Low Rise
+488,15210761,Cody John Ralph Lee,,,8 Irene Street Tewantin QLD 4565,Individual,I,Self Certification - Builder/Trade,SC2,Site Supervisor,Builder - Low Rise
+489,15210761,Cody John Ralph Lee,,,8 Irene Street Tewantin QLD 4565,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+490,15238993,J & S Pools Pty Ltd,647 949 791,27 647 949 791,755 Esplanade Lota QLD 4179,Company,C,Category 2,2,Trade Contractor Licence,"Swimming Pool Construction, Installation and Maintenance"
+491,15248510,Fuhao Liang,,,61 Bayswater Ave Varsity Lakes QLD 4227,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plastering Drywall
+492,15251946,MORGAN JESSIE LEE,,17 329 190 112,UNIT 32 19 BROLGA AVE SOUTHPORT QLD 4215,Individual,I,Self Certification - Trade,SCT1,Building Designer Licence,Building Design - Low Rise
+493,15253775,Thomas Christopher Place,,37 894 059 707,3 Montage Ct Buderim QLD 4556,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+494,15253775,Thomas Christopher Place,,37 894 059 707,3 Montage Ct Buderim QLD 4556,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Roof and Wall Cladding
+495,15257177,Scott Sanderson,,,12 Angel Rd Stapylton QLD 4207,Individual,I,No Financials Required,N/A,Nominee Supervisor,Structural Metal Fabrication and Erection
+496,15265811,Stuart Rowland Robert,,,22 Country Crescent Nerang QLD 4211,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+497,15285158,Joseph Little,,,3 Waterworks Rd North Ipswich QLD 4305,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Wall and Floor Tiling
+498,15290718,Vinnie Perkins,,,143 morna st Newport QLD 4020,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Concreting
+499,15136662,Stephen George Hiku,,80 575 255 942,Unit 202/28 Lower Clifton Tce Red Hill QLD 4059,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Structural Landscaping (Trade)
+500,15137360,Jake Andrew Reidy,,,7 Lingara Avenue Palmwoods QLD 4555,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+501,15137360,Jake Andrew Reidy,,,7 Lingara Avenue Palmwoods QLD 4555,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Roof and Wall Cladding
+502,15137360,Jake Andrew Reidy,,,7 Lingara Avenue Palmwoods QLD 4555,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,"Sheds, Carports and Garages"
+503,15137360,Jake Andrew Reidy,,,7 Lingara Avenue Palmwoods QLD 4555,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Structural Landscaping (Trade)
+504,15142715,Caleb Jon Butler,,,12 Imbil Island Rd Imbil QLD 4570,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Bricklaying and Blocklaying
+505,15152746,DARCY STEVEN POMEROY,,17 416 367 204,83 WINDSOR RD RED HILL QLD 4059,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+506,15152746,DARCY STEVEN POMEROY,,17 416 367 204,83 WINDSOR RD RED HILL QLD 4059,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Roof and Wall Cladding
+507,15152746,DARCY STEVEN POMEROY,,17 416 367 204,83 WINDSOR RD RED HILL QLD 4059,Individual,I,Self Certification - Builder/Trade,SC2,Site Supervisor,Builder - Low Rise
+508,15152746,DARCY STEVEN POMEROY,,17 416 367 204,83 WINDSOR RD RED HILL QLD 4059,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Joinery
+509,15152746,DARCY STEVEN POMEROY,,17 416 367 204,83 WINDSOR RD RED HILL QLD 4059,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Metal Fascias and Gutters
+510,15152746,DARCY STEVEN POMEROY,,17 416 367 204,83 WINDSOR RD RED HILL QLD 4059,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,"Sheds, Carports and Garages"
+511,15152746,DARCY STEVEN POMEROY,,17 416 367 204,83 WINDSOR RD RED HILL QLD 4059,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Structural Landscaping (Trade)
+512,15152746,DARCY STEVEN POMEROY,,17 416 367 204,83 WINDSOR RD RED HILL QLD 4059,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Floor Finishing and Covering (Hard Sector)
+513,15152746,DARCY STEVEN POMEROY,,17 416 367 204,83 WINDSOR RD RED HILL QLD 4059,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+514,15154240,Thomas Andrew Johnston,,77 187 088 452,13 QUANDONG ST CRESTMEAD QLD 4132,Individual,I,No Financials Required,N/A,Nominee Supervisor,Gasfitting
+515,15154240,Thomas Andrew Johnston,,77 187 088 452,13 QUANDONG ST CRESTMEAD QLD 4132,Individual,I,No Financials Required,N/A,Nominee Supervisor,Plumbing and Drainage
+516,15186972,Josiah John Edwards,,69 639 086 927,9 Wentworth Court Karalee QLD 4306,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+517,1228993,NICHOLAS JOHN WILLMOTT SKINN,,,54-56 Nerang St Waterford QLD 4133,Individual,I,No Financials Required,N/A,Nominee Supervisor,Concreting
+518,1228993,NICHOLAS JOHN WILLMOTT SKINN,,,54-56 Nerang St Waterford QLD 4133,Individual,I,No Financials Required,N/A,Nominee Supervisor,Builder - Low Rise
+519,1135553,GREGORY LEE CATTON,,,6/72 Riverside Place Morningside QLD 4179,Individual,I,Self Certification - Builder/Trade,SC2,Site Supervisor,Roof Tiling
+520,1135553,GREGORY LEE CATTON,,,6/72 Riverside Place Morningside QLD 4179,Individual,I,Self Certification - Builder/Trade,SC2,Site Supervisor,Roof and Wall Cladding
+521,1135553,GREGORY LEE CATTON,,,6/72 Riverside Place Morningside QLD 4179,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+522,77748,RESULTS PAINTING PTY. LTD.,076 148 644,76 076 148 644,17 Waterford Pl Bridgeman Downs QLD 4035,Company,C,Category 2,2,Trade Contractor Licence,Painting and Decorating
+523,1318585,CLEARCON PTY LTD,602 271 643,11 602 271 643,43 Dunhill Cres Morningside QLD 4170,Company,C,Category 5,5,Builder Licence,Builder - Open
+524,1318585,CLEARCON PTY LTD,602 271 643,11 602 271 643,43 Dunhill Cres Morningside QLD 4170,Company,C,Category 5,5,Builder Licence,Builder - Medium Rise
+525,1304777,JLL PROJECT AND DEVELOPMENT SERVICES PTY LTD,106 166 901,14 106 166 901,LEVEL 39 345 QUEEN ST BRISBANE CITY QLD 4000,Company,C,Category 6,6,Builder Licence,Builder - Open
+526,718408,ADNOUGHT SHEET METAL FABRICATIONS PTY LTD,068 919 568,,417 MCLAUGHLIN STREET NORTH ROCKHAMPTON QLD 4701,Company,C,Category 2,2,Trade Contractor Licence,"Sheds, Carports and Garages"
+527,718408,ADNOUGHT SHEET METAL FABRICATIONS PTY LTD,068 919 568,,417 MCLAUGHLIN STREET NORTH ROCKHAMPTON QLD 4701,Company,C,Category 2,2,Trade Contractor Licence,Air Handling Duct Installation
+528,718408,ADNOUGHT SHEET METAL FABRICATIONS PTY LTD,068 919 568,,417 MCLAUGHLIN STREET NORTH ROCKHAMPTON QLD 4701,Company,C,Category 2,2,Trade Contractor Licence,Structural Metal Fabrication and Erection
+529,726861,LITTLEJOHN CONSTRUCTIONS (QLD)  PTY LTD,071 834 136,76 071 834 136,149 Forest Ridge Dr Narangba QLD 4504,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+530,726861,LITTLEJOHN CONSTRUCTIONS (QLD)  PTY LTD,071 834 136,76 071 834 136,149 Forest Ridge Dr Narangba QLD 4504,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Joinery
+531,1272330,BRIAN HALL PAINTING CONTRACTORS PTY LTD,144 674 457,32 144 674 457,Unit 15/19 Gould Road HERSTON QLD 4006,Company,C,Category 1,1,Trade Contractor Licence,Painting and Decorating
+532,1187918,DAVBUILT CONSTRUCTIONS PTY LTD,131 826 296,50 131 826 296,24 Carbeen Circuit Springfield QLD 4300,Company,C,Category 2,2,Builder Licence,Builder - Open
+533,1059280,FOWKE DESIGN AND CONSTRUCTION PTY LTD,099 649 108,54 099 649 108,225 JEFFERSON LANE PALM BEACH QLD 4221,Company,C,Category 3,3,Builder Licence,Builder - Open
+534,1059940,DUNMORE BUILDING SERVICES PTY LTD,109 626 084,23 109 626 084,620-628 Camp Cable Rd Logan Village QLD 4207,Company,C,Category 2,2,Trade Contractor Licence,"Glass, Glazing and Aluminium"
+535,1059940,DUNMORE BUILDING SERVICES PTY LTD,109 626 084,23 109 626 084,620-628 Camp Cable Rd Logan Village QLD 4207,Company,C,Category 2,2,Builder Licence,Builder - Low Rise
+536,1059940,DUNMORE BUILDING SERVICES PTY LTD,109 626 084,23 109 626 084,620-628 Camp Cable Rd Logan Village QLD 4207,Company,C,Category 2,2,Builder Licence,Builder - Open
+537,1059940,DUNMORE BUILDING SERVICES PTY LTD,109 626 084,23 109 626 084,620-628 Camp Cable Rd Logan Village QLD 4207,Company,C,Category 2,2,Trade Contractor Licence,Plumbing and Drainage
+538,1283361,STARK AIR CONDITIONING & REFRIGERATION PTY LTD,169 863 567,50 169 863 567,21 Ferrier St Aspley QLD 4034,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Air Handling Duct Installation
+539,15207935,Jake David Gould,,94 880 678 310,12 Merino Dr Helensvale QLD 4212,Individual,I,Self Certification - Trade,SCT1,Site Supervisor,Builder - Open
+540,15207935,Jake David Gould,,94 880 678 310,12 Merino Dr Helensvale QLD 4212,Individual,I,Self Certification - Trade,SCT1,Nominee Supervisor,Builder - Open
+541,15207935,Jake David Gould,,94 880 678 310,12 Merino Dr Helensvale QLD 4212,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+542,536948,STEVEN JOHN JONES,,,61 Utschink Road KLEINTON QLD 4352,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Floor Finishing and Covering (Hard Sector)
+543,1283744,MATTHEW DAVID GREEN,,28 551 547 430,4 MINDARIE STREET ORMEAU QLD 4208,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+544,1210465,JUSTIN JAMES MICALLEF,,,"LEVEL 9, 503-505 KENT STREET SYDNEY NSW 2000",Individual,I,No Financials Required,N/A,Nominee Supervisor,Builder - Project Management Services
+545,1158591,LUCAS ALEXANDER MURPHY,,,11/8 Musgrave Street Coolangatta QLD 4225,Individual,I,No Financials Required,N/A,Site Supervisor,Concreting
+546,1158591,LUCAS ALEXANDER MURPHY,,,11/8 Musgrave Street Coolangatta QLD 4225,Individual,I,No Financials Required,N/A,Nominee Supervisor,Concreting
+547,1213027,BRETT PINCOTT,,11 493 560 587,1/9 Hentdale Crt Labrador QLD 4215,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+548,1213027,BRETT PINCOTT,,11 493 560 587,1/9 Hentdale Crt Labrador QLD 4215,Individual,I,Self Certification - Trade,SCT1,Site Supervisor,Builder - Low Rise
+549,1148557,BRENDAN ALAN LISTON,,81 833 099 579,114 Barden Ridge Rd Reedy Creek QLD 4227,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Structural Landscaping (Trade)
+550,1148557,BRENDAN ALAN LISTON,,81 833 099 579,114 Barden Ridge Rd Reedy Creek QLD 4227,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,"Swimming Pool Construction, Installation and Maintenance"
+551,1113832,JEFFREY JAMES MCKINNON,,84 162 890 608,10 GLENELLA STREET THE GAP QLD 4061,Individual,I,No Financials Required,N/A,Site Supervisor,Builder - Low Rise
+552,67225,JAMIE DEAN WARD,,,3 BLACKALL STREET COOMERA QLD 4209,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+553,67225,JAMIE DEAN WARD,,,3 BLACKALL STREET COOMERA QLD 4209,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Joinery
+554,67225,JAMIE DEAN WARD,,,3 BLACKALL STREET COOMERA QLD 4209,Individual,I,Self Certification - Trade,SCT1,Site Supervisor,Builder - Low Rise
+555,15338363,GARETH EDWARD HUGHES,,,82 Chelmer St W Chelmer QLD 4068,Individual,I,No Financials Required,N/A,Site Supervisor,Builder - Low Rise
+556,15344651,Harley Branten,,,63 Lenehans Lane Doonan QLD 4562,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Gasfitting
+557,15344651,Harley Branten,,,63 Lenehans Lane Doonan QLD 4562,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+558,15366735,CODY JAMES PHIBBS,,70 090 256 457,17 southern cross drive newport Queensland 4020,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+559,15366735,CODY JAMES PHIBBS,,70 090 256 457,17 southern cross drive newport Queensland 4020,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Gasfitting
+560,15375547,Matthew David Phillips,,,UNIT 12 66 MCLEAN ST COOLANGATTA QLD 4225,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Gasfitting
+561,15375547,Matthew David Phillips,,,UNIT 12 66 MCLEAN ST COOLANGATTA QLD 4225,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+562,15208811,HPG PROGRAMMED MAINTENANCE & REPAIRS PTY LTD,603 310 434,13 603 310 434,234 Main North Rd Prospect SA 5082,Company,C,Category 3,3,Trade Contractor Licence,Carpentry
+563,15208811,HPG PROGRAMMED MAINTENANCE & REPAIRS PTY LTD,603 310 434,13 603 310 434,234 Main North Rd Prospect SA 5082,Company,C,Category 3,3,Trade Contractor Licence,Joinery
+564,15208811,HPG PROGRAMMED MAINTENANCE & REPAIRS PTY LTD,603 310 434,13 603 310 434,234 Main North Rd Prospect SA 5082,Company,C,Category 3,3,Trade Contractor Licence,Wall and Floor Tiling
+565,15208811,HPG PROGRAMMED MAINTENANCE & REPAIRS PTY LTD,603 310 434,13 603 310 434,234 Main North Rd Prospect SA 5082,Company,C,Category 3,3,Builder Licence,Builder - Medium Rise
+566,15208811,HPG PROGRAMMED MAINTENANCE & REPAIRS PTY LTD,603 310 434,13 603 310 434,234 Main North Rd Prospect SA 5082,Company,C,Category 3,3,Builder Licence,Builder - Open
+567,15244760,Luke Gillett,,96 782 560 934,83 Protea Drive Bongaree QLD 4507,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+568,15244760,Luke Gillett,,96 782 560 934,83 Protea Drive Bongaree QLD 4507,Individual,I,Self Certification - Builder/Trade,SC2,Site Supervisor,Builder - Low Rise
+569,15244760,Luke Gillett,,96 782 560 934,83 Protea Drive Bongaree QLD 4507,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+570,15257070,Clint Purse,,,560 South Yaamba Rd South Yaamba QLD 4702,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Structural Metal Fabrication and Erection
+571,15269303,Jeffrey James Barrass,,,142 Suncoast Beach Drive Mount Coolum QLD 4573,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+572,15285151,Shaun Noel Herries,,13 454 131 206,U 403  19 Winston St Coolangatta QLD 4225,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Roof and Wall Cladding
+573,15290837,Mark Plosnic,,,Unit 4/263 Dromana Parade Safety Beach Vic 3936,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+574,15120676,CASEY JOHN MAYFIELD,,66 703 897 244,16 soudan street Toowong QLD 4066,Individual,I,Self Certification - Builder/Trade,SC2,Site Supervisor,Builder - Low Rise
+575,15120676,CASEY JOHN MAYFIELD,,66 703 897 244,16 soudan street Toowong QLD 4066,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+576,15144782,Lee David Bolton,,66 842 951 980,10 McKinlay crescent Nirimba QLD 4551,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Gasfitting
+577,15144782,Lee David Bolton,,66 842 951 980,10 McKinlay crescent Nirimba QLD 4551,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+578,15180676,AR BUILT HOMES PTY LTD.,629 147 897,81 629 147 897,5 Heritage Lane Little Mountain QLD 4551,Company,C,Category 2,2,Builder Licence,Builder - Low Rise
+579,15180676,AR BUILT HOMES PTY LTD.,629 147 897,81 629 147 897,5 Heritage Lane Little Mountain QLD 4551,Company,C,Category 2,2,Trade Contractor Licence,Carpentry
+580,15189094,Bryce Daniel Perry-Bolt,,75 319 374 360,54 Blair Athol crescent Bundall QLD 4217,Individual,I,No Financials Required,N/A,Nominee Supervisor,Plumbing and Drainage
+581,15195235,DAVID BENJAMIN FRANCIS,,93 640 984 854,27 Toft street Marburg QLD 4346,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Structural Landscaping (Trade)
+582,15195235,DAVID BENJAMIN FRANCIS,,93 640 984 854,27 Toft street Marburg QLD 4346,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Joinery
+583,15195235,DAVID BENJAMIN FRANCIS,,93 640 984 854,27 Toft street Marburg QLD 4346,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Metal Fascias and Gutters
+584,15195235,DAVID BENJAMIN FRANCIS,,93 640 984 854,27 Toft street Marburg QLD 4346,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,"Sheds, Carports and Garages"
+585,15195235,DAVID BENJAMIN FRANCIS,,93 640 984 854,27 Toft street Marburg QLD 4346,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Floor Finishing and Covering (Hard Sector)
+586,15195235,DAVID BENJAMIN FRANCIS,,93 640 984 854,27 Toft street Marburg QLD 4346,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Roof and Wall Cladding
+587,15195235,DAVID BENJAMIN FRANCIS,,93 640 984 854,27 Toft street Marburg QLD 4346,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+588,15195908,BENJAMIN JAMES WALSH,,,25 STANTON ST BELGIAN GARDENS QLD 4810,Individual,I,No Financials Required,N/A,Nominee Supervisor,Builder - Medium Rise
+589,15195908,BENJAMIN JAMES WALSH,,,25 STANTON ST BELGIAN GARDENS QLD 4810,Individual,I,No Financials Required,N/A,Site Supervisor,Builder - Medium Rise
+590,15387115,Philip John Faulkner,,,26 Woody Views Way Robina QLD 4226,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+591,15387115,Philip John Faulkner,,,26 Woody Views Way Robina QLD 4226,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+592,15389693,Hayden Adam Kither,,,135 OLD PALMWOODS RD WEST WOOMBYE QLD 4559,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+593,737055,BADGE CONSTRUCTIONS (QLD) PTY LTD,092 774 662,63 092 774 662,63 OXFORD ST BULIMBA QLD 4171,Company,C,Category 7,7,Builder Licence,Builder - Open
+594,1069118,JKC BUILDING PTY LTD,112 729 058,83 112 729 058,15 Robinson Street Belgian Gardens QLD 4810,Company,C,Category 2,2,Builder Licence,Builder - Low Rise
+595,1069118,JKC BUILDING PTY LTD,112 729 058,83 112 729 058,15 Robinson Street Belgian Gardens QLD 4810,Company,C,Category 2,2,Trade Contractor Licence,Plumbing and Drainage
+596,1096084,ONDRE ARKADIEFF PLUMBING AND DRAINAGE CONTRACTORS  PTY LTD,062 762 592,79 062 762 592,U 14  178 Redland Bay Rd Capalaba QLD 4157,Company,C,Category 3,3,Builder Licence,Builder - Low Rise
+597,1096084,ONDRE ARKADIEFF PLUMBING AND DRAINAGE CONTRACTORS  PTY LTD,062 762 592,79 062 762 592,U 14  178 Redland Bay Rd Capalaba QLD 4157,Company,C,Category 3,3,Trade Contractor Licence,Plumbing and Drainage
+598,1029730,THALLON MOLE GROUP PTY LTD,104 671 801,52 104 671 801,U 3  30 Bishop St Kelvin Grove QLD 4059,Company,C,Category 4,4,Builder Licence,Builder - Medium Rise
+599,1304682,TASSIN DEVELOPMENTS PTY LTD,126 386 909,79 126 386 909,9 Sentinel Court Cooloola Cove QLD 4580,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+600,1287228,C & S STEELFIXING PTY LTD,602 505 073,48 602 505 073,80 woonga dr ashgrove QLD 4060,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Steel Fixing
+601,1285198,BALDY'S KITCHENS PTY LTD,601 760 721,,21 GORE STREET WESTBROOK QLD 4350,Company,C,Category 2,2,Builder Licence,Builder Restricted to Shopfitting
+602,1285198,BALDY'S KITCHENS PTY LTD,601 760 721,,21 GORE STREET WESTBROOK QLD 4350,Company,C,Category 2,2,Trade Contractor Licence,Joinery
+603,1285198,BALDY'S KITCHENS PTY LTD,601 760 721,,21 GORE STREET WESTBROOK QLD 4350,Company,C,Category 2,2,Builder Licence,"Builder Restricted to Kitchen, Bathroom and Laundry Installation"
+604,1000698,DEAN NOEL FOWLER,,89 119 354 022,10/47 MUSGRAVE ROAD COOPERS PLAINS QLD 4108,Individual,I,No Financials Required,N/A,Nominee Supervisor,Builder - Low Rise
+605,1217702,WESLEY ALFRED SPEIGHT,,94 611 582 302,28 Digby Rd Lake Eacham QLD 4884,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+606,1217702,WESLEY ALFRED SPEIGHT,,94 611 582 302,28 Digby Rd Lake Eacham QLD 4884,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Gasfitting
+607,25064,GLEN RAYMOND CRAMB,,,22 SWORDFISH CT PALM BEACH QLD 4221,Individual,I,Category 1,1,Builder Licence,Builder - Low Rise
+608,1283492,MATTHEW JAMES HANLEY,,,7 Sixth Ave Palm Beach QLD 4221,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Fire Protection - Electrical Stream - Inspect and Test - Emergency Lighting
+609,1283492,MATTHEW JAMES HANLEY,,,7 Sixth Ave Palm Beach QLD 4221,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Fire Protection - Portables Stream - Install and Maintain
+610,1283492,MATTHEW JAMES HANLEY,,,7 Sixth Ave Palm Beach QLD 4221,Individual,I,Self Certification - Builder/Trade,SC2,Fire Occupational,Fire Protection - Passive Stream Occupational - Inspect and Test
+611,1283492,MATTHEW JAMES HANLEY,,,7 Sixth Ave Palm Beach QLD 4221,Individual,I,Self Certification - Builder/Trade,SC2,Fire Occupational,Fire Protection - Portables Stream Occupational - Install and Maintain
+612,1283492,MATTHEW JAMES HANLEY,,,7 Sixth Ave Palm Beach QLD 4221,Individual,I,Self Certification - Builder/Trade,SC2,Fire Occupational,Fire Protection - Electrical Stream Occupational - Install and Maintain - Fire Alarm Systems
+613,1283492,MATTHEW JAMES HANLEY,,,7 Sixth Ave Palm Beach QLD 4221,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Fire Pumps
+614,1283492,MATTHEW JAMES HANLEY,,,7 Sixth Ave Palm Beach QLD 4221,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Fire Protection - Passive Stream - Inspect and Test
+615,1283492,MATTHEW JAMES HANLEY,,,7 Sixth Ave Palm Beach QLD 4221,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Fire Protection - Electrical Stream - Install and Maintain - Fire Alarm Systems
+616,1283492,MATTHEW JAMES HANLEY,,,7 Sixth Ave Palm Beach QLD 4221,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Fire Protection - Electrical Stream - Certify - Emergency Lighting
+617,20663,VIVIAN CRAIG HORNICK,,,673 Farleigh Habana Rd Habana QLD 4740,Individual,I,No Financials Required,N/A,Nominee Supervisor,Carpentry (Formwork)
+618,20663,VIVIAN CRAIG HORNICK,,,673 Farleigh Habana Rd Habana QLD 4740,Individual,I,No Financials Required,N/A,Nominee Supervisor,Carpentry
+619,20663,VIVIAN CRAIG HORNICK,,,673 Farleigh Habana Rd Habana QLD 4740,Individual,I,No Financials Required,N/A,Nominee Supervisor,Joinery
+620,20663,VIVIAN CRAIG HORNICK,,,673 Farleigh Habana Rd Habana QLD 4740,Individual,I,No Financials Required,N/A,Nominee Supervisor,Concreting
+621,20663,VIVIAN CRAIG HORNICK,,,673 Farleigh Habana Rd Habana QLD 4740,Individual,I,No Financials Required,N/A,Nominee Supervisor,Builder - Low Rise
+622,15354427,LEADING EDGE CONSTRUCTIONS PTY LTD,664 145 493,80 664 145 493,3 Little Barron St Gordon Park QLD 4031,Company,C,Category 3,3,Builder Licence,Builder - Low Rise
+623,15365197,Jack Baker,,,5 Arthur drive Parkhurst QLD 4702,Individual,I,No Financials Required,N/A,Site Supervisor,Carpentry
+624,15365197,Jack Baker,,,5 Arthur drive Parkhurst QLD 4702,Individual,I,No Financials Required,N/A,Site Supervisor,Builder - Medium Rise
+625,15381691,Andrew Dawson,,,30 Stinson Cct Coomera QLD 4209,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Structural Landscaping (Trade)
+626,15218789,Li Yan,,,37 DEBUSSY PL MOUNT OMMANEY QLD 4074,Individual,I,Self Certification - Trade,SCT1,Site Supervisor,Builder - Open
+627,15218789,Li Yan,,,37 DEBUSSY PL MOUNT OMMANEY QLD 4074,Individual,I,Self Certification - Trade,SCT1,Nominee Supervisor,Builder - Open
+628,15218789,Li Yan,,,37 DEBUSSY PL MOUNT OMMANEY QLD 4074,Individual,I,Self Certification - Trade,SCT1,Site Supervisor,Builder - Low Rise
+629,15218789,Li Yan,,,37 DEBUSSY PL MOUNT OMMANEY QLD 4074,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plastering Drywall
+630,15218789,Li Yan,,,37 DEBUSSY PL MOUNT OMMANEY QLD 4074,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+631,15218789,Li Yan,,,37 DEBUSSY PL MOUNT OMMANEY QLD 4074,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Structural Landscaping (Trade)
+632,15225999,Nam Goo Lee,,81 307 156 325,62a AVONMORE ST EDENS LANDING QLD 4207,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+633,15225999,Nam Goo Lee,,81 307 156 325,62a AVONMORE ST EDENS LANDING QLD 4207,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+634,15225999,Nam Goo Lee,,81 307 156 325,62a AVONMORE ST EDENS LANDING QLD 4207,Individual,I,Self Certification - Builder/Trade,SC2,Site Supervisor,Builder - Low Rise
+635,15239649,Gavin John Russell,,,6 Koonan Court Ashmore QLD 4214,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+636,15257522,Dale Robert Contarini,,,11 SIRRAH ST GEEBUNG QLD 4034,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+637,15258997,HATCH BUILT PTY LTD,652 126 620,76 652 126 620,4 Shields St Redcliffe QLD 4020,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+638,15271715,Ashley Paul Anthony Moignard,,81 950 076 880,117 ASHMOLE RD NEWPORT QLD 4020,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+639,15271715,Ashley Paul Anthony Moignard,,81 950 076 880,117 ASHMOLE RD NEWPORT QLD 4020,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+640,15282707,Jack William Balderson,,,5 Keira Ct Blue Mountain Heights QLD 4350,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+641,15122151,MATTHEW WILLIAM CAMPBELL,,,29 Belltrees Pl Gracemere QLD 4702,Individual,I,No Financials Required,N/A,Nominee Supervisor,Plumbing and Drainage
+642,15122720,Shaun Harrison Attwood,,,Unit 6 Ground Floor Block A 88 Limestone Street Ipswich QLD 4305,Individual,I,No Financials Required,N/A,Site Supervisor,Builder - Open
+643,15122720,Shaun Harrison Attwood,,,Unit 6 Ground Floor Block A 88 Limestone Street Ipswich QLD 4305,Individual,I,No Financials Required,N/A,Site Supervisor,Builder - Medium Rise
+644,15137049,ALEC MIFSUD,,,19 ONTARIO CT OXENFORD QLD 4210,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Structural Metal Fabrication and Erection
+645,15143520,Tiberiu Tibi Tudor,,,78-96 Edgewater Dr Chambers Flats QLD 4133,Individual,I,No Financials Required,N/A,Fire Occupational,"Passive Fire Protection - Fire Collars, Penetrations and Joint Sealing - Occupational"
+646,15144188,MICHAEL JOHN ROBERTS,,79 155 366 085,7 Tara Dr Mandalay QLD 4802,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Painting and Decorating
+647,15144188,MICHAEL JOHN ROBERTS,,79 155 366 085,7 Tara Dr Mandalay QLD 4802,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Waterproofing
+648,15144912,Coastile Pty Ltd,635 564 019,36 635 564 019,13 Clives Circuit Currumbin Waters QLD 4223,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Wall and Floor Tiling
+649,15144912,Coastile Pty Ltd,635 564 019,36 635 564 019,13 Clives Circuit Currumbin Waters QLD 4223,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Brick and Segmental Paving
+650,15160820,FENIX HOMES PTY LTD,635 847 031,21 635 847 031,71 Waters St Willawong QLD 4110,Company,C,Category 3,3,Builder Licence,Builder - Low Rise
+651,15201910,Ali Mohammad Rezai,,,30 Kao St Marsden QLD 4132,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Wall and Floor Tiling
+652,15394833,COAST TO COAST REMEDIAL & WATERPROOFING PTY LTD,668 010 311,81 668 010 311,15 Pappas Way Carrara QLD 4211,Company,C,Category 1,1,Trade Contractor Licence,Waterproofing
+653,15394833,COAST TO COAST REMEDIAL & WATERPROOFING PTY LTD,668 010 311,81 668 010 311,15 Pappas Way Carrara QLD 4211,Company,C,Category 1,1,Trade Contractor Licence,Concreting
+654,23846,HALLMARK HOMES PTY. LTD.,007 959 524,57 007 959 524,"701, 7th Floor, 22 FRAZER ST SOUTHPORT QLD 4215",Company,C,Category 7,7,Builder Licence,Builder - Low Rise
+655,1090681,ICHIBAN SERVICES PTY LTD,116 770 060,74 116 770 060,U 1  88 Spencer Rd Nerang QLD 4211,Company,C,Category 2,2,Builder Licence,Builder - Low Rise
+656,1090681,ICHIBAN SERVICES PTY LTD,116 770 060,74 116 770 060,U 1  88 Spencer Rd Nerang QLD 4211,Company,C,Category 2,2,Trade Contractor Licence,"Sheds, Carports and Garages"
+657,1090681,ICHIBAN SERVICES PTY LTD,116 770 060,74 116 770 060,U 1  88 Spencer Rd Nerang QLD 4211,Company,C,Category 2,2,Trade Contractor Licence,Concreting
+658,1090681,ICHIBAN SERVICES PTY LTD,116 770 060,74 116 770 060,U 1  88 Spencer Rd Nerang QLD 4211,Company,C,Category 2,2,Trade Contractor Licence,Structural Metal Fabrication and Erection
+659,1311681,TOM RYAN BUILDERS PTY LTD,169 645 970,31 169 645 970,19 NICKEL STREET ZILLMERE QLD 4034,Company,C,Category 2,2,Builder Licence,Builder - Low Rise
+660,1311681,TOM RYAN BUILDERS PTY LTD,169 645 970,31 169 645 970,19 NICKEL STREET ZILLMERE QLD 4034,Company,C,Category 2,2,Builder Licence,Builder - Medium Rise
+661,656562,C M S PROJECTS PTY LTD,078 678 323,82 078 678 323,12/8 SPRINGLANDS DRIVE SLACKS CREEK QLD 4127,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+662,1108994,TILTCON CONSTRUCTIONS PTY LTD,121 628 939,76 121 628 939,38 PLUCKS ROAD ARANA HILLS QLD 4054,Company,C,Category 2,2,Builder Licence,Builder - Open
+663,1029682,MOORTOP PTY LTD,060 036 160,19 060 036 160,22 Newing Way Caloundra West QLD 4551,Company,C,Category 2,2,Trade Contractor Licence,"Swimming Pool Construction, Installation and Maintenance"
+664,1029682,MOORTOP PTY LTD,060 036 160,19 060 036 160,22 Newing Way Caloundra West QLD 4551,Company,C,Category 2,2,Trade Contractor Licence,Plumbing and Drainage
+665,79794,CLEAN LINE PLUMBING PTY. LTD.,079 011 199,,243 JOHN ST MARYBOROUGH QLD 4650,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Plumbing and Drainage
+666,1229813,RYDERK PTY LTD,153 430 838,14 153 430 838,71 Jones Pde COOLUM BEACH QLD 4573,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Roof and Wall Cladding
+667,733069,SCOTT CLEMENTS CONSTRUCTIONS PTY LTD,094 737 809,,Unit 37 16 Crockford Street Northgate QLD 4013,Company,C,Category 2,2,Builder Licence,Builder - Low Rise
+668,1301543,DAVID JAMES KEAM,,97 304 812 101,192 Woodbury Road Bungundarra QLD 4703,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Plumbing and Drainage
+669,1301543,DAVID JAMES KEAM,,97 304 812 101,192 Woodbury Road Bungundarra QLD 4703,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Gasfitting
+670,1054842,CAMERON ANDERSON,,69 610 454 016,5 Ferrier Rd Narangba QLD 4504,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Gasfitting
+671,1054842,CAMERON ANDERSON,,69 610 454 016,5 Ferrier Rd Narangba QLD 4504,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Plumbing and Drainage
+672,737832,CLAYTON MYLES GRANZIEN,,,29 Langlands Street Karalee QLD 4036,Individual,I,No Financials Required,N/A,Nominee Supervisor,Gasfitting
+673,737832,CLAYTON MYLES GRANZIEN,,,29 Langlands Street Karalee QLD 4036,Individual,I,No Financials Required,N/A,Nominee Supervisor,Plumbing and Drainage
+674,1239660,MATTHEW JAN ERENDS,,34 469 158 026,23 Kokoda Ave Bli Bli QLD 4560,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+675,1239660,MATTHEW JAN ERENDS,,34 469 158 026,23 Kokoda Ave Bli Bli QLD 4560,Individual,I,Self Certification - Trade,SCT1,Site Supervisor,Builder - Low Rise
+676,81479,GRAHAM LAWRENCE HOLDEN,,89 177 184 706,28 Noon Drive Inverness QLD 4703,Individual,I,No Financials Required,N/A,Nominee Supervisor,Builder - Low Rise
+677,81479,GRAHAM LAWRENCE HOLDEN,,89 177 184 706,28 Noon Drive Inverness QLD 4703,Individual,I,No Financials Required,N/A,Nominee Supervisor,Carpentry
+678,81479,GRAHAM LAWRENCE HOLDEN,,89 177 184 706,28 Noon Drive Inverness QLD 4703,Individual,I,No Financials Required,N/A,Nominee Supervisor,Joinery
+679,24099,Giovani Anziliero,,64 619 464 180,290 Sandy Creek Road Dimbulah QLD 4872,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Medium Rise
+680,43751,BRIAN ANTHONY SEYCHELL,,,61 ROSENEATH PDE WYNNUM WEST QLD 4178,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Fire Protection - Water-Based Fire System Stream - Install and Maintain - Restricted to Commercial and Industrial Types
+681,43751,BRIAN ANTHONY SEYCHELL,,,61 ROSENEATH PDE WYNNUM WEST QLD 4178,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Plumbing and Drainage
+682,43751,BRIAN ANTHONY SEYCHELL,,,61 ROSENEATH PDE WYNNUM WEST QLD 4178,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Gasfitting
+683,15010404,Jade Thomas Durand,,,23 Jabiru Ave Burleigh Waters QLD 4220,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Roof and Wall Cladding
+684,15042267,TROY MARK PHILLIPS,,52 438 558 995,25 Dolphin dr Bucasia Qld 4750,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Painting and Decorating
+685,15059592,Clarence Mould,,31 336 165 106,3 bulgari crescent hope island QLD 4212,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Wall and Floor Tiling
+686,15512387,KALIBA INVESTMENTS PTY LTD,612 853 488,,SUITE 47/296 BAY RD CHELTENHAM VIC 3192,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+687,15432735,COLIN JACKSON BAKER,,59 610 860 148,2  15 Elizabeth Rd Griffin QLD 4503,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+688,15434873,HSH CABINETS & FURNITURE PTY LTD,672 585 867,13 672 585 867,"Unit 2, 31-35 Oonoonba Road Idalia QLD 4811",Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Cabinet Making
+689,15446019,David Lee Warren England,,54 850 660 685,134 Moreton Tce Beachmere QLD 4510,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+690,15446019,David Lee Warren England,,54 850 660 685,134 Moreton Tce Beachmere QLD 4510,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Roof and Wall Cladding
+691,15446019,David Lee Warren England,,54 850 660 685,134 Moreton Tce Beachmere QLD 4510,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,"Sheds, Carports and Garages"
+692,15446019,David Lee Warren England,,54 850 660 685,134 Moreton Tce Beachmere QLD 4510,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Metal Fascias and Gutters
+693,15446019,David Lee Warren England,,54 850 660 685,134 Moreton Tce Beachmere QLD 4510,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Floor Finishing and Covering (Hard Sector)
+694,15460717,RADICAL RENOVATIONS PTY LTD,674 639 206,26 674 639 206,21 Tequila St Kippa-Ring QLD 4021,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+695,15062517,RMR Constructions Pty Ltd,619 760 655,59 619 760 655,19 Townsend St Mysterton QLD 4812,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+696,15062517,RMR Constructions Pty Ltd,619 760 655,59 619 760 655,19 Townsend St Mysterton QLD 4812,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Concreting
+697,15101970,JASON ANTHONY PAYNE,,83 304 310 070,9 Seiler Ct Karalee QLD 4306,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Termite Management - Chemical
+698,15103446,Wallace Stirling Wendt,,53 879 243 583,23 Point Cartwright Dr Buddina QLD 4575,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+699,15103446,Wallace Stirling Wendt,,53 879 243 583,23 Point Cartwright Dr Buddina QLD 4575,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Floor Finishing and Covering (Hard Sector)
+700,15103446,Wallace Stirling Wendt,,53 879 243 583,23 Point Cartwright Dr Buddina QLD 4575,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Metal Fascias and Gutters
+701,15103446,Wallace Stirling Wendt,,53 879 243 583,23 Point Cartwright Dr Buddina QLD 4575,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Roof and Wall Cladding
+702,15103446,Wallace Stirling Wendt,,53 879 243 583,23 Point Cartwright Dr Buddina QLD 4575,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,"Sheds, Carports and Garages"
+703,15103446,Wallace Stirling Wendt,,53 879 243 583,23 Point Cartwright Dr Buddina QLD 4575,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Structural Landscaping (Trade)
+704,15107502,POK HIN CHIU,,,1/71 Beenleigh Road coopers plains QLD 4108,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+705,1223631,DONALD SIMON LESLIE HERON,,40 049 732 061,1095 Rochedale Rd Rochedale South QLD 4123,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+706,70272,MICHAEL DAVID HINZE,,,U 1  31 Taylor St Marcoola QLD 4564,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Painting and Decorating
+707,1193326,JOSHUA WILLIAM IVAN BOYD,,58 708 217 462,3 Jacqueline Ave Woodcroft SA 5162,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+708,1193326,JOSHUA WILLIAM IVAN BOYD,,58 708 217 462,3 Jacqueline Ave Woodcroft SA 5162,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Joinery
+709,1193326,JOSHUA WILLIAM IVAN BOYD,,58 708 217 462,3 Jacqueline Ave Woodcroft SA 5162,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Roof and Wall Cladding
+710,1193326,JOSHUA WILLIAM IVAN BOYD,,58 708 217 462,3 Jacqueline Ave Woodcroft SA 5162,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+711,74341,DENIS RICHARD OSWIN,,,2 Grey Gum Cl Bridgeman Downs QLD 4035,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+712,1171685,MARK GREGORY BLACK,,99 023 770 718,21-23 Madeline Drive Morayfield QLD 4504,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Cabinet Making
+713,1106917,LINDSAY DANIEL EARL,,92 263 552 249,13 SCHOCH STREET WARWICK QLD 4370,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+714,1106917,LINDSAY DANIEL EARL,,92 263 552 249,13 SCHOCH STREET WARWICK QLD 4370,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+715,1314277,JONATHAN RICHTER,,96 064 337 951,U 2  8 Welch St Underwood QLD 4119,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Painting and Decorating
+716,788738,IAN HURLEY,,,30 HARVEY ST BUNDABERG QLD 4670,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Wall and Floor Tiling
+717,1140886,JULIAN PETER ANDERSON,,26 872 620 303,17A INSTOW STREET YERONGA QLD 4104,Individual,I,Self Certification - Builder/Trade,SC2,Mechanical Services Occupational,Mechanical Services - Plumbing
+718,1140886,JULIAN PETER ANDERSON,,26 872 620 303,17A INSTOW STREET YERONGA QLD 4104,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Mechanical Services - Air-conditioning and Refrigeration (Limited Design)
+719,736270,AARON JOHN SHELLEY,,,12 Springfield Avenue Coolum Beach QLD 4573,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Waterproofing
+720,75186,MICHAEL JOHN KING,,,12 LUCINDA ST CARSELDINE QLD 4034,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+721,1000558,ANTHONY MICHAEL ZIGLIOTTO,,,17 MUIRFIELD CRES TEWANTIN QLD 4565,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Painting and Decorating
+722,23746,GLENN EARLE BENNETTS,,,U 7  84 Taylors Rd Tanawha QLD 4556,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+723,1022130,PETER WILLIAM DREW,,,12 CHERIMOYA COURT GLASS HOUSE MOUNTAINS QLD 4518,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+724,63714,WAYNE REX JOHNSTONE,,,26 SKYLINE TERRACE BURLEIGH HEADS QLD 4220,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Wall and Floor Tiling
+725,63457,RONALD HOWARD BALDWIN,,,545 MCCORMACK STREET CAIRNS QLD 4870,Individual,I,Estimated MR SC1,EMRSC1,Building Designer Licence - EAT,Building Design - Medium Rise
+726,63457,RONALD HOWARD BALDWIN,,,545 MCCORMACK STREET CAIRNS QLD 4870,Individual,I,Estimated MR SC1,EMRSC1,Building Designer Licence - EAT,Building Design - Open
+727,650051,BRIAN JOHN (JNR) UNDERWOOD,,72 518 945 435,10 Manning Street Rural View QLD 4740,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Painting and Decorating
+728,1128380,RYAN DANIEL DREW,,92 251 877 050,10 ABELIA PLACE MOOLOOLABA QLD 4557,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+729,1039226,SANDRA KOSIC,,,11 BEECHWOOD CLOSE STRETTON QLD 4116,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+730,1042389,DANIAL METCALFE,,,6 SMITH CRESCENT PALUMA QLD 4816,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Joinery
+731,1042389,DANIAL METCALFE,,,6 SMITH CRESCENT PALUMA QLD 4816,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+732,1169399,DAVID SPENCER SPEEDY,,31 476 839 534,75 GYMPIE STREET NORTHGATE QLD 4013,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Floor Finishing and Covering (Hard Sector)
+733,744737,MARK ANDREW VAN TIL,,,116 BEACON RD LOWOOD QLD 4311,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,"Refrigeration, Airconditioning And Mechanical Services Restricted To Multipackaged Residential Airconditioning Equipment And Plant"
+734,21639,PETER JOHN SODEN,,,2 Mawarra St buddina QLD 4575,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Medium Rise
+735,1197644,DARREN MICHAEL LOWE,,33 773 774 365,17 HOBAN COURT NERANG QLD 4211,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+736,53274,JEFFERSON BRICE,,,70 THE PROMENADE SURFERS PARADISE QLD 4217,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Bricklaying and Blocklaying
+737,53274,JEFFERSON BRICE,,,70 THE PROMENADE SURFERS PARADISE QLD 4217,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+738,889827,MARK STEPHEN BULLEN,,12 044 587 862,U 85  14 Everest St Warner QLD 4500,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+739,889827,MARK STEPHEN BULLEN,,12 044 587 862,U 85  14 Everest St Warner QLD 4500,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Joinery
+740,889827,MARK STEPHEN BULLEN,,12 044 587 862,U 85  14 Everest St Warner QLD 4500,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+741,1137256,DANIEL COSIC,,21 770 228 612,12 ironbark rd Little Mountain Qld 4551,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+742,1137256,DANIEL COSIC,,21 770 228 612,12 ironbark rd Little Mountain Qld 4551,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Gasfitting
+743,701489,CAMERON SCOTT ROPER,,,3 GEORDON STREET NARANGBA QLD 4504,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+744,701489,CAMERON SCOTT ROPER,,,3 GEORDON STREET NARANGBA QLD 4504,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Joinery
+745,701489,CAMERON SCOTT ROPER,,,3 GEORDON STREET NARANGBA QLD 4504,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+746,711283,BRADLEY THOMAS DEAS,,,20 SKYLINE DRIVE KHOLO QLD 4306,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+747,711283,BRADLEY THOMAS DEAS,,,20 SKYLINE DRIVE KHOLO QLD 4306,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Joinery
+748,711283,BRADLEY THOMAS DEAS,,,20 SKYLINE DRIVE KHOLO QLD 4306,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+749,74705,KEVIN RON LAMMI,,,58 MARINERS WAY BUNDABERG NORTH QLD 4670,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Floor Finishing and Covering (Hard Sector)
+750,19211,MARK THOMAS DELLER,,,5 HOOK CT ARUNDEL QLD 4214,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+751,19211,MARK THOMAS DELLER,,,5 HOOK CT ARUNDEL QLD 4214,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+752,19926,JAMES VINCENT JOSEPH COLEMAN,,,1/22 Markham Ave Runaway Bay QLD 4216,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Building Restricted To Alterations And Additions
+753,19926,JAMES VINCENT JOSEPH COLEMAN,,,1/22 Markham Ave Runaway Bay QLD 4216,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+754,19926,JAMES VINCENT JOSEPH COLEMAN,,,1/22 Markham Ave Runaway Bay QLD 4216,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Joinery
+755,31685,BRIAN ERIC GOLDEN,,,74 The Esplanade Paradise Point QLD 4216,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+756,31685,BRIAN ERIC GOLDEN,,,74 The Esplanade Paradise Point QLD 4216,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+757,2005,LAURIE ALLAN BOULTON,,,U1 38 CRONIN AVE MAIN BEACH QLD 4217,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+758,1132271,SHIN WOOK (ALEX) KANG,,63 118 342 215,4 BINDRA STREET HOLMVIEW QLD 4207,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Wall and Floor Tiling
+759,41740,FRANCIS LAURENCE LEBEN,,,69 KIRKLAND AVE COORPAROO QLD 4151,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+760,1170684,ANTHONY JOHN HARLAND,,21 797 998 878,17 HANDO STREET CHINCHILLA QLD 4413,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+761,711441,DAVID BRUCE MCKENZIE,,53 551 568 094,15 BEHRENS ROAD BELLMERE QLD 4510,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Painting and Decorating
+762,15617907,MALWA BRICKLAYING SERVICES PTY LTD,673 674 309,71 673 674 309,9 YARRI ST BONNER ACT 2914,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Bricklaying and Blocklaying
+763,15056545,Leigh James Hardie,,27 237 488 187,21 SPRINGSURE DR MUDGEERABA QLD 4213,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Plastering Drywall
+764,15525867,K1W1 CONSTRUCTION PTY LTD,685 772 641,19 685 772 641,21 GLENAFTON CT ORMEAU QLD 4208,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+765,15525867,K1W1 CONSTRUCTION PTY LTD,685 772 641,19 685 772 641,21 GLENAFTON CT ORMEAU QLD 4208,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Joinery
+766,15525867,K1W1 CONSTRUCTION PTY LTD,685 772 641,19 685 772 641,21 GLENAFTON CT ORMEAU QLD 4208,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Floor Finishing and Covering (Hard Sector)
+767,15525867,K1W1 CONSTRUCTION PTY LTD,685 772 641,19 685 772 641,21 GLENAFTON CT ORMEAU QLD 4208,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Metal Fascias and Gutters
+768,15525867,K1W1 CONSTRUCTION PTY LTD,685 772 641,19 685 772 641,21 GLENAFTON CT ORMEAU QLD 4208,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Roof and Wall Cladding
+769,15525867,K1W1 CONSTRUCTION PTY LTD,685 772 641,19 685 772 641,21 GLENAFTON CT ORMEAU QLD 4208,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,"Sheds, Carports and Garages"
+770,15525867,K1W1 CONSTRUCTION PTY LTD,685 772 641,19 685 772 641,21 GLENAFTON CT ORMEAU QLD 4208,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Structural Landscaping (Trade)
+771,15533285,JIAJUN YE,,44 811 712 881,PARKSIDE RESIDENCES UNIT 6 26 ELIZABETH ST ROCHEDALE QLD 4123,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Painting and Decorating
+772,15546103,ECOCOAT PAINTINGS PTY LTD,683 432 082,18 683 432 082,15 NORTHERLY ST LOGAN RESERVE QLD 4133,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Painting and Decorating
+773,15461555,Khalil Golzari,,95 473 550 660,12 Oasis Ct Marsden QLD 4132,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Wall and Floor Tiling
+774,15477267,Joshua Trevor-Jay Williamson,,,58 BOOMI AVE SOUTH MACLEAN QLD 4280,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Plumbing and Drainage
+775,15077229,Mitchell Aron BARKER,,,92A Dixon Dr Pimpama QLD 4209,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+776,15077229,Mitchell Aron BARKER,,,92A Dixon Dr Pimpama QLD 4209,Individual,I,Self Certification - Builder/Trade,SC2,Site Supervisor,Builder - Low Rise
+777,15077229,Mitchell Aron BARKER,,,92A Dixon Dr Pimpama QLD 4209,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+778,15081000,Emma Joanne King,,,16 Undara Ave Buddina QLD 4575,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+779,15098571,Townson Plumbing Pty Ltd,627 116 590,52 627 116 590,8 Maroo Pl Dulong QLD 4560,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Plumbing and Drainage
+780,15104310,QUEENSLAND CIVIL AND GENERAL CONSTRUCTIONS PTY LTD,628 319 095,52 628 319 095,6-10 ENTERPRISE ST KUNDA PARK QLD 4556,Company,C,Category 2,2,Trade Contractor Licence,Gasfitting
+781,15104310,QUEENSLAND CIVIL AND GENERAL CONSTRUCTIONS PTY LTD,628 319 095,52 628 319 095,6-10 ENTERPRISE ST KUNDA PARK QLD 4556,Company,C,Category 2,2,Trade Contractor Licence,Plumbing and Drainage
+782,15104310,QUEENSLAND CIVIL AND GENERAL CONSTRUCTIONS PTY LTD,628 319 095,52 628 319 095,6-10 ENTERPRISE ST KUNDA PARK QLD 4556,Company,C,Category 2,2,Builder Licence,Builder - Medium Rise
+783,15104440,Matthew Galea,,76 863 891 751,17 Muller St Nanango QLD 4615,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+784,15104440,Matthew Galea,,76 863 891 751,17 Muller St Nanango QLD 4615,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+785,1034286,TAMA DESMOND KOTARA,,,21 FLINDERS DRIVE MORANBAH QLD 4744,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Mechanical Services - Air-conditioning and Refrigeration (Limited Design)
+786,1151015,GREGORY ROSS MANFIELD,,95 695 475 934,31 MOUNTRIDGE  STREET EVERTON PARK QLD 4053,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+787,1151015,GREGORY ROSS MANFIELD,,95 695 475 934,31 MOUNTRIDGE  STREET EVERTON PARK QLD 4053,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+788,1121107,MARTIN JAMES TEMOREHU ANDERSON,,34 905 335 450,3 RILL COURT NERANG QLD 4211,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+789,1117952,WARREN GLENN PUGH,,,2 AZURE CRESCENT GRIFFIN QLD 4503,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Painting and Decorating
+790,1314572,MICHAEL HARVEST MAHONY,,16 831 224 408,20 Coburg ROAD CANUNGRA QLD 4275,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+791,32080,BENJAMIN PATRICK ABSOLON,,,23 BAUHINIA ST ALLINGHAM QLD 4850,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+792,32080,BENJAMIN PATRICK ABSOLON,,,23 BAUHINIA ST ALLINGHAM QLD 4850,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+793,46048,ADRIAN ROBERT HUGHES,,,70 Panorama Drive Doonan QLD 4562,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+794,46048,ADRIAN ROBERT HUGHES,,,70 Panorama Drive Doonan QLD 4562,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Joinery
+795,14534,TERENCE KEITH LIEKEFETT,,,7 SIR ARTHUR FADDEN PARADE INGHAM QLD 4850,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+796,78738,DEAN ALAN WARDELL,,,2 Boonaravale Road GOOMERI QLD 4601,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+797,78738,DEAN ALAN WARDELL,,,2 Boonaravale Road GOOMERI QLD 4601,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Joinery
+798,78738,DEAN ALAN WARDELL,,,2 Boonaravale Road GOOMERI QLD 4601,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+799,18582,ALAN GEORGE CATER,,,77 MESSINA CLOSE KANIMBLA QLD 4870,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+800,77193,TROY NEIL CURRELL,,,48 OKINJA ROAD ALEXANDRA HEADLAND QLD 4572,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+801,1016529,GAVIN JOHN NEUENDORF,,,90 MILFORD ROAD BOONAH QLD 4310,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Painting and Decorating
+802,20694,RODNEY ANDREW FOULDS,,,484 McCoombe Street Manoora QLD 4870,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+803,65527,ROBERT JOHN FIEDLER,,,6 Rangers Road Balmoral Ridge QLD 4552,Individual,I,Estimated MR SC2,EMRSC2,Building Designer Licence - EAT,Building Design - Medium Rise
+804,65527,ROBERT JOHN FIEDLER,,,6 Rangers Road Balmoral Ridge QLD 4552,Individual,I,Estimated MR SC2,EMRSC2,Building Designer Licence - EAT,Building Design - Open
+805,1199830,JASON NOEL GERCHOW,,58 206 193 502,15 MCSWEENEY CRESCENT GORDONVALE QLD 4865,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+806,58273,PETER JAMES WOOD,,90 262 216 200,LOT 2 BUCHANAN ST ROTHWELL QLD 4022,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+807,58273,PETER JAMES WOOD,,90 262 216 200,LOT 2 BUCHANAN ST ROTHWELL QLD 4022,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Joinery
+808,1033224,STEPHEN JAMES NEWNHAM,,58 208 850 458,216 Masthead Dr Agnes Water QLD 4677,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+809,17547,RODNEY JOHN BUSSING,,,U 1  12 Horton St East Toowoomba QLD 4350,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+810,722300,KEL DON PINKSTONE,,,6 ORCHARD AVENUE BOREEN POINT QLD 4565,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Medium Rise
+811,79077,GLEN DAVID BRUNCKHORST,,,6 SCHOLTZ STREET STANTHORPE QLD 4380,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+812,31933,MICHAEL DAVID ALLEN,,,61 ALBION AVENUE MIAMI QLD 4220,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+813,1074521,ANTHONY VICTOR INNES,,,34 Baker st Kepnock QLD 4670,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Plumbing and Drainage
+814,81260,DANIEL WALTER MCHUGH,,,Suite 6 32 PETRIE TERRACE BRISBANE QLD 4000,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+815,747017,WAYNE POWRIE,,,293 MOUNT MELLUM RD MOUNT MELLUM QLD 4550,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+816,1123768,ANDRE NICHOLAS CRADDOCK,,,6 HALCYOM PLACE COOLUM BEACH QLD 4573,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+817,1144664,RICHARD DALTON,,71 534 691 550,69 ALBERT STREET HOLLAND PARK WEST QLD 4121,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+818,1144664,RICHARD DALTON,,71 534 691 550,69 ALBERT STREET HOLLAND PARK WEST QLD 4121,Individual,I,Self Certification - Builder/Trade,SC2,Site Supervisor,Builder - Open
+819,728007,JOHN ANDREW WARD,,,11 NEMO ST ASHMORE QLD 4214,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Roof Tiling
+820,54960,STEPHEN BRUCE JONES,,,200 BLUEBERRY DRV BLACK MOUNTAIN QLD 4563,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Painting and Decorating
+821,15623601,STRAIT & CAPE CONSTRUCTION PTY LTD,699 420 721,24 699 420 721,10 COCONUT GR KURANDA QLD 4881,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+822,15623601,STRAIT & CAPE CONSTRUCTION PTY LTD,699 420 721,24 699 420 721,10 COCONUT GR KURANDA QLD 4881,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+823,15021624,Vijay Kumar,,64 168 347 337,3 Marigold Cl Fitzgibbon QLD 4018,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+824,15021624,Vijay Kumar,,64 168 347 337,3 Marigold Cl Fitzgibbon QLD 4018,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Wall and Floor Tiling
+825,15509485,GOLD COAST LANDSCAPE CREATIONS PTY LTD,664 648 426,58 664 648 426,EVA TENTH AVENUE UNIT 201 1 TENTH AVE PALM BEACH QLD 4221,Company,C,Category 2,2,Trade Contractor Licence,Structural Landscaping (Trade)
+826,15534175,TIM ROSE EARTHWORKS & LANDSCAPING PTY LTD,680 560 310,46 680 560 310,10 CASSIA AVE SCARNESS QLD 4655,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+827,15534175,TIM ROSE EARTHWORKS & LANDSCAPING PTY LTD,680 560 310,46 680 560 310,10 CASSIA AVE SCARNESS QLD 4655,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,"Sheds, Carports and Garages"
+828,15534175,TIM ROSE EARTHWORKS & LANDSCAPING PTY LTD,680 560 310,46 680 560 310,10 CASSIA AVE SCARNESS QLD 4655,Company,C,Self Certification - Trade,SCT1,Trade Contractor Licence,Structural Landscaping (Trade)
+829,15560635,Christopher James Herring,,,14 SANDCASTLE CL FORRESTERS BEACH NSW 2260,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Plumbing and Drainage
+830,15560635,Christopher James Herring,,,14 SANDCASTLE CL FORRESTERS BEACH NSW 2260,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Gasfitting
+831,15466789,KYLE CHRISTOPHER BORN,,50 628 543 407,2 Buccleugh St Moffat Beach QLD 4551,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+832,15490135,BLOOM FITOUT AND REFURB PTY LTD,674 273 940,37 674 273 940,86 Ryan West End Queensland 4101,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Medium Rise
+833,15498961,ASK JOE SHEDS PTY LTD,682 379 522,15 682 379 522,"3 Willis St, Sharon QLD 4670 BUNDABERG QLD 4670",Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+834,15498961,ASK JOE SHEDS PTY LTD,682 379 522,15 682 379 522,"3 Willis St, Sharon QLD 4670 BUNDABERG QLD 4670",Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,"Sheds, Carports and Garages"
+835,15064146,Straight Up Constructions Pty Ltd,614 329 574,57 614 329 574,8 Buena Vista Ct Broadbeach Waters QLD 4218,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+836,69963,ANTHONY JOHN MURRAY,,43 204 708 774,11095 WARREGO HIGHWAY GOWRIE MOUNTAIN QLD 4350,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+837,1120733,CLIFFORD BRADLEY (BRAD) COOPER,,96 982 756 781,44 HARBOUR DRIVE TRINITY PARK QLD 4879,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+838,1120733,CLIFFORD BRADLEY (BRAD) COOPER,,96 982 756 781,44 HARBOUR DRIVE TRINITY PARK QLD 4879,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+839,1076887,CRAIG ANTHONY STONE,,57 893 826 210,11 EMERALD DR CALOUNDRA WEST QLD 4551,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+840,79547,PETER ANGELO CUDA,,,29 Birra Street Chermside West QLD 4032,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+841,79547,PETER ANGELO CUDA,,,29 Birra Street Chermside West QLD 4032,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Joinery
+842,79547,PETER ANGELO CUDA,,,29 Birra Street Chermside West QLD 4032,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+843,1033313,LYLE CRAIG NEUMANN,,,15 JAMES CAGNEY CL PARKWOOD QLD 4214,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Concreting Restricted To Minor Concrete Work
+844,24552,GARY JOHN LOW,,44 278 120 651,7 Charmaine Court Albany Creek Queensland 4035,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Medium Rise
+845,707026,JEREMY PETER ROHDE,,,9 Brendanbri St Kearneys Spring QLD 4350,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Painting and Decorating
+846,81825,NEVILLE JOHN MCCASKER,,,182-184 HIGH ROAD BURPENGARY QLD 4505,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,"Glass, Glazing and Aluminium"
+847,81825,NEVILLE JOHN MCCASKER,,,182-184 HIGH ROAD BURPENGARY QLD 4505,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Non-Structural Metal Fabrication and Installation
+848,25264,MARK VIVIAN NUTT,,,4257 Bluff Rd Crows Nest QLD 4355,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Medium Rise
+849,1058161,REUBEN JOEL ROY,,,13 The Glade Labrador QLD 4215,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Painting and Decorating
+850,1040127,HENDRIK WONING,,,17 Cedarwood Ct Arana Hills QLD 4054,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+851,25209,KEVIN WILLIAM BROWN,,,SHOP 613 NEWSPAPER DR MAROOCHYDORE QLD 4558,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+852,60836,WAYNE DOUGLAS PRIDDLE,,,1220 MIDGE POINT  ROAD MIDGE POINT QLD 4799,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+853,48918,LIAM GAVAN O'CONNOR,,,25 LAMINGTON ST THE RANGE QLD 4700,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+854,12379,MAURICE JAMES BAKER,,,134 MOOROONDU ROAD THORNESIDE QLD 4158,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+855,1208600,NICOLAS LYNAM,,42 035 243 821,21 shoreline ave Redland Bay QLD 4165,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+856,1116562,RICKY JASON SMITH,,18 699 156 952,1 REDBAY STREET Upper COOMERA QLD 4209,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Wall and Floor Tiling
+857,711745,ANDREW CLAUDE GERARD WRIGHT,,,87 HAZELWOOD DR POTTSVILLE NSW 2489,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+858,1090540,ANDREW JOHN GANDER,,,U3 87 bride st wynnum brisbane QLD 4178,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+859,8096,WILLIAM DONALD NIXON,,,65 YARRAWONGA DRIVE CASTLE HILL QLD 4810,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+860,63011,WARREN JAMES BARSTOW,,13 733 653 058,10 Gerrard St Dysart QLD 4745,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+861,63011,WARREN JAMES BARSTOW,,13 733 653 058,10 Gerrard St Dysart QLD 4745,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Joinery
+862,63011,WARREN JAMES BARSTOW,,13 733 653 058,10 Gerrard St Dysart QLD 4745,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+863,1182251,BENJAMIN JOHN WAKEHAM,,66 489 720 538,266 Ekibin Rd E Tarragindi QLD 4121,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+864,1182251,BENJAMIN JOHN WAKEHAM,,66 489 720 538,266 Ekibin Rd E Tarragindi QLD 4121,Individual,I,Self Certification - Trade,SCT1,Site Supervisor,Builder - Low Rise
+865,23705,TERENCE (Terry) JOSEPH BROUWERS,,46 164 534 089,unit 8/ 38 Mineral Sizer Court Narangba QLD 4504,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Medium Rise
+866,23705,TERENCE (Terry) JOSEPH BROUWERS,,46 164 534 089,unit 8/ 38 Mineral Sizer Court Narangba QLD 4504,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+867,23705,TERENCE (Terry) JOSEPH BROUWERS,,46 164 534 089,unit 8/ 38 Mineral Sizer Court Narangba QLD 4504,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Structural Landscaping (Trade)
+868,23705,TERENCE (Terry) JOSEPH BROUWERS,,46 164 534 089,unit 8/ 38 Mineral Sizer Court Narangba QLD 4504,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,"Sheds, Carports and Garages"
+869,23705,TERENCE (Terry) JOSEPH BROUWERS,,46 164 534 089,unit 8/ 38 Mineral Sizer Court Narangba QLD 4504,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Roof and Wall Cladding
+870,23705,TERENCE (Terry) JOSEPH BROUWERS,,46 164 534 089,unit 8/ 38 Mineral Sizer Court Narangba QLD 4504,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Metal Fascias and Gutters
+871,23705,TERENCE (Terry) JOSEPH BROUWERS,,46 164 534 089,unit 8/ 38 Mineral Sizer Court Narangba QLD 4504,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Floor Finishing and Covering (Hard Sector)
+872,68987,JEFFREY WAYNE KUHL,,85 914 272 376,302 HURSLEY ROAD GLENVALE QLD 4350,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Shopfitting (Trade)
+873,68987,JEFFREY WAYNE KUHL,,85 914 272 376,302 HURSLEY ROAD GLENVALE QLD 4350,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+874,68987,JEFFREY WAYNE KUHL,,85 914 272 376,302 HURSLEY ROAD GLENVALE QLD 4350,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Joinery
+875,52929,KIRK THOMAS RABIC,,,U 30  38-40 Labrador St Labrador QLD 4215,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Concreting
+876,52929,KIRK THOMAS RABIC,,,U 30  38-40 Labrador St Labrador QLD 4215,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,"Swimming Pool Construction, Installation and Maintenance"
+877,44443,RAYMOND WILLIAM SISSMAN,,,Unit 3 1A Empress Street Centenary Heights QLD 4350,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+878,44443,RAYMOND WILLIAM SISSMAN,,,Unit 3 1A Empress Street Centenary Heights QLD 4350,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Joinery
+879,44443,RAYMOND WILLIAM SISSMAN,,,Unit 3 1A Empress Street Centenary Heights QLD 4350,Individual,I,Self Certification - Trade,SCT1,Site Supervisor,Builder - Open
+880,718305,KEVIN LAURENCE ENGLAND,,,65 River St Woodburn NSW 2472,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Wall and Floor Tiling
+881,15028064,Lei Tang,,,3 holyrood Calamvale QLD 4116,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plastering Drywall
+882,15028064,Lei Tang,,,3 holyrood Calamvale QLD 4116,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+883,15028064,Lei Tang,,,3 holyrood Calamvale QLD 4116,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Wall and Floor Tiling
+884,15028064,Lei Tang,,,3 holyrood Calamvale QLD 4116,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Joinery
+885,15028064,Lei Tang,,,3 holyrood Calamvale QLD 4116,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Concreting
+886,15028064,Lei Tang,,,3 holyrood Calamvale QLD 4116,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Cabinet Making
+887,15047115,Anthony Graham Jonsen,,11 563 242 047,68877 Bruce Highway Deeral QLD 4871,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Mechanical Services - Air-conditioning and Refrigeration (Limited Design)
+888,15525805,Keyspace Projects Pty Ltd,676 817 708,18 676 817 708,CORPORATE CTR level 9 Whyndham Building BUNDALL QLD 4217,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+889,15525805,Keyspace Projects Pty Ltd,676 817 708,18 676 817 708,CORPORATE CTR level 9 Whyndham Building BUNDALL QLD 4217,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Fire Protection - Portables Stream - Install and Maintain
+890,15525805,Keyspace Projects Pty Ltd,676 817 708,18 676 817 708,CORPORATE CTR level 9 Whyndham Building BUNDALL QLD 4217,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Fire Protection - Electrical Stream - Install and Maintain - Fire Alarm Systems
+891,15535327,Luke Ian West,,27 669 066 902,53 ANCHORAGE CCT BUSHLAND BEACH QLD 4818,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Painting and Decorating
+892,15541291,Ren Xianglin,,,173 YOUNG ST SUNNYBANK QLD 4109,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+893,15541291,Ren Xianglin,,,173 YOUNG ST SUNNYBANK QLD 4109,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Structural Landscaping (Trade)
+894,15448085,AIDEN ANTHONY EDWARD COX,,32 390 140 346,"EVA TENTH AVENUE, UNIT 201 1 TENTH AVE PALM BEACH QLD 4221",Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Structural Landscaping (Trade)
+895,15467057,Nathaniel Brody John Ralph Leatherby,,86 817 398 017,3/27 Campbell Street Slade Point QLD 4740,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+896,15467057,Nathaniel Brody John Ralph Leatherby,,86 817 398 017,3/27 Campbell Street Slade Point QLD 4740,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Floor Finishing and Covering (Hard Sector)
+897,15467057,Nathaniel Brody John Ralph Leatherby,,86 817 398 017,3/27 Campbell Street Slade Point QLD 4740,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Joinery
+898,15467057,Nathaniel Brody John Ralph Leatherby,,86 817 398 017,3/27 Campbell Street Slade Point QLD 4740,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Metal Fascias and Gutters
+899,15467057,Nathaniel Brody John Ralph Leatherby,,86 817 398 017,3/27 Campbell Street Slade Point QLD 4740,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Roof and Wall Cladding
+900,15467057,Nathaniel Brody John Ralph Leatherby,,86 817 398 017,3/27 Campbell Street Slade Point QLD 4740,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,"Sheds, Carports and Garages"
+901,15467057,Nathaniel Brody John Ralph Leatherby,,86 817 398 017,3/27 Campbell Street Slade Point QLD 4740,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,"Glass, Glazing and Aluminium"
+902,15476249,Luke William Herbert,,41 394 732 336,Unit 4. 62 Keane Street Currajong QLD 4812,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Cabinet Making
+903,15103377,Kristine Suzanne Wingrave,,95 641 899 882,27 Teal Ave Paradise Point QLD 4216,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Painting and Decorating
+904,15103377,Kristine Suzanne Wingrave,,95 641 899 882,27 Teal Ave Paradise Point QLD 4216,Individual,I,Self Certification - Trade,SCT1,Nominee Supervisor,Plastering Drywall
+905,67328,KEITH LESLIE SCANDLYN,,,60 Holroyd St Wulguru QLD 4811,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,"Building Restricted To Renovations, Repairs And Maintenance"
+906,67328,KEITH LESLIE SCANDLYN,,,60 Holroyd St Wulguru QLD 4811,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Painting and Decorating
+907,21174,Stephen Bartley,,65 863 178 188,37/20 MASTHEAD DRIVE CLEVELAND QLD 4163,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+908,57583,GLENN ANDREW SWAIN,,,17 Moorhen Place Noosaville QLD 4566,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+909,57583,GLENN ANDREW SWAIN,,,17 Moorhen Place Noosaville QLD 4566,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Gasfitting
+910,57583,GLENN ANDREW SWAIN,,,17 Moorhen Place Noosaville QLD 4566,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Fire Protection - Water-Based Fire System Stream - Install and Maintain - Restricted to Commercial and Industrial Types
+911,24686,DARRYL JOHN DIGNAM,,,29 NORFOLK DRIVE CEDAR VALE QLD 4285,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+912,24686,DARRYL JOHN DIGNAM,,,29 NORFOLK DRIVE CEDAR VALE QLD 4285,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+913,1063264,DANIEL JOHN REISINGER,,46 603 107 768,"Southgate Two, Unit 20, 489-491 South Street Harristown QLD 4350",Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Mechanical Services - Air-conditioning and Refrigeration (Limited Design)
+914,1140161,DAYLE HEGARTY,,22 758 236 728,19 ASHMORE CRESCENT BURDELL QLD 4818,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+915,1034410,JOHN LEONARD COOPER,,,4 MERLE ST BURPENGARY QLD 4505,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+916,1034410,JOHN LEONARD COOPER,,,4 MERLE ST BURPENGARY QLD 4505,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Joinery
+917,32289,GREGORY WILSON,,,41 BAXTERS ROAD SUSAN RIVER QLD 4655,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+918,1129028,JEFFREY ROBERT EHLERS,,41 957 816 008,7 Brim Ct Edens Landing QLD 4207,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Concreting
+919,1139102,MICHAEL ANTHONY TADDIO,,,19 HAMILTON STREET TOOWOOMBA QLD 4350,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+920,65390,COREY RANDAL STEVENS,,,155 Juliette Street Greenslopes QLD 4120,Individual,I,Self Certification - Trade,SCT1,Building Designer Licence,Building Design - Medium Rise
+921,81324,WARWICK MITCHELL DOUGLAS,,,62 WILDSOET STREET BURBANK QLD 4156,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+922,45573,TREVOR ALLAN MUST,,,90 Clune Rd Cedar Pocket QLD 4573,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+923,715304,WILLIAM GARRY WOOD,,67 898 194 886,76 MAIN ST PALMWOODS QLD 4555,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+924,715304,WILLIAM GARRY WOOD,,67 898 194 886,76 MAIN ST PALMWOODS QLD 4555,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Joinery
+925,1044557,MARK RODNEY CRONIN,,,70 Turner St Scarborough QLD 4020,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+926,19335,KEITH JOHN DAGAN,,,161 MAIDENWELL-PIMPINBUDGEE ROAD MAIDENWELL QLD 4615,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Medium Rise
+927,1041856,SHANE BRADLEY DALE,,,PO BOX 632 CLEVELAND QLD 4163,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Cabinet Making
+928,81306,COLIN BRADLEY MACKENZIE,,,352 OLD BOWEN ROAD CALEN QLD 4798,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+929,81306,COLIN BRADLEY MACKENZIE,,,352 OLD BOWEN ROAD CALEN QLD 4798,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Joinery
+930,81306,COLIN BRADLEY MACKENZIE,,,352 OLD BOWEN ROAD CALEN QLD 4798,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+931,23806,SAVAS VARITIMOS,,,13 COATES CT BRASSALL QLD 4305,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Medium Rise
+932,1154336,MARK STEVEN CARMODY,,88 477 954 479,88 BOWEN STREET WINDSOR QLD 4030,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Bricklaying and Blocklaying
+933,18460,LEE KEVIN CARMICHAEL,,,22-24 HOSPITAL ROAD DALBY QLD 4405,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+934,506017,SIMON JAMES HOAREAU,,,33 BARNEY STREET ARANA HILLS QLD 4054,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Painting and Decorating
+935,1205335,BRENT JAMES ALFORD,,91 643 768 135,14 Jessard St Wynnum QLD 4178,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Structural Landscaping (Trade)
+936,1205335,BRENT JAMES ALFORD,,91 643 768 135,14 Jessard St Wynnum QLD 4178,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Concreting
+937,15572457,LUKE ANDREW STEWART,,,73 GELLIBRAND ST CLAYFIELD QLD 4011,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Medium Rise
+938,15527647,Aspect Landscapes PTY LTD,675 645 119,90 675 645 119,11 TALLWOODS ST KARALEE QLD 4306,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Structural Landscaping (Trade)
+939,15535419,Vincent Thomas Jeffrey,,,686 MAIN RD WELLINGTON POINT QLD 4160,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Concreting
+940,15539939,Nicolas Campus,,29 632 506 027,35 IBIS CT CABOOLTURE QLD 4510,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+941,15542395,Craig Guthrie Mansfield,,68 794 360 511,20 EMPIRE CCT DUNDOWRAN QLD 4655,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+942,15543531,GAGAN DEEP KAUR JOLLY,,,315 HOGANS RD TARNEIT VIC 3029,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Medium Rise
+943,15543531,GAGAN DEEP KAUR JOLLY,,,315 HOGANS RD TARNEIT VIC 3029,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+944,15625503,ARCLINE BUILDERS PTY LTD,698 403 413,38 698 403 413,17 DISNEY ST STAFFORD HEIGHTS QLD 4053,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+945,15450061,YTS PAINTPRO PTY LTD,676 775 349,49 676 775 349,56 Palm Drive Mooloolaba QLD 4557,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Painting and Decorating
+946,15451607,GREEN GAZEL PTY LTD,656 647 988,25 656 647 988,331 Logan Road Stones Corner QLD 4120,Company,C,Category 2,2,Builder Licence,Builder - Low Rise
+947,15462353,PEACE OF MIND BUILDING INSPECTORS PTY LTD,670 906 644,98 670 906 644,11 Garcia Court Peregian Springs QLD 4573,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Termite Management - Chemical
+948,15462353,PEACE OF MIND BUILDING INSPECTORS PTY LTD,670 906 644,98 670 906 644,11 Garcia Court Peregian Springs QLD 4573,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+949,15462353,PEACE OF MIND BUILDING INSPECTORS PTY LTD,670 906 644,98 670 906 644,11 Garcia Court Peregian Springs QLD 4573,Company,C,Self Certification - Builder/Trade,SC2,Builder Licence,Completed Residential Building Inspection
+950,15462353,PEACE OF MIND BUILDING INSPECTORS PTY LTD,670 906 644,98 670 906 644,11 Garcia Court Peregian Springs QLD 4573,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+951,15109180,Mark Roger Green,,,120 Arbortwenty-Seven Rd Glenwood QLD 4570,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Drainage - On-site Sewerage Facility
+952,1236108,PETER JAMES MAY,,,34 FERRIER ROAD NARANGBA QLD 4504,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Structural Metal Fabrication and Erection
+953,51428,JAMES JOSEPH MURPHY,,,11 MALLAN TERRACE BIRKDALE QLD 4159,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Painting and Decorating
+954,1313011,RICHARD LEWIS ATKINSON,,36 494 907 767,38 Lemau Ct Jubilee Pocket QLD 4802,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+955,23778,DONALD JOHN ERRINGTON,,,13 PERINDI CH CURRIMUNDI QLD 4551,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+956,31589,JOHN RICHARD VOS,,,1 KULANDA STREET WURTULLA QLD 4575,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+957,1039711,SHAUN LESLIE BRADY,,,4 Gregory St Wulkuraka QLD 4305,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Bricklaying and Blocklaying
+958,30602,FRIEDRICH KARL WERLE,,,1 Helium St. NARANGBA QLD 4504,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Medium Rise
+959,634380,RICHARD FRANCIS GILBERT,,,10 LUXFORD ST CHELMER QLD 4068,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Waterproofing
+960,74387,BRIAN ALLEN DYER,,,1 Ellison St Huonville TAS 7109,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,"Building Restricted To Renovations, Repairs And Maintenance"
+961,74387,BRIAN ALLEN DYER,,,1 Ellison St Huonville TAS 7109,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Building Restricted To Alterations And Additions
+962,74387,BRIAN ALLEN DYER,,,1 Ellison St Huonville TAS 7109,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+963,74387,BRIAN ALLEN DYER,,,1 Ellison St Huonville TAS 7109,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Joinery
+964,3801,TERENCE (Terry) ROY KRATZMANN,,,U 44  21 Manning St Milton QLD 4064,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+965,64688,THOMAS MICHAEL DOOLEY,,,438 BRUNSWICK STREET FORTITUDE VALLEY QLD 4006,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+966,701037,MALCOLM DOUGLAS POLLARD,,68 998 949 155,60 Landsborough St Normanton QLD 4890,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+967,701037,MALCOLM DOUGLAS POLLARD,,68 998 949 155,60 Landsborough St Normanton QLD 4890,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Joinery
+968,701037,MALCOLM DOUGLAS POLLARD,,68 998 949 155,60 Landsborough St Normanton QLD 4890,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,"Builder Restricted to Kitchen, Bathroom and Laundry Installation"
+969,701037,MALCOLM DOUGLAS POLLARD,,68 998 949 155,60 Landsborough St Normanton QLD 4890,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+970,8603,DONALD JOHN KELLER,,,47 CHARLOTTE STREET COOKTOWN QLD 4895,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+971,1159581,DARREN TREVOR RUDLING,,95 757 382 571,18 Bell St Bundaberg South QLD 4670,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+972,534338,DAVID JOHN TAYLOR,,,18 KOALA COURT HAZELDEAN QLD 4515,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+973,534338,DAVID JOHN TAYLOR,,,18 KOALA COURT HAZELDEAN QLD 4515,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Joinery
+974,1268936,MATTHEW THOMAS FLANAGAN,,,186 BOUNDARY STREET RAILWAY ESTATE QLD 4810,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+975,1268936,MATTHEW THOMAS FLANAGAN,,,186 BOUNDARY STREET RAILWAY ESTATE QLD 4810,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+976,893536,JOHN PATRICK MORRIS,,,15 DONKIN STREET EMERALD QLD 4720,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Painting and Decorating
+977,1143727,DAVID ERLE VAN DEN BROEK,,48 751 054 802,52 YARRABEE TERRACE STOKERS SIDING NSW 2484,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Open
+978,1038249,BEN MATTHEW ROSS,,,159 GALAH ST LONGREACH QLD 4730,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+979,720022,Vladimir Vinsalek,,85 468 289 265,32 Tonbridge Place Tingalpa QLD 4173,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+980,1122860,GEOFFREY NEIL WEARNE,,95 602 817 690,128 Besham Pde Wynnum QLD 4178,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+981,1122860,GEOFFREY NEIL WEARNE,,95 602 817 690,128 Besham Pde Wynnum QLD 4178,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+982,65715,MATTHEW DAMIEN LOCK,,,37 WHISTLER COURT UPPER CABOOLTURE QLD 4510,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Medium Rise
+983,65715,MATTHEW DAMIEN LOCK,,,37 WHISTLER COURT UPPER CABOOLTURE QLD 4510,Individual,I,Self Certification - Builder/Trade,SC2,Site Supervisor,Builder - Open
+984,1068354,STEPHEN ROY WESTBURY,,,114 Shaws Pocket Rd Cedar Creek QLD 4207,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Carpentry
+985,15625269,Carew Ventures Pty Ltd,696 999 265,93 696 999 265,225 BILOELA - CALLIDE RD MOUNT MURCHISON QLD 4715,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Concreting
+986,15625269,Carew Ventures Pty Ltd,696 999 265,93 696 999 265,225 BILOELA - CALLIDE RD MOUNT MURCHISON QLD 4715,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,"Swimming Pool Construction, Installation and Maintenance"
+987,62745,JEFFREY JOHN LONG,,,27 BAUHINIA ST CRANBROOK QLD 4814,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Plumbing and Drainage
+988,15022484,Benjamin John James Allison,,78 072 580 236,5 Winton Street Stafford Heights QLD 4053,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Wall and Floor Tiling
+989,15024522,Buildraw Pty Ltd,612 834 732,67 612 834 732,166 Stratton Tce Manly QLD 4179,Company,C,Category 2,2,Builder Licence,Builder - Low Rise
+990,15034836,ACV CONCRETING PTY LTD,615 610 109,57 615 610 109,33 Belvedere Street Clontarf QLD 4019,Company,C,Category 1,1,Trade Contractor Licence,Concreting
+991,15046467,Michael John Hall,,,8 Hawley Ct Sunrise Beach QLD 4567,Individual,I,Self Certification - Builder/Trade,SC2,Builder Licence,Builder - Low Rise
+992,15046467,Michael John Hall,,,8 Hawley Ct Sunrise Beach QLD 4567,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+993,15547647,ALL ACCESS HEIGHT SAFETY PTY LTD,689 125 424,68 689 125 424,49 THE PENINSULA BANKSIA BEACH QLD 4507,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Roof and Wall Cladding
+994,15547647,ALL ACCESS HEIGHT SAFETY PTY LTD,689 125 424,68 689 125 424,49 THE PENINSULA BANKSIA BEACH QLD 4507,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+995,15547647,ALL ACCESS HEIGHT SAFETY PTY LTD,689 125 424,68 689 125 424,49 THE PENINSULA BANKSIA BEACH QLD 4507,Company,C,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Plumbing and Drainage
+996,15507389,Jordan McLeod Lawson,,,6 BRODY CL GORDONVALE QLD 4865,Individual,I,Self Certification - Trade,SCT1,Trade Contractor Licence,Cabinet Making
+997,15085655,Guy Reginald Soden,,72 673 328 811,15 Adelong Cres Buddina QLD 4575,Individual,I,Self Certification - Builder/Trade,SC2,Nominee Supervisor,Builder - Low Rise
+998,15085655,Guy Reginald Soden,,72 673 328 811,15 Adelong Cres Buddina QLD 4575,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Carpentry
+999,15085655,Guy Reginald Soden,,72 673 328 811,15 Adelong Cres Buddina QLD 4575,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Plastering Drywall
+1000,1235596,SCOTT CLEMENTS,,34 393 886 259,118 BURBANK ROAD BIRKDALE QLD 4159,Individual,I,Self Certification - Builder/Trade,SC2,Trade Contractor Licence,Painting and Decorating

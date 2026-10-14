@@ -1,0 +1,316 @@
+{
+  "source_key": "qbcc",
+  "dataset_id": "980b6499-c0b4-491b-ba9c-1c7506368a50",
+  "resource_id": "25608781-b28c-44f8-8545-0ab18d84082f",
+  "status": "verified",
+  "started_at": "2026-10-09T12:04:56.496324+00:00",
+  "intake_version": "intake-1",
+  "record_grain": "A licensee/licence class entry; one company can occupy many rows; non-company licensees are also present in the unfiltered file.",
+  "time_column_meanings": {},
+  "observed_at_policy": "Not assigned at dataset intake. Catalogue/HTTP update and retrieval times are not automatically record observation times.",
+  "ontology_mapping_performed": false,
+  "warnings": [],
+  "title": "QBCC Licensed Contractors Register",
+  "publisher": "Queensland Building and Construction Commission",
+  "official_catalog_url": "https://www.data.qld.gov.au/dataset/980b6499-c0b4-491b-ba9c-1c7506368a50",
+  "resource_url_from_fresh_metadata": "https://www.data.qld.gov.au/dataset/980b6499-c0b4-491b-ba9c-1c7506368a50/resource/25608781-b28c-44f8-8545-0ab18d84082f/download/active_licensees.csv",
+  "metadata_receipt": {
+    "url": "https://www.data.qld.gov.au/api/3/action/package_show?id=980b6499-c0b4-491b-ba9c-1c7506368a50",
+    "final_url": "https://www.data.qld.gov.au/api/3/action/package_show?id=980b6499-c0b4-491b-ba9c-1c7506368a50",
+    "method": "GET",
+    "retrieved_at": "2026-10-09T12:04:56.496338+00:00",
+    "http_status": 200,
+    "request_headers": {
+      "User-Agent": "FirmableAssessmentDatasetIntake/1 (public data research)",
+      "Accept-Encoding": "identity"
+    },
+    "response_headers": {
+      "Content-Type": "application/json;charset=utf-8",
+      "Content-Length": "12695",
+      "Connection": "close",
+      "Date": "Fri, 09 Oct 2026 12:04:56 GMT",
+      "Strict-Transport-Security": "max-age=31536000",
+      "Server": "nginx",
+      "Cache-Control": "public, max-age=1800, must-revalidate",
+      "Vary": "Cookie",
+      "X-Cache": "Miss from cloudfront",
+      "Via": "1.1 c44c600db483eb2098670fa47c16d840.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Pop": "SYD3-P1",
+      "Alt-Svc": "h3=\":443\"; ma=86400",
+      "X-Amz-Cf-Id": "WDbpCd_Da8FmJ_zn7S3ecz5T_rRvI6D_4ALb_StggPmVji_RV98KNA=="
+    },
+    "saved_bytes": 12695,
+    "sha256": "f0b9c1c3c2bb42430246ee94d015d66e6249861f65a496f8f0dcab882a463b2e",
+    "read_limit_bytes": 8388608,
+    "response_truncated_by_read_limit": false,
+    "range_response": false,
+    "complete_response": true,
+    "attempts_before_success": []
+  },
+  "license": {
+    "id": "CC-BY-4.0",
+    "title": "Creative Commons Attribution 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": "Fresh package_show"
+  },
+  "catalogue_times": {
+    "dataset_metadata_modified": "2026-10-08T23:46:27.964733",
+    "resource_last_modified": "2026-10-08T23:46:17.069202",
+    "resource_metadata_modified": "2026-10-08T23:46:27.973737",
+    "resource_description": "QBCC Act licences that are not cancelled, including both active and suspended licences, as at the date of publication. Details include licence number, name of licensee, business address, licence class and financial category.\n\nRefreshed daily. For up-to-date information on an individual licensee, refer to the QBCC's licence search."
+  },
+  "declared_format": "CSV",
+  "declared_size": "34.5 MiB",
+  "resource_metadata": {
+    "_do_not_validate": true,
+    "align_default_schema": false,
+    "archiver": {
+      "resource_timestamp": "2022-02-09T04:48:24.144740",
+      "status_id": 0,
+      "is_broken": false,
+      "reason": "",
+      "url_redirected_to": "https://www.data.qld.gov.au/dataset/980b6499-c0b4-491b-ba9c-1c7506368a50/resource/25608781-b28c-44f8-8545-0ab18d84082f/download/20260923_qbcc_active_licencees_opendatain-2.csv",
+      "cache_filepath": "resources/25608781-b28c-44f8-8545-0ab18d84082f/20260923_qbcc_active_licencees_opendatain-2.csv",
+      "cache_url": "https://www.data.qld.gov.au/dataset/980b6499-c0b4-491b-ba9c-1c7506368a50/resource/25608781-b28c-44f8-8545-0ab18d84082f/download/20260923_qbcc_active_licencees_opendatain-2.csv",
+      "size": 36646328,
+      "mimetype": "application/csv",
+      "hash": "\"22ebf265161f80eb5cd9ab1e86e4943c\"",
+      "etag": null,
+      "last_modified": null,
+      "first_failure": null,
+      "last_success": "2026-10-02T06:18:15.279362",
+      "failure_count": 0,
+      "created": "2020-10-06T13:29:00.946141",
+      "updated": "2026-10-02T06:18:15.279362",
+      "status": "Archived successfully",
+      "is_broken_printable": "Downloaded OK"
+    },
+    "cache_last_updated": null,
+    "cache_url": null,
+    "ckan_url": "https://www.data.qld.gov.au",
+    "created": "2014-02-20T02:13:54.314153",
+    "datastore_active": true,
+    "datastore_contains_all_records_of_source_file": true,
+    "description": "QBCC Act licences that are not cancelled, including both active and suspended licences, as at the date of publication. Details include licence number, name of licensee, business address, licence class and financial category.\n\nRefreshed daily. For up-to-date information on an individual licensee, refer to the QBCC's licence search.",
+    "format": "CSV",
+    "hash": "0cd35c67de6fab028aaa24f4af169272",
+    "id": "25608781-b28c-44f8-8545-0ab18d84082f",
+    "ignore_hash": false,
+    "last_modified": "2026-10-08T23:46:17.069202",
+    "metadata_modified": "2026-10-08T23:46:27.973737",
+    "mimetype": "application/csv",
+    "mimetype_inner": null,
+    "name": "QBCC register of licensed builders and contractors",
+    "nature_of_change": "add-new-time-series",
+    "original_url": "https://www.data.qld.gov.au/dataset/980b6499-c0b4-491b-ba9c-1c7506368a50/resource/25608781-b28c-44f8-8545-0ab18d84082f/download/active_licensees.csv",
+    "package_id": "980b6499-c0b4-491b-ba9c-1c7506368a50",
+    "position": 0,
+    "qa": {
+      "resource_timestamp": null,
+      "archival_timestamp": "2025-06-09T00:38:09.433359",
+      "openness_score": 3,
+      "openness_score_reason": "Content of file appeared to be format \"CSV\" which receives openness score: 3.",
+      "format": "CSV",
+      "created": "2020-10-06T05:58:03.846012",
+      "updated": "2026-05-18T05:16:18.526128"
+    },
+    "queue_name": "default2",
+    "resource_id": "25608781-b28c-44f8-8545-0ab18d84082f",
+    "resource_type": null,
+    "set_url_type": false,
+    "size": "34.5 MiB",
+    "state": "active",
+    "task_created": "2026-10-08 21:00:21.105846",
+    "update_frequency": "weekly",
+    "update_frequency_days": "{\"monthly\": 30, \"quarterly\": 91, \"half-yearly\": 182, \"annually\": 365, \"biennially\": 730, \"quadrennially\": 1460}",
+    "url": "https://www.data.qld.gov.au/dataset/980b6499-c0b4-491b-ba9c-1c7506368a50/resource/25608781-b28c-44f8-8545-0ab18d84082f/download/active_licensees.csv",
+    "url_type": "upload",
+    "validation_status": "success",
+    "validation_timestamp": "2023-11-01T03:32:58.266450"
+  },
+  "download_receipt": {
+    "url": "https://www.data.qld.gov.au/dataset/980b6499-c0b4-491b-ba9c-1c7506368a50/resource/25608781-b28c-44f8-8545-0ab18d84082f/download/active_licensees.csv",
+    "final_url": "https://www.data.qld.gov.au/ckan-opendata-attachments-prod/resources/25608781-b28c-44f8-8545-0ab18d84082f/active_licensees.csv?ETag=0cd35c67de6fab028aaa24f4af169272",
+    "method": "GET",
+    "retrieved_at": "2026-10-09T12:04:56.696912+00:00",
+    "http_status": 206,
+    "request_headers": {
+      "User-Agent": "FirmableAssessmentDatasetIntake/1 (public data research)",
+      "Accept-Encoding": "identity",
+      "Range": "bytes=0-262143"
+    },
+    "response_headers": {
+      "Content-Type": "application/csv",
+      "Content-Length": "262144",
+      "Connection": "close",
+      "Date": "Fri, 09 Oct 2026 12:03:25 GMT",
+      "Server": "AmazonS3",
+      "Last-Modified": "Thu, 08 Oct 2026 21:00:22 GMT",
+      "x-amz-meta-package_version": "2024.5",
+      "x-amz-meta-package_id": "980b6499-c0b4-491b-ba9c-1c7506368a50",
+      "x-amz-meta-package_license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "x-amz-meta-package_metadata_created": "2014-02-20T02:12:01.592108",
+      "x-amz-meta-package_title": "QBCC Licensed Contractors Register",
+      "x-amz-meta-package_creator_user_id": "d7d656d1-a8b1-40f1-9d06-ef5867021f97",
+      "x-amz-meta-package_de_identified_data": "NO",
+      "x-amz-meta-uploaded_by": "publisher-1707",
+      "x-amz-meta-package_schema_upload": "",
+      "x-amz-meta-package_state": "active",
+      "x-amz-meta-package_url": "",
+      "x-amz-meta-package_data_driven_application": "NO",
+      "x-amz-meta-package_metadata_modified": "2026-10-08T21:00:20.811374",
+      "x-amz-meta-package_owner_org": "142eed1a-b657-4ac2-ac03-f78a6528ab8a",
+      "x-amz-meta-package_maintainer_email": "info@qbcc.qld.gov.au",
+      "x-amz-meta-package_schema_url": "",
+      "x-amz-meta-package_maintainer": "info@qbcc.qld.gov.au",
+      "x-amz-meta-package_author_email": "info@qbcc.qld.gov.au",
+      "x-amz-meta-package_author": "info@qbcc.qld.gov.au",
+      "x-amz-meta-package_license_title": "Creative Commons Attribution 4.0",
+      "x-amz-meta-package_data_last_updated": "2026-10-08T21:00:20.809895",
+      "x-amz-meta-package_update_frequency": "daily",
+      "x-amz-meta-package_name": "qbcc-licensed-contractors-register",
+      "x-amz-meta-package_schema_json": "",
+      "x-amz-meta-package_license_id": "CC-BY-4.0",
+      "x-amz-meta-package_type": "dataset",
+      "x-amz-meta-package_security_classification": "PUBLIC",
+      "x-amz-version-id": "OZEyxTBvnvYlLQ9vHc3Fsa77yYySrkxv",
+      "Content-Disposition": "attachment; filename=active_licensees.csv",
+      "x-amz-server-side-encryption": "AES256",
+      "ETag": "\"0cd35c67de6fab028aaa24f4af169272\"",
+      "X-Cache": "Hit from cloudfront",
+      "Via": "1.1 3e61a2014e7d26249915c64513c0b4f2.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Pop": "SYD3-P1",
+      "Alt-Svc": "h3=\":443\"; ma=86400",
+      "X-Amz-Cf-Id": "WYQ7ZF6tZCKtrSpamz51LL_pu33iN3sDTUAYJrtTN34AAxJ46Pi8Cw==",
+      "Age": "91",
+      "Content-Range": "bytes 0-262143/36589460"
+    },
+    "saved_bytes": 262144,
+    "sha256": "0faaceb980c4d41ac5fe68b1a015d814d1cd805b2d5b5a0311c315d06ab1a93e",
+    "read_limit_bytes": 262144,
+    "response_truncated_by_read_limit": false,
+    "range_response": true,
+    "complete_response": false,
+    "attempts_before_success": []
+  },
+  "parser_evidence": {
+    "parser": "stdlib csv.reader(strict=True)",
+    "encoding": "utf-8-sig",
+    "delimiter": ",",
+    "headers_raw": [
+      "id",
+      "Licence Number",
+      "Licensee Name",
+      "ACN",
+      "ABN",
+      "Licensee Business Address",
+      "Licence Type DESC",
+      "Licence Type CODE",
+      "Financial Category DESC",
+      "Financial Category CODE",
+      "Licence Grade",
+      "Licence Class Type"
+    ],
+    "headers_for_json": [
+      "id",
+      "Licence Number",
+      "Licensee Name",
+      "ACN",
+      "ABN",
+      "Licensee Business Address",
+      "Licence Type DESC",
+      "Licence Type CODE",
+      "Financial Category DESC",
+      "Financial Category CODE",
+      "Licence Grade",
+      "Licence Class Type"
+    ],
+    "parsed_sample_records": 1000,
+    "row_errors": [],
+    "truncated_last_record": false,
+    "sample_selection": "First complete records in a bounded byte prefix; not random.",
+    "full_file_parsed": false
+  },
+  "read_format": "CSV",
+  "selection": "First complete records in a bounded byte prefix; not random.",
+  "complete_original_file_downloaded": false,
+  "primary_sample_count": 1000,
+  "datastore_projection": {
+    "mode": "CKAN DataStore API projection, not parsing the original source file",
+    "query": {
+      "resource_id": "25608781-b28c-44f8-8545-0ab18d84082f",
+      "limit": 1000,
+      "sort": "_id asc",
+      "filters": "{\"Licence Type DESC\": \"Company\"}"
+    },
+    "sample_selection": "First _id-ordered rows; not random. QBCC additionally filters Company licence role.",
+    "sample_records": 1000,
+    "api_reported_total_matching_filter": 48327,
+    "fields": [
+      {
+        "id": "_id",
+        "type": "int"
+      },
+      {
+        "id": "id",
+        "type": "numeric",
+        "info": {
+          "type_override": "numeric"
+        }
+      },
+      {
+        "id": "Licence Number",
+        "type": "numeric",
+        "info": {
+          "type_override": "numeric"
+        }
+      },
+      {
+        "id": "Licensee Name",
+        "type": "text"
+      },
+      {
+        "id": "ACN",
+        "type": "text"
+      },
+      {
+        "id": "ABN",
+        "type": "text"
+      },
+      {
+        "id": "Licensee Business Address",
+        "type": "text"
+      },
+      {
+        "id": "Licence Type DESC",
+        "type": "text"
+      },
+      {
+        "id": "Licence Type CODE",
+        "type": "text"
+      },
+      {
+        "id": "Financial Category DESC",
+        "type": "text"
+      },
+      {
+        "id": "Financial Category CODE",
+        "type": "text"
+      },
+      {
+        "id": "Licence Grade",
+        "type": "text"
+      },
+      {
+        "id": "Licence Class Type",
+        "type": "text"
+      }
+    ],
+    "original_file_all_records_claim_in_metadata": true,
+    "snapshot_file": "datastore-sample.json",
+    "sha256": "12115cc7912007b733e958d4173b65b00d4709496313745344430c40db695aeb"
+  },
+  "completed_at": "2026-10-09T12:04:57.739804+00:00",
+  "elapsed_seconds": 1.244,
+  "records_file": "records.jsonl"
+}

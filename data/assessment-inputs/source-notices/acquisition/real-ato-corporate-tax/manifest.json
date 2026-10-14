@@ -1,0 +1,791 @@
+{
+  "source_key": "ato_corporate_tax",
+  "dataset_id": "c2524c87-cea4-4636-acac-599a82048a26",
+  "resource_id": "15bf4eaa-7a14-48e9-8a3f-092df32a644e",
+  "status": "verified",
+  "started_at": "2026-10-09T12:04:57.740555+00:00",
+  "intake_version": "intake-1",
+  "record_grain": "A corporate tax entity in an income-year report; separate income tax and PRRT tables; does not express economic group structure.",
+  "time_column_meanings": {
+    "Income year": "Tax reporting period, not observation time"
+  },
+  "observed_at_policy": "Not assigned at dataset intake. Catalogue/HTTP update and retrieval times are not automatically record observation times.",
+  "ontology_mapping_performed": false,
+  "warnings": [],
+  "title": "Corporate Tax Transparency",
+  "publisher": "Australian Taxation Office",
+  "official_catalog_url": "https://data.gov.au/data/dataset/c2524c87-cea4-4636-acac-599a82048a26",
+  "resource_url_from_fresh_metadata": "https://data.gov.au/data/dataset/c2524c87-cea4-4636-acac-599a82048a26/resource/15bf4eaa-7a14-48e9-8a3f-092df32a644e/download/2024-25-corporate-report-of-entity-tax-information.xlsx",
+  "metadata_receipt": {
+    "url": "https://data.gov.au/data/api/3/action/package_show?id=c2524c87-cea4-4636-acac-599a82048a26",
+    "final_url": "https://data.gov.au/data/api/3/action/package_show?id=c2524c87-cea4-4636-acac-599a82048a26",
+    "method": "GET",
+    "retrieved_at": "2026-10-09T12:04:57.740574+00:00",
+    "http_status": 200,
+    "request_headers": {
+      "User-Agent": "FirmableAssessmentDatasetIntake/1 (public data research)",
+      "Accept-Encoding": "identity"
+    },
+    "response_headers": {
+      "Content-Type": "application/json;charset=utf-8",
+      "Content-Length": "19252",
+      "Connection": "close",
+      "Date": "Fri, 09 Oct 2026 12:04:57 GMT",
+      "Set-Cookie": "ckan=; Domain=; Expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=0; Path=/",
+      "Server": "nginx",
+      "Cache-Control": "public, max-age=2592000, must-revalidate",
+      "Vary": "Origin",
+      "X-Cache": "Miss from cloudfront",
+      "Via": "1.1 9e25f92c54f2015fbfe9156d7f5aec54.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Pop": "SYD3-P3",
+      "X-Amz-Cf-Id": "WHkDtON5QunceAn6QMqGQJrTqp9o1xrZzgwIIdKmh0kz8N1wHfXiHQ==",
+      "X-XSS-Protection": "1; mode=block",
+      "X-Frame-Options": "SAMEORIGIN",
+      "Referrer-Policy": "strict-origin-when-cross-origin",
+      "X-Content-Type-Options": "nosniff",
+      "Strict-Transport-Security": "max-age=31536000"
+    },
+    "saved_bytes": 19252,
+    "sha256": "14e7141b1a71faade68f3d20fa3c293fff18544d9f98bab39966b0d383abd143",
+    "read_limit_bytes": 8388608,
+    "response_truncated_by_read_limit": false,
+    "range_response": false,
+    "complete_response": true,
+    "attempts_before_success": []
+  },
+  "license": {
+    "id": "cc-by",
+    "title": "Creative Commons Attribution 3.0 Australia",
+    "url": "http://creativecommons.org/licenses/by/3.0/au/",
+    "evidence": "Fresh package_show"
+  },
+  "catalogue_times": {
+    "dataset_metadata_modified": "2026-09-30T20:48:15.376204",
+    "resource_last_modified": "2026-09-30T20:47:28.394158",
+    "resource_metadata_modified": "2026-09-30T20:48:15.389497",
+    "resource_description": "This report contains the total income, taxable income and tax payable of almost 4,300 corporate tax entities for the 2024-25 year. This report also includes entities whose information was not available by the cut-off date to produce the Report of entity tax information for the 2022-23 and 2023-24 years and also entities with petroleum resource rent tax payable."
+  },
+  "declared_format": "excel (.xlsx)",
+  "declared_size": 290711,
+  "resource_metadata": {
+    "cache_last_updated": null,
+    "cache_url": null,
+    "created": "2026-09-30T20:47:28.882041",
+    "datastore_active": false,
+    "datastore_contains_all_records_of_source_file": false,
+    "description": "This report contains the total income, taxable income and tax payable of almost 4,300 corporate tax entities for the 2024-25 year. This report also includes entities whose information was not available by the cut-off date to produce the Report of entity tax information for the 2022-23 and 2023-24 years and also entities with petroleum resource rent tax payable.",
+    "format": "excel (.xlsx)",
+    "hash": "",
+    "id": "15bf4eaa-7a14-48e9-8a3f-092df32a644e",
+    "last_modified": "2026-09-30T20:47:28.394158",
+    "metadata_modified": "2026-09-30T20:48:15.389497",
+    "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "mimetype_inner": null,
+    "name": "2024-25 Report of Entity Tax Information",
+    "package_id": "c2524c87-cea4-4636-acac-599a82048a26",
+    "position": 0,
+    "resource_type": null,
+    "size": 290711,
+    "state": "active",
+    "url": "https://data.gov.au/data/dataset/c2524c87-cea4-4636-acac-599a82048a26/resource/15bf4eaa-7a14-48e9-8a3f-092df32a644e/download/2024-25-corporate-report-of-entity-tax-information.xlsx",
+    "url_type": "upload",
+    "zip_extract": false
+  },
+  "download_receipt": {
+    "url": "https://data.gov.au/data/dataset/c2524c87-cea4-4636-acac-599a82048a26/resource/15bf4eaa-7a14-48e9-8a3f-092df32a644e/download/2024-25-corporate-report-of-entity-tax-information.xlsx",
+    "final_url": "https://data.gov.au/data/dataset/c2524c87-cea4-4636-acac-599a82048a26/resource/15bf4eaa-7a14-48e9-8a3f-092df32a644e/download/2024-25-corporate-report-of-entity-tax-information.xlsx",
+    "method": "GET",
+    "retrieved_at": "2026-10-09T12:04:57.869167+00:00",
+    "http_status": 200,
+    "request_headers": {
+      "User-Agent": "FirmableAssessmentDatasetIntake/1 (public data research)",
+      "Accept-Encoding": "identity"
+    },
+    "response_headers": {
+      "Content-Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "Content-Length": "290711",
+      "Connection": "close",
+      "Date": "Fri, 09 Oct 2026 12:04:58 GMT",
+      "Cache-Control": "public, max-age=60, immutable",
+      "Server": "nginx",
+      "Content-Disposition": "inline; filename=2024-25-corporate-report-of-entity-tax-information.xlsx",
+      "Last-Modified": "Wed, 30 Sep 2026 20:47:29 GMT",
+      "ETag": "\"1790801249.378-290711-3656257541\"",
+      "Accept-Ranges": "bytes",
+      "Set-Cookie": "ckan=; Domain=; Expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=0; Path=/",
+      "Expires": "Fri, 09 Oct 2026 12:05:58 GMT",
+      "Vary": "Origin",
+      "X-Cache": "Miss from cloudfront",
+      "Via": "1.1 a858d3e93dd1bce43c3919c89e11ec2c.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Pop": "SYD3-P3",
+      "X-Amz-Cf-Id": "VzQr43dtN3mfIWVgGCR0lmHeBHxgHiw1Imzg5VqPaBgN7VFAtntMeQ==",
+      "X-XSS-Protection": "1; mode=block",
+      "X-Frame-Options": "SAMEORIGIN",
+      "Referrer-Policy": "strict-origin-when-cross-origin",
+      "X-Content-Type-Options": "nosniff",
+      "Strict-Transport-Security": "max-age=31536000"
+    },
+    "saved_bytes": 290711,
+    "sha256": "d7772fa282c90be6aabaf5893c60d63bd0c896534b10256abed175f6a05fa754",
+    "read_limit_bytes": 2097152,
+    "response_truncated_by_read_limit": false,
+    "range_response": false,
+    "complete_response": true,
+    "attempts_before_success": []
+  },
+  "read_format": "XLSX",
+  "complete_original_file_downloaded": true,
+  "parser_evidence": {
+    "parser": "stdlib zipfile + ElementTree; plain OOXML cell values; formula cached values only, no date coercion",
+    "sheets": [
+      {
+        "name": "Information",
+        "xml_path": "xl/worksheets/sheet1.xml",
+        "xml_row_count": 8,
+        "nonempty_row_count": 7,
+        "preview_rows": [
+          {
+            "row_number": 1,
+            "values": [
+              "Corporate tax transparency: report of entity tax information"
+            ],
+            "cell_evidence": {
+              "A1": {
+                "type": "s",
+                "style_index": "1",
+                "raw_value": "0",
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              }
+            }
+          },
+          {
+            "row_number": 2,
+            "values": [
+              "To better inform public debate about tax policy, the Commissioner is required by legislation to produce an annual report of information about certain corporate tax entities. \n\nThis annual report lists Australian public, foreign-owned corporations (including foreign-owned private corporations) and Australian-owned resident private corporations with total income of $100 million or more, in tax returns for the 2024-25 income year. The cut-off date for the 2024-25 report was 1 August 2026. This report also includes late lodging corporations meeting these requirements whose information was not available by the cut-off date to produce the 2022-23 and 2023-24 Report of Entity Tax Information (first link below). \n\nChanges to the tax law lowered the threshold for Australian-owned resident private companies to $100 million from the 2022-23 income year and this is the third year these companies are being reported. For income years up to 2021-22, the $200 million threshold applies. \n\nDue to legislative limits on the information able to be included, this entity by entity level report does not reflect actual economic or accounting groupings. It is important to note the aggregate figures listed cannot and do not reflect the complexity of the tax system. \n\nThis report is intended to be read in conjunction with guidance material available on ato.gov.au which provides context around the demographics of entities included in this report and both taxable income and tax payable amounts (second link below).\n\nPlease note: As the legislation does not allow for the reporting of an amount of zero or less, these fields are left blank. \n\nA separate tab lists the details of entities that have petroleum resource rent tax (PRRT) payable. \n\nConfidentiality provisions prevent the ATO providing any additional information about particular taxpayers in the report. Some entities may provide further context and explanation on their own websites.\n\nVoluntary Tax Transparency Code\nAll corporations operating in Australia are encouraged and expected to report under the voluntary code (third link below). These reports generally include more detailed information on a corporations approach to tax and taxes paid. These reports can be accessed through the fourth link below.\n"
+            ],
+            "cell_evidence": {
+              "A2": {
+                "type": "s",
+                "style_index": "2",
+                "raw_value": "4402",
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              }
+            }
+          },
+          {
+            "row_number": 3,
+            "values": [
+              "Where can you find more information?"
+            ],
+            "cell_evidence": {
+              "A3": {
+                "type": "s",
+                "style_index": "11",
+                "raw_value": "1",
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              }
+            }
+          }
+        ],
+        "table_detected": false,
+        "workbook_date_system": "1900",
+        "number_formats_by_style": [
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "3",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "3",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          }
+        ]
+      },
+      {
+        "name": "Income tax details",
+        "xml_path": "xl/worksheets/sheet2.xml",
+        "xml_row_count": 4416,
+        "nonempty_row_count": 4416,
+        "preview_rows": [
+          {
+            "row_number": 1,
+            "values": [
+              "Name",
+              "ABN",
+              "Total income $",
+              "Taxable income $",
+              "Tax payable $",
+              "Income year"
+            ],
+            "cell_evidence": {
+              "A1": {
+                "type": "s",
+                "style_index": "5",
+                "raw_value": "2",
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "B1": {
+                "type": "s",
+                "style_index": "9",
+                "raw_value": "3",
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "C1": {
+                "type": "s",
+                "style_index": "10",
+                "raw_value": "4",
+                "formula_present": false,
+                "number_format_id": "3",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "D1": {
+                "type": "s",
+                "style_index": "10",
+                "raw_value": "5",
+                "formula_present": false,
+                "number_format_id": "3",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "E1": {
+                "type": "s",
+                "style_index": "10",
+                "raw_value": "6",
+                "formula_present": false,
+                "number_format_id": "3",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "F1": {
+                "type": "s",
+                "style_index": "9",
+                "raw_value": "3541",
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              }
+            }
+          },
+          {
+            "row_number": 2,
+            "values": [
+              "1 MENDS STREET PTY LTD",
+              "94600082111",
+              "108996236",
+              "10603699",
+              "3181110",
+              "2024-25"
+            ],
+            "cell_evidence": {
+              "A2": {
+                "type": "s",
+                "style_index": "6",
+                "raw_value": "2030",
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "B2": {
+                "type": "n",
+                "style_index": "6",
+                "raw_value": "94600082111",
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "C2": {
+                "type": "n",
+                "style_index": "7",
+                "raw_value": "108996236",
+                "formula_present": false,
+                "number_format_id": "3",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "D2": {
+                "type": "n",
+                "style_index": "7",
+                "raw_value": "10603699",
+                "formula_present": false,
+                "number_format_id": "3",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "E2": {
+                "type": "n",
+                "style_index": "7",
+                "raw_value": "3181110",
+                "formula_present": false,
+                "number_format_id": "3",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "F2": {
+                "type": "s",
+                "style_index": "8",
+                "raw_value": "3542",
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              }
+            }
+          },
+          {
+            "row_number": 3,
+            "values": [
+              "1884 PTY LIMITED",
+              "83114980880",
+              "319135614",
+              "18129064",
+              "5438719",
+              "2024-25"
+            ],
+            "cell_evidence": {
+              "A3": {
+                "type": "s",
+                "style_index": "6",
+                "raw_value": "2031",
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "B3": {
+                "type": "n",
+                "style_index": "6",
+                "raw_value": "83114980880",
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "C3": {
+                "type": "n",
+                "style_index": "7",
+                "raw_value": "319135614",
+                "formula_present": false,
+                "number_format_id": "3",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "D3": {
+                "type": "n",
+                "style_index": "7",
+                "raw_value": "18129064",
+                "formula_present": false,
+                "number_format_id": "3",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "E3": {
+                "type": "n",
+                "style_index": "7",
+                "raw_value": "5438719",
+                "formula_present": false,
+                "number_format_id": "3",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "F3": {
+                "type": "s",
+                "style_index": "8",
+                "raw_value": "3542",
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              }
+            }
+          }
+        ],
+        "table_detected": true,
+        "workbook_date_system": "1900",
+        "number_formats_by_style": [
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "3",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "3",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          }
+        ],
+        "header_row": 1,
+        "headers_raw": [
+          "Name",
+          "ABN",
+          "Total income $",
+          "Taxable income $",
+          "Tax payable $",
+          "Income year"
+        ],
+        "headers_for_json": [
+          "Name",
+          "ABN",
+          "Total income $",
+          "Taxable income $",
+          "Tax payable $",
+          "Income year"
+        ],
+        "data_record_count": 4415
+      },
+      {
+        "name": "PRRT details",
+        "xml_path": "xl/worksheets/sheet3.xml",
+        "xml_row_count": 22,
+        "nonempty_row_count": 22,
+        "preview_rows": [
+          {
+            "row_number": 1,
+            "values": [
+              "Name",
+              "ABN",
+              "PRRT Payable $"
+            ],
+            "cell_evidence": {
+              "A1": {
+                "type": "s",
+                "style_index": "5",
+                "raw_value": "2",
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "B1": {
+                "type": "s",
+                "style_index": "9",
+                "raw_value": "3",
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "C1": {
+                "type": "s",
+                "style_index": "10",
+                "raw_value": "3527",
+                "formula_present": false,
+                "number_format_id": "3",
+                "custom_format_code": null,
+                "builtin_format": true
+              }
+            }
+          },
+          {
+            "row_number": 2,
+            "values": [
+              "CHEVRON AUSTRALIA PTY LTD",
+              "29086197757",
+              "166500753"
+            ],
+            "cell_evidence": {
+              "A2": {
+                "type": "s",
+                "style_index": "6",
+                "raw_value": "4390",
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "B2": {
+                "type": "n",
+                "style_index": "6",
+                "raw_value": "29086197757",
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "C2": {
+                "type": "n",
+                "style_index": "7",
+                "raw_value": "166500753",
+                "formula_present": false,
+                "number_format_id": "3",
+                "custom_format_code": null,
+                "builtin_format": true
+              }
+            }
+          },
+          {
+            "row_number": 3,
+            "values": [
+              "ESSO AUSTRALIA RESOURCES PTY LTD",
+              "62091829819",
+              "319005502"
+            ],
+            "cell_evidence": {
+              "A3": {
+                "type": "s",
+                "style_index": "6",
+                "raw_value": "4391",
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "B3": {
+                "type": "n",
+                "style_index": "6",
+                "raw_value": "62091829819",
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "C3": {
+                "type": "n",
+                "style_index": "7",
+                "raw_value": "319005502",
+                "formula_present": false,
+                "number_format_id": "3",
+                "custom_format_code": null,
+                "builtin_format": true
+              }
+            }
+          }
+        ],
+        "table_detected": true,
+        "workbook_date_system": "1900",
+        "number_formats_by_style": [
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "3",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "3",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          }
+        ],
+        "header_row": 1,
+        "headers_raw": [
+          "Name",
+          "ABN",
+          "PRRT Payable $"
+        ],
+        "headers_for_json": [
+          "Name",
+          "ABN",
+          "PRRT Payable $"
+        ],
+        "data_record_count": 21
+      }
+    ],
+    "full_parsed_tabular_records": 4436,
+    "reparsed_at": "2026-10-09T12:11:28.229078+00:00",
+    "reparse_basis": "Existing complete byte snapshot, no new network call"
+  },
+  "primary_sample_count": 1000,
+  "full_record_count": 4436,
+  "selection": "First data rows in workbook/sheet order, not random; information sheets retained as parser evidence.",
+  "completed_at": "2026-10-09T12:04:58.222931+00:00",
+  "elapsed_seconds": 0.482,
+  "records_file": "records.jsonl"
+}

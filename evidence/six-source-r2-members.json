@@ -1,0 +1,2402 @@
+{
+  "real-act-contracts-historical-r2/result.json": {
+    "sha256": "e9a165bb0579cfaad8fe7e2daeb11d8f74a768e6d9c80a3a08799e53f395f256",
+    "bytes": 1269,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/result.json"
+  },
+  "real-act-contracts-historical-r2/run/.lock": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/.lock"
+  },
+  "real-act-contracts-historical-r2/run/request.json": {
+    "sha256": "bfae45de3fda85f7aeb2ef390dbf1e4f4e7d2478b76dc1851cf27ef8c2867eee",
+    "bytes": 1109,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/request.json"
+  },
+  "real-act-contracts-historical-r2/run/trace.json": {
+    "sha256": "8116961c7e93323d9dcba04e0aed851a1d8fa78cd8513f66d56833247e3eafa8",
+    "bytes": 10147,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/trace.json"
+  },
+  "real-act-contracts-historical-r2/run/observations.jsonl": {
+    "sha256": "6b7a77663932107dff6abdb0f6fc73000847c242fdc91b96eda2fcc35b3483e7",
+    "bytes": 1738926,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/observations.jsonl"
+  },
+  "real-act-contracts-historical-r2/run/checkpoint.internal.json": {
+    "sha256": "4e8a4cb7762c013cca26538e321a8468824b894dc5456169802b5183b46e212e",
+    "bytes": 94530,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/checkpoint.internal.json"
+  },
+  "real-act-contracts-historical-r2/run/approval.json": {
+    "sha256": "87548582abd187fd91b65bb10d79abb49629ba4989b73e2917a3455c0d3b2c40",
+    "bytes": 2431,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/approval.json"
+  },
+  "real-act-contracts-historical-r2/run/onboard.json": {
+    "sha256": "297abc22f894e484525ae8eb9c819da201f0a4e48028bea0b02326e3df7283a2",
+    "bytes": 60594,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/onboard.json"
+  },
+  "real-act-contracts-historical-r2/run/extraction.json": {
+    "sha256": "9a06e9e86f163518c4600fb345ee99faeba7d696f0b42a9229ec521922721272",
+    "bytes": 6658,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/extraction.json"
+  },
+  "real-act-contracts-historical-r2/run/extraction/trace.json": {
+    "sha256": "2691f7f171c69594e75b5e3d067b6809a7dacd5633db5b6c0b0fa7b723bf22e1",
+    "bytes": 121,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/extraction/trace.json"
+  },
+  "real-act-contracts-historical-r2/run/extraction/checkpoint.internal.json": {
+    "sha256": "7af443da58269de8d5ded7b712bb2b27d7410267a388f871ace09d11f773c1ef",
+    "bytes": 1436,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/extraction/checkpoint.internal.json"
+  },
+  "real-act-contracts-historical-r2/run/extraction/artifacts/extraction-result.json": {
+    "sha256": "04e7a0d96892f3c983fb0e0ae8223883af3409ae6ae00c4ef18dd2366e7eb284",
+    "bytes": 1745601,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/extraction/artifacts/extraction-result.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/response-322d50e95b997aa0b632b940.json": {
+    "sha256": "eb739d58940c04f268e523f1691b0783b590ea440a542f5199570fb2d887f369",
+    "bytes": 5133,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/response-322d50e95b997aa0b632b940.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/model-request-742321ac05ce4dc6b07f21e01463efa52c7591b080f71c9c69964292c1ba048f.json": {
+    "sha256": "223bea088120be3953910fe39508fac9a5626d34dae9633d599b1cdfd7c92ab9",
+    "bytes": 37219,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/model-request-742321ac05ce4dc6b07f21e01463efa52c7591b080f71c9c69964292c1ba048f.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/provider-receipt-08b26b7aa303ef7b4b0c8b9c.json": {
+    "sha256": "3638870cf86bc887aa02ec734a9094131d0643267ad962ab41fc67aad7d61de0",
+    "bytes": 1233,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/provider-receipt-08b26b7aa303ef7b4b0c8b9c.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/probe-ast_abn_v1.json": {
+    "sha256": "1cabecd9b37b200406906b67842ee738dd4c97f6cbbd485976b101b85bce2e7d",
+    "bytes": 1276,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/probe-ast_abn_v1.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/provider-receipt-83bdda107e4c141528e469f6.json": {
+    "sha256": "f93b2fdd2d4a352e41798821c01e66fe07c54f4046edb0e6558fc5923506c4be",
+    "bytes": 1229,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/provider-receipt-83bdda107e4c141528e469f6.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/candidate-ast_abn_only_v2.json": {
+    "sha256": "5edd6087fb4e4a779073f8b6eb56071f84e4a9d368edd74d9abd846cd404c8a8",
+    "bytes": 7225,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/candidate-ast_abn_only_v2.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/candidate-execution-ast_abn_only_v2.json": {
+    "sha256": "ef64df9374137befdad757a1df74018815b73e60de513f60630712d17f1f05db",
+    "bytes": 340,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/candidate-execution-ast_abn_only_v2.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/candidate-context-ast_abn_v1.json": {
+    "sha256": "9cd45cc0f9fb006899a6242dfc6e7352346c5f600a87c1186a48a9a100a095db",
+    "bytes": 24933,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/candidate-context-ast_abn_v1.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/model-request-62a5d6069dae23d3e1598beffaeba0aeb18fb77e2d538b574a31812b4ed47fe5.json": {
+    "sha256": "1ab46b9e2a87ff0d135c7d1bd3ad97278e35f85dcfa54031702e145b789e3982",
+    "bytes": 40183,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/model-request-62a5d6069dae23d3e1598beffaeba0aeb18fb77e2d538b574a31812b4ed47fe5.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/response-8704cacff6bd418d8cdde81f.json": {
+    "sha256": "89a1662a99831273d09fba9b60e6b39e157d681eaf18f17020f9181be3c5261d",
+    "bytes": 1642,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/response-8704cacff6bd418d8cdde81f.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/final-config.json": {
+    "sha256": "5edd6087fb4e4a779073f8b6eb56071f84e4a9d368edd74d9abd846cd404c8a8",
+    "bytes": 7225,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/final-config.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/model-request-8ea35c0a4be1de5442b41979001e3337c26201f6068ff331a10af3b928b7292e.json": {
+    "sha256": "e02b855e0bf7076574c7b41fad7aad398b6c97b1f1963c8f953355a08b0e2243",
+    "bytes": 64223,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/model-request-8ea35c0a4be1de5442b41979001e3337c26201f6068ff331a10af3b928b7292e.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/request-699265d2fc1c5118a7e32709.json": {
+    "sha256": "949ff8defd682c4fd91fbf88c52db482ebb9d4586d3b42dcd0ee095fd2844551",
+    "bytes": 4732,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/request-699265d2fc1c5118a7e32709.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/task-requirements.json": {
+    "sha256": "c9124e2387e2f9b08e755a37bf9df622d905b9cd743e9b90f2677714646db006",
+    "bytes": 566,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/task-requirements.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/provider-receipt-8704cacff6bd418d8cdde81f.json": {
+    "sha256": "de4af90e927cb892d2fe8b39e73b415c5f9c77c65f7ee8be9c28f94e16c2fcc1",
+    "bytes": 1235,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/provider-receipt-8704cacff6bd418d8cdde81f.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/request-a43c5baf7e8e78e7fd3ef64f.json": {
+    "sha256": "305519b274ad34a09274b68fa641fa9de2e57a44e31ea7b06b23e66a0f0dcb7b",
+    "bytes": 33898,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/request-a43c5baf7e8e78e7fd3ef64f.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/provider-receipt-322d50e95b997aa0b632b940.json": {
+    "sha256": "aa2e4797d5432c8ab17a54e771775f0fdf21585323f2c2681f5dc6a25478147f",
+    "bytes": 1235,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/provider-receipt-322d50e95b997aa0b632b940.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/validation-records.json": {
+    "sha256": "b76f720496c72227d803d5eda7105989418c445f95f42b2bfe4c38dd67497e90",
+    "bytes": 29034,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/validation-records.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/response-08b26b7aa303ef7b4b0c8b9c.json": {
+    "sha256": "d605096ff24b1bbb1feaacd76179c33b871133c1eef057279e88decf7feffc26",
+    "bytes": 3656,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/response-08b26b7aa303ef7b4b0c8b9c.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/request-6198fee3870343fa4649458f.json": {
+    "sha256": "e02b855e0bf7076574c7b41fad7aad398b6c97b1f1963c8f953355a08b0e2243",
+    "bytes": 64223,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/request-6198fee3870343fa4649458f.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/request-724c6a9ea0b3b281deb05432.json": {
+    "sha256": "c58092a2e7e79bd743807a2b203293b9a3bd4be6c5b4ec4aa7bd8fc508f086f0",
+    "bytes": 54534,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/request-724c6a9ea0b3b281deb05432.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/response-83bdda107e4c141528e469f6.json": {
+    "sha256": "472792c33adf4b2d0a0b26fdc5b01b2938f926a6e3ff79ccc51c846b0eb127b4",
+    "bytes": 5256,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/response-83bdda107e4c141528e469f6.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/provider-receipt-9321aea4a3d27d12b8bac80a.json": {
+    "sha256": "67ebb3f01245fb3c0c45cc40ca652f3c2f53100e2b298b2bc97575776a18480b",
+    "bytes": 1232,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/provider-receipt-9321aea4a3d27d12b8bac80a.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/name-audit-ast_abn_v1.json": {
+    "sha256": "5202c4310b7c2dba4225878cee7a0602e2165d28b6c6cab51a3171e7ea029c51",
+    "bytes": 14006,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/name-audit-ast_abn_v1.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/model-request-4ed156d2ecf4ef73fb9e301e3a26671d401a87e453635260b74d0fe361338190.json": {
+    "sha256": "305519b274ad34a09274b68fa641fa9de2e57a44e31ea7b06b23e66a0f0dcb7b",
+    "bytes": 33898,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/model-request-4ed156d2ecf4ef73fb9e301e3a26671d401a87e453635260b74d0fe361338190.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/name-review-context-ast_abn_only_v2.json": {
+    "sha256": "8d02d8d92c273462ee341706f77db60aff3228e43fb9d321aca4bf096149ee7d",
+    "bytes": 319,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/name-review-context-ast_abn_only_v2.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/provider-receipt-a24944a2b06db14bb89cc44e.json": {
+    "sha256": "0c44307aee048589cf47eb2021713864fdf2c239050952ecad56d436338d1fc2",
+    "bytes": 1232,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/provider-receipt-a24944a2b06db14bb89cc44e.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/request-14585292b81dc8c2975ecb86.json": {
+    "sha256": "1ab46b9e2a87ff0d135c7d1bd3ad97278e35f85dcfa54031702e145b789e3982",
+    "bytes": 40183,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/request-14585292b81dc8c2975ecb86.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/candidate-execution-ast_abn_v1.json": {
+    "sha256": "109371f9406242994ff5d197c081c7b741ba372b135b21a85c3a494490c50fe9",
+    "bytes": 429,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/candidate-execution-ast_abn_v1.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/response-a24944a2b06db14bb89cc44e.json": {
+    "sha256": "8a7254e71cb1b70349abb5b9ef6d19da3642a14e34f1832c45f07eb88367f14c",
+    "bytes": 1549,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/response-a24944a2b06db14bb89cc44e.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/name-review-context-ast_abn_v1.json": {
+    "sha256": "1354f3c1d1f0aa782fec2de020f1d2a2d556e9316805717d312d9a8760eb08b6",
+    "bytes": 238,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/name-review-context-ast_abn_v1.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/discovery.json": {
+    "sha256": "919d13a5ac6de707ddba76e47187568e2368ce96d8cf4095618517393fbe27b7",
+    "bytes": 864,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/discovery.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/response-9321aea4a3d27d12b8bac80a.json": {
+    "sha256": "36c963142e9955062ed1a1a3c1544765a7544087f16e9d9853482fec749a4557",
+    "bytes": 1478,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/response-9321aea4a3d27d12b8bac80a.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/onboard-result.json": {
+    "sha256": "297abc22f894e484525ae8eb9c819da201f0a4e48028bea0b02326e3df7283a2",
+    "bytes": 60594,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/onboard-result.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/model-request-7be2b692d9045742f2ad5c6ef59023a0a9252c78afdf3032cc1c9e08c83ee6d7.json": {
+    "sha256": "08d170b5222baba7dff71aba763ee8521298b8d2815962c2c472072d3cc9c5a9",
+    "bytes": 42377,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/model-request-7be2b692d9045742f2ad5c6ef59023a0a9252c78afdf3032cc1c9e08c83ee6d7.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/candidate-context-ast_abn_only_v2.json": {
+    "sha256": "a0e4c9e0492d72f847c6b1bf33b042a7bef33d7c877768efc9a1353cf4b5e2c7",
+    "bytes": 48050,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/candidate-context-ast_abn_only_v2.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/model-request-bc1cfe54241670720382fa34ea825594f144608ae47914f9e7c6cb66ff3f085b.json": {
+    "sha256": "949ff8defd682c4fd91fbf88c52db482ebb9d4586d3b42dcd0ee095fd2844551",
+    "bytes": 4732,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/model-request-bc1cfe54241670720382fa34ea825594f144608ae47914f9e7c6cb66ff3f085b.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/table-scope.json": {
+    "sha256": "ed5ccaa447bc925f2fc7f6f4d17ba954b0cf65d6984fabe7cf48b229b46a10ef",
+    "bytes": 567,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/table-scope.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/model-request-4252c532a3e64985e2d2e4c3e9fd30dae4872a82a979f35a7c2ca7424353ee3e.json": {
+    "sha256": "89a76d523f413403b7ddbf4a317258084dd83a99b98321f06fe02406a3c357cc",
+    "bytes": 32375,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/model-request-4252c532a3e64985e2d2e4c3e9fd30dae4872a82a979f35a7c2ca7424353ee3e.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/response-14585292b81dc8c2975ecb86.json": {
+    "sha256": "8065b8c7729ce9101e538f83e772c92a9e6b537070dc6cd83f74bead5762ee47",
+    "bytes": 3066,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/response-14585292b81dc8c2975ecb86.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/request-9321aea4a3d27d12b8bac80a.json": {
+    "sha256": "ed28be51ec5a3fe9cb7c4c3688437babf8c8a94d71e5d813e054ad1ce9c5db4a",
+    "bytes": 57010,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/request-9321aea4a3d27d12b8bac80a.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/model-request-3b8989b08e3a0fe91d31eedac3bf443d83c41d95673e237ea0a663cdd696acc9.json": {
+    "sha256": "d851c962fe0661c1d7c435061109af6c8e50b1ef65d43045f459feb6bb1fa55b",
+    "bytes": 60321,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/model-request-3b8989b08e3a0fe91d31eedac3bf443d83c41d95673e237ea0a663cdd696acc9.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/probe-ast_abn_only_v2.json": {
+    "sha256": "d256cf680a09d6a65b2a6d3a8c853e08e061c4ccf9775373036701be91c98674",
+    "bytes": 14609,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/probe-ast_abn_only_v2.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/candidate-manifest-ast_abn_only_v2.json": {
+    "sha256": "bfddea4c45295420d90793c3928f6002dcb7cfc9e6748f27c9469093e1111623",
+    "bytes": 3963,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/candidate-manifest-ast_abn_only_v2.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/candidate-manifest-ast_abn_v1.json": {
+    "sha256": "8bd95ace7826557aa890c336b587f6c3bab3abe197ea7ca1ca60076d6cca2a37",
+    "bytes": 3837,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/candidate-manifest-ast_abn_v1.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/provider-receipt-14585292b81dc8c2975ecb86.json": {
+    "sha256": "a4a0ec39829c41de1301009d8ba4c1df31baf880eb0618bbd89af4a17e36e38b",
+    "bytes": 1232,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/provider-receipt-14585292b81dc8c2975ecb86.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/request-a24944a2b06db14bb89cc44e.json": {
+    "sha256": "d851c962fe0661c1d7c435061109af6c8e50b1ef65d43045f459feb6bb1fa55b",
+    "bytes": 60321,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/request-a24944a2b06db14bb89cc44e.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/provider-receipt-699265d2fc1c5118a7e32709.json": {
+    "sha256": "ecb3a1948a22d456ec894e19cf13881839e33f7001a67b9f908cd38a7896c62e",
+    "bytes": 1231,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/provider-receipt-699265d2fc1c5118a7e32709.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/provider-receipt-a43c5baf7e8e78e7fd3ef64f.json": {
+    "sha256": "9760771f7888fd9019b4f8401d3044ce4a4ad8d19e51ef1d5c693f4d664b955f",
+    "bytes": 1231,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/provider-receipt-a43c5baf7e8e78e7fd3ef64f.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/request-8704cacff6bd418d8cdde81f.json": {
+    "sha256": "223bea088120be3953910fe39508fac9a5626d34dae9633d599b1cdfd7c92ab9",
+    "bytes": 37219,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/request-8704cacff6bd418d8cdde81f.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/model-request-0733170f313326249b34968fd1a763d787449b6dbac159ca068b0c24b873753f.json": {
+    "sha256": "c58092a2e7e79bd743807a2b203293b9a3bd4be6c5b4ec4aa7bd8fc508f086f0",
+    "bytes": 54534,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/model-request-0733170f313326249b34968fd1a763d787449b6dbac159ca068b0c24b873753f.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/candidate-ast_abn_v1.json": {
+    "sha256": "4771f82970f6d4d25481b123f092a5444053f2be502ffb8856abc60790580894",
+    "bytes": 7360,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/candidate-ast_abn_v1.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/request-322d50e95b997aa0b632b940.json": {
+    "sha256": "f5cdb0401e98e4a7a9578c3da8c08f677481fb420dd5d44106ded492a4389297",
+    "bytes": 31417,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/request-322d50e95b997aa0b632b940.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/validation-2.json": {
+    "sha256": "33abb2cde628bd65038835916677f98a93f83385804bba17aa271c21a2252805",
+    "bytes": 42794,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/validation-2.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/provider-receipt-724c6a9ea0b3b281deb05432.json": {
+    "sha256": "3190d246c8a71a1e18da4075f22f01ae5f25ffcf8082c1f3344a8b4a781b0e88",
+    "bytes": 1233,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/provider-receipt-724c6a9ea0b3b281deb05432.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/name-audit-ast_abn_only_v2.json": {
+    "sha256": "2ea08da380e290abd06f2b435321a4c76cf1a38b06fe8b0d5f04d0a23bb70235",
+    "bytes": 682,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/name-audit-ast_abn_only_v2.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/provider-receipt-6198fee3870343fa4649458f.json": {
+    "sha256": "f4c76bb35def3bfb69eea5a2457e4a625f5df9e22888f7f5ece422656e22e220",
+    "bytes": 1231,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/provider-receipt-6198fee3870343fa4649458f.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/proposal-records.json": {
+    "sha256": "c678e8cf6b6c62072f941151350041ff483a9d5f6239d1b93a0e8996db0bac2f",
+    "bytes": 9467,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/proposal-records.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/model-request-2f9f7708a7f02077370a14293bb41c01f75f2276aba59b73a357912c13dab0f6.json": {
+    "sha256": "ed28be51ec5a3fe9cb7c4c3688437babf8c8a94d71e5d813e054ad1ce9c5db4a",
+    "bytes": 57010,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/model-request-2f9f7708a7f02077370a14293bb41c01f75f2276aba59b73a357912c13dab0f6.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/candidate-discovery-ast_abn_v1.json": {
+    "sha256": "cb25d17c7e9d28ccbb8d69bcfb1d91b34f9ea09840b8374ad773a7b1cfd6b603",
+    "bytes": 4055,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/candidate-discovery-ast_abn_v1.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/request-08b26b7aa303ef7b4b0c8b9c.json": {
+    "sha256": "08d170b5222baba7dff71aba763ee8521298b8d2815962c2c472072d3cc9c5a9",
+    "bytes": 42377,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/request-08b26b7aa303ef7b4b0c8b9c.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/request-83bdda107e4c141528e469f6.json": {
+    "sha256": "89a76d523f413403b7ddbf4a317258084dd83a99b98321f06fe02406a3c357cc",
+    "bytes": 32375,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/request-83bdda107e4c141528e469f6.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/response-724c6a9ea0b3b281deb05432.json": {
+    "sha256": "40d7f47810b65725d3ad1c53adca28370ef111647c6299a47440f7abb7cb904f",
+    "bytes": 5257,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/response-724c6a9ea0b3b281deb05432.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/response-6198fee3870343fa4649458f.json": {
+    "sha256": "2d096254c899b0b2b774c4a8b00ec4e4cf497921c828bf524e1e62acc6d15a1e",
+    "bytes": 1475,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/response-6198fee3870343fa4649458f.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/response-a43c5baf7e8e78e7fd3ef64f.json": {
+    "sha256": "0429d91468008c5e7463ecbffa99f1179948e5ae1509ee6a4d6e2e1f478e1d44",
+    "bytes": 1472,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/response-a43c5baf7e8e78e7fd3ef64f.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/model-request-732e02311315d8ab9129b0cd8aebb6391d3762db70239c9dc1ab0ab4201df5c5.json": {
+    "sha256": "f5cdb0401e98e4a7a9578c3da8c08f677481fb420dd5d44106ded492a4389297",
+    "bytes": 31417,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/model-request-732e02311315d8ab9129b0cd8aebb6391d3762db70239c9dc1ab0ab4201df5c5.json"
+  },
+  "real-act-contracts-historical-r2/run/artifacts/response-699265d2fc1c5118a7e32709.json": {
+    "sha256": "a1791d9293f2d92a03a6352ec1406a96b418985a7e053373b2470f3a4452349c",
+    "bytes": 1724,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/response-699265d2fc1c5118a7e32709.json"
+  },
+  "real-suitable-operators-r2/result.json": {
+    "sha256": "2eff35814603ea7413814465b2b75b1d8107b59ac0d63a269da784922f718d30",
+    "bytes": 1263,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/result.json"
+  },
+  "real-suitable-operators-r2/run/.lock": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/.lock"
+  },
+  "real-suitable-operators-r2/run/request.json": {
+    "sha256": "6f373610ff7ea80dcc5f0866e4538c4daa0227de7540665cc777d02e7c350fe7",
+    "bytes": 1244,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/request.json"
+  },
+  "real-suitable-operators-r2/run/trace.json": {
+    "sha256": "874e9ecc48977caec2abb34a71f8e3824a6388c1855499dac24d3ebc474759f5",
+    "bytes": 9917,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/trace.json"
+  },
+  "real-suitable-operators-r2/run/observations.jsonl": {
+    "sha256": "86d71e524ff22f8a0049ac032bd96212d739a69f4727a10b4f54edacccd4c1d5",
+    "bytes": 20753116,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/observations.jsonl"
+  },
+  "real-suitable-operators-r2/run/checkpoint.internal.json": {
+    "sha256": "90d9eeab7d4484190770c4819e62ba458e12dabd641f9601c62da35eb9a863fa",
+    "bytes": 91814,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/checkpoint.internal.json"
+  },
+  "real-suitable-operators-r2/run/approval.json": {
+    "sha256": "3f01563f1b7004b51f834269aa143f57e5cc283031d7f765ada094f265da5e10",
+    "bytes": 2671,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/approval.json"
+  },
+  "real-suitable-operators-r2/run/onboard.json": {
+    "sha256": "0cd02767b6b41e482a2e485a1dc7fe59b1c751d1b0852e9201ae4ac71a4a5265",
+    "bytes": 52759,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/onboard.json"
+  },
+  "real-suitable-operators-r2/run/extraction.json": {
+    "sha256": "231a57b39183fcbfb6d0bb41a026164f597d85998539d7e02cae77cb61af4811",
+    "bytes": 12107,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/extraction.json"
+  },
+  "real-suitable-operators-r2/run/extraction/trace.json": {
+    "sha256": "d758f6466ab51c978d0751705f0236bda74d7b2dc6d3e3306bb7ce2d54aec3f5",
+    "bytes": 115,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/extraction/trace.json"
+  },
+  "real-suitable-operators-r2/run/extraction/checkpoint.internal.json": {
+    "sha256": "a9d65b04e9be728c27c9a6f3acd1cb545e36cd566e53618e3989a4ac23143594",
+    "bytes": 1431,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/extraction/checkpoint.internal.json"
+  },
+  "real-suitable-operators-r2/run/extraction/artifacts/extraction-result.json": {
+    "sha256": "02a7a5b6971b4474f61a50518c373fac4f7dd72e4677bde5ebaec54696870d75",
+    "bytes": 20765240,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/extraction/artifacts/extraction-result.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/candidate-context-rso_ast_v1.json": {
+    "sha256": "fb35ddac7c1c37bd3938c71b7c13bd64f52fa2175f6c6ea7c8537860fee03eb3",
+    "bytes": 17421,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/candidate-context-rso_ast_v1.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/model-request-831ba19b74e407d8a7c66020033859244d2cabcb21abe60a6ae757f925f04973.json": {
+    "sha256": "7a6175240cc917b186c00ca15b7f964e19e1cfe89dea4bf8b6f8ca026eb4927d",
+    "bytes": 32344,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/model-request-831ba19b74e407d8a7c66020033859244d2cabcb21abe60a6ae757f925f04973.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/request-72ab59c4921a6a678e6348b5.json": {
+    "sha256": "7a6175240cc917b186c00ca15b7f964e19e1cfe89dea4bf8b6f8ca026eb4927d",
+    "bytes": 32344,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/request-72ab59c4921a6a678e6348b5.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/provider-receipt-7ead074bdfb3df53845aed69.json": {
+    "sha256": "d2a98c190aeddef0b3a22870accf58b0da7e4f852c619513806ac15cbc413201",
+    "bytes": 1231,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/provider-receipt-7ead074bdfb3df53845aed69.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/probe-rso_ast_v1.json": {
+    "sha256": "69cd6205899ba4afc7208b9130a791a4acf300ef4021889d9f84898ca4349ab0",
+    "bytes": 6438,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/probe-rso_ast_v1.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/response-6860bebb9a525c0e5facccc5.json": {
+    "sha256": "38b5c1fb575dd547b9fb35ebb9035b22c4f999336b78d30d22a7b017e1c0db4e",
+    "bytes": 1473,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/response-6860bebb9a525c0e5facccc5.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/final-config.json": {
+    "sha256": "a217edd0a7188329c9491ac7d5f47d892ce716d4b1c80db15318058c8af3fa61",
+    "bytes": 5215,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/final-config.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/response-5de521bce29a8d03cd21c212.json": {
+    "sha256": "fe603c5b9436690cd6751f34d73e5dbd6fc83fdb82f1fa624222a5e20b1985c2",
+    "bytes": 4142,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/response-5de521bce29a8d03cd21c212.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/provider-receipt-5de521bce29a8d03cd21c212.json": {
+    "sha256": "7d1941e986a63cb8df4dd3c58f34a6d92e358d0e5e42cc6b8afec8216e5483ae",
+    "bytes": 1233,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/provider-receipt-5de521bce29a8d03cd21c212.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/model-request-8ea35c0a4be1de5442b41979001e3337c26201f6068ff331a10af3b928b7292e.json": {
+    "sha256": "d1d965559f1ca469dbbe752cd0fe289a8a364a600f8ce1b957cb63f8a66c12fa",
+    "bytes": 63860,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/model-request-8ea35c0a4be1de5442b41979001e3337c26201f6068ff331a10af3b928b7292e.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/provider-receipt-6860bebb9a525c0e5facccc5.json": {
+    "sha256": "27cec08993b404ab6f19fab3accd5576f33ba51bb160fd5b8b7aa492b3f5c0af",
+    "bytes": 1232,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/provider-receipt-6860bebb9a525c0e5facccc5.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/task-requirements.json": {
+    "sha256": "ec3deda824152efdf4eb1efe996872e6c74ea0acbba00a3dc88a41786de6884a",
+    "bytes": 579,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/task-requirements.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/candidate-rso_ast_v2.json": {
+    "sha256": "a217edd0a7188329c9491ac7d5f47d892ce716d4b1c80db15318058c8af3fa61",
+    "bytes": 5215,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/candidate-rso_ast_v2.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/response-7ead074bdfb3df53845aed69.json": {
+    "sha256": "74dd5db1d7522e485e0e6ddfeda1dd037da204133ce6708c1aa8a44bd5947372",
+    "bytes": 1760,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/response-7ead074bdfb3df53845aed69.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/request-2d4c36cfd2ff203a4c412aef.json": {
+    "sha256": "1a685a4c18285015892f9f210f6bee4e49a8a4eda5e7c7c4c32522bc5060eeee",
+    "bytes": 35090,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/request-2d4c36cfd2ff203a4c412aef.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/validation-records.json": {
+    "sha256": "ac77461476a4ab60f14f5d0e131bd4b7d829c0f41773f05c64773b9af562e3ee",
+    "bytes": 11228,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/validation-records.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/request-518ecb0bc59947428d8732ae.json": {
+    "sha256": "d1d965559f1ca469dbbe752cd0fe289a8a364a600f8ce1b957cb63f8a66c12fa",
+    "bytes": 63860,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/request-518ecb0bc59947428d8732ae.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/model-request-4ed156d2ecf4ef73fb9e301e3a26671d401a87e453635260b74d0fe361338190.json": {
+    "sha256": "dd0c1dabf50bebb5d1d96291833177189bd43168a1c6cbb5f05fa92b7314f113",
+    "bytes": 26386,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/model-request-4ed156d2ecf4ef73fb9e301e3a26671d401a87e453635260b74d0fe361338190.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/name-audit-rso_ast_v1.json": {
+    "sha256": "027d498dc68e464ad2feeb010b924f355aa7808fa3948903d6e8586a8e7d5da3",
+    "bytes": 14996,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/name-audit-rso_ast_v1.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/provider-receipt-e7758c2012ab7dc0be4986ea.json": {
+    "sha256": "a1f965262ac5d33155a1a00e042d715a835a67cfc8781eb7be0b6932db8a10b2",
+    "bytes": 1235,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/provider-receipt-e7758c2012ab7dc0be4986ea.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/candidate-manifest-rso_ast_v2.json": {
+    "sha256": "476ee770014113c23f56a260cc1092873b09b1ccb0bd8924f06522d66491271c",
+    "bytes": 3112,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/candidate-manifest-rso_ast_v2.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/response-63971b1cd0ab8e51590d4856.json": {
+    "sha256": "fb4ef720297983cebd79378525b02b93522f544c787e18969eef0249bc2ddff5",
+    "bytes": 4407,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/response-63971b1cd0ab8e51590d4856.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/response-c9b3c1984a4aa1f495eceb80.json": {
+    "sha256": "519f3869756d9937d21ec37996233e2ef918844229a2f194c44e566130909a41",
+    "bytes": 2232,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/response-c9b3c1984a4aa1f495eceb80.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/response-59df1874d80b7ecca0b923fd.json": {
+    "sha256": "d101d982d62ad0e95caa3ddefa9b365fa7f9bfffc914c7abf577626d5bec1a79",
+    "bytes": 2463,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/response-59df1874d80b7ecca0b923fd.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/request-60bca27e5fe6ed6c4814428e.json": {
+    "sha256": "775e6bfcf63ef09300de62d6601641a437f2aa380668103cea03ef9fa0ff41c7",
+    "bytes": 65984,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/request-60bca27e5fe6ed6c4814428e.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/provider-receipt-c9b3c1984a4aa1f495eceb80.json": {
+    "sha256": "0f5d0007fa314da116488e82e9acaabf6cbd1a86d279fa1295498192e65e36aa",
+    "bytes": 1235,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/provider-receipt-c9b3c1984a4aa1f495eceb80.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/provider-receipt-63971b1cd0ab8e51590d4856.json": {
+    "sha256": "915a233475cb64e20645afb2b952426f48fcfdd163bb5a0c1f656f94ec86c414",
+    "bytes": 1234,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/provider-receipt-63971b1cd0ab8e51590d4856.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/name-review-context-rso_ast_v1.json": {
+    "sha256": "9ace545d8c106bb8493e08ff6aeb1605b26cd7121a871c16798bdeb071b5ad88",
+    "bytes": 238,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/name-review-context-rso_ast_v1.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/provider-receipt-59df1874d80b7ecca0b923fd.json": {
+    "sha256": "2465d2761759bb7453d73308b620843ba954e4799bc624ed4063691a7e7879b2",
+    "bytes": 1235,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/provider-receipt-59df1874d80b7ecca0b923fd.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/candidate-execution-rso_ast_v1.json": {
+    "sha256": "70b2e3300c77bba2f283af37c584200305e3bb33d2d40bf211ce4d94033e23b7",
+    "bytes": 1250,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/candidate-execution-rso_ast_v1.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/discovery.json": {
+    "sha256": "3ad8c051e406b772a082522904510e0fdfe74d00c955949dd58c5ac5e31d1aff",
+    "bytes": 394,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/discovery.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/response-e7758c2012ab7dc0be4986ea.json": {
+    "sha256": "5f584cb89c8f72f0cbb007c7d862108569dd29bc4429b339c5f673c2f731028f",
+    "bytes": 4518,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/response-e7758c2012ab7dc0be4986ea.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/onboard-result.json": {
+    "sha256": "0cd02767b6b41e482a2e485a1dc7fe59b1c751d1b0852e9201ae4ac71a4a5265",
+    "bytes": 52759,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/onboard-result.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/request-c9b3c1984a4aa1f495eceb80.json": {
+    "sha256": "483daae105f89fec65115fc72c4b90b9aeb7b1438299a20aef83ef836ea4d3de",
+    "bytes": 68499,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/request-c9b3c1984a4aa1f495eceb80.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/table-scope.json": {
+    "sha256": "957f66d9f252530dc1b13a8cacca5c23c84095add37949c06c979cf5e475ef4c",
+    "bytes": 569,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/table-scope.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/request-63971b1cd0ab8e51590d4856.json": {
+    "sha256": "583d6602bb05757ff649fd585b1e582919371defb0fdb11001478b8ffe0fe36c",
+    "bytes": 63503,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/request-63971b1cd0ab8e51590d4856.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/request-59df1874d80b7ecca0b923fd.json": {
+    "sha256": "b7cfeea8511230eba5c1ec655474f4226aaf53014d8e3299f395617fb06c7815",
+    "bytes": 29035,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/request-59df1874d80b7ecca0b923fd.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/response-60bca27e5fe6ed6c4814428e.json": {
+    "sha256": "280c9691ae3ecf927b6de01698f04a54e85b1e692f1fbba08bf3a4b98ac39fd3",
+    "bytes": 1473,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/response-60bca27e5fe6ed6c4814428e.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/name-review-context-rso_ast_v2.json": {
+    "sha256": "ece4ac604bfa577c6fbe8c26270cc9f05b6ecfe92d762ef22264a7ae2d59eedd",
+    "bytes": 319,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/name-review-context-rso_ast_v2.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/model-request-999c0a158b551e1a96970ff846e654c1fb1d450d4041576240f91e8f2f4c3720.json": {
+    "sha256": "483daae105f89fec65115fc72c4b90b9aeb7b1438299a20aef83ef836ea4d3de",
+    "bytes": 68499,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/model-request-999c0a158b551e1a96970ff846e654c1fb1d450d4041576240f91e8f2f4c3720.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/response-518ecb0bc59947428d8732ae.json": {
+    "sha256": "241f90d52951da1622a19a1b416365674905ad46027546d788ccc9d61f5c0307",
+    "bytes": 1473,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/response-518ecb0bc59947428d8732ae.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/candidate-execution-rso_ast_v2.json": {
+    "sha256": "7e1cccd697ee26a3a39981707a50fc71dfbb5ef2a3093e4facaaac3b01386b33",
+    "bytes": 1019,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/candidate-execution-rso_ast_v2.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/candidate-manifest-rso_ast_v1.json": {
+    "sha256": "475ed1726ebc3a8fea18e739460a84f787964cda1f7dc2b399529c65c92d4b6a",
+    "bytes": 2850,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/candidate-manifest-rso_ast_v1.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/provider-receipt-518ecb0bc59947428d8732ae.json": {
+    "sha256": "57b77badf69bbd8c0472574ea7463c34f31fa18c392ec95f0f6186c20d44acdd",
+    "bytes": 1234,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/provider-receipt-518ecb0bc59947428d8732ae.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/provider-receipt-60bca27e5fe6ed6c4814428e.json": {
+    "sha256": "ba9e0c01925676ce10f15625923d326f27f0dd48ae19b3de1e8a69b19312e453",
+    "bytes": 1232,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/provider-receipt-60bca27e5fe6ed6c4814428e.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/request-e7758c2012ab7dc0be4986ea.json": {
+    "sha256": "c071511cab11f4966823e65092bc9d2cd7e86f73e419667b29df7134c18581b9",
+    "bytes": 24620,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/request-e7758c2012ab7dc0be4986ea.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/name-audit-rso_ast_v2.json": {
+    "sha256": "bcb8fabf539dc304cf731dbd196cc0c3cb1f32c373cc472ffdc7a548bd9fb1f0",
+    "bytes": 682,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/name-audit-rso_ast_v2.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/candidate-rso_ast_v1.json": {
+    "sha256": "7aeef2f5df2bbdede084b3d5c0ee406efb7289af2462b39db0c1a885843fb52b",
+    "bytes": 5642,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/candidate-rso_ast_v1.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/request-6860bebb9a525c0e5facccc5.json": {
+    "sha256": "dd0c1dabf50bebb5d1d96291833177189bd43168a1c6cbb5f05fa92b7314f113",
+    "bytes": 26386,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/request-6860bebb9a525c0e5facccc5.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/request-5de521bce29a8d03cd21c212.json": {
+    "sha256": "a84ed4df037482dd15a62809265fdbb64a2c58af55dac197230df48fd1bb5bcf",
+    "bytes": 23905,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/request-5de521bce29a8d03cd21c212.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/provider-receipt-2d4c36cfd2ff203a4c412aef.json": {
+    "sha256": "44e999a7e97239f961b109a9bf958f3195598a42fa78543691135682778cf962",
+    "bytes": 1231,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/provider-receipt-2d4c36cfd2ff203a4c412aef.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/validation-2.json": {
+    "sha256": "8b1fb119e91c70a421011cf891360f520ce9993cda5a707c248d6bdc74596347",
+    "bytes": 38711,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/validation-2.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/model-request-1dda63a5d5d7bed20dc9b6c22e52a08be8714e77be939bd90a08f16dcfc6fa6c.json": {
+    "sha256": "871632c821e7f0414e7e6f85debd0c86f68b738eb841a38248d5b20a43852b5e",
+    "bytes": 4619,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/model-request-1dda63a5d5d7bed20dc9b6c22e52a08be8714e77be939bd90a08f16dcfc6fa6c.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/response-72ab59c4921a6a678e6348b5.json": {
+    "sha256": "9ee19160afefe17b046b7c70b3561f4e69e2ccbb01f06a386566af405df7287c",
+    "bytes": 3619,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/response-72ab59c4921a6a678e6348b5.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/proposal-records.json": {
+    "sha256": "1a52737b504cb34072016eece20e1f321391c76ec24903aec1106253defad9ed",
+    "bytes": 3793,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/proposal-records.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/model-request-2f9f7708a7f02077370a14293bb41c01f75f2276aba59b73a357912c13dab0f6.json": {
+    "sha256": "775e6bfcf63ef09300de62d6601641a437f2aa380668103cea03ef9fa0ff41c7",
+    "bytes": 65984,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/model-request-2f9f7708a7f02077370a14293bb41c01f75f2276aba59b73a357912c13dab0f6.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/model-request-dd015f974cdfd9dc7faa861a91405fcfede0fb175ab153b7177c0e5a176d003a.json": {
+    "sha256": "a84ed4df037482dd15a62809265fdbb64a2c58af55dac197230df48fd1bb5bcf",
+    "bytes": 23905,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/model-request-dd015f974cdfd9dc7faa861a91405fcfede0fb175ab153b7177c0e5a176d003a.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/candidate-discovery-rso_ast_v1.json": {
+    "sha256": "dd609172cdfe1d741a6ba8290e9ee48091bb774275b3b0fa64fb1fc3dd674416",
+    "bytes": 3311,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/candidate-discovery-rso_ast_v1.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/provider-receipt-72ab59c4921a6a678e6348b5.json": {
+    "sha256": "cbdb12ace08fdbfcf27dad477e00a36b46285a4f8045043b206f1ce6f577b433",
+    "bytes": 1233,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/provider-receipt-72ab59c4921a6a678e6348b5.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/request-7ead074bdfb3df53845aed69.json": {
+    "sha256": "871632c821e7f0414e7e6f85debd0c86f68b738eb841a38248d5b20a43852b5e",
+    "bytes": 4619,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/request-7ead074bdfb3df53845aed69.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/model-request-5b95bbc0ac647380baae30a60db70b2477d4b521f3f79f48760e208876633ce5.json": {
+    "sha256": "c071511cab11f4966823e65092bc9d2cd7e86f73e419667b29df7134c18581b9",
+    "bytes": 24620,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/model-request-5b95bbc0ac647380baae30a60db70b2477d4b521f3f79f48760e208876633ce5.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/response-2d4c36cfd2ff203a4c412aef.json": {
+    "sha256": "a6061287258fc5dd4d1f63a4c0e5a568353ce44d1a71527c6ff1d7f234e131a5",
+    "bytes": 4151,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/response-2d4c36cfd2ff203a4c412aef.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/model-request-ec08fa43733c9b173c3159f0694458196c02a0483e10db9ba1539a5dd2b91229.json": {
+    "sha256": "583d6602bb05757ff649fd585b1e582919371defb0fdb11001478b8ffe0fe36c",
+    "bytes": 63503,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/model-request-ec08fa43733c9b173c3159f0694458196c02a0483e10db9ba1539a5dd2b91229.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/model-request-7c909518c2798cc2bb70eb8e3564979bbfa10b8dcbe2873bb749de84038842d4.json": {
+    "sha256": "1a685a4c18285015892f9f210f6bee4e49a8a4eda5e7c7c4c32522bc5060eeee",
+    "bytes": 35090,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/model-request-7c909518c2798cc2bb70eb8e3564979bbfa10b8dcbe2873bb749de84038842d4.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/candidate-context-rso_ast_v2.json": {
+    "sha256": "675967c41fe79435293db458a655a0a2e2095d328b1f1874526e75f58933c6b8",
+    "bytes": 57019,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/candidate-context-rso_ast_v2.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/model-request-ed8459da42199bd1e9ec2770daac2f2a92e5ef56aa01335e0e39f804b75c0ea0.json": {
+    "sha256": "b7cfeea8511230eba5c1ec655474f4226aaf53014d8e3299f395617fb06c7815",
+    "bytes": 29035,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/model-request-ed8459da42199bd1e9ec2770daac2f2a92e5ef56aa01335e0e39f804b75c0ea0.json"
+  },
+  "real-suitable-operators-r2/run/artifacts/probe-rso_ast_v2.json": {
+    "sha256": "496302319e83b8daa607fa248af3d341f7070a1d52b7da7c5572216c9032d5ab",
+    "bytes": 16799,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/probe-rso_ast_v2.json"
+  },
+  "real-qbcc-r2/result.json": {
+    "sha256": "4a3c0d887c2ed3bc0b28f47afa65bc44ef50ed219537242a6e7ceb566f7d4753",
+    "bytes": 1228,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/result.json"
+  },
+  "real-qbcc-r2/run/.lock": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/.lock"
+  },
+  "real-qbcc-r2/run/request.json": {
+    "sha256": "aef6b3a60b5b04811e55c7ce27cfa495f5ad37b2972d6a2741790faf72eb3aa6",
+    "bytes": 1193,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/request.json"
+  },
+  "real-qbcc-r2/run/trace.json": {
+    "sha256": "15d230425c9f892c3d4c0f2d8a440331609bece8e9112ae618bc997a8cc2a6b0",
+    "bytes": 9455,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/trace.json"
+  },
+  "real-qbcc-r2/run/observations.jsonl": {
+    "sha256": "ad0ca8213d3fba27f763f4209d4ef3aef8e4de406efff014c69bb18f18e55486",
+    "bytes": 1378066,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/observations.jsonl"
+  },
+  "real-qbcc-r2/run/checkpoint.internal.json": {
+    "sha256": "8c6d4432633100f17129c847d5057aeaf57ad0499619893bc88a89bb930b8d6c",
+    "bytes": 85461,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/checkpoint.internal.json"
+  },
+  "real-qbcc-r2/run/approval.json": {
+    "sha256": "23d738f1c15d01f957d5a5562f84688926dbf54b0a5d46cdaf1cba85f73eb22a",
+    "bytes": 2898,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/approval.json"
+  },
+  "real-qbcc-r2/run/onboard.json": {
+    "sha256": "b529e92e2fa7ceee3744b20dc7ed208ef9015ca03f219cc472e639751e569595",
+    "bytes": 51233,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/onboard.json"
+  },
+  "real-qbcc-r2/run/extraction.json": {
+    "sha256": "9f4ea8bce230d91420fa0b2430881f7c3204c8f9b5b3b9a2347b8b6cd5e2d227",
+    "bytes": 9077,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/extraction.json"
+  },
+  "real-qbcc-r2/run/extraction/trace.json": {
+    "sha256": "d7b3e1a48d50dcc64cb872bad902cc9c2deafd0b350a368c3e78f84b1cd046ce",
+    "bytes": 101,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/extraction/trace.json"
+  },
+  "real-qbcc-r2/run/extraction/checkpoint.internal.json": {
+    "sha256": "303f981ef08488e37180c4a84a664e0611aee51cb9d12135ca70a492664b1716",
+    "bytes": 1404,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/extraction/checkpoint.internal.json"
+  },
+  "real-qbcc-r2/run/extraction/artifacts/extraction-result.json": {
+    "sha256": "4089c2fec899ef9a35fdd997730451dea44c42c0f3a2d8a49d8dd9367493da95",
+    "bytes": 1387160,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/extraction/artifacts/extraction-result.json"
+  },
+  "real-qbcc-r2/run/artifacts/candidate-manifest-qbcc_ast_1.json": {
+    "sha256": "2bbaf722c46370b645a0a294e51681ae57c1d4e58bfadb64988e71c202720185",
+    "bytes": 2724,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/candidate-manifest-qbcc_ast_1.json"
+  },
+  "real-qbcc-r2/run/artifacts/response-27994b1a57d7ab460b0068a1.json": {
+    "sha256": "aaf51a8813a0d62fa469c366881388cb996798979e0bee913d192e6bcaa35bac",
+    "bytes": 1473,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/response-27994b1a57d7ab460b0068a1.json"
+  },
+  "real-qbcc-r2/run/artifacts/final-config.json": {
+    "sha256": "2212d1ba5e08f7df08d3ed633fdbcc78fe0faa09a4d017f46463c4b6998d6725",
+    "bytes": 4371,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/final-config.json"
+  },
+  "real-qbcc-r2/run/artifacts/name-audit-qbcc_ast_2.json": {
+    "sha256": "aed166ec3c86dbba8c3d3b8bec704c62399793b3c2d0803bd9d8b037cc0917d4",
+    "bytes": 682,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/name-audit-qbcc_ast_2.json"
+  },
+  "real-qbcc-r2/run/artifacts/provider-receipt-666d7318839918e37c42472b.json": {
+    "sha256": "086d67f94545602ce283630db301f3214f3d3c5eecbdaca461d8b13002771f02",
+    "bytes": 1233,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/provider-receipt-666d7318839918e37c42472b.json"
+  },
+  "real-qbcc-r2/run/artifacts/response-666d7318839918e37c42472b.json": {
+    "sha256": "47a12e731d028ac7d6767466d97dbf29a410528a36c4b0e4a7e113203f44319d",
+    "bytes": 3339,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/response-666d7318839918e37c42472b.json"
+  },
+  "real-qbcc-r2/run/artifacts/model-request-8ea35c0a4be1de5442b41979001e3337c26201f6068ff331a10af3b928b7292e.json": {
+    "sha256": "91b704947053426c09b5efb4e1f0d3ae6a655090bc34f97b01795924f33d9a2a",
+    "bytes": 57082,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/model-request-8ea35c0a4be1de5442b41979001e3337c26201f6068ff331a10af3b928b7292e.json"
+  },
+  "real-qbcc-r2/run/artifacts/request-c073ff07d1e1f53260579b78.json": {
+    "sha256": "322358be916d96068931b62232c659a762711c0a6708b3ef7283a385c6227537",
+    "bytes": 34309,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/request-c073ff07d1e1f53260579b78.json"
+  },
+  "real-qbcc-r2/run/artifacts/task-requirements.json": {
+    "sha256": "2dd951cdffc2f18a287ab8381054cd4b6568181cd73475c00b3ee662e0304065",
+    "bytes": 594,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/task-requirements.json"
+  },
+  "real-qbcc-r2/run/artifacts/provider-receipt-27994b1a57d7ab460b0068a1.json": {
+    "sha256": "87045fa3cf75b9b2ed275c536fe81528adb5ea9c74e8be506752ba01268b8a0f",
+    "bytes": 1232,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/provider-receipt-27994b1a57d7ab460b0068a1.json"
+  },
+  "real-qbcc-r2/run/artifacts/name-review-context-qbcc_ast_2.json": {
+    "sha256": "11a9ff2f44b3513d583615cbf83f53ed69393651f46521bef59e14ec6d16677a",
+    "bytes": 319,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/name-review-context-qbcc_ast_2.json"
+  },
+  "real-qbcc-r2/run/artifacts/validation-records.json": {
+    "sha256": "8771876ff2393f57595831e46eb7acd1cb322f4c791226ff4ea39feed027cde4",
+    "bytes": 14227,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/validation-records.json"
+  },
+  "real-qbcc-r2/run/artifacts/candidate-execution-qbcc_ast_2.json": {
+    "sha256": "701dfabcfd1d50e3279893ff4c39a663db258f6d6928b2a9a0617549fe6d0470",
+    "bytes": 546,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/candidate-execution-qbcc_ast_2.json"
+  },
+  "real-qbcc-r2/run/artifacts/request-5a8bda46ff4d0798605d58e7.json": {
+    "sha256": "3e930d049a4b971783e61ae67696e14dc328d706d26737437fcd4079559c98cf",
+    "bytes": 28606,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/request-5a8bda46ff4d0798605d58e7.json"
+  },
+  "real-qbcc-r2/run/artifacts/model-request-079e3a17a67c1fc627b8f37b83d70ece18717bc8a9db9be574a8a6b4e60cf4fc.json": {
+    "sha256": "f61a5b0eac87c22e3a8c6bf17f8b9a067bbc244c84d0577407e1ad047f9b14e2",
+    "bytes": 26125,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/model-request-079e3a17a67c1fc627b8f37b83d70ece18717bc8a9db9be574a8a6b4e60cf4fc.json"
+  },
+  "real-qbcc-r2/run/artifacts/candidate-discovery-qbcc_ast_1.json": {
+    "sha256": "3fc144c9420b4fd171cc0273c87bc3bbd332abdb562377e6bc65748e28202223",
+    "bytes": 2584,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/candidate-discovery-qbcc_ast_1.json"
+  },
+  "real-qbcc-r2/run/artifacts/model-request-4ed156d2ecf4ef73fb9e301e3a26671d401a87e453635260b74d0fe361338190.json": {
+    "sha256": "3e930d049a4b971783e61ae67696e14dc328d706d26737437fcd4079559c98cf",
+    "bytes": 28606,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/model-request-4ed156d2ecf4ef73fb9e301e3a26671d401a87e453635260b74d0fe361338190.json"
+  },
+  "real-qbcc-r2/run/artifacts/response-9e3687f66d4f4a3fefa71ae4.json": {
+    "sha256": "c6fcbf3d7641fceaae5d515000a3b60fb7da57afad98bcf4dd6bb6b139c7e9bc",
+    "bytes": 1472,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/response-9e3687f66d4f4a3fefa71ae4.json"
+  },
+  "real-qbcc-r2/run/artifacts/model-request-144aa63353ca34342448710e1c4eb65d39735d290957c40a9d1e5e938c6076c4.json": {
+    "sha256": "f42d676f8be39cc49e492cc31eaf366c69ebbaa70e28073b0901c012eb981b7d",
+    "bytes": 36505,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/model-request-144aa63353ca34342448710e1c4eb65d39735d290957c40a9d1e5e938c6076c4.json"
+  },
+  "real-qbcc-r2/run/artifacts/response-cf0fa57e308e1c568ef03bc7.json": {
+    "sha256": "9da178dfe56feb1ddf7bdd2dec07e85a03980e114c0ff5efe5c10241d8051e18",
+    "bytes": 1683,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/response-cf0fa57e308e1c568ef03bc7.json"
+  },
+  "real-qbcc-r2/run/artifacts/provider-receipt-2fd0002a3f863bdb13266207.json": {
+    "sha256": "957a7ba309abca89e97e342da33d5866e9bddd431a6f3ddd4004e3ebedcef7ac",
+    "bytes": 1233,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/provider-receipt-2fd0002a3f863bdb13266207.json"
+  },
+  "real-qbcc-r2/run/artifacts/request-44b05b475f41aee4de67b366.json": {
+    "sha256": "05d8b3c9534b8df6f4be6eac80e5a2155c5c788e15c595946df7cdf884c92fa0",
+    "bytes": 50850,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/request-44b05b475f41aee4de67b366.json"
+  },
+  "real-qbcc-r2/run/artifacts/model-request-b540bd85945c1e4c5a3ee57e646037c8ae8327aa0d81ef3364b1cffcdc32314d.json": {
+    "sha256": "5de4291e436c74a93b59b137124f0920da1326872937744c258e6ca33a1ae713",
+    "bytes": 5384,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/model-request-b540bd85945c1e4c5a3ee57e646037c8ae8327aa0d81ef3364b1cffcdc32314d.json"
+  },
+  "real-qbcc-r2/run/artifacts/candidate-context-qbcc_ast_2.json": {
+    "sha256": "54f89b202e3765856833c4133ac27b745b9b3fea5f729279c059c7866c89f21f",
+    "bytes": 44366,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/candidate-context-qbcc_ast_2.json"
+  },
+  "real-qbcc-r2/run/artifacts/provider-receipt-37896f5a99fc4363eb5b1f21.json": {
+    "sha256": "8a0df54c96b34deeaa6111e05f35daeb15ce131e60f82b275f2d57bd2d49ba2f",
+    "bytes": 1233,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/provider-receipt-37896f5a99fc4363eb5b1f21.json"
+  },
+  "real-qbcc-r2/run/artifacts/provider-receipt-5209af247b37357de299c4ff.json": {
+    "sha256": "0cb7da7930837396527bc245a0ab977320ea2f88be3835b6287d5d587fa93f2f",
+    "bytes": 1231,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/provider-receipt-5209af247b37357de299c4ff.json"
+  },
+  "real-qbcc-r2/run/artifacts/provider-receipt-bbe4cdfe98c91360962f633b.json": {
+    "sha256": "76d5d63b3191989c76d2101941f9418ad16f3dc1f19a83481065df7615a596cc",
+    "bytes": 1235,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/provider-receipt-bbe4cdfe98c91360962f633b.json"
+  },
+  "real-qbcc-r2/run/artifacts/probe-qbcc_ast_2.json": {
+    "sha256": "00ab2eb36e0fe3920786616e808f8eba0134e38c4c60f01aecd5b625e3e1dbd8",
+    "bytes": 13533,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/probe-qbcc_ast_2.json"
+  },
+  "real-qbcc-r2/run/artifacts/response-5209af247b37357de299c4ff.json": {
+    "sha256": "5e88490ab966a8af3968167007073fbf78e7db3888ee4f1aa0cb8a9e26d7a7da",
+    "bytes": 3787,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/response-5209af247b37357de299c4ff.json"
+  },
+  "real-qbcc-r2/run/artifacts/candidate-qbcc_ast_1.json": {
+    "sha256": "231c8b8d365ddb43f832fb45da399932f9281d1e3c1611b73e5ac4207dcb1053",
+    "bytes": 4730,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/candidate-qbcc_ast_1.json"
+  },
+  "real-qbcc-r2/run/artifacts/response-bbe4cdfe98c91360962f633b.json": {
+    "sha256": "721037322634fd2de78e4010a657da107fdd38084df78481875953abbee55dde",
+    "bytes": 1995,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/response-bbe4cdfe98c91360962f633b.json"
+  },
+  "real-qbcc-r2/run/artifacts/response-2fd0002a3f863bdb13266207.json": {
+    "sha256": "e7afae7a7826843feb75908d2bf75a3d367e2eefbc64573da1a8cb62f481902f",
+    "bytes": 1756,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/response-2fd0002a3f863bdb13266207.json"
+  },
+  "real-qbcc-r2/run/artifacts/discovery.json": {
+    "sha256": "11ab9f4882ef4560f02fb2bfb077e15e2542c52273da7dd2db0246f684ef8820",
+    "bytes": 466,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/discovery.json"
+  },
+  "real-qbcc-r2/run/artifacts/response-37896f5a99fc4363eb5b1f21.json": {
+    "sha256": "1c88605ccf15bcce5f2e33ebfcaf76e8ea187da7023fa4fa98706b6a0392af21",
+    "bytes": 4017,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/response-37896f5a99fc4363eb5b1f21.json"
+  },
+  "real-qbcc-r2/run/artifacts/provider-receipt-9e3687f66d4f4a3fefa71ae4.json": {
+    "sha256": "032cc7735738d69913571be02bf7dfa40ec00752885ce4b7b7896a6529beee5e",
+    "bytes": 1233,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/provider-receipt-9e3687f66d4f4a3fefa71ae4.json"
+  },
+  "real-qbcc-r2/run/artifacts/provider-receipt-cf0fa57e308e1c568ef03bc7.json": {
+    "sha256": "4992afa54de50b21e30dd69304e71f9bf02b891b620ba9ac10172aefa55c6b03",
+    "bytes": 1231,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/provider-receipt-cf0fa57e308e1c568ef03bc7.json"
+  },
+  "real-qbcc-r2/run/artifacts/onboard-result.json": {
+    "sha256": "b529e92e2fa7ceee3744b20dc7ed208ef9015ca03f219cc472e639751e569595",
+    "bytes": 51233,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/onboard-result.json"
+  },
+  "real-qbcc-r2/run/artifacts/response-44b05b475f41aee4de67b366.json": {
+    "sha256": "7bc0e2af5a8015e771f1ec03d02d55f789b25f74150dc1164299ebfd4707dd8f",
+    "bytes": 3751,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/response-44b05b475f41aee4de67b366.json"
+  },
+  "real-qbcc-r2/run/artifacts/table-scope.json": {
+    "sha256": "68f0a6128f606fce7b4a6b109d7cbd0d42eba0de038231749b7ab274afbdc357",
+    "bytes": 567,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/table-scope.json"
+  },
+  "real-qbcc-r2/run/artifacts/model-request-a5b794ea458fce92f88e1216b5f7572b127a6290d461a408c8bdd3f54da76227.json": {
+    "sha256": "322358be916d96068931b62232c659a762711c0a6708b3ef7283a385c6227537",
+    "bytes": 34309,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/model-request-a5b794ea458fce92f88e1216b5f7572b127a6290d461a408c8bdd3f54da76227.json"
+  },
+  "real-qbcc-r2/run/artifacts/candidate-qbcc_ast_2.json": {
+    "sha256": "2212d1ba5e08f7df08d3ed633fdbcc78fe0faa09a4d017f46463c4b6998d6725",
+    "bytes": 4371,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/candidate-qbcc_ast_2.json"
+  },
+  "real-qbcc-r2/run/artifacts/model-request-3df2f33805ea706e27f9841e9cfce014b08e03c9229f8524353574c64cb8cec7.json": {
+    "sha256": "05d8b3c9534b8df6f4be6eac80e5a2155c5c788e15c595946df7cdf884c92fa0",
+    "bytes": 50850,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/model-request-3df2f33805ea706e27f9841e9cfce014b08e03c9229f8524353574c64cb8cec7.json"
+  },
+  "real-qbcc-r2/run/artifacts/request-9e3687f66d4f4a3fefa71ae4.json": {
+    "sha256": "91b704947053426c09b5efb4e1f0d3ae6a655090bc34f97b01795924f33d9a2a",
+    "bytes": 57082,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/request-9e3687f66d4f4a3fefa71ae4.json"
+  },
+  "real-qbcc-r2/run/artifacts/request-cf0fa57e308e1c568ef03bc7.json": {
+    "sha256": "5de4291e436c74a93b59b137124f0920da1326872937744c258e6ca33a1ae713",
+    "bytes": 5384,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/request-cf0fa57e308e1c568ef03bc7.json"
+  },
+  "real-qbcc-r2/run/artifacts/candidate-context-qbcc_ast_1.json": {
+    "sha256": "575e1b62eaa2c14ceb5099f4bfe5c0202ac6a55a7d50d7d5908b536b4eea3735",
+    "bytes": 19641,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/candidate-context-qbcc_ast_1.json"
+  },
+  "real-qbcc-r2/run/artifacts/probe-qbcc_ast_1.json": {
+    "sha256": "e6f4ddd8e2de15f0ebea79f23d6a30fc2ffee4963ae4b5ab6a4862ab23e7f893",
+    "bytes": 2167,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/probe-qbcc_ast_1.json"
+  },
+  "real-qbcc-r2/run/artifacts/request-5209af247b37357de299c4ff.json": {
+    "sha256": "b641b49b0ae36598f640c4b47d04a89303da50c46ba692853a50c6c2ba71468e",
+    "bytes": 26774,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/request-5209af247b37357de299c4ff.json"
+  },
+  "real-qbcc-r2/run/artifacts/request-bbe4cdfe98c91360962f633b.json": {
+    "sha256": "f8d14723a736cf112542034d4083460d3f0e03aa1813e42ee61091b5618bac0a",
+    "bytes": 30492,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/request-bbe4cdfe98c91360962f633b.json"
+  },
+  "real-qbcc-r2/run/artifacts/provider-receipt-44b05b475f41aee4de67b366.json": {
+    "sha256": "961921568c97b1c8791540ca6bbe3e2167681c34f72aae73f4c406c1863ab16a",
+    "bytes": 1233,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/provider-receipt-44b05b475f41aee4de67b366.json"
+  },
+  "real-qbcc-r2/run/artifacts/request-2fd0002a3f863bdb13266207.json": {
+    "sha256": "baecc7ac708dc46a1f8daf2d146b4a4cb7801b8cf5f9f3eef259674c9795db77",
+    "bytes": 55156,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/request-2fd0002a3f863bdb13266207.json"
+  },
+  "real-qbcc-r2/run/artifacts/request-37896f5a99fc4363eb5b1f21.json": {
+    "sha256": "f61a5b0eac87c22e3a8c6bf17f8b9a067bbc244c84d0577407e1ad047f9b14e2",
+    "bytes": 26125,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/request-37896f5a99fc4363eb5b1f21.json"
+  },
+  "real-qbcc-r2/run/artifacts/name-review-context-qbcc_ast_1.json": {
+    "sha256": "16d92ace535abcd3d69ef535d2423fa9c01a1771fe6d4b98ed30c459fc6e72a6",
+    "bytes": 238,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/name-review-context-qbcc_ast_1.json"
+  },
+  "real-qbcc-r2/run/artifacts/provider-receipt-c073ff07d1e1f53260579b78.json": {
+    "sha256": "cfc9f7bcc5ed678eb475a096753942185a292ec550ea12344968269cf0639259",
+    "bytes": 1232,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/provider-receipt-c073ff07d1e1f53260579b78.json"
+  },
+  "real-qbcc-r2/run/artifacts/model-request-172a67c1145db28c03d71abd9d3144419edb6f4b6a21deda92cd841dc7096e5a.json": {
+    "sha256": "baecc7ac708dc46a1f8daf2d146b4a4cb7801b8cf5f9f3eef259674c9795db77",
+    "bytes": 55156,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/model-request-172a67c1145db28c03d71abd9d3144419edb6f4b6a21deda92cd841dc7096e5a.json"
+  },
+  "real-qbcc-r2/run/artifacts/request-27994b1a57d7ab460b0068a1.json": {
+    "sha256": "26120bd58a8d1ab19d0a3294a18e3a997e695c62b6dd8afe1e9f3f67087afea6",
+    "bytes": 53331,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/request-27994b1a57d7ab460b0068a1.json"
+  },
+  "real-qbcc-r2/run/artifacts/candidate-execution-qbcc_ast_1.json": {
+    "sha256": "3afe336509b7874a03212ca8e57edcf14369c423365b6adc31704a14e47d71cc",
+    "bytes": 782,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/candidate-execution-qbcc_ast_1.json"
+  },
+  "real-qbcc-r2/run/artifacts/validation-2.json": {
+    "sha256": "0a3e878ced889cd3624f96ff4b20940ca7211f741974f314b093a839b76381b8",
+    "bytes": 35576,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/validation-2.json"
+  },
+  "real-qbcc-r2/run/artifacts/provider-receipt-5a8bda46ff4d0798605d58e7.json": {
+    "sha256": "7dc5504a4c68130547c954f96b43a0cf7e5d9c6b4a585078cef42daba65bfbd1",
+    "bytes": 1232,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/provider-receipt-5a8bda46ff4d0798605d58e7.json"
+  },
+  "real-qbcc-r2/run/artifacts/proposal-records.json": {
+    "sha256": "d956385f5f641853a4d8a394aae47a5e50f54d13ef264c24244cd5a3cbeb2007",
+    "bytes": 4884,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/proposal-records.json"
+  },
+  "real-qbcc-r2/run/artifacts/model-request-2f9f7708a7f02077370a14293bb41c01f75f2276aba59b73a357912c13dab0f6.json": {
+    "sha256": "26120bd58a8d1ab19d0a3294a18e3a997e695c62b6dd8afe1e9f3f67087afea6",
+    "bytes": 53331,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/model-request-2f9f7708a7f02077370a14293bb41c01f75f2276aba59b73a357912c13dab0f6.json"
+  },
+  "real-qbcc-r2/run/artifacts/model-request-519eebc9903ed8d01e5c1535c1a72f07ae4e48d80b67baf8a899648bdb356e07.json": {
+    "sha256": "b641b49b0ae36598f640c4b47d04a89303da50c46ba692853a50c6c2ba71468e",
+    "bytes": 26774,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/model-request-519eebc9903ed8d01e5c1535c1a72f07ae4e48d80b67baf8a899648bdb356e07.json"
+  },
+  "real-qbcc-r2/run/artifacts/response-5a8bda46ff4d0798605d58e7.json": {
+    "sha256": "c978273c3612a1ca817d93d2d43fb3eb19ed8b85cf95b79665f7c98bef7b5eec",
+    "bytes": 1473,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/response-5a8bda46ff4d0798605d58e7.json"
+  },
+  "real-qbcc-r2/run/artifacts/name-audit-qbcc_ast_1.json": {
+    "sha256": "0f42363ac113b05a8d882af3ff2feb5c7cf11eaf95e0400f87ae05d76f8a5be9",
+    "bytes": 13232,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/name-audit-qbcc_ast_1.json"
+  },
+  "real-qbcc-r2/run/artifacts/model-request-6ab870028c50b22d7065e4dbbb6bd5435f0bb68a5bc5f3b99c1f296eac1e00c4.json": {
+    "sha256": "f8d14723a736cf112542034d4083460d3f0e03aa1813e42ee61091b5618bac0a",
+    "bytes": 30492,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/model-request-6ab870028c50b22d7065e4dbbb6bd5435f0bb68a5bc5f3b99c1f296eac1e00c4.json"
+  },
+  "real-qbcc-r2/run/artifacts/request-666d7318839918e37c42472b.json": {
+    "sha256": "f42d676f8be39cc49e492cc31eaf366c69ebbaa70e28073b0901c012eb981b7d",
+    "bytes": 36505,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/request-666d7318839918e37c42472b.json"
+  },
+  "real-qbcc-r2/run/artifacts/candidate-manifest-qbcc_ast_2.json": {
+    "sha256": "24b45281fc13989a18ba1db13018a800ca3907b000b1ee88a78bc1c535f82994",
+    "bytes": 2458,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/candidate-manifest-qbcc_ast_2.json"
+  },
+  "real-qbcc-r2/run/artifacts/response-c073ff07d1e1f53260579b78.json": {
+    "sha256": "f44c279f22f936e4d3d3147edabca971c3cd5102c737435185bf527839961504",
+    "bytes": 3068,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/response-c073ff07d1e1f53260579b78.json"
+  },
+  "real-asic-companies-r2/result.json": {
+    "sha256": "fd37164a8248031a3f7fcea58dfe8994b5f6ac5d7ee86d5089855d480c996e22",
+    "bytes": 1302,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/result.json"
+  },
+  "real-asic-companies-r2/run/.lock": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/.lock"
+  },
+  "real-asic-companies-r2/run/request.json": {
+    "sha256": "fb5c92fe12f99076e439e2f23c29803ec8dda55ecebb92deb5c1212c3e99ad40",
+    "bytes": 1235,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/request.json"
+  },
+  "real-asic-companies-r2/run/trace.json": {
+    "sha256": "5e8814ff2c2741d7235a265ddfe44b6145b6150c261f3a6f55c59c2911ff8a45",
+    "bytes": 12414,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/trace.json"
+  },
+  "real-asic-companies-r2/run/observations.jsonl": {
+    "sha256": "76d6e20c45fec8c4720350d1a8f311023899ef60c933e5057dd389eff2150af0",
+    "bytes": 614836,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/observations.jsonl"
+  },
+  "real-asic-companies-r2/run/checkpoint.internal.json": {
+    "sha256": "3f5dd831f4d3a39d1828491b21736fcf8b9042937c68d9f4c2f42e5a41d1f1a3",
+    "bytes": 107189,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/checkpoint.internal.json"
+  },
+  "real-asic-companies-r2/run/approval.json": {
+    "sha256": "46f6b0d0f69d4a7b3a18594c37a553e2d16b0a75da5723b38a4803a62e812c17",
+    "bytes": 2981,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/approval.json"
+  },
+  "real-asic-companies-r2/run/onboard.json": {
+    "sha256": "d2970e08edb34aec886288ac84a1989ac2fe4164e9ec9a079d91a7c5898dd555",
+    "bytes": 57568,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/onboard.json"
+  },
+  "real-asic-companies-r2/run/extraction.json": {
+    "sha256": "44f6efa504aee62b47cdedeceb26d22334be0f79d78cae73200f3daaec5b6379",
+    "bytes": 18888,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/extraction.json"
+  },
+  "real-asic-companies-r2/run/extraction/trace.json": {
+    "sha256": "394b1f5c4e35bdf426794d17bb8fdcee2285acba156eb6627830df1a63f2175e",
+    "bytes": 111,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/extraction/trace.json"
+  },
+  "real-asic-companies-r2/run/extraction/checkpoint.internal.json": {
+    "sha256": "5060be0202860c9325c266f440a3749536777628a1cdc870721851bdc375f76d",
+    "bytes": 1419,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/extraction/checkpoint.internal.json"
+  },
+  "real-asic-companies-r2/run/extraction/artifacts/extraction-result.json": {
+    "sha256": "958ac8a3d3a151ab03548c41f88b44b19e71224d1fdc9cb0463b47c3baeac16b",
+    "bytes": 633741,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/extraction/artifacts/extraction-result.json"
+  },
+  "real-asic-companies-r2/run/artifacts/request-606684e81503ffdcf9f03793.json": {
+    "sha256": "3ea1f929331140f50c0584ef2c20ef787bae4fd9843c2a0fe9e8c59775f14f9b",
+    "bytes": 57667,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/request-606684e81503ffdcf9f03793.json"
+  },
+  "real-asic-companies-r2/run/artifacts/request-e25c4c7b176aa71a559751c4.json": {
+    "sha256": "eca372dbe12005c36a7d0103bed942fa9ce9645c273adce832633346f3f34939",
+    "bytes": 85400,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/request-e25c4c7b176aa71a559751c4.json"
+  },
+  "real-asic-companies-r2/run/artifacts/comparison-validation-ast_identity_v2.json": {
+    "sha256": "0f3520a7cc5e8dd5c7a2fcf92a52e0c7508ca0f8a2a48339958aa50ae32fa9d2",
+    "bytes": 49826,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/comparison-validation-ast_identity_v2.json"
+  },
+  "real-asic-companies-r2/run/artifacts/request-06b124d45f0be6c709f54493.json": {
+    "sha256": "7d1da6381c9e51606819e2c0eb2a050e419fe4902d186e3a91428480207317f5",
+    "bytes": 80690,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/request-06b124d45f0be6c709f54493.json"
+  },
+  "real-asic-companies-r2/run/artifacts/selection-comparison-plan-3.json": {
+    "sha256": "0e160139b9300ea74d4fcfdcfe019ce439b23823c9bba53719dcec7434c5037c",
+    "bytes": 800,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/selection-comparison-plan-3.json"
+  },
+  "real-asic-companies-r2/run/artifacts/response-40374d446075997aaabd678c.json": {
+    "sha256": "ef25ef080b9ecd1f1dcbef0c523efd8c64ebfa47f331058534ccebecedc325df",
+    "bytes": 1785,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/response-40374d446075997aaabd678c.json"
+  },
+  "real-asic-companies-r2/run/artifacts/model-request-ca39621c6bdf2a4044c216085891e1d8992a39126397c93a548ae72ee27efcfe.json": {
+    "sha256": "3ea1f929331140f50c0584ef2c20ef787bae4fd9843c2a0fe9e8c59775f14f9b",
+    "bytes": 57667,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/model-request-ca39621c6bdf2a4044c216085891e1d8992a39126397c93a548ae72ee27efcfe.json"
+  },
+  "real-asic-companies-r2/run/artifacts/model-request-4c685ef2faf04a465ddfb47ceb441243896cf17ed9c885c5455b7a76bf3f14cd.json": {
+    "sha256": "d8882c4e6141ab36404123e12c103ae22d9e64fa7a0c3dd0f0d1ac843c9e2860",
+    "bytes": 45716,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/model-request-4c685ef2faf04a465ddfb47ceb441243896cf17ed9c885c5455b7a76bf3f14cd.json"
+  },
+  "real-asic-companies-r2/run/artifacts/provider-receipt-6ec0721f195d646eb4dd04b5.json": {
+    "sha256": "a8004c6718fccae292d7974a8228291aa263d41aeea92b2b3cb0a2663315325c",
+    "bytes": 1233,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/provider-receipt-6ec0721f195d646eb4dd04b5.json"
+  },
+  "real-asic-companies-r2/run/artifacts/final-config.json": {
+    "sha256": "f85529ec93a437bd123bc56f1b65b6da7da0e1448b2c41836de32ec9b9e43d5e",
+    "bytes": 7357,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/final-config.json"
+  },
+  "real-asic-companies-r2/run/artifacts/response-3bf803cbb88837f6e26489c9.json": {
+    "sha256": "45c0a9bebfaf4420a52d01b05ec33f288d61778aa1f1683d328c839a9a2c554a",
+    "bytes": 1478,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/response-3bf803cbb88837f6e26489c9.json"
+  },
+  "real-asic-companies-r2/run/artifacts/name-audit-ast_identity_v2.json": {
+    "sha256": "2becceb68298deb551c6857542f6fc3ae2b4983f30e71f01e34d3b3c0eab3228",
+    "bytes": 19685,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/name-audit-ast_identity_v2.json"
+  },
+  "real-asic-companies-r2/run/artifacts/request-d4118dbcbb04c7ec73e73775.json": {
+    "sha256": "6f04a3e237af3efe78be9c93de0e16cd88241c3492a32daec8ffed2147ca1837",
+    "bytes": 46389,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/request-d4118dbcbb04c7ec73e73775.json"
+  },
+  "real-asic-companies-r2/run/artifacts/model-request-33624cf2fd2fd8e61268e2f79b9b77313a04182bf832527b7393145058142afe.json": {
+    "sha256": "5de8c06c770210ec01286d7c131dd51d4aee6e640e76f2af277060c68afe9668",
+    "bytes": 79397,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/model-request-33624cf2fd2fd8e61268e2f79b9b77313a04182bf832527b7393145058142afe.json"
+  },
+  "real-asic-companies-r2/run/artifacts/model-request-8bc7396d9c4531ec54479c3b143496b58a2e65338b5069b3a62d545312e5db39.json": {
+    "sha256": "cb2cf0f1ecae0aa51747d0aaa4d0bfebaca94a103997b6581cabe8c82788a9a7",
+    "bytes": 64372,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/model-request-8bc7396d9c4531ec54479c3b143496b58a2e65338b5069b3a62d545312e5db39.json"
+  },
+  "real-asic-companies-r2/run/artifacts/model-request-8ea35c0a4be1de5442b41979001e3337c26201f6068ff331a10af3b928b7292e.json": {
+    "sha256": "7d1da6381c9e51606819e2c0eb2a050e419fe4902d186e3a91428480207317f5",
+    "bytes": 80690,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/model-request-8ea35c0a4be1de5442b41979001e3337c26201f6068ff331a10af3b928b7292e.json"
+  },
+  "real-asic-companies-r2/run/artifacts/request-dbc03baae5b58f4b72e218a9.json": {
+    "sha256": "5de8c06c770210ec01286d7c131dd51d4aee6e640e76f2af277060c68afe9668",
+    "bytes": 79397,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/request-dbc03baae5b58f4b72e218a9.json"
+  },
+  "real-asic-companies-r2/run/artifacts/provider-receipt-40374d446075997aaabd678c.json": {
+    "sha256": "d00c87c91af1083831e0590dd4799f36e729bc8f907ae4e0aa1b0795f35325aa",
+    "bytes": 1232,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/provider-receipt-40374d446075997aaabd678c.json"
+  },
+  "real-asic-companies-r2/run/artifacts/response-6ec0721f195d646eb4dd04b5.json": {
+    "sha256": "b642d47b6fd4fa0a3036e1bb601d802f2a6471e7bd20c36a48e2ad1510cd26d5",
+    "bytes": 4536,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/response-6ec0721f195d646eb4dd04b5.json"
+  },
+  "real-asic-companies-r2/run/artifacts/task-requirements.json": {
+    "sha256": "ec3deda824152efdf4eb1efe996872e6c74ea0acbba00a3dc88a41786de6884a",
+    "bytes": 579,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/task-requirements.json"
+  },
+  "real-asic-companies-r2/run/artifacts/provider-receipt-3bf803cbb88837f6e26489c9.json": {
+    "sha256": "4fb9cf7aeffc69073f4051fbc8e947935ef12a72b790e57e6b98dd21ea6cea07",
+    "bytes": 1234,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/provider-receipt-3bf803cbb88837f6e26489c9.json"
+  },
+  "real-asic-companies-r2/run/artifacts/candidate-execution-ast_identity_v1.json": {
+    "sha256": "e0004fcdc52aacc4543f61aabb119e1dc8dda28c1191cbbe4d2883c8a211d219",
+    "bytes": 1286,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/candidate-execution-ast_identity_v1.json"
+  },
+  "real-asic-companies-r2/run/artifacts/candidate-ast_identity_v1.json": {
+    "sha256": "d6d293fe0d9139fe596e3f42d369884cf05eb38cddbccb2590cb8d968d747871",
+    "bytes": 6760,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/candidate-ast_identity_v1.json"
+  },
+  "real-asic-companies-r2/run/artifacts/request-89d6ef29bbe00c6aa38e8003.json": {
+    "sha256": "cb2cf0f1ecae0aa51747d0aaa4d0bfebaca94a103997b6581cabe8c82788a9a7",
+    "bytes": 64372,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/request-89d6ef29bbe00c6aa38e8003.json"
+  },
+  "real-asic-companies-r2/run/artifacts/validation-records.json": {
+    "sha256": "97424af0160a4707ee8e2499422052f2bccff2c778a7a0a2a293f1e34118ffdb",
+    "bytes": 15195,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/validation-records.json"
+  },
+  "real-asic-companies-r2/run/artifacts/model-request-a82901bacc7d4a860cb8ee6f8d212fe3a70ba08389336b0250c8e0338c1df53b.json": {
+    "sha256": "f91cd007b6149f1fb5416db93be4c3da49373f20005b09341adce604983f05f1",
+    "bytes": 24513,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/model-request-a82901bacc7d4a860cb8ee6f8d212fe3a70ba08389336b0250c8e0338c1df53b.json"
+  },
+  "real-asic-companies-r2/run/artifacts/candidate-host-subset-2.json": {
+    "sha256": "cbe1d9d616afeb1d0d0b1c9fb05811d392d4da620511aa42d8e4757d8f7a908f",
+    "bytes": 6637,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/candidate-host-subset-2.json"
+  },
+  "real-asic-companies-r2/run/artifacts/candidate-context-ast_identity_v1.json": {
+    "sha256": "d6b683df6d1670f73939f6061ecf71f2157cf6cbe538084e87161dd33c936c8e",
+    "bytes": 39232,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/candidate-context-ast_identity_v1.json"
+  },
+  "real-asic-companies-r2/run/artifacts/name-review-context-host-subset-2.json": {
+    "sha256": "0be3ec716b1f600aa0a4995bdf6acb89ff850c6ed2edbe726e751e6cb4e175ba",
+    "bytes": 324,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/name-review-context-host-subset-2.json"
+  },
+  "real-asic-companies-r2/run/artifacts/request-b6c26f95faefd3c0a1b85867.json": {
+    "sha256": "dc968cb182699dd7a0104a52e29da3498ffed1e65967cfa3cc3e7f017df56770",
+    "bytes": 48192,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/request-b6c26f95faefd3c0a1b85867.json"
+  },
+  "real-asic-companies-r2/run/artifacts/response-42905ff5298878918de35d17.json": {
+    "sha256": "c9a3f3640160005343abed44c1ac5c83a26a6f970ec95e94f1d717d8f93c45cd",
+    "bytes": 2499,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/response-42905ff5298878918de35d17.json"
+  },
+  "real-asic-companies-r2/run/artifacts/model-request-4ed156d2ecf4ef73fb9e301e3a26671d401a87e453635260b74d0fe361338190.json": {
+    "sha256": "dc968cb182699dd7a0104a52e29da3498ffed1e65967cfa3cc3e7f017df56770",
+    "bytes": 48192,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/model-request-4ed156d2ecf4ef73fb9e301e3a26671d401a87e453635260b74d0fe361338190.json"
+  },
+  "real-asic-companies-r2/run/artifacts/request-a9821098587f950eaf89efd5.json": {
+    "sha256": "2792be622e3234111f29269830bb23e4d7edf2752704ae9492998a454fc33929",
+    "bytes": 73586,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/request-a9821098587f950eaf89efd5.json"
+  },
+  "real-asic-companies-r2/run/artifacts/candidate-manifest-ast_identity_v2.json": {
+    "sha256": "a0762ac4b31a33cdf8ac21af6c5c52072b9f62a1ba5144e9f5c361410229019c",
+    "bytes": 3927,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/candidate-manifest-ast_identity_v2.json"
+  },
+  "real-asic-companies-r2/run/artifacts/probe-ast_identity_v2.json": {
+    "sha256": "120ad498708eb754d688d4d5faf4a56d7e911d5a3f09b8c73c20d9b48ee0cd31",
+    "bytes": 24575,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/probe-ast_identity_v2.json"
+  },
+  "real-asic-companies-r2/run/artifacts/request-4394d20a0d12a0e420d407fa.json": {
+    "sha256": "9d1b420fc30ae0853369323af76e261c2a88e285e3d9382d30093a816de3865a",
+    "bytes": 76062,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/request-4394d20a0d12a0e420d407fa.json"
+  },
+  "real-asic-companies-r2/run/artifacts/discovery.json": {
+    "sha256": "cc2661d40d0936fe80a1f3b5e90a77c6052721eccae4477e8c597cceb03a51ca",
+    "bytes": 469,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/discovery.json"
+  },
+  "real-asic-companies-r2/run/artifacts/name-audit-host-subset-2.json": {
+    "sha256": "f385a6ce9670b4084fa5878d25952cc42da3018ffbb9b6931abb9895047e6ff1",
+    "bytes": 682,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/name-audit-host-subset-2.json"
+  },
+  "real-asic-companies-r2/run/artifacts/name-review-context-ast_identity_v1.json": {
+    "sha256": "a142d3e276530ac5fb2c96152d9a48cb05b02e092c86d8bf5d99ae392bc4ce83",
+    "bytes": 238,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/name-review-context-ast_identity_v1.json"
+  },
+  "real-asic-companies-r2/run/artifacts/model-request-f6842f20854f1b2661da1d5f02b766631c789c5fa03c33f67f32ea67296b825e.json": {
+    "sha256": "04d4e6eb3c696efe60243ee56580178336f3456000521f76c0cf79708d9bc11f",
+    "bytes": 53990,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/model-request-f6842f20854f1b2661da1d5f02b766631c789c5fa03c33f67f32ea67296b825e.json"
+  },
+  "real-asic-companies-r2/run/artifacts/request-5b97ecf68c4935bb00abaa83.json": {
+    "sha256": "04d4e6eb3c696efe60243ee56580178336f3456000521f76c0cf79708d9bc11f",
+    "bytes": 53990,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/request-5b97ecf68c4935bb00abaa83.json"
+  },
+  "real-asic-companies-r2/run/artifacts/host-subset-repair-plan.json": {
+    "sha256": "f545438284e39ba892f0c5b32407cab09c1280421fcb0db19258fca44028180a",
+    "bytes": 6031,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/host-subset-repair-plan.json"
+  },
+  "real-asic-companies-r2/run/artifacts/provider-receipt-42905ff5298878918de35d17.json": {
+    "sha256": "4d4041c896fbceda9d81c15e4249787bffb1c4966af1209c81c3e3a509d32d17",
+    "bytes": 1235,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/provider-receipt-42905ff5298878918de35d17.json"
+  },
+  "real-asic-companies-r2/run/artifacts/onboard-result.json": {
+    "sha256": "d2970e08edb34aec886288ac84a1989ac2fe4164e9ec9a079d91a7c5898dd555",
+    "bytes": 57568,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/onboard-result.json"
+  },
+  "real-asic-companies-r2/run/artifacts/provider-receipt-4394d20a0d12a0e420d407fa.json": {
+    "sha256": "61a5ea46f73de1c26c925e0411a4ed2af78e0b25f43b94f12d7ed2fad1ef8017",
+    "bytes": 1232,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/provider-receipt-4394d20a0d12a0e420d407fa.json"
+  },
+  "real-asic-companies-r2/run/artifacts/model-request-0639bbce90ba5da7e1b3a78d15b2e3ef5ef993e7f1bd1f72b97f9aa42cadd085.json": {
+    "sha256": "6f04a3e237af3efe78be9c93de0e16cd88241c3492a32daec8ffed2147ca1837",
+    "bytes": 46389,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/model-request-0639bbce90ba5da7e1b3a78d15b2e3ef5ef993e7f1bd1f72b97f9aa42cadd085.json"
+  },
+  "real-asic-companies-r2/run/artifacts/provider-receipt-a9821098587f950eaf89efd5.json": {
+    "sha256": "46f416a8c9e37bbbad3cdff2413d9f06d87d711c63060e8c8906baedb603e89e",
+    "bytes": 1235,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/provider-receipt-a9821098587f950eaf89efd5.json"
+  },
+  "real-asic-companies-r2/run/artifacts/table-scope.json": {
+    "sha256": "33bca9755975f6e6694f8bf29443f01c73729457f04506738fb1aff3b92c68c5",
+    "bytes": 565,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/table-scope.json"
+  },
+  "real-asic-companies-r2/run/artifacts/candidate-discovery-ast_identity_v1.json": {
+    "sha256": "4253695ea26cd8a58f8b98dbf90183d8aed0b00ba4ba5f0a0f08c9bfa51568fe",
+    "bytes": 3776,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/candidate-discovery-ast_identity_v1.json"
+  },
+  "real-asic-companies-r2/run/artifacts/candidate-manifest-ast_identity_v1.json": {
+    "sha256": "a26649b5496d0b7c9df826714e4465d3c995b5b01de0f6954001ec5bb21ec7a1",
+    "bytes": 3243,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/candidate-manifest-ast_identity_v1.json"
+  },
+  "real-asic-companies-r2/run/artifacts/probe-ast_identity_v1.json": {
+    "sha256": "64691a4ca2b150bab4daabdd8aeebe151ef02f8333fd06e069c01209494f9bc5",
+    "bytes": 3511,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/probe-ast_identity_v1.json"
+  },
+  "real-asic-companies-r2/run/artifacts/request-42905ff5298878918de35d17.json": {
+    "sha256": "5e3da765abaa1144fdde4f8a8932430550668be49eb98f321bbc6467717ff637",
+    "bytes": 51287,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/request-42905ff5298878918de35d17.json"
+  },
+  "real-asic-companies-r2/run/artifacts/response-b6c26f95faefd3c0a1b85867.json": {
+    "sha256": "2d2481e5c36ecdf2b8e011e65aac886a77ce9136a724158b690be4540a85b5b0",
+    "bytes": 1480,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/response-b6c26f95faefd3c0a1b85867.json"
+  },
+  "real-asic-companies-r2/run/artifacts/provider-receipt-5b97ecf68c4935bb00abaa83.json": {
+    "sha256": "3c94e0f643053a2d30c3460240b77a2813da9e73294f1147a94b3c9214483e7a",
+    "bytes": 1234,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/provider-receipt-5b97ecf68c4935bb00abaa83.json"
+  },
+  "real-asic-companies-r2/run/artifacts/name-review-context-ast_identity_v2.json": {
+    "sha256": "c490feab7f53deb9d5cea110d9874b620a367e357abb40d65cb1a85ef100595e",
+    "bytes": 324,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/name-review-context-ast_identity_v2.json"
+  },
+  "real-asic-companies-r2/run/artifacts/response-5b97ecf68c4935bb00abaa83.json": {
+    "sha256": "440ce8be41d2a267322cb15993959748b3262e1cfc1d549f04341977062e8605",
+    "bytes": 4552,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/response-5b97ecf68c4935bb00abaa83.json"
+  },
+  "real-asic-companies-r2/run/artifacts/provider-receipt-b6c26f95faefd3c0a1b85867.json": {
+    "sha256": "d9f2bab1b52058ebedd1a3ebfbd0c92a1a2ce2cbc432de5c70be54e44b7391a9",
+    "bytes": 1234,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/provider-receipt-b6c26f95faefd3c0a1b85867.json"
+  },
+  "real-asic-companies-r2/run/artifacts/probe-host-subset-2.json": {
+    "sha256": "addbb5a93edd73b54392d883afa5df17d0ec385941fdf5c7c23c3fb2b072a365",
+    "bytes": 24623,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/probe-host-subset-2.json"
+  },
+  "real-asic-companies-r2/run/artifacts/response-a9821098587f950eaf89efd5.json": {
+    "sha256": "1b226b9d8a803f6f3b89e16be89be7df92420c585ebb2684bfa46a8109b367ef",
+    "bytes": 5223,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/response-a9821098587f950eaf89efd5.json"
+  },
+  "real-asic-companies-r2/run/artifacts/candidate-context-ast_identity_v2.json": {
+    "sha256": "cee92a2be13ef89226c9332878eb609694712e227ea343d5ebf4ebb6b1ea7cf8",
+    "bytes": 67102,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/candidate-context-ast_identity_v2.json"
+  },
+  "real-asic-companies-r2/run/artifacts/response-4394d20a0d12a0e420d407fa.json": {
+    "sha256": "171c1397f673b5f64197cd0bbff73c9012efc258fc6801d4f5819f0e2a8a1a5e",
+    "bytes": 1478,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/response-4394d20a0d12a0e420d407fa.json"
+  },
+  "real-asic-companies-r2/run/artifacts/model-request-47ae741b22f3459f0f2f958d3bcc9ac6c5b3ab7fc20b61f2b22697a2ee1b0041.json": {
+    "sha256": "2792be622e3234111f29269830bb23e4d7edf2752704ae9492998a454fc33929",
+    "bytes": 73586,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/model-request-47ae741b22f3459f0f2f958d3bcc9ac6c5b3ab7fc20b61f2b22697a2ee1b0041.json"
+  },
+  "real-asic-companies-r2/run/artifacts/provider-receipt-dbc03baae5b58f4b72e218a9.json": {
+    "sha256": "090f36a4460f1440dbf125a75a42c60bb78d291ef1b9c014540c8173841b1a69",
+    "bytes": 1234,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/provider-receipt-dbc03baae5b58f4b72e218a9.json"
+  },
+  "real-asic-companies-r2/run/artifacts/candidate-execution-ast_identity_v2.json": {
+    "sha256": "3a5b16f2968aef7673a40de14707093cff48437037e3b7d7ac8f7da20cc1ec2f",
+    "bytes": 1643,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/candidate-execution-ast_identity_v2.json"
+  },
+  "real-asic-companies-r2/run/artifacts/request-40374d446075997aaabd678c.json": {
+    "sha256": "f91cd007b6149f1fb5416db93be4c3da49373f20005b09341adce604983f05f1",
+    "bytes": 24513,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/request-40374d446075997aaabd678c.json"
+  },
+  "real-asic-companies-r2/run/artifacts/request-3bf803cbb88837f6e26489c9.json": {
+    "sha256": "c50d82236e3d883d9f77353704d7c1b7fce476466f9848347f5cd0ac2ce380ee",
+    "bytes": 82747,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/request-3bf803cbb88837f6e26489c9.json"
+  },
+  "real-asic-companies-r2/run/artifacts/candidate-ast_identity_v2.json": {
+    "sha256": "f85529ec93a437bd123bc56f1b65b6da7da0e1448b2c41836de32ec9b9e43d5e",
+    "bytes": 7357,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/candidate-ast_identity_v2.json"
+  },
+  "real-asic-companies-r2/run/artifacts/provider-receipt-d4118dbcbb04c7ec73e73775.json": {
+    "sha256": "26980405dedb1897c7bd61f3af87e7301c94cc03c80335c68644149f5de57692",
+    "bytes": 1234,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/provider-receipt-d4118dbcbb04c7ec73e73775.json"
+  },
+  "real-asic-companies-r2/run/artifacts/response-e25c4c7b176aa71a559751c4.json": {
+    "sha256": "85f7de26248582e076da05588a5a46c120107c1668946c0938e12f18bbb70307",
+    "bytes": 1478,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/response-e25c4c7b176aa71a559751c4.json"
+  },
+  "real-asic-companies-r2/run/artifacts/provider-receipt-89d6ef29bbe00c6aa38e8003.json": {
+    "sha256": "913a78eb5b4720526389595937732330095ec2e613f26f88e750537946d52007",
+    "bytes": 1235,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/provider-receipt-89d6ef29bbe00c6aa38e8003.json"
+  },
+  "real-asic-companies-r2/run/artifacts/response-606684e81503ffdcf9f03793.json": {
+    "sha256": "241facaa47188b087ded66911a1b0aeb4f2d113aede5cc2513e8704f6be1fcf4",
+    "bytes": 4874,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/response-606684e81503ffdcf9f03793.json"
+  },
+  "real-asic-companies-r2/run/artifacts/response-06b124d45f0be6c709f54493.json": {
+    "sha256": "e70465d8a8a8862868d6cf6fe5f61b7ec89863e20ed58ad57d734acdfb734d2b",
+    "bytes": 1475,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/response-06b124d45f0be6c709f54493.json"
+  },
+  "real-asic-companies-r2/run/artifacts/proposal-records.json": {
+    "sha256": "747e4d0f61c790c8ddffb476d0fd00465f21ce23db95504971bf4784404833c2",
+    "bytes": 5075,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/proposal-records.json"
+  },
+  "real-asic-companies-r2/run/artifacts/model-request-9a9d21b9457a5d8c8254c603b9073e48fd70ca5ab666ed6511d25a823d0a7d21.json": {
+    "sha256": "5e3da765abaa1144fdde4f8a8932430550668be49eb98f321bbc6467717ff637",
+    "bytes": 51287,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/model-request-9a9d21b9457a5d8c8254c603b9073e48fd70ca5ab666ed6511d25a823d0a7d21.json"
+  },
+  "real-asic-companies-r2/run/artifacts/model-request-2f9f7708a7f02077370a14293bb41c01f75f2276aba59b73a357912c13dab0f6.json": {
+    "sha256": "9d1b420fc30ae0853369323af76e261c2a88e285e3d9382d30093a816de3865a",
+    "bytes": 76062,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/model-request-2f9f7708a7f02077370a14293bb41c01f75f2276aba59b73a357912c13dab0f6.json"
+  },
+  "real-asic-companies-r2/run/artifacts/provider-receipt-606684e81503ffdcf9f03793.json": {
+    "sha256": "b9ef29af67a86fa11215fdf195a4acbf0f910028f3a0051d05cb511d7bd6222f",
+    "bytes": 1234,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/provider-receipt-606684e81503ffdcf9f03793.json"
+  },
+  "real-asic-companies-r2/run/artifacts/model-request-9e7c2a3db1c2722d9d36d63cbfaf149ee12928c136bd2cccc0aa7e270cdbdd2e.json": {
+    "sha256": "c50d82236e3d883d9f77353704d7c1b7fce476466f9848347f5cd0ac2ce380ee",
+    "bytes": 82747,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/model-request-9e7c2a3db1c2722d9d36d63cbfaf149ee12928c136bd2cccc0aa7e270cdbdd2e.json"
+  },
+  "real-asic-companies-r2/run/artifacts/provider-receipt-e25c4c7b176aa71a559751c4.json": {
+    "sha256": "37dc3c0b25d2c58134b6d245b0ea2b2b1ffb6bc533cf32899e515a8c82b98c91",
+    "bytes": 1234,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/provider-receipt-e25c4c7b176aa71a559751c4.json"
+  },
+  "real-asic-companies-r2/run/artifacts/response-89d6ef29bbe00c6aa38e8003.json": {
+    "sha256": "8cef2267becdfac198ee1689c4baa4526ee20ac79fe966dc00acf430e56b7291",
+    "bytes": 5756,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/response-89d6ef29bbe00c6aa38e8003.json"
+  },
+  "real-asic-companies-r2/run/artifacts/name-audit-ast_identity_v1.json": {
+    "sha256": "fe837a97ae6668c2099e81ad1a5896fca23d0f83c32574444131549500c51854",
+    "bytes": 17011,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/name-audit-ast_identity_v1.json"
+  },
+  "real-asic-companies-r2/run/artifacts/provider-receipt-06b124d45f0be6c709f54493.json": {
+    "sha256": "fe53fa71e20db0adcce4ba329c9d1d422e8f481406e963be3c0a4faea51ae583",
+    "bytes": 1232,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/provider-receipt-06b124d45f0be6c709f54493.json"
+  },
+  "real-asic-companies-r2/run/artifacts/model-request-e3e0d863c76a60a55108dce7db8846a9d88be19581358a15df6d3d8118d995e0.json": {
+    "sha256": "eca372dbe12005c36a7d0103bed942fa9ce9645c273adce832633346f3f34939",
+    "bytes": 85400,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/model-request-e3e0d863c76a60a55108dce7db8846a9d88be19581358a15df6d3d8118d995e0.json"
+  },
+  "real-asic-companies-r2/run/artifacts/response-d4118dbcbb04c7ec73e73775.json": {
+    "sha256": "415de939efb66c30c89426289972cf69069c521bdd42c74005d3ff50a1869f02",
+    "bytes": 4981,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/response-d4118dbcbb04c7ec73e73775.json"
+  },
+  "real-asic-companies-r2/run/artifacts/selection-comparison-3.json": {
+    "sha256": "a9c37d76e1347cb289b2e628965cff93e7d9616ef7a8c08eedaefac13fbc8f6f",
+    "bytes": 862,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/selection-comparison-3.json"
+  },
+  "real-asic-companies-r2/run/artifacts/comparison-validation-host-subset-2.json": {
+    "sha256": "7b967bb464f090ce3f79585f18df50ac47325d500ea0558788522f029fffe1ae",
+    "bytes": 48499,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/comparison-validation-host-subset-2.json"
+  },
+  "real-asic-companies-r2/run/artifacts/response-dbc03baae5b58f4b72e218a9.json": {
+    "sha256": "6910e4235379910824589a0cea092793078ad6601982edf07ec0fc7643f8fbf7",
+    "bytes": 2855,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/response-dbc03baae5b58f4b72e218a9.json"
+  },
+  "real-asic-companies-r2/run/artifacts/request-6ec0721f195d646eb4dd04b5.json": {
+    "sha256": "d8882c4e6141ab36404123e12c103ae22d9e64fa7a0c3dd0f0d1ac843c9e2860",
+    "bytes": 45716,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/request-6ec0721f195d646eb4dd04b5.json"
+  },
+  "real-ato-corporate-tax-r2/result.json": {
+    "sha256": "2bea888d7781a6e00b6412ad0be3c52b531ab372ef64ca1ab0ec188066a7c128",
+    "bytes": 1256,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/result.json"
+  },
+  "real-ato-corporate-tax-r2/run/.lock": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/.lock"
+  },
+  "real-ato-corporate-tax-r2/run/request.json": {
+    "sha256": "433a4e05186fa06c536a0f8fbb13a9038be0989f528b5fc821995d2ce3928807",
+    "bytes": 1219,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/request.json"
+  },
+  "real-ato-corporate-tax-r2/run/trace.json": {
+    "sha256": "b49d2546b0500c6e139f6d8e6f1685a45806fd0d7789f5dc87e89c91bb49632f",
+    "bytes": 10689,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/trace.json"
+  },
+  "real-ato-corporate-tax-r2/run/observations.jsonl": {
+    "sha256": "45e091c50ac5031f8a4d06ef91743560f4e20e6653ad594510f2d8342d5244c4",
+    "bytes": 4690822,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/observations.jsonl"
+  },
+  "real-ato-corporate-tax-r2/run/checkpoint.internal.json": {
+    "sha256": "8593cde2eb2f2fd26a4baeec76b137b5e97ba57dcece9809ee49afcf7770e1d1",
+    "bytes": 77043,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/checkpoint.internal.json"
+  },
+  "real-ato-corporate-tax-r2/run/approval.json": {
+    "sha256": "19cbcfbdfb7d3957ea573a5b616f8f6c191719a141b708cfc5da6f79cba76fa6",
+    "bytes": 2708,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/approval.json"
+  },
+  "real-ato-corporate-tax-r2/run/onboard.json": {
+    "sha256": "002ae4f06eaba28c684067ae6bc4d5873e10ff9866a8cc4a32634565c0412aff",
+    "bytes": 39999,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/onboard.json"
+  },
+  "real-ato-corporate-tax-r2/run/extraction.json": {
+    "sha256": "4bd73bbf1f21f42fafecfbe92d83812ba778d75aaa3f08aa2fa6e4f1b1e04ac8",
+    "bytes": 7219,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/extraction.json"
+  },
+  "real-ato-corporate-tax-r2/run/extraction/trace.json": {
+    "sha256": "3a13e260b862f2bac0d9acdbfdcbdcfd4a8ab83ff5aa293f9179d1b24215501e",
+    "bytes": 114,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/extraction/trace.json"
+  },
+  "real-ato-corporate-tax-r2/run/extraction/checkpoint.internal.json": {
+    "sha256": "58671dca94412dd8b67ebfedb16da74dddc044b36460793e803776e6cfabc600",
+    "bytes": 1415,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/extraction/checkpoint.internal.json"
+  },
+  "real-ato-corporate-tax-r2/run/extraction/artifacts/extraction-result.json": {
+    "sha256": "2532fb4adf9289e9f0aba34d108cde10ae4fa78ddbb8c52c794e949ef9a3648b",
+    "bytes": 4698058,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/extraction/artifacts/extraction-result.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/response-c46f4c8e5f5ca775ac0d8df0.json": {
+    "sha256": "1f107a41aba8c7e3456bb77051aeaf8092f59df180c5f09b5ae32aaef9558d64",
+    "bytes": 3349,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/response-c46f4c8e5f5ca775ac0d8df0.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/provider-receipt-f1e4ee6654a3add4da07921e.json": {
+    "sha256": "bb7353b24ad309620e58409545b88f36935eb1851d1761a8aa818694ee26f935",
+    "bytes": 1232,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/provider-receipt-f1e4ee6654a3add4da07921e.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/name-audit-ast_abn_name_v1.json": {
+    "sha256": "2ccaeba596c10e67e91da4c143e8a0da71da7b9ce3217013839aaf6aa112b895",
+    "bytes": 13574,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/name-audit-ast_abn_name_v1.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/response-c50a0a0e52dde679603623ac.json": {
+    "sha256": "2093cd334f1109d063c6f58dba39dd6041897eea0e083faa6e97837015282215",
+    "bytes": 2129,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/response-c50a0a0e52dde679603623ac.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/candidate-ast_abn_only_v2.json": {
+    "sha256": "6403b7a10a3b515d5d7e5db75ba21a637ed38c7843053a0ca53a3ea0648e548b",
+    "bytes": 2948,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/candidate-ast_abn_only_v2.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/response-d4023047723356b886f5e5fb.json": {
+    "sha256": "280752f6fea8fecca9620a8cf706cd03fa2c229dd0daa20bb08d332da3d8b465",
+    "bytes": 1475,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/response-d4023047723356b886f5e5fb.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/provider-receipt-4557e0c45b89dda7044d4c5e.json": {
+    "sha256": "04a0918c6b37a29da28d1d6d5436c3f85073f0e4b56e9c1d371d77d972ed4a11",
+    "bytes": 1232,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/provider-receipt-4557e0c45b89dda7044d4c5e.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/candidate-execution-ast_abn_only_v2.json": {
+    "sha256": "f8fac570195a23a27261ebe0be29d38400a3e3f4a3b4e77a8cbd4c7a407d5919",
+    "bytes": 340,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/candidate-execution-ast_abn_only_v2.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/response-c1ffefcbe2d87d906390f3f1.json": {
+    "sha256": "5e2c3bd73da279fcc26922d1b3520f70a5f91c0a73894d3c120c73049b3eb3be",
+    "bytes": 1551,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/response-c1ffefcbe2d87d906390f3f1.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/model-request-c8effb3b7338cffa07b9dcfe9eae79b67d5540bfa1468c1d18258aec3d56d74b.json": {
+    "sha256": "43662bc0a02bfa2621dc867d8d18134fc0a34338b255d3a2c6f1a4adc8cbfb53",
+    "bytes": 24035,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/model-request-c8effb3b7338cffa07b9dcfe9eae79b67d5540bfa1468c1d18258aec3d56d74b.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/final-config.json": {
+    "sha256": "6403b7a10a3b515d5d7e5db75ba21a637ed38c7843053a0ca53a3ea0648e548b",
+    "bytes": 2948,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/final-config.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/response-7247ed1103f8eed6dc94a2a1.json": {
+    "sha256": "adc79f913ec44d360d6993bf236c6281ebef5e448efbe7743d373f00bd955e0c",
+    "bytes": 3167,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/response-7247ed1103f8eed6dc94a2a1.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/request-b9d6b31eec7fd987549ca869.json": {
+    "sha256": "422d1afb1067fd62919e93ba1152f01fcd93cb84115bb80a7836176fc0216df0",
+    "bytes": 24410,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/request-b9d6b31eec7fd987549ca869.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/request-f716f8b0b10ea4181e4b7fb8.json": {
+    "sha256": "43662bc0a02bfa2621dc867d8d18134fc0a34338b255d3a2c6f1a4adc8cbfb53",
+    "bytes": 24035,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/request-f716f8b0b10ea4181e4b7fb8.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/provider-receipt-7247ed1103f8eed6dc94a2a1.json": {
+    "sha256": "7c0fbde7cea79322d44fa1daf6a60abfe6cf965ec5e812d9262ec1c02cf0d677",
+    "bytes": 1233,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/provider-receipt-7247ed1103f8eed6dc94a2a1.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/model-request-8ea35c0a4be1de5442b41979001e3337c26201f6068ff331a10af3b928b7292e.json": {
+    "sha256": "e27e199340e7945f49c22b2c1882f430b89fa6db93ff640ff358044d7b25d3f6",
+    "bytes": 52075,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/model-request-8ea35c0a4be1de5442b41979001e3337c26201f6068ff331a10af3b928b7292e.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/provider-receipt-c1ffefcbe2d87d906390f3f1.json": {
+    "sha256": "1aceab033aaaecddebb3f27556b09041374467cd9b26db115db39e63a5cef040",
+    "bytes": 1233,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/provider-receipt-c1ffefcbe2d87d906390f3f1.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/task-requirements.json": {
+    "sha256": "c9124e2387e2f9b08e755a37bf9df622d905b9cd743e9b90f2677714646db006",
+    "bytes": 566,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/task-requirements.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/request-e825db8513fb262fbb0d3303.json": {
+    "sha256": "e27e199340e7945f49c22b2c1882f430b89fa6db93ff640ff358044d7b25d3f6",
+    "bytes": 52075,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/request-e825db8513fb262fbb0d3303.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/provider-receipt-d4023047723356b886f5e5fb.json": {
+    "sha256": "f7c3f893766a84e80d7f34e726ecac2b026b330a1b3ee4ceaa5298c8575d8e4e",
+    "bytes": 1231,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/provider-receipt-d4023047723356b886f5e5fb.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/provider-receipt-c50a0a0e52dde679603623ac.json": {
+    "sha256": "f958c3e55236824a30691b1b2847c55c68c266c77bc7fb0499f23b9eac09a1b1",
+    "bytes": 1230,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/provider-receipt-c50a0a0e52dde679603623ac.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/response-4557e0c45b89dda7044d4c5e.json": {
+    "sha256": "bbf3fb7739bf3645bf171f86ce26e4069c1b6156bd67ea4424697edd0e7cd4d2",
+    "bytes": 1657,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/response-4557e0c45b89dda7044d4c5e.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/validation-records.json": {
+    "sha256": "99b31329bd095d0957c44abf9b7ef4cd3a399a2ba2f2f3162f05e5f78252addf",
+    "bytes": 9231,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/validation-records.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/response-f1e4ee6654a3add4da07921e.json": {
+    "sha256": "90fd7552964c54b8818521442ad3e02269cd1c203361cdf9f06247a53766c834",
+    "bytes": 1480,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/response-f1e4ee6654a3add4da07921e.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/provider-receipt-c46f4c8e5f5ca775ac0d8df0.json": {
+    "sha256": "91800111faf097680e3db523002d4a210dab295f80eb2dba6edfe4310238ffad",
+    "bytes": 1232,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/provider-receipt-c46f4c8e5f5ca775ac0d8df0.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/model-request-a1110735ff6f2099f9b8bf6dca3893ae12cf008d1d9f11f4252ef55b76cbf009.json": {
+    "sha256": "6666315744f83c7dc910fbe71652497513d2893b0fe61e3ee513b3a2d72cb93e",
+    "bytes": 34752,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/model-request-a1110735ff6f2099f9b8bf6dca3893ae12cf008d1d9f11f4252ef55b76cbf009.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/model-request-fbe9bbd353af08d0d058f144151c914c4a84aa6a57b4270b6d5c3d6bed25d85e.json": {
+    "sha256": "69db4c8f1dcbf6d3794e1840cc81f00b2d0bbd3e3c487482626e42b988c082cf",
+    "bytes": 27487,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/model-request-fbe9bbd353af08d0d058f144151c914c4a84aa6a57b4270b6d5c3d6bed25d85e.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/response-cc1ecb24d398269c5b4c31ec.json": {
+    "sha256": "5d782f7d4dd82c8ef06682b106222af50b71f0fe8985f9d1fbc26ca1b241fd74",
+    "bytes": 2897,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/response-cc1ecb24d398269c5b4c31ec.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/model-request-4ed156d2ecf4ef73fb9e301e3a26671d401a87e453635260b74d0fe361338190.json": {
+    "sha256": "de0b4942c7631c0ff17d7416b45b2bb7bd7f2ada94f3a2be54618aad79e61925",
+    "bytes": 26511,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/model-request-4ed156d2ecf4ef73fb9e301e3a26671d401a87e453635260b74d0fe361338190.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/request-89b7183a2b3fd8f735195af6.json": {
+    "sha256": "de0b4942c7631c0ff17d7416b45b2bb7bd7f2ada94f3a2be54618aad79e61925",
+    "bytes": 26511,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/request-89b7183a2b3fd8f735195af6.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/name-review-context-ast_abn_only_v2.json": {
+    "sha256": "bff58d76b449a7a36dc17472c5e94060313619952493dd0d0641665d091d68d5",
+    "bytes": 324,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/name-review-context-ast_abn_only_v2.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/model-request-a9acfa2a76e6513c2cd9b718f383799916374b0f3d6c1272cf4afc99c2dcdb68.json": {
+    "sha256": "5b23d58f0645e512afcd380e83d19af4126352ad1d57ebba9c181f87bfe5dd6f",
+    "bytes": 53027,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/model-request-a9acfa2a76e6513c2cd9b718f383799916374b0f3d6c1272cf4afc99c2dcdb68.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/provider-receipt-373d605a61a9e1de62056de5.json": {
+    "sha256": "c7231a7629e27b03b83f918d3b0dc8bdc16de2b692c69abc7b9a178d8ed96985",
+    "bytes": 1230,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/provider-receipt-373d605a61a9e1de62056de5.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/response-373d605a61a9e1de62056de5.json": {
+    "sha256": "736a512322796cbf86165dada576bbaf54a2f1dcc405d3f72c15bf0a8c7c44a2",
+    "bytes": 2253,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/response-373d605a61a9e1de62056de5.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/candidate-discovery-ast_abn_name_v1.json": {
+    "sha256": "2663fbf48b17badbf51a219fa32c5f185f29161fc01a33f775af77c00d8b8395",
+    "bytes": 1705,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/candidate-discovery-ast_abn_name_v1.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/discovery.json": {
+    "sha256": "046a85cbcbffc2cdda4147268acb68d7421ea7fe4ff71dbbdb53ad6b58da9b06",
+    "bytes": 870,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/discovery.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/candidate-manifest-ast_abn_name_v1.json": {
+    "sha256": "10eccf5e6d784ca4fd67cc554c11a55e9eb08e45db1eb186e3deba0cfcb8c341",
+    "bytes": 1497,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/candidate-manifest-ast_abn_name_v1.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/model-request-f25f8e8d506247df9616830a1b4ada5e057e60a418998f56f252285ec3cb1433.json": {
+    "sha256": "d76cef7f22cffc6c3d47f6a81099389878276d914a22b7b34a02c512d19d5338",
+    "bytes": 32459,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/model-request-f25f8e8d506247df9616830a1b4ada5e057e60a418998f56f252285ec3cb1433.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/probe-ast_abn_name_v1.json": {
+    "sha256": "64a430f8871425775aea406dcc237145c273fac10bf9dae5691f1c431c674616",
+    "bytes": 1254,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/probe-ast_abn_name_v1.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/provider-receipt-cc1ecb24d398269c5b4c31ec.json": {
+    "sha256": "9a01a4f6dbad7a3dcdf1f1f2c2b5310b5699cb9204f2c6ed8f28360a20208ba2",
+    "bytes": 1232,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/provider-receipt-cc1ecb24d398269c5b4c31ec.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/onboard-result.json": {
+    "sha256": "002ae4f06eaba28c684067ae6bc4d5873e10ff9866a8cc4a32634565c0412aff",
+    "bytes": 39999,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/onboard-result.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/candidate-context-ast_abn_only_v2.json": {
+    "sha256": "7550ed1e619dc8c8c36eca5d7df87fe239f44512e1258e5df7d67279c427707d",
+    "bytes": 43115,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/candidate-context-ast_abn_only_v2.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/field-lookup-1.json": {
+    "sha256": "4cc8272c1623013ebaacef9a7d6011b849907f19573fb9fa8403cc4233aa13d6",
+    "bytes": 6334,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/field-lookup-1.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/table-scope.json": {
+    "sha256": "0d5a358a7a897a89d848ed82d9ae108b442716f7299d528055864127fe3fe66c",
+    "bytes": 844,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/table-scope.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/model-request-fdf5a78d669e00e74eb483fa3b76f503af8f689318e1d531f6991c831888b313.json": {
+    "sha256": "422d1afb1067fd62919e93ba1152f01fcd93cb84115bb80a7836176fc0216df0",
+    "bytes": 24410,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/model-request-fdf5a78d669e00e74eb483fa3b76f503af8f689318e1d531f6991c831888b313.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/name-review-context-ast_abn_name_v1.json": {
+    "sha256": "12706e59d528f9f9892e7e8e8e5b12115036cabac0cd1bd097d36dd2f1f7a8b5",
+    "bytes": 238,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/name-review-context-ast_abn_name_v1.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/request-cc1ecb24d398269c5b4c31ec.json": {
+    "sha256": "62a6d9de5c784676acbadf7327011e1e2f597bd14d675d626de1e6c517499c6b",
+    "bytes": 49599,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/request-cc1ecb24d398269c5b4c31ec.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/response-89b7183a2b3fd8f735195af6.json": {
+    "sha256": "e87da329bdca9fe321dd16dbb0b670ab120517b89cc3c4ce064fc799b8e87d69",
+    "bytes": 1480,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/response-89b7183a2b3fd8f735195af6.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/candidate-context-ast_abn_name_v1.json": {
+    "sha256": "7562c3b0f08607458062f4440fc81c6da9d828505c0292f84cf1f5fd6c86931f",
+    "bytes": 17551,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/candidate-context-ast_abn_name_v1.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/provider-receipt-89b7183a2b3fd8f735195af6.json": {
+    "sha256": "d995c196386ace8a31c7e4721dc4a1e0b5759a101df9a93771300059bebcdbc0",
+    "bytes": 1234,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/provider-receipt-89b7183a2b3fd8f735195af6.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/probe-ast_abn_only_v2.json": {
+    "sha256": "f109109846229871838a937e88ae8506be95cc875747aefc0ff12a129f5cfd15",
+    "bytes": 9360,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/probe-ast_abn_only_v2.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/candidate-manifest-ast_abn_only_v2.json": {
+    "sha256": "1ca0bf3395cf804437633a204eb3a643bc1ec880c8a0cef574d5468545af0b6b",
+    "bytes": 1604,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/candidate-manifest-ast_abn_only_v2.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/request-373d605a61a9e1de62056de5.json": {
+    "sha256": "310bf5155564bc1fb902655153092a9c47bd905f9f5f748398b550d339befff4",
+    "bytes": 5747,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/request-373d605a61a9e1de62056de5.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/model-request-187d98d4808845929afbcedcc565407e87fb5d79e4ba3542f26520a71e40c37e.json": {
+    "sha256": "310bf5155564bc1fb902655153092a9c47bd905f9f5f748398b550d339befff4",
+    "bytes": 5747,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/model-request-187d98d4808845929afbcedcc565407e87fb5d79e4ba3542f26520a71e40c37e.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/request-c1ffefcbe2d87d906390f3f1.json": {
+    "sha256": "5b23d58f0645e512afcd380e83d19af4126352ad1d57ebba9c181f87bfe5dd6f",
+    "bytes": 53027,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/request-c1ffefcbe2d87d906390f3f1.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/provider-receipt-e825db8513fb262fbb0d3303.json": {
+    "sha256": "b6403f6becc467dd9478c940bcf28450412782029b004093eb4bbfc88dd9cd50",
+    "bytes": 1232,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/provider-receipt-e825db8513fb262fbb0d3303.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/provider-receipt-b9d6b31eec7fd987549ca869.json": {
+    "sha256": "7f9f5d520a6400103d497eaf8f1946a0feefda1586e044a6e6c8a0b8a73322af",
+    "bytes": 1231,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/provider-receipt-b9d6b31eec7fd987549ca869.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/provider-receipt-f716f8b0b10ea4181e4b7fb8.json": {
+    "sha256": "9f1030b60f1f7118daa1832cef33d301e5ac1393514ad15d2366d97d39fc5c7a",
+    "bytes": 1232,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/provider-receipt-f716f8b0b10ea4181e4b7fb8.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/request-7247ed1103f8eed6dc94a2a1.json": {
+    "sha256": "d76cef7f22cffc6c3d47f6a81099389878276d914a22b7b34a02c512d19d5338",
+    "bytes": 32459,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/request-7247ed1103f8eed6dc94a2a1.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/candidate-execution-ast_abn_name_v1.json": {
+    "sha256": "c7ef591e278762ed5100365025c81e5ab0604139bd616d480151e5e3ca7ad3b1",
+    "bytes": 447,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/candidate-execution-ast_abn_name_v1.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/model-request-6562e184931ca3f45e6329b8c5cb23f10beb2c326a35a83902247cfdf537fc9d.json": {
+    "sha256": "62a6d9de5c784676acbadf7327011e1e2f597bd14d675d626de1e6c517499c6b",
+    "bytes": 49599,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/model-request-6562e184931ca3f45e6329b8c5cb23f10beb2c326a35a83902247cfdf537fc9d.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/candidate-ast_abn_name_v1.json": {
+    "sha256": "fe6be41520d0faf848cf688067e44cc34821ea5f29b6437136f4e958a922e65b",
+    "bytes": 3110,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/candidate-ast_abn_name_v1.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/name-audit-ast_abn_only_v2.json": {
+    "sha256": "daa350998bd5c27b39eede92d662e3252fcc6d535e189ddbc5ffdbb3bb229c0d",
+    "bytes": 682,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/name-audit-ast_abn_only_v2.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/request-c46f4c8e5f5ca775ac0d8df0.json": {
+    "sha256": "6666315744f83c7dc910fbe71652497513d2893b0fe61e3ee513b3a2d72cb93e",
+    "bytes": 34752,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/request-c46f4c8e5f5ca775ac0d8df0.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/request-d4023047723356b886f5e5fb.json": {
+    "sha256": "6d60bee7f5b5ec4cd119cc282b53937dab61d840791ed5c0c607dd38486352c0",
+    "bytes": 54767,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/request-d4023047723356b886f5e5fb.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/proposal-records.json": {
+    "sha256": "3043b2793b9ec33ee56543ce3a2c4bc38cd77422eb0db6f7726d4968f1059204",
+    "bytes": 3124,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/proposal-records.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/model-request-2f9f7708a7f02077370a14293bb41c01f75f2276aba59b73a357912c13dab0f6.json": {
+    "sha256": "883f60ae97e42ea6c6a66ff9435472bea6bb739ed136a3c5bf7b59a680ee2fd3",
+    "bytes": 45300,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/model-request-2f9f7708a7f02077370a14293bb41c01f75f2276aba59b73a357912c13dab0f6.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/request-c50a0a0e52dde679603623ac.json": {
+    "sha256": "91c231cb1c86e0aab3bb98711eb22a4e24dee1b6395761b305bab6c5f8198adc",
+    "bytes": 7429,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/request-c50a0a0e52dde679603623ac.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/model-request-c6892746b2ef270fcbd6f7ffae9536b05a83016b18977ef353fc25febf9fd7d7.json": {
+    "sha256": "91c231cb1c86e0aab3bb98711eb22a4e24dee1b6395761b305bab6c5f8198adc",
+    "bytes": 7429,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/model-request-c6892746b2ef270fcbd6f7ffae9536b05a83016b18977ef353fc25febf9fd7d7.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/request-4557e0c45b89dda7044d4c5e.json": {
+    "sha256": "69db4c8f1dcbf6d3794e1840cc81f00b2d0bbd3e3c487482626e42b988c082cf",
+    "bytes": 27487,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/request-4557e0c45b89dda7044d4c5e.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/validation-3.json": {
+    "sha256": "cf7b1afaec16765889fb880013a8d4027762d31ef39bddeba0d1236fc1e5cf15",
+    "bytes": 26268,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/validation-3.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/request-f1e4ee6654a3add4da07921e.json": {
+    "sha256": "883f60ae97e42ea6c6a66ff9435472bea6bb739ed136a3c5bf7b59a680ee2fd3",
+    "bytes": 45300,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/request-f1e4ee6654a3add4da07921e.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/response-f716f8b0b10ea4181e4b7fb8.json": {
+    "sha256": "a1de75a7447b862d4d2f2df39125fe78ccb93f2e5f5c9cf8e4ae5c28a2588805",
+    "bytes": 2789,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/response-f716f8b0b10ea4181e4b7fb8.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/model-request-e3e0d863c76a60a55108dce7db8846a9d88be19581358a15df6d3d8118d995e0.json": {
+    "sha256": "6d60bee7f5b5ec4cd119cc282b53937dab61d840791ed5c0c607dd38486352c0",
+    "bytes": 54767,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/model-request-e3e0d863c76a60a55108dce7db8846a9d88be19581358a15df6d3d8118d995e0.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/response-b9d6b31eec7fd987549ca869.json": {
+    "sha256": "8c19b2727eb3033f390a635e5383417b60f2321df779e1f5f0f9976ee3e8dbcd",
+    "bytes": 2908,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/response-b9d6b31eec7fd987549ca869.json"
+  },
+  "real-ato-corporate-tax-r2/run/artifacts/response-e825db8513fb262fbb0d3303.json": {
+    "sha256": "fcdb88740daf5f1586859d5b7bf9898f79c9e61f574bac29596abceecb7a3099",
+    "bytes": 1478,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/response-e825db8513fb262fbb0d3303.json"
+  },
+  "real-asic-business-names-r2/result.json": {
+    "sha256": "6b7e794d915c34b49d48e5fe41a1a7c78c8cbf5cde5dd1463414ac0925581996",
+    "bytes": 1098,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/result.json"
+  },
+  "real-asic-business-names-r2/run/.lock": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/.lock"
+  },
+  "real-asic-business-names-r2/run/request.json": {
+    "sha256": "93cd772cbbc2bb533cb62bffe12de07d1e10c85bcf99f8aaefbb58a27b07d991",
+    "bytes": 1229,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/request.json"
+  },
+  "real-asic-business-names-r2/run/trace.json": {
+    "sha256": "04de7c760fdacc9fb633101d6d60b010910018266d2e44663c681976098b88d9",
+    "bytes": 8217,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/trace.json"
+  },
+  "real-asic-business-names-r2/run/observations.jsonl": {
+    "sha256": "b224f70607249303c4335801a7a2218bb250e317a613cefa473c3b8ab97c6a5e",
+    "bytes": 1140008,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/observations.jsonl"
+  },
+  "real-asic-business-names-r2/run/checkpoint.internal.json": {
+    "sha256": "a750515d76907a33f8e2cdeb8688cff7acbd8b28ed95b4d93f93507cce91d9ca",
+    "bytes": 61345,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/checkpoint.internal.json"
+  },
+  "real-asic-business-names-r2/run/approval.json": {
+    "sha256": "a18fdaf8282ea9781d52592dcc306716f24653926e3a5e38c3c2d81d32ddf2d3",
+    "bytes": 2289,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/approval.json"
+  },
+  "real-asic-business-names-r2/run/onboard.json": {
+    "sha256": "3b465bcc2d0dbcee07bd0f8a1b8e2094223cc5419f6bab1dc1794e95aee9ebfb",
+    "bytes": 37245,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/onboard.json"
+  },
+  "real-asic-business-names-r2/run/extraction.json": {
+    "sha256": "95f027c072bc0aa3b0955998de1e38f6877bf37671d998807d54f37dd2ed47bf",
+    "bytes": 12204,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/extraction.json"
+  },
+  "real-asic-business-names-r2/run/extraction/trace.json": {
+    "sha256": "595a4d71e1e93d12256147784d013a43477d71101c49098110dd7897c2cac2e7",
+    "bytes": 116,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/extraction/trace.json"
+  },
+  "real-asic-business-names-r2/run/extraction/checkpoint.internal.json": {
+    "sha256": "33cfd0840b60f2d02ae5f049281ef0e063bc8aabe56e1538f2fb6946e61a4e7c",
+    "bytes": 1423,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/extraction/checkpoint.internal.json"
+  },
+  "real-asic-business-names-r2/run/extraction/artifacts/extraction-result.json": {
+    "sha256": "67b7688c596c2c77fe47bad26f03943daeea1c93eb31d14ee6e5180709a711c2",
+    "bytes": 1152229,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/extraction/artifacts/extraction-result.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/provider-receipt-53638caf61007a7ea97f0ae0.json": {
+    "sha256": "044c9ef25242422f8e08754866b7573aaf431f08e586357a97ce1fee168e20ad",
+    "bytes": 1235,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/provider-receipt-53638caf61007a7ea97f0ae0.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/candidate-manifest-ast_bn_abn_name_v1.json": {
+    "sha256": "87584778adad98cab6df39592077cbaa77fe899b238ce56dc09f93a147db0a0d",
+    "bytes": 1648,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/candidate-manifest-ast_bn_abn_name_v1.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/final-config.json": {
+    "sha256": "121bb62ed883d243799739e0d82eac9e02cfdc2a2a792ba42a4075da4b4c3c44",
+    "bytes": 3420,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/final-config.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/provider-receipt-7d69bc1a783b63e69ffa0d84.json": {
+    "sha256": "b5e0c2c9ed5c1064b46a1bed93065927f7fefd97e14f923526c3bfeaba363f59",
+    "bytes": 1234,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/provider-receipt-7d69bc1a783b63e69ffa0d84.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/validation-1.json": {
+    "sha256": "c88013a44f4f0d39a01d538fed75c89697edd57f0c63237feecd3f19568fd0cd",
+    "bytes": 34229,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/validation-1.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/response-7d69bc1a783b63e69ffa0d84.json": {
+    "sha256": "0442e6f56bdd2fc31c8cdd708e29772dbbaebf26f7bfa4f7a01ffd538a483b2b",
+    "bytes": 3790,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/response-7d69bc1a783b63e69ffa0d84.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/model-request-695a46eda2db6c4ce2a4d8f64516edf1d712b228a6b0bfe107b92a5b55fa0526.json": {
+    "sha256": "7136698184a3b924113f550d4c3f8e68f09da2f097aec5c833112dc4ef978f9b",
+    "bytes": 42437,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/model-request-695a46eda2db6c4ce2a4d8f64516edf1d712b228a6b0bfe107b92a5b55fa0526.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/candidate-execution-ast_bn_abn_name_v1.json": {
+    "sha256": "532297812b9dcc8531c521883230e6f29c87883bea623cab407ee10599125e73",
+    "bytes": 662,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/candidate-execution-ast_bn_abn_name_v1.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/request-94392800099fd2803ef6ff97.json": {
+    "sha256": "beacb0802c8b8f0a69cbf09752315f133f0664b6a21d74cbf6efd46b21d56b66",
+    "bytes": 44910,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/request-94392800099fd2803ef6ff97.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/task-requirements.json": {
+    "sha256": "df02cad8fea41d130bd79bd7500d9c10901f73853fd9ea3972854ad1651341d7",
+    "bytes": 568,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/task-requirements.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/name-review-context-ast_bn_abn_name_v1.json": {
+    "sha256": "8365b4c4db7426ec9095dd40d550dddd45c03c1bcc4dc921e14db36c320f7fc2",
+    "bytes": 238,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/name-review-context-ast_bn_abn_name_v1.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/validation-records.json": {
+    "sha256": "20560a29628cf8b8c202fee2d456abe2fb7a0cdd299c87e1ea64ae231548aad7",
+    "bytes": 9546,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/validation-records.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/response-53638caf61007a7ea97f0ae0.json": {
+    "sha256": "e0111f270a9851e45c0881de12256fce0fe0934971a23653098015509bc949ad",
+    "bytes": 1875,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/response-53638caf61007a7ea97f0ae0.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/request-ecf21bd4669d71a565a1fafa.json": {
+    "sha256": "119d43da45d847f1cdf1108fc149b70f53d80fdbd93a2b360ec7bbaf52efb7ea",
+    "bytes": 42825,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/request-ecf21bd4669d71a565a1fafa.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/model-request-4ed156d2ecf4ef73fb9e301e3a26671d401a87e453635260b74d0fe361338190.json": {
+    "sha256": "beacb0802c8b8f0a69cbf09752315f133f0664b6a21d74cbf6efd46b21d56b66",
+    "bytes": 44910,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/model-request-4ed156d2ecf4ef73fb9e301e3a26671d401a87e453635260b74d0fe361338190.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/provider-receipt-ba1eabd766490a2313adc2c4.json": {
+    "sha256": "2652213a1276af5e10bb600bb4b6da403815bf2acbb23baac8017c48c9c61ecd",
+    "bytes": 1234,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/provider-receipt-ba1eabd766490a2313adc2c4.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/candidate-ast_bn_abn_name_v1.json": {
+    "sha256": "121bb62ed883d243799739e0d82eac9e02cfdc2a2a792ba42a4075da4b4c3c44",
+    "bytes": 3420,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/candidate-ast_bn_abn_name_v1.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/probe-ast_bn_abn_name_v1.json": {
+    "sha256": "5000fe0537b83a85e43fa121e9a8ba145036c97aa183253edb775ce90d1d6cee",
+    "bytes": 15958,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/probe-ast_bn_abn_name_v1.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/response-ba1eabd766490a2313adc2c4.json": {
+    "sha256": "13b6c5a3f3fb17bb08ca6775d4aafd89a7d93d5fee8ac448f44ccd630f842220",
+    "bytes": 2943,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/response-ba1eabd766490a2313adc2c4.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/request-218cbbad99426822133e0f8d.json": {
+    "sha256": "9411664b687434e49c4a8c9cac53e27aca0025b3a36319dfd971a1686fea4ac1",
+    "bytes": 23748,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/request-218cbbad99426822133e0f8d.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/candidate-discovery-ast_bn_abn_name_v1.json": {
+    "sha256": "457b4c834d17a116991c1e63a1883a587864e513e5618af888eb9875b7070a53",
+    "bytes": 1943,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/candidate-discovery-ast_bn_abn_name_v1.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/discovery.json": {
+    "sha256": "4a064c52e056a812904ad002c87ceebdf16251e2998981b562b2ea613abc74e1",
+    "bytes": 366,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/discovery.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/request-27a0bf73ecb7b9aaa6899f53.json": {
+    "sha256": "b6c762eafa824ddaf7711ea5f0631d4406e2db7e50a6b8587eab4eeb64d07f4c",
+    "bytes": 53770,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/request-27a0bf73ecb7b9aaa6899f53.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/onboard-result.json": {
+    "sha256": "3b465bcc2d0dbcee07bd0f8a1b8e2094223cc5419f6bab1dc1794e95aee9ebfb",
+    "bytes": 37245,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/onboard-result.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/provider-receipt-218cbbad99426822133e0f8d.json": {
+    "sha256": "406e5a16e42486144517d9ae6f456128c975bf10517ce64d19a57f47af2e9df1",
+    "bytes": 1232,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/provider-receipt-218cbbad99426822133e0f8d.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/table-scope.json": {
+    "sha256": "18b48e1526a90b608146b8de9788242df788f8b14c132eceb9afd7aa03d730ea",
+    "bytes": 567,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/table-scope.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/model-request-29a9876e95f92909c0157bd208bb555baa8d88ab57747b5ce4ee9654e492163d.json": {
+    "sha256": "9411664b687434e49c4a8c9cac53e27aca0025b3a36319dfd971a1686fea4ac1",
+    "bytes": 23748,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/model-request-29a9876e95f92909c0157bd208bb555baa8d88ab57747b5ce4ee9654e492163d.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/response-ecf21bd4669d71a565a1fafa.json": {
+    "sha256": "0c8a8182d16c0e3287161e87946bede1cb321edd8b9c9bca5c7b85794de60ff1",
+    "bytes": 3150,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/response-ecf21bd4669d71a565a1fafa.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/provider-receipt-27a0bf73ecb7b9aaa6899f53.json": {
+    "sha256": "26828d09f1375d5117d2c4756f4d90d33e6c77130671914c93000ee75c73b269",
+    "bytes": 1231,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/provider-receipt-27a0bf73ecb7b9aaa6899f53.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/name-audit-ast_bn_abn_name_v1.json": {
+    "sha256": "495ed3c21560821b93dfd1cea3d75172e43b95c8d7e444c6a0f5cd8ea56cb060",
+    "bytes": 12456,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/name-audit-ast_bn_abn_name_v1.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/response-27a0bf73ecb7b9aaa6899f53.json": {
+    "sha256": "f0d2c0a0650c3692022d74a7ea585a185ebb839610966e1f988bc69702647c17",
+    "bytes": 1477,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/response-27a0bf73ecb7b9aaa6899f53.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/provider-receipt-ecf21bd4669d71a565a1fafa.json": {
+    "sha256": "6b4ad70cce501e8336fe1641d59ec715485c81dd3b112741437a82a691d1f7f4",
+    "bytes": 1235,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/provider-receipt-ecf21bd4669d71a565a1fafa.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/model-request-e473a28f06c63081d8cd22207de1bed0b7b6400654c4ba9bc873936b0f320f9e.json": {
+    "sha256": "119d43da45d847f1cdf1108fc149b70f53d80fdbd93a2b360ec7bbaf52efb7ea",
+    "bytes": 42825,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/model-request-e473a28f06c63081d8cd22207de1bed0b7b6400654c4ba9bc873936b0f320f9e.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/request-ba1eabd766490a2313adc2c4.json": {
+    "sha256": "7136698184a3b924113f550d4c3f8e68f09da2f097aec5c833112dc4ef978f9b",
+    "bytes": 42437,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/request-ba1eabd766490a2313adc2c4.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/response-218cbbad99426822133e0f8d.json": {
+    "sha256": "932741e25078215ee7a85a5e5ab5dbe5183b6536e9038ff24a57c9207681d5fb",
+    "bytes": 1656,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/response-218cbbad99426822133e0f8d.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/model-request-3afa84f5c375b775c3d4555d7b15536bc3032138ebe9c0e3113c26dcb405b9d7.json": {
+    "sha256": "a554745d77a8f0155872cfd50fef70cf714540dd0f8ee2dd4086c4373db44aed",
+    "bytes": 46127,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/model-request-3afa84f5c375b775c3d4555d7b15536bc3032138ebe9c0e3113c26dcb405b9d7.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/provider-receipt-94392800099fd2803ef6ff97.json": {
+    "sha256": "ed9c3968bafb66324ab0abe2a3b4cb852cd1936668c33b312c0abf76c15a62d4",
+    "bytes": 1234,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/provider-receipt-94392800099fd2803ef6ff97.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/model-request-fae3bb40806e4cab972a6b6860548c0db17ddc4d6e6a12473683cd0dde081544.json": {
+    "sha256": "607d78739de115d6c67deba6eea3ca16be62fe7a94f3a14edad2bd1bf45cfea3",
+    "bytes": 54851,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/model-request-fae3bb40806e4cab972a6b6860548c0db17ddc4d6e6a12473683cd0dde081544.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/candidate-context-ast_bn_abn_name_v1.json": {
+    "sha256": "536b7159ea64dc60097ac84d64ce7dfdb36d31b1f958ac766f233cf132e7502d",
+    "bytes": 35953,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/candidate-context-ast_bn_abn_name_v1.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/proposal-records.json": {
+    "sha256": "6a75d0b15308da9bb2e5f0a2b63b2a7514e2bee17ff8ed37345cf258820921c1",
+    "bytes": 3161,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/proposal-records.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/model-request-2f9f7708a7f02077370a14293bb41c01f75f2276aba59b73a357912c13dab0f6.json": {
+    "sha256": "b6c762eafa824ddaf7711ea5f0631d4406e2db7e50a6b8587eab4eeb64d07f4c",
+    "bytes": 53770,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/model-request-2f9f7708a7f02077370a14293bb41c01f75f2276aba59b73a357912c13dab0f6.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/request-53638caf61007a7ea97f0ae0.json": {
+    "sha256": "a554745d77a8f0155872cfd50fef70cf714540dd0f8ee2dd4086c4373db44aed",
+    "bytes": 46127,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/request-53638caf61007a7ea97f0ae0.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/request-7d69bc1a783b63e69ffa0d84.json": {
+    "sha256": "607d78739de115d6c67deba6eea3ca16be62fe7a94f3a14edad2bd1bf45cfea3",
+    "bytes": 54851,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/request-7d69bc1a783b63e69ffa0d84.json"
+  },
+  "real-asic-business-names-r2/run/artifacts/response-94392800099fd2803ef6ff97.json": {
+    "sha256": "48ab97e7ad418b09665843d3310a6af1956c448e50ee3b47d148c466f6a7ffef",
+    "bytes": 1483,
+    "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/response-94392800099fd2803ef6ff97.json"
+  }
+}

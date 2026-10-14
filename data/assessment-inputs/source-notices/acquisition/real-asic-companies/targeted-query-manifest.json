@@ -1,0 +1,118 @@
+{
+  "schema": "dataset-overlap-diagnostic-v1",
+  "generated_at": "2026-10-09T12:11:39.490124+00:00",
+  "elapsed_seconds": 9.457,
+  "selection": "checksum-valid explicit ABNs from source intake samples; targeted lookup in ASIC Company DataStore",
+  "registry_resource_id": "5c3914e6-413e-4a2c-b890-bf8efe3eabf2",
+  "source_statistics": [
+    {
+      "source_key": "act_contracts_historical",
+      "sample_record_count": 1000,
+      "sample_sha256": "5879a9baebfd7d8e22c8e11dfa5d793501f5118c2467260931cf61786adc3a6f",
+      "abn_header_candidates": [
+        "abn"
+      ],
+      "invalid_nonempty_abn_values": 238,
+      "distinct_checksum_valid_abns": 577,
+      "selected_abns": 100,
+      "selection": "lowest sha256(ABN) from frozen source intake sample, capped; targeted registry lookups"
+    },
+    {
+      "source_key": "asic_business_names",
+      "sample_record_count": 1000,
+      "sample_sha256": "2433de7763e35e02675f4edc7cc6c9427bc4f676387538c84ec4fdb62c8f4cb1",
+      "abn_header_candidates": [
+        "BN_ABN"
+      ],
+      "invalid_nonempty_abn_values": 0,
+      "distinct_checksum_valid_abns": 786,
+      "selected_abns": 100,
+      "selection": "lowest sha256(ABN) from frozen source intake sample, capped; targeted registry lookups"
+    },
+    {
+      "source_key": "ato_corporate_tax",
+      "sample_record_count": 1000,
+      "sample_sha256": "44fcd9f00b29d34cf0a8dbd8c42f1e619d09a0e5c651d36e8e82c5b88c168a82",
+      "abn_header_candidates": [
+        "ABN"
+      ],
+      "invalid_nonempty_abn_values": 0,
+      "distinct_checksum_valid_abns": 994,
+      "selected_abns": 100,
+      "selection": "lowest sha256(ABN) from frozen source intake sample, capped; targeted registry lookups"
+    },
+    {
+      "source_key": "qbcc",
+      "sample_record_count": 1000,
+      "sample_sha256": "620fe47d63556de88a74723e92e6efef06ca15cd380c6ed144375e1c8bbf8b50",
+      "abn_header_candidates": [
+        "ABN"
+      ],
+      "invalid_nonempty_abn_values": 6,
+      "distinct_checksum_valid_abns": 343,
+      "selected_abns": 100,
+      "selection": "lowest sha256(ABN) from frozen source intake sample, capped; targeted registry lookups"
+    },
+    {
+      "source_key": "suitable_operators",
+      "sample_record_count": 1000,
+      "sample_sha256": "b2509e92ed9045679e2e8b45475d53acac359291031c1eaec7ed114235bf106d",
+      "abn_header_candidates": [
+        "Business Number"
+      ],
+      "invalid_nonempty_abn_values": 0,
+      "distinct_checksum_valid_abns": 14,
+      "selected_abns": 14,
+      "selection": "lowest sha256(ABN) from frozen source intake sample, capped; targeted registry lookups"
+    }
+  ],
+  "per_source_outcomes": {
+    "act_contracts_historical": {
+      "candidates": 46,
+      "unresolved": 54
+    },
+    "asic_business_names": {
+      "candidates": 34,
+      "unresolved": 66
+    },
+    "ato_corporate_tax": {
+      "candidates": 95,
+      "unresolved": 5
+    },
+    "qbcc": {
+      "candidates": 58,
+      "unresolved": 42
+    },
+    "suitable_operators": {
+      "candidates": 2,
+      "unresolved": 12
+    }
+  },
+  "selection_file": "data/selection.json",
+  "selection_sha256": "c0bfea740b96790b0529a318ad8bc3fd495c0e86147ac25293470354c5f534a2",
+  "selected_source_keys": [
+    "act_contracts_historical",
+    "asic_business_names",
+    "asic_companies",
+    "ato_corporate_tax",
+    "qbcc",
+    "suitable_operators"
+  ],
+  "unique_abns_queried": 412,
+  "unique_company_abn_candidates": 233,
+  "unique_registry_stated_acns": 233,
+  "unresolved_abns": 179,
+  "fifty_company_cohort_feasible": true,
+  "limitations": [
+    "No ontology mapping or canonical observations have been produced.",
+    "These are exact-ID data-availability candidates, not verified ER links or profiles.",
+    "Checksum validity does not prove source identity semantics or factual correctness.",
+    "Targeted registry retrieval increases exact-ID overlap; no population coverage/recall claim.",
+    "History rows are grouped by registry-stated ACN; no parent/subsidiary merging.",
+    "Sources at different dates can agree on identity without agreeing on current attributes."
+  ],
+  "references": [
+    "https://abr.business.gov.au/Help/AbnFormat",
+    "https://asic.gov.au/for-business/registering-a-company/steps-to-register-a-company/australian-company-numbers/australian-company-number-digit-check/"
+  ]
+}

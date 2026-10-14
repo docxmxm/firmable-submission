@@ -1,0 +1,32 @@
+{
+  "started_at": "2026-10-09T12:02:38.531744+00:00",
+  "completed_at": "2026-10-09T12:02:51.585365+00:00",
+  "portals": [
+    "national",
+    "qld"
+  ],
+  "queries": [
+    "business",
+    "company",
+    "register",
+    "licence",
+    "contracts",
+    "tax",
+    "\"business names\"",
+    "\"licensed contractors\"",
+    "\"corporate tax\"",
+    "AusTender"
+  ],
+  "rows_per_query": 100,
+  "pagination": "one bounded page per distinct query; query count and requested rows retained; not a complete portal census",
+  "retrieved_records_before_dedup": 1492,
+  "unique_catalog_records": 1290,
+  "request_count": 20,
+  "failed_requests": 0,
+  "minimum_required": 200,
+  "minimum_met": true,
+  "catalog_sha256": "b2ce60eb9f266110f8df804e358654899cca004f074e3f79a0665b8fe88818f6",
+  "script_sha256": "50189527787f16a89f59e9842509bc66e39b2d570a76e5f64e85565f9ea5677f",
+  "llm_calls": 0,
+  "llm_api_cost_usd": 0
+}

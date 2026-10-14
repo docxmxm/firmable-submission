@@ -1,0 +1,59 @@
+{
+  "created_at": "2026-10-14T05:05:28.833314+00:00",
+  "authorization": "User explicitly requested one new submission repository and deletion of other Firmable assignment versions and data.",
+  "retained_repository": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission",
+  "retained_runtime_fingerprint": "bec320c33a982dcfd5e31f9e0c8c74d68401ea0855643a07028855adbf5e40de",
+  "retained_evidence": "One entire six-source r2 cohort, original inputs, selected model traces, all 18 evaluation scores, frozen labels and the ATO r1 failure.",
+  "previously_removed_experiment_roots": [
+    "output/firmable-companies-haiku-r6-20261013",
+    "output/firmable-companies-haiku-r6b-20261013",
+    "output/firmable-companies-haiku-r7-20261013",
+    "output/firmable-companies-haiku-r8-20261014",
+    "output/firmable-current-name-fix-20261013",
+    "output/firmable-fjc-haiku-r10-20261014",
+    "output/firmable-fjc-haiku-r11-20261014",
+    "output/firmable-fjc-haiku-r12-20261014",
+    "output/firmable-fjc-root-cause-20261014",
+    "output/firmable-full-audit-20261013",
+    "output/firmable-full-refresh-20261014",
+    "output/firmable-general-candidate-pilot-20261014",
+    "output/firmable-general-evaluation-20261014",
+    "output/firmable-general-fix-evaluation-20261014",
+    "output/firmable-new-source-haiku-r9-20261014",
+    "output/firmable-openrouter-current-name-full-r4-20261013",
+    "output/firmable-openrouter-full-20261013",
+    "output/firmable-openrouter-haiku-full-r2-20261013",
+    "output/firmable-openrouter-md-full-r5-20261013",
+    "output/firmable-openrouter-stream-full-r3-20261013",
+    "output/firmable-partial-discovery-pilot-20261014",
+    "output/firmable-pdf-to-md-20261013",
+    "output/firmable-requirements-clean-check-20261014.json",
+    "output/firmable-response-fix-20261013",
+    "output/firmable-restart.md",
+    "output/firmable-reviewer-capability-20261014",
+    "output/firmable-semantic-contract-20261014",
+    "output/firmable-seventh-source-20261014",
+    "output/firmable-six-source-comparison-20261014"
+  ],
+  "previously_removed_regular_bytes": 4896330555,
+  "previously_removed_cache_bytes": 85242255,
+  "final_removals": [
+    {
+      "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-schema-inference",
+      "files": 895,
+      "logical_bytes": 134360083
+    },
+    {
+      "path": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-history-20261014.tar.zst",
+      "logical_bytes": 190826325,
+      "sha256": "706d20145141ca301d73da032dcd01e9878d387d5f25d84027a4fd7a942d60ea"
+    }
+  ],
+  "preserved_out_of_scope": [
+    "output/firmable-six-blocks-2026-10-09"
+  ],
+  "verification": "New repository full offline checks passed (380 tests); a clean clone installed frozen dependencies and replayed all six sources successfully; compact selected trace archive verified.",
+  "status": "completed",
+  "completed_at": "2026-10-14T05:05:28.946008+00:00",
+  "total_original_workspace_logical_bytes_removed": 5115932893
+}

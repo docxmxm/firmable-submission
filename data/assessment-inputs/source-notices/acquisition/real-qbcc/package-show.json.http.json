@@ -1,0 +1,33 @@
+{
+  "url": "https://www.data.qld.gov.au/api/3/action/package_show?id=980b6499-c0b4-491b-ba9c-1c7506368a50",
+  "final_url": "https://www.data.qld.gov.au/api/3/action/package_show?id=980b6499-c0b4-491b-ba9c-1c7506368a50",
+  "method": "GET",
+  "retrieved_at": "2026-10-09T12:04:56.496338+00:00",
+  "http_status": 200,
+  "request_headers": {
+    "User-Agent": "FirmableAssessmentDatasetIntake/1 (public data research)",
+    "Accept-Encoding": "identity"
+  },
+  "response_headers": {
+    "Content-Type": "application/json;charset=utf-8",
+    "Content-Length": "12695",
+    "Connection": "close",
+    "Date": "Fri, 09 Oct 2026 12:04:56 GMT",
+    "Strict-Transport-Security": "max-age=31536000",
+    "Server": "nginx",
+    "Cache-Control": "public, max-age=1800, must-revalidate",
+    "Vary": "Cookie",
+    "X-Cache": "Miss from cloudfront",
+    "Via": "1.1 c44c600db483eb2098670fa47c16d840.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "SYD3-P1",
+    "Alt-Svc": "h3=\":443\"; ma=86400",
+    "X-Amz-Cf-Id": "WDbpCd_Da8FmJ_zn7S3ecz5T_rRvI6D_4ALb_StggPmVji_RV98KNA=="
+  },
+  "saved_bytes": 12695,
+  "sha256": "f0b9c1c3c2bb42430246ee94d015d66e6249861f65a496f8f0dcab882a463b2e",
+  "read_limit_bytes": 8388608,
+  "response_truncated_by_read_limit": false,
+  "range_response": false,
+  "complete_response": true,
+  "attempts_before_success": []
+}

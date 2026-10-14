@@ -1,0 +1,52 @@
+{
+  "recorded_at": "2026-10-11T23:11:21.888716+00:00",
+  "source": "User explicitly confirmed in current conversation; root saved via existing browser UI",
+  "user_attestation": "已逐项核查，认可这组结论，请保存",
+  "attested_decisions": {
+    "yes": 19,
+    "no": 0,
+    "uncertain": 1
+  },
+  "review_method": "human_ui_ai_assisted",
+  "human_reviewer": "zhe luo",
+  "ui_operator": "Codex root on explicit user instruction",
+  "saved_count": 20,
+  "pending_count": 0,
+  "uncertain_is_pass": false,
+  "confirmed_false_positives": 0,
+  "sample_size": 20,
+  "final_false_positive_rate": null,
+  "possible_sample_false_positive_rate_range": [
+    0.0,
+    0.05
+  ],
+  "prior_snapshot": "../root-only-human-review-snapshot",
+  "prior_items_2_and_4_changed_from_no_to_yes": true,
+  "files": {
+    "reviews.json": {
+      "sha256": "8f0da10ed052f1e571c72a84859c50bb5d06d48df0d1f0c68563b3ab7dd8666c",
+      "bytes": 27045
+    },
+    "ai-prefill.json": {
+      "sha256": "5c496e4df71c6cdfb85bbe46990ad3a8eabbc2ea9b8829d88b63da55caeebffb",
+      "bytes": 45382
+    },
+    "audit20-reviewed.csv": {
+      "sha256": "a8f2eab1b3ca00ef24c5c6d77121cb6e1f98fd952dd6b38d2e9a2ae6954b2f1f",
+      "bytes": 25412
+    },
+    "audit20-reviewed.jsonl": {
+      "sha256": "718aa2740276dfcd82e5ed11735b2f8e6904505beb5504d48457db76af5a8d9f",
+      "bytes": 35032
+    },
+    "audit20-reviews.json": {
+      "sha256": "7646df8379bb22101485011c503d54f8ff3aed67d6f552e944a268d73ae86960",
+      "bytes": 27452
+    },
+    "review-complete.jpg": {
+      "sha256": "c618edd1a96b1bd8bb2a7c79fab113ab18320dba37f7ad235391ff32ff332345",
+      "bytes": 130871
+    }
+  },
+  "restricted": "Root and human submission records only; never candidate/reviewer inputs"
+}

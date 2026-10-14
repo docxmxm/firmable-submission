@@ -1,0 +1,100 @@
+{
+  "schema": "dataset-selection-v1",
+  "created_at": "2026-10-09T12:11:29.928956+00:00",
+  "shortlist_file": "catalog/shortlist50.jsonl",
+  "shortlist_sha256": "a1db0d8af228b9bbcd1435eaa9f9720171f54f603f42b14ebbfe5da61e92aeaa",
+  "selection_method": "Human-directed source choice from frozen code-ranked 50, based on grain, publisher, actual format and accessible samples. No ontology mappings are manually specified.",
+  "selected_sources": [
+    {
+      "source_key": "asic_companies",
+      "dataset_id": "7b8656f9-606d-4337-af29-66b89b2eeefb",
+      "resource_id": "5c3914e6-413e-4a2c-b890-bf8efe3eabf2",
+      "rank": 6,
+      "title": "ASIC - Company Dataset",
+      "publisher": "Australian Securities and Investments Commission (ASIC)",
+      "actual_read_format": "TSV",
+      "reason": "Authoritative company register; explicit ACN/ABN and historical name rows; identity anchor.",
+      "official_catalog_url": "https://data.gov.au/data/dataset/7b8656f9-606d-4337-af29-66b89b2eeefb",
+      "manifest_file": "sources/asic_companies/manifest.json"
+    },
+    {
+      "source_key": "asic_business_names",
+      "dataset_id": "bc515135-4bb6-4d50-957a-3713709a76d3",
+      "resource_id": "55ad4b1c-5eeb-44ea-8b29-d410da431be3",
+      "rank": 7,
+      "title": "ASIC - Business Names Dataset",
+      "publisher": "Australian Securities and Investments Commission (ASIC)",
+      "actual_read_format": "TSV",
+      "reason": "Business-name owner relationships; tests business name versus legal entity and one owner to many names.",
+      "official_catalog_url": "https://data.gov.au/data/dataset/bc515135-4bb6-4d50-957a-3713709a76d3",
+      "manifest_file": "sources/asic_business_names/manifest.json"
+    },
+    {
+      "source_key": "qbcc",
+      "dataset_id": "980b6499-c0b4-491b-ba9c-1c7506368a50",
+      "resource_id": "25608781-b28c-44f8-8545-0ab18d84082f",
+      "rank": 10,
+      "title": "QBCC Licensed Contractors Register",
+      "publisher": "Queensland Building and Construction Commission",
+      "actual_read_format": "CSV",
+      "reason": "Contractor licences and classes, mixed company/individual licensees; distinct licensing publisher.",
+      "official_catalog_url": "https://www.data.qld.gov.au/dataset/980b6499-c0b4-491b-ba9c-1c7506368a50",
+      "manifest_file": "sources/qbcc/manifest.json"
+    },
+    {
+      "source_key": "ato_corporate_tax",
+      "dataset_id": "c2524c87-cea4-4636-acac-599a82048a26",
+      "resource_id": "15bf4eaa-7a14-48e9-8a3f-092df32a644e",
+      "rank": 11,
+      "title": "Corporate Tax Transparency",
+      "publisher": "Australian Taxation Office",
+      "actual_read_format": "XLSX",
+      "reason": "Real multi-sheet XLSX, reporting years and tax-entity ABNs; Information is not an entity table.",
+      "official_catalog_url": "https://data.gov.au/data/dataset/c2524c87-cea4-4636-acac-599a82048a26",
+      "manifest_file": "sources/ato_corporate_tax/manifest.json"
+    },
+    {
+      "source_key": "suitable_operators",
+      "dataset_id": "42bad3df-f2e0-4c9c-bef0-0a4328927718",
+      "resource_id": "e119647b-a2aa-4e78-b810-d3f6d60c53af",
+      "rank": 12,
+      "title": "Suitable Operator Register (SOR) for Environmentally Relevant Activities (ERAs)",
+      "publisher": "Environment, Tourism, Science and Innovation",
+      "actual_read_format": "XLSX",
+      "reason": "Independent environmental register XLSX; typed Business Number, person/corporation grain, Excel serial dates.",
+      "official_catalog_url": "https://www.data.qld.gov.au/dataset/42bad3df-f2e0-4c9c-bef0-0a4328927718",
+      "manifest_file": "sources/suitable_operators/manifest.json"
+    },
+    {
+      "source_key": "act_contracts_historical",
+      "dataset_id": "05495e07-b6c6-4c82-8be1-b468204e10c3",
+      "resource_id": "81d0cc49-586d-40cf-9054-356af17cf44e",
+      "rank": 25,
+      "title": "Contracts Register - 2000 to 2016",
+      "publisher": "ACT Government Open Data",
+      "actual_read_format": "Native Socrata JSON (not CKAN CSV projection)",
+      "reason": "Native JSON of historical contracts; contractor/supplier role, repeated contracts and historical attributes.",
+      "official_catalog_url": "https://data.gov.au/data/dataset/05495e07-b6c6-4c82-8be1-b468204e10c3",
+      "manifest_file": "sources/act_contracts_historical/manifest.json"
+    }
+  ],
+  "publisher_count": 5,
+  "exploratory_not_selected": [
+    {
+      "source_key": "austender",
+      "reason": "Historical candidate is outside frozen shortlist50; retained as exploratory evidence."
+    },
+    {
+      "source_key": "act_contracts",
+      "reason": "2017-onward candidate is outside frozen shortlist50; replaced by rank25 historical contract dataset."
+    }
+  ],
+  "sample_bias": "Primary intake samples are file/API-order prefixes, not random population samples. Targeted ASIC queries are separately labelled overlap diagnostics.",
+  "later_stage_pending": [
+    "Human random20 shortlist review",
+    "Agent-generated mapping configs and unseen-record validation",
+    "Canonical observations",
+    "ER precision human50 and profiles",
+    "Seventh-source capability"
+  ]
+}

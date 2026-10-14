@@ -1,0 +1,29 @@
+{
+  "source_pdf_sha256": "bce899f546b11dbf9e81cf7efa2fc105624f83e3608bfa778f3dc0a4c071896d",
+  "source_txt_sha256": "74e4ce95379f9d753c2a2d8d50aa3bcabfbb889610f25d5d31500d1ea02c7af6",
+  "markdown_sha256": "87d671520e0a1a9a233fbc4c6a5640d9a949052e674cb7d78fbede37af698c59",
+  "model_input_sha256": "87d671520e0a1a9a233fbc4c6a5640d9a949052e674cb7d78fbede37af698c59",
+  "source_pdf_bytes": 466372,
+  "markdown_bytes": 17112,
+  "physical_source_pages": 13,
+  "markdown_lookup_sections": 9,
+  "verification": {
+    "fields": 15,
+    "type_codes": 4,
+    "class_codes": 6,
+    "subclass_codes": 18,
+    "status_codes": 11,
+    "change_log_entries": 8,
+    "import_steps": 9,
+    "all_source_pages_visually_read": true,
+    "publisher_text_and_all_dictionary_parameters_checked": true,
+    "single_help_rendition_in_model_input": true,
+    "independent_review": "All 13 PDF pages and full TXT independently checked; no missing substantive words, fields, conditions or hyperlinks."
+  },
+  "limitations": [
+    "Prepared source document, not first-time unseen-source generalisation evidence.",
+    "Text lookup section numbers are not physical PDF page numbers; headings retain PDF page ranges.",
+    "Repeated branding/footer retained once; instructional screenshots described, original pixels remain in PDF."
+  ],
+  "formatting": "Original table/list line breaks represented as <br> inside Markdown cells; cross-page rows joined."
+}

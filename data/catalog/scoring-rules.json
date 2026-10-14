@@ -1,0 +1,55 @@
+{
+  "version": "metadata-business-v1",
+  "rules": [
+    {
+      "feature": "identifier",
+      "weight": 5,
+      "scope": "metadata",
+      "pattern": "\\b(?:ABN|ACN|NZBN)\\b|Australian (?:Business|Company) Number"
+    },
+    {
+      "feature": "entity_title",
+      "weight": 4,
+      "scope": "title",
+      "pattern": "\\b(?:compan(?:y|ies)|corporate|business names?|contractors?|suppliers?|licensees?|charit(?:y|ies))\\b"
+    },
+    {
+      "feature": "record_title",
+      "weight": 3,
+      "scope": "title",
+      "pattern": "\\b(?:register|licen[cs]es?|contracts?|permits?|directory|directories)\\b|AusTender"
+    },
+    {
+      "feature": "entity_grain",
+      "weight": 2,
+      "scope": "metadata",
+      "pattern": "\\b(?:suppliers?|contractors?|licensees?)\\b|(?:company|business|legal|entity) names?"
+    },
+    {
+      "feature": "aggregate_title",
+      "weight": -4,
+      "scope": "title",
+      "pattern": "\\b(?:statistics|statistical|counts?|totals?|aggregat(?:e|ed|ion)|summar(?:y|ies)|time series)\\b"
+    }
+  ],
+  "machine_formats": [
+    "CSV",
+    "JSON",
+    "JSONL",
+    "NDJSON",
+    "TSV",
+    "XLS",
+    "XLSX",
+    "XML"
+  ],
+  "machine_weight": 1,
+  "confidence_formula": "clamp((score + 4) / 19, 0, 1), round to 4 decimal places",
+  "confidence_kind": "uncalibrated_metadata_heuristic",
+  "sort": [
+    "score descending",
+    "dataset_id ascending",
+    "catalog_key ascending"
+  ],
+  "deduplication": "source UUID from original_id/source_dataset_id/source_id extras, else dataset UUID, else portal:id; first response metadata wins",
+  "warning": "Metadata plausibility only; no claim of record availability, commercial entity grain or calibrated probability."
+}

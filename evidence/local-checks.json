@@ -1,0 +1,59 @@
+{
+  "checked_at": "2026-10-14T05:01:29.321531+00:00",
+  "command": [
+    "uv",
+    "run",
+    "python",
+    "-m",
+    "firmable_runtime",
+    "check"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 14.865290791989537,
+  "stdout": "",
+  "stderr": "............................................................................................................................................................................................................................................................................................................................................................................................\n----------------------------------------------------------------------\nRan 380 tests in 14.354s\n\nOK\n",
+  "model_calls": 0,
+  "suite_origin": "Restored feature-compatible tests, with selected-r2 replay integration; not original frozen test source tree.",
+  "clean_checkout": [
+    {
+      "command": [
+        "git",
+        "clone",
+        "--no-hardlinks",
+        "local-repo",
+        "temporary-clean-checkout"
+      ],
+      "exit_code": 0,
+      "seconds": 0.16491675001452677,
+      "output": ""
+    },
+    {
+      "command": [
+        "uv",
+        "sync",
+        "--frozen"
+      ],
+      "exit_code": 0,
+      "seconds": 0.11922312498791143,
+      "output": "Using CPython 3.12.13\nCreating virtual environment at: .venv\nInstalled 8 packages in 9ms\n + attrs==26.1.0\n + jsonschema==4.26.0\n + jsonschema-specifications==2025.9.1\n + pypdf==6.20.1\n + pyyaml==6.0.3\n + referencing==0.37.0\n + rpds-py==2026.9.1\n + typing-extensions==4.16.0\n"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_assessment.py"
+      ],
+      "exit_code": 0,
+      "seconds": 4.288420625001891,
+      "output": ".\n----------------------------------------------------------------------\nRan 1 test in 4.111s\n\nOK\n"
+    }
+  ],
+  "clean_checkout_temporary_removed": true
+}

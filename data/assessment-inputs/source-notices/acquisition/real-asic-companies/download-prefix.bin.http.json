@@ -1,0 +1,43 @@
+{
+  "url": "https://data.gov.au/data/dataset/7b8656f9-606d-4337-af29-66b89b2eeefb/resource/5c3914e6-413e-4a2c-b890-bf8efe3eabf2/download/company_202610.csv",
+  "final_url": "https://data.gov.au/data/dataset/7b8656f9-606d-4337-af29-66b89b2eeefb/resource/5c3914e6-413e-4a2c-b890-bf8efe3eabf2/download/company_202610.csv",
+  "method": "GET",
+  "retrieved_at": "2026-10-09T12:04:56.673814+00:00",
+  "http_status": 206,
+  "request_headers": {
+    "User-Agent": "FirmableAssessmentDatasetIntake/1 (public data research)",
+    "Accept-Encoding": "identity",
+    "Range": "bytes=0-262143"
+  },
+  "response_headers": {
+    "Content-Type": "text/csv",
+    "Content-Length": "262144",
+    "Connection": "close",
+    "Date": "Fri, 09 Oct 2026 12:04:56 GMT",
+    "Cache-Control": "public, max-age=60, immutable",
+    "Server": "nginx",
+    "Content-Disposition": "inline; filename=company_202610.csv",
+    "Last-Modified": "Mon, 05 Oct 2026 13:50:25 GMT",
+    "ETag": "\"1791208225.797-400113511-3503231078\"",
+    "Set-Cookie": "ckan=; Domain=; Expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=0; Path=/",
+    "Expires": "Fri, 09 Oct 2026 12:05:56 GMT",
+    "Vary": "Origin",
+    "X-Cache": "Miss from cloudfront",
+    "Via": "1.1 9e25f92c54f2015fbfe9156d7f5aec54.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "SYD3-P3",
+    "X-Amz-Cf-Id": "T8MUXTfF6oNNsp7Tl1G7vShvT6JiR2DxtujxGMHxNSIZD2qsBiWb8g==",
+    "X-XSS-Protection": "1; mode=block",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "X-Content-Type-Options": "nosniff",
+    "Strict-Transport-Security": "max-age=31536000",
+    "Content-Range": "bytes 0-262143/400113511"
+  },
+  "saved_bytes": 262144,
+  "sha256": "559cfdea361eae08395dfa663e2e69f0cc7bdbc4997511fc6f121e9d7ee6e719",
+  "read_limit_bytes": 262144,
+  "response_truncated_by_read_limit": false,
+  "range_response": true,
+  "complete_response": false,
+  "attempts_before_success": []
+}

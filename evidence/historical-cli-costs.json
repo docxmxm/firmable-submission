@@ -1,0 +1,313 @@
+{
+  "schema_version": "firmable-cost-disclosure-v1",
+  "generated_at_utc": "2026-10-12T13:58:30.274700+00:00",
+  "currency": "USD",
+  "original_frozen_source": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-submission-integrated-20261012",
+  "scope": "Closeout disclosure from named saved evidence only; no model/API calls or pipelines executed for this inventory.",
+  "actual_route_billed_spend": {
+    "amount_usd": null,
+    "user_reported_estimate_usd_range": [
+      6,
+      7
+    ],
+    "basis": "User self-report on 2026-10-13: estimated billed spend USD 6–7. No invoice/account ledger inspected.",
+    "invoice_verified": false,
+    "under_10_verified": false,
+    "reconciliation_to_cli_estimates": "Not available. CLI API-equivalent pricing and actual route billing may differ; the user estimate does not alter saved CLI numbers.",
+    "user_estimate_predates_later_experiments": true
+  },
+  "time_disclosure": {
+    "user_reported_human_active_hours_upper_bound": 6,
+    "relation": "less than",
+    "basis": "User self-report: roughly under 6 hours of human active work; remaining time was agent and code execution.",
+    "unattended_agent_and_code_time_excluded_from_human_active_estimate": true,
+    "audited_timer": false,
+    "all_in_elapsed_hours": null,
+    "six_hour_total_timebox_compliance_verified": false
+  },
+  "estimate_basis": "CLI client API-equivalent estimates, including cache counters as reported; not invoices, actual backend identity proof, or complete historical spend.",
+  "display_precision": "USD rounded to 8 decimal places; original source numeric strings are retained in safe receipts.",
+  "stages": [
+    {
+      "stage_id": "frozen_six",
+      "cli_api_equivalent_estimate_usd": "2.24553300",
+      "completed_recorded_cli_steps": 22,
+      "reported_tokens_including_cache": 246876,
+      "receipt": {
+        "path": "supplementary/cost-receipts/frozen-six.safe.json",
+        "sha256": "cf471f4382b26417f93cdba19209b307b80d71eb24307c1d7193025780c1e09e",
+        "bytes": 33347,
+        "scope": "Model calls in the six origin traces used by the frozen integrated package; includes final ASIC run-03 plus resume once."
+      },
+      "scope_note": "Six frozen origin traces, including final ASIC 7-call result once."
+    },
+    {
+      "stage_id": "asic_prior_attempts",
+      "cli_api_equivalent_estimate_usd": "1.56606725",
+      "completed_recorded_cli_steps": 8,
+      "reported_tokens_including_cache": 191812,
+      "receipt": {
+        "path": "supplementary/cost-receipts/asic-attempts.safe.json",
+        "sha256": "964478083fa4eec9b17ab116ae926eda34c91b02ac9d10bfbed4ea1cc093e2dc",
+        "bytes": 24183,
+        "scope": "All 15 completed ASIC repair calls; only 8 calls from run-01/run-02 are additive to frozen-six.safe.json."
+      },
+      "scope_note": "8 additional calls from run-01/run-02; exclude the final 7 already in frozen_six and the 5 reused on resume."
+    },
+    {
+      "stage_id": "acnc_successful_job02",
+      "cli_api_equivalent_estimate_usd": "0.40931250",
+      "completed_recorded_cli_steps": 3,
+      "reported_tokens_including_cache": 44556,
+      "receipt": {
+        "path": "supplementary/cost-receipts/acnc-seventh.safe.json",
+        "sha256": "4424f915ff7eb4d9ae327b799541294bc7a600b0d3c79b8e6687cdfe5a6078ba",
+        "bytes": 6638,
+        "scope": "Successful ACNC job02 onboarding only; separate review/extraction continuation created zero new model calls. Earlier interrupted job01 outcome/spend remains unknown."
+      },
+      "scope_note": "Successful seventh-source job02 only; postprocess model calls=0; earlier interrupted job01 unknown."
+    },
+    {
+      "stage_id": "fresh_six_validation",
+      "cli_api_equivalent_estimate_usd": "2.72508725",
+      "completed_recorded_cli_steps": 24,
+      "reported_tokens_including_cache": 271264,
+      "receipt": {
+        "path": "supplementary/cost-receipts/fresh-six.safe.json",
+        "sha256": "a21c73a7d3d87a40d5f93df9cc08496bc9b74072fbb822198c35eefebeba7a65",
+        "bytes": 36883,
+        "scope": "Fresh six-source run, including Suitable onboarding refusal; 24 completed model calls across 6 attempted sources, 5 extracted. This is validation work separate from frozen delivery."
+      },
+      "scope_note": "All 6 attempted sources, including Suitable refusal; this phase extracted 5 sources."
+    },
+    {
+      "stage_id": "opus_link50_ai_review",
+      "cli_api_equivalent_estimate_usd": "4.53391100",
+      "completed_recorded_cli_steps": 7,
+      "reported_tokens_including_cache": 638305,
+      "receipt": {
+        "path": "supplementary/cost-receipts/opus-link50.safe.json",
+        "sha256": "ddc68eb0f51a1287d84ab97999c63058b82b0747554600c186c6a92ec7a0272a",
+        "bytes": 10489,
+        "scope": "Seven CLI dispatches: first pass batches 1–5 plus explicit revision batches 6–7. FINAL-SUMMARY already includes both, so it is not added again. AI review is not human hand-check."
+      },
+      "scope_note": "All 7 dispatches including 2 explicit revision batches; no human decisions written."
+    },
+    {
+      "stage_id": "r14_convergence_validation",
+      "cli_api_equivalent_estimate_usd": "4.18043700",
+      "completed_recorded_cli_steps": 30,
+      "reported_tokens_including_cache": 459203,
+      "receipt": {
+        "path": "supplementary/cost-receipts/convergence.safe.json",
+        "sha256": "b781f4b20fdaf6837668801f9f367a71570a5f908e0b58cb8ee0e0df73b5f2f6",
+        "bytes": 38398,
+        "scope": "Six bounded R14 real-provider convergence trials; 30 recorded model steps. Experimental validation is separate from frozen six-source delivery."
+      },
+      "scope_note": "Six independent experimental trials, 30 steps."
+    },
+    {
+      "stage_id": "early_design_and_connectivity",
+      "cli_api_equivalent_estimate_usd": "27.72341875",
+      "completed_recorded_cli_steps": null,
+      "reported_tokens_including_cache": 4987179,
+      "receipt": {
+        "path": "supplementary/cost-receipts/early-design-ledger.safe.json",
+        "sha256": "aa3357a5ff197cec4af19ff53c6f8164bf40f2a5960b25c93e7dd9349a8c2f15",
+        "bytes": 2687,
+        "scope": "Early route connectivity and rejected preimplementation standards drafts. Separate design/development estimates; not MVP runtime or evaluation performance."
+      },
+      "scope_note": "Separate design/development ledger. Aggregate entries are not a proven cross-stage call identity inventory; excluded from execution/validation subtotal."
+    }
+  ],
+  "frozen_six_by_source": [
+    {
+      "source_id": "real-asic-companies",
+      "completed_cli_model_calls": 7,
+      "cli_api_equivalent_estimate_usd": "1.03601675",
+      "reported_tokens_including_cache": 121399
+    },
+    {
+      "source_id": "real-asic-business-names",
+      "completed_cli_model_calls": 3,
+      "cli_api_equivalent_estimate_usd": "0.29264250",
+      "reported_tokens_including_cache": 33262
+    },
+    {
+      "source_id": "real-qbcc",
+      "completed_cli_model_calls": 3,
+      "cli_api_equivalent_estimate_usd": "0.24275375",
+      "reported_tokens_including_cache": 23557
+    },
+    {
+      "source_id": "real-ato-corporate-tax",
+      "completed_cli_model_calls": 3,
+      "cli_api_equivalent_estimate_usd": "0.16648375",
+      "reported_tokens_including_cache": 19855
+    },
+    {
+      "source_id": "real-suitable-operators",
+      "completed_cli_model_calls": 3,
+      "cli_api_equivalent_estimate_usd": "0.22165750",
+      "reported_tokens_including_cache": 21989
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "completed_cli_model_calls": 3,
+      "cli_api_equivalent_estimate_usd": "0.28597875",
+      "reported_tokens_including_cache": 26814
+    }
+  ],
+  "verified_scoped_execution_validation_ai_review_subtotal": {
+    "cli_api_equivalent_estimate_usd": "15.66034800",
+    "completed_recorded_cli_steps": 94,
+    "reported_tokens_including_cache": 1852016,
+    "included_stage_ids": [
+      "frozen_six",
+      "asic_prior_attempts",
+      "acnc_successful_job02",
+      "fresh_six_validation",
+      "opus_link50_ai_review",
+      "r14_convergence_validation"
+    ],
+    "call_ids_unique": true,
+    "provider_receipt_hashes_unique": true,
+    "provider_receipt_hashes_verified_against_saved_files": true,
+    "complete_actual_spend": false
+  },
+  "non_additive_reference_totals": {
+    "asic_all_attempts_cli_api_equivalent_estimate_usd": "2.60208400",
+    "asic_all_attempts_unique_completed_calls": 15,
+    "asic_final_calls_already_in_frozen_six": 7,
+    "asic_resume_reused_completed_calls": 5
+  },
+  "complete_project_cli_estimate_usd": null,
+  "complete_actual_spend_usd": null,
+  "grand_total_including_design_usd": null,
+  "why_no_complete_or_design_inclusive_total": [
+    "Named evidence is a bounded inventory, not a full historic billing audit.",
+    "Early design aggregate ledger lacks cross-stage call/receipt identity deduplication; it is disclosed separately and not added to the scoped subtotal.",
+    "Earlier interrupted ACNC job01 outcome/spend is unknown.",
+    "VS Code/Fable consultation, Codex development, other un-inventoried historical runs, route internal retries, and local compute costs are not fully accounted for."
+  ],
+  "one_source_inference_vs_per_record": {
+    "example": "real-acnc-charities successful job02",
+    "one_time_inference_cli_api_equivalent_estimate_usd": "0.40931250",
+    "model_steps": 3,
+    "reported_tokens_including_cache": 44556,
+    "onboarding_candidate_wall_seconds": 239.70334312499836,
+    "onboarding_transport_wall_seconds": 253.24455312499776,
+    "recorded_deterministic_extraction_records": 1000,
+    "recorded_extraction_new_model_calls": 0,
+    "recorded_extraction_incremental_model_api_estimate_usd": "0.00000000",
+    "compute_infrastructure_cost_usd": null,
+    "scope_note": "Zero new model calls means zero additional model API estimate for this recorded extraction; it does not mean zero compute or total operating cost."
+  },
+  "receipt_files": [
+    {
+      "path": "supplementary/cost-receipts/frozen-six.safe.json",
+      "sha256": "cf471f4382b26417f93cdba19209b307b80d71eb24307c1d7193025780c1e09e",
+      "bytes": 33347,
+      "scope": "Model calls in the six origin traces used by the frozen integrated package; includes final ASIC run-03 plus resume once."
+    },
+    {
+      "path": "supplementary/cost-receipts/asic-attempts.safe.json",
+      "sha256": "964478083fa4eec9b17ab116ae926eda34c91b02ac9d10bfbed4ea1cc093e2dc",
+      "bytes": 24183,
+      "scope": "All 15 completed ASIC repair calls; only 8 calls from run-01/run-02 are additive to frozen-six.safe.json."
+    },
+    {
+      "path": "supplementary/cost-receipts/acnc-seventh.safe.json",
+      "sha256": "4424f915ff7eb4d9ae327b799541294bc7a600b0d3c79b8e6687cdfe5a6078ba",
+      "bytes": 6638,
+      "scope": "Successful ACNC job02 onboarding only; separate review/extraction continuation created zero new model calls. Earlier interrupted job01 outcome/spend remains unknown."
+    },
+    {
+      "path": "supplementary/cost-receipts/fresh-six.safe.json",
+      "sha256": "a21c73a7d3d87a40d5f93df9cc08496bc9b74072fbb822198c35eefebeba7a65",
+      "bytes": 36883,
+      "scope": "Fresh six-source run, including Suitable onboarding refusal; 24 completed model calls across 6 attempted sources, 5 extracted. This is validation work separate from frozen delivery."
+    },
+    {
+      "path": "supplementary/cost-receipts/opus-link50.safe.json",
+      "sha256": "ddc68eb0f51a1287d84ab97999c63058b82b0747554600c186c6a92ec7a0272a",
+      "bytes": 10489,
+      "scope": "Seven CLI dispatches: first pass batches 1–5 plus explicit revision batches 6–7. FINAL-SUMMARY already includes both, so it is not added again. AI review is not human hand-check."
+    },
+    {
+      "path": "supplementary/cost-receipts/convergence.safe.json",
+      "sha256": "b781f4b20fdaf6837668801f9f367a71570a5f908e0b58cb8ee0e0df73b5f2f6",
+      "bytes": 38398,
+      "scope": "Six bounded R14 real-provider convergence trials; 30 recorded model steps. Experimental validation is separate from frozen six-source delivery."
+    },
+    {
+      "path": "supplementary/cost-receipts/early-design-ledger.safe.json",
+      "sha256": "aa3357a5ff197cec4af19ff53c6f8164bf40f2a5960b25c93e7dd9349a8c2f15",
+      "bytes": 2687,
+      "scope": "Early route connectivity and rejected preimplementation standards drafts. Separate design/development estimates; not MVP runtime or evaluation performance."
+    }
+  ],
+  "safety_scope": "Only COSTS.json, COSTS.md and cost-only aggregate receipts under supplementary/cost-receipts/ are written. Frozen inputs, model configurations, raw evidence and human decisions are unchanged.",
+  "r19_new_source_window_extension": {
+    "generated_at_utc": "2026-10-12T23:53:17.741998+00:00",
+    "scope": "Only the named 2026-10-13 new-source test and two engineering consultation calls. Additive within this window, not a project-wide invoice or billing total.",
+    "known_real_data_processing_cli_estimate_usd": "3.47562600",
+    "unknown_real_data_processing_cost_usd": null,
+    "unknown_call_ids_not_retried": [
+      "b32d49f1e6f5e1dc79c3b8d0"
+    ],
+    "known_engineering_consultation_cli_estimate_usd": "0.77787375",
+    "known_combined_window_reference_cli_estimate_usd": "4.25349975",
+    "current_r18_r19_engineering_and_submission_integration_new_model_calls": 0,
+    "accounting_boundary": "Engineering consultations are separate from the user current real-data testing category; their actual API estimates are retained, not zeroed. Original historical USD4 dispatch-gate evidence is unchanged.",
+    "complete_project_or_invoice_total": false,
+    "receipt": {
+      "sha256": "2d124987dc9791117dc43652ad589b245246b1b3f801f7b64cc5504dfba2fb7d",
+      "bytes": 39003,
+      "path": "integration/agent-r19/COST-HISTORY.json"
+    },
+    "current_r19_live_data_window": {
+      "status": "stopped_at_cumulative_estimate_gate_after_corrected_version_continuation",
+      "additional_authorized_estimate_gate_usd": "3.00000000",
+      "planned_trials": 4,
+      "attempted_corrected_version_trials": 3,
+      "known_cli_api_equivalent_estimate_usd": "3.42254800",
+      "included_in_this_extension_totals": false,
+      "receipt": {
+        "bytes": 1247,
+        "sha256": "9466245b45ee790c58ebbea553e0ba1860f0d9f1bb300aebc226e76d80cacaeb",
+        "path": "integration/agent-r20/COST-WINDOW.json"
+      }
+    }
+  },
+  "current_r19_r20_authorized_data_window": {
+    "kind": "cumulative-r19-r20-authorized-data-window-v1",
+    "currency": "USD",
+    "authorized_pre_dispatch_cli_estimate_gate_usd": "3.00000000",
+    "carry_failed_r19_known_cli_estimate_usd": "0.87491800",
+    "corrected_r20_new_known_cli_estimate_usd": "2.54763000",
+    "cumulative_known_cli_estimate_usd": "3.42254800",
+    "last_inflight_gate_overshoot_usd": "0.42254800",
+    "last_dispatched_call_prior_known_estimate_usd": "2.47794925",
+    "new_unknown_cost_call_ids": [],
+    "old_unknown_cost_call_ids_outside_window": [
+      "b32d49f1e6f5e1dc79c3b8d0"
+    ],
+    "planned_corrected_version_trials": 4,
+    "attempted": 3,
+    "completed_onboarding": 2,
+    "informative_completed": 1,
+    "sealed_holdout_scored": 1,
+    "budget_interrupted": 1,
+    "not_started": 1,
+    "r19_primary_receipts": 2,
+    "r20_primary_receipts": 12,
+    "total_known_primary_receipts": 14,
+    "invoice_verified": false,
+    "engineering_and_packaging_new_model_calls": 0,
+    "safe_receipts": "live/SAFE-COST-RECEIPTS.json",
+    "independent_cost_audit": "live/FINAL-COST-AUDIT.json",
+    "gate_limitation": "Estimate checked before dispatch, not a hard invoice cap. Last in-flight request returned above the gate; no subsequent request was dispatched.",
+    "prior_historical_totals_updated": false
+  }
+}

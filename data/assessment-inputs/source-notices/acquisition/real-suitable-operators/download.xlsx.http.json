@@ -1,0 +1,32 @@
+{
+  "url": "https://storagesolutiondocsprod.blob.core.windows.net/register-documents-rso/rso-register.xlsx?timestamp=2026-10-09T10:20:01+10:00",
+  "final_url": "https://storagesolutiondocsprod.blob.core.windows.net/register-documents-rso/rso-register.xlsx?timestamp=2026-10-09T10:20:01+10:00",
+  "method": "GET",
+  "retrieved_at": "2026-10-09T12:10:13.278098+00:00",
+  "http_status": 200,
+  "request_headers": {
+    "User-Agent": "FirmableAssessmentDatasetIntake/1 (public data research)",
+    "Accept-Encoding": "identity"
+  },
+  "response_headers": {
+    "Content-Length": "902657",
+    "Content-Type": "application/octet-stream",
+    "Content-MD5": "JVDGP9Gr8Co1d4gpFK2hxg==",
+    "Last-Modified": "Thu, 08 Oct 2026 17:32:36 GMT",
+    "ETag": "0x8DF2562248D6104",
+    "Server": "Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0",
+    "x-ms-request-id": "15ee498b-601e-004f-75e7-57cec1000000",
+    "x-ms-version": "2009-09-19",
+    "x-ms-lease-status": "unlocked",
+    "x-ms-blob-type": "BlockBlob",
+    "Date": "Fri, 09 Oct 2026 12:10:12 GMT",
+    "Connection": "close"
+  },
+  "saved_bytes": 902657,
+  "sha256": "c82d2975289046ee2ae35bd7ae8fe642ece524d8fbae7438248b38a47e4aee24",
+  "read_limit_bytes": 2097152,
+  "response_truncated_by_read_limit": false,
+  "range_response": false,
+  "complete_response": true,
+  "attempts_before_success": []
+}

@@ -1,0 +1,493 @@
+{
+  "source_key": "suitable_operators",
+  "dataset_id": "42bad3df-f2e0-4c9c-bef0-0a4328927718",
+  "resource_id": "e119647b-a2aa-4e78-b810-d3f6d60c53af",
+  "status": "verified",
+  "started_at": "2026-10-09T12:10:13.114248+00:00",
+  "intake_version": "intake-1",
+  "record_grain": "A suitable operator registration; business or individual operator, with ABN or ACN in a mixed Business Number column.",
+  "time_column_meanings": {
+    "Registration Date": "Suitable operator registration event, not observation time"
+  },
+  "observed_at_policy": "Not assigned at dataset intake. Catalogue/HTTP update and retrieval times are not automatically record observation times.",
+  "ontology_mapping_performed": false,
+  "warnings": [],
+  "title": "Suitable Operator Register (SOR) for Environmentally Relevant Activities (ERAs)",
+  "publisher": "Environment, Tourism, Science and Innovation",
+  "official_catalog_url": "https://www.data.qld.gov.au/dataset/42bad3df-f2e0-4c9c-bef0-0a4328927718",
+  "resource_url_from_fresh_metadata": "https://storagesolutiondocsprod.blob.core.windows.net/register-documents-rso/rso-register.xlsx?timestamp=2026-10-09T10:20:01+10:00",
+  "metadata_receipt": {
+    "url": "https://www.data.qld.gov.au/api/3/action/package_show?id=42bad3df-f2e0-4c9c-bef0-0a4328927718",
+    "final_url": "https://www.data.qld.gov.au/api/3/action/package_show?id=42bad3df-f2e0-4c9c-bef0-0a4328927718",
+    "method": "GET",
+    "retrieved_at": "2026-10-09T12:10:13.114494+00:00",
+    "http_status": 200,
+    "request_headers": {
+      "User-Agent": "FirmableAssessmentDatasetIntake/1 (public data research)",
+      "Accept-Encoding": "identity"
+    },
+    "response_headers": {
+      "Content-Type": "application/json;charset=utf-8",
+      "Content-Length": "6313",
+      "Connection": "close",
+      "Date": "Fri, 09 Oct 2026 12:09:29 GMT",
+      "Strict-Transport-Security": "max-age=31536000",
+      "Server": "nginx",
+      "Cache-Control": "public, max-age=1800, must-revalidate",
+      "Vary": "Cookie",
+      "X-Cache": "Hit from cloudfront",
+      "Via": "1.1 6a516167cea95f6fc2711c055db8a1ce.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Pop": "MEL52-P2",
+      "Alt-Svc": "h3=\":443\"; ma=86400",
+      "X-Amz-Cf-Id": "Xg7VRDaA0KbgZmOlZr_OtP49B1qAuC2Rpc1VaTbML7ZThIDwRzBg0g==",
+      "Age": "44"
+    },
+    "saved_bytes": 6313,
+    "sha256": "7c2c98b96c065eddac7717cfc9be8e46c5cc8c51ee8ffb4fbfdcf9b5c42fcf46",
+    "read_limit_bytes": 8388608,
+    "response_truncated_by_read_limit": false,
+    "range_response": false,
+    "complete_response": true,
+    "attempts_before_success": []
+  },
+  "license": {
+    "id": "CC-BY-4.0",
+    "title": "Creative Commons Attribution 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": "Fresh package_show"
+  },
+  "catalogue_times": {
+    "dataset_metadata_modified": "2026-10-09T00:21:53.766182",
+    "resource_last_modified": "2026-10-09T00:20:02.566557",
+    "resource_metadata_modified": "2026-10-09T00:21:53.775467",
+    "resource_description": "Data extracted from the department's permit and licensing system showing the business or individual name, suitable operator register reference number and ABN or ACN number."
+  },
+  "declared_format": "XLSX",
+  "declared_size": "737.5 KiB",
+  "resource_metadata": {
+    "_do_not_validate": true,
+    "align_default_schema": false,
+    "archiver": {
+      "resource_timestamp": "2022-06-19T23:36:56.349218",
+      "status_id": 0,
+      "is_broken": false,
+      "reason": "",
+      "url_redirected_to": null,
+      "cache_filepath": "archive/e1/e119647b-a2aa-4e78-b810-d3f6d60c53af/rso-register.xlsx",
+      "cache_url": "https://www.data.qld.gov.au/dataset/42bad3df-f2e0-4c9c-bef0-0a4328927718/resource/e119647b-a2aa-4e78-b810-d3f6d60c53af/archive/rso-register.xlsx",
+      "size": 902657,
+      "mimetype": "application/octet-stream",
+      "hash": "f493734c3cc5d6ba27588cb6983f6f924b966ab8",
+      "etag": null,
+      "last_modified": null,
+      "first_failure": null,
+      "last_success": "2026-10-09T00:21:56.072769",
+      "failure_count": 0,
+      "created": "2020-10-06T12:29:37.786988",
+      "updated": "2026-10-09T00:21:56.072769",
+      "status": "Archived successfully",
+      "is_broken_printable": "Downloaded OK"
+    },
+    "cache_last_updated": null,
+    "cache_url": null,
+    "ckan_url": "https://www.data.qld.gov.au",
+    "created": "2014-06-30T05:30:08.273003",
+    "datastore_active": true,
+    "datastore_contains_all_records_of_source_file": true,
+    "description": "Data extracted from the department's permit and licensing system showing the business or individual name, suitable operator register reference number and ABN or ACN number.",
+    "format": "XLSX",
+    "hash": "2550c63fd1abf02a3577882914ada1c6",
+    "id": "e119647b-a2aa-4e78-b810-d3f6d60c53af",
+    "ignore_hash": false,
+    "last_modified": "2026-10-09T00:20:02.566557",
+    "metadata_modified": "2026-10-09T00:21:53.775467",
+    "mimetype": null,
+    "mimetype_inner": null,
+    "name": "Suitable Operator Register (SOR) for Environmentally Relevant Activities (ERAs)",
+    "nature_of_change": "edit-resource-with-no-new-data",
+    "original_url": "https://storagesolutiondocsprod.blob.core.windows.net/register-documents-rso/rso-register.xlsx?timestamp=2026-10-09T10:20:01+10:00",
+    "package_id": "42bad3df-f2e0-4c9c-bef0-0a4328927718",
+    "position": 0,
+    "qa": {
+      "resource_timestamp": null,
+      "archival_timestamp": "2026-10-09T00:21:56.072769",
+      "openness_score": 2,
+      "openness_score_reason": "Content of file appeared to be format \"XLSX\" which receives openness score: 2.",
+      "format": "XLSX",
+      "created": "2020-10-06T05:27:17.054658",
+      "updated": "2026-10-09T00:21:57.710754"
+    },
+    "queue_name": "default",
+    "resource_id": "e119647b-a2aa-4e78-b810-d3f6d60c53af",
+    "resource_type": null,
+    "schema": {
+      "fields": [
+        {
+          "name": "Entity Type",
+          "title": "Entity Type",
+          "type": "string"
+        },
+        {
+          "name": "Customer Name",
+          "title": "Customer Name",
+          "type": "string"
+        },
+        {
+          "name": "Business Number",
+          "title": "Business Number",
+          "type": "string"
+        },
+        {
+          "name": "Registration Date",
+          "title": "Registration Date",
+          "type": "string"
+        },
+        {
+          "name": "RSO Number",
+          "title": "RSO Number",
+          "type": "string"
+        },
+        {
+          "name": "Registration Status",
+          "title": "Registration Status",
+          "type": "string"
+        },
+        {
+          "name": "Location",
+          "title": "Location",
+          "type": "string"
+        }
+      ],
+      "primaryKey": "RSO Number"
+    },
+    "set_url_type": false,
+    "size": "737.5 KiB",
+    "state": "active",
+    "task_created": "2026-10-09 00:20:02.932176",
+    "url": "https://storagesolutiondocsprod.blob.core.windows.net/register-documents-rso/rso-register.xlsx?timestamp=2026-10-09T10:20:01+10:00",
+    "url_type": "",
+    "validation_status": "success",
+    "validation_timestamp": "2023-04-20T06:35:23.922916"
+  },
+  "download_receipt": {
+    "url": "https://storagesolutiondocsprod.blob.core.windows.net/register-documents-rso/rso-register.xlsx?timestamp=2026-10-09T10:20:01+10:00",
+    "final_url": "https://storagesolutiondocsprod.blob.core.windows.net/register-documents-rso/rso-register.xlsx?timestamp=2026-10-09T10:20:01+10:00",
+    "method": "GET",
+    "retrieved_at": "2026-10-09T12:10:13.278098+00:00",
+    "http_status": 200,
+    "request_headers": {
+      "User-Agent": "FirmableAssessmentDatasetIntake/1 (public data research)",
+      "Accept-Encoding": "identity"
+    },
+    "response_headers": {
+      "Content-Length": "902657",
+      "Content-Type": "application/octet-stream",
+      "Content-MD5": "JVDGP9Gr8Co1d4gpFK2hxg==",
+      "Last-Modified": "Thu, 08 Oct 2026 17:32:36 GMT",
+      "ETag": "0x8DF2562248D6104",
+      "Server": "Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0",
+      "x-ms-request-id": "15ee498b-601e-004f-75e7-57cec1000000",
+      "x-ms-version": "2009-09-19",
+      "x-ms-lease-status": "unlocked",
+      "x-ms-blob-type": "BlockBlob",
+      "Date": "Fri, 09 Oct 2026 12:10:12 GMT",
+      "Connection": "close"
+    },
+    "saved_bytes": 902657,
+    "sha256": "c82d2975289046ee2ae35bd7ae8fe642ece524d8fbae7438248b38a47e4aee24",
+    "read_limit_bytes": 2097152,
+    "response_truncated_by_read_limit": false,
+    "range_response": false,
+    "complete_response": true,
+    "attempts_before_success": []
+  },
+  "read_format": "XLSX",
+  "complete_original_file_downloaded": true,
+  "parser_evidence": {
+    "parser": "stdlib zipfile + ElementTree; plain OOXML cell values; formula cached values only, no date coercion",
+    "sheets": [
+      {
+        "name": "Registered Suitable Operators",
+        "xml_path": "xl/worksheets/sheet1.xml",
+        "xml_row_count": 15101,
+        "nonempty_row_count": 15101,
+        "preview_rows": [
+          {
+            "row_number": 1,
+            "values": [
+              "Entity Type",
+              "Customer Name",
+              "Business Number",
+              "Registration Date",
+              "RSO Number",
+              "Registration Status",
+              "Location"
+            ],
+            "cell_evidence": {
+              "A1": {
+                "type": "inlineStr",
+                "style_index": "0",
+                "raw_value": null,
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "B1": {
+                "type": "inlineStr",
+                "style_index": "0",
+                "raw_value": null,
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "C1": {
+                "type": "inlineStr",
+                "style_index": "0",
+                "raw_value": null,
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "D1": {
+                "type": "inlineStr",
+                "style_index": "0",
+                "raw_value": null,
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "E1": {
+                "type": "inlineStr",
+                "style_index": "0",
+                "raw_value": null,
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "F1": {
+                "type": "inlineStr",
+                "style_index": "0",
+                "raw_value": null,
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "G1": {
+                "type": "inlineStr",
+                "style_index": "0",
+                "raw_value": null,
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              }
+            }
+          },
+          {
+            "row_number": 2,
+            "values": [
+              "Corporation (Company)",
+              "\"OVER THE TOP\" ROOF RESTORATIONS PTY. LTD",
+              "ACN 090444714",
+              "41359",
+              "649054",
+              "Registered",
+              "BIRTINYA, QLD, 4575"
+            ],
+            "cell_evidence": {
+              "A2": {
+                "type": "inlineStr",
+                "style_index": "0",
+                "raw_value": null,
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "B2": {
+                "type": "inlineStr",
+                "style_index": "0",
+                "raw_value": null,
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "C2": {
+                "type": "inlineStr",
+                "style_index": "0",
+                "raw_value": null,
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "D2": {
+                "type": "n",
+                "style_index": "1",
+                "raw_value": "41359",
+                "formula_present": false,
+                "number_format_id": "14",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "E2": {
+                "type": "inlineStr",
+                "style_index": "0",
+                "raw_value": null,
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "F2": {
+                "type": "inlineStr",
+                "style_index": "0",
+                "raw_value": null,
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "G2": {
+                "type": "inlineStr",
+                "style_index": "0",
+                "raw_value": null,
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              }
+            }
+          },
+          {
+            "row_number": 3,
+            "values": [
+              "Corporation (Company)",
+              "$Uccess Pty Ltd",
+              "ACN 600137942",
+              "41991",
+              "735094",
+              "Registered",
+              "KELSO, QLD, 4815"
+            ],
+            "cell_evidence": {
+              "A3": {
+                "type": "inlineStr",
+                "style_index": "0",
+                "raw_value": null,
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "B3": {
+                "type": "inlineStr",
+                "style_index": "0",
+                "raw_value": null,
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "C3": {
+                "type": "inlineStr",
+                "style_index": "0",
+                "raw_value": null,
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "D3": {
+                "type": "n",
+                "style_index": "1",
+                "raw_value": "41991",
+                "formula_present": false,
+                "number_format_id": "14",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "E3": {
+                "type": "inlineStr",
+                "style_index": "0",
+                "raw_value": null,
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "F3": {
+                "type": "inlineStr",
+                "style_index": "0",
+                "raw_value": null,
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              },
+              "G3": {
+                "type": "inlineStr",
+                "style_index": "0",
+                "raw_value": null,
+                "formula_present": false,
+                "number_format_id": "0",
+                "custom_format_code": null,
+                "builtin_format": true
+              }
+            }
+          }
+        ],
+        "table_detected": true,
+        "workbook_date_system": "1900",
+        "number_formats_by_style": [
+          {
+            "number_format_id": "0",
+            "custom_format_code": null,
+            "builtin_format": true
+          },
+          {
+            "number_format_id": "14",
+            "custom_format_code": null,
+            "builtin_format": true
+          }
+        ],
+        "header_row": 1,
+        "headers_raw": [
+          "Entity Type",
+          "Customer Name",
+          "Business Number",
+          "Registration Date",
+          "RSO Number",
+          "Registration Status",
+          "Location"
+        ],
+        "headers_for_json": [
+          "Entity Type",
+          "Customer Name",
+          "Business Number",
+          "Registration Date",
+          "RSO Number",
+          "Registration Status",
+          "Location"
+        ],
+        "data_record_count": 15100
+      }
+    ],
+    "full_parsed_tabular_records": 15100,
+    "reparsed_at": "2026-10-09T12:11:28.743852+00:00",
+    "reparse_basis": "Existing complete byte snapshot, no new network call"
+  },
+  "primary_sample_count": 1000,
+  "full_record_count": 15100,
+  "selection": "First data rows in workbook/sheet order, not random; information sheets retained as parser evidence.",
+  "completed_at": "2026-10-09T12:10:14.104089+00:00",
+  "elapsed_seconds": 0.99,
+  "records_file": "records.jsonl"
+}

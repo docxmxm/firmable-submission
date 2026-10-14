@@ -1,0 +1,42 @@
+{
+  "url": "https://data.gov.au/data/dataset/c2524c87-cea4-4636-acac-599a82048a26/resource/15bf4eaa-7a14-48e9-8a3f-092df32a644e/download/2024-25-corporate-report-of-entity-tax-information.xlsx",
+  "final_url": "https://data.gov.au/data/dataset/c2524c87-cea4-4636-acac-599a82048a26/resource/15bf4eaa-7a14-48e9-8a3f-092df32a644e/download/2024-25-corporate-report-of-entity-tax-information.xlsx",
+  "method": "GET",
+  "retrieved_at": "2026-10-09T12:04:57.869167+00:00",
+  "http_status": 200,
+  "request_headers": {
+    "User-Agent": "FirmableAssessmentDatasetIntake/1 (public data research)",
+    "Accept-Encoding": "identity"
+  },
+  "response_headers": {
+    "Content-Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "Content-Length": "290711",
+    "Connection": "close",
+    "Date": "Fri, 09 Oct 2026 12:04:58 GMT",
+    "Cache-Control": "public, max-age=60, immutable",
+    "Server": "nginx",
+    "Content-Disposition": "inline; filename=2024-25-corporate-report-of-entity-tax-information.xlsx",
+    "Last-Modified": "Wed, 30 Sep 2026 20:47:29 GMT",
+    "ETag": "\"1790801249.378-290711-3656257541\"",
+    "Accept-Ranges": "bytes",
+    "Set-Cookie": "ckan=; Domain=; Expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=0; Path=/",
+    "Expires": "Fri, 09 Oct 2026 12:05:58 GMT",
+    "Vary": "Origin",
+    "X-Cache": "Miss from cloudfront",
+    "Via": "1.1 a858d3e93dd1bce43c3919c89e11ec2c.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "SYD3-P3",
+    "X-Amz-Cf-Id": "VzQr43dtN3mfIWVgGCR0lmHeBHxgHiw1Imzg5VqPaBgN7VFAtntMeQ==",
+    "X-XSS-Protection": "1; mode=block",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "X-Content-Type-Options": "nosniff",
+    "Strict-Transport-Security": "max-age=31536000"
+  },
+  "saved_bytes": 290711,
+  "sha256": "d7772fa282c90be6aabaf5893c60d63bd0c896534b10256abed175f6a05fa754",
+  "read_limit_bytes": 2097152,
+  "response_truncated_by_read_limit": false,
+  "range_response": false,
+  "complete_response": true,
+  "attempts_before_success": []
+}

@@ -1,0 +1,21 @@
+{
+  "tested_at": "2026-10-09T12:06:22.168414+00:00",
+  "command": "python3 scripts/catalog.py replay --output data/catalog",
+  "replay_exit_code": 0,
+  "before_sha256": {
+    "shortlist50.jsonl": "a1db0d8af228b9bbcd1435eaa9f9720171f54f603f42b14ebbfe5da61e92aeaa",
+    "shortlist50.csv": "5264350d1d9d1a9ea37ef3442ee28eb8eaa5b4d61ff5b294a94ace3e1fb231c6",
+    "audit20.jsonl": "5f240bb147b44f92f56bdb13eb15ab770b0e97d71b060c86e80b17ee8634a918",
+    "audit20.csv": "1a3c9877b1c2886c5798c912bd486f2b06ed1b312293296b057192d1b5e72470",
+    "ranking-policy.json": "b4c7c945c8154b37e2b43ab3b7f0b036138f9c359b4f17865ff4b5f060b1583c"
+  },
+  "after_sha256": {
+    "shortlist50.jsonl": "a1db0d8af228b9bbcd1435eaa9f9720171f54f603f42b14ebbfe5da61e92aeaa",
+    "shortlist50.csv": "5264350d1d9d1a9ea37ef3442ee28eb8eaa5b4d61ff5b294a94ace3e1fb231c6",
+    "audit20.jsonl": "5f240bb147b44f92f56bdb13eb15ab770b0e97d71b060c86e80b17ee8634a918",
+    "audit20.csv": "1a3c9877b1c2886c5798c912bd486f2b06ed1b312293296b057192d1b5e72470",
+    "ranking-policy.json": "b4c7c945c8154b37e2b43ab3b7f0b036138f9c359b4f17865ff4b5f060b1583c"
+  },
+  "all_outputs_byte_identical": true,
+  "human_audit_status": "pending_human_review"
+}

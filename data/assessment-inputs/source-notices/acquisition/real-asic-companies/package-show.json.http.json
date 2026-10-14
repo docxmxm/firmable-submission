@@ -1,0 +1,37 @@
+{
+  "url": "https://data.gov.au/data/api/3/action/package_show?id=7b8656f9-606d-4337-af29-66b89b2eeefb",
+  "final_url": "https://data.gov.au/data/api/3/action/package_show?id=7b8656f9-606d-4337-af29-66b89b2eeefb",
+  "method": "GET",
+  "retrieved_at": "2026-10-09T12:04:56.496124+00:00",
+  "http_status": 200,
+  "request_headers": {
+    "User-Agent": "FirmableAssessmentDatasetIntake/1 (public data research)",
+    "Accept-Encoding": "identity"
+  },
+  "response_headers": {
+    "Content-Type": "application/json;charset=utf-8",
+    "Content-Length": "8062",
+    "Connection": "close",
+    "Date": "Fri, 09 Oct 2026 12:04:56 GMT",
+    "Set-Cookie": "ckan=; Domain=; Expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=0; Path=/",
+    "Server": "nginx",
+    "Cache-Control": "public, max-age=2592000, must-revalidate",
+    "Vary": "Origin",
+    "X-Cache": "Miss from cloudfront",
+    "Via": "1.1 0505eeeb493cecd9b4862c3d1b41b832.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "SYD3-P3",
+    "X-Amz-Cf-Id": "DdEYzc66Z6BjIW82QLOS1EeCbPLEMBCfLgZ3ZmJ_MoIrPcmPLLb92A==",
+    "X-XSS-Protection": "1; mode=block",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "X-Content-Type-Options": "nosniff",
+    "Strict-Transport-Security": "max-age=31536000"
+  },
+  "saved_bytes": 8062,
+  "sha256": "74f0d8432a5529c3384ee8d9d3b1f37967d9e7a42baecdf8431ba30ef063ea9b",
+  "read_limit_bytes": 8388608,
+  "response_truncated_by_read_limit": false,
+  "range_response": false,
+  "complete_response": true,
+  "attempts_before_success": []
+}

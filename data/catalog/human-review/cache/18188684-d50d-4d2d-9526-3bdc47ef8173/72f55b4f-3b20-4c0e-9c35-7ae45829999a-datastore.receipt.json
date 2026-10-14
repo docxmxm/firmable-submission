@@ -1,0 +1,15 @@
+{
+  "url": "https://www.data.qld.gov.au/api/3/action/datastore_search?resource_id=72f55b4f-3b20-4c0e-9c35-7ae45829999a&limit=6",
+  "final_url": "https://www.data.qld.gov.au/api/3/action/datastore_search?resource_id=72f55b4f-3b20-4c0e-9c35-7ae45829999a&limit=6",
+  "captured_at": "2026-10-11T10:12:01.546970+00:00",
+  "http_status": 200,
+  "content_type": "application/json;charset=utf-8",
+  "content_range": null,
+  "last_modified": null,
+  "request_headers": {
+    "User-Agent": "FirmableCatalogueHumanReview/1 (public data sample)",
+    "Accept-Encoding": "identity"
+  },
+  "saved_bytes": 7199,
+  "sha256": "6b531ebb4eabe70002f63b202f6b87e78b805de878a8d4d90d54ff5ec3e23a70"
+}

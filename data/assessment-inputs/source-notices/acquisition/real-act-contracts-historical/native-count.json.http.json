@@ -1,0 +1,37 @@
+{
+  "url": "https://www.data.act.gov.au/resource/8wge-3sy9.json?%24select=count%28%2A%29",
+  "final_url": "https://www.data.act.gov.au/resource/8wge-3sy9.json?%24select=count%28%2A%29",
+  "method": "GET",
+  "retrieved_at": "2026-10-09T12:10:18.346878+00:00",
+  "http_status": 200,
+  "request_headers": {
+    "User-Agent": "FirmableAssessmentDatasetIntake/1 (public data research)",
+    "Accept-Encoding": "identity"
+  },
+  "response_headers": {
+    "Server": "nginx",
+    "Date": "Fri, 09 Oct 2026 12:10:19 GMT",
+    "Content-Type": "application/json;charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Access-Control-Allow-Origin": "*",
+    "ETag": "W/\"Z29sZi4zMTMwXzJfODQ0d2llVVpoSWtuVkVHSVdpcVpFUlFodG5rcGc--gziB6woCHGSBIxSMEUEpO0mokJWAVY---gzip\"",
+    "X-SODA2-Fields": "[\"count\"]",
+    "X-SODA2-Types": "[\"number\"]",
+    "X-SODA2-Data-Out-Of-Date": "false",
+    "X-SODA2-Truth-Last-Modified": "Fri, 09 Nov 2018 23:54:29 GMT",
+    "X-SODA2-Secondary-Last-Modified": "Fri, 09 Nov 2018 23:54:29 GMT",
+    "Last-Modified": "Fri, 09 Nov 2018 23:54:29 GMT",
+    "Vary": "Accept-Encoding",
+    "X-Socrata-Region": "aws-us-east-1-fedramp-prod",
+    "X-Socrata-RequestId": "d97768816ca95b4f436aedd107a5d356",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains"
+  },
+  "saved_bytes": 19,
+  "sha256": "e9540a47fbb00040247f294f48fa79aea134ac1814e38645a9a53681c2a10e95",
+  "read_limit_bytes": 8388608,
+  "response_truncated_by_read_limit": false,
+  "range_response": false,
+  "complete_response": true,
+  "attempts_before_success": []
+}

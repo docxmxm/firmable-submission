@@ -1,0 +1,304 @@
+ASIC Business Names Dataset – Help File
+
+
+
+
+   Business Names Dataset
+                          HELP FILE
+ASIC Business Names Dataset – Help File
+
+
+
+
+Table of Contents
+Getting Started ..................................................................................................................................2
+      1.       Purpose ........................................................................................................................................ 2
+      2.       Business Name Register .............................................................................................................. 2
+      2.1.         File Format .............................................................................................................................. 2
+      2.2.         File interaction ........................................................................................................................ 3
+      2.3.         Dataset Fields .......................................................................................................................... 3
+      3.       ASIC Connect Search.................................................................................................................... 4
+      4.       Contact ........................................................................................................................................ 4
+Appendices ........................................................................................................................................5
+APPENDIX ITEM 1...............................................................................................................................5
+      Business Names Register - MS Access Import Guide ............................................................................ 5
+APPENDIX ITEM 2...............................................................................................................................7
+      Business Names Register – Data Dictionary ......................................................................................... 7
+      Dataset Change Log .............................................................................................................................. 9
+
+
+
+
+Once printed this document is an uncontrolled copy
+Business Names Dataset - Help File                                       Page 1 of 9
+11/07/2025 3:36 PM
+ASIC Business Names Dataset – Help File
+
+Getting Started
+
+1. Purpose
+This document is to provide detailed context and understanding of the Business Names Dataset files
+uploaded to Data.gov.au by ASIC every Wednesday.
+
+
+
+2. Business Name Register
+The ASIC Business Names register file as it appears on data.gov.au is a dataset from ASIC's Business
+Names register. This dataset does not contain all the information captured on ASIC's register but is a
+snapshot of Business Names data from a point in time.
+
+The Business Names Dataset contains the following:
+    • Select fields that are publicly available (see data dictionary for field details);
+    • All currently registered Business Names that are able to be uploaded to data.gov.au; and
+    • Deregistered Business Names for the 12 months.
+
+
+     2.1.            File Format
+The Business Names Dataset is provided in a file with the extension of csv (comma separated values)
+and ZIP that contains the CSV file inside.
+
+Important note: The data contained within the Business Names Dataset csv is not separated by
+commas.
+
+The Business Names Dataset csv uses the 'TAB' character as the delimiter (value separator) between
+values in the dataset; the 'TAB' character is used in place of a comma separator because business names
+can contain commas in their name and therefore is not a suitable delimiter for this dataset.
+
+
+
+
+Once printed this document is an uncontrolled copy
+Business Names Dataset - Help File                   Page 2 of 9
+11/07/2025 3:36 PM
+ASIC Business Names Dataset – Help File
+
+An example of the data in the Business Names Dataset csv is as follows
+
+    REGISTER_NAME     BN_NAME              BN_STATUS    BN_REG_DT            BN_CANCEL_DT
+            BN_STATE_NUM BN_STATE_OF_REG BN_ABN
+    BUSINESS NAMES MINET TRAN CLOTHING   Registered                  02/07/2007             B1698852E
+            VIC
+
+
+
+
+      2.2.           File interaction
+The Business Names Dataset contains over 2.7 million records. Because of the number of records
+contained in the file, common programs used to view data from CSV's (MS Excel, notepad, etc.) will not
+work.
+
+Example: Most versions of MS Excel limits the number of rows to approximately 1 million, which means
+that if that dataset is viewed in Excel, less than half of the actual number of records will be available.
+
+It is recommended users interact with the dataset on data.gov.au via one of the following methods:
+
+Important note: ZIP file extensions cannot be access via an API. XLSX file extensions is no longer
+supported by CKAN as of December 2021 and any information extracted using this method may not
+return up to date data. For more information, see the CKAN website.
+
+      •   Dataset Preview on data.gov.au;
+      •   Access resource data via a web API with powerful query support (Web API information can be
+          found in the main CKAN Data API and DataStore documentation); or
+      •   Import csv into an appropriate database (MS Access, Oracle, etc).
+
+A step-by-step data import guide to importing Business Names data into MS Access can be found in the
+appendix of this help file. (APPENDIX ITEM 1)
+
+      2.3.           Dataset Fields
+The Business Names dataset contains the following fields:
+
+•     REGISTER_NAME
+•     BN_NAME
+•     BN_STATUS
+•     BN_REG_DT
+
+
+Once printed this document is an uncontrolled copy
+Business Names Dataset - Help File                     Page 3 of 9
+11/07/2025 3:36 PM
+ASIC Business Names Dataset – Help File
+
+•    BN_CANCEL_DT
+•    BN_STATE_NUM (where applicable)
+•    BN_STATE_OF_REG
+•    BN_ABN
+
+A comprehensive description of each field in the dataset is provided in the attached data dictionary
+(APPENDIX ITEM 2).
+
+
+
+
+3. ASIC Connect Search
+An alternative to searching the data contained in the Business Names Register extract is to use ASIC
+Connect.
+
+We have two services currently available through ASIC Connect:
+
+     •    Search company and other registers
+     •    Search business names registers
+
+You can view publicly available information and purchase extracts on entities such as companies,
+business name, banned & disqualified or check name availability.
+
+4. Contact
+Any further enquiries can be directed to ASIC via email at Access.Request@asic.gov.au
+
+
+
+
+Once printed this document is an uncontrolled copy
+Business Names Dataset - Help File                   Page 4 of 9
+11/07/2025 3:36 PM
+ASIC Business Names Dataset – Help File
+
+Appendices
+APPENDIX ITEM 1
+Business Names Register - MS Access Import Guide
+Use the following steps to import csv data into a new MS Access database; similar steps can be used to
+update an existing database:
+
+Steps are provided using MS Access 2010
+
+1. Download CSV dataset file;
+2. Create blank database in MS Access;
+3. Select 'Text File' from the Import & Link section of the External Data tab;
+
+
+
+
+4. Browse to the CSV dataset file and choose to import into a new table and select 'Next';
+
+
+
+
+5. Select Delimited format and select 'Next';
+
+Once printed this document is an uncontrolled copy
+Business Names Dataset - Help File                   Page 5 of 9
+11/07/2025 3:36 PM
+ASIC Business Names Dataset – Help File
+
+6. Choose the 'Tab' delimiter for your fields, and check the box indicating the first row contains Field
+   Names. Select 'Next';
+
+
+
+
+7. Select Next to accept field names as is;
+8. Decide on a primary key option (this decision may change depending on use), select 'Next';
+9. Give the table a name and select 'Finish'.
+
+
+
+
+Once printed this document is an uncontrolled copy
+Business Names Dataset - Help File                   Page 6 of 9
+11/07/2025 3:36 PM
+ASIC Business Names Dataset – Help File
+
+APPENDIX ITEM 2
+Business Names Register – Data Dictionary
+ Field                      Description                                         Data Type   Max Length   Data Parameters
+ REGISTER_NAME              Name of the Register                                    Text    200          Register name as appears on ASICs register
+ BN_NAME                    A name used, or to be used, in relation to one or      Text     200          As appears on the ASICs register
+                            more businesses. Business Name as it appears on
+                            ASIC's Business Names register                                               Allowable characters:       A-Z       0-9       .
+                                                                                                                                     !         ()        :
+                                                                                                                                     ;         ?         '
+                                                                                                                                     ,         -         &
+                                                                                                                                     "         =         $
+                                                                                                                                     %         #         \
+                                                                                                                                     |         /         _
+                                                                                                                                     {}        []        *
+                                                                                                                                     @         space
+
+ BN_STATUS                  Registration Status for the Business Name              Text     12           Values for this field are limited to the
+                                                                                                                                      following:
+                                                                                                         Registered: An organisation that is currently
+                                                                                                         registered by ASIC or another government
+                                                                                                         organisation and is listed on ASIC's registers
+                                                                                                         Cancelled: A Business Name that has been
+                                                                                                         cancelled by ASIC (whether voluntarily by its
+                                                                                                         holder, or initiated by ASIC). It ceases to exist
+                                                                                                         as a registered business name.
+
+                                                                                                         Allowable characters: letters A to Z
+
+
+Once printed this document is an uncontrolled copy
+Business Names Dataset - Help File                      Page 7 of 9
+11/07/2025 3:36 PM
+ASIC Business Names Dataset – Help File
+
+ BN_REG_DT                  The date by which the Business Name started          Date/Time   10   All Business Names should have a Date of
+                                                                                                  Registration
+ BN_CANCEL_DT               The date by which the Business Name ceased           Date/Time   10   Logic:
+                                                                                                  IF Business Name has been cancelled
+                                                                                                  THEN show 'Date of Cancellation'
+                                                                                                  ELSE show NULL
+
+                                                                                                  Date format: DD/MM/YYYY
+ BN_STATE_NUM               An identifying number allocated to a business name     text      10   Logic:
+                            registered by a previous business names regulator                     IF Business Name was registered by the
+                            in a particular Australian state or territory of                      previous Business Names regulator
+                                                                                                  THEN show 'Former State Number'
+                            Australia, prior to 28 May 2012
+
+                                                                                                  ELSE show NULL
+
+ BN_STATE_OF_REG            The state the business name was registered in by       text      3    State name in abbreviated notation
+                            the previous business names regulator                                 Allowable values:        ACT
+                                                                                                                           NSW
+                                                                                                                           NT
+                                                                                                                           QLD
+                                                                                                                           SA
+                                                                                                                           TAS
+                                                                                                                           VIC
+                                                                                                                           WA
+                                                                                                  Logic:
+                                                                                                  IF Business Name was registered by the
+                                                                                                  previous Business Names regulator
+                                                                                                  THEN show 'Previous State of Registration'
+                                                                                                  ELSE show NULL
+
+
+
+Once printed this document is an uncontrolled copy
+Business Names Dataset - Help File                      Page 8 of 9
+11/07/2025 3:36 PM
+ASIC Business Names Dataset – Help File
+
+ BN_ABN                     The Australian Business Number (ABN) is a single        text      20           Logic:
+                            identifier for all business dealings with the                                  IF Business Name has an ABN issued from
+                            Australian Taxation Office (ATO) and for dealings                              previous regulator and not recorded with ASIC
+                                                                                                           THEN show NULL
+                            with other government departments and agencies
+                                                                                                           OR IF Business Name has more than 1
+                            and is shown in the Australian Business Register.                              (multiple) ABN
+                            This number is not issued by ASIC. For further                                 ELSE show 'ABN'
+                            information refer to the Australian Business
+                            Register.                                                                      Note: Suppressed ABN’s are shown as NULL
+
+
+Dataset Change Log
+ Change                                         Date       Description
+ Suppressed ABNs                                09/09/2016 Added clarification on suppressed ABN’s to data dictionary.
+
+ Updated help file                              29/04/2022 Updated help file information.
+
+ Remove BN_RENEW_DT                             14/04/2025 A business decision was made to remove the BN_RENEW_DT
+                                                           from the dataset.
+
+
+
+
+ Updated help file                              11/07/2025 Updated Search information.
+
+
+
+
+Once printed this document is an uncontrolled copy
+Business Names Dataset - Help File                        Page 9 of 9
+11/07/2025 3:36 PM
+

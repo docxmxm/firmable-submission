@@ -1,0 +1,277 @@
+{
+  "source_key": "asic_companies",
+  "dataset_id": "7b8656f9-606d-4337-af29-66b89b2eeefb",
+  "resource_id": "5c3914e6-413e-4a2c-b890-bf8efe3eabf2",
+  "status": "verified",
+  "started_at": "2026-10-09T12:04:56.495985+00:00",
+  "intake_version": "intake-1",
+  "record_grain": "A company name/register entry; historical and current names can share one ACN.",
+  "time_column_meanings": {
+    "Date of Registration": "Registration event, not observation time",
+    "Date of Deregistration": "Deregistration event",
+    "Current Name Start Date": "Name validity start"
+  },
+  "observed_at_policy": "Not assigned at dataset intake. Catalogue/HTTP update and retrieval times are not automatically record observation times.",
+  "ontology_mapping_performed": false,
+  "warnings": [],
+  "title": "ASIC - Company Dataset",
+  "publisher": "Australian Securities and Investments Commission (ASIC)",
+  "official_catalog_url": "https://data.gov.au/data/dataset/7b8656f9-606d-4337-af29-66b89b2eeefb",
+  "resource_url_from_fresh_metadata": "https://data.gov.au/data/dataset/7b8656f9-606d-4337-af29-66b89b2eeefb/resource/5c3914e6-413e-4a2c-b890-bf8efe3eabf2/download/company_202610.csv",
+  "metadata_receipt": {
+    "url": "https://data.gov.au/data/api/3/action/package_show?id=7b8656f9-606d-4337-af29-66b89b2eeefb",
+    "final_url": "https://data.gov.au/data/api/3/action/package_show?id=7b8656f9-606d-4337-af29-66b89b2eeefb",
+    "method": "GET",
+    "retrieved_at": "2026-10-09T12:04:56.496124+00:00",
+    "http_status": 200,
+    "request_headers": {
+      "User-Agent": "FirmableAssessmentDatasetIntake/1 (public data research)",
+      "Accept-Encoding": "identity"
+    },
+    "response_headers": {
+      "Content-Type": "application/json;charset=utf-8",
+      "Content-Length": "8062",
+      "Connection": "close",
+      "Date": "Fri, 09 Oct 2026 12:04:56 GMT",
+      "Set-Cookie": "ckan=; Domain=; Expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=0; Path=/",
+      "Server": "nginx",
+      "Cache-Control": "public, max-age=2592000, must-revalidate",
+      "Vary": "Origin",
+      "X-Cache": "Miss from cloudfront",
+      "Via": "1.1 0505eeeb493cecd9b4862c3d1b41b832.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Pop": "SYD3-P3",
+      "X-Amz-Cf-Id": "DdEYzc66Z6BjIW82QLOS1EeCbPLEMBCfLgZ3ZmJ_MoIrPcmPLLb92A==",
+      "X-XSS-Protection": "1; mode=block",
+      "X-Frame-Options": "SAMEORIGIN",
+      "Referrer-Policy": "strict-origin-when-cross-origin",
+      "X-Content-Type-Options": "nosniff",
+      "Strict-Transport-Security": "max-age=31536000"
+    },
+    "saved_bytes": 8062,
+    "sha256": "74f0d8432a5529c3384ee8d9d3b1f37967d9e7a42baecdf8431ba30ef063ea9b",
+    "read_limit_bytes": 8388608,
+    "response_truncated_by_read_limit": false,
+    "range_response": false,
+    "complete_response": true,
+    "attempts_before_success": []
+  },
+  "license": {
+    "id": "cc-by",
+    "title": "Creative Commons Attribution 3.0 Australia",
+    "url": "http://creativecommons.org/licenses/by/3.0/au/",
+    "evidence": "Fresh package_show"
+  },
+  "catalogue_times": {
+    "dataset_metadata_modified": "2026-10-05T14:24:12.353508",
+    "resource_last_modified": "2026-10-05T13:50:21.132889",
+    "resource_metadata_modified": "2026-10-05T14:24:12.368521",
+    "resource_description": "Company Dataset extract as at 06/10/2026 00:49"
+  },
+  "declared_format": "CSV",
+  "declared_size": 400113511,
+  "resource_metadata": {
+    "cache_last_updated": null,
+    "cache_url": null,
+    "ckan_url": "https://data.gov.au",
+    "created": "2022-02-23T00:17:52.185051",
+    "datastore_active": true,
+    "datastore_contains_all_records_of_source_file": true,
+    "description": "Company Dataset extract as at 06/10/2026 00:49",
+    "format": "CSV",
+    "hash": "6e0a687f2070fe8a169ba662f15ad345",
+    "id": "5c3914e6-413e-4a2c-b890-bf8efe3eabf2",
+    "ignore_hash": false,
+    "last_modified": "2026-10-05T13:50:21.132889",
+    "last_modified ": "06/10/2026 00:49",
+    "metadata_modified": "2026-10-05T14:24:12.368521",
+    "mimetype": "text/csv",
+    "mimetype_inner": null,
+    "name": "Company Dataset - Current",
+    "original_url": "https://data.gov.au/data/dataset/7b8656f9-606d-4337-af29-66b89b2eeefb/resource/5c3914e6-413e-4a2c-b890-bf8efe3eabf2/download/company_202610.csv",
+    "package_id": "7b8656f9-606d-4337-af29-66b89b2eeefb",
+    "position": 1,
+    "resource_id": "5c3914e6-413e-4a2c-b890-bf8efe3eabf2",
+    "resource_type": null,
+    "set_url_type": false,
+    "size": 400113511,
+    "state": "active",
+    "task_created": "2026-10-05 13:50:25.916034",
+    "url": "https://data.gov.au/data/dataset/7b8656f9-606d-4337-af29-66b89b2eeefb/resource/5c3914e6-413e-4a2c-b890-bf8efe3eabf2/download/company_202610.csv",
+    "url_type": "upload",
+    "zip_extract": false
+  },
+  "download_receipt": {
+    "url": "https://data.gov.au/data/dataset/7b8656f9-606d-4337-af29-66b89b2eeefb/resource/5c3914e6-413e-4a2c-b890-bf8efe3eabf2/download/company_202610.csv",
+    "final_url": "https://data.gov.au/data/dataset/7b8656f9-606d-4337-af29-66b89b2eeefb/resource/5c3914e6-413e-4a2c-b890-bf8efe3eabf2/download/company_202610.csv",
+    "method": "GET",
+    "retrieved_at": "2026-10-09T12:04:56.673814+00:00",
+    "http_status": 206,
+    "request_headers": {
+      "User-Agent": "FirmableAssessmentDatasetIntake/1 (public data research)",
+      "Accept-Encoding": "identity",
+      "Range": "bytes=0-262143"
+    },
+    "response_headers": {
+      "Content-Type": "text/csv",
+      "Content-Length": "262144",
+      "Connection": "close",
+      "Date": "Fri, 09 Oct 2026 12:04:56 GMT",
+      "Cache-Control": "public, max-age=60, immutable",
+      "Server": "nginx",
+      "Content-Disposition": "inline; filename=company_202610.csv",
+      "Last-Modified": "Mon, 05 Oct 2026 13:50:25 GMT",
+      "ETag": "\"1791208225.797-400113511-3503231078\"",
+      "Set-Cookie": "ckan=; Domain=; Expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=0; Path=/",
+      "Expires": "Fri, 09 Oct 2026 12:05:56 GMT",
+      "Vary": "Origin",
+      "X-Cache": "Miss from cloudfront",
+      "Via": "1.1 9e25f92c54f2015fbfe9156d7f5aec54.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Pop": "SYD3-P3",
+      "X-Amz-Cf-Id": "T8MUXTfF6oNNsp7Tl1G7vShvT6JiR2DxtujxGMHxNSIZD2qsBiWb8g==",
+      "X-XSS-Protection": "1; mode=block",
+      "X-Frame-Options": "SAMEORIGIN",
+      "Referrer-Policy": "strict-origin-when-cross-origin",
+      "X-Content-Type-Options": "nosniff",
+      "Strict-Transport-Security": "max-age=31536000",
+      "Content-Range": "bytes 0-262143/400113511"
+    },
+    "saved_bytes": 262144,
+    "sha256": "559cfdea361eae08395dfa663e2e69f0cc7bdbc4997511fc6f121e9d7ee6e719",
+    "read_limit_bytes": 262144,
+    "response_truncated_by_read_limit": false,
+    "range_response": true,
+    "complete_response": false,
+    "attempts_before_success": []
+  },
+  "parser_evidence": {
+    "parser": "stdlib csv.reader(strict=True)",
+    "encoding": "utf-8-sig",
+    "delimiter": "\t",
+    "headers_raw": [
+      "Company Name",
+      "ACN",
+      "Type",
+      "Class",
+      "Sub Class",
+      "Status",
+      "Date of Registration",
+      "Date of Deregistration",
+      "Previous State of Registration",
+      "State Registration number",
+      "Modified since last report",
+      "Current Name Indicator",
+      "ABN",
+      "Current Name",
+      "Current Name Start Date"
+    ],
+    "headers_for_json": [
+      "Company Name",
+      "ACN",
+      "Type",
+      "Class",
+      "Sub Class",
+      "Status",
+      "Date of Registration",
+      "Date of Deregistration",
+      "Previous State of Registration",
+      "State Registration number",
+      "Modified since last report",
+      "Current Name Indicator",
+      "ABN",
+      "Current Name",
+      "Current Name Start Date"
+    ],
+    "parsed_sample_records": 1000,
+    "row_errors": [],
+    "truncated_last_record": false,
+    "sample_selection": "First complete records in a bounded byte prefix; not random.",
+    "full_file_parsed": false
+  },
+  "read_format": "TSV",
+  "selection": "First complete records in a bounded byte prefix; not random.",
+  "complete_original_file_downloaded": false,
+  "primary_sample_count": 1000,
+  "datastore_projection": {
+    "mode": "CKAN DataStore API projection, not parsing the original source file",
+    "query": {
+      "resource_id": "5c3914e6-413e-4a2c-b890-bf8efe3eabf2",
+      "limit": 1000,
+      "sort": "_id asc"
+    },
+    "sample_selection": "First _id-ordered rows; not random. QBCC additionally filters Company licence role.",
+    "sample_records": 1000,
+    "api_reported_total_matching_filter": 4449049,
+    "fields": [
+      {
+        "id": "_id",
+        "type": "int"
+      },
+      {
+        "id": "Company Name",
+        "type": "text"
+      },
+      {
+        "id": "ACN",
+        "type": "text"
+      },
+      {
+        "id": "Type",
+        "type": "text"
+      },
+      {
+        "id": "Class",
+        "type": "text"
+      },
+      {
+        "id": "Sub Class",
+        "type": "text"
+      },
+      {
+        "id": "Status",
+        "type": "text"
+      },
+      {
+        "id": "Date of Registration",
+        "type": "text"
+      },
+      {
+        "id": "Date of Deregistration",
+        "type": "text"
+      },
+      {
+        "id": "Previous State of Registration",
+        "type": "text"
+      },
+      {
+        "id": "State Registration number",
+        "type": "text"
+      },
+      {
+        "id": "Modified since last report",
+        "type": "text"
+      },
+      {
+        "id": "Current Name Indicator",
+        "type": "text"
+      },
+      {
+        "id": "ABN",
+        "type": "text"
+      },
+      {
+        "id": "Current Name",
+        "type": "text"
+      },
+      {
+        "id": "Current Name Start Date",
+        "type": "text"
+      }
+    ],
+    "original_file_all_records_claim_in_metadata": true,
+    "snapshot_file": "datastore-sample.json",
+    "sha256": "8c199fb29f122d841ad19e7036418d0cfa9e27381012576225bbd37a2e14ad15"
+  },
+  "completed_at": "2026-10-09T12:04:57.997435+00:00",
+  "elapsed_seconds": 1.502,
+  "records_file": "records.jsonl"
+}

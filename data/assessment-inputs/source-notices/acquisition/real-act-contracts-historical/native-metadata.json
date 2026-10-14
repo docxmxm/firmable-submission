@@ -1,0 +1,1616 @@
+{
+  "id" : "8wge-3sy9",
+  "name" : "Contracts Register - 2000 to 2016",
+  "assetType" : "dataset",
+  "attribution" : "ACT Government",
+  "averageRating" : 0,
+  "category" : "Government and Transparency",
+  "createdAt" : 1499401479,
+  "description" : "List of contracts and their details. The execution date of the contracts commence in 2000 and end in 2016. This data is a historical snapshot and no updates are to be provided.",
+  "diciBackend" : false,
+  "displayType" : "table",
+  "downloadCount" : 18598,
+  "hideFromCatalog" : false,
+  "hideFromDataJson" : false,
+  "indexUpdatedAt" : 1536564348,
+  "licenseId" : "CC_40_BY",
+  "locked" : false,
+  "newBackend" : true,
+  "numberOfComments" : 0,
+  "oid" : 26328994,
+  "provenance" : "official",
+  "publicationAppendEnabled" : false,
+  "publicationDate" : 1500616777,
+  "publicationGroup" : 14312808,
+  "publicationStage" : "published",
+  "rowClass" : "",
+  "rowsUpdatedAt" : 1499401936,
+  "tableId" : 14312808,
+  "totalTimesRated" : 0,
+  "viewCount" : 1013,
+  "viewLastModified" : 1536564270,
+  "viewType" : "tabular",
+  "approvals" : [ {
+    "reviewedAt" : 1500616849,
+    "reviewedAutomatically" : true,
+    "state" : "approved",
+    "submissionId" : 759332,
+    "submissionObject" : "public_audience_request",
+    "submissionOutcome" : "change_audience",
+    "submittedAt" : 1500616849,
+    "targetAudience" : "public",
+    "workflowId" : 2135,
+    "submissionDetails" : {
+      "permissionType" : "READ"
+    },
+    "submissionOutcomeApplication" : {
+      "failureCount" : 0,
+      "status" : "success"
+    },
+    "submitter" : {
+      "id" : "7jk6-u6by",
+      "displayName" : "tendersACT@act.gov.au"
+    }
+  } ],
+  "clientContext" : {
+    "clientContextVariables" : [ ],
+    "inheritedVariables" : { }
+  },
+  "columns" : [ {
+    "id" : 309864034,
+    "name" : "Contract Number",
+    "dataTypeName" : "text",
+    "description" : "",
+    "fieldName" : "contract_number",
+    "position" : 1,
+    "renderTypeName" : "text",
+    "tableColumnId" : 49959449,
+    "width" : 280,
+    "cachedContents" : {
+      "largest" : "ZFM1071",
+      "non_null" : "8809",
+      "null" : "0",
+      "top" : [ {
+        "item" : "2015.218",
+        "count" : "7"
+      }, {
+        "item" : "SFA 2014.25643.210",
+        "count" : "2"
+      }, {
+        "item" : "ACTPG 27092",
+        "count" : "2"
+      }, {
+        "item" : "LDA 12/870",
+        "count" : "2"
+      }, {
+        "item" : "ACTGOVRFQ-1-437",
+        "count" : "2"
+      }, {
+        "item" : "2011 - 01",
+        "count" : "2"
+      }, {
+        "item" : "2010-03",
+        "count" : "2"
+      }, {
+        "item" : "2015.12464",
+        "count" : "2"
+      }, {
+        "item" : "ACTPG 27012",
+        "count" : "2"
+      }, {
+        "item" : "2",
+        "count" : "2"
+      }, {
+        "item" : "2015.25507.210",
+        "count" : "2"
+      }, {
+        "item" : "PPS 25149",
+        "count" : "2"
+      }, {
+        "item" : "PA14/13",
+        "count" : "2"
+      }, {
+        "item" : "ACTGOVRFQ-1-285",
+        "count" : "2"
+      }, {
+        "item" : "2013.22142.220",
+        "count" : "2"
+      }, {
+        "item" : "SL2015 - 002",
+        "count" : "2"
+      }, {
+        "item" : "1",
+        "count" : "2"
+      }, {
+        "item" : "PA13/16",
+        "count" : "2"
+      }, {
+        "item" : "2014.22706.120",
+        "count" : "2"
+      }, {
+        "item" : "3009",
+        "count" : "2"
+      } ],
+      "smallest" : "000146C",
+      "count" : "8809",
+      "cardinality" : "8780"
+    },
+    "format" : { }
+  }, {
+    "id" : 309864035,
+    "name" : "Internal Matrix Number",
+    "dataTypeName" : "number",
+    "description" : "",
+    "fieldName" : "internal_matrix_number",
+    "position" : 2,
+    "renderTypeName" : "number",
+    "tableColumnId" : 49959450,
+    "width" : 364,
+    "cachedContents" : {
+      "largest" : "887639",
+      "non_null" : "8809",
+      "average" : "417705.2743784766",
+      "null" : "0",
+      "top" : [ {
+        "item" : "65697",
+        "count" : "1"
+      }, {
+        "item" : "65711",
+        "count" : "1"
+      }, {
+        "item" : "65721",
+        "count" : "1"
+      }, {
+        "item" : "65725",
+        "count" : "1"
+      }, {
+        "item" : "65734",
+        "count" : "1"
+      }, {
+        "item" : "65738",
+        "count" : "1"
+      }, {
+        "item" : "65746",
+        "count" : "1"
+      }, {
+        "item" : "65750",
+        "count" : "1"
+      }, {
+        "item" : "65756",
+        "count" : "1"
+      }, {
+        "item" : "65760",
+        "count" : "1"
+      }, {
+        "item" : "65764",
+        "count" : "1"
+      }, {
+        "item" : "65777",
+        "count" : "1"
+      }, {
+        "item" : "65787",
+        "count" : "1"
+      }, {
+        "item" : "65795",
+        "count" : "1"
+      }, {
+        "item" : "65800",
+        "count" : "1"
+      }, {
+        "item" : "65804",
+        "count" : "1"
+      }, {
+        "item" : "65809",
+        "count" : "1"
+      }, {
+        "item" : "65813",
+        "count" : "1"
+      }, {
+        "item" : "65821",
+        "count" : "1"
+      }, {
+        "item" : "65844",
+        "count" : "1"
+      } ],
+      "smallest" : "65692",
+      "count" : "8809",
+      "sum" : "3679565762",
+      "cardinality" : "8809"
+    },
+    "format" : {
+      "precisionStyle" : "standard",
+      "noCommas" : "true",
+      "align" : "right"
+    }
+  }, {
+    "id" : 309864036,
+    "name" : "Contract Title ",
+    "dataTypeName" : "text",
+    "description" : "",
+    "fieldName" : "contract_title",
+    "position" : 3,
+    "renderTypeName" : "text",
+    "tableColumnId" : 49959451,
+    "width" : 280,
+    "cachedContents" : {
+      "largest" : "ZOLL R SERIES ALS DEFIBRILLATOR MONITOR",
+      "non_null" : "8809",
+      "null" : "0",
+      "top" : [ {
+        "item" : "PANEL: Registered Training Organisations for the Competitive Allocation for Skills Initatives",
+        "count" : "97"
+      }, {
+        "item" : "Strategic Sub-Sector Plan 2013 - 2016",
+        "count" : "50"
+      }, {
+        "item" : "Specialist Advisory Services",
+        "count" : "47"
+      }, {
+        "item" : "Provision of Specialised Equipment & Clothing for Act Emergency Services Agency",
+        "count" : "33"
+      }, {
+        "item" : "Consult IT",
+        "count" : "33"
+      }, {
+        "item" : "Panel of Registered Training Organisations for the Competitive Allocation for Skills Initiatives",
+        "count" : "33"
+      }, {
+        "item" : "MyWay Smartcard Reload Services",
+        "count" : "31"
+      }, {
+        "item" : "Specialist Advisor Consultancy Services",
+        "count" : "29"
+      }, {
+        "item" : "Residential Construction Building Contractors Panel",
+        "count" : "27"
+      }, {
+        "item" : "PANEL: Competitive Allocation of Skills Initiatives (CASI) 2009/12",
+        "count" : "26"
+      }, {
+        "item" : "Campaign Advertising Services",
+        "count" : "26"
+      }, {
+        "item" : "2012-2015 Service Funding Agreement",
+        "count" : "26"
+      }, {
+        "item" : "Panel of Providers for the Victims Services Scheme",
+        "count" : "26"
+      }, {
+        "item" : "Panel of Suppliers to Provide Environmental Specialist Advisory Services",
+        "count" : "25"
+      }, {
+        "item" : "Panel of Minor Civil Works Contractors for Roads ACT",
+        "count" : "23"
+      }, {
+        "item" : "Panel of Training Providers on behalf of ACT Government",
+        "count" : "23"
+      }, {
+        "item" : "Trade Services Panel - Electrical Services",
+        "count" : "23"
+      }, {
+        "item" : "Panel of Providers for Victims Services Scheme",
+        "count" : "22"
+      }, {
+        "item" : "Panel of Civil Contractors",
+        "count" : "21"
+      }, {
+        "item" : "Panel of Providers for the Victims Support Scheme",
+        "count" : "21"
+      } ],
+      "smallest" : "09/10 Arterial Road Street Lighting Program",
+      "count" : "8809",
+      "cardinality" : "6804"
+    },
+    "format" : { }
+  }, {
+    "id" : 309864037,
+    "name" : "Brief Description of Contract ",
+    "dataTypeName" : "text",
+    "description" : "",
+    "fieldName" : "brief_description_of_contract",
+    "position" : 4,
+    "renderTypeName" : "text",
+    "tableColumnId" : 49959452,
+    "width" : 460,
+    "cachedContents" : {
+      "largest" : "ZOLL R SERIES ALS DEFIBRILLATOR MONITOR",
+      "non_null" : "8809",
+      "null" : "0",
+      "top" : [ {
+        "item" : "PANEL: Registered Training Organisations for the Competitive Allocation for Skills Initatives",
+        "count" : "97"
+      }, {
+        "item" : "Service Funding Agreement - Strategic Sub-Sector Plan 2013 - 2016",
+        "count" : "47"
+      }, {
+        "item" : "Specialist Advisory Services for ACT NOWaste",
+        "count" : "39"
+      }, {
+        "item" : "Provision of Specialised Equipment & Clothing for Act Emergency Services Agency",
+        "count" : "33"
+      }, {
+        "item" : "Panel of Registered Training Organisations for the Competitive Allocation for Skills Initiatives",
+        "count" : "32"
+      }, {
+        "item" : "MyWay Smartcard Reload Services",
+        "count" : "32"
+      }, {
+        "item" : "Specialist Advisor Consultancy Services",
+        "count" : "29"
+      }, {
+        "item" : "Residential Construction Building Contractors Panel",
+        "count" : "27"
+      }, {
+        "item" : "2012-2015 Service Funding Agreement",
+        "count" : "26"
+      }, {
+        "item" : "Panel of Providers for the Victims Services Scheme",
+        "count" : "26"
+      }, {
+        "item" : "Panel of Suppliers to provide Marketing, Advertising, Digital Marketing, Public Relations and Media Buying Services",
+        "count" : "25"
+      }, {
+        "item" : "Panel of Suppliers to Provide Environmental Specialist Advisory Services",
+        "count" : "25"
+      }, {
+        "item" : "Information Communication Technology (ICT) Consulting and Related Business Services",
+        "count" : "25"
+      }, {
+        "item" : "Trade Services Panel - Electrical Services",
+        "count" : "23"
+      }, {
+        "item" : "Panel of Minor Civil Works Contractors for Roads ACT",
+        "count" : "23"
+      }, {
+        "item" : "The Contractor is a member of the Panel of Cleaning Contractors for ACT Public Schools.",
+        "count" : "23"
+      }, {
+        "item" : "Panel of Providers for Victims Services Scheme",
+        "count" : "22"
+      }, {
+        "item" : "Panel of Providers for the Victims Support Scheme",
+        "count" : "21"
+      }, {
+        "item" : "Panel of Civil Contractors",
+        "count" : "21"
+      }, {
+        "item" : "Trade Services Panel - Building Services",
+        "count" : "21"
+      } ],
+      "smallest" : "103-111 Darwina Terrace, Rivett - Storm Water Augmentation",
+      "count" : "8809",
+      "cardinality" : "6924"
+    },
+    "format" : { }
+  }, {
+    "id" : 309864038,
+    "name" : "Panel Contract ",
+    "dataTypeName" : "text",
+    "description" : "",
+    "fieldName" : "panel_contract",
+    "position" : 5,
+    "renderTypeName" : "text",
+    "tableColumnId" : 49959453,
+    "width" : 280,
+    "cachedContents" : {
+      "largest" : "Yes",
+      "non_null" : "8809",
+      "null" : "0",
+      "top" : [ {
+        "item" : "No",
+        "count" : "6366"
+      }, {
+        "item" : "Yes",
+        "count" : "2443"
+      } ],
+      "smallest" : "No",
+      "count" : "8809",
+      "cardinality" : "2"
+    },
+    "format" : { }
+  }, {
+    "id" : 309864039,
+    "name" : "Panel Contract Number   ",
+    "dataTypeName" : "text",
+    "description" : "",
+    "fieldName" : "panel_contract_number",
+    "position" : 6,
+    "renderTypeName" : "text",
+    "tableColumnId" : 49959454,
+    "width" : 388,
+    "cachedContents" : {
+      "largest" : "T8797",
+      "non_null" : "2358",
+      "null" : "6451",
+      "top" : [ {
+        "item" : "P8797",
+        "count" : "95"
+      }, {
+        "item" : "T8797",
+        "count" : "94"
+      }, {
+        "item" : "P14370",
+        "count" : "82"
+      }, {
+        "item" : "P08797",
+        "count" : "67"
+      }, {
+        "item" : "N/A",
+        "count" : "55"
+      }, {
+        "item" : "P071067",
+        "count" : "48"
+      }, {
+        "item" : "24010.11",
+        "count" : "46"
+      }, {
+        "item" : "2013.21087.100",
+        "count" : "45"
+      }, {
+        "item" : "2013.21087.200",
+        "count" : "38"
+      }, {
+        "item" : "P18084",
+        "count" : "31"
+      }, {
+        "item" : "2015.25778.110",
+        "count" : "26"
+      }, {
+        "item" : "2011.17273.110",
+        "count" : "25"
+      }, {
+        "item" : "2014.22652",
+        "count" : "25"
+      }, {
+        "item" : "P19841",
+        "count" : "23"
+      }, {
+        "item" : "2014.22462.400",
+        "count" : "22"
+      }, {
+        "item" : "27564P",
+        "count" : "22"
+      }, {
+        "item" : "2015.25797.110",
+        "count" : "22"
+      }, {
+        "item" : "2014.22462.200",
+        "count" : "22"
+      }, {
+        "item" : "P12220",
+        "count" : "21"
+      }, {
+        "item" : "P27630",
+        "count" : "21"
+      } ],
+      "smallest" : "1",
+      "count" : "8809",
+      "cardinality" : "544"
+    },
+    "format" : { }
+  }, {
+    "id" : 309864059,
+    "name" : "Panel Total Amount  ",
+    "dataTypeName" : "number",
+    "description" : "",
+    "fieldName" : "panel_total_amount",
+    "position" : 7,
+    "renderTypeName" : "number",
+    "tableColumnId" : 49959455,
+    "width" : 131,
+    "cachedContents" : {
+      "largest" : "1000000000.00",
+      "non_null" : "8809",
+      "average" : "4314151.310004541",
+      "null" : "0",
+      "top" : [ {
+        "item" : "0.0",
+        "count" : "7064"
+      }, {
+        "item" : "60000000.00",
+        "count" : "238"
+      }, {
+        "item" : "2000000.00",
+        "count" : "128"
+      }, {
+        "item" : "40000000.00",
+        "count" : "118"
+      }, {
+        "item" : "4000000.00",
+        "count" : "107"
+      }, {
+        "item" : "500000.00",
+        "count" : "72"
+      }, {
+        "item" : "10000000.00",
+        "count" : "71"
+      }, {
+        "item" : "4500000.00",
+        "count" : "67"
+      }, {
+        "item" : "3000000.00",
+        "count" : "54"
+      }, {
+        "item" : "15000000.00",
+        "count" : "33"
+      }, {
+        "item" : "300000.00",
+        "count" : "32"
+      }, {
+        "item" : "52500000.00",
+        "count" : "29"
+      }, {
+        "item" : "6000000.00",
+        "count" : "27"
+      }, {
+        "item" : "24000000.00",
+        "count" : "26"
+      }, {
+        "item" : "400000.00",
+        "count" : "26"
+      }, {
+        "item" : "5800000.00",
+        "count" : "25"
+      }, {
+        "item" : "5000000.00",
+        "count" : "25"
+      }, {
+        "item" : "1500000.00",
+        "count" : "25"
+      }, {
+        "item" : "750000.00",
+        "count" : "24"
+      }, {
+        "item" : "79775803.27",
+        "count" : "23"
+      } ],
+      "smallest" : "0.0",
+      "count" : "8809",
+      "sum" : "38003358889.83",
+      "cardinality" : "122"
+    },
+    "format" : {
+      "precisionStyle" : "standard",
+      "currencyStyle" : "USD",
+      "noCommas" : "false",
+      "precision" : "2",
+      "align" : "right"
+    }
+  }, {
+    "id" : 309864041,
+    "name" : "Tender Number   ",
+    "dataTypeName" : "text",
+    "description" : "",
+    "fieldName" : "tender_number",
+    "position" : 8,
+    "renderTypeName" : "text",
+    "tableColumnId" : 49959456,
+    "width" : 292,
+    "cachedContents" : {
+      "largest" : "YN292312",
+      "non_null" : "5118",
+      "null" : "3691",
+      "top" : [ {
+        "item" : "T08797",
+        "count" : "246"
+      }, {
+        "item" : "22462.11",
+        "count" : "92"
+      }, {
+        "item" : "N/A",
+        "count" : "56"
+      }, {
+        "item" : "21087.1",
+        "count" : "53"
+      }, {
+        "item" : "2011.16871.110",
+        "count" : "51"
+      }, {
+        "item" : "21087.2",
+        "count" : "39"
+      }, {
+        "item" : "18084.11",
+        "count" : "31"
+      }, {
+        "item" : "T071067",
+        "count" : "31"
+      }, {
+        "item" : "22269",
+        "count" : "30"
+      }, {
+        "item" : "2010.15098.110",
+        "count" : "29"
+      }, {
+        "item" : "P2011.13877",
+        "count" : "25"
+      }, {
+        "item" : "2013.22652.110",
+        "count" : "25"
+      }, {
+        "item" : "19841.11",
+        "count" : "23"
+      }, {
+        "item" : "25778.11",
+        "count" : "22"
+      }, {
+        "item" : "25797.11",
+        "count" : "22"
+      }, {
+        "item" : "25322.11",
+        "count" : "19"
+      }, {
+        "item" : "T08890",
+        "count" : "18"
+      }, {
+        "item" : "2011.17754.110",
+        "count" : "18"
+      }, {
+        "item" : "T08104",
+        "count" : "16"
+      }, {
+        "item" : "18181.11",
+        "count" : "16"
+      } ],
+      "smallest" : "010-2013",
+      "count" : "8809",
+      "cardinality" : "3316"
+    },
+    "format" : { }
+  }, {
+    "id" : 309864042,
+    "name" : "Procurement Methodology   ",
+    "dataTypeName" : "text",
+    "description" : "",
+    "fieldName" : "procurement_methodology",
+    "position" : 9,
+    "renderTypeName" : "text",
+    "tableColumnId" : 49959457,
+    "width" : 412,
+    "cachedContents" : {
+      "largest" : "Single Select",
+      "non_null" : "8809",
+      "null" : "0",
+      "top" : [ {
+        "item" : "Public",
+        "count" : "4064"
+      }, {
+        "item" : "Select",
+        "count" : "1734"
+      }, {
+        "item" : "Single Select",
+        "count" : "1553"
+      }, {
+        "item" : "Quotations",
+        "count" : "1458"
+      } ],
+      "smallest" : "Public",
+      "count" : "8809",
+      "cardinality" : "4"
+    },
+    "format" : { }
+  }, {
+    "id" : 309864043,
+    "name" : "Social Procurement   ",
+    "dataTypeName" : "text",
+    "description" : "",
+    "fieldName" : "social_procurement",
+    "position" : 10,
+    "renderTypeName" : "text",
+    "tableColumnId" : 49959458,
+    "width" : 352,
+    "cachedContents" : {
+      "largest" : "Yes",
+      "non_null" : "6826",
+      "null" : "1983",
+      "top" : [ {
+        "item" : "No",
+        "count" : "6760"
+      }, {
+        "item" : "Yes",
+        "count" : "66"
+      } ],
+      "smallest" : "No",
+      "count" : "8809",
+      "cardinality" : "2"
+    },
+    "format" : { }
+  }, {
+    "id" : 309864044,
+    "name" : "Procurement Type",
+    "dataTypeName" : "text",
+    "description" : "",
+    "fieldName" : "procurement_type",
+    "position" : 11,
+    "renderTypeName" : "text",
+    "tableColumnId" : 49959459,
+    "width" : 292,
+    "cachedContents" : {
+      "largest" : "Works",
+      "non_null" : "8808",
+      "null" : "1",
+      "top" : [ {
+        "item" : "Consultancy",
+        "count" : "2498"
+      }, {
+        "item" : "Services (non-consultancy)",
+        "count" : "2436"
+      }, {
+        "item" : "Works",
+        "count" : "2235"
+      }, {
+        "item" : "Goods",
+        "count" : "957"
+      }, {
+        "item" : "Community-Based Services",
+        "count" : "677"
+      }, {
+        "item" : "Disposal",
+        "count" : "5"
+      } ],
+      "smallest" : "Community-Based Services",
+      "count" : "8809",
+      "cardinality" : "6"
+    },
+    "format" : { }
+  }, {
+    "id" : 309864045,
+    "name" : "Exemption from Quotation and Tender Threshold requirements  ",
+    "dataTypeName" : "text",
+    "description" : "",
+    "fieldName" : "exemption_from_quotation_and_tender_threshold_requirements",
+    "position" : 12,
+    "renderTypeName" : "text",
+    "tableColumnId" : 49959460,
+    "width" : 700,
+    "cachedContents" : {
+      "largest" : "Yes",
+      "non_null" : "6821",
+      "null" : "1988",
+      "top" : [ {
+        "item" : "No",
+        "count" : "5849"
+      }, {
+        "item" : "Yes",
+        "count" : "972"
+      } ],
+      "smallest" : "No",
+      "count" : "8809",
+      "cardinality" : "2"
+    },
+    "format" : { }
+  }, {
+    "id" : 309864046,
+    "name" : "Contractor Name  ",
+    "dataTypeName" : "text",
+    "description" : "",
+    "fieldName" : "contractor_name",
+    "position" : 13,
+    "renderTypeName" : "text",
+    "tableColumnId" : 49959461,
+    "width" : 304,
+    "cachedContents" : {
+      "largest" : "Zoo Communications Pty Ltd",
+      "non_null" : "8807",
+      "null" : "2",
+      "top" : [ {
+        "item" : "Brown Consulting (ACT) Pty Ltd",
+        "count" : "76"
+      }, {
+        "item" : "SMEC Australia Pty. Limited",
+        "count" : "71"
+      }, {
+        "item" : "GHD Pty Ltd",
+        "count" : "67"
+      }, {
+        "item" : "AECOM Australia Pty Ltd",
+        "count" : "61"
+      }, {
+        "item" : "Indesco Pty Limited",
+        "count" : "42"
+      }, {
+        "item" : "Cord Civil Pty Ltd",
+        "count" : "39"
+      }, {
+        "item" : "Aris Building Services Pty Ltd",
+        "count" : "37"
+      }, {
+        "item" : "Northrop Consulting Engineers Pty Limited",
+        "count" : "37"
+      }, {
+        "item" : "Aecom Australia Pty Ltd",
+        "count" : "29"
+      }, {
+        "item" : "KPMG",
+        "count" : "27"
+      }, {
+        "item" : "Hawkins Civil Pty Ltd",
+        "count" : "27"
+      }, {
+        "item" : "Acclaim Contractors Pty Ltd",
+        "count" : "26"
+      }, {
+        "item" : "Monarch Building Solutions Pty Ltd",
+        "count" : "26"
+      }, {
+        "item" : "R.D. Gossip Pty. Limited",
+        "count" : "24"
+      }, {
+        "item" : "Cardno (NSW/ACT) Pty Ltd",
+        "count" : "24"
+      }, {
+        "item" : "C.B. Excavations Pty. Limited",
+        "count" : "23"
+      }, {
+        "item" : "University of Canberra",
+        "count" : "23"
+      }, {
+        "item" : "SMI Fire Services",
+        "count" : "23"
+      }, {
+        "item" : "Redbox Design Group Pty Ltd",
+        "count" : "21"
+      }, {
+        "item" : "Ecowise Services (Australia) Pty Ltd",
+        "count" : "21"
+      } ],
+      "smallest" : "-",
+      "count" : "8809",
+      "cardinality" : "5271"
+    },
+    "format" : { }
+  }, {
+    "id" : 309864047,
+    "name" : "ABN",
+    "dataTypeName" : "text",
+    "description" : "",
+    "fieldName" : "abn",
+    "position" : 14,
+    "renderTypeName" : "text",
+    "tableColumnId" : 49959462,
+    "width" : 136,
+    "cachedContents" : {
+      "largest" : "SMI Group Pty Ltd",
+      "non_null" : "8805",
+      "null" : "4",
+      "top" : [ {
+        "item" : "47 065 475 149",
+        "count" : "86"
+      }, {
+        "item" : "36 109 434 540",
+        "count" : "83"
+      }, {
+        "item" : "20 093 846 925",
+        "count" : "69"
+      }, {
+        "item" : "37 008 581 066",
+        "count" : "57"
+      }, {
+        "item" : "39 008 488 373",
+        "count" : "53"
+      }, {
+        "item" : "76 670 568 688",
+        "count" : "44"
+      }, {
+        "item" : "81 094 433 100",
+        "count" : "44"
+      }, {
+        "item" : "70 063 338 456",
+        "count" : "39"
+      }, {
+        "item" : "59 130 697 639",
+        "count" : "37"
+      }, {
+        "item" : "91 115 312 546",
+        "count" : "35"
+      }, {
+        "item" : "20 115 347 969",
+        "count" : "35"
+      }, {
+        "item" : "51 194 660 183",
+        "count" : "35"
+      }, {
+        "item" : "67 008 643 123",
+        "count" : "32"
+      }, {
+        "item" : "51 129 445 727",
+        "count" : "32"
+      }, {
+        "item" : "40 393 207 021",
+        "count" : "32"
+      }, {
+        "item" : "59 084 010 784",
+        "count" : "25"
+      }, {
+        "item" : "89 008 513 675",
+        "count" : "25"
+      }, {
+        "item" : "81 633 873 422",
+        "count" : "24"
+      }, {
+        "item" : "52 780 433 757",
+        "count" : "23"
+      }, {
+        "item" : "95 001 145 035",
+        "count" : "23"
+      } ],
+      "smallest" : "-",
+      "count" : "8809",
+      "cardinality" : "4595"
+    },
+    "format" : { }
+  }, {
+    "id" : 309864127,
+    "name" : "Contract Amount  ",
+    "dataTypeName" : "number",
+    "description" : "",
+    "fieldName" : "contract_amount",
+    "position" : 15,
+    "renderTypeName" : "number",
+    "tableColumnId" : 49959463,
+    "width" : 105,
+    "cachedContents" : {
+      "largest" : "939000000.00",
+      "non_null" : "8809",
+      "average" : "1153999.963029856",
+      "null" : "0",
+      "top" : [ {
+        "item" : "0.0",
+        "count" : "1897"
+      }, {
+        "item" : "25000.00",
+        "count" : "28"
+      }, {
+        "item" : "200000.00",
+        "count" : "28"
+      }, {
+        "item" : "55000.00",
+        "count" : "25"
+      }, {
+        "item" : "100000.00",
+        "count" : "25"
+      }, {
+        "item" : "400000.00",
+        "count" : "22"
+      }, {
+        "item" : "500000.00",
+        "count" : "22"
+      }, {
+        "item" : "33000.00",
+        "count" : "21"
+      }, {
+        "item" : "40000.00",
+        "count" : "21"
+      }, {
+        "item" : "20000.00",
+        "count" : "18"
+      }, {
+        "item" : "50000.00",
+        "count" : "18"
+      }, {
+        "item" : "44000.00",
+        "count" : "17"
+      }, {
+        "item" : "150000.00",
+        "count" : "17"
+      }, {
+        "item" : "300000.00",
+        "count" : "17"
+      }, {
+        "item" : "22000.00",
+        "count" : "15"
+      }, {
+        "item" : "24750.00",
+        "count" : "15"
+      }, {
+        "item" : "66000.00",
+        "count" : "14"
+      }, {
+        "item" : "27500.00",
+        "count" : "14"
+      }, {
+        "item" : "198000.00",
+        "count" : "14"
+      }, {
+        "item" : "180000.00",
+        "count" : "14"
+      } ],
+      "smallest" : "0.0",
+      "count" : "8809",
+      "sum" : "10165585674.33",
+      "cardinality" : "5760"
+    },
+    "format" : {
+      "precisionStyle" : "standard",
+      "currencyStyle" : "USD",
+      "noCommas" : "false",
+      "precision" : "2",
+      "align" : "right"
+    }
+  }, {
+    "id" : 309864049,
+    "name" : "GST   ",
+    "dataTypeName" : "text",
+    "description" : "",
+    "fieldName" : "gst",
+    "position" : 16,
+    "renderTypeName" : "text",
+    "tableColumnId" : 49959464,
+    "width" : 172,
+    "cachedContents" : {
+      "largest" : "Inclusive",
+      "non_null" : "8806",
+      "null" : "3",
+      "top" : [ {
+        "item" : "Inclusive",
+        "count" : "8218"
+      }, {
+        "item" : "Exclusive",
+        "count" : "588"
+      } ],
+      "smallest" : "Exclusive",
+      "count" : "8809",
+      "cardinality" : "2"
+    },
+    "format" : { }
+  }, {
+    "id" : 309864050,
+    "name" : "Execution Date",
+    "dataTypeName" : "calendar_date",
+    "description" : "",
+    "fieldName" : "execution_date",
+    "position" : 17,
+    "renderTypeName" : "calendar_date",
+    "tableColumnId" : 49959465,
+    "width" : 268,
+    "cachedContents" : {
+      "largest" : "2016-06-30T00:00:00.000",
+      "non_null" : "8809",
+      "null" : "0",
+      "top" : [ {
+        "item" : "2009-07-01T00:00:00.000",
+        "count" : "55"
+      }, {
+        "item" : "2009-06-19T00:00:00.000",
+        "count" : "49"
+      }, {
+        "item" : "2010-07-01T00:00:00.000",
+        "count" : "48"
+      }, {
+        "item" : "2014-06-05T00:00:00.000",
+        "count" : "43"
+      }, {
+        "item" : "2011-07-01T00:00:00.000",
+        "count" : "39"
+      }, {
+        "item" : "2014-06-30T00:00:00.000",
+        "count" : "37"
+      }, {
+        "item" : "2009-01-01T00:00:00.000",
+        "count" : "31"
+      }, {
+        "item" : "2013-04-19T00:00:00.000",
+        "count" : "31"
+      }, {
+        "item" : "2012-09-13T00:00:00.000",
+        "count" : "29"
+      }, {
+        "item" : "2014-07-01T00:00:00.000",
+        "count" : "29"
+      }, {
+        "item" : "2014-11-19T00:00:00.000",
+        "count" : "29"
+      }, {
+        "item" : "2016-06-01T00:00:00.000",
+        "count" : "26"
+      }, {
+        "item" : "2008-07-01T00:00:00.000",
+        "count" : "21"
+      }, {
+        "item" : "2010-10-01T00:00:00.000",
+        "count" : "21"
+      }, {
+        "item" : "2015-06-17T00:00:00.000",
+        "count" : "19"
+      }, {
+        "item" : "2005-01-01T00:00:00.000",
+        "count" : "19"
+      }, {
+        "item" : "2010-04-09T00:00:00.000",
+        "count" : "19"
+      }, {
+        "item" : "2009-10-27T00:00:00.000",
+        "count" : "19"
+      }, {
+        "item" : "2013-04-30T00:00:00.000",
+        "count" : "18"
+      }, {
+        "item" : "2012-06-29T00:00:00.000",
+        "count" : "18"
+      } ],
+      "smallest" : "2000-07-01T00:00:00.000",
+      "count" : "8809",
+      "cardinality" : "2102"
+    },
+    "format" : {
+      "view" : "date_dmonthy",
+      "align" : "left"
+    }
+  }, {
+    "id" : 309864051,
+    "name" : "Expiry Date  ",
+    "dataTypeName" : "calendar_date",
+    "description" : "",
+    "fieldName" : "expiry_date",
+    "position" : 18,
+    "renderTypeName" : "calendar_date",
+    "tableColumnId" : 49959466,
+    "width" : 256,
+    "cachedContents" : {
+      "largest" : "2043-08-28T00:00:00.000",
+      "non_null" : "8809",
+      "null" : "0",
+      "top" : [ {
+        "item" : "2016-06-30T00:00:00.000",
+        "count" : "365"
+      }, {
+        "item" : "2012-12-31T00:00:00.000",
+        "count" : "299"
+      }, {
+        "item" : "2015-06-30T00:00:00.000",
+        "count" : "208"
+      }, {
+        "item" : "2013-06-30T00:00:00.000",
+        "count" : "204"
+      }, {
+        "item" : "2012-06-30T00:00:00.000",
+        "count" : "184"
+      }, {
+        "item" : "2017-06-30T00:00:00.000",
+        "count" : "157"
+      }, {
+        "item" : "2011-06-30T00:00:00.000",
+        "count" : "152"
+      }, {
+        "item" : "2014-06-30T00:00:00.000",
+        "count" : "145"
+      }, {
+        "item" : "2017-07-01T00:00:00.000",
+        "count" : "79"
+      }, {
+        "item" : "2016-12-31T00:00:00.000",
+        "count" : "69"
+      }, {
+        "item" : "2014-11-01T00:00:00.000",
+        "count" : "62"
+      }, {
+        "item" : "2019-06-30T00:00:00.000",
+        "count" : "58"
+      }, {
+        "item" : "2018-03-15T00:00:00.000",
+        "count" : "58"
+      }, {
+        "item" : "2013-12-31T00:00:00.000",
+        "count" : "57"
+      }, {
+        "item" : "2015-12-31T00:00:00.000",
+        "count" : "52"
+      }, {
+        "item" : "2015-09-30T00:00:00.000",
+        "count" : "48"
+      }, {
+        "item" : "2010-06-30T00:00:00.000",
+        "count" : "44"
+      }, {
+        "item" : "2018-06-30T00:00:00.000",
+        "count" : "39"
+      }, {
+        "item" : "2020-05-01T00:00:00.000",
+        "count" : "39"
+      }, {
+        "item" : "2011-09-30T00:00:00.000",
+        "count" : "38"
+      } ],
+      "smallest" : "2005-01-01T00:00:00.000",
+      "count" : "8809",
+      "cardinality" : "2230"
+    },
+    "format" : {
+      "view" : "date_dmonthy",
+      "align" : "left"
+    }
+  }, {
+    "id" : 309864052,
+    "name" : "Confidential Text  ",
+    "dataTypeName" : "text",
+    "description" : "",
+    "fieldName" : "confidential_text",
+    "position" : 19,
+    "renderTypeName" : "text",
+    "tableColumnId" : 49959467,
+    "width" : 328,
+    "cachedContents" : {
+      "largest" : "Yes",
+      "non_null" : "8803",
+      "null" : "6",
+      "top" : [ {
+        "item" : "No",
+        "count" : "7055"
+      }, {
+        "item" : "Yes",
+        "count" : "1748"
+      } ],
+      "smallest" : "No",
+      "count" : "8809",
+      "cardinality" : "2"
+    },
+    "format" : { }
+  }, {
+    "id" : 309864053,
+    "name" : "Previously Department or Agency Prior to 23 May 2011 ",
+    "dataTypeName" : "text",
+    "description" : "",
+    "fieldName" : "previously_department_or_agency_prior_to_23_may_2011",
+    "position" : 20,
+    "renderTypeName" : "text",
+    "tableColumnId" : 49959468,
+    "width" : 232,
+    "cachedContents" : {
+      "largest" : "Territory and Municipal Services",
+      "non_null" : "4591",
+      "null" : "4218",
+      "top" : [ {
+        "item" : "Territory and Municipal Services",
+        "count" : "1154"
+      }, {
+        "item" : "ACT Health",
+        "count" : "758"
+      }, {
+        "item" : "Department of Education and Training",
+        "count" : "596"
+      }, {
+        "item" : "Land Development Agency",
+        "count" : "366"
+      }, {
+        "item" : "Department of Disability, Housing and Community Services",
+        "count" : "361"
+      }, {
+        "item" : "Department of Land and Property Services",
+        "count" : "263"
+      }, {
+        "item" : "Department of Justice and Community Safety",
+        "count" : "247"
+      }, {
+        "item" : "Chief Minister's Department",
+        "count" : "224"
+      }, {
+        "item" : "Department of Treasury",
+        "count" : "210"
+      }, {
+        "item" : "Canberra Institute of Technology",
+        "count" : "102"
+      }, {
+        "item" : "ACT Planning and Land Authority",
+        "count" : "80"
+      }, {
+        "item" : "Department of the Environment, Climate Change, Energy and Water",
+        "count" : "62"
+      }, {
+        "item" : "Economic Development Directorate",
+        "count" : "56"
+      }, {
+        "item" : "Legal Aid Commission (ACT)",
+        "count" : "27"
+      }, {
+        "item" : "ACT Legislative Assembly",
+        "count" : "25"
+      }, {
+        "item" : "Office of the Commissioner for Sustainability and the Environment",
+        "count" : "16"
+      }, {
+        "item" : "Cultural Facilities Corporation",
+        "count" : "12"
+      }, {
+        "item" : "Independent Competition and Regulatory Commission",
+        "count" : "9"
+      }, {
+        "item" : "ACT Electoral Commission",
+        "count" : "7"
+      }, {
+        "item" : "ACT Auditor-General’s Office",
+        "count" : "6"
+      } ],
+      "smallest" : "ACT Auditor-General’s Office",
+      "count" : "8809",
+      "cardinality" : "26"
+    },
+    "format" : { }
+  }, {
+    "id" : 309864054,
+    "name" : "UNSPSC Classification",
+    "dataTypeName" : "text",
+    "description" : "",
+    "fieldName" : "unspsc_classification",
+    "position" : 21,
+    "renderTypeName" : "text",
+    "tableColumnId" : 49959469,
+    "width" : 352,
+    "cachedContents" : {
+      "largest" : "Travel & Food & Lodging & Entertainment Services (UNSPSC: 90000000)",
+      "non_null" : "5977",
+      "null" : "2832",
+      "top" : [ {
+        "item" : "Building & Construction & Maintenance Services (UNSPSC: 72000000)",
+        "count" : "2052"
+      }, {
+        "item" : "Management & Business Professionals & Administrative Services (UNSPSC: 80000000)",
+        "count" : "1475"
+      }, {
+        "item" : "Education & Training Services (UNSPSC: 86000000)",
+        "count" : "386"
+      }, {
+        "item" : "Healthcare Services (UNSPSC: 85000000)",
+        "count" : "368"
+      }, {
+        "item" : "Information Technology Broadcasting & Telecommunications (UNSPSC: 43000000)",
+        "count" : "269"
+      }, {
+        "item" : "Public Utilities & Public Sector Related Services (UNSPSC: 83000000)",
+        "count" : "175"
+      }, {
+        "item" : "Environmental Services (UNSPSC: 77000000)",
+        "count" : "159"
+      }, {
+        "item" : "Medical Equipment & Accessories & Supplies (UNSPSC: 42000000)",
+        "count" : "145"
+      }, {
+        "item" : "Financial & Insurance Services (UNSPSC: 84000000)",
+        "count" : "92"
+      }, {
+        "item" : "Editorial & Design & Graphic & Fine Art Services (UNSPSC: 82000000)",
+        "count" : "89"
+      }, {
+        "item" : "Engineering & Research & Technology Based Services (UNSPSC: 81000000)",
+        "count" : "74"
+      }, {
+        "item" : "Industrial Cleaning Services (UNSPSC: 76000000)",
+        "count" : "66"
+      }, {
+        "item" : "Organizations & Clubs (UNSPSC: 94000000)",
+        "count" : "60"
+      }, {
+        "item" : "Farming & Fishing & Forestry & Wildlife Contracting Services (UNSPSC: 70000000)",
+        "count" : "57"
+      }, {
+        "item" : "Electrical Systems & Lighting & Components & Accessories & Supplies (UNSPSC: 39000000)",
+        "count" : "53"
+      }, {
+        "item" : "Structures & Building & Construction & Manufacturing Components & Supplies (UNSPSC: 30000000)",
+        "count" : "35"
+      }, {
+        "item" : "Building & Construction Machinery & Accessories (UNSPSC: 22000000)",
+        "count" : "33"
+      }, {
+        "item" : "Service Industry Machinery & Equipment & Supplies (UNSPSC: 48000000)",
+        "count" : "29"
+      }, {
+        "item" : "Printing & Photographic & Audio & Visual Equipment & Supplies (UNSPSC: 45000000)",
+        "count" : "27"
+      }, {
+        "item" : "Cleaning Equipment & Supplies (UNSPSC: 47000000)",
+        "count" : "26"
+      } ],
+      "smallest" : "Apparel & Luggage & Personal Care Products (UNSPSC: 53000000)",
+      "count" : "8809",
+      "cardinality" : "53"
+    },
+    "format" : { }
+  }, {
+    "id" : 309864055,
+    "name" : "Directorate Public Authority Territory Owned Corporation * ",
+    "dataTypeName" : "text",
+    "description" : "",
+    "fieldName" : "directorate_public_authority_territory_owned_corporation",
+    "position" : 22,
+    "renderTypeName" : "text",
+    "tableColumnId" : 49959470,
+    "width" : 700,
+    "cachedContents" : {
+      "largest" : "Treasury Directorate",
+      "non_null" : "8581",
+      "null" : "228",
+      "top" : [ {
+        "item" : "Territory and Municipal Services Directorate",
+        "count" : "2113"
+      }, {
+        "item" : "Health Directorate",
+        "count" : "1401"
+      }, {
+        "item" : "Education and Training Directorate",
+        "count" : "1026"
+      }, {
+        "item" : "Economic Development Directorate",
+        "count" : "762"
+      }, {
+        "item" : "Community Services Directorate",
+        "count" : "730"
+      }, {
+        "item" : "Chief Minister, Treasury and Economic Development Directorate",
+        "count" : "712"
+      }, {
+        "item" : "Justice and Community Safety Directorate",
+        "count" : "489"
+      }, {
+        "item" : "Environment and Sustainable Development Directorate",
+        "count" : "291"
+      }, {
+        "item" : "Chief Minister and Treasury Directorate",
+        "count" : "250"
+      }, {
+        "item" : "CIT - Canberra Institute of Technology",
+        "count" : "182"
+      }, {
+        "item" : "Treasury Directorate",
+        "count" : "172"
+      }, {
+        "item" : "Commerce and Works Directorate",
+        "count" : "153"
+      }, {
+        "item" : "Capital Metro Agency",
+        "count" : "93"
+      }, {
+        "item" : "ACT Legislative Assembly",
+        "count" : "52"
+      }, {
+        "item" : "Environment and Planning Directorate",
+        "count" : "50"
+      }, {
+        "item" : "Cultural Facilities Corporation",
+        "count" : "37"
+      }, {
+        "item" : "ACT Auditor General's Office",
+        "count" : "32"
+      }, {
+        "item" : "Independent Competition and Regulatory Commission",
+        "count" : "12"
+      }, {
+        "item" : "Asbestos Response Taskforce",
+        "count" : "10"
+      }, {
+        "item" : "Office of the Commissioner for Sustainablity and the Environment",
+        "count" : "5"
+      } ],
+      "smallest" : "ACT Auditor General's Office",
+      "count" : "8809",
+      "cardinality" : "24"
+    },
+    "format" : { }
+  }, {
+    "id" : 309864056,
+    "name" : "Was Pre-qualification requested in selection documentation? ",
+    "dataTypeName" : "text",
+    "description" : "",
+    "fieldName" : "was_pre_qualification_requested_in_selection_documentation",
+    "position" : 23,
+    "renderTypeName" : "text",
+    "tableColumnId" : 49959471,
+    "width" : 700,
+    "cachedContents" : {
+      "largest" : "Yes",
+      "non_null" : "3941",
+      "null" : "4868",
+      "top" : [ {
+        "item" : "No",
+        "count" : "3387"
+      }, {
+        "item" : "Yes",
+        "count" : "554"
+      } ],
+      "smallest" : "No",
+      "count" : "8809",
+      "cardinality" : "2"
+    },
+    "format" : { }
+  }, {
+    "id" : 309864057,
+    "name" : "Infrastructure or Goods & Services   ",
+    "dataTypeName" : "text",
+    "description" : "",
+    "fieldName" : "infrastructure_or_goods_services",
+    "position" : 24,
+    "renderTypeName" : "text",
+    "tableColumnId" : 49959472,
+    "width" : 544,
+    "cachedContents" : {
+      "largest" : "Infrastructure",
+      "non_null" : "4628",
+      "null" : "4181",
+      "top" : [ {
+        "item" : "Goods & Services",
+        "count" : "3118"
+      }, {
+        "item" : "Infrastructure",
+        "count" : "1510"
+      } ],
+      "smallest" : "Goods & Services",
+      "count" : "8809",
+      "cardinality" : "2"
+    },
+    "format" : { }
+  }, {
+    "id" : 309864058,
+    "name" : "Small to Medium Enterprise (SME)  ",
+    "dataTypeName" : "text",
+    "description" : "",
+    "fieldName" : "small_to_medium_enterprise_sme",
+    "position" : 25,
+    "renderTypeName" : "text",
+    "tableColumnId" : 49959473,
+    "width" : 508,
+    "cachedContents" : {
+      "largest" : "Yes",
+      "non_null" : "4621",
+      "null" : "4188",
+      "top" : [ {
+        "item" : "No",
+        "count" : "2414"
+      }, {
+        "item" : "Yes",
+        "count" : "2207"
+      } ],
+      "smallest" : "No",
+      "count" : "8809",
+      "cardinality" : "2"
+    },
+    "format" : { }
+  } ],
+  "grants" : [ {
+    "inherited" : false,
+    "type" : "viewer",
+    "flags" : [ "public" ]
+  } ],
+  "license" : {
+    "name" : "Creative Commons Attribution 4.0 International",
+    "logoUrl" : "images/licenses/cc30by.png",
+    "termsLink" : "http://creativecommons.org/licenses/by/4.0/legalcode"
+  },
+  "metadata" : {
+    "rdfSubject" : "0",
+    "rdfClass" : "",
+    "custom_fields" : {
+      "Contributing Agency" : {
+        "Contact Email" : "tendersact@act.gov.au",
+        "Agency Name" : "Procurement and Capital Works",
+        "Directorate" : "Chief Minister, Treasury and Economic Development"
+      },
+      "Data Set Coverage" : {
+        "Geospatial Coverage" : "ACT",
+        "Update Frequency" : "Once only",
+        "Temporal Coverage" : "2000 - 2016",
+        "Update Regularity" : "Once only"
+      }
+    },
+    "rowLabel" : "Contract",
+    "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+    "renderTypeConfig" : {
+      "visible" : {
+        "table" : true
+      }
+    }
+  },
+  "owner" : {
+    "id" : "7jk6-u6by",
+    "displayName" : "tendersACT@act.gov.au",
+    "screenName" : "tendersACT@act.gov.au",
+    "type" : "interactive"
+  },
+  "query" : { },
+  "rights" : [ "read" ],
+  "tableAuthor" : {
+    "id" : "7jk6-u6by",
+    "displayName" : "tendersACT@act.gov.au",
+    "screenName" : "tendersACT@act.gov.au",
+    "type" : "interactive"
+  },
+  "tags" : [ "contract", "procurement; govhack-government" ],
+  "flags" : [ "default", "ownerMayBeContacted", "restorable", "restorePossibleForType" ]
+}

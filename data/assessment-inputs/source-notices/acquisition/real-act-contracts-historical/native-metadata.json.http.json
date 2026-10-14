@@ -1,0 +1,30 @@
+{
+  "url": "https://www.data.act.gov.au/api/views/8wge-3sy9.json",
+  "final_url": "https://www.data.act.gov.au/api/views/8wge-3sy9.json",
+  "method": "GET",
+  "retrieved_at": "2026-10-09T12:10:16.878345+00:00",
+  "http_status": 200,
+  "request_headers": {
+    "User-Agent": "FirmableAssessmentDatasetIntake/1 (public data research)",
+    "Accept-Encoding": "identity"
+  },
+  "response_headers": {
+    "Server": "nginx",
+    "Date": "Fri, 09 Oct 2026 12:10:17 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Access-Control-Allow-Origin": "*",
+    "Vary": "Accept-Encoding",
+    "X-Socrata-Region": "aws-us-east-1-fedramp-prod",
+    "X-Socrata-RequestId": "b921ca782777a5f2ee7a39059e36b8fe",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains"
+  },
+  "saved_bytes": 42724,
+  "sha256": "b1dc228a3caa47857dfda925849393e2163b5cfd22184c9d87b4d4e6e8596093",
+  "read_limit_bytes": 8388608,
+  "response_truncated_by_read_limit": false,
+  "range_response": false,
+  "complete_response": true,
+  "attempts_before_success": []
+}

@@ -1,0 +1,234 @@
+{
+  "source_key": "asic_business_names",
+  "dataset_id": "bc515135-4bb6-4d50-957a-3713709a76d3",
+  "resource_id": "55ad4b1c-5eeb-44ea-8b29-d410da431be3",
+  "status": "verified",
+  "started_at": "2026-10-09T12:04:56.496272+00:00",
+  "intake_version": "intake-1",
+  "record_grain": "A registered business name; multiple names can share an owner ABN; an owner need not be a company.",
+  "time_column_meanings": {
+    "BN_REG_DT": "Business name registration event",
+    "BN_CANCEL_DT": "Business name cancellation event"
+  },
+  "observed_at_policy": "Not assigned at dataset intake. Catalogue/HTTP update and retrieval times are not automatically record observation times.",
+  "ontology_mapping_performed": false,
+  "warnings": [],
+  "title": "ASIC - Business Names Dataset",
+  "publisher": "Australian Securities and Investments Commission (ASIC)",
+  "official_catalog_url": "https://data.gov.au/data/dataset/bc515135-4bb6-4d50-957a-3713709a76d3",
+  "resource_url_from_fresh_metadata": "https://data.gov.au/data/dataset/bc515135-4bb6-4d50-957a-3713709a76d3/resource/55ad4b1c-5eeb-44ea-8b29-d410da431be3/download/business_names_202610.csv",
+  "metadata_receipt": {
+    "url": "https://data.gov.au/data/api/3/action/package_show?id=bc515135-4bb6-4d50-957a-3713709a76d3",
+    "final_url": "https://data.gov.au/data/api/3/action/package_show?id=bc515135-4bb6-4d50-957a-3713709a76d3",
+    "method": "GET",
+    "retrieved_at": "2026-10-09T12:04:56.496285+00:00",
+    "http_status": 200,
+    "request_headers": {
+      "User-Agent": "FirmableAssessmentDatasetIntake/1 (public data research)",
+      "Accept-Encoding": "identity"
+    },
+    "response_headers": {
+      "Content-Type": "application/json;charset=utf-8",
+      "Content-Length": "7836",
+      "Connection": "close",
+      "Date": "Fri, 09 Oct 2026 12:04:56 GMT",
+      "Set-Cookie": "ckan=; Domain=; Expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=0; Path=/",
+      "Server": "nginx",
+      "Cache-Control": "public, max-age=2592000, must-revalidate",
+      "Vary": "Origin",
+      "X-Cache": "Miss from cloudfront",
+      "Via": "1.1 b089b00224a18e318b083bd54ec53538.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Pop": "SYD3-P3",
+      "X-Amz-Cf-Id": "6ZcWotqUQrq0S20WeyHg-cedufdenOyqfZtyCZwXwVt887wh4gWMzA==",
+      "X-XSS-Protection": "1; mode=block",
+      "X-Frame-Options": "SAMEORIGIN",
+      "Referrer-Policy": "strict-origin-when-cross-origin",
+      "X-Content-Type-Options": "nosniff",
+      "Strict-Transport-Security": "max-age=31536000"
+    },
+    "saved_bytes": 7836,
+    "sha256": "b2b884dd1c7ed28234fb1b7cb0f86abb1a4112ffb80537cb092bb34ead6fa359",
+    "read_limit_bytes": 8388608,
+    "response_truncated_by_read_limit": false,
+    "range_response": false,
+    "complete_response": true,
+    "attempts_before_success": []
+  },
+  "license": {
+    "id": "cc-by",
+    "title": "Creative Commons Attribution 3.0 Australia",
+    "url": "http://creativecommons.org/licenses/by/3.0/au/",
+    "evidence": "Fresh package_show"
+  },
+  "catalogue_times": {
+    "dataset_metadata_modified": "2026-10-06T19:52:25.943490",
+    "resource_last_modified": "2026-10-06T19:36:40.174691",
+    "resource_metadata_modified": "2026-10-06T19:52:25.970414",
+    "resource_description": "Business Names Dataset extract as at 07/10/2026 06:35"
+  },
+  "declared_format": "CSV",
+  "declared_size": 247045530,
+  "resource_metadata": {
+    "cache_last_updated": null,
+    "cache_url": null,
+    "ckan_url": "https://data.gov.au",
+    "created": "2022-02-23T00:35:03.967242",
+    "datastore_active": true,
+    "datastore_contains_all_records_of_source_file": true,
+    "description": "Business Names Dataset extract as at 07/10/2026 06:35",
+    "format": "CSV",
+    "hash": "fcf5c474197f832a4f33cc9a12549da8",
+    "id": "55ad4b1c-5eeb-44ea-8b29-d410da431be3",
+    "ignore_hash": false,
+    "last_modified": "2026-10-06T19:36:40.174691",
+    "last_modified ": "07/10/2026 06:35",
+    "metadata_modified": "2026-10-06T19:52:25.970414",
+    "mimetype": "text/csv",
+    "mimetype_inner": null,
+    "name": "Business Names Dataset - Current",
+    "original_url": "https://data.gov.au/data/dataset/bc515135-4bb6-4d50-957a-3713709a76d3/resource/55ad4b1c-5eeb-44ea-8b29-d410da431be3/download/business_names_202610.csv",
+    "package_id": "bc515135-4bb6-4d50-957a-3713709a76d3",
+    "position": 1,
+    "resource_id": "55ad4b1c-5eeb-44ea-8b29-d410da431be3",
+    "resource_type": null,
+    "set_url_type": false,
+    "size": 247045530,
+    "state": "active",
+    "task_created": "2026-10-06 19:36:43.262767",
+    "url": "https://data.gov.au/data/dataset/bc515135-4bb6-4d50-957a-3713709a76d3/resource/55ad4b1c-5eeb-44ea-8b29-d410da431be3/download/business_names_202610.csv",
+    "url_type": "upload",
+    "zip_extract": false
+  },
+  "download_receipt": {
+    "url": "https://data.gov.au/data/dataset/bc515135-4bb6-4d50-957a-3713709a76d3/resource/55ad4b1c-5eeb-44ea-8b29-d410da431be3/download/business_names_202610.csv",
+    "final_url": "https://data.gov.au/data/dataset/bc515135-4bb6-4d50-957a-3713709a76d3/resource/55ad4b1c-5eeb-44ea-8b29-d410da431be3/download/business_names_202610.csv",
+    "method": "GET",
+    "retrieved_at": "2026-10-09T12:04:56.678664+00:00",
+    "http_status": 206,
+    "request_headers": {
+      "User-Agent": "FirmableAssessmentDatasetIntake/1 (public data research)",
+      "Accept-Encoding": "identity",
+      "Range": "bytes=0-262143"
+    },
+    "response_headers": {
+      "Content-Type": "text/csv",
+      "Content-Length": "262144",
+      "Connection": "close",
+      "Date": "Fri, 09 Oct 2026 12:04:56 GMT",
+      "Cache-Control": "public, max-age=60, immutable",
+      "Server": "nginx",
+      "Content-Disposition": "inline; filename=business_names_202610.csv",
+      "Last-Modified": "Tue, 06 Oct 2026 19:36:43 GMT",
+      "ETag": "\"1791315403.056-247045530-3749056594\"",
+      "Set-Cookie": "ckan=; Domain=; Expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=0; Path=/",
+      "Expires": "Fri, 09 Oct 2026 12:05:56 GMT",
+      "Vary": "Origin",
+      "X-Cache": "Miss from cloudfront",
+      "Via": "1.1 6b8848021d8e393fa00485358233e9c0.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Pop": "SYD3-P3",
+      "X-Amz-Cf-Id": "586phv-PVysH2IbHq_zk_8Ig1hhbH9hk1XvbFUQzIeU-nU3IGfVOog==",
+      "X-XSS-Protection": "1; mode=block",
+      "X-Frame-Options": "SAMEORIGIN",
+      "Referrer-Policy": "strict-origin-when-cross-origin",
+      "X-Content-Type-Options": "nosniff",
+      "Strict-Transport-Security": "max-age=31536000",
+      "Content-Range": "bytes 0-262143/247045530"
+    },
+    "saved_bytes": 262144,
+    "sha256": "8d25e44db2aaaca8982cc8794209545b271e5eac6834571f0a2183a79f91ec69",
+    "read_limit_bytes": 262144,
+    "response_truncated_by_read_limit": false,
+    "range_response": true,
+    "complete_response": false,
+    "attempts_before_success": []
+  },
+  "parser_evidence": {
+    "parser": "stdlib csv.reader(strict=True)",
+    "encoding": "utf-8-sig",
+    "delimiter": "\t",
+    "headers_raw": [
+      "REGISTER_NAME",
+      "BN_NAME",
+      "BN_STATUS",
+      "BN_REG_DT",
+      "BN_CANCEL_DT",
+      "BN_STATE_NUM",
+      "BN_STATE_OF_REG",
+      "BN_ABN"
+    ],
+    "headers_for_json": [
+      "REGISTER_NAME",
+      "BN_NAME",
+      "BN_STATUS",
+      "BN_REG_DT",
+      "BN_CANCEL_DT",
+      "BN_STATE_NUM",
+      "BN_STATE_OF_REG",
+      "BN_ABN"
+    ],
+    "parsed_sample_records": 1000,
+    "row_errors": [],
+    "truncated_last_record": false,
+    "sample_selection": "First complete records in a bounded byte prefix; not random.",
+    "full_file_parsed": false
+  },
+  "read_format": "TSV",
+  "selection": "First complete records in a bounded byte prefix; not random.",
+  "complete_original_file_downloaded": false,
+  "primary_sample_count": 1000,
+  "datastore_projection": {
+    "mode": "CKAN DataStore API projection, not parsing the original source file",
+    "query": {
+      "resource_id": "55ad4b1c-5eeb-44ea-8b29-d410da431be3",
+      "limit": 1000,
+      "sort": "_id asc"
+    },
+    "sample_selection": "First _id-ordered rows; not random. QBCC additionally filters Company licence role.",
+    "sample_records": 1000,
+    "api_reported_total_matching_filter": 3304805,
+    "fields": [
+      {
+        "id": "_id",
+        "type": "int"
+      },
+      {
+        "id": "REGISTER_NAME",
+        "type": "text"
+      },
+      {
+        "id": "BN_NAME",
+        "type": "text"
+      },
+      {
+        "id": "BN_STATUS",
+        "type": "text"
+      },
+      {
+        "id": "BN_REG_DT",
+        "type": "text"
+      },
+      {
+        "id": "BN_CANCEL_DT",
+        "type": "text"
+      },
+      {
+        "id": "BN_STATE_NUM",
+        "type": "text"
+      },
+      {
+        "id": "BN_STATE_OF_REG",
+        "type": "text"
+      },
+      {
+        "id": "BN_ABN",
+        "type": "text"
+      }
+    ],
+    "original_file_all_records_claim_in_metadata": true,
+    "snapshot_file": "datastore-sample.json",
+    "sha256": "12cbbbd2f12fb7fada3189bc01ebbb36e60549cdb53525ea522bc9bbc06657d2"
+  },
+  "completed_at": "2026-10-09T12:04:57.818957+00:00",
+  "elapsed_seconds": 1.323,
+  "records_file": "records.jsonl"
+}

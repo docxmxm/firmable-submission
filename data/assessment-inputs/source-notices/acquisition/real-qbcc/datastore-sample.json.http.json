@@ -1,0 +1,33 @@
+{
+  "url": "https://www.data.qld.gov.au/api/3/action/datastore_search?resource_id=25608781-b28c-44f8-8545-0ab18d84082f&limit=1000&sort=_id+asc&filters=%7B%22Licence+Type+DESC%22%3A+%22Company%22%7D",
+  "final_url": "https://www.data.qld.gov.au/api/3/action/datastore_search?resource_id=25608781-b28c-44f8-8545-0ab18d84082f&limit=1000&sort=_id+asc&filters=%7B%22Licence+Type+DESC%22%3A+%22Company%22%7D",
+  "method": "GET",
+  "retrieved_at": "2026-10-09T12:04:57.423919+00:00",
+  "http_status": 200,
+  "request_headers": {
+    "User-Agent": "FirmableAssessmentDatasetIntake/1 (public data research)",
+    "Accept-Encoding": "identity"
+  },
+  "response_headers": {
+    "Content-Type": "application/json;charset=utf-8",
+    "Content-Length": "435408",
+    "Connection": "close",
+    "Date": "Fri, 09 Oct 2026 12:04:57 GMT",
+    "Strict-Transport-Security": "max-age=31536000",
+    "Server": "nginx",
+    "Cache-Control": "public, max-age=1800, must-revalidate",
+    "Vary": "Cookie",
+    "X-Cache": "Miss from cloudfront",
+    "Via": "1.1 55d9a4fa548a24d777eff07223b71680.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "SYD3-P1",
+    "Alt-Svc": "h3=\":443\"; ma=86400",
+    "X-Amz-Cf-Id": "TITh73U_b5ZQcxAgtcvjW0Ug_eCHFXuvgzyccuFku09-A7bBWV5QSQ=="
+  },
+  "saved_bytes": 435408,
+  "sha256": "12115cc7912007b733e958d4173b65b00d4709496313745344430c40db695aeb",
+  "read_limit_bytes": 8388608,
+  "response_truncated_by_read_limit": false,
+  "range_response": false,
+  "complete_response": true,
+  "attempts_before_success": []
+}

@@ -1,0 +1,15 @@
+{
+  "url": "https://data.gov.au/data/api/3/action/datastore_search?resource_id=5515dfcc-5266-44df-950d-7e359a83d514&limit=6",
+  "final_url": "https://data.gov.au/data/api/3/action/datastore_search?resource_id=5515dfcc-5266-44df-950d-7e359a83d514&limit=6",
+  "captured_at": "2026-10-11T10:12:01.888040+00:00",
+  "http_status": 200,
+  "content_type": "application/json;charset=utf-8",
+  "content_range": null,
+  "last_modified": null,
+  "request_headers": {
+    "User-Agent": "FirmableCatalogueHumanReview/1 (public data sample)",
+    "Accept-Encoding": "identity"
+  },
+  "saved_bytes": 9541,
+  "sha256": "0a944035c404da6f25572a92d41c0f110015dbceb5ef94a2d757f816469e64ae"
+}

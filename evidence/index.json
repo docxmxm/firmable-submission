@@ -1,0 +1,305 @@
+{
+  "kind": "retained-exact-pre-scope-evidence-v1",
+  "runtime_fingerprint": "bec320c33a982dcfd5e31f9e0c8c74d68401ea0855643a07028855adbf5e40de",
+  "selection": "Complete original r2 cohort of six sources, not source-wise best-run selection. All three repetitions and the ATO r1 failure remain in the full original scores.",
+  "original_archive": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-history-20261014.tar.zst",
+  "original_prefix": "output/firmable-general-fix-evaluation-20261014/",
+  "human_gold": false,
+  "approval": "Original synthetic benchmark approvals preserved in the compact trace archive; no human approval",
+  "selected_replay_bindings": "evidence/selected-r2/manifest.json",
+  "selected_usage_totals": {
+    "model_calls": 67,
+    "reported_tokens": 1242629,
+    "provider_reported_cost_usd": 0.1631553,
+    "sum_per_run_process_wall_seconds": 494.31664112600265,
+    "wall_limitation": "Sum of per-run process durations; not concurrent elapsed time or total engineering time",
+    "cost_basis": "OpenRouter response estimates; not invoice"
+  },
+  "cohort": {
+    "real-act-contracts-historical": {
+      "repetition": 2,
+      "original_run_prefix": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/",
+      "selected_candidate_id": "ast_abn_only_v2",
+      "onboarding_status": "partial",
+      "task_status": "partial",
+      "usage": {
+        "call_count": 11,
+        "cost_basis": "OpenRouter reported cost, not invoice",
+        "total_cost_usd": 0.0249178,
+        "total_tokens": 196258,
+        "wall_seconds": 69.46022145901225,
+        "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+      },
+      "runtime_hash": "bec320c33a982dcfd5e31f9e0c8c74d68401ea0855643a07028855adbf5e40de",
+      "observations": {
+        "path": "outputs/observations/real-act-contracts-historical.jsonl",
+        "sha256": "6b7a77663932107dff6abdb0f6fc73000847c242fdc91b96eda2fcc35b3483e7",
+        "bytes": 1738926,
+        "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/observations.jsonl",
+        "records": 1000
+      },
+      "config": {
+        "path": "outputs/configs/real-act-contracts-historical.json",
+        "sha256": "5edd6087fb4e4a779073f8b6eb56071f84e4a9d368edd74d9abd846cd404c8a8",
+        "bytes": 7225,
+        "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/final-config.json"
+      }
+    },
+    "real-suitable-operators": {
+      "repetition": 2,
+      "original_run_prefix": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/",
+      "selected_candidate_id": "rso_ast_v2",
+      "onboarding_status": "partial",
+      "task_status": "partial",
+      "usage": {
+        "call_count": 11,
+        "cost_basis": "OpenRouter reported cost, not invoice",
+        "total_cost_usd": 0.0261241,
+        "total_tokens": 189573,
+        "wall_seconds": 86.30939608300105,
+        "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+      },
+      "runtime_hash": "bec320c33a982dcfd5e31f9e0c8c74d68401ea0855643a07028855adbf5e40de",
+      "observations": {
+        "path": "outputs/observations/real-suitable-operators.jsonl",
+        "sha256": "86d71e524ff22f8a0049ac032bd96212d739a69f4727a10b4f54edacccd4c1d5",
+        "bytes": 20753116,
+        "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/observations.jsonl",
+        "records": 15100
+      },
+      "config": {
+        "path": "outputs/configs/real-suitable-operators.json",
+        "sha256": "a217edd0a7188329c9491ac7d5f47d892ce716d4b1c80db15318058c8af3fa61",
+        "bytes": 5215,
+        "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/final-config.json"
+      }
+    },
+    "real-qbcc": {
+      "repetition": 2,
+      "original_run_prefix": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/",
+      "selected_candidate_id": "qbcc_ast_2",
+      "onboarding_status": "partial",
+      "task_status": "partial",
+      "usage": {
+        "call_count": 11,
+        "cost_basis": "OpenRouter reported cost, not invoice",
+        "total_cost_usd": 0.0242516,
+        "total_tokens": 181012,
+        "wall_seconds": 79.84124670899473,
+        "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+      },
+      "runtime_hash": "bec320c33a982dcfd5e31f9e0c8c74d68401ea0855643a07028855adbf5e40de",
+      "observations": {
+        "path": "outputs/observations/real-qbcc.jsonl",
+        "sha256": "ad0ca8213d3fba27f763f4209d4ef3aef8e4de406efff014c69bb18f18e55486",
+        "bytes": 1378066,
+        "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/observations.jsonl",
+        "records": 1000
+      },
+      "config": {
+        "path": "outputs/configs/real-qbcc.json",
+        "sha256": "2212d1ba5e08f7df08d3ed633fdbcc78fe0faa09a4d017f46463c4b6998d6725",
+        "bytes": 4371,
+        "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/final-config.json"
+      }
+    },
+    "real-asic-companies": {
+      "repetition": 2,
+      "original_run_prefix": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/",
+      "selected_candidate_id": "ast_identity_v2",
+      "onboarding_status": "partial",
+      "task_status": "complete",
+      "usage": {
+        "call_count": 14,
+        "cost_basis": "OpenRouter reported cost, not invoice",
+        "total_cost_usd": 0.049066900000000004,
+        "total_tokens": 368397,
+        "wall_seconds": 140.98834079201333,
+        "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+      },
+      "runtime_hash": "bec320c33a982dcfd5e31f9e0c8c74d68401ea0855643a07028855adbf5e40de",
+      "observations": {
+        "path": "outputs/observations/real-asic-companies.jsonl",
+        "sha256": "76d6e20c45fec8c4720350d1a8f311023899ef60c933e5057dd389eff2150af0",
+        "bytes": 614836,
+        "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/observations.jsonl",
+        "records": 389
+      },
+      "config": {
+        "path": "outputs/configs/real-asic-companies.json",
+        "sha256": "f85529ec93a437bd123bc56f1b65b6da7da0e1448b2c41836de32ec9b9e43d5e",
+        "bytes": 7357,
+        "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/final-config.json"
+      }
+    },
+    "real-ato-corporate-tax": {
+      "repetition": 2,
+      "original_run_prefix": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/",
+      "selected_candidate_id": "ast_abn_only_v2",
+      "onboarding_status": "partial",
+      "task_status": "partial",
+      "usage": {
+        "call_count": 13,
+        "cost_basis": "OpenRouter reported cost, not invoice",
+        "total_cost_usd": 0.0230263,
+        "total_tokens": 188079,
+        "wall_seconds": 66.83155766699929,
+        "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+      },
+      "runtime_hash": "bec320c33a982dcfd5e31f9e0c8c74d68401ea0855643a07028855adbf5e40de",
+      "observations": {
+        "path": "outputs/observations/real-ato-corporate-tax.jsonl",
+        "sha256": "45e091c50ac5031f8a4d06ef91743560f4e20e6653ad594510f2d8342d5244c4",
+        "bytes": 4690822,
+        "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/observations.jsonl",
+        "records": 4436
+      },
+      "config": {
+        "path": "outputs/configs/real-ato-corporate-tax.json",
+        "sha256": "6403b7a10a3b515d5d7e5db75ba21a637ed38c7843053a0ca53a3ea0648e548b",
+        "bytes": 2948,
+        "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/final-config.json"
+      }
+    },
+    "real-asic-business-names": {
+      "repetition": 2,
+      "original_run_prefix": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/",
+      "selected_candidate_id": "ast_bn_abn_name_v1",
+      "onboarding_status": "complete",
+      "task_status": "complete",
+      "usage": {
+        "call_count": 7,
+        "cost_basis": "OpenRouter reported cost, not invoice",
+        "total_cost_usd": 0.0157686,
+        "total_tokens": 119310,
+        "wall_seconds": 50.885878415982006,
+        "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+      },
+      "runtime_hash": "bec320c33a982dcfd5e31f9e0c8c74d68401ea0855643a07028855adbf5e40de",
+      "observations": {
+        "path": "outputs/observations/real-asic-business-names.jsonl",
+        "sha256": "b224f70607249303c4335801a7a2218bb250e317a613cefa473c3b8ab97c6a5e",
+        "bytes": 1140008,
+        "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/observations.jsonl",
+        "records": 1000
+      },
+      "config": {
+        "path": "outputs/configs/real-asic-business-names.json",
+        "sha256": "121bb62ed883d243799739e0d82eac9e02cfdc2a2a792ba42a4075da4b4c3c44",
+        "bytes": 3420,
+        "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/final-config.json"
+      }
+    }
+  },
+  "preserved_metadata": {
+    "six-source-protocol.json": {
+      "sha256": "48b0de43872b3ab743cf480e0aed4e9b1bc8f9eeaf950bf3e4dae0c3a9dab2bf",
+      "bytes": 55054,
+      "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/protocol.json"
+    },
+    "six-source-scores.json": {
+      "sha256": "bc0c539a509e84f60c8e8d56bd3615cfed5bbfdd88dee34028fe37f867142e27",
+      "bytes": 176745,
+      "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/scores.json"
+    },
+    "six-source-frozen-labels.json": {
+      "sha256": "7f4101097b25ee1175125917a4e32f5c9e23fefe759c1c90a976df188d7ab7a9",
+      "bytes": 7533061,
+      "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/frozen-labels.json"
+    },
+    "six-source-frozen-field-dispositions.json": {
+      "sha256": "7466d57e3575a643f258982a39aed0e9504f62e0bafc11e403cd7ebda634a0bd",
+      "bytes": 98851,
+      "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/frozen-field-dispositions.json"
+    },
+    "six-source-cost-summary.json": {
+      "sha256": "aba773c672d1c53e7d418b4cc565d5843aae144c97f84a5793dda3c58aa807ab",
+      "bytes": 186,
+      "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/cost-summary.json"
+    },
+    "six-source-evaluation-meta.json": {
+      "sha256": "6941a841429127642968d1ea6cf4241b1e93a04361aca779aa95d352311397a8",
+      "bytes": 1667,
+      "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/evaluation-meta.json"
+    },
+    "six-source-offline-smoke.json": {
+      "sha256": "2fff8856df5b3392e35c034a3b0f35898e4e7d09f20a2d8e96e02f97efcde9c2",
+      "bytes": 392,
+      "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/offline-smoke.json"
+    },
+    "runtime-receipt.json": {
+      "sha256": "c08c61fffb182fc84f28ebcc9b0b0a3cfcfdc593b2ca345ff61c9225a67ec159",
+      "bytes": 3554,
+      "original_member": "output/firmable-general-fix-evaluation-20261014/final-candidate-receipt.json"
+    },
+    "retained-failure-ato-r1-result.json": {
+      "sha256": "b92ccf681d34d0dac7bbe29d177b86b9879b315bdd8d6faf5a94424ee5ceb4f0",
+      "bytes": 1254,
+      "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r1/result.json"
+    },
+    "retained-failure-ato-r1-run-onboard.json": {
+      "sha256": "908d8911a64165fac55e2e464d13739f6f4acdb26377f719aa6d51023c891f7c",
+      "bytes": 40239,
+      "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r1/run/onboard.json"
+    },
+    "retained-failure-ato-r1-run-extraction.json": {
+      "sha256": "983106e2afc7b8b5e20f559229dea3eee8e0d5880123c0a7c547631ec5b8ff7e",
+      "bytes": 6673,
+      "original_member": "output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r1/run/extraction.json"
+    }
+  },
+  "retained_failure": {
+    "source_id": "real-ato-corporate-tax",
+    "repetition": 1,
+    "status": "identity_guard_failed",
+    "expected_business_rows": 4436,
+    "actual_output_rows": 4442,
+    "reason": "Six non-business notes produced unknown_or_missing_record_id."
+  },
+  "limits": [
+    "Seen-source development evaluation, not unseen-source validation.",
+    "Original 18 trials had 17 complete outputs and one identity guard failure; onboarding: 4 complete, 14 partial.",
+    "Selected r2 has six complete native outputs but only one complete onboarding result; partial requirements remain visible.",
+    "No model calls were made by this retention task."
+  ],
+  "retained_archive": {
+    "path": "evidence/six-source-r2.tar.zst",
+    "sha256": "8b70932ae967192dded53714d145cf9878e356e3f98939de401af258fd3b64cc",
+    "bytes": 4037116,
+    "files": 480,
+    "members_manifest": "evidence/six-source-r2-members.json"
+  },
+  "verification": {
+    "source_member_bytes_hashed_during_extraction": true,
+    "copied_outputs_byte_equal_to_original_members": true,
+    "six_checkpoints_same_runtime": true,
+    "selected_audits_config_hash_bound": true,
+    "compressed_archive_member_readback": {
+      "status": "passed",
+      "files": 480,
+      "bytes": 69309074
+    },
+    "retained_inputs_match_original_protocol": {
+      "matching": 20,
+      "missing": [],
+      "mismatches": []
+    },
+    "runtime_and_ontology_match_original_receipt": {
+      "status": "passed",
+      "mismatches": [],
+      "scope": "All 25 runtime modules, ontology, pyproject.toml and uv.lock"
+    },
+    "restored_test_suite": {
+      "path": "evidence/local-checks.json",
+      "tests": 380,
+      "exit_code": 0,
+      "runtime_model_calls": 0
+    },
+    "clean_checkout": {
+      "status": "passed",
+      "receipt": "evidence/local-checks.json"
+    }
+  },
+  "original_archive_retained": false,
+  "original_archive_note": "Historical provenance only. The temporary full archive and old repository were deleted after independently verifying this self-contained repository. Selected traces remain in retained_archive."
+}

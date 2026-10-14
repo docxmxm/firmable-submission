@@ -1,0 +1,389 @@
+Company Dataset – Help File
+
+
+
+
+           Company Dataset
+                          HELP FILE
+Company Dataset – Help File
+
+
+Table of Contents
+Getting Started ..................................................................................................................................2
+      1.       Purpose ........................................................................................................................................ 2
+      2.       Company Register........................................................................................................................ 2
+      2.1.         File Format .............................................................................................................................. 2
+      2.2.         File interaction ........................................................................................................................ 3
+      2.3.         Dataset Fields .......................................................................................................................... 3
+      3.       ASIC Connect Search.................................................................................................................... 4
+      4.       Contact ........................................................................................................................................ 4
+Appendices ........................................................................................................................................5
+APPENDIX ITEM 1...............................................................................................................................5
+      Company Register - MS Access Import Guide....................................................................................... 5
+APPENDIX ITEM 2...............................................................................................................................7
+      Company Register – Data Dictionary .................................................................................................... 7
+      Dataset Change Log ............................................................................................................................ 11
+
+
+
+
+Once printed this document is an uncontrolled copy
+Company Dataset - Help File                                 Page 1 of 12
+11/07/2025 3:11 PM
+Company Dataset – Help File
+Getting Started
+
+1. Purpose
+ASIC successfully made its Company register extract available to the public via data.gov.au on the 3
+September 2014. This document is to provide detailed context and understanding of the files uploaded
+to Data.gov.au by ASIC every Tuesday.
+
+
+
+2. Company Register
+Select data from the ASIC's Company Register will be uploaded every Tuesday to www.data.gov.au. The
+data made available will be a snapshot of the register at a point in time. As a result, the information
+might not be accurate at the time you check this dataset. ASIC Connect updates information in real time,
+so please consider accessing information on that platform if you need precise information. Legislation
+prescribes the type of information ASIC is allowed to disclose to the public.
+
+The company register dataset contains the following:
+    • Select fields that are publicly available (see data dictionary for field details);
+    • All currently registered companies that are able to be upload to data.gov.au;
+    • Deregistered companies for the past year; and
+    • Historical name data for registered companies.
+
+
+     2.1.            File Format
+The company dataset is provided in a file with the extension of CSV (comma separated values) and ZIP
+that contains the CSV file inside.
+
+Important note: The data contained within the company register csv is not separated by commas
+
+The company register csv uses the 'TAB' character as the delimiter (value separator) between values in
+the dataset; the 'TAB' character is used in place of a comma separator because company names can
+contain commas in their name and therefore is not a suitable delimiter for this dataset.
+
+
+
+
+Once printed this document is an uncontrolled copy
+Company Dataset - Help File                          Page 2 of 12
+11/07/2025 3:11 PM
+Company Dataset – Help File
+An example of the data in the company register csv is as follows
+
+ Company Name ACN             Type      Class    Sub Class Status Date of Registration         Date of Deregistration
+           Previous State of Registration        State Registration number Modified since last report Current Name
+ Indicator ABN      Current Name        Current Name Start Date
+
+ COMPANY XYZ          987654321       APTY            LMSH          PNPC   REGD   08/01/2024
+                      Y       44444444444
+
+ COMPANY ABC   012345678                   APTY       LMSH    PROP         DRGD   19/04/2022   31/01/2024       VIC
+       C1234567W                           Y          12345678989
+
+
+
+
+     2.2.            File interaction
+The company register data set contains over 3 million records. Because of the number of records
+contained in the file, common programs used to view data from CSV's (MS Excel, notepad, etc.) will not
+work.
+
+Example: Most versions of MS Excel limits the number of rows to approximately 1 million rows, meaning
+if that dataset is viewed in Excel, less than half of the actual number of records will be available.
+
+It is recommended users interact with the dataset on data.gov.au via one of the following methods:
+
+Important note: ZIP file extensions cannot be access via an API. XLSX file extensions is no longer
+supported by CKAN as of December 2021 and any information extracted using this method may not
+return up to date data. For more information, see the CKAN website.
+
+     •    Dataset Preview on data.gov.au;
+     •    Access resource data via a web API with powerful query support (API information can be found
+          in the main CKAN Data API and DataStore documentation); or
+     •    Import csv into an appropriate database (MS Access, Oracle, etc).
+
+A step-by-step data import guide to importing Company data into MS Access can be found in the
+appendix of this help file. (APPENDIX ITEM 1)
+
+     2.3.            Dataset Fields
+The Company dataset contains the following fields:
+
+     •    Company Name
+     •    Australian Company Number (ACN)
+     •    Type
+
+Once printed this document is an uncontrolled copy
+Company Dataset - Help File                          Page 3 of 12
+11/07/2025 3:11 PM
+Company Dataset – Help File
+     •Class
+     •Sub Class
+     •Status
+     •Date of Registration
+     •Date of Deregistration
+     •Previous State of Registration (where applicable)
+     •State Registration Number (where applicable)
+     •Modified since last report – flag to indicate if data has been modified since last report
+     •Current Name Indicator
+     •Australian Business Number (ABN)
+     •Current Name
+     •Current Name Start Date
+A comprehensive description of each field in the dataset is provided in the attached data dictionary
+(APPENDIX ITEM 2).
+
+3. ASIC Connect Search
+An alternative to searching the data contained in the Company Register extract is to use ASIC Connect.
+
+We have two services currently available through ASIC Connect:
+
+     •    Search company and other registers
+     •    Search business names registers
+
+You can view publicly available information and purchase extracts on entities such as companies,
+business name, banned & disqualified or check name availability.
+
+4. Contact
+Any further enquiries can be directed to ASIC via email at Access.Request@asic.gov.au
+
+
+
+
+Once printed this document is an uncontrolled copy
+Company Dataset - Help File                          Page 4 of 12
+11/07/2025 3:11 PM
+Company Dataset – Help File
+Appendices
+APPENDIX ITEM 1
+Company Register - MS Access Import Guide
+Use the following steps to import csv data into a new MS Access database; similar steps can be used to
+update an existing database:
+
+Steps are provided using MS Access 2010
+
+1. Download CSV dataset file;
+2. Create blank database in MS Access;
+3. Select 'Text File' from the Import & Link section of the External Data tab;
+
+
+
+
+4. Browse to the CSV dataset file and choose to import into a new table and select 'Next';
+
+
+
+
+5. Select Delimited format and select 'Next';
+
+
+
+Once printed this document is an uncontrolled copy
+Company Dataset - Help File                          Page 5 of 12
+11/07/2025 3:11 PM
+Company Dataset – Help File
+6. Choose the 'Tab' delimiter for your fields, and check the box indicating the first row contains Field
+   Names. Select 'Next';
+
+
+
+
+7. Select Next to accept field names as is;
+8. Decide on how a primary key option (this decision may change depending on use), select 'Next';
+9. Give the table a name and select 'Finish'.
+
+
+
+
+Once printed this document is an uncontrolled copy
+Company Dataset - Help File                          Page 6 of 12
+11/07/2025 3:11 PM
+Company Dataset – Help File
+APPENDIX ITEM 2
+Company Register – Data Dictionary
+ Field                             Description                                  Data Type   Data Parameters
+ Company Name                      Company name as it appears on the register      Text     As appears on the ASICs register
+ ACN                               Australian Company Number                       Text     Format: 9 digit numerical including leading zeros (e.g.
+                                                                                            012345678)
+
+                                                                                            *Exceptions:
+                                                                                            ARBN – Instances where the Type = 'RACN' the value
+                                                                                            contained in the ACN field is actually the Australian Registered
+                                                                                            Body Number (ARBN). Registrable Australian Bodies carrying
+                                                                                            on, or wishing to carry on, business interstate are registered
+                                                                                            on a national basis and each is allotted an ARBN in the same
+                                                                                            way that registered companies are issued with an ACN.
+
+ Type                              Specifies the type of company                   Text     Values for this field are limited to the following:
+                                                                                            APTY - Australian proprietary company
+                                                                                            APUB - Australian public company
+                                                                                            FNOS - Foreign company (a company incorporated outside
+                                                                                            Australia but registered as a foreign company in Australia)
+                                                                                            RACN - Registered Australian Corporation (an organisation
+                                                                                            incorporated in Australia under a law other than the
+                                                                                            Corporations Law but required to be registered under the
+                                                                                            Corporations Law)
+ Class                             Specifies the class of a company                Text     Values for this field are limited to the following:
+                                                                                            LMSH (Limited by Shares) - The liability of the members is
+                                                                                            limited to the amount unpaid on their shares. Shareholders
+                                                                                            are not required to contribute any further monies (in the case
+
+Once printed this document is an uncontrolled copy
+Company Dataset - Help File                          Page 7 of 12
+11/07/2025 3:11 PM
+Company Dataset – Help File
+                                                                                 of a winding up) if the shares they have taken up are fully
+                                                                                 paid.
+                                                                                 LMGT (Limited by Guarantee) - The members' liability is
+                                                                                 limited to a certain amount that they undertake to contribute
+                                                                                 in case of a winding up. The amount is specified in a clause in
+                                                                                 the Memorandum of Association of the company. A member
+                                                                                 of a company limited by guarantee is not required to in any
+                                                                                 capital while the company is a going concern.
+                                                                                 LMSG (Limited by Both Shares and Guarantees) - The
+                                                                                 member has the liability as a shareholder (to the extent of the
+                                                                                 amount unpaid on his shares) and as a guarantor (to the
+                                                                                 amount nominated in the Memorandum) in the event of a
+                                                                                 winding up.
+                                                                                 NLIA (No Liability Company) - Mining companies only. No
+                                                                                 legal obligations on the shareholder to pay calls on their
+                                                                                 shares, e.g. Sterling Silver NL.
+                                                                                 UNLM (Unlimited Company) - Is formed on the principle that
+                                                                                 there is no limit on the liability of the members. Simply, an
+                                                                                 incorporated partnership, e.g. Mercantile Services Pty,
+                                                                                 Solicitors.
+                                                                                 NONE - Does not have an equivalent Australian liability
+ Sub Class                         Specifies the sub-class of companies   Text   Values for this field are limited to the following:
+                                                                                 EXPT - Exempt Proprietary Company.
+                                                                                 HUNT (Proprietary home unit company) - A company that
+                                                                                 operates for the sole purpose of administering the day-to-day
+                                                                                 running of a residential property (refer to paragraph (c) of the
+                                                                                 definitions of 'special purpose company' in the Corporations
+                                                                                 (Fees) Regulations for full details).
+                                                                                 LISN - Company licensed under Section 383 of the Corporations
+                                                                                 Act 2001 to omit 'Limited' from its name.
+                                                                                 LISS - Company licensed under Section 383 to omit 'Limited'
+                                                                                 from its name - superannuation trustee company*.
+
+Once printed this document is an uncontrolled copy
+Company Dataset - Help File                          Page 8 of 12
+11/07/2025 3:11 PM
+Company Dataset – Help File
+                                                                           LIST - Listed public company.
+                                                                           NEXT - Non-Exempt Proprietary Company.
+                                                                           NLTD - Non-profit public company registered without ‘Limited’
+                                                                           in its name under Section 150.
+                                                                           NONE - Unknown.
+                                                                           PNPC - Proprietary non-profit company.
+                                                                           PROP - Proprietary other.
+                                                                           PSTC - Proprietary superannuation trustee company.
+                                                                           PUBF - Foreign company required to lodge a balance sheet.
+                                                                           RACA - Registrable Australian corporation – association.
+                                                                           RACO - Registrable Australian corporation - non association.
+                                                                           STFI - Public company – small transferring financial institution.
+                                                                           ULSN - Unlisted public - non-profit company.
+                                                                           ULSS - Unlisted public - superannuation trustee company.
+                                                                           ULST - Unlisted pubic company.
+
+                                                                           *Superannuation Trustee Companies - Operates for the sole
+                                                                           purpose of acting as a trustee of a regulated superannuation
+                                                                           fund. This class of company may only be used on Annual
+                                                                           Returns for 1994 or later.
+ Status                            Status of company                Text   Values for this field are limited to the following:
+                                                                           DRGD - De-registered.
+                                                                           EXAD - External administration (in receivership/liquidation).
+                                                                           NOAC - Not active.
+                                                                           NRGD - Not registered.
+                                                                           PROV - Provisional (mentioned only under charges and refers
+                                                                           to those which have not been fully registered).
+                                                                           REGD – Registered.
+                                                                           SOFF - Strike-off action in progress.
+                                                                           DISS - Dissolved by Special Act of Parliament.
+                                                                           DIV3 - Organisation Transferred Registration via DIV3.
+                                                                           PEND - Pending - Schemes.
+
+Once printed this document is an uncontrolled copy
+Company Dataset - Help File                          Page 9 of 12
+11/07/2025 3:11 PM
+Company Dataset – Help File
+                                                                                         CNCL - Cancelled. Transferred to another law or act.
+
+                                                                                         *Registered under laws other than the Corporations Law.
+                                                                                         There are further variations used in connection with business
+                                                                                         names from State to State. Should you need help with any
+                                                                                         abbreviations not included in this list or further information on
+                                                                                         the meaning of any of these please contact us.
+ Date of Registration              Date on which a company was registered         Text   Date format: DD/MM/YYYY
+ Date of Deregistration            Date on which a company was deregistered       Text   Date format: DD/MM/YYYY
+ Previous State of                 State in which the company was originally      Text   State format: Abbreviated (e.g. Victoria = VIC)
+ Registration                      registered
+ State Registration                Registration number assigned when originally   Text   The value format for this field will change depending on the
+ Number                            registered by the State                               State the number was generated.
+ Modified since last               Flag indicating whether a dataset record has   Text   Y / Null.
+ report                            been updated since the last report                    An update includes the following:
+                                                                                         Company name
+                                                                                         Company type
+                                                                                         Company class
+                                                                                         Company sub class
+                                                                                         Company status
+ Current Name Indicator            Flag indicating whether the company name       Text   Y / Null.
+                                   shown is the current company name
+ ABN                               Australian Business Number                     Text   ABN field has the following logic applied
+                                                                                         IF Company has an ABN
+                                                                                         THEN show ABN
+                                                                                         ELSE show 0
+
+                                                                                         This is the ABN for the company.
+ Current Name                      Current company name                           Text   Current name has the following logic applied
+
+Once printed this document is an uncontrolled copy
+Company Dataset - Help File                          Page 10 of 12
+11/07/2025 3:11 PM
+Company Dataset – Help File
+                                                                                               IF 'Current Name Indicator' = null
+                                                                                               THEN show current company name for historical record
+                                                                                               ELSE null
+ Current Name Start Date           Name start date for current registered             Text     Current name start date has the following logic applied
+                                   company name                                                IF 'current name indicator' = null
+                                                                                               THEN Show current company name start date
+                                                                                               ELSE null
+
+
+Dataset Change Log
+
+ Change                                         Date       Description
+ Removed status code 'RSVD'                     05/04/2018 Reserved names were removed from this dataset making this
+                                                           status code redundant.
+
+ Removed status code 'APPD'                     05/04/2018 Reserved names were removed from this dataset making this
+                                                           status code redundant.
+
+ Removed type code 'BUSN'                       05/04/2018 This type code was removed from the dataset.
+
+ Updated type field description                 12/04/2021 Updated the information in the Data Dictionary for the Type field.
+
+ Updated help file                              18/05/2022 Updated help file information.
+                                                           Added CNCL description to the Data Dictionary under Status.
+
+ Updated help file                              01/08/2023 Updated help file information for ‘Modified since last report’
+                                                           field.
+
+
+
+Once printed this document is an uncontrolled copy
+Company Dataset - Help File                          Page 11 of 12
+11/07/2025 3:11 PM
+Company Dataset – Help File
+ Updated help file                              07/03/2025 Updated help file information.
+                                                           Added Date of deregistration to the Data Dictionary.
+
+ Updated help file                              01/07/2025 Updated Search information.
+
+
+
+
+Once printed this document is an uncontrolled copy
+Company Dataset - Help File                          Page 12 of 12
+11/07/2025 3:11 PM
+

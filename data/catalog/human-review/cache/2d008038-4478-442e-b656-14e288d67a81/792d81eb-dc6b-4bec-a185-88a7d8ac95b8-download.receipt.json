@@ -1,0 +1,15 @@
+{
+  "url": "https://www.data.qld.gov.au/dataset/2d008038-4478-442e-b656-14e288d67a81/resource/792d81eb-dc6b-4bec-a185-88a7d8ac95b8/download/sq-contract-disclosure-2020.xlsx",
+  "final_url": "https://www.data.qld.gov.au/ckan-opendata-attachments-prod/resources/792d81eb-dc6b-4bec-a185-88a7d8ac95b8/sq-contract-disclosure-2020.xlsx?response-content-disposition=attachment%3B%20filename%3Dsq-contract-disclosure-2020.xlsx&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAT3RVOAXVIIKTQ5UW%2F20261011%2Fap-southeast-2%2Fs3%2Faws4_request&X-Amz-Date=20261011T101120Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0yIkcwRQIhALNKv4GUtEW7jLH6IEvUaiEOm2%2B9fCcbHhF5uDairZVIAiBepoP9PjgT8FDpab%2F4F3OfN7JbQVy7pVxSdAnM2PE94CrKBQhrEAQaDDI2NTMyNjI5ODYwMiIMqkPqOP22b7uvHxxcKqcFO%2F9V%2FjtyncH3bF6bYtjdDPU6lvmPR7N25unRQ%2F2R3BMIpVyRjgcngVUVfTYdAURheQpC7o8zyxuRD1TL2izdhdxPrsp8Zv6gcVrGU%2BhawJzWoVupw0tWHh%2BZUcF3ilwvGpbHjIhbzhfgECLs871ZQa%2FSiOgUo793XmiPXuKkFo49qrmwpEmetx3f6uyj6YCSOq94UGIGL%2BYFLHtx%2BttH%2BZbeiMGCBf6z6hUkIe9Ylo6JYnZaJZNcL5wfqGLuH4cgOCqhs9GIWTxm4%2B64dlzronx%2BuY0MmavZScCPgmPPxfMpwv6Ww9FlAEdkTA0VRKS0RvvlK4D3viHzmPJSb59V1DE1Azg3yZPO8DH1381vLqrjsFaKbWMk24F0qXhNHI8exp1%2BmAMUNmx2HMzei3ZYyKvOro5kFn3eqqeqKvAsGpJyqSYiNknW0kpoqcOvIZ%2B4uwrUVJF%2FpQDRwmSkKkUrLv98%2BaM0%2BL%2F9Yj8jz77OsOA8EzG7AtnWl0DUIuVITJL7kaTs2KTrUtlkVelMHQhzwpeNECqerLxuuZ%2FzGcetaZ6w4obxhavxuUa91TqLlnAOnJ%2Fl8kgbpeuTtB5cXfYdFM%2FBmby28BjaCP2Ko4SDwtpdanxEHXtpR7wrNc49QDdQZ9Fhpq7rSmMy08%2FOtPVpVszgv1SSrF9hsvRZC0dEHrnMgYD5ThgQ2bidyir4jBrukX3A6Pz6C7ajvfq4h4fDb8kuasfhT0%2Fh%2FAcSnmgVU8aamB0pumg7WpCNg0CV2vyxWDo3JF87hWn81%2BC3FTs%2BcmeC%2F71GHwbE3R38HKM6DivGgvNy1QjjH9Ocpd4t4VD5YOqaRoFSad6hsl2X0gvtuw6TgwCIfq6kTBK1KBWdHoC8HD2SNHLa9fhcXkPI2d7lTCfWMxY%2BCzDIvK3WBjqxAaMv5nej2iEAFg62FHs91fjVcTrXxmJqoaDOqFOLh5y58790zfSNeh8Y8vbKiVf6gK3a8P7urM%2FUWMRAdU5SeZaC5RpLJWwUwWAn8vJO6Wf2X81vitZ1lq%2Bm7eFKNKADkLCptFhELTiuSGsDYpYeukNgt5sPXYy%2BzHlnQgXwDXeseSaPSlpbBBiqlQ6JOnOC7RLiDb28J3LY9932F2aQaTiG%2BEprhu7louWWUrM5M1LFfg%3D%3D&X-Amz-Signature=ed35976088126b9e1b4288f20b337c232d15a19d130e0434c259b896e1192889",
+  "captured_at": "2026-10-11T10:12:01.541724+00:00",
+  "http_status": 200,
+  "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "content_range": null,
+  "last_modified": "Fri, 22 May 2020 05:44:09 GMT",
+  "request_headers": {
+    "User-Agent": "FirmableCatalogueHumanReview/1 (public data sample)",
+    "Accept-Encoding": "identity"
+  },
+  "saved_bytes": 23156,
+  "sha256": "cbf774408e3a78da58c8536ac0ca1a6d1a7518e182fe9748502faee39e58ccf5"
+}

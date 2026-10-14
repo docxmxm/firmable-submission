@@ -1,0 +1,15 @@
+{
+  "url": "https://data.sa.gov.au/data/dataset/caad415a-3009-4949-a2cc-6505729f0e6c/resource/82f728c7-fd49-4b72-91dc-b6d35181cc94/download/qictstrategicsourcingcmgpublicdatasetssagovtictcontracts08012015.csv",
+  "final_url": "https://data.sa.gov.au/data/dataset/caad415a-3009-4949-a2cc-6505729f0e6c/resource/82f728c7-fd49-4b72-91dc-b6d35181cc94/download/qictstrategicsourcingcmgpublicdatasetssagovtictcontracts08012015.csv",
+  "captured_at": "2026-10-11T10:12:01.737135+00:00",
+  "http_status": 200,
+  "content_type": "text/csv",
+  "content_range": null,
+  "last_modified": "Thu, 08 Jan 2015 00:33:54 GMT",
+  "request_headers": {
+    "User-Agent": "FirmableCatalogueHumanReview/1 (public data sample)",
+    "Accept-Encoding": "identity"
+  },
+  "saved_bytes": 30200,
+  "sha256": "b81874ea6aa91dc868a9a2bfb66d148e82a23978916067e27ce141cfec7ca68a"
+}

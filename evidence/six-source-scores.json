@@ -1,0 +1,4924 @@
+{
+  "human_gold": false,
+  "scorer_sha256": "3f4ab38d8b62b44435acc6fb16202521f4910ef1de804cbcdd3105970f84c972",
+  "frozen_labels_sha256": "7f4101097b25ee1175125917a4e32f5c9e23fefe759c1c90a976df188d7ab7a9",
+  "status_counts": {
+    "complete_output": 17,
+    "identity_guard_failed": 1
+  },
+  "results": [
+    {
+      "source_id": "real-asic-companies",
+      "run": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r1/run",
+      "workflow_onboarding": {
+        "candidate_status": "validated",
+        "gap": {
+          "kind": "candidate_selection_unresolved",
+          "reason": "Known same-scope alternatives retain observed values or unresolved tradeoffs. Explicit selection is not proof of complete coverage.",
+          "unresolved_requirements": []
+        },
+        "status": "partial",
+        "task_status": "complete",
+        "usage": {
+          "call_count": 15,
+          "cost_basis": "OpenRouter reported cost, not invoice",
+          "total_cost_usd": 0.054384300000000003,
+          "total_tokens": 396323,
+          "wall_seconds": 177.2745838330011,
+          "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+        }
+      },
+      "workflow_extraction": {
+        "error_count": 0,
+        "execution_status": "complete",
+        "output_summary": {
+          "empty_canonical_record_count": 0,
+          "enveloped_record_count": 389,
+          "informative_field_value_count": 1945,
+          "informative_record_count": 389,
+          "limitation": "Emitted values are not a correctness score.",
+          "mapping_count": 6,
+          "selected_record_count": 389,
+          "unknown_field_count": 0
+        },
+        "status": "partial",
+        "task_status": "complete"
+      },
+      "workflow_error": null,
+      "native_record_count": 389,
+      "positive_opportunities": {
+        "entity.legal_name": 389
+      },
+      "positive_branches": {
+        "current_companion": 154,
+        "printed_current": 235
+      },
+      "abstention_opportunities": {},
+      "configuration": {
+        "exists": true,
+        "path": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r1/run/artifacts/final-config.json",
+        "sha256": "a42261f6d38d69e8158745ceca43c73c2fdfe2d6322ae00d5e7f5569a232baf5",
+        "mapped_targets": [
+          "entity.abn",
+          "entity.acn",
+          "entity.date_registered",
+          "entity.entity_type",
+          "entity.legal_name"
+        ],
+        "mapping_count": 6,
+        "unmapped_fields": [
+          {
+            "reason": "Status codes have no same-field source-supported conversion to the canonical status enum; the registered-to-active crosswalk was rejected as unsupported.",
+            "source_field": "Status"
+          },
+          {
+            "reason": "Class is a company class code with no supported canonical ontology field.",
+            "source_field": "Class"
+          },
+          {
+            "reason": "Sub Class is a company sub-class code with no supported canonical ontology field.",
+            "source_field": "Sub Class"
+          },
+          {
+            "reason": "Date of Deregistration is a native lifecycle date without an ontology target; it does not establish whole-observation validity.",
+            "source_field": "Date of Deregistration"
+          },
+          {
+            "reason": "Previous State of Registration is the original state of registration, not the business address state, so it is not address.state.",
+            "source_field": "Previous State of Registration"
+          },
+          {
+            "reason": "State Registration number is a state-issued registration number with no supported canonical ontology field.",
+            "source_field": "State Registration number"
+          },
+          {
+            "reason": "Modified since last report is a dataset change flag with no supported canonical ontology field.",
+            "source_field": "Modified since last report"
+          },
+          {
+            "reason": "Current Name Start Date is a name lifetime date with no supported canonical ontology field.",
+            "source_field": "Current Name Start Date"
+          },
+          {
+            "reason": "Current Name Indicator is used only as a condition for entity.legal_name branches and has no separate target.",
+            "source_field": "Current Name Indicator"
+          },
+          {
+            "reason": "_id is a native database row identifier, not a canonical business identifier.",
+            "source_field": "_id"
+          }
+        ],
+        "selected_tables": [
+          0
+        ],
+        "candidate_history": [
+          {
+            "candidate_id": "asic_ast_v1",
+            "config_hash": "0738a0486831d78b36210815217ac0237d9ad9e1ded836e76ba967b5ab498465",
+            "decision_turn": 0,
+            "targets": [
+              "entity.abn",
+              "entity.acn",
+              "entity.date_registered",
+              "entity.entity_type",
+              "entity.legal_name",
+              "entity.status"
+            ],
+            "probe_informative_targets": [],
+            "eligible": false,
+            "validation_status": "not_run"
+          },
+          {
+            "candidate_id": "asic_ast_v2",
+            "config_hash": "374dabab6e3ded4c2091b88f4f643f88ec3f4b486a4509514ffca4c052af5601",
+            "decision_turn": 1,
+            "targets": [
+              "entity.abn",
+              "entity.acn",
+              "entity.date_registered",
+              "entity.entity_type",
+              "entity.legal_name"
+            ],
+            "probe_informative_targets": [
+              "entity.abn",
+              "entity.acn",
+              "entity.date_registered",
+              "entity.entity_type",
+              "entity.legal_name"
+            ],
+            "eligible": true,
+            "validation_status": "passed"
+          },
+          {
+            "candidate_id": "host-subset-2",
+            "config_hash": "a0bac01ed381a49ac3dd951b30109d513533afda09b85cf9971494d42eaf64e8",
+            "decision_turn": 2,
+            "targets": [
+              "entity.abn",
+              "entity.acn",
+              "entity.date_registered",
+              "entity.entity_type",
+              "entity.status"
+            ],
+            "probe_informative_targets": [
+              "entity.abn",
+              "entity.acn",
+              "entity.date_registered",
+              "entity.entity_type"
+            ],
+            "eligible": true,
+            "validation_status": "passed"
+          }
+        ],
+        "ever_proposed_targets": [
+          "entity.abn",
+          "entity.acn",
+          "entity.date_registered",
+          "entity.entity_type",
+          "entity.legal_name",
+          "entity.status"
+        ],
+        "ever_probe_informative_targets": [
+          "entity.abn",
+          "entity.acn",
+          "entity.date_registered",
+          "entity.entity_type",
+          "entity.legal_name"
+        ],
+        "proposed_then_absent_from_final": [
+          "entity.status"
+        ],
+        "probe_informative_then_absent_from_final": [],
+        "unmapped_limitation": "Model reasons and proposed targets are data, not source truth. Probe-informative is execution evidence, not semantic correctness. Rejected targets may correctly be removed. Predicate-only use is not a canonical output."
+      },
+      "output_exists": true,
+      "metrics": {
+        "entity.legal_name": {
+          "opportunities": 389,
+          "correct": 389,
+          "missed": 0,
+          "informative_emitted": 389,
+          "wrong_emitted": 0,
+          "recall": 1.0,
+          "precision_within_labelled_opportunities": 1.0
+        }
+      },
+      "guard_errors": {},
+      "output_sha256": "8710f2a6e76e4c987d04d7f77c08776e7c06e34ec7c6e6bcef56fe964be047d2",
+      "output_record_count": 389,
+      "missing_native_record_count": 0,
+      "coverage": {
+        "field_present": {
+          "entity.abn": 389,
+          "entity.acn": 389,
+          "entity.date_registered": 389,
+          "entity.entity_type": 389,
+          "entity.legal_name": 389
+        },
+        "field_nonempty": {
+          "entity.abn": 389,
+          "entity.acn": 389,
+          "entity.date_registered": 389,
+          "entity.entity_type": 389,
+          "entity.legal_name": 389
+        },
+        "field_informative": {
+          "entity.abn": 389,
+          "entity.acn": 389,
+          "entity.date_registered": 389,
+          "entity.entity_type": 389,
+          "entity.legal_name": 389
+        },
+        "scope": "Presence/coverage only; unknown is excluded from informative, never counted as a correct type."
+      },
+      "status": "complete_output",
+      "accuracy_status": "narrow_labels_only",
+      "branches": {
+        "entity.legal_name::printed_current": {
+          "opportunities": 235,
+          "correct": 235,
+          "missed": 0,
+          "informative_emitted": 235,
+          "wrong_emitted": 0
+        },
+        "entity.legal_name::current_companion": {
+          "opportunities": 154,
+          "correct": 154,
+          "missed": 0,
+          "informative_emitted": 154,
+          "wrong_emitted": 0
+        }
+      },
+      "abstention_checks": {},
+      "unscored_informative_emissions": {
+        "entity.abn": 389,
+        "entity.acn": 389,
+        "entity.date_registered": 389,
+        "entity.entity_type": 389
+      },
+      "mismatches": [],
+      "job_id": "candidate-real-asic-companies-r1",
+      "arm": "candidate",
+      "repetition": 1,
+      "group": "companies_sor"
+    },
+    {
+      "source_id": "real-asic-business-names",
+      "run": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r1/run",
+      "workflow_onboarding": {
+        "candidate_status": "validated",
+        "gap": null,
+        "status": "complete",
+        "task_status": "complete",
+        "usage": {
+          "call_count": 12,
+          "cost_basis": "OpenRouter reported cost, not invoice",
+          "total_cost_usd": 0.033152,
+          "total_tokens": 249676,
+          "wall_seconds": 105.77441500002169,
+          "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+        }
+      },
+      "workflow_extraction": {
+        "error_count": 0,
+        "execution_status": "complete",
+        "output_summary": {
+          "empty_canonical_record_count": 112,
+          "enveloped_record_count": 1000,
+          "informative_field_value_count": 1690,
+          "informative_record_count": 888,
+          "limitation": "Emitted values are not a correctness score.",
+          "mapping_count": 2,
+          "selected_record_count": 1000,
+          "unknown_field_count": 0
+        },
+        "status": "complete",
+        "task_status": "complete"
+      },
+      "workflow_error": null,
+      "native_record_count": 1000,
+      "positive_opportunities": {
+        "entity.trading_name": 888
+      },
+      "positive_branches": {
+        "Registered": 888
+      },
+      "abstention_opportunities": {},
+      "configuration": {
+        "exists": true,
+        "path": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r1/run/artifacts/final-config.json",
+        "sha256": "3b488a3d5f0835287ee960176f64d3fa45241271565ed8bbf97da47b0632321a",
+        "mapped_targets": [
+          "entity.abn",
+          "entity.trading_name"
+        ],
+        "mapping_count": 2,
+        "unmapped_fields": [
+          {
+            "reason": "Register name of the dataset itself, not a property of the business subject; no canonical target.",
+            "source_field": "REGISTER_NAME"
+          },
+          {
+            "reason": "Date by which the Business Name registration started; no unambiguous same-field evidence establishes entity.date_registered, so it stays unresolved.",
+            "source_field": "BN_REG_DT"
+          },
+          {
+            "reason": "Registration status is used only as a condition for the trading name; no unambiguous subject-level evidence establishes entity.status.",
+            "source_field": "BN_STATUS"
+          },
+          {
+            "reason": "Cancellation date is used only as a condition for the current trading name; no separate canonical date target or whole-observation validity evidence is established.",
+            "source_field": "BN_CANCEL_DT"
+          },
+          {
+            "reason": "Former state number from a previous regulator is a historical identifier with no canonical field.",
+            "source_field": "BN_STATE_NUM"
+          },
+          {
+            "reason": "Previous state of registration describes the former regulator, not the current business address, so it cannot map to address.state.",
+            "source_field": "BN_STATE_OF_REG"
+          }
+        ],
+        "selected_tables": [
+          0
+        ],
+        "candidate_history": [
+          {
+            "candidate_id": "ast_abn_bn_name_1",
+            "config_hash": "7e32b2d188914d9e32668b8c32292656bc5ceaf2b18c559e42b49c09a8422a40",
+            "decision_turn": 0,
+            "targets": [
+              "entity.abn",
+              "entity.date_registered",
+              "entity.status",
+              "entity.trading_name"
+            ],
+            "probe_informative_targets": [],
+            "eligible": false,
+            "validation_status": "not_run"
+          },
+          {
+            "candidate_id": "ast_abn_bn_name_2",
+            "config_hash": "15cf366274c942b36c5fedcd45b584c8570b3e0f2b5757e8acb0460cbb665f22",
+            "decision_turn": 1,
+            "targets": [
+              "entity.abn",
+              "entity.trading_name"
+            ],
+            "probe_informative_targets": [
+              "entity.abn",
+              "entity.trading_name"
+            ],
+            "eligible": true,
+            "validation_status": "passed"
+          }
+        ],
+        "ever_proposed_targets": [
+          "entity.abn",
+          "entity.date_registered",
+          "entity.status",
+          "entity.trading_name"
+        ],
+        "ever_probe_informative_targets": [
+          "entity.abn",
+          "entity.trading_name"
+        ],
+        "proposed_then_absent_from_final": [
+          "entity.date_registered",
+          "entity.status"
+        ],
+        "probe_informative_then_absent_from_final": [],
+        "unmapped_limitation": "Model reasons and proposed targets are data, not source truth. Probe-informative is execution evidence, not semantic correctness. Rejected targets may correctly be removed. Predicate-only use is not a canonical output."
+      },
+      "output_exists": true,
+      "metrics": {
+        "entity.trading_name": {
+          "opportunities": 888,
+          "correct": 888,
+          "missed": 0,
+          "informative_emitted": 888,
+          "wrong_emitted": 0,
+          "recall": 1.0,
+          "precision_within_labelled_opportunities": 1.0
+        }
+      },
+      "guard_errors": {},
+      "output_sha256": "d013049d3984bb884ae853052129240506ab082fc97f1d7ecd91cc861220cbba",
+      "output_record_count": 1000,
+      "missing_native_record_count": 0,
+      "coverage": {
+        "field_present": {
+          "entity.abn": 802,
+          "entity.trading_name": 888
+        },
+        "field_nonempty": {
+          "entity.abn": 802,
+          "entity.trading_name": 888
+        },
+        "field_informative": {
+          "entity.abn": 802,
+          "entity.trading_name": 888
+        },
+        "scope": "Presence/coverage only; unknown is excluded from informative, never counted as a correct type."
+      },
+      "status": "complete_output",
+      "accuracy_status": "narrow_labels_only",
+      "branches": {
+        "entity.trading_name::Registered": {
+          "opportunities": 888,
+          "correct": 888,
+          "missed": 0,
+          "informative_emitted": 888,
+          "wrong_emitted": 0
+        }
+      },
+      "abstention_checks": {},
+      "unscored_informative_emissions": {
+        "entity.abn": 802
+      },
+      "mismatches": [],
+      "job_id": "candidate-real-asic-business-names-r1",
+      "arm": "candidate",
+      "repetition": 1,
+      "group": "business_ato"
+    },
+    {
+      "source_id": "real-ato-corporate-tax",
+      "run": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r1/run",
+      "workflow_onboarding": {
+        "candidate_status": "validated",
+        "gap": {
+          "fields": [
+            "entity.legal_name"
+          ],
+          "kind": "task_requirements_unresolved",
+          "reason": "The selected config is technically validated, but declared task fields remain unresolved."
+        },
+        "status": "partial",
+        "task_status": "partial",
+        "usage": {
+          "call_count": 11,
+          "cost_basis": "OpenRouter reported cost, not invoice",
+          "total_cost_usd": 0.019973,
+          "total_tokens": 158054,
+          "wall_seconds": 67.4148902920133,
+          "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+        }
+      },
+      "workflow_extraction": {
+        "error_count": 0,
+        "execution_status": "complete",
+        "output_summary": {
+          "empty_canonical_record_count": 42,
+          "enveloped_record_count": 4442,
+          "informative_field_value_count": 4400,
+          "informative_record_count": 4400,
+          "limitation": "Emitted values are not a correctness score.",
+          "mapping_count": 1,
+          "selected_record_count": 4442,
+          "unknown_field_count": 0
+        },
+        "status": "partial",
+        "task_status": "partial"
+      },
+      "workflow_error": null,
+      "native_record_count": 4436,
+      "positive_opportunities": {},
+      "positive_branches": {},
+      "abstention_opportunities": {},
+      "configuration": {
+        "exists": true,
+        "path": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r1/run/artifacts/final-config.json",
+        "sha256": "611a8817fe893319a4e16f85658c06b69b858bdb9aa9eaab95392d0169ea1e62",
+        "mapped_targets": [
+          "entity.abn"
+        ],
+        "mapping_count": 1,
+        "unmapped_fields": [
+          {
+            "reason": "The Name column is a generic entity name in the corporate tax report. No unambiguous source evidence establishes it as the registered legal name, so entity.legal_name is unresolved and no value is emitted.",
+            "source_field": "Name"
+          },
+          {
+            "reason": "Income year is a reporting-period label for the tax figures, not a date of the entity's registration, validity, or observation; no ontology field is supported.",
+            "source_field": "Income year"
+          },
+          {
+            "reason": "Total income amount has no matching canonical field in the assignment ontology subset.",
+            "source_field": "Total income $"
+          },
+          {
+            "reason": "Taxable income amount has no matching canonical field in the assignment ontology subset.",
+            "source_field": "Taxable income $"
+          },
+          {
+            "reason": "Tax payable amount has no matching canonical field in the assignment ontology subset.",
+            "source_field": "Tax payable $"
+          },
+          {
+            "reason": "PRRT payable amount has no matching canonical field in the assignment ontology subset.",
+            "source_field": "PRRT Payable $"
+          },
+          {
+            "reason": "Sheet-level report header is a document title for the Information sheet, not a business-entity value; it supports no canonical field.",
+            "source_field": "Corporate tax transparency: report of entity tax information"
+          }
+        ],
+        "selected_tables": [
+          0,
+          1,
+          2
+        ],
+        "candidate_history": [
+          {
+            "candidate_id": "ast_abn_name_v1",
+            "config_hash": "63be7ebcbf648660ee12df335415faac5464cf970b20de5c9eef90516837c76e",
+            "decision_turn": 0,
+            "targets": [
+              "entity.abn",
+              "entity.legal_name"
+            ],
+            "probe_informative_targets": [],
+            "eligible": false,
+            "validation_status": "not_run"
+          },
+          {
+            "candidate_id": "ast_abn_only_v2",
+            "config_hash": "b74cb8b0a711836f30bdcd286b9b8db315a96aa8e80b8ff0862150d9de6f9d7f",
+            "decision_turn": 1,
+            "targets": [
+              "entity.abn"
+            ],
+            "probe_informative_targets": [
+              "entity.abn"
+            ],
+            "eligible": true,
+            "validation_status": "passed"
+          }
+        ],
+        "ever_proposed_targets": [
+          "entity.abn",
+          "entity.legal_name"
+        ],
+        "ever_probe_informative_targets": [
+          "entity.abn"
+        ],
+        "proposed_then_absent_from_final": [
+          "entity.legal_name"
+        ],
+        "probe_informative_then_absent_from_final": [],
+        "unmapped_limitation": "Model reasons and proposed targets are data, not source truth. Probe-informative is execution evidence, not semantic correctness. Rejected targets may correctly be removed. Predicate-only use is not a canonical output."
+      },
+      "output_exists": true,
+      "metrics": null,
+      "guard_errors": {
+        "unknown_or_missing_record_id": 6
+      },
+      "output_sha256": "7855f50fdaec02ce12a3cef75faaf266452a50dedcb23c63d20877c6e875e1b5",
+      "output_record_count": 4442,
+      "missing_native_record_count": 0,
+      "coverage": {
+        "field_present": {
+          "entity.abn": 4400
+        },
+        "field_nonempty": {
+          "entity.abn": 4400
+        },
+        "field_informative": {
+          "entity.abn": 4400
+        },
+        "scope": "Presence/coverage only; unknown is excluded from informative, never counted as a correct type."
+      },
+      "status": "identity_guard_failed",
+      "accuracy_status": "N/A",
+      "job_id": "candidate-real-ato-corporate-tax-r1",
+      "arm": "candidate",
+      "repetition": 1,
+      "group": "business_ato"
+    },
+    {
+      "source_id": "real-qbcc",
+      "run": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r1/run",
+      "workflow_onboarding": {
+        "candidate_status": "validated",
+        "gap": {
+          "fields": [
+            "entity.legal_name"
+          ],
+          "kind": "task_requirements_unresolved",
+          "reason": "The selected config is technically validated, but declared task fields remain unresolved."
+        },
+        "status": "partial",
+        "task_status": "partial",
+        "usage": {
+          "call_count": 12,
+          "cost_basis": "OpenRouter reported cost, not invoice",
+          "total_cost_usd": 0.0272902,
+          "total_tokens": 206806,
+          "wall_seconds": 93.13624537497526,
+          "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+        }
+      },
+      "workflow_extraction": {
+        "error_count": 0,
+        "execution_status": "complete",
+        "output_summary": {
+          "empty_canonical_record_count": 0,
+          "enveloped_record_count": 1000,
+          "informative_field_value_count": 1949,
+          "informative_record_count": 1000,
+          "limitation": "Emitted values are not a correctness score.",
+          "mapping_count": 3,
+          "selected_record_count": 1000,
+          "unknown_field_count": 0
+        },
+        "status": "partial",
+        "task_status": "partial"
+      },
+      "workflow_error": null,
+      "native_record_count": 1000,
+      "positive_opportunities": {},
+      "positive_branches": {},
+      "abstention_opportunities": {},
+      "configuration": {
+        "exists": true,
+        "path": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r1/run/artifacts/final-config.json",
+        "sha256": "a05ed3c44836f29f1b8b7d75fa7a93cb90351bcd1d47ae05c599fc10e5e7e6c6",
+        "mapped_targets": [
+          "address.full",
+          "entity.abn",
+          "entity.acn"
+        ],
+        "mapping_count": 3,
+        "unmapped_fields": [
+          {
+            "reason": "Licensee Name is documented only as the name of the licensee; no source definition establishes it as the registered or legal name, so entity.legal_name is unsupported",
+            "source_field": "Licensee Name"
+          },
+          {
+            "reason": "Licence Type DESC describes the licence type with mixed individual and company descriptions and no source-defined mapping to entity.entity_type, so entity_type is unsupported",
+            "source_field": "Licence Type DESC"
+          },
+          {
+            "reason": "Native licence type code is an opaque code without a source-defined crosswalk to entity type",
+            "source_field": "Licence Type CODE"
+          },
+          {
+            "reason": "Native row identifier is a record key, not a canonical ontology field",
+            "source_field": "id"
+          },
+          {
+            "reason": "Licence number is a QBCC licence identifier, not an ABN, ACN or other canonical identifier field in the ontology",
+            "source_field": "Licence Number"
+          },
+          {
+            "reason": "Financial category code is an opaque code without a source-defined canonical target",
+            "source_field": "Financial Category CODE"
+          },
+          {
+            "reason": "Financial category description has no canonical ontology counterpart in this subset",
+            "source_field": "Financial Category DESC"
+          },
+          {
+            "reason": "Licence class type describes licensed work class and has no canonical ontology counterpart in this subset",
+            "source_field": "Licence Class Type"
+          },
+          {
+            "reason": "Licence grade describes licence grade and has no canonical ontology counterpart in this subset",
+            "source_field": "Licence Grade"
+          }
+        ],
+        "selected_tables": [
+          0
+        ],
+        "candidate_history": [
+          {
+            "candidate_id": "qbcc_ast_v1",
+            "config_hash": "4873e54926e76355ab95e080aff72c26e64253d5c4c6addddbf46f67331fda95",
+            "decision_turn": 0,
+            "targets": [
+              "address.full",
+              "entity.abn",
+              "entity.acn",
+              "entity.entity_type",
+              "entity.legal_name"
+            ],
+            "probe_informative_targets": [],
+            "eligible": false,
+            "validation_status": "not_run"
+          },
+          {
+            "candidate_id": "qbcc_ast_v2",
+            "config_hash": "23ca83f5c30b85a01ac65ca7938386497ff4dd53287fcfa062257e5e6238e8b3",
+            "decision_turn": 2,
+            "targets": [
+              "address.full",
+              "entity.abn",
+              "entity.acn"
+            ],
+            "probe_informative_targets": [
+              "address.full",
+              "entity.abn",
+              "entity.acn"
+            ],
+            "eligible": true,
+            "validation_status": "passed"
+          }
+        ],
+        "ever_proposed_targets": [
+          "address.full",
+          "entity.abn",
+          "entity.acn",
+          "entity.entity_type",
+          "entity.legal_name"
+        ],
+        "ever_probe_informative_targets": [
+          "address.full",
+          "entity.abn",
+          "entity.acn"
+        ],
+        "proposed_then_absent_from_final": [
+          "entity.entity_type",
+          "entity.legal_name"
+        ],
+        "probe_informative_then_absent_from_final": [],
+        "unmapped_limitation": "Model reasons and proposed targets are data, not source truth. Probe-informative is execution evidence, not semantic correctness. Rejected targets may correctly be removed. Predicate-only use is not a canonical output."
+      },
+      "output_exists": true,
+      "metrics": {},
+      "guard_errors": {},
+      "output_sha256": "59352395f0784a1907b6cd37ad5e73cf5dee9a87f8556bee1b06afc49cd36f0e",
+      "output_record_count": 1000,
+      "missing_native_record_count": 0,
+      "coverage": {
+        "field_present": {
+          "entity.abn": 623,
+          "entity.acn": 326,
+          "address.full": 1000
+        },
+        "field_nonempty": {
+          "entity.abn": 623,
+          "entity.acn": 326,
+          "address.full": 1000
+        },
+        "field_informative": {
+          "entity.abn": 623,
+          "entity.acn": 326,
+          "address.full": 1000
+        },
+        "scope": "Presence/coverage only; unknown is excluded from informative, never counted as a correct type."
+      },
+      "status": "complete_output",
+      "accuracy_status": "N/A_coverage_only",
+      "branches": {},
+      "abstention_checks": {},
+      "unscored_informative_emissions": {
+        "address.full": 1000,
+        "entity.abn": 623,
+        "entity.acn": 326
+      },
+      "mismatches": [],
+      "job_id": "candidate-real-qbcc-r1",
+      "arm": "candidate",
+      "repetition": 1,
+      "group": "qbcc_act"
+    },
+    {
+      "source_id": "real-suitable-operators",
+      "run": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r1/run",
+      "workflow_onboarding": {
+        "candidate_status": "validated",
+        "gap": {
+          "fields": [
+            "entity.legal_name"
+          ],
+          "kind": "task_requirements_unresolved",
+          "reason": "The selected config is technically validated, but declared task fields remain unresolved."
+        },
+        "status": "partial",
+        "task_status": "partial",
+        "usage": {
+          "call_count": 11,
+          "cost_basis": "OpenRouter reported cost, not invoice",
+          "total_cost_usd": 0.0244423,
+          "total_tokens": 170555,
+          "wall_seconds": 88.73171175000607,
+          "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+        }
+      },
+      "workflow_extraction": {
+        "error_count": 0,
+        "execution_status": "complete",
+        "output_summary": {
+          "empty_canonical_record_count": 112,
+          "enveloped_record_count": 15100,
+          "informative_field_value_count": 60859,
+          "informative_record_count": 14988,
+          "limitation": "Emitted values are not a correctness score.",
+          "mapping_count": 6,
+          "selected_record_count": 15100,
+          "unknown_field_count": 0
+        },
+        "status": "partial",
+        "task_status": "partial"
+      },
+      "workflow_error": null,
+      "native_record_count": 15100,
+      "positive_opportunities": {
+        "entity.entity_type": 8184
+      },
+      "positive_branches": {
+        "Corporation (Company)": 8114,
+        "Incorporated Association": 70
+      },
+      "abstention_opportunities": {
+        "entity.entity_type": 6714,
+        "entity.legal_name": 15100
+      },
+      "configuration": {
+        "exists": true,
+        "path": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r1/run/artifacts/final-config.json",
+        "sha256": "a2706668d5c8ae12bb9504e629cd388e673247928fd0c9f3c33b8cfa9b60c9a7",
+        "mapped_targets": [
+          "address.locality",
+          "address.postcode",
+          "address.state",
+          "entity.abn",
+          "entity.acn",
+          "entity.entity_type"
+        ],
+        "mapping_count": 6,
+        "unmapped_fields": [
+          {
+            "reason": "Customer Name is documented only as a business or individual name; the source does not state that it is the registered or legal name, so entity.legal_name remains unresolved and the requirement stays unmet.",
+            "source_field": "Customer Name"
+          },
+          {
+            "reason": "RSO Number is a suitable operator register reference number with no ontology counterpart in the assignment subset.",
+            "source_field": "RSO Number"
+          },
+          {
+            "reason": "Registration Date records the suitable operator register registration event, a different event from business date_registered; no supported ontology target without a different-subject crosswalk.",
+            "source_field": "Registration Date"
+          },
+          {
+            "reason": "Registration Status states a register status 'Registered' that is not directly equivalent to the canonical entity status enum values; no supported status mapping.",
+            "source_field": "Registration Status"
+          }
+        ],
+        "selected_tables": [
+          0
+        ],
+        "candidate_history": [
+          {
+            "candidate_id": "ast_rso_v1",
+            "config_hash": "1425b3d1065c49ce8fab6559ff3eac9ae10ca52aa122626c0bf5f71d9f4acf79",
+            "decision_turn": 0,
+            "targets": [
+              "address.locality",
+              "address.postcode",
+              "address.state",
+              "entity.abn",
+              "entity.acn",
+              "entity.entity_type",
+              "entity.legal_name"
+            ],
+            "probe_informative_targets": [],
+            "eligible": false,
+            "validation_status": "not_run"
+          },
+          {
+            "candidate_id": "ast_rso_v2",
+            "config_hash": "48728769e41d09694b1c2e627b1a6241e0922770cf6ec7ab8570cd0c84af7316",
+            "decision_turn": 1,
+            "targets": [
+              "address.locality",
+              "address.postcode",
+              "address.state",
+              "entity.abn",
+              "entity.acn",
+              "entity.entity_type"
+            ],
+            "probe_informative_targets": [
+              "address.locality",
+              "address.postcode",
+              "address.state",
+              "entity.abn",
+              "entity.acn",
+              "entity.entity_type"
+            ],
+            "eligible": true,
+            "validation_status": "passed"
+          }
+        ],
+        "ever_proposed_targets": [
+          "address.locality",
+          "address.postcode",
+          "address.state",
+          "entity.abn",
+          "entity.acn",
+          "entity.entity_type",
+          "entity.legal_name"
+        ],
+        "ever_probe_informative_targets": [
+          "address.locality",
+          "address.postcode",
+          "address.state",
+          "entity.abn",
+          "entity.acn",
+          "entity.entity_type"
+        ],
+        "proposed_then_absent_from_final": [
+          "entity.legal_name"
+        ],
+        "probe_informative_then_absent_from_final": [],
+        "unmapped_limitation": "Model reasons and proposed targets are data, not source truth. Probe-informative is execution evidence, not semantic correctness. Rejected targets may correctly be removed. Predicate-only use is not a canonical output."
+      },
+      "output_exists": true,
+      "metrics": {
+        "entity.entity_type": {
+          "opportunities": 8184,
+          "correct": 8184,
+          "missed": 0,
+          "informative_emitted": 8184,
+          "wrong_emitted": 0,
+          "recall": 1.0,
+          "precision_within_labelled_opportunities": 1.0
+        }
+      },
+      "guard_errors": {},
+      "output_sha256": "db3394354ddbca28784530fd9e7b4a031d80d1f3a9fbcb1f3cac1d44b40c4854",
+      "output_record_count": 15100,
+      "missing_native_record_count": 0,
+      "coverage": {
+        "field_present": {
+          "entity.acn": 7901,
+          "entity.entity_type": 8184,
+          "address.locality": 14825,
+          "address.postcode": 14825,
+          "address.state": 14825,
+          "entity.abn": 299
+        },
+        "field_nonempty": {
+          "entity.acn": 7901,
+          "entity.entity_type": 8184,
+          "address.locality": 14825,
+          "address.postcode": 14825,
+          "address.state": 14825,
+          "entity.abn": 299
+        },
+        "field_informative": {
+          "entity.acn": 7901,
+          "entity.entity_type": 8184,
+          "address.locality": 14825,
+          "address.postcode": 14825,
+          "address.state": 14825,
+          "entity.abn": 299
+        },
+        "scope": "Presence/coverage only; unknown is excluded from informative, never counted as a correct type."
+      },
+      "status": "complete_output",
+      "accuracy_status": "narrow_labels_only",
+      "branches": {
+        "entity.entity_type::Corporation (Company)": {
+          "opportunities": 8114,
+          "correct": 8114,
+          "missed": 0,
+          "informative_emitted": 8114,
+          "wrong_emitted": 0
+        },
+        "entity.entity_type::Incorporated Association": {
+          "opportunities": 70,
+          "correct": 70,
+          "missed": 0,
+          "informative_emitted": 70,
+          "wrong_emitted": 0
+        }
+      },
+      "abstention_checks": {
+        "entity.entity_type": {
+          "opportunities": 6714,
+          "unsupported_informative_emission": 0,
+          "observed_abstention": 6714,
+          "missing_record": 0
+        },
+        "entity.legal_name": {
+          "opportunities": 15100,
+          "unsupported_informative_emission": 0,
+          "observed_abstention": 15100,
+          "missing_record": 0
+        }
+      },
+      "unscored_informative_emissions": {
+        "address.locality": 14825,
+        "address.postcode": 14825,
+        "address.state": 14825,
+        "entity.acn": 7901,
+        "entity.abn": 299
+      },
+      "mismatches": [],
+      "job_id": "candidate-real-suitable-operators-r1",
+      "arm": "candidate",
+      "repetition": 1,
+      "group": "companies_sor"
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "run": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r1/run",
+      "workflow_onboarding": {
+        "candidate_status": "validated",
+        "gap": {
+          "fields": [
+            "entity.legal_name"
+          ],
+          "kind": "task_requirements_unresolved",
+          "reason": "The selected config is technically validated, but declared task fields remain unresolved."
+        },
+        "status": "partial",
+        "task_status": "partial",
+        "usage": {
+          "call_count": 12,
+          "cost_basis": "OpenRouter reported cost, not invoice",
+          "total_cost_usd": 0.0278833,
+          "total_tokens": 225073,
+          "wall_seconds": 69.89313458299148,
+          "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+        }
+      },
+      "workflow_extraction": {
+        "error_count": 0,
+        "execution_status": "complete",
+        "output_summary": {
+          "empty_canonical_record_count": 241,
+          "enveloped_record_count": 1000,
+          "informative_field_value_count": 759,
+          "informative_record_count": 759,
+          "limitation": "Emitted values are not a correctness score.",
+          "mapping_count": 1,
+          "selected_record_count": 1000,
+          "unknown_field_count": 0
+        },
+        "status": "partial",
+        "task_status": "partial"
+      },
+      "workflow_error": null,
+      "native_record_count": 1000,
+      "positive_opportunities": {},
+      "positive_branches": {},
+      "abstention_opportunities": {},
+      "configuration": {
+        "exists": true,
+        "path": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r1/run/artifacts/final-config.json",
+        "sha256": "a29057704cb52fc9eb7bd4031167966a1b2f0b85e7d9d64a7a9982da0ff86dfe",
+        "mapped_targets": [
+          "entity.abn"
+        ],
+        "mapping_count": 1,
+        "unmapped_fields": [
+          {
+            "reason": "No source documentation defines contractor_name as a registered or legal name; the name role is unsupported for entity.legal_name.",
+            "source_field": "contractor_name"
+          },
+          {
+            "reason": "Contract description is a procurement description, not an entity attribute in the ontology subset.",
+            "source_field": "brief_description_of_contract"
+          },
+          {
+            "reason": "Confidentiality flag about the contract record, not a canonical entity or address field.",
+            "source_field": "confidential_text"
+          },
+          {
+            "reason": "Contract monetary amount has no canonical counterpart in the ontology subset.",
+            "source_field": "contract_amount"
+          },
+          {
+            "reason": "Contract identifier refers to the contract, not the business entity.",
+            "source_field": "contract_number"
+          },
+          {
+            "reason": "Contract title describes the contract, not the registered entity name.",
+            "source_field": "contract_title"
+          },
+          {
+            "reason": "Procuring directorate or authority is the buyer, not the contractor subject.",
+            "source_field": "directorate_public_authority_territory_owned_corporation"
+          },
+          {
+            "reason": "Contract execution date is a contract event date, not an entity date_registered or whole-observation validity bound.",
+            "source_field": "execution_date"
+          },
+          {
+            "reason": "Exemption flag concerns procurement threshold rules, with no canonical counterpart.",
+            "source_field": "exemption_from_quotation_and_tender_threshold_requirements"
+          },
+          {
+            "reason": "Contract expiry date is a contract lifetime, not whole-observation validity or entity status.",
+            "source_field": "expiry_date"
+          },
+          {
+            "reason": "GST treatment of contract amount has no canonical counterpart.",
+            "source_field": "gst"
+          },
+          {
+            "reason": "Goods/services classification describes procurement type, not an ANZSIC industry code for the entity.",
+            "source_field": "infrastructure_or_goods_services"
+          },
+          {
+            "reason": "Internal matrix number is an internal procurement reference with no canonical counterpart.",
+            "source_field": "internal_matrix_number"
+          },
+          {
+            "reason": "Panel contract flag describes the procurement arrangement, not the entity.",
+            "source_field": "panel_contract"
+          },
+          {
+            "reason": "Panel contract number refers to a procurement arrangement, not an entity identifier.",
+            "source_field": "panel_contract_number"
+          },
+          {
+            "reason": "Panel total amount is a contract value with no canonical counterpart.",
+            "source_field": "panel_total_amount"
+          },
+          {
+            "reason": "Prior department or agency names the buyer organisation, not the contractor subject.",
+            "source_field": "previously_department_or_agency_prior_to_23_may_2011"
+          },
+          {
+            "reason": "Procurement methodology describes the contract process, with no canonical counterpart.",
+            "source_field": "procurement_methodology"
+          },
+          {
+            "reason": "Procurement type describes the contract category, not an entity type or industry code.",
+            "source_field": "procurement_type"
+          },
+          {
+            "reason": "SME flag about the contract procurement, with no canonical entity counterpart.",
+            "source_field": "small_to_medium_enterprise_sme"
+          },
+          {
+            "reason": "Social procurement flag about the contract, with no canonical counterpart.",
+            "source_field": "social_procurement"
+          },
+          {
+            "reason": "Source row identifier is host/record provenance, not a canonical business claim.",
+            "source_field": "source_row_id"
+          },
+          {
+            "reason": "Tender number refers to a procurement process, with no canonical counterpart.",
+            "source_field": "tender_number"
+          },
+          {
+            "reason": "UNSPSC classification is a product/service code for the contract, not the ANZSIC industry_code of the entity; no source-defined crosswalk is provided.",
+            "source_field": "unspsc_classification"
+          },
+          {
+            "reason": "Pre-qualification flag concerns the selection process, with no canonical counterpart.",
+            "source_field": "was_pre_qualification_requested_in_selection_documentation"
+          }
+        ],
+        "selected_tables": [
+          0
+        ],
+        "candidate_history": [
+          {
+            "candidate_id": "ast_abn_contractor_v1",
+            "config_hash": "c78d9987a82bef588d66254ca1c0a325060a88fb9aa81e7e0b2c5941293455cb",
+            "decision_turn": 0,
+            "targets": [
+              "entity.abn",
+              "entity.legal_name"
+            ],
+            "probe_informative_targets": [],
+            "eligible": false,
+            "validation_status": "not_run"
+          },
+          {
+            "candidate_id": "ast_abn_only_v2",
+            "config_hash": "05777933696d5c4216a53340d05b17a4c8e3593b0d5a98d2816249bcb610be48",
+            "decision_turn": 1,
+            "targets": [
+              "entity.abn"
+            ],
+            "probe_informative_targets": [
+              "entity.abn"
+            ],
+            "eligible": true,
+            "validation_status": "passed"
+          }
+        ],
+        "ever_proposed_targets": [
+          "entity.abn",
+          "entity.legal_name"
+        ],
+        "ever_probe_informative_targets": [
+          "entity.abn"
+        ],
+        "proposed_then_absent_from_final": [
+          "entity.legal_name"
+        ],
+        "probe_informative_then_absent_from_final": [],
+        "unmapped_limitation": "Model reasons and proposed targets are data, not source truth. Probe-informative is execution evidence, not semantic correctness. Rejected targets may correctly be removed. Predicate-only use is not a canonical output."
+      },
+      "output_exists": true,
+      "metrics": {},
+      "guard_errors": {},
+      "output_sha256": "25f7c3df3543ef648dd5b26ea19bb5d1b16f0bd5f688090cec57e0327951f53c",
+      "output_record_count": 1000,
+      "missing_native_record_count": 0,
+      "coverage": {
+        "field_present": {
+          "entity.abn": 759
+        },
+        "field_nonempty": {
+          "entity.abn": 759
+        },
+        "field_informative": {
+          "entity.abn": 759
+        },
+        "scope": "Presence/coverage only; unknown is excluded from informative, never counted as a correct type."
+      },
+      "status": "complete_output",
+      "accuracy_status": "N/A_coverage_only",
+      "branches": {},
+      "abstention_checks": {},
+      "unscored_informative_emissions": {
+        "entity.abn": 759
+      },
+      "mismatches": [],
+      "job_id": "candidate-real-act-contracts-historical-r1",
+      "arm": "candidate",
+      "repetition": 1,
+      "group": "qbcc_act"
+    },
+    {
+      "source_id": "real-asic-companies",
+      "run": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run",
+      "workflow_onboarding": {
+        "candidate_status": "validated",
+        "gap": {
+          "kind": "candidate_selection_unresolved",
+          "reason": "Known same-scope alternatives retain observed values or unresolved tradeoffs. Explicit selection is not proof of complete coverage.",
+          "unresolved_requirements": []
+        },
+        "status": "partial",
+        "task_status": "complete",
+        "usage": {
+          "call_count": 14,
+          "cost_basis": "OpenRouter reported cost, not invoice",
+          "total_cost_usd": 0.049066900000000004,
+          "total_tokens": 368397,
+          "wall_seconds": 140.98834079201333,
+          "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+        }
+      },
+      "workflow_extraction": {
+        "error_count": 0,
+        "execution_status": "complete",
+        "output_summary": {
+          "empty_canonical_record_count": 0,
+          "enveloped_record_count": 389,
+          "informative_field_value_count": 1945,
+          "informative_record_count": 389,
+          "limitation": "Emitted values are not a correctness score.",
+          "mapping_count": 6,
+          "selected_record_count": 389,
+          "unknown_field_count": 0
+        },
+        "status": "partial",
+        "task_status": "complete"
+      },
+      "workflow_error": null,
+      "native_record_count": 389,
+      "positive_opportunities": {
+        "entity.legal_name": 389
+      },
+      "positive_branches": {
+        "current_companion": 154,
+        "printed_current": 235
+      },
+      "abstention_opportunities": {},
+      "configuration": {
+        "exists": true,
+        "path": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r2/run/artifacts/final-config.json",
+        "sha256": "f85529ec93a437bd123bc56f1b65b6da7da0e1448b2c41836de32ec9b9e43d5e",
+        "mapped_targets": [
+          "entity.abn",
+          "entity.acn",
+          "entity.date_registered",
+          "entity.entity_type",
+          "entity.legal_name"
+        ],
+        "mapping_count": 6,
+        "unmapped_fields": [
+          {
+            "reason": "Status codes were not narrowed to canonical entity.status values; the same-field definition does not establish a supported canonical meaning for REGD or other codes.",
+            "source_field": "Status"
+          },
+          {
+            "reason": "No canonical address.state target: Previous State of Registration records the original state of registration, not the current business address.",
+            "source_field": "Previous State of Registration"
+          },
+          {
+            "reason": "Describes the Class of the company (limitation type), not an industry code or entity type; no supported canonical target.",
+            "source_field": "Class"
+          },
+          {
+            "reason": "Describes the Sub Class of the company; no supported canonical target.",
+            "source_field": "Sub Class"
+          },
+          {
+            "reason": "Date of Deregistration is a lifecycle date with no supported canonical target without whole-observation validity evidence.",
+            "source_field": "Date of Deregistration"
+          },
+          {
+            "reason": "Dataset maintenance flag for whether the record was modified since last report; no canonical target.",
+            "source_field": "Modified since last report"
+          },
+          {
+            "reason": "Current Name Indicator is a condition flag used only to control Current Name and Company Name; it has no separate canonical target.",
+            "source_field": "Current Name Indicator"
+          },
+          {
+            "reason": "Name start date for the current name is a historical name lifetime with no supported canonical target.",
+            "source_field": "Current Name Start Date"
+          },
+          {
+            "reason": "State Registration number is a state-issued registration number with no canonical target.",
+            "source_field": "State Registration number"
+          },
+          {
+            "reason": "Internal native row identifier with no ontology counterpart.",
+            "source_field": "_id"
+          }
+        ],
+        "selected_tables": [
+          0
+        ],
+        "candidate_history": [
+          {
+            "candidate_id": "ast_identity_v1",
+            "config_hash": "d2bb7ea43adc454c11348a712a23b076c6877eed081b11ef9b2e707a76b85440",
+            "decision_turn": 0,
+            "targets": [
+              "entity.abn",
+              "entity.acn",
+              "entity.date_registered",
+              "entity.entity_type",
+              "entity.legal_name",
+              "entity.status"
+            ],
+            "probe_informative_targets": [],
+            "eligible": false,
+            "validation_status": "not_run"
+          },
+          {
+            "candidate_id": "ast_identity_v2",
+            "config_hash": "26ade57f8695cfeb655ba55ac7a6e171bd2b09b9237c4cf117bec91aba66e352",
+            "decision_turn": 1,
+            "targets": [
+              "entity.abn",
+              "entity.acn",
+              "entity.date_registered",
+              "entity.entity_type",
+              "entity.legal_name"
+            ],
+            "probe_informative_targets": [
+              "entity.abn",
+              "entity.acn",
+              "entity.date_registered",
+              "entity.entity_type",
+              "entity.legal_name"
+            ],
+            "eligible": true,
+            "validation_status": "passed"
+          },
+          {
+            "candidate_id": "host-subset-2",
+            "config_hash": "1be7829b43dcef230c202080071e94d3ce4bf1b6f195227c0e485dfca2377fab",
+            "decision_turn": 2,
+            "targets": [
+              "entity.abn",
+              "entity.acn",
+              "entity.date_registered",
+              "entity.entity_type",
+              "entity.status"
+            ],
+            "probe_informative_targets": [
+              "entity.abn",
+              "entity.acn",
+              "entity.date_registered",
+              "entity.entity_type"
+            ],
+            "eligible": true,
+            "validation_status": "passed"
+          }
+        ],
+        "ever_proposed_targets": [
+          "entity.abn",
+          "entity.acn",
+          "entity.date_registered",
+          "entity.entity_type",
+          "entity.legal_name",
+          "entity.status"
+        ],
+        "ever_probe_informative_targets": [
+          "entity.abn",
+          "entity.acn",
+          "entity.date_registered",
+          "entity.entity_type",
+          "entity.legal_name"
+        ],
+        "proposed_then_absent_from_final": [
+          "entity.status"
+        ],
+        "probe_informative_then_absent_from_final": [],
+        "unmapped_limitation": "Model reasons and proposed targets are data, not source truth. Probe-informative is execution evidence, not semantic correctness. Rejected targets may correctly be removed. Predicate-only use is not a canonical output."
+      },
+      "output_exists": true,
+      "metrics": {
+        "entity.legal_name": {
+          "opportunities": 389,
+          "correct": 389,
+          "missed": 0,
+          "informative_emitted": 389,
+          "wrong_emitted": 0,
+          "recall": 1.0,
+          "precision_within_labelled_opportunities": 1.0
+        }
+      },
+      "guard_errors": {},
+      "output_sha256": "76d6e20c45fec8c4720350d1a8f311023899ef60c933e5057dd389eff2150af0",
+      "output_record_count": 389,
+      "missing_native_record_count": 0,
+      "coverage": {
+        "field_present": {
+          "entity.abn": 389,
+          "entity.acn": 389,
+          "entity.date_registered": 389,
+          "entity.entity_type": 389,
+          "entity.legal_name": 389
+        },
+        "field_nonempty": {
+          "entity.abn": 389,
+          "entity.acn": 389,
+          "entity.date_registered": 389,
+          "entity.entity_type": 389,
+          "entity.legal_name": 389
+        },
+        "field_informative": {
+          "entity.abn": 389,
+          "entity.acn": 389,
+          "entity.date_registered": 389,
+          "entity.entity_type": 389,
+          "entity.legal_name": 389
+        },
+        "scope": "Presence/coverage only; unknown is excluded from informative, never counted as a correct type."
+      },
+      "status": "complete_output",
+      "accuracy_status": "narrow_labels_only",
+      "branches": {
+        "entity.legal_name::printed_current": {
+          "opportunities": 235,
+          "correct": 235,
+          "missed": 0,
+          "informative_emitted": 235,
+          "wrong_emitted": 0
+        },
+        "entity.legal_name::current_companion": {
+          "opportunities": 154,
+          "correct": 154,
+          "missed": 0,
+          "informative_emitted": 154,
+          "wrong_emitted": 0
+        }
+      },
+      "abstention_checks": {},
+      "unscored_informative_emissions": {
+        "entity.abn": 389,
+        "entity.acn": 389,
+        "entity.date_registered": 389,
+        "entity.entity_type": 389
+      },
+      "mismatches": [],
+      "job_id": "candidate-real-asic-companies-r2",
+      "arm": "candidate",
+      "repetition": 2,
+      "group": "companies_sor"
+    },
+    {
+      "source_id": "real-asic-business-names",
+      "run": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run",
+      "workflow_onboarding": {
+        "candidate_status": "validated",
+        "gap": null,
+        "status": "complete",
+        "task_status": "complete",
+        "usage": {
+          "call_count": 7,
+          "cost_basis": "OpenRouter reported cost, not invoice",
+          "total_cost_usd": 0.0157686,
+          "total_tokens": 119310,
+          "wall_seconds": 50.885878415982006,
+          "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+        }
+      },
+      "workflow_extraction": {
+        "error_count": 0,
+        "execution_status": "complete",
+        "output_summary": {
+          "empty_canonical_record_count": 112,
+          "enveloped_record_count": 1000,
+          "informative_field_value_count": 1690,
+          "informative_record_count": 888,
+          "limitation": "Emitted values are not a correctness score.",
+          "mapping_count": 2,
+          "selected_record_count": 1000,
+          "unknown_field_count": 0
+        },
+        "status": "complete",
+        "task_status": "complete"
+      },
+      "workflow_error": null,
+      "native_record_count": 1000,
+      "positive_opportunities": {
+        "entity.trading_name": 888
+      },
+      "positive_branches": {
+        "Registered": 888
+      },
+      "abstention_opportunities": {},
+      "configuration": {
+        "exists": true,
+        "path": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r2/run/artifacts/final-config.json",
+        "sha256": "121bb62ed883d243799739e0d82eac9e02cfdc2a2a792ba42a4075da4b4c3c44",
+        "mapped_targets": [
+          "entity.abn",
+          "entity.trading_name"
+        ],
+        "mapping_count": 2,
+        "unmapped_fields": [
+          {
+            "reason": "Name of the register is metadata about the dataset, not a business claim; no ontology target.",
+            "source_field": "REGISTER_NAME"
+          },
+          {
+            "reason": "Business name registration date describes the business name's registration event, not entity.date_registered for the business subject; no supported target without further subject review.",
+            "source_field": "BN_REG_DT"
+          },
+          {
+            "reason": "Cancellation date is a lifecycle event for the business name; no ontology field for name cancellation date, and it is not whole-observation validity.",
+            "source_field": "BN_CANCEL_DT"
+          },
+          {
+            "reason": "Former state number from a previous regulator is historical registration metadata, not a current entity or address claim.",
+            "source_field": "BN_STATE_NUM"
+          },
+          {
+            "reason": "Previous state of registration refers to the prior business names regulator, not the business address state, so it cannot populate address.state.",
+            "source_field": "BN_STATE_OF_REG"
+          }
+        ],
+        "selected_tables": [
+          0
+        ],
+        "candidate_history": [
+          {
+            "candidate_id": "ast_bn_abn_name_v1",
+            "config_hash": "6a644d181f3c4981e6b3e34586ce4dad2ebd662c9fe5aebac0576a1973be81eb",
+            "decision_turn": 0,
+            "targets": [
+              "entity.abn",
+              "entity.trading_name"
+            ],
+            "probe_informative_targets": [
+              "entity.abn",
+              "entity.trading_name"
+            ],
+            "eligible": true,
+            "validation_status": "passed"
+          }
+        ],
+        "ever_proposed_targets": [
+          "entity.abn",
+          "entity.trading_name"
+        ],
+        "ever_probe_informative_targets": [
+          "entity.abn",
+          "entity.trading_name"
+        ],
+        "proposed_then_absent_from_final": [],
+        "probe_informative_then_absent_from_final": [],
+        "unmapped_limitation": "Model reasons and proposed targets are data, not source truth. Probe-informative is execution evidence, not semantic correctness. Rejected targets may correctly be removed. Predicate-only use is not a canonical output."
+      },
+      "output_exists": true,
+      "metrics": {
+        "entity.trading_name": {
+          "opportunities": 888,
+          "correct": 888,
+          "missed": 0,
+          "informative_emitted": 888,
+          "wrong_emitted": 0,
+          "recall": 1.0,
+          "precision_within_labelled_opportunities": 1.0
+        }
+      },
+      "guard_errors": {},
+      "output_sha256": "b224f70607249303c4335801a7a2218bb250e317a613cefa473c3b8ab97c6a5e",
+      "output_record_count": 1000,
+      "missing_native_record_count": 0,
+      "coverage": {
+        "field_present": {
+          "entity.abn": 802,
+          "entity.trading_name": 888
+        },
+        "field_nonempty": {
+          "entity.abn": 802,
+          "entity.trading_name": 888
+        },
+        "field_informative": {
+          "entity.abn": 802,
+          "entity.trading_name": 888
+        },
+        "scope": "Presence/coverage only; unknown is excluded from informative, never counted as a correct type."
+      },
+      "status": "complete_output",
+      "accuracy_status": "narrow_labels_only",
+      "branches": {
+        "entity.trading_name::Registered": {
+          "opportunities": 888,
+          "correct": 888,
+          "missed": 0,
+          "informative_emitted": 888,
+          "wrong_emitted": 0
+        }
+      },
+      "abstention_checks": {},
+      "unscored_informative_emissions": {
+        "entity.abn": 802
+      },
+      "mismatches": [],
+      "job_id": "candidate-real-asic-business-names-r2",
+      "arm": "candidate",
+      "repetition": 2,
+      "group": "business_ato"
+    },
+    {
+      "source_id": "real-ato-corporate-tax",
+      "run": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run",
+      "workflow_onboarding": {
+        "candidate_status": "validated",
+        "gap": {
+          "fields": [
+            "entity.legal_name"
+          ],
+          "kind": "task_requirements_unresolved",
+          "reason": "The selected config is technically validated, but declared task fields remain unresolved."
+        },
+        "status": "partial",
+        "task_status": "partial",
+        "usage": {
+          "call_count": 13,
+          "cost_basis": "OpenRouter reported cost, not invoice",
+          "total_cost_usd": 0.0230263,
+          "total_tokens": 188079,
+          "wall_seconds": 66.83155766699929,
+          "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+        }
+      },
+      "workflow_extraction": {
+        "error_count": 0,
+        "execution_status": "complete",
+        "output_summary": {
+          "empty_canonical_record_count": 36,
+          "enveloped_record_count": 4436,
+          "informative_field_value_count": 4400,
+          "informative_record_count": 4400,
+          "limitation": "Emitted values are not a correctness score.",
+          "mapping_count": 1,
+          "selected_record_count": 4436,
+          "unknown_field_count": 0
+        },
+        "status": "partial",
+        "task_status": "partial"
+      },
+      "workflow_error": null,
+      "native_record_count": 4436,
+      "positive_opportunities": {},
+      "positive_branches": {},
+      "abstention_opportunities": {},
+      "configuration": {
+        "exists": true,
+        "path": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r2/run/artifacts/final-config.json",
+        "sha256": "6403b7a10a3b515d5d7e5db75ba21a637ed38c7843053a0ca53a3ea0648e548b",
+        "mapped_targets": [
+          "entity.abn"
+        ],
+        "mapping_count": 1,
+        "unmapped_fields": [
+          {
+            "reason": "Name is the generic entity name column. No unambiguous source definition establishes it as the registered legal name, and the documentation only says the reports contain 'the name', so entity.legal_name is unresolved and no mapping is proposed.",
+            "source_field": "Name"
+          },
+          {
+            "reason": "Income year is a reporting-period attribute of the tax figures, with no supported ontology counterpart in the assignment subset; it is not an observation validity or date_registered value.",
+            "source_field": "Income year"
+          },
+          {
+            "reason": "Tax payable $ is a financial tax amount with no supported canonical ontology field in the assignment subset.",
+            "source_field": "Tax payable $"
+          },
+          {
+            "reason": "Taxable income $ is a financial tax amount with no supported canonical ontology field in the assignment subset.",
+            "source_field": "Taxable income $"
+          },
+          {
+            "reason": "Total income $ is a financial tax amount with no supported canonical ontology field in the assignment subset.",
+            "source_field": "Total income $"
+          },
+          {
+            "reason": "PRRT Payable $ is a petroleum resource rent tax amount with no supported canonical ontology field in the assignment subset.",
+            "source_field": "PRRT Payable $"
+          }
+        ],
+        "selected_tables": [
+          1,
+          2
+        ],
+        "candidate_history": [
+          {
+            "candidate_id": "ast_abn_name_v1",
+            "config_hash": "336a582a40b73d25cf98c9e45b931c1c600499c20454fc33158226e39b97dbd2",
+            "decision_turn": 0,
+            "targets": [
+              "entity.abn",
+              "entity.legal_name"
+            ],
+            "probe_informative_targets": [],
+            "eligible": false,
+            "validation_status": "not_run"
+          },
+          {
+            "candidate_id": "ast_abn_only_v2",
+            "config_hash": "5f1a80e953f1692b21eecb109680fba94f39fc3e4803970b57cc893148e74120",
+            "decision_turn": 2,
+            "targets": [
+              "entity.abn"
+            ],
+            "probe_informative_targets": [
+              "entity.abn"
+            ],
+            "eligible": true,
+            "validation_status": "passed"
+          }
+        ],
+        "ever_proposed_targets": [
+          "entity.abn",
+          "entity.legal_name"
+        ],
+        "ever_probe_informative_targets": [
+          "entity.abn"
+        ],
+        "proposed_then_absent_from_final": [
+          "entity.legal_name"
+        ],
+        "probe_informative_then_absent_from_final": [],
+        "unmapped_limitation": "Model reasons and proposed targets are data, not source truth. Probe-informative is execution evidence, not semantic correctness. Rejected targets may correctly be removed. Predicate-only use is not a canonical output."
+      },
+      "output_exists": true,
+      "metrics": {},
+      "guard_errors": {},
+      "output_sha256": "45e091c50ac5031f8a4d06ef91743560f4e20e6653ad594510f2d8342d5244c4",
+      "output_record_count": 4436,
+      "missing_native_record_count": 0,
+      "coverage": {
+        "field_present": {
+          "entity.abn": 4400
+        },
+        "field_nonempty": {
+          "entity.abn": 4400
+        },
+        "field_informative": {
+          "entity.abn": 4400
+        },
+        "scope": "Presence/coverage only; unknown is excluded from informative, never counted as a correct type."
+      },
+      "status": "complete_output",
+      "accuracy_status": "N/A_coverage_only",
+      "branches": {},
+      "abstention_checks": {},
+      "unscored_informative_emissions": {
+        "entity.abn": 4400
+      },
+      "mismatches": [],
+      "job_id": "candidate-real-ato-corporate-tax-r2",
+      "arm": "candidate",
+      "repetition": 2,
+      "group": "business_ato"
+    },
+    {
+      "source_id": "real-qbcc",
+      "run": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run",
+      "workflow_onboarding": {
+        "candidate_status": "validated",
+        "gap": {
+          "fields": [
+            "entity.legal_name"
+          ],
+          "kind": "task_requirements_unresolved",
+          "reason": "The selected config is technically validated, but declared task fields remain unresolved."
+        },
+        "status": "partial",
+        "task_status": "partial",
+        "usage": {
+          "call_count": 11,
+          "cost_basis": "OpenRouter reported cost, not invoice",
+          "total_cost_usd": 0.0242516,
+          "total_tokens": 181012,
+          "wall_seconds": 79.84124670899473,
+          "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+        }
+      },
+      "workflow_extraction": {
+        "error_count": 0,
+        "execution_status": "complete",
+        "output_summary": {
+          "empty_canonical_record_count": 0,
+          "enveloped_record_count": 1000,
+          "informative_field_value_count": 1949,
+          "informative_record_count": 1000,
+          "limitation": "Emitted values are not a correctness score.",
+          "mapping_count": 3,
+          "selected_record_count": 1000,
+          "unknown_field_count": 0
+        },
+        "status": "partial",
+        "task_status": "partial"
+      },
+      "workflow_error": null,
+      "native_record_count": 1000,
+      "positive_opportunities": {},
+      "positive_branches": {},
+      "abstention_opportunities": {},
+      "configuration": {
+        "exists": true,
+        "path": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r2/run/artifacts/final-config.json",
+        "sha256": "2212d1ba5e08f7df08d3ed633fdbcc78fe0faa09a4d017f46463c4b6998d6725",
+        "mapped_targets": [
+          "address.full",
+          "entity.abn",
+          "entity.acn"
+        ],
+        "mapping_count": 3,
+        "unmapped_fields": [
+          {
+            "reason": "Licensee Name is documented only as 'name of licensee'; no source evidence establishes it as the registered or legal name, so entity.legal_name remains unresolved and the name role is uncertain.",
+            "source_field": "Licensee Name"
+          },
+          {
+            "reason": "Licence Type DESC has explicit values such as Company and Individual, but no source evidence establishes a canonical entity_type mapping, and defaulting to unknown would not supply a supported value.",
+            "source_field": "Licence Type DESC"
+          },
+          {
+            "reason": "Licence number is a licence identifier, not a canonical business identifier in the ontology.",
+            "source_field": "Licence Number"
+          },
+          {
+            "reason": "Licence class describes the licence scope and has no canonical ontology field.",
+            "source_field": "Licence Class Type"
+          },
+          {
+            "reason": "Licence grade has no canonical ontology field.",
+            "source_field": "Licence Grade"
+          },
+          {
+            "reason": "Financial category code is an opaque code without a source-defined crosswalk to canonical fields.",
+            "source_field": "Financial Category CODE"
+          },
+          {
+            "reason": "Financial category description has no canonical ontology field.",
+            "source_field": "Financial Category DESC"
+          },
+          {
+            "reason": "Licence type code is an opaque code without a source-defined crosswalk to canonical fields.",
+            "source_field": "Licence Type CODE"
+          },
+          {
+            "reason": "Row identifier is a native record key with no canonical ontology field.",
+            "source_field": "id"
+          }
+        ],
+        "selected_tables": [
+          0
+        ],
+        "candidate_history": [
+          {
+            "candidate_id": "qbcc_ast_1",
+            "config_hash": "cb7c82999e62a5a5055be144dc7d90a2d5acfce13fe5d94db0340bdababf51c9",
+            "decision_turn": 0,
+            "targets": [
+              "address.full",
+              "entity.abn",
+              "entity.acn",
+              "entity.entity_type",
+              "entity.legal_name"
+            ],
+            "probe_informative_targets": [],
+            "eligible": false,
+            "validation_status": "not_run"
+          },
+          {
+            "candidate_id": "qbcc_ast_2",
+            "config_hash": "d82d821dc83c306bfdfa43dc2a668ec56de9ccfa17cac7edb7a30b4b532c7d3c",
+            "decision_turn": 1,
+            "targets": [
+              "address.full",
+              "entity.abn",
+              "entity.acn"
+            ],
+            "probe_informative_targets": [
+              "address.full",
+              "entity.abn",
+              "entity.acn"
+            ],
+            "eligible": true,
+            "validation_status": "passed"
+          }
+        ],
+        "ever_proposed_targets": [
+          "address.full",
+          "entity.abn",
+          "entity.acn",
+          "entity.entity_type",
+          "entity.legal_name"
+        ],
+        "ever_probe_informative_targets": [
+          "address.full",
+          "entity.abn",
+          "entity.acn"
+        ],
+        "proposed_then_absent_from_final": [
+          "entity.entity_type",
+          "entity.legal_name"
+        ],
+        "probe_informative_then_absent_from_final": [],
+        "unmapped_limitation": "Model reasons and proposed targets are data, not source truth. Probe-informative is execution evidence, not semantic correctness. Rejected targets may correctly be removed. Predicate-only use is not a canonical output."
+      },
+      "output_exists": true,
+      "metrics": {},
+      "guard_errors": {},
+      "output_sha256": "ad0ca8213d3fba27f763f4209d4ef3aef8e4de406efff014c69bb18f18e55486",
+      "output_record_count": 1000,
+      "missing_native_record_count": 0,
+      "coverage": {
+        "field_present": {
+          "entity.abn": 623,
+          "entity.acn": 326,
+          "address.full": 1000
+        },
+        "field_nonempty": {
+          "entity.abn": 623,
+          "entity.acn": 326,
+          "address.full": 1000
+        },
+        "field_informative": {
+          "entity.abn": 623,
+          "entity.acn": 326,
+          "address.full": 1000
+        },
+        "scope": "Presence/coverage only; unknown is excluded from informative, never counted as a correct type."
+      },
+      "status": "complete_output",
+      "accuracy_status": "N/A_coverage_only",
+      "branches": {},
+      "abstention_checks": {},
+      "unscored_informative_emissions": {
+        "address.full": 1000,
+        "entity.abn": 623,
+        "entity.acn": 326
+      },
+      "mismatches": [],
+      "job_id": "candidate-real-qbcc-r2",
+      "arm": "candidate",
+      "repetition": 2,
+      "group": "qbcc_act"
+    },
+    {
+      "source_id": "real-suitable-operators",
+      "run": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run",
+      "workflow_onboarding": {
+        "candidate_status": "validated",
+        "gap": {
+          "fields": [
+            "entity.legal_name"
+          ],
+          "kind": "task_requirements_unresolved",
+          "reason": "The selected config is technically validated, but declared task fields remain unresolved."
+        },
+        "status": "partial",
+        "task_status": "partial",
+        "usage": {
+          "call_count": 11,
+          "cost_basis": "OpenRouter reported cost, not invoice",
+          "total_cost_usd": 0.0261241,
+          "total_tokens": 189573,
+          "wall_seconds": 86.30939608300105,
+          "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+        }
+      },
+      "workflow_extraction": {
+        "error_count": 0,
+        "execution_status": "complete",
+        "output_summary": {
+          "empty_canonical_record_count": 112,
+          "enveloped_record_count": 15100,
+          "informative_field_value_count": 60859,
+          "informative_record_count": 14988,
+          "limitation": "Emitted values are not a correctness score.",
+          "mapping_count": 6,
+          "selected_record_count": 15100,
+          "unknown_field_count": 0
+        },
+        "status": "partial",
+        "task_status": "partial"
+      },
+      "workflow_error": null,
+      "native_record_count": 15100,
+      "positive_opportunities": {
+        "entity.entity_type": 8184
+      },
+      "positive_branches": {
+        "Corporation (Company)": 8114,
+        "Incorporated Association": 70
+      },
+      "abstention_opportunities": {
+        "entity.entity_type": 6714,
+        "entity.legal_name": 15100
+      },
+      "configuration": {
+        "exists": true,
+        "path": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r2/run/artifacts/final-config.json",
+        "sha256": "a217edd0a7188329c9491ac7d5f47d892ce716d4b1c80db15318058c8af3fa61",
+        "mapped_targets": [
+          "address.locality",
+          "address.postcode",
+          "address.state",
+          "entity.abn",
+          "entity.acn",
+          "entity.entity_type"
+        ],
+        "mapping_count": 6,
+        "unmapped_fields": [
+          {
+            "reason": "Customer Name has no supported same-field evidence for entity.legal_name; the documentation describes only a business or individual name and individuals are present, so legal/registered role is not established.",
+            "source_field": "Customer Name"
+          },
+          {
+            "reason": "Registration Date has no same-field evidence that it is the entity.date_registered event; registration lifetime alone is insufficient and it is not treated as whole-observation validity.",
+            "source_field": "Registration Date"
+          },
+          {
+            "reason": "RSO Number is a register reference with no matching canonical ontology field in the assignment subset.",
+            "source_field": "RSO Number"
+          },
+          {
+            "reason": "Registration Status states a registration status that is not directly equivalent to the canonical active, deregistered, in_liquidation, suspended or unknown values without further evidence.",
+            "source_field": "Registration Status"
+          }
+        ],
+        "selected_tables": [
+          0
+        ],
+        "candidate_history": [
+          {
+            "candidate_id": "rso_ast_v1",
+            "config_hash": "a075fc654fffaaf0fbee6e1508f052935a040f1d6117c4bc50a7a92dce41dcc3",
+            "decision_turn": 0,
+            "targets": [
+              "address.locality",
+              "address.postcode",
+              "address.state",
+              "entity.abn",
+              "entity.acn",
+              "entity.date_registered",
+              "entity.entity_type",
+              "entity.legal_name"
+            ],
+            "probe_informative_targets": [],
+            "eligible": false,
+            "validation_status": "not_run"
+          },
+          {
+            "candidate_id": "rso_ast_v2",
+            "config_hash": "9eadb68e96ebfd67b7dbcc422874dcac43c1c8aa978c4e7d5b450d6037c5f099",
+            "decision_turn": 1,
+            "targets": [
+              "address.locality",
+              "address.postcode",
+              "address.state",
+              "entity.abn",
+              "entity.acn",
+              "entity.entity_type"
+            ],
+            "probe_informative_targets": [
+              "address.locality",
+              "address.postcode",
+              "address.state",
+              "entity.abn",
+              "entity.acn",
+              "entity.entity_type"
+            ],
+            "eligible": true,
+            "validation_status": "passed"
+          }
+        ],
+        "ever_proposed_targets": [
+          "address.locality",
+          "address.postcode",
+          "address.state",
+          "entity.abn",
+          "entity.acn",
+          "entity.date_registered",
+          "entity.entity_type",
+          "entity.legal_name"
+        ],
+        "ever_probe_informative_targets": [
+          "address.locality",
+          "address.postcode",
+          "address.state",
+          "entity.abn",
+          "entity.acn",
+          "entity.entity_type"
+        ],
+        "proposed_then_absent_from_final": [
+          "entity.date_registered",
+          "entity.legal_name"
+        ],
+        "probe_informative_then_absent_from_final": [],
+        "unmapped_limitation": "Model reasons and proposed targets are data, not source truth. Probe-informative is execution evidence, not semantic correctness. Rejected targets may correctly be removed. Predicate-only use is not a canonical output."
+      },
+      "output_exists": true,
+      "metrics": {
+        "entity.entity_type": {
+          "opportunities": 8184,
+          "correct": 8184,
+          "missed": 0,
+          "informative_emitted": 8184,
+          "wrong_emitted": 0,
+          "recall": 1.0,
+          "precision_within_labelled_opportunities": 1.0
+        }
+      },
+      "guard_errors": {},
+      "output_sha256": "86d71e524ff22f8a0049ac032bd96212d739a69f4727a10b4f54edacccd4c1d5",
+      "output_record_count": 15100,
+      "missing_native_record_count": 0,
+      "coverage": {
+        "field_present": {
+          "entity.acn": 7901,
+          "entity.entity_type": 8184,
+          "address.locality": 14825,
+          "address.postcode": 14825,
+          "address.state": 14825,
+          "entity.abn": 299
+        },
+        "field_nonempty": {
+          "entity.acn": 7901,
+          "entity.entity_type": 8184,
+          "address.locality": 14825,
+          "address.postcode": 14825,
+          "address.state": 14825,
+          "entity.abn": 299
+        },
+        "field_informative": {
+          "entity.acn": 7901,
+          "entity.entity_type": 8184,
+          "address.locality": 14825,
+          "address.postcode": 14825,
+          "address.state": 14825,
+          "entity.abn": 299
+        },
+        "scope": "Presence/coverage only; unknown is excluded from informative, never counted as a correct type."
+      },
+      "status": "complete_output",
+      "accuracy_status": "narrow_labels_only",
+      "branches": {
+        "entity.entity_type::Corporation (Company)": {
+          "opportunities": 8114,
+          "correct": 8114,
+          "missed": 0,
+          "informative_emitted": 8114,
+          "wrong_emitted": 0
+        },
+        "entity.entity_type::Incorporated Association": {
+          "opportunities": 70,
+          "correct": 70,
+          "missed": 0,
+          "informative_emitted": 70,
+          "wrong_emitted": 0
+        }
+      },
+      "abstention_checks": {
+        "entity.entity_type": {
+          "opportunities": 6714,
+          "unsupported_informative_emission": 0,
+          "observed_abstention": 6714,
+          "missing_record": 0
+        },
+        "entity.legal_name": {
+          "opportunities": 15100,
+          "unsupported_informative_emission": 0,
+          "observed_abstention": 15100,
+          "missing_record": 0
+        }
+      },
+      "unscored_informative_emissions": {
+        "address.locality": 14825,
+        "address.postcode": 14825,
+        "address.state": 14825,
+        "entity.acn": 7901,
+        "entity.abn": 299
+      },
+      "mismatches": [],
+      "job_id": "candidate-real-suitable-operators-r2",
+      "arm": "candidate",
+      "repetition": 2,
+      "group": "companies_sor"
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "run": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run",
+      "workflow_onboarding": {
+        "candidate_status": "validated",
+        "gap": {
+          "fields": [
+            "entity.legal_name"
+          ],
+          "kind": "task_requirements_unresolved",
+          "reason": "The selected config is technically validated, but declared task fields remain unresolved."
+        },
+        "status": "partial",
+        "task_status": "partial",
+        "usage": {
+          "call_count": 11,
+          "cost_basis": "OpenRouter reported cost, not invoice",
+          "total_cost_usd": 0.0249178,
+          "total_tokens": 196258,
+          "wall_seconds": 69.46022145901225,
+          "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+        }
+      },
+      "workflow_extraction": {
+        "error_count": 0,
+        "execution_status": "complete",
+        "output_summary": {
+          "empty_canonical_record_count": 241,
+          "enveloped_record_count": 1000,
+          "informative_field_value_count": 759,
+          "informative_record_count": 759,
+          "limitation": "Emitted values are not a correctness score.",
+          "mapping_count": 1,
+          "selected_record_count": 1000,
+          "unknown_field_count": 0
+        },
+        "status": "partial",
+        "task_status": "partial"
+      },
+      "workflow_error": null,
+      "native_record_count": 1000,
+      "positive_opportunities": {},
+      "positive_branches": {},
+      "abstention_opportunities": {},
+      "configuration": {
+        "exists": true,
+        "path": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r2/run/artifacts/final-config.json",
+        "sha256": "5edd6087fb4e4a779073f8b6eb56071f84e4a9d368edd74d9abd846cd404c8a8",
+        "mapped_targets": [
+          "entity.abn"
+        ],
+        "mapping_count": 1,
+        "unmapped_fields": [
+          {
+            "reason": "Generic counterparty name in a contracts register; the header does not establish the registered legal name, and values can embed trading-name wording such as 't/a', so no entity.legal_name mapping is supported.",
+            "source_field": "contractor_name"
+          },
+          {
+            "reason": "Free-text contract description; no ontology counterpart for contract descriptions.",
+            "source_field": "brief_description_of_contract"
+          },
+          {
+            "reason": "Confidentiality flag about the contract record; not an entity attribute in the ontology.",
+            "source_field": "confidential_text"
+          },
+          {
+            "reason": "Contract monetary amount; no ontology counterpart.",
+            "source_field": "contract_amount"
+          },
+          {
+            "reason": "Contract identifier; not an entity identifier in the ontology.",
+            "source_field": "contract_number"
+          },
+          {
+            "reason": "Contract title; no ontology counterpart.",
+            "source_field": "contract_title"
+          },
+          {
+            "reason": "Names the purchasing directorate or public authority, which is not the contractor subject; no ontology mapping for the contracting party.",
+            "source_field": "directorate_public_authority_territory_owned_corporation"
+          },
+          {
+            "reason": "Contract execution date describes a contract event, not a whole-observation validity or observed time for the entity.",
+            "source_field": "execution_date"
+          },
+          {
+            "reason": "Procurement exemption flag about the contract process; no ontology counterpart.",
+            "source_field": "exemption_from_quotation_and_tender_threshold_requirements"
+          },
+          {
+            "reason": "Contract expiry date describes a contract term, not whole-observation validity for the entity.",
+            "source_field": "expiry_date"
+          },
+          {
+            "reason": "GST treatment of the contract amount; no ontology counterpart.",
+            "source_field": "gst"
+          },
+          {
+            "reason": "Procurement category about goods or services; no ontology counterpart.",
+            "source_field": "infrastructure_or_goods_services"
+          },
+          {
+            "reason": "Internal source matrix number; no ontology counterpart.",
+            "source_field": "internal_matrix_number"
+          },
+          {
+            "reason": "Panel contract flag about the procurement arrangement; no ontology counterpart.",
+            "source_field": "panel_contract"
+          },
+          {
+            "reason": "Panel contract number; no ontology counterpart.",
+            "source_field": "panel_contract_number"
+          },
+          {
+            "reason": "Panel total amount; no ontology counterpart.",
+            "source_field": "panel_total_amount"
+          },
+          {
+            "reason": "Previous department or agency name refers to a public authority history, not the contractor entity; no ontology counterpart.",
+            "source_field": "previously_department_or_agency_prior_to_23_may_2011"
+          },
+          {
+            "reason": "Procurement methodology; no ontology counterpart.",
+            "source_field": "procurement_methodology"
+          },
+          {
+            "reason": "Procurement type; no ontology counterpart.",
+            "source_field": "procurement_type"
+          },
+          {
+            "reason": "SME flag about the contract; not an entity_type value and no source-defined crosswalk to the ontology enum.",
+            "source_field": "small_to_medium_enterprise_sme"
+          },
+          {
+            "reason": "Social procurement flag about the contract; no ontology counterpart.",
+            "source_field": "social_procurement"
+          },
+          {
+            "reason": "Source row identifier used for traceability only; not a canonical entity field.",
+            "source_field": "source_row_id"
+          },
+          {
+            "reason": "Tender number; no ontology counterpart.",
+            "source_field": "tender_number"
+          },
+          {
+            "reason": "UNSPSC classification of the procurement; not the ANZSIC industry_code ontology field and no crosswalk is supported.",
+            "source_field": "unspsc_classification"
+          },
+          {
+            "reason": "Pre-qualification flag about the selection process; no ontology counterpart.",
+            "source_field": "was_pre_qualification_requested_in_selection_documentation"
+          }
+        ],
+        "selected_tables": [
+          0
+        ],
+        "candidate_history": [
+          {
+            "candidate_id": "ast_abn_only_v2",
+            "config_hash": "da11fccc103b332e0b1c2e1595573d55ae21e45ea1bb9f0957fc6b0b9d86509d",
+            "decision_turn": 1,
+            "targets": [
+              "entity.abn"
+            ],
+            "probe_informative_targets": [
+              "entity.abn"
+            ],
+            "eligible": true,
+            "validation_status": "passed"
+          },
+          {
+            "candidate_id": "ast_abn_v1",
+            "config_hash": "c70cf784b471b579e6094af8173080b401f0f6eaa386cd10751a83eea7dd1a37",
+            "decision_turn": 0,
+            "targets": [
+              "entity.abn",
+              "entity.legal_name"
+            ],
+            "probe_informative_targets": [],
+            "eligible": false,
+            "validation_status": "not_run"
+          }
+        ],
+        "ever_proposed_targets": [
+          "entity.abn",
+          "entity.legal_name"
+        ],
+        "ever_probe_informative_targets": [
+          "entity.abn"
+        ],
+        "proposed_then_absent_from_final": [
+          "entity.legal_name"
+        ],
+        "probe_informative_then_absent_from_final": [],
+        "unmapped_limitation": "Model reasons and proposed targets are data, not source truth. Probe-informative is execution evidence, not semantic correctness. Rejected targets may correctly be removed. Predicate-only use is not a canonical output."
+      },
+      "output_exists": true,
+      "metrics": {},
+      "guard_errors": {},
+      "output_sha256": "6b7a77663932107dff6abdb0f6fc73000847c242fdc91b96eda2fcc35b3483e7",
+      "output_record_count": 1000,
+      "missing_native_record_count": 0,
+      "coverage": {
+        "field_present": {
+          "entity.abn": 759
+        },
+        "field_nonempty": {
+          "entity.abn": 759
+        },
+        "field_informative": {
+          "entity.abn": 759
+        },
+        "scope": "Presence/coverage only; unknown is excluded from informative, never counted as a correct type."
+      },
+      "status": "complete_output",
+      "accuracy_status": "N/A_coverage_only",
+      "branches": {},
+      "abstention_checks": {},
+      "unscored_informative_emissions": {
+        "entity.abn": 759
+      },
+      "mismatches": [],
+      "job_id": "candidate-real-act-contracts-historical-r2",
+      "arm": "candidate",
+      "repetition": 2,
+      "group": "qbcc_act"
+    },
+    {
+      "source_id": "real-asic-companies",
+      "run": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r3/run",
+      "workflow_onboarding": {
+        "candidate_status": "validated",
+        "gap": null,
+        "status": "complete",
+        "task_status": "complete",
+        "usage": {
+          "call_count": 12,
+          "cost_basis": "OpenRouter reported cost, not invoice",
+          "total_cost_usd": 0.041288,
+          "total_tokens": 304872,
+          "wall_seconds": 126.6576417920005,
+          "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+        }
+      },
+      "workflow_extraction": {
+        "error_count": 0,
+        "execution_status": "complete",
+        "output_summary": {
+          "empty_canonical_record_count": 0,
+          "enveloped_record_count": 389,
+          "informative_field_value_count": 1948,
+          "informative_record_count": 389,
+          "limitation": "Emitted values are not a correctness score.",
+          "mapping_count": 7,
+          "selected_record_count": 389,
+          "unknown_field_count": 0
+        },
+        "status": "complete",
+        "task_status": "complete"
+      },
+      "workflow_error": null,
+      "native_record_count": 389,
+      "positive_opportunities": {
+        "entity.legal_name": 389
+      },
+      "positive_branches": {
+        "current_companion": 154,
+        "printed_current": 235
+      },
+      "abstention_opportunities": {},
+      "configuration": {
+        "exists": true,
+        "path": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-companies-r3/run/artifacts/final-config.json",
+        "sha256": "ebd935288830ee221d84cb5b213531784218d32d4b0177a1d6fd60736a41f12a",
+        "mapped_targets": [
+          "entity.abn",
+          "entity.acn",
+          "entity.date_registered",
+          "entity.entity_type",
+          "entity.legal_name",
+          "entity.status"
+        ],
+        "mapping_count": 7,
+        "unmapped_fields": [
+          {
+            "reason": "Class is a company class code with no canonical ontology target in the assignment subset.",
+            "source_field": "Class"
+          },
+          {
+            "reason": "Sub Class is a company sub-class code with no canonical ontology target in the assignment subset.",
+            "source_field": "Sub Class"
+          },
+          {
+            "reason": "Current Name Indicator is a condition flag used only to select between the two legal_name mappings; it has no separate canonical target.",
+            "source_field": "Current Name Indicator"
+          },
+          {
+            "reason": "Current Name Start Date is a historical name lifetime field and does not establish whole-observation validity.",
+            "source_field": "Current Name Start Date"
+          },
+          {
+            "reason": "Date of Deregistration is a lifecycle date with no supported canonical date target; it does not establish whole-observation validity.",
+            "source_field": "Date of Deregistration"
+          },
+          {
+            "reason": "Modified since last report is a dataset change flag with no canonical target.",
+            "source_field": "Modified since last report"
+          },
+          {
+            "reason": "Previous State of Registration is the original state of registration, not the business address state, so it is not address.state.",
+            "source_field": "Previous State of Registration"
+          },
+          {
+            "reason": "State Registration number is a state-issued registration number with no canonical ontology target.",
+            "source_field": "State Registration number"
+          },
+          {
+            "reason": "_id is a native record identifier and not a business claim.",
+            "source_field": "_id"
+          }
+        ],
+        "selected_tables": [
+          0
+        ],
+        "candidate_history": [
+          {
+            "candidate_id": "ast_abn_acn_name_v1",
+            "config_hash": "320dfc6642efd7e6796e3b5f9f8a1699558449d2c2500658bda53efa9afb9096",
+            "decision_turn": 0,
+            "targets": [
+              "entity.abn",
+              "entity.acn",
+              "entity.date_registered",
+              "entity.entity_type",
+              "entity.legal_name",
+              "entity.status"
+            ],
+            "probe_informative_targets": [],
+            "eligible": false,
+            "validation_status": "not_run"
+          },
+          {
+            "candidate_id": "ast_abn_acn_name_v2",
+            "config_hash": "f5b45085155a0d844900d36007d733c9d6b453d0cb988f9a90303cc20f0e5481",
+            "decision_turn": 1,
+            "targets": [
+              "entity.abn",
+              "entity.acn",
+              "entity.date_registered",
+              "entity.entity_type",
+              "entity.legal_name",
+              "entity.status"
+            ],
+            "probe_informative_targets": [
+              "entity.abn",
+              "entity.acn",
+              "entity.date_registered",
+              "entity.entity_type",
+              "entity.legal_name"
+            ],
+            "eligible": true,
+            "validation_status": "passed"
+          }
+        ],
+        "ever_proposed_targets": [
+          "entity.abn",
+          "entity.acn",
+          "entity.date_registered",
+          "entity.entity_type",
+          "entity.legal_name",
+          "entity.status"
+        ],
+        "ever_probe_informative_targets": [
+          "entity.abn",
+          "entity.acn",
+          "entity.date_registered",
+          "entity.entity_type",
+          "entity.legal_name"
+        ],
+        "proposed_then_absent_from_final": [],
+        "probe_informative_then_absent_from_final": [],
+        "unmapped_limitation": "Model reasons and proposed targets are data, not source truth. Probe-informative is execution evidence, not semantic correctness. Rejected targets may correctly be removed. Predicate-only use is not a canonical output."
+      },
+      "output_exists": true,
+      "metrics": {
+        "entity.legal_name": {
+          "opportunities": 389,
+          "correct": 389,
+          "missed": 0,
+          "informative_emitted": 389,
+          "wrong_emitted": 0,
+          "recall": 1.0,
+          "precision_within_labelled_opportunities": 1.0
+        }
+      },
+      "guard_errors": {},
+      "output_sha256": "48c2382a7b1ae597f390f786474b71a13e5691d11a8a7189dc78938d9bded9ba",
+      "output_record_count": 389,
+      "missing_native_record_count": 0,
+      "coverage": {
+        "field_present": {
+          "entity.abn": 389,
+          "entity.acn": 389,
+          "entity.date_registered": 389,
+          "entity.entity_type": 389,
+          "entity.legal_name": 389,
+          "entity.status": 3
+        },
+        "field_nonempty": {
+          "entity.abn": 389,
+          "entity.acn": 389,
+          "entity.date_registered": 389,
+          "entity.entity_type": 389,
+          "entity.legal_name": 389,
+          "entity.status": 3
+        },
+        "field_informative": {
+          "entity.abn": 389,
+          "entity.acn": 389,
+          "entity.date_registered": 389,
+          "entity.entity_type": 389,
+          "entity.legal_name": 389,
+          "entity.status": 3
+        },
+        "scope": "Presence/coverage only; unknown is excluded from informative, never counted as a correct type."
+      },
+      "status": "complete_output",
+      "accuracy_status": "narrow_labels_only",
+      "branches": {
+        "entity.legal_name::printed_current": {
+          "opportunities": 235,
+          "correct": 235,
+          "missed": 0,
+          "informative_emitted": 235,
+          "wrong_emitted": 0
+        },
+        "entity.legal_name::current_companion": {
+          "opportunities": 154,
+          "correct": 154,
+          "missed": 0,
+          "informative_emitted": 154,
+          "wrong_emitted": 0
+        }
+      },
+      "abstention_checks": {},
+      "unscored_informative_emissions": {
+        "entity.abn": 389,
+        "entity.acn": 389,
+        "entity.date_registered": 389,
+        "entity.entity_type": 389,
+        "entity.status": 3
+      },
+      "mismatches": [],
+      "job_id": "candidate-real-asic-companies-r3",
+      "arm": "candidate",
+      "repetition": 3,
+      "group": "companies_sor"
+    },
+    {
+      "source_id": "real-asic-business-names",
+      "run": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r3/run",
+      "workflow_onboarding": {
+        "candidate_status": "validated",
+        "gap": null,
+        "status": "complete",
+        "task_status": "complete",
+        "usage": {
+          "call_count": 12,
+          "cost_basis": "OpenRouter reported cost, not invoice",
+          "total_cost_usd": 0.0330469,
+          "total_tokens": 247141,
+          "wall_seconds": 105.20441483298782,
+          "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+        }
+      },
+      "workflow_extraction": {
+        "error_count": 0,
+        "execution_status": "complete",
+        "output_summary": {
+          "empty_canonical_record_count": 112,
+          "enveloped_record_count": 1000,
+          "informative_field_value_count": 1690,
+          "informative_record_count": 888,
+          "limitation": "Emitted values are not a correctness score.",
+          "mapping_count": 2,
+          "selected_record_count": 1000,
+          "unknown_field_count": 0
+        },
+        "status": "complete",
+        "task_status": "complete"
+      },
+      "workflow_error": null,
+      "native_record_count": 1000,
+      "positive_opportunities": {
+        "entity.trading_name": 888
+      },
+      "positive_branches": {
+        "Registered": 888
+      },
+      "abstention_opportunities": {},
+      "configuration": {
+        "exists": true,
+        "path": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-asic-business-names-r3/run/artifacts/final-config.json",
+        "sha256": "48f914c839aa0b291770ef756becee80d6418078cd6cd81de5196aa507689eef",
+        "mapped_targets": [
+          "entity.abn",
+          "entity.trading_name"
+        ],
+        "mapping_count": 2,
+        "unmapped_fields": [
+          {
+            "reason": "REGISTER_NAME is the name of the register, a constant register label with no ontology counterpart.",
+            "source_field": "REGISTER_NAME"
+          },
+          {
+            "reason": "BN_REG_DT is the date the business name started, which describes the business name registration rather than the entity subject's date_registered, so no mapping is proposed.",
+            "source_field": "BN_REG_DT"
+          },
+          {
+            "reason": "BN_STATE_NUM is a former state number from a previous business names regulator with no ontology counterpart.",
+            "source_field": "BN_STATE_NUM"
+          },
+          {
+            "reason": "BN_STATE_OF_REG is the state of registration with the previous business names regulator, not the business address state, so no address.state mapping is supported.",
+            "source_field": "BN_STATE_OF_REG"
+          }
+        ],
+        "selected_tables": [
+          0
+        ],
+        "candidate_history": [
+          {
+            "candidate_id": "ast_business_names_v1",
+            "config_hash": "9ac53f244ee83de4de5eea033cf73880d3cf16560cc7a309a8be158fd5aa37e6",
+            "decision_turn": 0,
+            "targets": [
+              "entity.abn",
+              "entity.trading_name"
+            ],
+            "probe_informative_targets": [],
+            "eligible": false,
+            "validation_status": "not_run"
+          },
+          {
+            "candidate_id": "ast_business_names_v2",
+            "config_hash": "7b9a2645c8d5389630523f15c165f467c5d7d0794a1cd6a57469cdfe671ffabd",
+            "decision_turn": 1,
+            "targets": [
+              "entity.abn",
+              "entity.trading_name"
+            ],
+            "probe_informative_targets": [
+              "entity.abn",
+              "entity.trading_name"
+            ],
+            "eligible": true,
+            "validation_status": "passed"
+          }
+        ],
+        "ever_proposed_targets": [
+          "entity.abn",
+          "entity.trading_name"
+        ],
+        "ever_probe_informative_targets": [
+          "entity.abn",
+          "entity.trading_name"
+        ],
+        "proposed_then_absent_from_final": [],
+        "probe_informative_then_absent_from_final": [],
+        "unmapped_limitation": "Model reasons and proposed targets are data, not source truth. Probe-informative is execution evidence, not semantic correctness. Rejected targets may correctly be removed. Predicate-only use is not a canonical output."
+      },
+      "output_exists": true,
+      "metrics": {
+        "entity.trading_name": {
+          "opportunities": 888,
+          "correct": 888,
+          "missed": 0,
+          "informative_emitted": 888,
+          "wrong_emitted": 0,
+          "recall": 1.0,
+          "precision_within_labelled_opportunities": 1.0
+        }
+      },
+      "guard_errors": {},
+      "output_sha256": "3f9fd0819303b48dd38ed5a8da263d5c5233b742030fae52cd7beb0683cb46a3",
+      "output_record_count": 1000,
+      "missing_native_record_count": 0,
+      "coverage": {
+        "field_present": {
+          "entity.abn": 802,
+          "entity.trading_name": 888
+        },
+        "field_nonempty": {
+          "entity.abn": 802,
+          "entity.trading_name": 888
+        },
+        "field_informative": {
+          "entity.abn": 802,
+          "entity.trading_name": 888
+        },
+        "scope": "Presence/coverage only; unknown is excluded from informative, never counted as a correct type."
+      },
+      "status": "complete_output",
+      "accuracy_status": "narrow_labels_only",
+      "branches": {
+        "entity.trading_name::Registered": {
+          "opportunities": 888,
+          "correct": 888,
+          "missed": 0,
+          "informative_emitted": 888,
+          "wrong_emitted": 0
+        }
+      },
+      "abstention_checks": {},
+      "unscored_informative_emissions": {
+        "entity.abn": 802
+      },
+      "mismatches": [],
+      "job_id": "candidate-real-asic-business-names-r3",
+      "arm": "candidate",
+      "repetition": 3,
+      "group": "business_ato"
+    },
+    {
+      "source_id": "real-ato-corporate-tax",
+      "run": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r3/run",
+      "workflow_onboarding": {
+        "candidate_status": "validated",
+        "gap": {
+          "fields": [
+            "entity.legal_name"
+          ],
+          "kind": "task_requirements_unresolved",
+          "reason": "The selected config is technically validated, but declared task fields remain unresolved."
+        },
+        "status": "partial",
+        "task_status": "partial",
+        "usage": {
+          "call_count": 13,
+          "cost_basis": "OpenRouter reported cost, not invoice",
+          "total_cost_usd": 0.0229424,
+          "total_tokens": 188008,
+          "wall_seconds": 65.38795425000717,
+          "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+        }
+      },
+      "workflow_extraction": {
+        "error_count": 0,
+        "execution_status": "complete",
+        "output_summary": {
+          "empty_canonical_record_count": 36,
+          "enveloped_record_count": 4436,
+          "informative_field_value_count": 4400,
+          "informative_record_count": 4400,
+          "limitation": "Emitted values are not a correctness score.",
+          "mapping_count": 1,
+          "selected_record_count": 4436,
+          "unknown_field_count": 0
+        },
+        "status": "partial",
+        "task_status": "partial"
+      },
+      "workflow_error": null,
+      "native_record_count": 4436,
+      "positive_opportunities": {},
+      "positive_branches": {},
+      "abstention_opportunities": {},
+      "configuration": {
+        "exists": true,
+        "path": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-ato-corporate-tax-r3/run/artifacts/final-config.json",
+        "sha256": "182fb39fc382de009832c4b21fed2f813ff77fd4eb70e21c6dcc7d5e49bef89d",
+        "mapped_targets": [
+          "entity.abn"
+        ],
+        "mapping_count": 1,
+        "unmapped_fields": [
+          {
+            "reason": "The Name header is generic ('the name' in the source documentation) and states no registered or legal role, so it cannot support entity.legal_name. The required entity.legal_name requirement remains unresolved and no name value is emitted for it.",
+            "source_field": "Name"
+          },
+          {
+            "reason": "Income year is a tax-period label for the reported figures, not a validity or observation time for a canonical field, so no canonical target is supported.",
+            "source_field": "Income year"
+          },
+          {
+            "reason": "Tax payable $ is a financial amount with no canonical income or tax field in the assignment ontology subset.",
+            "source_field": "Tax payable $"
+          },
+          {
+            "reason": "Taxable income $ is a financial amount with no canonical income or tax field in the assignment ontology subset.",
+            "source_field": "Taxable income $"
+          },
+          {
+            "reason": "Total income $ is a financial amount with no canonical income or tax field in the assignment ontology subset.",
+            "source_field": "Total income $"
+          },
+          {
+            "reason": "PRRT Payable $ is a petroleum resource rent tax amount with no canonical field in the assignment ontology subset.",
+            "source_field": "PRRT Payable $"
+          }
+        ],
+        "selected_tables": [
+          1,
+          2
+        ],
+        "candidate_history": [
+          {
+            "candidate_id": "ato-abn-name-v1",
+            "config_hash": "5d26aae417071cfa4dec81c120bac463d94056d0703e68368f35357e8912b7f6",
+            "decision_turn": 0,
+            "targets": [
+              "entity.abn",
+              "entity.legal_name"
+            ],
+            "probe_informative_targets": [],
+            "eligible": false,
+            "validation_status": "not_run"
+          },
+          {
+            "candidate_id": "ato-abn-only-v2",
+            "config_hash": "25e5ba596659c8cea3bc5dc6083473067e38dbeda7b019867e364d8d01c7a7bf",
+            "decision_turn": 2,
+            "targets": [
+              "entity.abn"
+            ],
+            "probe_informative_targets": [
+              "entity.abn"
+            ],
+            "eligible": true,
+            "validation_status": "passed"
+          }
+        ],
+        "ever_proposed_targets": [
+          "entity.abn",
+          "entity.legal_name"
+        ],
+        "ever_probe_informative_targets": [
+          "entity.abn"
+        ],
+        "proposed_then_absent_from_final": [
+          "entity.legal_name"
+        ],
+        "probe_informative_then_absent_from_final": [],
+        "unmapped_limitation": "Model reasons and proposed targets are data, not source truth. Probe-informative is execution evidence, not semantic correctness. Rejected targets may correctly be removed. Predicate-only use is not a canonical output."
+      },
+      "output_exists": true,
+      "metrics": {},
+      "guard_errors": {},
+      "output_sha256": "1989580b8c5f97d5cdfbabf81ea92d6d3c2212de39ccd154f4641e157a3b4b25",
+      "output_record_count": 4436,
+      "missing_native_record_count": 0,
+      "coverage": {
+        "field_present": {
+          "entity.abn": 4400
+        },
+        "field_nonempty": {
+          "entity.abn": 4400
+        },
+        "field_informative": {
+          "entity.abn": 4400
+        },
+        "scope": "Presence/coverage only; unknown is excluded from informative, never counted as a correct type."
+      },
+      "status": "complete_output",
+      "accuracy_status": "N/A_coverage_only",
+      "branches": {},
+      "abstention_checks": {},
+      "unscored_informative_emissions": {
+        "entity.abn": 4400
+      },
+      "mismatches": [],
+      "job_id": "candidate-real-ato-corporate-tax-r3",
+      "arm": "candidate",
+      "repetition": 3,
+      "group": "business_ato"
+    },
+    {
+      "source_id": "real-qbcc",
+      "run": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r3/run",
+      "workflow_onboarding": {
+        "candidate_status": "validated",
+        "gap": {
+          "fields": [
+            "entity.legal_name"
+          ],
+          "kind": "task_requirements_unresolved",
+          "reason": "The selected config is technically validated, but declared task fields remain unresolved."
+        },
+        "status": "partial",
+        "task_status": "partial",
+        "usage": {
+          "call_count": 11,
+          "cost_basis": "OpenRouter reported cost, not invoice",
+          "total_cost_usd": 0.025813,
+          "total_tokens": 187494,
+          "wall_seconds": 91.17356491700048,
+          "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+        }
+      },
+      "workflow_extraction": {
+        "error_count": 0,
+        "execution_status": "complete",
+        "output_summary": {
+          "empty_canonical_record_count": 0,
+          "enveloped_record_count": 1000,
+          "informative_field_value_count": 1949,
+          "informative_record_count": 1000,
+          "limitation": "Emitted values are not a correctness score.",
+          "mapping_count": 3,
+          "selected_record_count": 1000,
+          "unknown_field_count": 0
+        },
+        "status": "partial",
+        "task_status": "partial"
+      },
+      "workflow_error": null,
+      "native_record_count": 1000,
+      "positive_opportunities": {},
+      "positive_branches": {},
+      "abstention_opportunities": {},
+      "configuration": {
+        "exists": true,
+        "path": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-qbcc-r3/run/artifacts/final-config.json",
+        "sha256": "bb58c907413b870c4b1eeff7942fd160170effe76dd3f804f27c3a2af931d125",
+        "mapped_targets": [
+          "address.full",
+          "entity.abn",
+          "entity.acn"
+        ],
+        "mapping_count": 3,
+        "unmapped_fields": [
+          {
+            "reason": "Licensee Name is documented only as the name of the licensee; no source evidence establishes it as the registered or legal name of a business entity, and individual licensee rows hold personal names, so entity.legal_name remains unresolved.",
+            "source_field": "Licensee Name"
+          },
+          {
+            "reason": "Internal row identifier with no ontology counterpart; it is a native key, not a business claim.",
+            "source_field": "id"
+          },
+          {
+            "reason": "Licence number is a QBCC licence identifier, not an ABN or ACN and has no canonical ontology field.",
+            "source_field": "Licence Number"
+          },
+          {
+            "reason": "Licence type description has no supported canonical entity_type crosswalk; 'Individual' does not establish sole_trader without a source-defined mapping.",
+            "source_field": "Licence Type DESC"
+          },
+          {
+            "reason": "Licence type code is an opaque code without a source-defined crosswalk to a canonical entity_type.",
+            "source_field": "Licence Type CODE"
+          },
+          {
+            "reason": "Financial category is a regulatory classification with no canonical ontology counterpart.",
+            "source_field": "Financial Category DESC"
+          },
+          {
+            "reason": "Financial category code is an opaque code with no canonical ontology counterpart.",
+            "source_field": "Financial Category CODE"
+          },
+          {
+            "reason": "Licence grade is a licensing classification with no canonical ontology counterpart.",
+            "source_field": "Licence Grade"
+          },
+          {
+            "reason": "Licence class type describes the licensed trade class, with no canonical ontology counterpart.",
+            "source_field": "Licence Class Type"
+          }
+        ],
+        "selected_tables": [
+          0
+        ],
+        "candidate_history": [
+          {
+            "candidate_id": "ast-qbcc-core-1",
+            "config_hash": "a8b11c2e3073ca0ec5ed662d7d2db0546ff2cc7788cf9eff77ae824de6134284",
+            "decision_turn": 0,
+            "targets": [
+              "address.full",
+              "entity.abn",
+              "entity.acn",
+              "entity.legal_name"
+            ],
+            "probe_informative_targets": [],
+            "eligible": false,
+            "validation_status": "not_run"
+          },
+          {
+            "candidate_id": "ast-qbcc-core-2",
+            "config_hash": "93904f4fce077cdb6f4cba42989871c2aa1a21c91c6db4eb246fd312da9a7147",
+            "decision_turn": 1,
+            "targets": [
+              "address.full",
+              "entity.abn",
+              "entity.acn"
+            ],
+            "probe_informative_targets": [
+              "address.full",
+              "entity.abn",
+              "entity.acn"
+            ],
+            "eligible": true,
+            "validation_status": "passed"
+          }
+        ],
+        "ever_proposed_targets": [
+          "address.full",
+          "entity.abn",
+          "entity.acn",
+          "entity.legal_name"
+        ],
+        "ever_probe_informative_targets": [
+          "address.full",
+          "entity.abn",
+          "entity.acn"
+        ],
+        "proposed_then_absent_from_final": [
+          "entity.legal_name"
+        ],
+        "probe_informative_then_absent_from_final": [],
+        "unmapped_limitation": "Model reasons and proposed targets are data, not source truth. Probe-informative is execution evidence, not semantic correctness. Rejected targets may correctly be removed. Predicate-only use is not a canonical output."
+      },
+      "output_exists": true,
+      "metrics": {},
+      "guard_errors": {},
+      "output_sha256": "c8a2f10c237c5cf0d8da54a948279e49fd103bca0b21b195c31f6f568c0d3b79",
+      "output_record_count": 1000,
+      "missing_native_record_count": 0,
+      "coverage": {
+        "field_present": {
+          "entity.abn": 623,
+          "entity.acn": 326,
+          "address.full": 1000
+        },
+        "field_nonempty": {
+          "entity.abn": 623,
+          "entity.acn": 326,
+          "address.full": 1000
+        },
+        "field_informative": {
+          "entity.abn": 623,
+          "entity.acn": 326,
+          "address.full": 1000
+        },
+        "scope": "Presence/coverage only; unknown is excluded from informative, never counted as a correct type."
+      },
+      "status": "complete_output",
+      "accuracy_status": "N/A_coverage_only",
+      "branches": {},
+      "abstention_checks": {},
+      "unscored_informative_emissions": {
+        "address.full": 1000,
+        "entity.abn": 623,
+        "entity.acn": 326
+      },
+      "mismatches": [],
+      "job_id": "candidate-real-qbcc-r3",
+      "arm": "candidate",
+      "repetition": 3,
+      "group": "qbcc_act"
+    },
+    {
+      "source_id": "real-suitable-operators",
+      "run": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r3/run",
+      "workflow_onboarding": {
+        "candidate_status": "validated",
+        "gap": {
+          "fields": [
+            "entity.legal_name"
+          ],
+          "kind": "task_requirements_unresolved",
+          "reason": "The selected config is technically validated, but declared task fields remain unresolved."
+        },
+        "status": "partial",
+        "task_status": "partial",
+        "usage": {
+          "call_count": 11,
+          "cost_basis": "OpenRouter reported cost, not invoice",
+          "total_cost_usd": 0.0243466,
+          "total_tokens": 174410,
+          "wall_seconds": 90.43921537499409,
+          "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+        }
+      },
+      "workflow_extraction": {
+        "error_count": 0,
+        "execution_status": "complete",
+        "output_summary": {
+          "empty_canonical_record_count": 112,
+          "enveloped_record_count": 15100,
+          "informative_field_value_count": 60859,
+          "informative_record_count": 14988,
+          "limitation": "Emitted values are not a correctness score.",
+          "mapping_count": 6,
+          "selected_record_count": 15100,
+          "unknown_field_count": 0
+        },
+        "status": "partial",
+        "task_status": "partial"
+      },
+      "workflow_error": null,
+      "native_record_count": 15100,
+      "positive_opportunities": {
+        "entity.entity_type": 8184
+      },
+      "positive_branches": {
+        "Corporation (Company)": 8114,
+        "Incorporated Association": 70
+      },
+      "abstention_opportunities": {
+        "entity.entity_type": 6714,
+        "entity.legal_name": 15100
+      },
+      "configuration": {
+        "exists": true,
+        "path": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-suitable-operators-r3/run/artifacts/final-config.json",
+        "sha256": "92aa101fc303f91cb002817b999a57a89f8e3896a93c27deb715ed66b8f31c8c",
+        "mapped_targets": [
+          "address.locality",
+          "address.postcode",
+          "address.state",
+          "entity.abn",
+          "entity.acn",
+          "entity.entity_type"
+        ],
+        "mapping_count": 6,
+        "unmapped_fields": [
+          {
+            "reason": "Customer Name is documented as the business or individual name, but the source does not establish it as the registered or legal name, so no entity.legal_name claim is supported.",
+            "source_field": "Customer Name"
+          },
+          {
+            "reason": "Registration Date is an object registration date; no same-field evidence establishes it as entity.date_registered, so it is not mapped.",
+            "source_field": "Registration Date"
+          },
+          {
+            "reason": "RSO Number is the register reference number, which has no ontology counterpart in the assignment subset.",
+            "source_field": "RSO Number"
+          },
+          {
+            "reason": "Registration Status states Registered, which has no documented equivalence to a canonical entity.status value without a status crosswalk, so it is not mapped.",
+            "source_field": "Registration Status"
+          }
+        ],
+        "selected_tables": [
+          0
+        ],
+        "candidate_history": [
+          {
+            "candidate_id": "ast_typed_ids_v1",
+            "config_hash": "5e8593f987c115a2724e2156b65b056d8206bfa978945a5353c974d4c08e3b5b",
+            "decision_turn": 0,
+            "targets": [
+              "address.locality",
+              "address.postcode",
+              "address.state",
+              "entity.abn",
+              "entity.acn",
+              "entity.date_registered",
+              "entity.entity_type",
+              "entity.legal_name"
+            ],
+            "probe_informative_targets": [],
+            "eligible": false,
+            "validation_status": "not_run"
+          },
+          {
+            "candidate_id": "ast_typed_ids_v2",
+            "config_hash": "1a9ca2fa15edb2edfe839209be71d6d75375b3ea36791bb42f96c37ca2fce193",
+            "decision_turn": 1,
+            "targets": [
+              "address.locality",
+              "address.postcode",
+              "address.state",
+              "entity.abn",
+              "entity.acn",
+              "entity.entity_type"
+            ],
+            "probe_informative_targets": [
+              "address.locality",
+              "address.postcode",
+              "address.state",
+              "entity.abn",
+              "entity.acn",
+              "entity.entity_type"
+            ],
+            "eligible": true,
+            "validation_status": "passed"
+          }
+        ],
+        "ever_proposed_targets": [
+          "address.locality",
+          "address.postcode",
+          "address.state",
+          "entity.abn",
+          "entity.acn",
+          "entity.date_registered",
+          "entity.entity_type",
+          "entity.legal_name"
+        ],
+        "ever_probe_informative_targets": [
+          "address.locality",
+          "address.postcode",
+          "address.state",
+          "entity.abn",
+          "entity.acn",
+          "entity.entity_type"
+        ],
+        "proposed_then_absent_from_final": [
+          "entity.date_registered",
+          "entity.legal_name"
+        ],
+        "probe_informative_then_absent_from_final": [],
+        "unmapped_limitation": "Model reasons and proposed targets are data, not source truth. Probe-informative is execution evidence, not semantic correctness. Rejected targets may correctly be removed. Predicate-only use is not a canonical output."
+      },
+      "output_exists": true,
+      "metrics": {
+        "entity.entity_type": {
+          "opportunities": 8184,
+          "correct": 8184,
+          "missed": 0,
+          "informative_emitted": 8184,
+          "wrong_emitted": 0,
+          "recall": 1.0,
+          "precision_within_labelled_opportunities": 1.0
+        }
+      },
+      "guard_errors": {},
+      "output_sha256": "f0d49800e53f8a0b36608706fb7cebd3cb080ef6bb95363939ff82d9bb86778e",
+      "output_record_count": 15100,
+      "missing_native_record_count": 0,
+      "coverage": {
+        "field_present": {
+          "entity.acn": 7901,
+          "entity.entity_type": 8184,
+          "address.locality": 14825,
+          "address.postcode": 14825,
+          "address.state": 14825,
+          "entity.abn": 299
+        },
+        "field_nonempty": {
+          "entity.acn": 7901,
+          "entity.entity_type": 8184,
+          "address.locality": 14825,
+          "address.postcode": 14825,
+          "address.state": 14825,
+          "entity.abn": 299
+        },
+        "field_informative": {
+          "entity.acn": 7901,
+          "entity.entity_type": 8184,
+          "address.locality": 14825,
+          "address.postcode": 14825,
+          "address.state": 14825,
+          "entity.abn": 299
+        },
+        "scope": "Presence/coverage only; unknown is excluded from informative, never counted as a correct type."
+      },
+      "status": "complete_output",
+      "accuracy_status": "narrow_labels_only",
+      "branches": {
+        "entity.entity_type::Corporation (Company)": {
+          "opportunities": 8114,
+          "correct": 8114,
+          "missed": 0,
+          "informative_emitted": 8114,
+          "wrong_emitted": 0
+        },
+        "entity.entity_type::Incorporated Association": {
+          "opportunities": 70,
+          "correct": 70,
+          "missed": 0,
+          "informative_emitted": 70,
+          "wrong_emitted": 0
+        }
+      },
+      "abstention_checks": {
+        "entity.entity_type": {
+          "opportunities": 6714,
+          "unsupported_informative_emission": 0,
+          "observed_abstention": 6714,
+          "missing_record": 0
+        },
+        "entity.legal_name": {
+          "opportunities": 15100,
+          "unsupported_informative_emission": 0,
+          "observed_abstention": 15100,
+          "missing_record": 0
+        }
+      },
+      "unscored_informative_emissions": {
+        "address.locality": 14825,
+        "address.postcode": 14825,
+        "address.state": 14825,
+        "entity.acn": 7901,
+        "entity.abn": 299
+      },
+      "mismatches": [],
+      "job_id": "candidate-real-suitable-operators-r3",
+      "arm": "candidate",
+      "repetition": 3,
+      "group": "companies_sor"
+    },
+    {
+      "source_id": "real-act-contracts-historical",
+      "run": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r3/run",
+      "workflow_onboarding": {
+        "candidate_status": "validated",
+        "gap": {
+          "fields": [
+            "entity.legal_name"
+          ],
+          "kind": "task_requirements_unresolved",
+          "reason": "The selected config is technically validated, but declared task fields remain unresolved."
+        },
+        "status": "partial",
+        "task_status": "partial",
+        "usage": {
+          "call_count": 11,
+          "cost_basis": "OpenRouter reported cost, not invoice",
+          "total_cost_usd": 0.0241368,
+          "total_tokens": 194380,
+          "wall_seconds": 62.62191937500029,
+          "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+        }
+      },
+      "workflow_extraction": {
+        "error_count": 0,
+        "execution_status": "complete",
+        "output_summary": {
+          "empty_canonical_record_count": 241,
+          "enveloped_record_count": 1000,
+          "informative_field_value_count": 759,
+          "informative_record_count": 759,
+          "limitation": "Emitted values are not a correctness score.",
+          "mapping_count": 1,
+          "selected_record_count": 1000,
+          "unknown_field_count": 0
+        },
+        "status": "partial",
+        "task_status": "partial"
+      },
+      "workflow_error": null,
+      "native_record_count": 1000,
+      "positive_opportunities": {},
+      "positive_branches": {},
+      "abstention_opportunities": {},
+      "configuration": {
+        "exists": true,
+        "path": "/Users/zhegoalice.ai/Desktop/personal/output/firmable-general-fix-evaluation-20261014/final-evaluation/runs/candidate/real-act-contracts-historical-r3/run/artifacts/final-config.json",
+        "sha256": "ca46c2bebb99b63d722806c25fbb63f10d1d0e26314cc57da18c0caaa51ca0fc",
+        "mapped_targets": [
+          "entity.abn"
+        ],
+        "mapping_count": 1,
+        "unmapped_fields": [
+          {
+            "reason": "Generic contractor name in a historical contracts register; the source does not establish a registered legal name role or a current name role, so entity.legal_name is unsupported.",
+            "source_field": "contractor_name"
+          },
+          {
+            "reason": "Free-text contract description; no ontology entity or address field matches it.",
+            "source_field": "brief_description_of_contract"
+          },
+          {
+            "reason": "Confidentiality flag about the contract record, not an attribute of the business entity.",
+            "source_field": "confidential_text"
+          },
+          {
+            "reason": "Contract monetary amount describes a transaction, not an entity canonical field.",
+            "source_field": "contract_amount"
+          },
+          {
+            "reason": "Contract identifier for a transaction, not an entity identifier such as ABN or ACN.",
+            "source_field": "contract_number"
+          },
+          {
+            "reason": "Contract title describes the procurement, not the legal name of the business subject.",
+            "source_field": "contract_title"
+          },
+          {
+            "reason": "Names the purchasing government directorate, which is a different subject from the contractor business.",
+            "source_field": "directorate_public_authority_territory_owned_corporation"
+          },
+          {
+            "reason": "Contract execution date is an event date for the contract, not date_registered or a whole-observation validity claim.",
+            "source_field": "execution_date"
+          },
+          {
+            "reason": "Procurement exemption flag about the contract process, not an entity attribute.",
+            "source_field": "exemption_from_quotation_and_tender_threshold_requirements"
+          },
+          {
+            "reason": "Contract expiry date is a contract lifetime value, not entity status or whole-observation validity.",
+            "source_field": "expiry_date"
+          },
+          {
+            "reason": "GST treatment of the contract amount, not an entity attribute.",
+            "source_field": "gst"
+          },
+          {
+            "reason": "Procurement classification for the contract, not an entity industry_code (ANZSIC) value.",
+            "source_field": "infrastructure_or_goods_services"
+          },
+          {
+            "reason": "Internal government matrix number with no canonical counterpart.",
+            "source_field": "internal_matrix_number"
+          },
+          {
+            "reason": "Panel contract flag describes the procurement arrangement, not the entity.",
+            "source_field": "panel_contract"
+          },
+          {
+            "reason": "Panel contract number identifies a procurement arrangement, not the business entity.",
+            "source_field": "panel_contract_number"
+          },
+          {
+            "reason": "Panel total amount is a contract value, not an entity attribute.",
+            "source_field": "panel_total_amount"
+          },
+          {
+            "reason": "Names a prior government agency for the contract, a different subject from the contractor business.",
+            "source_field": "previously_department_or_agency_prior_to_23_may_2011"
+          },
+          {
+            "reason": "Procurement method for the contract, not an entity attribute.",
+            "source_field": "procurement_methodology"
+          },
+          {
+            "reason": "Procurement type describes the contract, not entity_type; no safe crosswalk to canonical entity_type values.",
+            "source_field": "procurement_type"
+          },
+          {
+            "reason": "SME flag about the contractor is a classification claim with no canonical counterpart in the ontology.",
+            "source_field": "small_to_medium_enterprise_sme"
+          },
+          {
+            "reason": "Social procurement flag describes the contract, not an entity attribute.",
+            "source_field": "social_procurement"
+          },
+          {
+            "reason": "Source row identifier is a native record key, not an entity identifier.",
+            "source_field": "source_row_id"
+          },
+          {
+            "reason": "Tender reference number identifies a procurement event, not the business entity.",
+            "source_field": "tender_number"
+          },
+          {
+            "reason": "UNSPSC classification describes goods or services procured, not the entity's ANZSIC industry_code.",
+            "source_field": "unspsc_classification"
+          },
+          {
+            "reason": "Pre-qualification flag describes the procurement process, not an entity attribute.",
+            "source_field": "was_pre_qualification_requested_in_selection_documentation"
+          }
+        ],
+        "selected_tables": [
+          0
+        ],
+        "candidate_history": [
+          {
+            "candidate_id": "ast-abn-legal-v1",
+            "config_hash": "6ddf76ecd7fd435cc5d4c85678d869e0b6f6515a320a3bb7d9ef95a09ce95932",
+            "decision_turn": 0,
+            "targets": [
+              "entity.abn",
+              "entity.legal_name"
+            ],
+            "probe_informative_targets": [],
+            "eligible": false,
+            "validation_status": "not_run"
+          },
+          {
+            "candidate_id": "ast-abn-only-v2",
+            "config_hash": "5d1827757672655d0fb336cd2d1da11c7bad9a0e122411b4e60897afdb76888e",
+            "decision_turn": 1,
+            "targets": [
+              "entity.abn"
+            ],
+            "probe_informative_targets": [
+              "entity.abn"
+            ],
+            "eligible": true,
+            "validation_status": "passed"
+          }
+        ],
+        "ever_proposed_targets": [
+          "entity.abn",
+          "entity.legal_name"
+        ],
+        "ever_probe_informative_targets": [
+          "entity.abn"
+        ],
+        "proposed_then_absent_from_final": [
+          "entity.legal_name"
+        ],
+        "probe_informative_then_absent_from_final": [],
+        "unmapped_limitation": "Model reasons and proposed targets are data, not source truth. Probe-informative is execution evidence, not semantic correctness. Rejected targets may correctly be removed. Predicate-only use is not a canonical output."
+      },
+      "output_exists": true,
+      "metrics": {},
+      "guard_errors": {},
+      "output_sha256": "f10d0062e85aa00a9fd32349a1fdf541538b2bf10df2b655406d919a2c39115e",
+      "output_record_count": 1000,
+      "missing_native_record_count": 0,
+      "coverage": {
+        "field_present": {
+          "entity.abn": 759
+        },
+        "field_nonempty": {
+          "entity.abn": 759
+        },
+        "field_informative": {
+          "entity.abn": 759
+        },
+        "scope": "Presence/coverage only; unknown is excluded from informative, never counted as a correct type."
+      },
+      "status": "complete_output",
+      "accuracy_status": "N/A_coverage_only",
+      "branches": {},
+      "abstention_checks": {},
+      "unscored_informative_emissions": {
+        "entity.abn": 759
+      },
+      "mismatches": [],
+      "job_id": "candidate-real-act-contracts-historical-r3",
+      "arm": "candidate",
+      "repetition": 3,
+      "group": "qbcc_act"
+    }
+  ],
+  "limitation": "No pooled six-source accuracy. Companies names389, current business names888 and SOR types8184 are narrow seen-source labels; other fields are coverage. Missing/invalid output stays N/A with frozen opportunity denominators visible. BN112 Deregistered names are not current-name omissions.",
+  "stability": [
+    {
+      "arm": "candidate",
+      "source_id": "real-act-contracts-historical",
+      "planned_trials": 3,
+      "reported_trials": 3,
+      "complete_native_output_trials": 3,
+      "status_counts": {
+        "complete_output": 3
+      },
+      "trials": [
+        {
+          "job_id": "candidate-real-act-contracts-historical-r1",
+          "repetition": 1,
+          "status": "complete_output",
+          "missing_native_records": 0,
+          "no_labelled_wrong_or_unsupported_emission": null,
+          "wrong_emitted_within_labels": null,
+          "unsupported_emissions_within_abstention_labels": null
+        },
+        {
+          "job_id": "candidate-real-act-contracts-historical-r2",
+          "repetition": 2,
+          "status": "complete_output",
+          "missing_native_records": 0,
+          "no_labelled_wrong_or_unsupported_emission": null,
+          "wrong_emitted_within_labels": null,
+          "unsupported_emissions_within_abstention_labels": null
+        },
+        {
+          "job_id": "candidate-real-act-contracts-historical-r3",
+          "repetition": 3,
+          "status": "complete_output",
+          "missing_native_records": 0,
+          "no_labelled_wrong_or_unsupported_emission": null,
+          "wrong_emitted_within_labels": null,
+          "unsupported_emissions_within_abstention_labels": null
+        }
+      ],
+      "informative_coverage_per_trial": {
+        "entity.abn": [
+          759,
+          759,
+          759
+        ]
+      },
+      "positive_metrics_per_trial": {},
+      "original_condition_branches_per_trial": {},
+      "target_reference_dispositions": [
+        {
+          "native_field": "contractor_name",
+          "canonical_target": "entity.legal_name",
+          "disposition": "needs_role_evidence"
+        },
+        {
+          "native_field": "abn",
+          "canonical_target": "entity.abn",
+          "disposition": "typed_source_agreement"
+        }
+      ],
+      "target_discovery_and_retention": {
+        "entity.abn": [
+          {
+            "repetition": 1,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 2,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 3,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          }
+        ],
+        "entity.legal_name": [
+          {
+            "repetition": 1,
+            "ever_proposed": true,
+            "probe_informative": false,
+            "retained_in_final": false
+          },
+          {
+            "repetition": 2,
+            "ever_proposed": true,
+            "probe_informative": false,
+            "retained_in_final": false
+          },
+          {
+            "repetition": 3,
+            "ever_proposed": true,
+            "probe_informative": false,
+            "retained_in_final": false
+          }
+        ]
+      },
+      "limitation": "These seen-source development trials describe observed variation, not statistical reliability or generalization. Unlabelled fields have no correctness score. Missing/invalid output is not an abstention success."
+    },
+    {
+      "arm": "candidate",
+      "source_id": "real-asic-business-names",
+      "planned_trials": 3,
+      "reported_trials": 3,
+      "complete_native_output_trials": 3,
+      "status_counts": {
+        "complete_output": 3
+      },
+      "trials": [
+        {
+          "job_id": "candidate-real-asic-business-names-r1",
+          "repetition": 1,
+          "status": "complete_output",
+          "missing_native_records": 0,
+          "no_labelled_wrong_or_unsupported_emission": true,
+          "wrong_emitted_within_labels": 0,
+          "unsupported_emissions_within_abstention_labels": 0
+        },
+        {
+          "job_id": "candidate-real-asic-business-names-r2",
+          "repetition": 2,
+          "status": "complete_output",
+          "missing_native_records": 0,
+          "no_labelled_wrong_or_unsupported_emission": true,
+          "wrong_emitted_within_labels": 0,
+          "unsupported_emissions_within_abstention_labels": 0
+        },
+        {
+          "job_id": "candidate-real-asic-business-names-r3",
+          "repetition": 3,
+          "status": "complete_output",
+          "missing_native_records": 0,
+          "no_labelled_wrong_or_unsupported_emission": true,
+          "wrong_emitted_within_labels": 0,
+          "unsupported_emissions_within_abstention_labels": 0
+        }
+      ],
+      "informative_coverage_per_trial": {
+        "entity.abn": [
+          802,
+          802,
+          802
+        ],
+        "entity.trading_name": [
+          888,
+          888,
+          888
+        ]
+      },
+      "positive_metrics_per_trial": {
+        "entity.trading_name": [
+          {
+            "opportunities": 888,
+            "correct": 888,
+            "missed": 0,
+            "informative_emitted": 888,
+            "wrong_emitted": 0,
+            "recall": 1.0,
+            "precision_within_labelled_opportunities": 1.0
+          },
+          {
+            "opportunities": 888,
+            "correct": 888,
+            "missed": 0,
+            "informative_emitted": 888,
+            "wrong_emitted": 0,
+            "recall": 1.0,
+            "precision_within_labelled_opportunities": 1.0
+          },
+          {
+            "opportunities": 888,
+            "correct": 888,
+            "missed": 0,
+            "informative_emitted": 888,
+            "wrong_emitted": 0,
+            "recall": 1.0,
+            "precision_within_labelled_opportunities": 1.0
+          }
+        ]
+      },
+      "original_condition_branches_per_trial": {
+        "entity.trading_name::Registered": [
+          {
+            "opportunities": 888,
+            "correct": 888,
+            "missed": 0,
+            "informative_emitted": 888,
+            "wrong_emitted": 0
+          },
+          {
+            "opportunities": 888,
+            "correct": 888,
+            "missed": 0,
+            "informative_emitted": 888,
+            "wrong_emitted": 0
+          },
+          {
+            "opportunities": 888,
+            "correct": 888,
+            "missed": 0,
+            "informative_emitted": 888,
+            "wrong_emitted": 0
+          }
+        ]
+      },
+      "target_reference_dispositions": [
+        {
+          "native_field": "BN_NAME",
+          "canonical_target": "entity.trading_name",
+          "disposition": "supported_conditional"
+        },
+        {
+          "native_field": "BN_ABN",
+          "canonical_target": "entity.abn",
+          "disposition": "typed_source_agreement"
+        }
+      ],
+      "target_discovery_and_retention": {
+        "entity.abn": [
+          {
+            "repetition": 1,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 2,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 3,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          }
+        ],
+        "entity.date_registered": [
+          {
+            "repetition": 1,
+            "ever_proposed": true,
+            "probe_informative": false,
+            "retained_in_final": false
+          },
+          {
+            "repetition": 2,
+            "ever_proposed": false,
+            "probe_informative": false,
+            "retained_in_final": false
+          },
+          {
+            "repetition": 3,
+            "ever_proposed": false,
+            "probe_informative": false,
+            "retained_in_final": false
+          }
+        ],
+        "entity.status": [
+          {
+            "repetition": 1,
+            "ever_proposed": true,
+            "probe_informative": false,
+            "retained_in_final": false
+          },
+          {
+            "repetition": 2,
+            "ever_proposed": false,
+            "probe_informative": false,
+            "retained_in_final": false
+          },
+          {
+            "repetition": 3,
+            "ever_proposed": false,
+            "probe_informative": false,
+            "retained_in_final": false
+          }
+        ],
+        "entity.trading_name": [
+          {
+            "repetition": 1,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 2,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 3,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          }
+        ]
+      },
+      "limitation": "These seen-source development trials describe observed variation, not statistical reliability or generalization. Unlabelled fields have no correctness score. Missing/invalid output is not an abstention success."
+    },
+    {
+      "arm": "candidate",
+      "source_id": "real-asic-companies",
+      "planned_trials": 3,
+      "reported_trials": 3,
+      "complete_native_output_trials": 3,
+      "status_counts": {
+        "complete_output": 3
+      },
+      "trials": [
+        {
+          "job_id": "candidate-real-asic-companies-r1",
+          "repetition": 1,
+          "status": "complete_output",
+          "missing_native_records": 0,
+          "no_labelled_wrong_or_unsupported_emission": true,
+          "wrong_emitted_within_labels": 0,
+          "unsupported_emissions_within_abstention_labels": 0
+        },
+        {
+          "job_id": "candidate-real-asic-companies-r2",
+          "repetition": 2,
+          "status": "complete_output",
+          "missing_native_records": 0,
+          "no_labelled_wrong_or_unsupported_emission": true,
+          "wrong_emitted_within_labels": 0,
+          "unsupported_emissions_within_abstention_labels": 0
+        },
+        {
+          "job_id": "candidate-real-asic-companies-r3",
+          "repetition": 3,
+          "status": "complete_output",
+          "missing_native_records": 0,
+          "no_labelled_wrong_or_unsupported_emission": true,
+          "wrong_emitted_within_labels": 0,
+          "unsupported_emissions_within_abstention_labels": 0
+        }
+      ],
+      "informative_coverage_per_trial": {
+        "entity.abn": [
+          389,
+          389,
+          389
+        ],
+        "entity.acn": [
+          389,
+          389,
+          389
+        ],
+        "entity.date_registered": [
+          389,
+          389,
+          389
+        ],
+        "entity.entity_type": [
+          389,
+          389,
+          389
+        ],
+        "entity.legal_name": [
+          389,
+          389,
+          389
+        ],
+        "entity.status": [
+          0,
+          0,
+          3
+        ]
+      },
+      "positive_metrics_per_trial": {
+        "entity.legal_name": [
+          {
+            "opportunities": 389,
+            "correct": 389,
+            "missed": 0,
+            "informative_emitted": 389,
+            "wrong_emitted": 0,
+            "recall": 1.0,
+            "precision_within_labelled_opportunities": 1.0
+          },
+          {
+            "opportunities": 389,
+            "correct": 389,
+            "missed": 0,
+            "informative_emitted": 389,
+            "wrong_emitted": 0,
+            "recall": 1.0,
+            "precision_within_labelled_opportunities": 1.0
+          },
+          {
+            "opportunities": 389,
+            "correct": 389,
+            "missed": 0,
+            "informative_emitted": 389,
+            "wrong_emitted": 0,
+            "recall": 1.0,
+            "precision_within_labelled_opportunities": 1.0
+          }
+        ]
+      },
+      "original_condition_branches_per_trial": {
+        "entity.legal_name::current_companion": [
+          {
+            "opportunities": 154,
+            "correct": 154,
+            "missed": 0,
+            "informative_emitted": 154,
+            "wrong_emitted": 0
+          },
+          {
+            "opportunities": 154,
+            "correct": 154,
+            "missed": 0,
+            "informative_emitted": 154,
+            "wrong_emitted": 0
+          },
+          {
+            "opportunities": 154,
+            "correct": 154,
+            "missed": 0,
+            "informative_emitted": 154,
+            "wrong_emitted": 0
+          }
+        ],
+        "entity.legal_name::printed_current": [
+          {
+            "opportunities": 235,
+            "correct": 235,
+            "missed": 0,
+            "informative_emitted": 235,
+            "wrong_emitted": 0
+          },
+          {
+            "opportunities": 235,
+            "correct": 235,
+            "missed": 0,
+            "informative_emitted": 235,
+            "wrong_emitted": 0
+          },
+          {
+            "opportunities": 235,
+            "correct": 235,
+            "missed": 0,
+            "informative_emitted": 235,
+            "wrong_emitted": 0
+          }
+        ]
+      },
+      "target_reference_dispositions": [
+        {
+          "native_field": "Company Name",
+          "canonical_target": "entity.legal_name",
+          "disposition": "supported_conditional"
+        },
+        {
+          "native_field": "Current Name",
+          "canonical_target": "entity.legal_name",
+          "disposition": "supported_conditional"
+        },
+        {
+          "native_field": "ABN",
+          "canonical_target": "entity.abn",
+          "disposition": "typed_source_agreement"
+        },
+        {
+          "native_field": "ACN",
+          "canonical_target": "entity.acn",
+          "disposition": "supported_conditional"
+        },
+        {
+          "native_field": "Type",
+          "canonical_target": "entity.entity_type",
+          "disposition": "supported_enum_subset"
+        },
+        {
+          "native_field": "Status",
+          "canonical_target": "entity.status",
+          "disposition": "supported_enum_subset"
+        },
+        {
+          "native_field": "Date of Registration",
+          "canonical_target": "entity.date_registered",
+          "disposition": "supported_parse"
+        }
+      ],
+      "target_discovery_and_retention": {
+        "entity.abn": [
+          {
+            "repetition": 1,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 2,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 3,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          }
+        ],
+        "entity.acn": [
+          {
+            "repetition": 1,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 2,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 3,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          }
+        ],
+        "entity.date_registered": [
+          {
+            "repetition": 1,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 2,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 3,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          }
+        ],
+        "entity.entity_type": [
+          {
+            "repetition": 1,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 2,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 3,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          }
+        ],
+        "entity.legal_name": [
+          {
+            "repetition": 1,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 2,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 3,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          }
+        ],
+        "entity.status": [
+          {
+            "repetition": 1,
+            "ever_proposed": true,
+            "probe_informative": false,
+            "retained_in_final": false
+          },
+          {
+            "repetition": 2,
+            "ever_proposed": true,
+            "probe_informative": false,
+            "retained_in_final": false
+          },
+          {
+            "repetition": 3,
+            "ever_proposed": true,
+            "probe_informative": false,
+            "retained_in_final": true
+          }
+        ]
+      },
+      "limitation": "These seen-source development trials describe observed variation, not statistical reliability or generalization. Unlabelled fields have no correctness score. Missing/invalid output is not an abstention success."
+    },
+    {
+      "arm": "candidate",
+      "source_id": "real-ato-corporate-tax",
+      "planned_trials": 3,
+      "reported_trials": 3,
+      "complete_native_output_trials": 2,
+      "status_counts": {
+        "identity_guard_failed": 1,
+        "complete_output": 2
+      },
+      "trials": [
+        {
+          "job_id": "candidate-real-ato-corporate-tax-r1",
+          "repetition": 1,
+          "status": "identity_guard_failed",
+          "missing_native_records": 0,
+          "no_labelled_wrong_or_unsupported_emission": null,
+          "wrong_emitted_within_labels": null,
+          "unsupported_emissions_within_abstention_labels": null
+        },
+        {
+          "job_id": "candidate-real-ato-corporate-tax-r2",
+          "repetition": 2,
+          "status": "complete_output",
+          "missing_native_records": 0,
+          "no_labelled_wrong_or_unsupported_emission": null,
+          "wrong_emitted_within_labels": null,
+          "unsupported_emissions_within_abstention_labels": null
+        },
+        {
+          "job_id": "candidate-real-ato-corporate-tax-r3",
+          "repetition": 3,
+          "status": "complete_output",
+          "missing_native_records": 0,
+          "no_labelled_wrong_or_unsupported_emission": null,
+          "wrong_emitted_within_labels": null,
+          "unsupported_emissions_within_abstention_labels": null
+        }
+      ],
+      "informative_coverage_per_trial": {
+        "entity.abn": [
+          null,
+          4400,
+          4400
+        ]
+      },
+      "positive_metrics_per_trial": {},
+      "original_condition_branches_per_trial": {},
+      "target_reference_dispositions": [
+        {
+          "native_field": "Name",
+          "canonical_target": "entity.legal_name",
+          "disposition": "needs_role_evidence"
+        },
+        {
+          "native_field": "ABN",
+          "canonical_target": "entity.abn",
+          "disposition": "typed_source_agreement"
+        }
+      ],
+      "target_discovery_and_retention": {
+        "entity.abn": [
+          {
+            "repetition": 1,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 2,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 3,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          }
+        ],
+        "entity.legal_name": [
+          {
+            "repetition": 1,
+            "ever_proposed": true,
+            "probe_informative": false,
+            "retained_in_final": false
+          },
+          {
+            "repetition": 2,
+            "ever_proposed": true,
+            "probe_informative": false,
+            "retained_in_final": false
+          },
+          {
+            "repetition": 3,
+            "ever_proposed": true,
+            "probe_informative": false,
+            "retained_in_final": false
+          }
+        ]
+      },
+      "limitation": "These seen-source development trials describe observed variation, not statistical reliability or generalization. Unlabelled fields have no correctness score. Missing/invalid output is not an abstention success."
+    },
+    {
+      "arm": "candidate",
+      "source_id": "real-qbcc",
+      "planned_trials": 3,
+      "reported_trials": 3,
+      "complete_native_output_trials": 3,
+      "status_counts": {
+        "complete_output": 3
+      },
+      "trials": [
+        {
+          "job_id": "candidate-real-qbcc-r1",
+          "repetition": 1,
+          "status": "complete_output",
+          "missing_native_records": 0,
+          "no_labelled_wrong_or_unsupported_emission": null,
+          "wrong_emitted_within_labels": null,
+          "unsupported_emissions_within_abstention_labels": null
+        },
+        {
+          "job_id": "candidate-real-qbcc-r2",
+          "repetition": 2,
+          "status": "complete_output",
+          "missing_native_records": 0,
+          "no_labelled_wrong_or_unsupported_emission": null,
+          "wrong_emitted_within_labels": null,
+          "unsupported_emissions_within_abstention_labels": null
+        },
+        {
+          "job_id": "candidate-real-qbcc-r3",
+          "repetition": 3,
+          "status": "complete_output",
+          "missing_native_records": 0,
+          "no_labelled_wrong_or_unsupported_emission": null,
+          "wrong_emitted_within_labels": null,
+          "unsupported_emissions_within_abstention_labels": null
+        }
+      ],
+      "informative_coverage_per_trial": {
+        "address.full": [
+          1000,
+          1000,
+          1000
+        ],
+        "entity.abn": [
+          623,
+          623,
+          623
+        ],
+        "entity.acn": [
+          326,
+          326,
+          326
+        ]
+      },
+      "positive_metrics_per_trial": {},
+      "original_condition_branches_per_trial": {},
+      "target_reference_dispositions": [
+        {
+          "native_field": "Licensee Name",
+          "canonical_target": "entity.legal_name",
+          "disposition": "needs_role_evidence"
+        },
+        {
+          "native_field": "Licensee Business Address",
+          "canonical_target": "address.full",
+          "disposition": "source_text_agreement"
+        },
+        {
+          "native_field": "ABN",
+          "canonical_target": "entity.abn",
+          "disposition": "typed_source_agreement_subject_split"
+        },
+        {
+          "native_field": "ACN",
+          "canonical_target": "entity.acn",
+          "disposition": "typed_source_agreement"
+        },
+        {
+          "native_field": "Licence Type DESC",
+          "canonical_target": "entity.entity_type",
+          "disposition": "supported_enum_subset"
+        }
+      ],
+      "target_discovery_and_retention": {
+        "address.full": [
+          {
+            "repetition": 1,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 2,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 3,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          }
+        ],
+        "entity.abn": [
+          {
+            "repetition": 1,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 2,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 3,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          }
+        ],
+        "entity.acn": [
+          {
+            "repetition": 1,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 2,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 3,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          }
+        ],
+        "entity.entity_type": [
+          {
+            "repetition": 1,
+            "ever_proposed": true,
+            "probe_informative": false,
+            "retained_in_final": false
+          },
+          {
+            "repetition": 2,
+            "ever_proposed": true,
+            "probe_informative": false,
+            "retained_in_final": false
+          },
+          {
+            "repetition": 3,
+            "ever_proposed": false,
+            "probe_informative": false,
+            "retained_in_final": false
+          }
+        ],
+        "entity.legal_name": [
+          {
+            "repetition": 1,
+            "ever_proposed": true,
+            "probe_informative": false,
+            "retained_in_final": false
+          },
+          {
+            "repetition": 2,
+            "ever_proposed": true,
+            "probe_informative": false,
+            "retained_in_final": false
+          },
+          {
+            "repetition": 3,
+            "ever_proposed": true,
+            "probe_informative": false,
+            "retained_in_final": false
+          }
+        ]
+      },
+      "limitation": "These seen-source development trials describe observed variation, not statistical reliability or generalization. Unlabelled fields have no correctness score. Missing/invalid output is not an abstention success."
+    },
+    {
+      "arm": "candidate",
+      "source_id": "real-suitable-operators",
+      "planned_trials": 3,
+      "reported_trials": 3,
+      "complete_native_output_trials": 3,
+      "status_counts": {
+        "complete_output": 3
+      },
+      "trials": [
+        {
+          "job_id": "candidate-real-suitable-operators-r1",
+          "repetition": 1,
+          "status": "complete_output",
+          "missing_native_records": 0,
+          "no_labelled_wrong_or_unsupported_emission": true,
+          "wrong_emitted_within_labels": 0,
+          "unsupported_emissions_within_abstention_labels": 0
+        },
+        {
+          "job_id": "candidate-real-suitable-operators-r2",
+          "repetition": 2,
+          "status": "complete_output",
+          "missing_native_records": 0,
+          "no_labelled_wrong_or_unsupported_emission": true,
+          "wrong_emitted_within_labels": 0,
+          "unsupported_emissions_within_abstention_labels": 0
+        },
+        {
+          "job_id": "candidate-real-suitable-operators-r3",
+          "repetition": 3,
+          "status": "complete_output",
+          "missing_native_records": 0,
+          "no_labelled_wrong_or_unsupported_emission": true,
+          "wrong_emitted_within_labels": 0,
+          "unsupported_emissions_within_abstention_labels": 0
+        }
+      ],
+      "informative_coverage_per_trial": {
+        "address.locality": [
+          14825,
+          14825,
+          14825
+        ],
+        "address.postcode": [
+          14825,
+          14825,
+          14825
+        ],
+        "address.state": [
+          14825,
+          14825,
+          14825
+        ],
+        "entity.abn": [
+          299,
+          299,
+          299
+        ],
+        "entity.acn": [
+          7901,
+          7901,
+          7901
+        ],
+        "entity.entity_type": [
+          8184,
+          8184,
+          8184
+        ]
+      },
+      "positive_metrics_per_trial": {
+        "entity.entity_type": [
+          {
+            "opportunities": 8184,
+            "correct": 8184,
+            "missed": 0,
+            "informative_emitted": 8184,
+            "wrong_emitted": 0,
+            "recall": 1.0,
+            "precision_within_labelled_opportunities": 1.0
+          },
+          {
+            "opportunities": 8184,
+            "correct": 8184,
+            "missed": 0,
+            "informative_emitted": 8184,
+            "wrong_emitted": 0,
+            "recall": 1.0,
+            "precision_within_labelled_opportunities": 1.0
+          },
+          {
+            "opportunities": 8184,
+            "correct": 8184,
+            "missed": 0,
+            "informative_emitted": 8184,
+            "wrong_emitted": 0,
+            "recall": 1.0,
+            "precision_within_labelled_opportunities": 1.0
+          }
+        ]
+      },
+      "original_condition_branches_per_trial": {
+        "entity.entity_type::Corporation (Company)": [
+          {
+            "opportunities": 8114,
+            "correct": 8114,
+            "missed": 0,
+            "informative_emitted": 8114,
+            "wrong_emitted": 0
+          },
+          {
+            "opportunities": 8114,
+            "correct": 8114,
+            "missed": 0,
+            "informative_emitted": 8114,
+            "wrong_emitted": 0
+          },
+          {
+            "opportunities": 8114,
+            "correct": 8114,
+            "missed": 0,
+            "informative_emitted": 8114,
+            "wrong_emitted": 0
+          }
+        ],
+        "entity.entity_type::Incorporated Association": [
+          {
+            "opportunities": 70,
+            "correct": 70,
+            "missed": 0,
+            "informative_emitted": 70,
+            "wrong_emitted": 0
+          },
+          {
+            "opportunities": 70,
+            "correct": 70,
+            "missed": 0,
+            "informative_emitted": 70,
+            "wrong_emitted": 0
+          },
+          {
+            "opportunities": 70,
+            "correct": 70,
+            "missed": 0,
+            "informative_emitted": 70,
+            "wrong_emitted": 0
+          }
+        ]
+      },
+      "target_reference_dispositions": [
+        {
+          "native_field": "Customer Name",
+          "canonical_target": "entity.legal_name",
+          "disposition": "needs_role_evidence"
+        },
+        {
+          "native_field": "Business Number",
+          "canonical_target": "entity.abn/entity.acn",
+          "disposition": "supported_conditional"
+        },
+        {
+          "native_field": "Entity Type",
+          "canonical_target": "entity.entity_type",
+          "disposition": "supported_enum_subset"
+        },
+        {
+          "native_field": "Location",
+          "canonical_target": "address.locality/address.state/address.postcode",
+          "disposition": "source_component_agreement_subset"
+        }
+      ],
+      "target_discovery_and_retention": {
+        "address.locality": [
+          {
+            "repetition": 1,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 2,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 3,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          }
+        ],
+        "address.postcode": [
+          {
+            "repetition": 1,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 2,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 3,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          }
+        ],
+        "address.state": [
+          {
+            "repetition": 1,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 2,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 3,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          }
+        ],
+        "entity.abn": [
+          {
+            "repetition": 1,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 2,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 3,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          }
+        ],
+        "entity.acn": [
+          {
+            "repetition": 1,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 2,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 3,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          }
+        ],
+        "entity.date_registered": [
+          {
+            "repetition": 1,
+            "ever_proposed": false,
+            "probe_informative": false,
+            "retained_in_final": false
+          },
+          {
+            "repetition": 2,
+            "ever_proposed": true,
+            "probe_informative": false,
+            "retained_in_final": false
+          },
+          {
+            "repetition": 3,
+            "ever_proposed": true,
+            "probe_informative": false,
+            "retained_in_final": false
+          }
+        ],
+        "entity.entity_type": [
+          {
+            "repetition": 1,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 2,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          },
+          {
+            "repetition": 3,
+            "ever_proposed": true,
+            "probe_informative": true,
+            "retained_in_final": true
+          }
+        ],
+        "entity.legal_name": [
+          {
+            "repetition": 1,
+            "ever_proposed": true,
+            "probe_informative": false,
+            "retained_in_final": false
+          },
+          {
+            "repetition": 2,
+            "ever_proposed": true,
+            "probe_informative": false,
+            "retained_in_final": false
+          },
+          {
+            "repetition": 3,
+            "ever_proposed": true,
+            "probe_informative": false,
+            "retained_in_final": false
+          }
+        ]
+      },
+      "limitation": "These seen-source development trials describe observed variation, not statistical reliability or generalization. Unlabelled fields have no correctness score. Missing/invalid output is not an abstention success."
+    }
+  ]
+}
