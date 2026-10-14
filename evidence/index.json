@@ -301,5 +301,12 @@
     }
   },
   "original_archive_retained": false,
-  "original_archive_note": "Historical provenance only. The temporary full archive and old repository were deleted after independently verifying this self-contained repository. Selected traces remain in retained_archive."
+  "original_archive_note": "Historical provenance only. The temporary full archive and old repository were deleted after independently verifying this self-contained repository. Selected traces remain in retained_archive.",
+  "storage_mapping": {
+    "logical_path_prefix": "outputs/",
+    "archive": "evidence/evaluation-traces.tar.gz",
+    "archive_member_prefix": "historical-r2/outputs/",
+    "summary_sha256": "855b9df4decd00aada8a7d92c0907edae86960812526baef91d1a1aacaf0f926",
+    "note": "The original outputs/... paths and hashes in this historical r2 evidence are retained as logical identifiers. Their bytes are stored at archive_member_prefix plus the path relative to outputs/. The active outputs/ directory now contains the complete later e3061c95bd1865e826e92bc2bdf0a9bfac5017090c547e527341e0f7f4517d98 six-source cohort; it must not be used as r2 replay evidence. Selected name audits remain at their repository paths."
+  }
 }

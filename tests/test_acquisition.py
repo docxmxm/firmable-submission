@@ -263,42 +263,47 @@ class AcquisitionTests(unittest.TestCase):
             self.assertEqual(len(provider.requests), 1)
 
     def test_pending_fetch_cannot_relabel_the_newly_captured_source(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            fixture, seeds, capture = capture_fixture(tmp)
-            provider = ReadingProvider(
-                [
-                    action("search", query="MarketTitle"),
-                    fetch_seen,
-                    read_fetched,
-                    action("finish"),
-                ]
-            )
-            original = Runtime.artifact
+        for changed in ("url", "kind"):
+            with tempfile.TemporaryDirectory() as tmp:
+                fixture, seeds, capture = capture_fixture(tmp)
+                provider = ReadingProvider(
+                    [
+                        action("search", query="MarketTitle"),
+                        fetch_seen,
+                        read_fetched,
+                        action("finish"),
+                    ]
+                )
+                original = Runtime.artifact
 
-            def crash_before_receipt(runtime, name, value):
-                if name == "acquisition-tool-1":
-                    raise RuntimeError("simulated interruption after fetch")
-                return original(runtime, name, value)
+                def crash_before_receipt(runtime, name, value):
+                    if name == "acquisition-tool-1":
+                        raise RuntimeError("simulated interruption after fetch")
+                    return original(runtime, name, value)
 
-            with patch(
-                "firmable_runtime.source_acquisition._fetch_http",
-                side_effect=fake_fetch,
-            ) as network:
-                with patch.object(Runtime, "artifact", crash_before_receipt):
-                    with self.assertRaisesRegex(RuntimeError, "after fetch"):
+                with patch(
+                    "firmable_runtime.source_acquisition._fetch_http",
+                    side_effect=fake_fetch,
+                ) as network:
+                    with patch.object(Runtime, "artifact", crash_before_receipt):
+                        with self.assertRaisesRegex(RuntimeError, "after fetch"):
+                            acquire_source_evidence(
+                                fixture.request, provider, capture, seeds
+                            )
+                    manifest = strict_json((capture / "manifest.json").read_bytes())
+                    manifest["assets"][-1][changed] = (
+                        "https://different.example/forged-attribution"
+                        if changed == "url"
+                        else "navigation"
+                    )
+                    atomic_json(capture / "manifest.json", manifest)
+                    with self.assertRaises(Failure) as error:
                         acquire_source_evidence(
                             fixture.request, provider, capture, seeds
                         )
-                manifest = strict_json((capture / "manifest.json").read_bytes())
-                manifest["assets"][-1]["url"] = (
-                    "https://different.example/forged-attribution"
-                )
-                atomic_json(capture / "manifest.json", manifest)
-                with self.assertRaises(Failure) as error:
-                    acquire_source_evidence(fixture.request, provider, capture, seeds)
-                self.assertEqual(error.exception.kind, "checkpoint_mismatch")
-                self.assertEqual(len(provider.requests), 2)
-                self.assertEqual(network.call_count, 1)
+                    self.assertEqual(error.exception.kind, "checkpoint_mismatch")
+                    self.assertEqual(len(provider.requests), 2)
+                    self.assertEqual(network.call_count, 1)
 
 
 if __name__ == "__main__":

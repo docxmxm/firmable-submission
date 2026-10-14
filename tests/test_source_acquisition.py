@@ -1,5 +1,6 @@
 """A source remains original evidence across bounded static asset navigation."""
 
+import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -9,6 +10,24 @@ from firmable_runtime.source_acquisition import SourceAcquisition, prepare_captu
 
 
 class SourceAcquisitionTests(unittest.TestCase):
+    def navigation(self, root, links):
+        source = root / "navigation.json"
+        source.write_text(json.dumps({"links": links}))
+        directory = root / "capture"
+        manifest = prepare_capture(
+            directory,
+            [
+                {
+                    "kind": "navigation",
+                    "url": None,
+                    "path": source,
+                    "sha256": byte_hash(source.read_bytes()),
+                    "media_type": "application/json",
+                }
+            ],
+        )
+        return SourceAcquisition(directory), manifest["assets"][0]
+
     def prepare(self, root, text, *, limits=None, media_type="text/html"):
         source = root / "publisher.source"
         source.write_text(text)
@@ -43,6 +62,174 @@ class SourceAcquisitionTests(unittest.TestCase):
                 "static_capture_only",
                 [o["kind"] for o in capture.inventory()["omissions"]],
             )
+
+    def test_navigation_links_preserve_bindings_then_originals_keep_origin_boundary(
+        self,
+    ):
+        binding = {"kind": "metadata", "sha256": "a" * 64, "pointer": "/homepage"}
+        link = {"url": "https://agency.example/opaque-page", "source_ref": binding}
+        with tempfile.TemporaryDirectory() as tmp:
+            capture, seed = self.navigation(Path(tmp), [link])
+            self.assertEqual(seed["kind"], "navigation")
+            self.assertIsNone(seed["url"])
+            hidden = capture.manifest["references"][0]
+            with self.assertRaisesRegex(ValueError, "exposed"):
+                capture.fetch(hidden["reference_id"])
+            reference = capture.inventory()["references"][0]
+            self.assertEqual(reference["source_ref"], binding)
+            self.assertEqual(reference["parent_sha256"], seed["sha256"])
+            self.assertEqual(reference["navigation_pointer"], "/links/0/url")
+            self.assertTrue(reference["fetchable"])
+            calls = []
+
+            def fetch(url, maximum):
+                calls.append(url)
+                return {
+                    "url": url,
+                    "status": 200,
+                    "media_type": "text/html",
+                    "body": b'<a href="/definitions">Definitions</a><a href="https://other.example/docs">Other</a>',
+                }
+
+            capture.fetcher = fetch
+            original = capture.fetch(reference["reference_id"])["asset"]
+            self.assertEqual(original["kind"], "original")
+            self.assertEqual(original["depth"], 1)
+            self.assertEqual(original["parent_reference_id"], reference["reference_id"])
+            children = capture.read(original["asset_id"])["references"]
+            self.assertTrue(children[0]["fetchable"])
+            self.assertEqual(children[1]["blocked_reason"], "cross_origin")
+            with self.assertRaises(ValueError):
+                capture.fetch(children[1]["reference_id"])
+            self.assertEqual(len(calls), 1)
+            reference["source_ref"]["pointer"] = "/forged"
+            with self.assertRaisesRegex(ValueError, "bound"):
+                capture.fetch(reference["reference_id"])
+
+    def test_navigation_requires_bound_links_and_cannot_claim_an_original_url(self):
+        cases = [
+            ({"links": [{"url": "https://agency.example/doc"}]}, None),
+            (
+                {"links": [{"url": "https://agency.example/doc", "source_ref": {}}]},
+                None,
+            ),
+            ({"links": [], "definition": "Generated meaning"}, None),
+            ({"links": []}, "https://agency.example/original"),
+        ]
+        for body, url in cases:
+            with self.subTest(body=body, url=url), tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                source = root / "navigation.json"
+                source.write_text(json.dumps(body))
+                with self.assertRaises(ValueError):
+                    prepare_capture(
+                        root / "capture",
+                        [
+                            {
+                                "kind": "navigation",
+                                "url": url,
+                                "path": source,
+                                "sha256": byte_hash(source.read_bytes()),
+                                "media_type": "application/json",
+                            }
+                        ],
+                    )
+                self.assertFalse((root / "capture").exists())
+
+    def test_navigation_http_upgrade_is_reused_without_allowing_redirect_escape(self):
+        for destination, allowed in [
+            ("https://agency.example/docs", True),
+            ("https://other.example/docs", False),
+            ("https://agency.example:8443/docs", False),
+        ]:
+            with (
+                self.subTest(destination=destination),
+                tempfile.TemporaryDirectory() as tmp,
+            ):
+                capture, _ = self.navigation(
+                    Path(tmp),
+                    [
+                        {
+                            "url": "http://agency.example/docs",
+                            "source_ref": {"pointer": "/url", "sha256": "b" * 64},
+                        }
+                    ],
+                )
+                reference = capture.inventory()["references"][0]
+                calls = []
+
+                def fetch(url, maximum):
+                    calls.append(url)
+                    return {
+                        "url": destination,
+                        "status": 200,
+                        "media_type": "text/plain",
+                        "body": b"Original definition",
+                    }
+
+                capture.fetcher = fetch
+                if allowed:
+                    asset = capture.fetch(reference["reference_id"])["asset"]
+                    self.assertEqual(asset["url"], destination)
+                    resumed = SourceAcquisition(capture.root, fetcher=fetch)
+                    self.assertEqual(
+                        resumed.fetch(reference["reference_id"])["status"], "reused"
+                    )
+                else:
+                    with self.assertRaises(ValueError):
+                        capture.fetch(reference["reference_id"])
+                    self.assertEqual(len(capture.manifest["assets"]), 1)
+                self.assertEqual(len(calls), 1)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            capture, _ = self.navigation(
+                Path(tmp),
+                [
+                    {
+                        "url": "https://agency.example/docs",
+                        "source_ref": {"pointer": "/url", "sha256": "b" * 64},
+                    }
+                ],
+            )
+            reference = capture.inventory()["references"][0]
+            capture.fetcher = lambda url, maximum: {
+                "url": "http://agency.example/docs",
+                "status": 200,
+                "media_type": "text/plain",
+                "body": b"Downgraded response",
+            }
+            with self.assertRaises(ValueError):
+                capture.fetch(reference["reference_id"])
+
+    def test_navigation_duplicate_url_cannot_retry_failed_or_unknown_fetch(self):
+        for status in ("failed", "started"):
+            with self.subTest(status=status), tempfile.TemporaryDirectory() as tmp:
+                capture, _ = self.navigation(
+                    Path(tmp),
+                    [
+                        {
+                            "url": "https://agency.example/docs",
+                            "source_ref": {"pointer": path},
+                        }
+                        for path in ("/first", "/second")
+                    ],
+                )
+                references = capture.inventory()["references"]
+                calls = []
+
+                def fail(url, maximum):
+                    calls.append(url)
+                    raise TimeoutError("No saved response")
+
+                capture.fetcher = fail
+                with self.assertRaises(ValueError):
+                    capture.fetch(references[0]["reference_id"])
+                capture.manifest["attempts"][0]["status"] = status
+                capture._save()
+                resumed = SourceAcquisition(capture.root, fetcher=fail)
+                with self.assertRaisesRegex(ValueError, "URL already"):
+                    resumed.fetch(references[1]["reference_id"])
+                self.assertEqual(len(calls), 1)
 
     def test_model_can_navigate_bundle_literals_to_component_with_lineage(self):
         seed = '<main>Catalogue</main><script src="/assets/entry.js"></script>'

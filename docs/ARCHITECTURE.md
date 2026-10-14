@@ -1,10 +1,10 @@
 # Runtime architecture and contracts
 
-This document describes the **current frozen runtime** (`18984daebde13d47999f8bdbc3b4758074db27e0159799ee4506c185ff9e75b3`), recorded in [generic validation](../evidence/generic-validation.json). It adds dependency-field discovery context, read-only repair progress, and person/unknown link abstention to the restored runtime. The saved six-source r2 cohort retains its original pre-scope runtime identity (`bec320c33a982dcfd5e31f9e0c8c74d68401ea0855643a07028855adbf5e40de`) and historical scope in the [evidence index](../evidence/index.json).
+This document describes the **current frozen runtime** (`e3061c95bd1865e826e92bc2bdf0a9bfac5017090c547e527341e0f7f4517d98`), recorded in [generic validation](../evidence/generic-validation.json). It connects model-directed source-evidence acquisition to inference, while retaining discovery/repair context and subject-risk handling. The saved six-source r2 cohort retains its original pre-scope runtime identity (`bec320c33a982dcfd5e31f9e0c8c74d68401ea0855643a07028855adbf5e40de`) and historical scope in the [evidence index](../evidence/index.json).
 
 ## One source through the system
 
-1. `workflow.infer_source` saves the request and locks the run directory. `native` discovers readable tables, raw values, stable record locators and original documentation.
+1. `workflow.infer_source` saves the original request and locks the run directory. It mechanically locates URLs in original metadata/document pages, retaining their hashes, JSON pointers or page offsets. When links exist, a separate reading journal lets the agent choose fetch/search/read/inventory or finish without fetching. Only exact read excerpts from captured original pages enter a frozen supplement; navigation and model explanations do not. Original native bytes and relative locators are preserved. The existing inference loop then discovers readable tables, raw values and documentation from that snapshot.
 2. The model selects tables. If any readable table is omitted, a separate scope review must provide a complete include/exclude partition and exact source quotations. **Selecting every readable table skips that extra review.** It can therefore include explanatory tables; ATO repetition 1 demonstrated this limitation.
 3. The host separates proposal records from development validation records and freezes caller requirements. The bounded planner can inspect field evidence, propose candidates, probe them, revise them and explicitly select one.
 4. Candidate generation uses separate control, mapping-manifest and AST-rule or LLM-task calls. The first AST manifest gets one independent discovery review. Its saved request distinguishes each mapping's primary field from dependencies and lists fields used only as dependencies so their independent meanings remain discovery opportunities. A documented code-to-meaning relation can support a directly equivalent canonical enum; unexplained codes and ambiguous categories remain unresolved. The host assembles the config; proposed mappings still need execution and semantic checks. This context does not require a new target or prove complete field discovery.
@@ -13,7 +13,7 @@ This document describes the **current frozen runtime** (`18984daebde13d47999f8bd
 7. Development validation produces the final candidate and task acceptance. `review_source` exposes mappings, examples, omissions, findings, unresolved requirements, alternatives and usage. `approve_source` binds the reviewed evidence. `extract_source` checks that binding before formal extraction.
 8. `build_outputs` links qualified typed identifiers, records abstentions, and builds profiles with field provenance. An explicit person paired with an unknown subject remains unlinked for review, even with a shared identifier. `withdraw_outputs` recomputes fields for existing entity keys and flags identity review.
 
-Optional `acquire_source_evidence` runs before inference. It reads hash-bound source documents and bounded same-origin references, producing original excerpts for a new frozen evidence snapshot. Acquisition completion does not prove all field definitions were found.
+`acquire_source_evidence` remains available separately and is now invoked by `infer_source` when original navigation links exist. The reading agent sees native structure, original documentation, metadata and the ontology; it can stop immediately when no further reading is useful. Metadata/navigation links can lead to another host because the exact link is bound to the supplied source. Subsequent page references stay within that origin, with same-host HTTP-to-HTTPS upgrades allowed. Only supported static text types are captured; PDF downloads, executed JavaScript and cross-host redirects remain unsupported. A failed fetch is recorded; the unchanged local evidence can still be used. Acquisition completion reports reading workflow status, not semantic certainty.
 
 ## Ownership
 
@@ -23,7 +23,7 @@ Optional `acquire_source_evidence` runs before inference. It reads hash-bound so
 | `agent`, `acceptance` | Bounded planning, candidate memory, development checks and immutable caller requirements |
 | `candidate_assembly` | Separate manifest/rule/task calls and deterministic config assembly |
 | `field_evidence`, `source_document_tools`, `config_audit` | Original document lookup and bound independent name review |
-| `acquisition`, `source_acquisition` | Optional source-document acquisition before inference |
+| `acquisition`, `source_acquisition` | Model-directed source-document reading, capture, citations and durable tool results |
 | `runtime`, `store` | Identity, durable requests, artifacts, checkpoints and usage |
 | `provider`, `openrouter`, `openrouter_wire` | ccvibe/OpenRouter transport, strict response formats and safe receipts |
 | `native`, `schema` | Native records/locators and config/response validation |
@@ -45,7 +45,7 @@ Optional `acquire_source_evidence` runs before inference. It reads hash-bound so
 
 ## Recovery
 
-A run stores `request.json`, `checkpoint.internal.json`, immutable `artifacts/`, `trace.json`, `onboard.json` and, after approval, `approval.json`. Formal extraction has a separate child journal.
+A linked-source run also stores `input-request.json`, `source-links.json`, a separate `acquisition/` journal and `capture/` originals. When excerpts exist, `evidence/` holds native input copies and the original-source supplement. Final `request.json` binds this effective snapshot and acquisition receipt; review rechecks captured bytes and the export. The usual run stores `request.json`, `checkpoint.internal.json`, immutable `artifacts/`, `trace.json`, `onboard.json` and, after approval, `approval.json`. Formal extraction has a separate child journal.
 
 ```text
 prepared → sent → completed
@@ -57,8 +57,8 @@ Completed calls and execution results are reused only with matching bindings. Kn
 
 ## Evidence limits
 
-The current freeze passed 394 offline tests. Scripted discovery tests establish request context, assembly and rejection boundaries, not improved real-model discovery. Link abstentions identify review cases, not confirmed false links. Current run results are reported separately in [RESULTS.md](../RESULTS.md); historical r2 results below do not validate the changed runtime.
+The current freeze passed 407 offline tests. Scripted discovery tests establish request context, assembly and rejection boundaries, not improved real-model discovery. Link abstentions identify review cases, not confirmed false links. Current run results are reported separately in [RESULTS.md](../RESULTS.md); historical r2 results below do not validate the changed runtime.
 
 The retained pre-scope evaluation passed native scope/identity checks on 17/18 source trajectories; repetitions 2 and 3 each had six complete native outputs. ATO repetition 1 included six explanatory rows. Legal names remained unresolved for ATO, QBCC, Suitable Operators and ACT. All experiment approvals were synthetic, and the six sources were already development sources.
 
-The saved configs and observations are the complete r2 cohort, and downstream output is rebuilt from those six inputs together. This cohort has zero human link reviews and unknown precision. Prior cohorts' review labels do not apply. The snapshot's original test files were not retained; the restored offline collection is a separate check and does not establish new model performance. The selected source traces are available in the internal [run archive](../evidence/six-source-r2.tar.zst); historical absolute paths inside it are provenance, not current resumable paths.
+The current `outputs/` contains the complete acquisition-connected cohort; all six inputs produced its downstream results together. Historical r2 outputs remain in [the evaluation archive](../evidence/evaluation-traces.tar.gz) under `historical-r2/outputs/`, with their original bindings and [source traces](../evidence/six-source-r2.tar.zst). Both cohorts have zero human link reviews; labels cannot transfer between them. Historical absolute paths are provenance, not current resumable paths. The restored offline collection is a separate check and does not establish new model performance.

@@ -1,51 +1,49 @@
 {
-  "id" : "758m-5a8y",
-  "name" : "Cooperatives registered in ACT",
+  "id" : "gg97-ghvs",
+  "name" : "List of pest and weed control operators in the ACT",
   "assetType" : "dataset",
-  "attribution" : "Access Canberra",
+  "attribution" : "ACT Government",
   "averageRating" : 0,
-  "category" : "Business and Industry",
-  "createdAt" : 1699398408,
-  "description" : "This dataset contains information on cooperatives registered in the ACT under the Co-operatives National Law (ACT) Act 2017.",
+  "category" : "Environment",
+  "createdAt" : 1470189260,
+  "description" : "The Authorisation holder is authorised to use agricultural and veterinary chemicals for commercial purposes as specified in the Environmental Authorisation.",
   "diciBackend" : false,
   "displayType" : "table",
-  "downloadCount" : 775,
+  "downloadCount" : 5690,
   "hideFromCatalog" : false,
   "hideFromDataJson" : false,
   "licenseId" : "CC_40_BY",
   "locked" : false,
   "newBackend" : true,
   "numberOfComments" : 0,
-  "oid" : 40151762,
+  "oid" : 37435234,
   "provenance" : "official",
   "publicationAppendEnabled" : false,
-  "publicationDate" : 1699398551,
-  "publicationGroup" : 19356268,
+  "publicationDate" : 1626314550,
+  "publicationGroup" : 12288508,
   "publicationStage" : "published",
-  "rowsUpdatedAt" : 1786677542,
-  "rowsUpdatedBy" : "94gp-7dbz",
-  "tableId" : 19356268,
+  "rowsUpdatedAt" : 1791918436,
+  "rowsUpdatedBy" : "vt59-m35b",
+  "tableId" : 18384066,
   "totalTimesRated" : 0,
-  "viewCount" : 396,
-  "viewLastModified" : 1786677541,
+  "viewCount" : 2425,
+  "viewLastModified" : 1764626035,
   "viewType" : "tabular",
   "approvals" : [ {
-    "reviewedAt" : 1699398551,
+    "reviewedAt" : 1531455262,
     "reviewedAutomatically" : true,
     "state" : "approved",
-    "submissionId" : 5905392,
+    "submissionId" : 3820650,
     "submissionObject" : "public_audience_request",
     "submissionOutcome" : "change_audience",
-    "submittedAt" : 1699398551,
+    "submittedAt" : 1531455262,
     "targetAudience" : "public",
     "workflowId" : 2135,
     "submissionDetails" : {
       "permissionType" : "READ"
     },
     "submissionOutcomeApplication" : {
-      "endedAt" : 1699398551,
       "failureCount" : 0,
-      "startedAt" : 1699398551,
       "status" : "success"
     },
     "submitter" : {
@@ -58,165 +56,331 @@
     "inheritedVariables" : { }
   },
   "columns" : [ {
-    "id" : 584465431,
-    "name" : "Coop Registeration Number",
+    "id" : 544774622,
+    "name" : "Business name",
     "dataTypeName" : "text",
     "description" : "",
-    "fieldName" : "coop_registeration_number",
+    "fieldName" : "business_name",
     "position" : 1,
     "renderTypeName" : "text",
-    "tableColumnId" : 149762174,
+    "tableColumnId" : 37647575,
+    "width" : 256,
     "cachedContents" : {
-      "non_null" : "17",
-      "largest" : "CO-0302",
+      "non_null" : "149",
+      "largest" : "Yarralumla Nusery",
       "null" : "0",
       "top" : [ {
-        "item" : "CO-0210",
+        "item" : "Coochie Hydrogreen Molonglo Valley",
+        "count" : "2"
+      }, {
+        "item" : "ACT Pest Control",
         "count" : "1"
       }, {
-        "item" : "CO-0207",
+        "item" : "Andrew Dimoff T/as Instyle Indoor Plant Hire",
         "count" : "1"
       }, {
-        "item" : "CO-0208",
+        "item" : "Bhavsar Pty Ltd - T/as Spotless Clean",
         "count" : "1"
       }, {
-        "item" : "CO-0206",
+        "item" : "Anthony Hageman",
         "count" : "1"
       }, {
-        "item" : "CO-0202",
+        "item" : "Smartbuilt NSW Pty Ltd T/A TERMITRUST",
         "count" : "1"
       }, {
-        "item" : "CO-0215",
+        "item" : "Canopy, The Tree Experts Pty Ltd",
         "count" : "1"
       }, {
-        "item" : "CO-0302",
+        "item" : "Thomas Dyball Trading as Jims Termite & Pest Control Wright",
         "count" : "1"
       }, {
-        "item" : "CO-0203",
+        "item" : "Truck Stop Polo Flat Pty Ltd T/As All Class Carpet and Upholstery Care",
         "count" : "1"
       }, {
-        "item" : "CO-0216",
+        "item" : "Capital Weed Control",
         "count" : "1"
       }, {
-        "item" : "CO-0205",
+        "item" : "IEP Pest Control",
         "count" : "1"
       }, {
-        "item" : "CO-0214",
+        "item" : "ACT Property Inspections ",
         "count" : "1"
       }, {
-        "item" : "CO-0201",
+        "item" : "Australian National Botanic Gardens",
         "count" : "1"
       }, {
-        "item" : "CO-0301",
+        "item" : "Mitchell Gordon Rands T/as Randsons Rural Services",
         "count" : "1"
       }, {
-        "item" : "CO-0209",
+        "item" : "Canturf Lawns Pty Ltd",
         "count" : "1"
       }, {
-        "item" : "CO-0212",
+        "item" : "18fifty3 Group Pty Limited",
         "count" : "1"
       }, {
-        "item" : "CO-0213",
+        "item" : "Rotor Solutions Australia Pty Ltd",
         "count" : "1"
       }, {
-        "item" : "CO-0211",
+        "item" : "Pest Smart Management T/as - Hart Pest Management",
+        "count" : "1"
+      }, {
+        "item" : "Tom's Pest Control",
+        "count" : "1"
+      }, {
+        "item" : "Jims Termite and Pest Control ACT and Southern NSW",
         "count" : "1"
       } ],
-      "smallest" : "CO-0201",
-      "count" : "17",
-      "cardinality" : "17"
+      "smallest" : "18fifty3 Group Pty Limited",
+      "count" : "149",
+      "cardinality" : "149"
     },
     "format" : { }
   }, {
-    "id" : 584465432,
-    "name" : "Name of Cooperative",
+    "id" : 544774623,
+    "name" : "Operation",
     "dataTypeName" : "text",
     "description" : "",
-    "fieldName" : "name_of_cooperative",
+    "fieldName" : "operation",
     "position" : 2,
     "renderTypeName" : "text",
-    "tableColumnId" : 149762175,
+    "tableColumnId" : 37647576,
+    "width" : 208,
     "cachedContents" : {
-      "non_null" : "17",
-      "largest" : "Trove Canberra Cooperative Limited",
+      "non_null" : "149",
+      "largest" : "Weed & Pest Control",
       "null" : "0",
       "top" : [ {
-        "item" : "Builders Trading Co-operative Limited",
+        "item" : "Pest Control",
+        "count" : "62"
+      }, {
+        "item" : "Weed Control",
+        "count" : "56"
+      }, {
+        "item" : "Pest & Weed Control",
+        "count" : "13"
+      }, {
+        "item" : "Turf Management",
+        "count" : "12"
+      }, {
+        "item" : "Aerial Weed Control",
+        "count" : "3"
+      }, {
+        "item" : "Pest Control ",
         "count" : "1"
       }, {
-        "item" : "AMAR CARE Limited",
+        "item" : "Pest Conrol",
         "count" : "1"
       }, {
-        "item" : "RealKM Cooperative Limited",
-        "count" : "1"
-      }, {
-        "item" : "ACT Water Rewards Cooperative Limited",
-        "count" : "1"
-      }, {
-        "item" : "Interchange Health Co-operative Limited",
-        "count" : "1"
-      }, {
-        "item" : "The Elysian Co-op Limited",
-        "count" : "1"
-      }, {
-        "item" : "Pre Power One Co-op Limited",
-        "count" : "1"
-      }, {
-        "item" : "Ethical Wheels Cooperative Limited",
-        "count" : "1"
-      }, {
-        "item" : "Canberra Student Housing Co-operative Ltd",
-        "count" : "1"
-      }, {
-        "item" : "National Health Cooperative Limited",
-        "count" : "1"
-      }, {
-        "item" : "GetRealty Cooperative Limited",
-        "count" : "1"
-      }, {
-        "item" : "Food Cooperative Shop Ltd",
-        "count" : "1"
-      }, {
-        "item" : "Trove Canberra Cooperative Limited",
-        "count" : "1"
-      }, {
-        "item" : "Islamic Co-operative Finance Australia Limited",
-        "count" : "1"
-      }, {
-        "item" : "Canberra Seed Savers Co-operative Limited",
-        "count" : "1"
-      }, {
-        "item" : "ACT 30K/40K Narrative Gaming Limited",
-        "count" : "1"
-      }, {
-        "item" : "Jacaranda Cooperative Housing Society Limited",
+        "item" : "Weed & Pest Control",
         "count" : "1"
       } ],
-      "smallest" : "ACT 30K/40K Narrative Gaming Limited",
-      "count" : "17",
-      "cardinality" : "17"
+      "smallest" : "Aerial Weed Control",
+      "count" : "149",
+      "cardinality" : "149"
     },
     "format" : { }
   }, {
-    "id" : 584465433,
-    "name" : "Registration Status",
+    "id" : 544774624,
+    "name" : "Auth Number",
     "dataTypeName" : "text",
     "description" : "",
-    "fieldName" : "registration_status",
+    "fieldName" : "auth_number",
     "position" : 3,
     "renderTypeName" : "text",
-    "tableColumnId" : 149762176,
+    "tableColumnId" : 37647577,
+    "width" : 232,
     "cachedContents" : {
-      "non_null" : "17",
-      "largest" : "Active",
+      "non_null" : "149",
+      "largest" : "965",
       "null" : "0",
       "top" : [ {
-        "item" : "Active",
-        "count" : "17"
+        "item" : "1029",
+        "count" : "1"
+      }, {
+        "item" : "1036",
+        "count" : "1"
+      }, {
+        "item" : "1046",
+        "count" : "1"
+      }, {
+        "item" : "1048",
+        "count" : "1"
+      }, {
+        "item" : "1051",
+        "count" : "1"
+      }, {
+        "item" : "1052",
+        "count" : "1"
+      }, {
+        "item" : "1059",
+        "count" : "1"
+      }, {
+        "item" : "1070",
+        "count" : "1"
+      }, {
+        "item" : "1072",
+        "count" : "1"
+      }, {
+        "item" : "1080",
+        "count" : "1"
+      }, {
+        "item" : "1082",
+        "count" : "1"
+      }, {
+        "item" : "1091",
+        "count" : "1"
+      }, {
+        "item" : "11",
+        "count" : "1"
+      }, {
+        "item" : "1103",
+        "count" : "1"
+      }, {
+        "item" : "1115",
+        "count" : "1"
+      }, {
+        "item" : "1128",
+        "count" : "1"
+      }, {
+        "item" : "1133",
+        "count" : "1"
+      }, {
+        "item" : "1138",
+        "count" : "1"
+      }, {
+        "item" : "1140",
+        "count" : "1"
+      }, {
+        "item" : "1005",
+        "count" : "1"
       } ],
-      "smallest" : "Active",
-      "count" : "17",
-      "cardinality" : "17"
+      "smallest" : "1005",
+      "count" : "149",
+      "cardinality" : "149"
+    },
+    "format" : { }
+  }, {
+    "id" : 544774625,
+    "name" : "Contact Details",
+    "dataTypeName" : "text",
+    "description" : "",
+    "fieldName" : "contact_details",
+    "position" : 4,
+    "renderTypeName" : "text",
+    "tableColumnId" : 37647578,
+    "width" : 280,
+    "cachedContents" : {
+      "non_null" : "149",
+      "largest" : "6205 3334",
+      "null" : "0",
+      "top" : [ {
+        "item" : "02 4821 1027",
+        "count" : "1"
+      }, {
+        "item" : "02 4849 4646",
+        "count" : "1"
+      }, {
+        "item" : "02 6100 8444",
+        "count" : "1"
+      }, {
+        "item" : "02 6121 2107",
+        "count" : "1"
+      }, {
+        "item" : "02 6161 1802",
+        "count" : "1"
+      }, {
+        "item" : "02 6161 6317",
+        "count" : "1"
+      }, {
+        "item" : "02 6203 5055",
+        "count" : "1"
+      }, {
+        "item" : "02 6207 3521",
+        "count" : "1"
+      }, {
+        "item" : "02 6207 5068",
+        "count" : "1"
+      }, {
+        "item" : "02 6207 7603 ",
+        "count" : "1"
+      }, {
+        "item" : "02 6214 1360",
+        "count" : "1"
+      }, {
+        "item" : "02 6228 1991",
+        "count" : "1"
+      }, {
+        "item" : "02 6230 2077",
+        "count" : "1"
+      }, {
+        "item" : "02 6230 3000",
+        "count" : "1"
+      }, {
+        "item" : "02 6232 4587",
+        "count" : "1"
+      }, {
+        "item" : "02 6241 0419",
+        "count" : "1"
+      }, {
+        "item" : "02 6242 6283",
+        "count" : "1"
+      }, {
+        "item" : "02 6248 3017",
+        "count" : "1"
+      }, {
+        "item" : "02 6254 2157",
+        "count" : "1"
+      }, {
+        "item" : "02 13 22 81",
+        "count" : "1"
+      } ],
+      "smallest" : "02 13 22 81",
+      "count" : "149",
+      "cardinality" : "149"
+    },
+    "format" : { }
+  }, {
+    "id" : 544774627,
+    "name" : "Jurisdiction",
+    "dataTypeName" : "text",
+    "description" : "",
+    "fieldName" : "jurisdiction",
+    "position" : 5,
+    "renderTypeName" : "text",
+    "tableColumnId" : 138801582,
+    "cachedContents" : {
+      "non_null" : "149",
+      "largest" : "ACT",
+      "null" : "0",
+      "top" : [ {
+        "item" : "ACT",
+        "count" : "149"
+      } ],
+      "smallest" : "ACT",
+      "count" : "149",
+      "cardinality" : "149"
+    },
+    "format" : { }
+  }, {
+    "id" : 544774626,
+    "name" : "Licence No",
+    "dataTypeName" : "text",
+    "description" : "",
+    "fieldName" : "licence_no",
+    "position" : 6,
+    "renderTypeName" : "text",
+    "tableColumnId" : 138801581,
+    "cachedContents" : {
+      "non_null" : "149",
+      "largest" : "",
+      "null" : "0",
+      "top" : [ {
+        "item" : "",
+        "count" : "149"
+      } ],
+      "smallest" : "",
+      "count" : "149",
+      "cardinality" : "149"
     },
     "format" : { }
   } ],
@@ -231,18 +395,22 @@
     "termsLink" : "http://creativecommons.org/licenses/by/4.0/legalcode"
   },
   "metadata" : {
+    "rdfSubject" : "0",
     "custom_fields" : {
       "Contributing Agency" : {
-        "Contact Email" : "CITL@act.gov.au",
-        "Program Website" : "https://www.accesscanberra.act.gov.au/business-and-work/associations-co-ops-and-charities/co-operative-registration",
+        "Contact Email" : "acintel@act.gov.au",
+        "Program Website" : "https://www.accesscanberra.act.gov.au/app/services/pest_weed_control_operators/",
         "Agency Name" : "Access Canberra",
         "Directorate" : "City and Environment"
-      },
-      "Data Set Coverage" : {
-        "Geospatial Coverage" : "Australian Capital Territory"
       }
     },
-    "availableDisplayTypes" : [ "table", "fatrow", "page" ]
+    "rowLabel" : "Authorisation Number",
+    "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+    "renderTypeConfig" : {
+      "visible" : {
+        "table" : true
+      }
+    }
   },
   "owner" : {
     "id" : "94gp-7dbz",
@@ -260,6 +428,6 @@
     "type" : "interactive",
     "flags" : [ "acceptedEula" ]
   },
-  "tags" : [ "cooperatives", "registration" ],
+  "tags" : [ "pest control", "weed control", "operators", "access canberra" ],
   "flags" : [ "default", "ownerMayBeContacted", "restorable", "restorePossibleForType" ]
 }

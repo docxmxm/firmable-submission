@@ -1,27 +1,158 @@
 {
+  "acquisition_observation": [
+    {
+      "acquisition_actions": [
+        {
+          "action": {
+            "action": "fetch",
+            "asset_id": "",
+            "max_chars": 12000,
+            "query": "",
+            "reason": "The captured column descriptions are empty, so the meanings of Business name, Auth Number, Contact Details and Licence No are unresolved. Fetching the observed official metadata reference to check for column definitions and any ABN or legal-name field.",
+            "reference_id": "ref-387fbd8f2b7541a9e0a7cda7",
+            "reference_offset": 0,
+            "start": 0
+          },
+          "status": "failed"
+        },
+        {
+          "action": {
+            "action": "fetch",
+            "asset_id": "",
+            "max_chars": 12000,
+            "query": "",
+            "reason": "The earlier fetch of the official metadata URL failed with an SSL certificate error and column descriptions are empty. Trying the observed Access Canberra program page to check whether it defines Business name, Auth Number, Contact Details or Licence No. No ABN or legal-name field is established yet.",
+            "reference_id": "ref-e8170c30b9a6d0d3ea99a20d",
+            "reference_offset": 0,
+            "start": 0
+          },
+          "status": "failed"
+        },
+        {
+          "action": {
+            "action": "finish",
+            "asset_id": "",
+            "max_chars": 12000,
+            "query": "",
+            "reason": "Column descriptions for Business name, Auth Number, Contact Details and Licence No are empty in the captured documentation, and no ABN, legal-name or column definition is established. Both observed metadata fetches failed (SSL verify error and HTTP 404), and the remaining observed reference is a Creative Commons licence page, which is not a field source. Finishing with these gaps unresolved rather than inferring field meanings.",
+            "reference_id": "",
+            "reference_offset": 0,
+            "start": 0
+          },
+          "status": "completed"
+        }
+      ],
+      "acquisition_status": "partial",
+      "acquisition_usage": {
+        "call_count": 3,
+        "cost_basis": "OpenRouter reported cost, not invoice",
+        "total_cost_usd": 0.0039953,
+        "total_tokens": 31857,
+        "wall_seconds": 18.82108379199053,
+        "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+      },
+      "candidate_status": "unavailable",
+      "effective_snapshot_created": false,
+      "evidence_root_unchanged": true,
+      "excerpt_count": 0,
+      "fetch_attempts": [
+        {
+          "completed_utc": "2026-10-14T06:37:52.286545+00:00",
+          "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>",
+          "error_type": "URLError",
+          "max_bytes": 4000000,
+          "parent_sha256": "598a94dc9c9bab6fc6d65298a539cd07eacd0748ee7c9e3afb3ed159471ef0e8",
+          "reference_id": "ref-387fbd8f2b7541a9e0a7cda7",
+          "started_utc": "2026-10-14T06:37:51.815810+00:00",
+          "status": "failed",
+          "url": "https://www.data.act.gov.au/api/views/gg97-ghvs.json"
+        },
+        {
+          "completed_utc": "2026-10-14T06:38:00.384688+00:00",
+          "error": "HTTP Error 404: Not Found",
+          "error_type": "HTTPError",
+          "max_bytes": 4000000,
+          "parent_sha256": "598a94dc9c9bab6fc6d65298a539cd07eacd0748ee7c9e3afb3ed159471ef0e8",
+          "reference_id": "ref-e8170c30b9a6d0d3ea99a20d",
+          "started_utc": "2026-10-14T06:37:59.177646+00:00",
+          "status": "failed",
+          "url": "https://www.accesscanberra.act.gov.au/app/services/pest_weed_control_operators/"
+        }
+      ],
+      "gap": {
+        "kind": "agent_stop",
+        "reason": "No candidate has been probed yet, and no supported mapping is evident in the supplied evidence. The declared required_fields list is empty, so task acceptance is not configured. Business name holds operating names with T/as trading-name markers, but the documentation gives no current or registered legal-name rule, so mapping it to legal_name would guess name semantics. Auth Number, Contact Details, Operation and Jurisdiction have no direct canonical ontology targets that the AST operations express: Auth Number is not documented as an ABN or ACN, Contact Details has no ontology field, and Operation is not an entity_type or industry_code the documentation defines. Licence No is blank in the sampled rows. Stopping avoids inventing values or guessing semantics."
+      },
+      "inference_requests": [
+        {
+          "catalogue_metadata_present": true,
+          "decision_turn": null,
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/unseen-source/unseen-act-pest-weed/artifacts/request-4ddeb173f5558e23ef9f5770.json",
+          "purpose": "inspect",
+          "response_action": null,
+          "response_reason": "The source has one readable native table (table_id 0, native.csv, 149 records) listing ACT pest and weed control business operators with business name, operation, authorisation number, contact details, jurisdiction and licence fields. It is a business-record table in the Australian business scope and is not an introductory or definitions table, so it is included. No other tables exist to exclude.",
+          "source_documentation_chars": 923,
+          "source_documentation_sha256": "56012ced613d7e1ccf10d0f7f111b33a9cf7d51ed030c0b1a6a2792fe52d1f92",
+          "source_url_candidates_count": 0
+        },
+        {
+          "catalogue_metadata_present": true,
+          "decision_turn": 0,
+          "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/unseen-source/unseen-act-pest-weed/artifacts/request-9c9b0fdd082984908e21fbdd.json",
+          "purpose": "agent_decision",
+          "response_action": "stop",
+          "response_reason": "No candidate has been probed yet, and no supported mapping is evident in the supplied evidence. The declared required_fields list is empty, so task acceptance is not configured. Business name holds operating names with T/as trading-name markers, but the documentation gives no current or registered legal-name rule, so mapping it to legal_name would guess name semantics. Auth Number, Contact Details, Operation and Jurisdiction have no direct canonical ontology targets that the AST operations express: Auth Number is not documented as an ABN or ACN, Contact Details has no ontology field, and Operation is not an entity_type or industry_code the documentation defines. Licence No is blank in the sampled rows. Stopping avoids inventing values or guessing semantics.",
+          "source_documentation_chars": 923,
+          "source_documentation_sha256": "56012ced613d7e1ccf10d0f7f111b33a9cf7d51ed030c0b1a6a2792fe52d1f92",
+          "source_url_candidates_count": 4
+        }
+      ],
+      "onboarding_status": "partial",
+      "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/unseen-source/unseen-act-pest-weed",
+      "policy_hash_checks": {
+        "capture": true,
+        "export": true,
+        "navigation": true,
+        "onboard_identity_policy": true,
+        "original_evidence_manifest": true,
+        "result": true
+      },
+      "source_documentation_same_between_acquisition_and_all_inference_requests": true,
+      "source_id": "unseen-act-pest-weed",
+      "task_status": "not_configured"
+    }
+  ],
   "artifact_bindings": {
-    "runs/unseen-source/protocol.json": "034942178d83b12784fb8455decc30c6b95f1c79bdff52588a57e1fc4be2636c",
-    "runs/unseen-source/provider-receipts.json": "c2664d7eebc76bc9501dd30a9b3acd12a69c0c5f32878dcd19cd5ce9b2d8b6a3",
-    "runs/unseen-source/scores.json": "3aec140775f1cbe0961812e8765e1120813b975d0305523f44684838f8c52576",
-    "runs/unseen-source/summary.json": "ee187d41ca148b03292e4dfde9cdeab9cc5dfae27ef87cf5f685b940437af955",
-    "runs/unseen-source/unseen-act-cooperatives/onboard.json": "5dfa64beed9e66ecf3b09dc83c9aaf0790128456c478a8412e1bbbe6c28a927a",
-    "runs/unseen-source/unseen-act-cooperatives/request.json": "52dc0017087419ffa4d4cf1ed5ddb06cf750ef5a96ee0a7da14d406cfb21cf23",
-    "runs/unseen-source/unseen-act-cooperatives/result.json": "58b3373008c17431e53b098b06d9be08af61e93148533d44b364f353ea97263b",
-    "runs/unseen-source/unseen-act-cooperatives/trace.json": "cab18393cdc6257a741bd4441e7affba6b5f33b20b445b99c5fadd2e5ba68c33"
+    "runs/unseen-source/protocol.json": "fffc43a0eadfe7399862a04112704040b73f6df0bf9cf07e05a36cd19b8a6ecb",
+    "runs/unseen-source/provider-receipts.json": "5a76de9f134b185ce6396fec91c869b2cbb918d168b22199b50430cbbb116501",
+    "runs/unseen-source/scores.json": "36278c832ba97502b4877cd9182c9cebb047fe90ae77977249db1349c1c61767",
+    "runs/unseen-source/summary.json": "dd7ca1810339b259721235c4e33d9a6e4f70f69e220ffa43ff21579c07f4901e",
+    "runs/unseen-source/unseen-act-pest-weed/acquisition/acquisition.json": "cb57cf89fecd095058a6fab06fdc6f8a5b057e30daa70368a905a54b474d848d",
+    "runs/unseen-source/unseen-act-pest-weed/acquisition/source-evidence.md": "98b528c8acb3afe65b2d6feab25f0bbe67d70fd0b57f0985d38d9442a6bd3df1",
+    "runs/unseen-source/unseen-act-pest-weed/acquisition/trace.json": "77e402b875561bc28a3a902ed5f984c2027ae8a6c3c7c6a4505d3a1c97652561",
+    "runs/unseen-source/unseen-act-pest-weed/capture/assets/asset-11b38defa3f6563cac0eaa45.source": "598a94dc9c9bab6fc6d65298a539cd07eacd0748ee7c9e3afb3ed159471ef0e8",
+    "runs/unseen-source/unseen-act-pest-weed/capture/manifest.json": "23666cb57ad12025e98241c46ecc995ee949bde1f07ee7949027efcf8c36d4b9",
+    "runs/unseen-source/unseen-act-pest-weed/input-request.json": "bcda5618422af37f4055b17590d5735cc46573fbd1f6b946e11120f3a2de263a",
+    "runs/unseen-source/unseen-act-pest-weed/onboard.json": "2893317a3ab9698d484eca988cbb7c3ffdd6f250840c20ed8e87ea9bb957d37d",
+    "runs/unseen-source/unseen-act-pest-weed/request.json": "49bf8a3049812f947a4edc16a179729fd5869b0df0c7ef824b6056914422be09",
+    "runs/unseen-source/unseen-act-pest-weed/result.json": "415ad37aa3e7f3d594adcd9809c88b75617e52b7ae899d99d6516c3fd6131239",
+    "runs/unseen-source/unseen-act-pest-weed/source-links.json": "598a94dc9c9bab6fc6d65298a539cd07eacd0748ee7c9e3afb3ed159471ef0e8",
+    "runs/unseen-source/unseen-act-pest-weed/trace.json": "6835a3077566fa71b58e15638e9bda6e7a46373c6cf5f9c77667b6224af61cf1"
   },
   "configurations": {},
-  "full_run_archive": "evidence/evaluation-traces.tar.gz#current",
+  "full_run_archive": "evidence/evaluation-traces.tar.gz",
+  "full_run_archive_prefix": "acquisition-connected",
   "full_run_directory": "runs/unseen-source",
   "full_run_directory_git_tracked": false,
   "human_gold": false,
   "kind": "real-source-evaluation",
-  "limitation": "One frozen-runtime evaluation. Exact source-agreement labels only; no human approval or link precision claim. A later runtime change requires new validation.",
+  "limitation": "Preselected new dataset at a previously used publisher. No validated config/output; accuracy and coverage N/A. Zero positive mapping labels prevent a positive-accuracy claim even if output existed. Labels are outside inference evidence. Model selected original links, but neither fetch succeeded.",
   "model_calls_are_new": true,
   "per_source_usage": {
-    "unseen-act-cooperatives": {
-      "calls": 6,
-      "reported_cost_usd": 0.0078227,
-      "reported_tokens": 59435
+    "unseen-act-pest-weed": {
+      "calls": 5,
+      "reported_cost_usd": 0.0063431,
+      "reported_tokens": 51643
     }
   },
   "protocol": {
@@ -29,9 +160,9 @@
     "evaluation_scope": "unseen_source",
     "human_gold": false,
     "inputs_and_labels_sha256": {
-      "data/unseen-source/evidence/native.csv": "ab17d75e3ff5eeb35ab2c6aad0324684372a2884d2de3c6d4058daf74f231e41",
-      "data/unseen-source/evidence/official-metadata.txt": "7b02dc26157f155e28af58c8f3fd6da3ba6e36d30f7bfe0a6530ac8273512659",
-      "data/unseen-source/request.json": "42f26350b957125859100eacd0bacd9d648caa0138e21900a68a0cba043e4d68",
+      "data/unseen-source/evidence/native.csv": "b081b3840cd37d42c271f055ed3578d10b1d15015b1354f72aeaca91a94134e2",
+      "data/unseen-source/evidence/official-metadata.txt": "56012ced613d7e1ccf10d0f7f111b33a9cf7d51ed030c0b1a6a2792fe52d1f92",
+      "data/unseen-source/request.json": "d1ba2534e5d7c42757b3b89318be707f159b5d761b1efa7df923bf7ee8525956",
       "schema/firmable_ontology.yaml": "2a2d2db45cb0c5e7d022f6e2466c68271cc14704a09658e0d71b92ec1f130e23"
     },
     "labels_policy": "Frozen labels are read only by the subsequent scoring step, never by the planner.",
@@ -49,15 +180,16 @@
     ],
     "reasoning_effort": "low",
     "repetitions_per_source": 1,
-    "runner_sha256": "019d6f01a562c983da289ee2855b080e51fe3a6153f552bcfb3775abd7024322",
-    "runtime_fingerprint": "18984daebde13d47999f8bdbc3b4758074db27e0159799ee4506c185ff9e75b3",
+    "runner_sha256": "95a920ffcb381a28f57bf33eda497b24c0e3a2ed4b299589fff5b4c54c5349de",
+    "runtime_fingerprint": "e3061c95bd1865e826e92bc2bdf0a9bfac5017090c547e527341e0f7f4517d98",
+    "source_acquisition": "Agent-directed reading of observed source links before inference; the agent may finish without fetching. Original inputs stay unchanged; acquired excerpts are separately hash-bound.",
     "sources": [
       {
         "required_fields": [],
-        "source_id": "unseen-act-cooperatives"
+        "source_id": "unseen-act-pest-weed"
       }
     ],
-    "started_at": "2026-10-14T06:13:12.955328+00:00",
+    "started_at": "2026-10-14T06:37:46.959431+00:00",
     "stream": false,
     "synthetic_approval_only": true,
     "unknown_outcome_policy": "Stop new calls globally; never resend an unknown outcome.",
@@ -66,36 +198,156 @@
   "provider_receipts": [
     {
       "backend_provider": "Anthropic",
-      "call_id": "371ee14cd6a3bfe2512661ef",
+      "call_id": "fe4d15e3c5ac8c0e9ab32b09",
       "cost_basis": "OpenRouter reported cost, not invoice",
-      "cost_usd": 0.0004097,
+      "cost_usd": 0.0013176,
       "finish_reason": "stop",
-      "generation_id": "gen-1791958393-abpNCjCrMkiClWlrhYGf",
-      "host_schema_sha256": "eae1852a6aa9bb67875d60bfdf6d490b741fb2ef8d79e23e7e36a1a59c6c6b71",
+      "generation_id": "gen-1791959867-NppFsyJip3rp5W5E6CBj",
+      "host_schema_sha256": "7addc5644e14266afa8859c7028ec8674b0386be7f63dd5cf3ec7bb29f7a6f03",
       "http_status": 200,
       "model": "anthropic/claude-haiku-5.5",
       "outcome": "success",
-      "outer_wall_seconds": 1.800850250001531,
+      "outer_wall_seconds": 4.7729624589846935,
       "phase": "validated",
       "provider": "openrouter",
       "provider_allowlist": [
         "Anthropic"
       ],
       "request_byte_limit": 524288,
-      "request_bytes": 9661,
-      "request_sha256": "e7001b7f74e07e6d75591e57fdffed9b8e6d6b30e63be9223e690536383737ea",
+      "request_bytes": 23841,
+      "request_sha256": "67f15b1cdeaabdca4503bb512414746b26cb0049e81904e079b5841cd1417b76",
       "request_started": true,
       "requested_model": "anthropic/claude-haiku-5.5:reasoning=low:wire=openrouter-strict-flat-ast-5:providers=e50a4d52ae3c32830e74ac1c403634f872dcd68f94f2ca11c8e771c2bd30915a",
       "require_parameters": true,
       "response_complete": true,
       "response_format": "json_schema",
-      "source_id": "unseen-act-cooperatives",
+      "source_id": "unseen-act-pest-weed",
       "stream": false,
       "strict": true,
-      "ttft_seconds": 1.8007102079864126,
+      "ttft_seconds": 4.7721449169912376,
       "usage": {
-        "input_tokens": 3667,
-        "output_tokens": 86
+        "input_tokens": 9711,
+        "output_tokens": 693
+      },
+      "wire_protocol": "openrouter-strict-flat-ast-5",
+      "wire_schema_complexity": {
+        "optional_parameters": 0,
+        "union_parameters": 0
+      },
+      "wire_schema_sha256": "fca7a611ffa5d686af2f21850f6813a82e68bab3b2aa5f67a19cf0687a4d1982"
+    },
+    {
+      "backend_provider": "Anthropic",
+      "call_id": "5e21f66cf6cb188a38c37ba2",
+      "cost_basis": "OpenRouter reported cost, not invoice",
+      "cost_usd": 0.00141,
+      "finish_reason": "stop",
+      "generation_id": "gen-1791959872-1f7axXQ7OTw9rcikTXLP",
+      "host_schema_sha256": "7addc5644e14266afa8859c7028ec8674b0386be7f63dd5cf3ec7bb29f7a6f03",
+      "http_status": 200,
+      "model": "anthropic/claude-haiku-5.5",
+      "outcome": "success",
+      "outer_wall_seconds": 6.861426999996183,
+      "phase": "validated",
+      "provider": "openrouter",
+      "provider_allowlist": [
+        "Anthropic"
+      ],
+      "request_byte_limit": 524288,
+      "request_bytes": 24481,
+      "request_sha256": "436cc6fc8b43f6bc5ffa9e0520e134cbb964a44a3dc8adfe57ef9e5b2fa289dd",
+      "request_started": true,
+      "requested_model": "anthropic/claude-haiku-5.5:reasoning=low:wire=openrouter-strict-flat-ast-5:providers=e50a4d52ae3c32830e74ac1c403634f872dcd68f94f2ca11c8e771c2bd30915a",
+      "require_parameters": true,
+      "response_complete": true,
+      "response_format": "json_schema",
+      "source_id": "unseen-act-pest-weed",
+      "stream": false,
+      "strict": true,
+      "ttft_seconds": 6.860597458988195,
+      "usage": {
+        "input_tokens": 9955,
+        "output_tokens": 829
+      },
+      "wire_protocol": "openrouter-strict-flat-ast-5",
+      "wire_schema_complexity": {
+        "optional_parameters": 0,
+        "union_parameters": 0
+      },
+      "wire_schema_sha256": "fca7a611ffa5d686af2f21850f6813a82e68bab3b2aa5f67a19cf0687a4d1982"
+    },
+    {
+      "backend_provider": "Anthropic",
+      "call_id": "8294cb0ee9361be5047c4539",
+      "cost_basis": "OpenRouter reported cost, not invoice",
+      "cost_usd": 0.0012677,
+      "finish_reason": "stop",
+      "generation_id": "gen-1791959880-lhrkwoCsQYF0BziEOm4Q",
+      "host_schema_sha256": "7addc5644e14266afa8859c7028ec8674b0386be7f63dd5cf3ec7bb29f7a6f03",
+      "http_status": 200,
+      "model": "anthropic/claude-haiku-5.5",
+      "outcome": "success",
+      "outer_wall_seconds": 5.420563415973447,
+      "phase": "validated",
+      "provider": "openrouter",
+      "provider_allowlist": [
+        "Anthropic"
+      ],
+      "request_byte_limit": 524288,
+      "request_bytes": 25068,
+      "request_sha256": "217a1f71663fd40e32fe188d5b3260174cd56e35e47043d16b45ab4f5d561b84",
+      "request_started": true,
+      "requested_model": "anthropic/claude-haiku-5.5:reasoning=low:wire=openrouter-strict-flat-ast-5:providers=e50a4d52ae3c32830e74ac1c403634f872dcd68f94f2ca11c8e771c2bd30915a",
+      "require_parameters": true,
+      "response_complete": true,
+      "response_format": "json_schema",
+      "source_id": "unseen-act-pest-weed",
+      "stream": false,
+      "strict": true,
+      "ttft_seconds": 5.419809415994678,
+      "usage": {
+        "input_tokens": 10167,
+        "output_tokens": 502
+      },
+      "wire_protocol": "openrouter-strict-flat-ast-5",
+      "wire_schema_complexity": {
+        "optional_parameters": 0,
+        "union_parameters": 0
+      },
+      "wire_schema_sha256": "fca7a611ffa5d686af2f21850f6813a82e68bab3b2aa5f67a19cf0687a4d1982"
+    },
+    {
+      "backend_provider": "Anthropic",
+      "call_id": "4ddeb173f5558e23ef9f5770",
+      "cost_basis": "OpenRouter reported cost, not invoice",
+      "cost_usd": 0.0005983,
+      "finish_reason": "stop",
+      "generation_id": "gen-1791959885-7SEvicPZZGewLngQVOoe",
+      "host_schema_sha256": "eae1852a6aa9bb67875d60bfdf6d490b741fb2ef8d79e23e7e36a1a59c6c6b71",
+      "http_status": 200,
+      "model": "anthropic/claude-haiku-5.5",
+      "outcome": "success",
+      "outer_wall_seconds": 3.4428941659862176,
+      "phase": "validated",
+      "provider": "openrouter",
+      "provider_allowlist": [
+        "Anthropic"
+      ],
+      "request_byte_limit": 524288,
+      "request_bytes": 12561,
+      "request_sha256": "4a78ad204ea58ccd498e3f1a511277e1a1938f8457ea64802a1bb4160915cd54",
+      "request_started": true,
+      "requested_model": "anthropic/claude-haiku-5.5:reasoning=low:wire=openrouter-strict-flat-ast-5:providers=e50a4d52ae3c32830e74ac1c403634f872dcd68f94f2ca11c8e771c2bd30915a",
+      "require_parameters": true,
+      "response_complete": true,
+      "response_format": "json_schema",
+      "source_id": "unseen-act-pest-weed",
+      "stream": false,
+      "strict": true,
+      "ttft_seconds": 3.4423471659829374,
+      "usage": {
+        "input_tokens": 4808,
+        "output_tokens": 235
       },
       "wire_protocol": "openrouter-strict-flat-ast-5",
       "wire_schema_complexity": {
@@ -106,196 +358,36 @@
     },
     {
       "backend_provider": "Anthropic",
-      "call_id": "a79e18e0e1b032ea8b002f82",
+      "call_id": "9c9b0fdd082984908e21fbdd",
       "cost_basis": "OpenRouter reported cost, not invoice",
-      "cost_usd": 0.0011866,
+      "cost_usd": 0.0017495,
       "finish_reason": "stop",
-      "generation_id": "gen-1791958394-Lf4qrv1rLSyMcIj83atx",
+      "generation_id": "gen-1791959889-Ke4aBtKu9tVJBrNFg38o",
       "host_schema_sha256": "14fd070011077a71e14d2883c2cc28ab108d4e7c65a9fc7fcd24cc3fb74ad32c",
       "http_status": 200,
       "model": "anthropic/claude-haiku-5.5",
       "outcome": "success",
-      "outer_wall_seconds": 4.840354458981892,
+      "outer_wall_seconds": 5.603495999996085,
       "phase": "validated",
       "provider": "openrouter",
       "provider_allowlist": [
         "Anthropic"
       ],
       "request_byte_limit": 524288,
-      "request_bytes": 26482,
-      "request_sha256": "b1638591882b393ab891bbf00f54dc485c88f2f6fef1dd68f21b79e6ef89e28c",
+      "request_bytes": 37416,
+      "request_sha256": "41393f0d89e04e6e374f925d0fbed8354aae342d1818b45d39a1479d5d6945ca",
       "request_started": true,
       "requested_model": "anthropic/claude-haiku-5.5:reasoning=low:wire=openrouter-strict-flat-ast-5:providers=e50a4d52ae3c32830e74ac1c403634f872dcd68f94f2ca11c8e771c2bd30915a",
       "require_parameters": true,
       "response_complete": true,
       "response_format": "json_schema",
-      "source_id": "unseen-act-cooperatives",
+      "source_id": "unseen-act-pest-weed",
       "stream": false,
       "strict": true,
-      "ttft_seconds": 4.840204084001016,
+      "ttft_seconds": 5.603180292004254,
       "usage": {
-        "input_tokens": 9621,
-        "output_tokens": 449
-      },
-      "wire_protocol": "openrouter-strict-flat-ast-5",
-      "wire_schema_complexity": {
-        "optional_parameters": 0,
-        "union_parameters": 1
-      },
-      "wire_schema_sha256": "9b0d348ea734407032aa2113115ceb21aa59bba714de424dffad1db212f7e76f"
-    },
-    {
-      "backend_provider": "Anthropic",
-      "call_id": "72a9ba417c3c319c3af07eef",
-      "cost_basis": "OpenRouter reported cost, not invoice",
-      "cost_usd": 0.0016079,
-      "finish_reason": "stop",
-      "generation_id": "gen-1791958399-XQ57QloBxIbXCMOUCJSd",
-      "host_schema_sha256": "a1bca7fef6679705d40c568b0cc49e68a16c64d9cf0d6b3211d4b368f9c13a09",
-      "http_status": 200,
-      "model": "anthropic/claude-haiku-5.5",
-      "outcome": "success",
-      "outer_wall_seconds": 12.899357124988455,
-      "phase": "validated",
-      "provider": "openrouter",
-      "provider_allowlist": [
-        "Anthropic"
-      ],
-      "request_byte_limit": 524288,
-      "request_bytes": 24189,
-      "request_sha256": "6da8224444710f91a04b36f02497e31b18df48723a5cb66437e16d5c1718dbe0",
-      "request_started": true,
-      "requested_model": "anthropic/claude-haiku-5.5:reasoning=low:wire=openrouter-strict-flat-ast-5:providers=e50a4d52ae3c32830e74ac1c403634f872dcd68f94f2ca11c8e771c2bd30915a",
-      "require_parameters": true,
-      "response_complete": true,
-      "response_format": "json_schema",
-      "source_id": "unseen-act-cooperatives",
-      "stream": false,
-      "strict": true,
-      "ttft_seconds": 12.898768542014295,
-      "usage": {
-        "input_tokens": 9039,
-        "output_tokens": 1408
-      },
-      "wire_protocol": "openrouter-strict-flat-ast-5",
-      "wire_schema_complexity": {
-        "optional_parameters": 0,
-        "union_parameters": 0
-      },
-      "wire_schema_sha256": "f5f4136b6e4fe798d4e0f606490a1d422704d83b13a88300c7793a561fbc629b"
-    },
-    {
-      "backend_provider": "Anthropic",
-      "call_id": "a1396a24440a9baa37cf2e90",
-      "cost_basis": "OpenRouter reported cost, not invoice",
-      "cost_usd": 0.001422,
-      "finish_reason": "stop",
-      "generation_id": "gen-1791958412-JzgA182cdSkzmFvPUhEL",
-      "host_schema_sha256": "a1bca7fef6679705d40c568b0cc49e68a16c64d9cf0d6b3211d4b368f9c13a09",
-      "http_status": 200,
-      "model": "anthropic/claude-haiku-5.5",
-      "outcome": "success",
-      "outer_wall_seconds": 7.211134957993636,
-      "phase": "validated",
-      "provider": "openrouter",
-      "provider_allowlist": [
-        "Anthropic"
-      ],
-      "request_byte_limit": 524288,
-      "request_bytes": 24585,
-      "request_sha256": "1408efacef20f9b49f217c3e2388436c5bafc70906b2b31c81edbd077b1bea6a",
-      "request_started": true,
-      "requested_model": "anthropic/claude-haiku-5.5:reasoning=low:wire=openrouter-strict-flat-ast-5:providers=e50a4d52ae3c32830e74ac1c403634f872dcd68f94f2ca11c8e771c2bd30915a",
-      "require_parameters": true,
-      "response_complete": true,
-      "response_format": "json_schema",
-      "source_id": "unseen-act-cooperatives",
-      "stream": false,
-      "strict": true,
-      "ttft_seconds": 7.210720749979373,
-      "usage": {
-        "input_tokens": 9175,
-        "output_tokens": 1009
-      },
-      "wire_protocol": "openrouter-strict-flat-ast-5",
-      "wire_schema_complexity": {
-        "optional_parameters": 0,
-        "union_parameters": 0
-      },
-      "wire_schema_sha256": "f5f4136b6e4fe798d4e0f606490a1d422704d83b13a88300c7793a561fbc629b"
-    },
-    {
-      "backend_provider": "Anthropic",
-      "call_id": "179db24255271e51d14a28c7",
-      "cost_basis": "OpenRouter reported cost, not invoice",
-      "cost_usd": 0.001525,
-      "finish_reason": "stop",
-      "generation_id": "gen-1791958419-ni21u3UH5SZZVyXh92T0",
-      "host_schema_sha256": "6d429eedfbe4a468975048f2f263679104180e1b1c4fee6e01586baa08246445",
-      "http_status": 200,
-      "model": "anthropic/claude-haiku-5.5",
-      "outcome": "success",
-      "outer_wall_seconds": 6.419846000004327,
-      "phase": "validated",
-      "provider": "openrouter",
-      "provider_allowlist": [
-        "Anthropic"
-      ],
-      "request_byte_limit": 524288,
-      "request_bytes": 24320,
-      "request_sha256": "b93949170a88bd0a8e5a0afea5b720cb780e17cb06a11899f7ea4aae3ac3d325",
-      "request_started": true,
-      "requested_model": "anthropic/claude-haiku-5.5:reasoning=low:wire=openrouter-strict-flat-ast-5:providers=e50a4d52ae3c32830e74ac1c403634f872dcd68f94f2ca11c8e771c2bd30915a",
-      "require_parameters": true,
-      "response_complete": true,
-      "response_format": "json_schema",
-      "source_id": "unseen-act-cooperatives",
-      "stream": false,
-      "strict": true,
-      "ttft_seconds": 6.417410833004396,
-      "usage": {
-        "input_tokens": 9515,
-        "output_tokens": 1147
-      },
-      "wire_protocol": "openrouter-strict-flat-ast-5",
-      "wire_schema_complexity": {
-        "optional_parameters": 0,
-        "union_parameters": 0
-      },
-      "wire_schema_sha256": "e97afbfe60d7805eade82b4b6c29121dfd5a60a1976f1fa6c005a5df67e910c5"
-    },
-    {
-      "backend_provider": "Anthropic",
-      "call_id": "64ffbd5b4a01e3b54c675306",
-      "cost_basis": "OpenRouter reported cost, not invoice",
-      "cost_usd": 0.0016715,
-      "finish_reason": "stop",
-      "generation_id": "gen-1791958426-bXKa27NNufctiHlyh85p",
-      "host_schema_sha256": "14fd070011077a71e14d2883c2cc28ab108d4e7c65a9fc7fcd24cc3fb74ad32c",
-      "http_status": 200,
-      "model": "anthropic/claude-haiku-5.5",
-      "outcome": "success",
-      "outer_wall_seconds": 4.271194375003688,
-      "phase": "validated",
-      "provider": "openrouter",
-      "provider_allowlist": [
-        "Anthropic"
-      ],
-      "request_byte_limit": 524288,
-      "request_bytes": 36871,
-      "request_sha256": "cfb43f6e004f581b9f2d7f290bb081a8f16ba955856eb03f7d81e5dededa4b15",
-      "request_started": true,
-      "requested_model": "anthropic/claude-haiku-5.5:reasoning=low:wire=openrouter-strict-flat-ast-5:providers=e50a4d52ae3c32830e74ac1c403634f872dcd68f94f2ca11c8e771c2bd30915a",
-      "require_parameters": true,
-      "response_complete": true,
-      "response_format": "json_schema",
-      "source_id": "unseen-act-cooperatives",
-      "stream": false,
-      "strict": true,
-      "ttft_seconds": 4.270190083014313,
-      "usage": {
-        "input_tokens": 13720,
-        "output_tokens": 599
+        "input_tokens": 14055,
+        "output_tokens": 688
       },
       "wire_protocol": "openrouter-strict-flat-ast-5",
       "wire_schema_complexity": {
@@ -305,25 +397,25 @@
       "wire_schema_sha256": "9b0d348ea734407032aa2113115ceb21aa59bba714de424dffad1db212f7e76f"
     }
   ],
-  "recorded_at": "2026-10-14T06:14:22.119774+00:00",
+  "recorded_at": "2026-10-14T06:39:07.542608+00:00",
   "scores": {
-    "frozen_labels_sha256": "356bf29ae3be6eaa6ec0d65220a211195604233688ccb17157e57e5e7c71ca1b",
+    "frozen_labels_sha256": "696bf62f6c8dc73c587e7135efb5344a940df9b0c61b72ededd26ac2b84ec522",
     "human_gold": false,
     "limitation": "One labelled source, one execution. Source-agreement labels are not human gold or a broad generalisation claim. Missing/invalid output remains N/A with frozen denominators.",
     "results": [
       {
         "abstention_opportunities": {
-          "address.full": 17,
-          "address.locality": 17,
-          "address.postcode": 17,
-          "address.state": 17,
-          "entity.abn": 17,
-          "entity.acn": 17,
-          "entity.date_registered": 17,
-          "entity.industry_code": 17,
-          "entity.nzbn": 17,
-          "entity.trading_name": 17,
-          "entity.website": 17
+          "address.full": 149,
+          "address.locality": 149,
+          "address.postcode": 149,
+          "address.state": 149,
+          "entity.abn": 149,
+          "entity.acn": 149,
+          "entity.date_registered": 149,
+          "entity.industry_code": 149,
+          "entity.nzbn": 149,
+          "entity.status": 149,
+          "entity.website": 149
         },
         "accuracy_status": "N/A",
         "configuration": {
@@ -334,18 +426,12 @@
         "coverage": null,
         "guard_errors": {},
         "metrics": null,
-        "native_record_count": 17,
+        "native_record_count": 149,
         "output_exists": false,
-        "positive_branches": {
-          "explicit_active_registration_status": 17,
-          "registered_cooperative_name": 17
-        },
-        "positive_opportunities": {
-          "entity.legal_name": 17,
-          "entity.status": 17
-        },
-        "run": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/unseen-source/unseen-act-cooperatives",
-        "source_id": "unseen-act-cooperatives",
+        "positive_branches": {},
+        "positive_opportunities": {},
+        "run": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/unseen-source/unseen-act-pest-weed",
+        "source_id": "unseen-act-pest-weed",
         "status": "missing_output",
         "workflow": {
           "candidate_status": "unavailable",
@@ -365,31 +451,49 @@
     }
   },
   "summary": {
-    "completed_at": "2026-10-14T06:13:50.518713+00:00",
+    "completed_at": "2026-10-14T06:38:14.938428+00:00",
     "cost_basis": "Provider receipts; not invoice",
     "cost_complete": true,
     "downstream": null,
     "human_approved_configs": 0,
     "human_link_reviews": 0,
     "inputs_and_labels_unchanged": true,
-    "model_calls": 6,
-    "reported_cost_usd": 0.0078227,
-    "reported_tokens": 59435,
+    "model_calls": 5,
+    "reported_cost_usd": 0.0063431,
+    "reported_tokens": 51643,
     "results": [
       {
         "candidate_status": "unavailable",
-        "completed_at": "2026-10-14T06:13:50.517815+00:00",
+        "completed_at": "2026-10-14T06:38:14.937631+00:00",
         "onboarding_status": "partial",
-        "source_id": "unseen-act-cooperatives",
-        "started_at": "2026-10-14T06:13:12.967964+00:00",
+        "source_acquisition": {
+          "actions": [
+            "fetch",
+            "fetch",
+            "finish"
+          ],
+          "excerpt_count": 0,
+          "export_sha256": "98b528c8acb3afe65b2d6feab25f0bbe67d70fd0b57f0985d38d9442a6bd3df1",
+          "status": "partial",
+          "usage": {
+            "call_count": 3,
+            "cost_basis": "OpenRouter reported cost, not invoice",
+            "total_cost_usd": 0.0039953,
+            "total_tokens": 31857,
+            "wall_seconds": 18.82108379199053,
+            "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+          }
+        },
+        "source_id": "unseen-act-pest-weed",
+        "started_at": "2026-10-14T06:37:46.979745+00:00",
         "status": "no_validated_candidate",
         "task_status": "not_configured",
-        "wall_seconds": 37.56018979201326
+        "wall_seconds": 27.970656874997076
       }
     ],
     "runner_unchanged": true,
     "runtime_unchanged": true,
     "stop_reason": null,
-    "wall_seconds": 37.56474916599109
+    "wall_seconds": 27.980742084007943
   }
 }

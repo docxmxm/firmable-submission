@@ -280,7 +280,7 @@ class AstSchemaTests(unittest.TestCase):
         with self.assertRaises(Failure):
             compile_ast(expression, {"value"}, {"value"})
 
-    def test_six_selected_r2_configs_satisfy_published_contract(self):
+    def test_current_six_configs_satisfy_published_contract(self):
         root = Path(__file__).resolve().parents[1] / "outputs" / "configs"
         paths = sorted(root.glob("real-*.json"))
         self.assertEqual(len(paths), 6)

@@ -1,6 +1,7 @@
 """Replay the selected pre-scope r2 cohort; fidelity is not semantic accuracy."""
 
 import json
+import tarfile
 import tempfile
 import unittest
 from collections import Counter
@@ -12,6 +13,16 @@ from firmable_runtime.execution import discover, run_engine
 from firmable_runtime.workflow import build_outputs
 
 PROJECT = Path(__file__).resolve().parents[1]
+
+
+def historical_output(archive, path):
+    """Read retained r2 bytes without confusing them with the current outputs."""
+    if not path.startswith("outputs/"):
+        raise AssertionError("Historical output path must retain its logical prefix")
+    member = archive.extractfile("historical-r2/" + path)
+    if member is None:
+        raise AssertionError("Missing historical output: " + path)
+    return member.read()
 
 
 def informative_values(observation):
@@ -32,18 +43,23 @@ class AssessmentReplayTests(unittest.TestCase):
         self.assertEqual(len(sources), 6)
         self.assertEqual(set(manifest["sources"]), {source.name for source in sources})
         self.assertIs(manifest["human_gold"], False)
-        with tempfile.TemporaryDirectory() as directory:
+        with (
+            tempfile.TemporaryDirectory() as directory,
+            tarfile.open(
+                PROJECT / manifest["storage_mapping"]["archive"], "r:gz"
+            ) as archive,
+        ):
             paths = []
             for source in sources:
                 with self.subTest(source=source.name):
                     binding = manifest["sources"][source.name]
-                    config_path = PROJECT / "outputs/configs" / (source.name + ".json")
-                    self.assertEqual(config_path, PROJECT / binding["config_path"])
-                    config_bytes = config_path.read_bytes()
+                    config_bytes = historical_output(archive, binding["config_path"])
                     self.assertEqual(byte_hash(config_bytes), binding["config_sha256"])
                     config = json.loads(config_bytes)
                     self.assertEqual(digest(config), binding["config_canonical_sha256"])
-                    saved_bytes = (PROJECT / binding["observations_path"]).read_bytes()
+                    saved_bytes = historical_output(
+                        archive, binding["observations_path"]
+                    )
                     self.assertEqual(
                         byte_hash(saved_bytes), binding["observations_sha256"]
                     )
@@ -159,7 +175,11 @@ class AssessmentReplayTests(unittest.TestCase):
                     )
                     paths.append(path)
             result = build_outputs(paths, Path(directory) / "build")
-            expected = json.loads((PROJECT / "outputs/summary.json").read_text())
+            summary_bytes = historical_output(archive, "outputs/summary.json")
+            self.assertEqual(
+                byte_hash(summary_bytes), manifest["storage_mapping"]["summary_sha256"]
+            )
+            expected = json.loads(summary_bytes)
             for field in (
                 "observation_count",
                 "link_count",

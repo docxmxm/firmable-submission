@@ -1,16 +1,89 @@
 """Read-only original document pages; paths come only from the evidence manifest."""
 
 import io
+import re
 from pathlib import Path
 
 from pypdf import PdfReader
 
-from .common import Failure, byte_hash, canonical, safe_path
+from .common import Failure, byte_hash, canonical, digest, safe_path
 from .native import MAX_FILE_BYTES, decode_text
 
 MAX_CONTEXT_BYTES = 24 * 1024
 MAX_CONTEXT_PAGES = 3
 MAX_DOCUMENT_PAGES = 500
+
+
+def source_url_candidates(catalogue_metadata, *, pages=()):
+    """Locate literal navigation URLs, without judging authority or field meaning.
+
+    Offsets are characters in the metadata string or extracted original page.
+    Keep each occurrence's provenance, including repeated URLs in other places.
+    Fetch policy and semantic support remain the caller's separate concerns.
+    """
+    candidates = []
+
+    def scan(text, source_ref):
+        for match in re.finditer(r"https?://[^\s<>\"']+", text, re.IGNORECASE):
+            url = match.group()
+            # Remove prose/Markdown delimiters, preserving balanced URL brackets.
+            if match.start() or match.end() != len(text):
+                url = url.rstrip(".,;:!?")
+            for opening, closing in (("(", ")"), ("[", "]"), ("{", "}")):
+                while url.endswith(closing) and url.count(closing) > url.count(opening):
+                    url = url[:-1]
+            candidates.append(
+                {
+                    "url": url,
+                    "source_ref": {
+                        **source_ref,
+                        "start": match.start(),
+                        "end": match.start() + len(url),
+                    },
+                }
+            )
+
+    metadata_hash = digest(catalogue_metadata)
+
+    def visit(value, pointer):
+        if isinstance(value, dict):
+            for key in sorted(value):
+                visit(
+                    value[key],
+                    pointer + "/" + key.replace("~", "~0").replace("/", "~1"),
+                )
+        elif isinstance(value, list):
+            for index, item in enumerate(value):
+                visit(item, pointer + "/" + str(index))
+        elif isinstance(value, str):
+            scan(
+                value,
+                {
+                    "kind": "catalogue_metadata",
+                    "metadata_sha256": metadata_hash,
+                    "json_pointer": pointer,
+                },
+            )
+
+    visit(catalogue_metadata, "")
+    for page in pages:
+        scan(
+            page["text"],
+            {
+                "kind": "original_document",
+                **{
+                    key: page[key]
+                    for key in (
+                        "file",
+                        "file_sha256",
+                        "page_number",
+                        "text_sha256",
+                        "extraction",
+                    )
+                },
+            },
+        )
+    return candidates
 
 
 def document_pages(root, manifest):

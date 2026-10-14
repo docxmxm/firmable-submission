@@ -16,6 +16,7 @@ from .engine import ast_nodes, canonical_valid
 from .native import public_structure
 from .field_evidence import inspect_field_evidence
 from .runtime import source_output_summary
+from .source_document_tools import document_pages, source_url_candidates
 from .schema import check_response as decode_response
 from . import llm_route
 
@@ -114,6 +115,8 @@ cosmetic revisions. Repeated structural diagnostics do not prove the same semant
 Reviewer repair_hint text is a suggestion to verify against original evidence, not a source rule.
 For unchanged execution with repeated errors, inspect available field evidence or use cached
 original context to make a supported revision; if support is insufficient, explain the gap."""
+INSTRUCTIONS += """ catalogue_metadata is original caller-supplied context. source_url_candidates
+are literal navigation references with provenance, not retrieved definitions or semantic support."""
 
 
 def decision_schema():
@@ -1693,6 +1696,12 @@ def onboard_source(request, provider=None):
     validation = runtime.run.load_artifact("validation-records")
     decisions = decision_schema()
     execution_cost_context = _execution_cost_context(runtime)
+    source_urls = source_url_candidates(
+        runtime.input.get("catalogue_metadata", {}),
+        pages=document_pages(runtime.input["evidence_root"], runtime.evidence_manifest)[
+            "pages"
+        ],
+    )
     while state["turn"] < MAX_DECISIONS and state["status"] == "running":
         lookups = _lookup_memory(runtime, state, proposal)
         recent = sorted(
@@ -1746,6 +1755,8 @@ def onboard_source(request, provider=None):
             "source_schema": schema,
             "proposal_records": proposal,
             "source_documentation": runtime.docs,
+            "catalogue_metadata": runtime.input.get("catalogue_metadata", {}),
+            "source_url_candidates": source_urls,
             "ontology_text": Path(request["ontology_path"]).read_text(),
             "ast_contract": DSL_INSTRUCTIONS,
             "execution_options": ["ast", llm_route.KIND],

@@ -6,6 +6,7 @@ planner's development validation is separate from formal approved extraction.
 
 import copy
 import fcntl
+import shutil
 from contextlib import contextmanager
 from pathlib import Path
 
@@ -28,7 +29,7 @@ from .execution import (
     wire_profiles,
 )
 from .identity import build_profile_view, link_records, withdraw_view
-from .native import public_structure
+from .native import input_manifest, public_structure
 from .runtime import Runtime, runtime_fingerprint, source_output_summary
 from .store import DurableRun
 
@@ -77,8 +78,84 @@ def acquire_source_evidence(request, provider, capture_root, seed_sources):
     return acquire(request, provider, capture_root, seed_sources)
 
 
+def _acquire_for_inference(request, provider):
+    """Let the reading agent choose source links, then freeze its original excerpts."""
+    from .source_document_tools import document_pages, source_url_candidates
+
+    root, evidence = Path(request["state_dir"]), Path(request["evidence_root"])
+    manifest = input_manifest(evidence)
+    links = source_url_candidates(
+        request.get("catalogue_metadata", {}),
+        pages=document_pages(evidence, manifest)["pages"],
+    )
+    if not links:
+        return request, None
+    navigation = root / "source-links.json"
+    navigation_value = {"links": links}
+    if navigation.exists() and _json(navigation) != navigation_value:
+        raise Failure("checkpoint_mismatch", "Original navigation sources changed")
+    atomic_json(navigation, navigation_value)
+    acquired = acquire_source_evidence(
+        {**request, "state_dir": str(root / "acquisition")},
+        provider,
+        root / "capture",
+        [
+            {
+                "kind": "navigation",
+                "url": None,
+                "path": str(navigation),
+                "sha256": byte_hash(navigation.read_bytes()),
+                "media_type": "application/json",
+            }
+        ],
+    )
+    effective = copy.deepcopy(request)
+    effective["source_acquisition_policy"] = {
+        "mode": "observed_links_before_inference",
+        "original_evidence_root": str(evidence),
+        "original_evidence_hash": digest(manifest),
+        "navigation_sha256": byte_hash(navigation.read_bytes()),
+        "result_path": str(root / "acquisition/acquisition.json"),
+        "result_sha256": byte_hash(
+            (root / "acquisition/acquisition.json").read_bytes()
+        ),
+        "capture_manifest_sha256": acquired["capture_manifest_sha256"],
+        "export_sha256": acquired["export_sha256"],
+        "excerpt_count": acquired["excerpt_count"],
+        "status": acquired["status"],
+        "max_steps": request.get("source_acquisition_max_steps", 12),
+    }
+    if acquired["excerpt_count"]:
+        # Only exact source excerpts join the input. Model reasons and navigation
+        # records stay in the journal; original native files retain their paths.
+        supplement = "acquired-" + acquired["export_sha256"][:16] + ".md"
+        if any(item["path"] == supplement for item in manifest):
+            raise Failure("validation_error", "Source supplement path is occupied")
+        expected = sorted(
+            manifest + [{"path": supplement, "sha256": acquired["export_sha256"]}],
+            key=lambda item: item["path"],
+        )
+        snapshot = root / "evidence"
+        if not snapshot.exists():
+            pending = root / "evidence.pending"
+            pending.mkdir(exist_ok=True)
+            for item in manifest:
+                target = pending / item["path"]
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(evidence / item["path"], target)
+            shutil.copyfile(acquired["export_path"], pending / supplement)
+            if input_manifest(pending) != expected:
+                raise Failure("checkpoint_mismatch", "Evidence changed during snapshot")
+            pending.replace(snapshot)
+        if input_manifest(snapshot) != expected:
+            raise Failure("checkpoint_mismatch", "Frozen source supplement changed")
+        effective["evidence_root"] = str(snapshot)
+    return effective, acquired
+
+
 def infer_source(request, provider=None):
     from .agent import onboard_source
+    from .provider import CcVibeProvider
 
     request = copy.deepcopy(request)
     for key in ("state_dir", "evidence_root", "ontology_path"):
@@ -93,11 +170,19 @@ def infer_source(request, provider=None):
     if request["execution_scope"] != "onboarding_development":
         raise Failure("validation_error", "Inference requires development scope")
     with _run_lock(root):
+        original = root / "input-request.json"
+        if original.exists() and _json(original) != request:
+            raise Failure("checkpoint_mismatch", "Saved input request changed")
+        atomic_json(original, request)
+        provider = provider or CcVibeProvider()
+        request, acquired = _acquire_for_inference(request, provider)
         saved = root / "request.json"
         if saved.exists() and _json(saved) != request:
             raise Failure("checkpoint_mismatch", "Saved inference request changed")
         atomic_json(saved, request)
         result = onboard_source(request, provider)
+        if acquired is not None:
+            result = {**result, "source_acquisition": acquired}
         atomic_json(root / "onboard.json", result)
         return result
 
@@ -147,6 +232,22 @@ def _review_state(run_dir):
             "checkpoint_mismatch",
             "Source, request, ontology or runtime changed; infer again in a new run",
         )
+    acquisition = request.get("source_acquisition_policy") or {}
+    if acquisition.get("mode") == "observed_links_before_inference":
+        from .source_acquisition import SourceAcquisition
+
+        receipt = root / "acquisition/acquisition.json"
+        if byte_hash(receipt.read_bytes()) != acquisition["result_sha256"]:
+            raise Failure("checkpoint_mismatch", "Source acquisition receipt changed")
+        acquired = _json(receipt)
+        capture = SourceAcquisition(root / "capture")
+        if (
+            byte_hash((capture.root / "manifest.json").read_bytes())
+            != acquisition["capture_manifest_sha256"]
+            or byte_hash(Path(acquired["export_path"]).read_bytes())
+            != acquisition["export_sha256"]
+        ):
+            raise Failure("checkpoint_mismatch", "Acquired source evidence changed")
     selected = run.state["selected_tables"]
     if config["source_schema"] != table_schema(tables, selected, paths):
         raise Failure("checkpoint_mismatch", "Frozen native reader selection changed")
@@ -166,7 +267,9 @@ def _review_state(run_dir):
         "validation_artifacts": {
             k: v["sha256"]
             for k, v in run.state["artifacts"].items()
-            if k.startswith(("validation-", "comparison-validation-", "selection-comparison-"))
+            if k.startswith(
+                ("validation-", "comparison-validation-", "selection-comparison-")
+            )
         },
         "name_review_artifact": name_review_binding,
     }
@@ -197,6 +300,7 @@ def review_source(run_dir):
         if result.get("name_review_artifact")
         else None,
         "usage": result["usage"],
+        "source_acquisition": request.get("source_acquisition_policy"),
         "approval": _json(root / "approval.json")
         if (root / "approval.json").exists()
         else None,

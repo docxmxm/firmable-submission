@@ -1,12 +1,12 @@
 {
-  "seed": "firmable-pre-scope-r2-review-20261014",
+  "seed": "firmable-link-review",
   "sampling": "Ascending SHA256(seed + ':' + pair_id), without replacement",
-  "links_sha256": "4dd10837074a067d161f18c92e89a9d2b36f1b62325f5c57c0004ed528908cda",
+  "links_sha256": "d81962bc25a9aa0e8aa8c3c97c691d716f9e56d2577b62dec14c9c46d3fdebbe",
   "proposed_pair_population": 448,
   "sample_size": 50,
   "human_reviewed": 0,
   "precision": null,
   "threshold": 0.99,
-  "policy_version": "common-anchor-0.2-subject-kind",
+  "policy_version": "common-anchor-0.3-subject-review",
   "limitation": "Pending human decisions. No labels inherited from earlier outputs."
 }

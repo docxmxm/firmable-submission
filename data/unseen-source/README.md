@@ -1,14 +1,13 @@
-# Development holdout: Cooperatives registered in ACT
+# Unseen-source evaluation: ACT pest and weed operators
 
-The final runtime was frozen before native records or field definitions were fetched. See [provenance](provenance.json) for download times, original URLs, licences, hashes and the runtime binding.
+This directory contains the complete **149-row, six-column** [native CSV](evidence/native.csv) for the ACT Government's [List of pest and weed control operators in the ACT](https://www.data.act.gov.au/d/gg97-ghvs), licensed under **CC BY 4.0**. The 11,623-byte export is preserved unchanged, without filtering, cleaning or deduplication.
 
-- Publisher: Access Canberra; CC BY 4.0 International.
-- [Official dataset](https://www.data.act.gov.au/d/758m-5a8y).
-- `evidence/native.csv`: the complete original CSV, unchanged (17 rows).
-- `catalogue_metadata.json`: original official metadata response.
-- `evidence/official-metadata.txt`: a mechanical projection of the dataset description, licence and every original non-system column definition. It adds no mapping hints.
-- `request.json`: native inputs, original metadata, fixed ontology and empty required-fields list; the harness and model must discover the mappings.
+The runtime was frozen at **2026-10-14 06:31:22.934284 UTC**, before the metadata and CSV downloads at 06:31:44 and 06:31:45 UTC. Its fingerprint is `e3061c95bd1865e826e92bc2bdf0a9bfac5017090c547e527341e0f7f4517d98`. [Download provenance](provenance.json) records the official URLs, timestamps, byte counts, SHA-256 hashes and TLS verification.
 
-Dataset-level catalogue metadata had been seen previously; no retained native development/model-test history was found before selection. This is one development holdout, not a claim about model pretraining or broad unseen-source performance. Source-agreement scoring labels are kept outside the inference evidence directory and frozen before the model run. They are not human gold.
+[Original catalogue metadata](catalogue_metadata.json) is retained separately. [Official metadata text](evidence/official-metadata.txt) mechanically projects the dataset description, licence and every original non-system column definition. All six column descriptions are empty. The projection adds no canonical targets, mapping advice or inferred meanings. The [request](request.json) supplies no required fields; task acceptance is therefore `not_configured`.
 
-The earlier NoWaste holdout belongs to the first attempted runtime; its input, results and full trace are retained in the evaluation archive and are not reused as a holdout for the final runtime.
+Selection used dataset-level metadata before the freeze. No match was found in the retained catalogue, native-sampling or development records. This is a new dataset from an already encountered publisher, with no claim about deleted history or model pretraining. Native records and field definitions were inspected only after the runtime freeze.
+
+[Evaluation labels](../../evidence/unseen-source-labels.json) were frozen at **06:35:25.016041 UTC**, before model execution, and remain outside inference evidence. They bind all 149 raw records, identities and locators. There are **zero positive canonical-field labels**: `Business name` does not establish a legal-name or trading-name role. Names and entity type remain coverage-only; eleven other fields have separate evidence-insufficiency checks. Positive precision and recall are **N/A**. Abstention counts must not be presented as accuracy or successful mapping.
+
+The real run ended with **`no_validated_candidate` and no formal output**. Five model calls included three acquisition calls; two document fetches failed with TLS/SSL and HTTP 404 errors, leaving no acquired excerpts. See the [tracked result and receipts](../../evidence/latest-unseen-source.json), [local run summary](../../runs/unseen-source/summary.json) and [local scores](../../runs/unseen-source/scores.json). The local run directory is ignored by Git; the tracked evidence preserves the reported outcome.

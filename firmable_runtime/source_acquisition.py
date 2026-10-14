@@ -1,12 +1,13 @@
 """Bounded, original-source capture before inference; never execute source code.
 
-The caller supplies hash-bound seed files. The model may inspect their complete
-text and follow observed same-origin references. Captures and excerpts are source
-material, not generated field definitions or instructions to the host.
+The caller supplies hash-bound seed files. Navigation seeds carry original link
+bindings, not semantic evidence. The model follows their observed links, then
+same-origin references in captured originals; source code is never executed.
 """
 
 from __future__ import annotations
 
+import copy
 import mimetypes
 import re
 import time
@@ -42,26 +43,44 @@ LITERAL_ASSET = re.compile(
 )
 
 
-def _url(value):
+def _url(value, *, allow_http=False):
     if not isinstance(value, str) or len(value) > 4096:
         raise ValueError("Source URL must be a bounded HTTPS URL")
     value = urldefrag(value)[0]
     parts = urlsplit(value)
     if (
-        parts.scheme != "https"
+        parts.scheme not in ({"http", "https"} if allow_http else {"https"})
         or not parts.hostname
         or parts.username
         or parts.password
         or any(ord(c) < 33 for c in value)
     ):
-        raise ValueError("Source URL must be HTTPS without credentials")
+        raise ValueError(
+            "Source URL must use an allowed HTTP(S) scheme without credentials"
+        )
     _ = parts.port
     return value
 
 
 def _origin(value):
-    parts = urlsplit(_url(value))
-    return parts.hostname.lower(), parts.port or 443
+    parts = urlsplit(_url(value, allow_http=True))
+    return parts.hostname.lower(), parts.port or (
+        443 if parts.scheme == "https" else 80
+    )
+
+
+def _same_origin_or_upgrade(before, after):
+    """Allow an observed HTTP endpoint to upgrade, never downgrade or change host."""
+    source = urlsplit(_url(before, allow_http=True))
+    target = urlsplit(_url(after, allow_http=True))
+    if source.scheme == target.scheme:
+        return _origin(before) == _origin(after)
+    return (
+        source.scheme == "http"
+        and target.scheme == "https"
+        and _origin(before) == (target.hostname.lower(), 80)
+        and _origin(after) == (source.hostname.lower(), 443)
+    )
 
 
 def _media(value, url):
@@ -118,7 +137,69 @@ class _HTMLIndex(HTMLParser):
             self.blocks.append({"kind": kind, "start": start, "end": len(self.text)})
 
 
+def _navigation_links(text):
+    value = strict_json(text)
+    if (
+        not isinstance(value, dict)
+        or set(value) != {"links"}
+        or not isinstance(value["links"], list)
+    ):
+        raise ValueError("Navigation seed must contain only a links list")
+    for link in value["links"]:
+        if (
+            not isinstance(link, dict)
+            or set(link) != {"url", "source_ref"}
+            or not isinstance(link["url"], str)
+            or not isinstance(link["source_ref"], dict)
+            or not link["source_ref"]
+        ):
+            raise ValueError(
+                "Navigation links require a URL and original source binding"
+            )
+    return value["links"]
+
+
+def _navigation_index(asset, text, limits):
+    links = _navigation_links(text)
+    references = []
+    for index, link in enumerate(links[: limits["max_references_per_asset"]]):
+        url, blocked = link["url"], None
+        try:
+            url = _url(url, allow_http=True)
+        except ValueError:
+            blocked = "unsupported_url"
+        if asset["depth"] >= limits["max_depth"]:
+            blocked = blocked or "depth_limit"
+        reference = {
+            "parent_asset_id": asset["asset_id"],
+            "parent_sha256": asset["sha256"],
+            "url": url,
+            "kind": "navigation_link",
+            "source_ref": copy.deepcopy(link["source_ref"]),
+            "navigation_pointer": f"/links/{index}/url",
+            # The JSON pointer identifies the value; the hash/offsets bind the
+            # complete navigation envelope, whose text is not source evidence.
+            "start": 0,
+            "end": len(text),
+            "source_text": text[:256],
+            "source_text_sha256": byte_hash(text.encode("utf-8")),
+            "source_text_truncated": len(text) > 256,
+            "fetchable": blocked is None,
+            "blocked_reason": blocked,
+        }
+        reference["reference_id"] = "ref-" + digest(reference)[:24]
+        references.append(reference)
+    omissions = (
+        [{"kind": "reference_index_limit", "omitted": len(links) - len(references)}]
+        if len(links) > len(references)
+        else []
+    )
+    return references, [], omissions
+
+
 def _index(asset, text, limits):
+    if asset.get("kind", "original") == "navigation":
+        return _navigation_index(asset, text, limits)
     refs, blocks, omissions = [], [], []
     base_url = asset["url"]
     if asset["media_type"] in {"text/html", "application/xhtml+xml"}:
@@ -152,8 +233,10 @@ def _index(asset, text, limits):
         url = raw
         try:
             url = urldefrag(urljoin(base_url, raw))[0]
-            _url(url)
-            blocked = "cross_origin" if _origin(url) != _origin(asset["url"]) else None
+            _url(url, allow_http=urlsplit(asset["url"]).scheme == "http")
+            blocked = (
+                None if _same_origin_or_upgrade(asset["url"], url) else "cross_origin"
+            )
         except ValueError:
             blocked = "unsupported_url"
             invalid += 1
@@ -196,7 +279,7 @@ def _index(asset, text, limits):
 
 class _SameOriginRedirect(HTTPRedirectHandler):
     def redirect_request(self, req, fp, code, msg, headers, newurl):
-        if _origin(req.full_url) != _origin(newurl):
+        if not _same_origin_or_upgrade(req.full_url, newurl):
             raise ValueError("Cross-origin redirect is outside this source reference")
         return super().redirect_request(req, fp, code, msg, headers, newurl)
 
@@ -230,7 +313,7 @@ def _fetch_http(url, max_bytes):
 
 
 def prepare_capture(capture_root, sources, *, limits=None):
-    """Copy caller-prepared originals; each source requires url/path/sha256.
+    """Copy bound seeds; originals use url/path/sha256, navigation has url=None.
 
     The returned manifest may also be prepared externally using this format.
     SourceAcquisition validates original hashes and reindexes references before
@@ -256,13 +339,27 @@ def prepare_capture(capture_root, sources, *, limits=None):
         data = path.read_bytes()
         if byte_hash(data) != source["sha256"]:
             raise ValueError("Seed hash mismatch")
-        url = _url(source["url"])
-        media = _media(source.get("media_type"), url)
+        kind = source.get("kind", "original")
+        if kind == "navigation":
+            if (
+                source.get("url") is not None
+                or source.get("media_type") != "application/json"
+            ):
+                raise ValueError(
+                    "Navigation seed requires url=None and application/json"
+                )
+            _navigation_links(data)
+            url, media = None, "application/json"
+        elif kind == "original":
+            url = _url(source["url"])
+            media = _media(source.get("media_type"), url)
+        else:
+            raise ValueError("Unknown capture seed kind")
         if media not in TEXT_TYPES:
             raise ValueError(
                 "Only original HTML/JavaScript/JSON/plain text is supported"
             )
-        originals.append((url, data, media))
+        originals.append((url, data, media, kind))
     if sum(len(item[1]) for item in originals) > chosen["max_total_bytes"]:
         raise ValueError("Seeds exceed max_total_bytes")
     root.mkdir(parents=True, exist_ok=True)
@@ -284,8 +381,8 @@ def prepare_capture(capture_root, sources, *, limits=None):
     }
     atomic_json(root / "manifest.json", manifest)
     capture = SourceAcquisition(root)
-    for url, data, media in originals:
-        capture._add(url, data, media, None)
+    for url, data, media, kind in originals:
+        capture._add(url, data, media, None, kind=kind)
     return capture.manifest
 
 
@@ -319,7 +416,7 @@ class SourceAcquisition:
             raise ValueError("Captured original hash mismatch")
         return data.decode("utf-8", errors="replace")
 
-    def _add(self, url, data, media, reference):
+    def _add(self, url, data, media, reference, *, kind="original"):
         asset_id = "asset-" + digest({"url": url, "sha256": byte_hash(data)})[:24]
         if any(a["asset_id"] == asset_id for a in self.manifest["assets"]):
             return self._asset(asset_id)
@@ -331,6 +428,7 @@ class SourceAcquisition:
         asset = {
             "asset_id": asset_id,
             "url": url,
+            "kind": kind,
             "sha256": byte_hash(data),
             "media_type": media,
             "bytes": len(data),
@@ -558,9 +656,15 @@ class SourceAcquisition:
         self._save()
         try:
             response = self.fetcher(reference["url"], bound)
-            url, data = _url(response["url"]), response["body"]
+            url, data = (
+                _url(
+                    response["url"],
+                    allow_http=urlsplit(reference["url"]).scheme == "http",
+                ),
+                response["body"],
+            )
             media = _media(response.get("media_type"), url)
-            if _origin(url) != _origin(reference["url"]):
+            if not _same_origin_or_upgrade(reference["url"], url):
                 raise ValueError("Response redirected outside the referenced origin")
             if (
                 response["status"] != 200

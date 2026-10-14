@@ -1,4 +1,1634 @@
 {
+  "acquisition_code_freeze": {
+    "at": "2026-10-14T06:31:22.934284+00:00",
+    "check_log_sha256": "73476504b091f9d0847af523f2773d692aa4ecf7de07b338b9ae8ad089a84d6d",
+    "diff_check": "passed",
+    "held_out_dataset_id": "gg97-ghvs",
+    "held_out_history_limitation": "No match in retained catalogue/native sampling/development records. New dataset at the same publisher; not proof about deleted history or model pretraining.",
+    "held_out_native_inspected_before_freeze": false,
+    "held_out_source": "List of pest and weed control operators in the ACT",
+    "independent_code_review": "no remaining blocking findings",
+    "offline_tests_passed": 407,
+    "runner_sha256": "95a920ffcb381a28f57bf33eda497b24c0e3a2ed4b299589fff5b4c54c5349de",
+    "runtime_fingerprint": "e3061c95bd1865e826e92bc2bdf0a9bfac5017090c547e527341e0f7f4517d98",
+    "scorer_sha256": "a9cae67d578e97db719b7587ade6af1dfebffe6314bb6dfe64c1aababa0ed6ee",
+    "static_check": "passed"
+  },
+  "acquisition_held_out_evaluation_freeze": {
+    "at": "2026-10-14T06:37:29.101983+00:00",
+    "before_model_call": true,
+    "labels_sha256": "696bf62f6c8dc73c587e7135efb5344a940df9b0c61b72ededd26ac2b84ec522",
+    "limitation": "149 native records. Legal/trading name and entity type are coverage only; absent unsupported fields checked separately. Positive mapping accuracy is N/A.",
+    "positive_label_opportunities": 0,
+    "request_sha256": "d1ba2534e5d7c42757b3b89318be707f159b5d761b1efa7df923bf7ee8525956",
+    "scorer_sha256": "a9cae67d578e97db719b7587ade6af1dfebffe6314bb6dfe64c1aababa0ed6ee"
+  },
+  "acquisition_independent_check_bindings": {
+    "runs/six-source/downstream/links.json": "d81962bc25a9aa0e8aa8c3c97c691d716f9e56d2577b62dec14c9c46d3fdebbe",
+    "runs/six-source/downstream/summary.json": "855b9df4decd00aada8a7d92c0907edae86960812526baef91d1a1aacaf0f926",
+    "runs/six-source/downstream/unlinked.json": "9eee7c19b052942e57d8e6cdbb679ab901a82044804ed19c55434dd8c705cf73",
+    "runs/six-source/protocol.json": "470c4b2ddfcf5ab23cbf45c1e44ba9f2509f2f0a5c241d093a3110b5f8381aea",
+    "runs/six-source/real-act-contracts-historical/observations.jsonl": "da1a7d36f55e74e6038421270f4d3a20c3022f1a61761f4d73bceb4a29eca818",
+    "runs/six-source/real-asic-business-names/observations.jsonl": "b88ac05400aa78a40c3e9689e2139d7fa94b2d9e122813355043cd6472a42898",
+    "runs/six-source/real-asic-companies/observations.jsonl": "71133bb0670b75bd1977353a9ac735240972744ed72933b8df6c6fbd308469ca",
+    "runs/six-source/real-ato-corporate-tax/observations.jsonl": "12d31cac96db938dd72a3c148106c5bfd1089e82319fd072cf85a252906b0670",
+    "runs/six-source/real-qbcc/observations.jsonl": "fd8994340945fb04fd7e4125882b84b2dc1a748ce1180e5d8ee64cfa836979ee",
+    "runs/six-source/real-suitable-operators/observations.jsonl": "4786bc94bf1feafd3537225ccb74ba9c7ca068d4dedea48a99a4b38a855652eb",
+    "runs/six-source/scores.json": "45802713df3f9ac961c3a1fa40aea9446653fb45cadfa6adfe3406f6e38e1539",
+    "runs/six-source/summary.json": "39ed2f2fd245eecdca3fa28289c0ac3db4d35e5007cc791b3ea861e2d7171b05"
+  },
+  "acquisition_live_observation": {
+    "conclusions": {
+      "all_policy_bindings_verified": true,
+      "all_seven_excerpt_count_zero": true,
+      "all_seven_original_docs_preserved": true,
+      "real_coverage_demonstrated": "Real model selected observed URL refs; fetch executed; success/failure retained; next model decisions responded to returned failure/search results.",
+      "real_coverage_not_demonstrated": "No read actions or successful search excerpts; no newly acquired original quote entered inference, no quote-driven schema revision occurred.",
+      "status_caveat": "acquisition partial means no exported excerpts here, including models that explicitly finished because existing docs were considered sufficient."
+    },
+    "runtime_hash": "e3061c95bd1865e826e92bc2bdf0a9bfac5017090c547e527341e0f7f4517d98",
+    "scope": "Read-only audit of frozen real runs; no model calls or changes",
+    "six_source": [
+      {
+        "acquisition_actions": [
+          {
+            "action": {
+              "action": "fetch",
+              "asset_id": "",
+              "max_chars": 12000,
+              "query": "",
+              "reason": "Native field meanings such as abn, contractor_name and contract_amount are not defined in the captured documentation, so I am fetching the observed official catalogue link to look for a field dictionary.",
+              "reference_id": "ref-1040bd6da39320ff635b8c97",
+              "reference_offset": 0,
+              "start": 0
+            },
+            "status": "completed"
+          },
+          {
+            "action": {
+              "action": "search",
+              "asset_id": "asset-9c9c0f579662966764bce00d",
+              "max_chars": 12000,
+              "query": "contractor_name",
+              "reason": "Searching the captured official catalogue page for the native field binding and any field description for contractor_name.",
+              "reference_id": "",
+              "reference_offset": 0,
+              "start": 0
+            },
+            "status": "completed"
+          },
+          {
+            "action": {
+              "action": "search",
+              "asset_id": "asset-9c9c0f579662966764bce00d",
+              "max_chars": 12000,
+              "query": "abn",
+              "reason": "The contractor_name search returned no matches in the captured catalogue page. Searching the same captured original for the abn field binding or description before deciding whether to inspect other observed references.",
+              "reference_id": "",
+              "reference_offset": 0,
+              "start": 0
+            },
+            "status": "completed"
+          },
+          {
+            "action": {
+              "action": "search",
+              "asset_id": "asset-9c9c0f579662966764bce00d",
+              "max_chars": 12000,
+              "query": "contract_amount",
+              "reason": "contractor_name and abn returned no matches in the captured catalogue page. Checking whether contract_amount has any field description there before deciding whether to stop.",
+              "reference_id": "",
+              "reference_offset": 0,
+              "start": 0
+            },
+            "status": "completed"
+          },
+          {
+            "action": {
+              "action": "fetch",
+              "asset_id": "",
+              "max_chars": 12000,
+              "query": "",
+              "reason": "Searches of the captured catalogue page found no literal bindings or descriptions for contractor_name, abn or contract_amount. Fetching the observed README original document reference to look for a field dictionary before concluding.",
+              "reference_id": "ref-f1736a83b7f6e071dbb2f7a4",
+              "reference_offset": 0,
+              "start": 0
+            },
+            "status": "failed"
+          },
+          {
+            "action": {
+              "action": "search",
+              "asset_id": "asset-9c9c0f579662966764bce00d",
+              "max_chars": 12000,
+              "query": "Contractor Name",
+              "reason": "Literal native field names returned no matches, so I am checking the captured catalogue page for a human-readable column label or description for the contractor name field before deciding whether to stop.",
+              "reference_id": "",
+              "reference_offset": 0,
+              "start": 0
+            },
+            "status": "completed"
+          },
+          {
+            "action": {
+              "action": "finish",
+              "asset_id": "",
+              "max_chars": 12000,
+              "query": "",
+              "reason": "Searches of the captured catalogue page found no literal bindings or descriptions for contractor_name, abn, contract_amount, or Contractor Name. The README documentation fetch failed with a certificate verification error, and the remaining observed links are a licence page and the bulk resource download, which the instructions say to avoid as field-definition sources. The native_structure lists the field names but gives no meanings, so these field meanings remain unresolved within this bounded capture.",
+              "reference_id": "",
+              "reference_offset": 0,
+              "start": 0
+            },
+            "status": "completed"
+          }
+        ],
+        "acquisition_status": "partial",
+        "acquisition_usage": {
+          "call_count": 7,
+          "cost_basis": "OpenRouter reported cost, not invoice",
+          "total_cost_usd": 0.0074121000000000005,
+          "total_tokens": 60945,
+          "wall_seconds": 31.443502124981023,
+          "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+        },
+        "candidate_status": "validated",
+        "effective_snapshot_created": false,
+        "evidence_root_unchanged": true,
+        "excerpt_count": 0,
+        "fetch_attempts": [
+          {
+            "asset_id": "asset-9c9c0f579662966764bce00d",
+            "bytes": 491682,
+            "completed_utc": "2026-10-14T06:34:48.834577+00:00",
+            "final_url": "https://data.gov.au/data/dataset/8wge-3sy9",
+            "max_bytes": 4000000,
+            "parent_sha256": "83829dfba9b50c97f5a519fb7a1810982c71c8a01f2db878484c3aea0fd6b59a",
+            "reference_id": "ref-1040bd6da39320ff635b8c97",
+            "response_status": 200,
+            "sha256": "10ad16d6a04c68b318104167edf7a920198c88fca6abdf86fdf5469c932bbe57",
+            "started_utc": "2026-10-14T06:34:47.173174+00:00",
+            "status": "captured",
+            "url": "https://data.gov.au/data/dataset/05495e07-b6c6-4c82-8be1-b468204e10c3"
+          },
+          {
+            "completed_utc": "2026-10-14T06:35:05.585815+00:00",
+            "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>",
+            "error_type": "URLError",
+            "max_bytes": 4000000,
+            "parent_sha256": "83829dfba9b50c97f5a519fb7a1810982c71c8a01f2db878484c3aea0fd6b59a",
+            "reference_id": "ref-f1736a83b7f6e071dbb2f7a4",
+            "started_utc": "2026-10-14T06:35:05.121717+00:00",
+            "status": "failed",
+            "url": "https://www.data.act.gov.au/api/v3/views/8wge-3sy9/query.json?accessType=DOWNLOAD"
+          }
+        ],
+        "gap": {
+          "fields": [
+            "entity.legal_name"
+          ],
+          "kind": "task_requirements_unresolved",
+          "reason": "The selected config is technically validated, but declared task fields remain unresolved."
+        },
+        "inference_requests": [
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 0,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-act-contracts-historical/artifacts/request-032f81d8d4f628ec5a2ef8d8.json",
+            "purpose": "agent_decision",
+            "response_action": "probe",
+            "response_reason": "",
+            "source_documentation_chars": 1315,
+            "source_documentation_sha256": "915b13a7f45953039fcf939e800cf74dd444ef42dfbc69d445d169314b6afa39",
+            "source_url_candidates_count": 5
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 2,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-act-contracts-historical/artifacts/request-0f06239abd5d07f2ea5c4ea7.json",
+            "purpose": "agent_decision",
+            "response_action": "select",
+            "response_reason": "",
+            "source_documentation_chars": 1315,
+            "source_documentation_sha256": "915b13a7f45953039fcf939e800cf74dd444ef42dfbc69d445d169314b6afa39",
+            "source_url_candidates_count": 5
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 0,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-act-contracts-historical/artifacts/request-810c50f52ab057c99812d080.json",
+            "purpose": "candidate_rules",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 1315,
+            "source_documentation_sha256": "915b13a7f45953039fcf939e800cf74dd444ef42dfbc69d445d169314b6afa39",
+            "source_url_candidates_count": 5
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 0,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-act-contracts-historical/artifacts/request-9fdee58242c8b51fed7e39ac.json",
+            "purpose": "candidate_manifest",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 1315,
+            "source_documentation_sha256": "915b13a7f45953039fcf939e800cf74dd444ef42dfbc69d445d169314b6afa39",
+            "source_url_candidates_count": 5
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": null,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-act-contracts-historical/artifacts/request-bb0b885419d18c6d8a3347f4.json",
+            "purpose": "inspect",
+            "response_action": null,
+            "response_reason": "Only one readable table is present (table_id 0, status \"table\", native-records.json, 1000 native records). Its fields, including abn, contractor_name and contract_amount, are contract business records within the Contracts Register subject scope, so it is included. No other tables exist to exclude, and no source_schema is proposed.",
+            "source_documentation_chars": 1315,
+            "source_documentation_sha256": "915b13a7f45953039fcf939e800cf74dd444ef42dfbc69d445d169314b6afa39",
+            "source_url_candidates_count": 0
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 1,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-act-contracts-historical/artifacts/request-cbb1e3e86b474c54a7a2d448.json",
+            "purpose": "agent_decision",
+            "response_action": "inspect_field_evidence",
+            "response_reason": "",
+            "source_documentation_chars": 1315,
+            "source_documentation_sha256": "915b13a7f45953039fcf939e800cf74dd444ef42dfbc69d445d169314b6afa39",
+            "source_url_candidates_count": 5
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 0,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-act-contracts-historical/artifacts/request-f42bd8f4b17b48934b1b3ba4.json",
+            "purpose": "candidate_manifest",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 1315,
+            "source_documentation_sha256": "915b13a7f45953039fcf939e800cf74dd444ef42dfbc69d445d169314b6afa39",
+            "source_url_candidates_count": 5
+          }
+        ],
+        "onboarding_status": "partial",
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-act-contracts-historical",
+        "policy_hash_checks": {
+          "capture": true,
+          "export": true,
+          "navigation": true,
+          "onboard_identity_policy": true,
+          "original_evidence_manifest": true,
+          "result": true
+        },
+        "source_documentation_same_between_acquisition_and_all_inference_requests": true,
+        "source_id": "real-act-contracts-historical",
+        "task_status": "partial"
+      },
+      {
+        "acquisition_actions": [
+          {
+            "action": {
+              "action": "search",
+              "asset_id": "asset-d8c8914cbce8ce5e924a8b9a",
+              "max_chars": 12000,
+              "query": "BN_NAME",
+              "reason": "Locate original field-level evidence for BN_NAME in the captured help documentation to support mapping gap review for trading/legal name roles.",
+              "reference_id": "",
+              "reference_offset": 0,
+              "start": 0
+            },
+            "status": "completed"
+          },
+          {
+            "action": {
+              "action": "finish",
+              "asset_id": "",
+              "max_chars": 12000,
+              "query": "",
+              "reason": "Supplied source_documentation includes the data dictionary for BN_NAME, BN_STATUS, BN_REG_DT, BN_CANCEL_DT, BN_ABN and state fields, so no further fetch is needed. The ABN field is documented as suppressed (NULL) in some cases, and no ACN or NZBN field is present.",
+              "reference_id": "",
+              "reference_offset": 0,
+              "start": 0
+            },
+            "status": "completed"
+          }
+        ],
+        "acquisition_status": "partial",
+        "acquisition_usage": {
+          "call_count": 2,
+          "cost_basis": "OpenRouter reported cost, not invoice",
+          "total_cost_usd": 0.0030527,
+          "total_tokens": 28463,
+          "wall_seconds": 9.368628707976313,
+          "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+        },
+        "candidate_status": "validated",
+        "effective_snapshot_created": false,
+        "evidence_root_unchanged": true,
+        "excerpt_count": 0,
+        "fetch_attempts": [],
+        "gap": null,
+        "inference_requests": [
+          {
+            "catalogue_metadata_present": false,
+            "decision_turn": null,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-asic-business-names/artifacts/request-1f7ef65063b3f459ab429b91.json",
+            "purpose": "name_role_review",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 20275,
+            "source_documentation_sha256": "d52ef9793f21484fee5047819d588b4183cf248e8b106e1677b544c6c45d8e02",
+            "source_url_candidates_count": 0
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 0,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-asic-business-names/artifacts/request-2cf6bfa15ea2a6dc950cb905.json",
+            "purpose": "candidate_manifest",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 20275,
+            "source_documentation_sha256": "d52ef9793f21484fee5047819d588b4183cf248e8b106e1677b544c6c45d8e02",
+            "source_url_candidates_count": 7
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 1,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-asic-business-names/artifacts/request-2d4af1b4c598798b00d4f181.json",
+            "purpose": "candidate_manifest",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 20275,
+            "source_documentation_sha256": "d52ef9793f21484fee5047819d588b4183cf248e8b106e1677b544c6c45d8e02",
+            "source_url_candidates_count": 7
+          },
+          {
+            "catalogue_metadata_present": false,
+            "decision_turn": null,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-asic-business-names/artifacts/request-36e0b1b00fea7556a9306fbe.json",
+            "purpose": "name_role_review",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 20275,
+            "source_documentation_sha256": "d52ef9793f21484fee5047819d588b4183cf248e8b106e1677b544c6c45d8e02",
+            "source_url_candidates_count": 0
+          },
+          {
+            "catalogue_metadata_present": false,
+            "decision_turn": null,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-asic-business-names/artifacts/request-4678965618903cb6e7a916b3.json",
+            "purpose": "name_role_review",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 20275,
+            "source_documentation_sha256": "d52ef9793f21484fee5047819d588b4183cf248e8b106e1677b544c6c45d8e02",
+            "source_url_candidates_count": 0
+          },
+          {
+            "catalogue_metadata_present": false,
+            "decision_turn": null,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-asic-business-names/artifacts/request-6ffb0909137274194632e5f2.json",
+            "purpose": "name_role_review",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 20275,
+            "source_documentation_sha256": "d52ef9793f21484fee5047819d588b4183cf248e8b106e1677b544c6c45d8e02",
+            "source_url_candidates_count": 0
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 0,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-asic-business-names/artifacts/request-8c8d86f0e9d051b4bc0773d9.json",
+            "purpose": "candidate_rules",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 20275,
+            "source_documentation_sha256": "d52ef9793f21484fee5047819d588b4183cf248e8b106e1677b544c6c45d8e02",
+            "source_url_candidates_count": 7
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 0,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-asic-business-names/artifacts/request-90d0410cf37d6fe7be92d5a1.json",
+            "purpose": "agent_decision",
+            "response_action": "probe",
+            "response_reason": "",
+            "source_documentation_chars": 20275,
+            "source_documentation_sha256": "d52ef9793f21484fee5047819d588b4183cf248e8b106e1677b544c6c45d8e02",
+            "source_url_candidates_count": 7
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 0,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-asic-business-names/artifacts/request-a740c4405da0d260e9c50e24.json",
+            "purpose": "candidate_manifest",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 20275,
+            "source_documentation_sha256": "d52ef9793f21484fee5047819d588b4183cf248e8b106e1677b544c6c45d8e02",
+            "source_url_candidates_count": 7
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": null,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-asic-business-names/artifacts/request-bc163a71669521b8182617d4.json",
+            "purpose": "inspect",
+            "response_action": null,
+            "response_reason": "Table 0 (native-prefix.tsv, 1000 native records, fields REGISTER_NAME, BN_NAME, BN_STATUS, BN_REG_DT, BN_CANCEL_DT, BN_STATE_NUM, BN_STATE_OF_REG, BN_ABN) is the only readable table and contains ASIC Business Names register records, which is the requested business-record subject scope. No other readable table exists in the inventory, so there are no exclusions to evidence. Required fields entity.abn and entity.trading_name are not asserted here; mapping and value acceptance are left to later stages.",
+            "source_documentation_chars": 20275,
+            "source_documentation_sha256": "d52ef9793f21484fee5047819d588b4183cf248e8b106e1677b544c6c45d8e02",
+            "source_url_candidates_count": 0
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 1,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-asic-business-names/artifacts/request-cb97f56fd31c48f787a1f36e.json",
+            "purpose": "candidate_rules",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 20275,
+            "source_documentation_sha256": "d52ef9793f21484fee5047819d588b4183cf248e8b106e1677b544c6c45d8e02",
+            "source_url_candidates_count": 7
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 1,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-asic-business-names/artifacts/request-f63aafe017c17c5c740176bf.json",
+            "purpose": "agent_decision",
+            "response_action": "probe",
+            "response_reason": "",
+            "source_documentation_chars": 20275,
+            "source_documentation_sha256": "d52ef9793f21484fee5047819d588b4183cf248e8b106e1677b544c6c45d8e02",
+            "source_url_candidates_count": 7
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 2,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-asic-business-names/artifacts/request-f801765148b03366272e2c45.json",
+            "purpose": "agent_decision",
+            "response_action": "select",
+            "response_reason": "",
+            "source_documentation_chars": 20275,
+            "source_documentation_sha256": "d52ef9793f21484fee5047819d588b4183cf248e8b106e1677b544c6c45d8e02",
+            "source_url_candidates_count": 7
+          }
+        ],
+        "onboarding_status": "complete",
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-asic-business-names",
+        "policy_hash_checks": {
+          "capture": true,
+          "export": true,
+          "navigation": true,
+          "onboard_identity_policy": true,
+          "original_evidence_manifest": true,
+          "result": true
+        },
+        "source_documentation_same_between_acquisition_and_all_inference_requests": true,
+        "source_id": "real-asic-business-names",
+        "task_status": "complete"
+      },
+      {
+        "acquisition_actions": [
+          {
+            "action": {
+              "action": "finish",
+              "asset_id": "",
+              "max_chars": 12000,
+              "query": "",
+              "reason": "Supplied help file documents native meanings for Company Name, ACN, ABN, Type, Class, Sub Class, Status, registration dates, and current-name fields. Native table has no address, website, or industry columns, so no further fetch is needed for those; address and related ontology fields remain unmapped.",
+              "reference_id": "",
+              "reference_offset": 0,
+              "start": 0
+            },
+            "status": "completed"
+          }
+        ],
+        "acquisition_status": "partial",
+        "acquisition_usage": {
+          "call_count": 1,
+          "cost_basis": "OpenRouter reported cost, not invoice",
+          "total_cost_usd": 0.0020785,
+          "total_tokens": 19493,
+          "wall_seconds": 4.794863042014185,
+          "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+        },
+        "candidate_status": "validated",
+        "effective_snapshot_created": false,
+        "evidence_root_unchanged": true,
+        "excerpt_count": 0,
+        "fetch_attempts": [],
+        "gap": null,
+        "inference_requests": [
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 0,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-asic-companies/artifacts/request-150e150b73dd54ec105a48d0.json",
+            "purpose": "candidate_rules",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 21053,
+            "source_documentation_sha256": "fcb99c61bcc146081c585f40dc3ce98f06eea152da2aab5cfec91c81299a2235",
+            "source_url_candidates_count": 13
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 1,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-asic-companies/artifacts/request-152e2d8886d3fd9da4a05972.json",
+            "purpose": "agent_decision",
+            "response_action": "probe",
+            "response_reason": "",
+            "source_documentation_chars": 21053,
+            "source_documentation_sha256": "fcb99c61bcc146081c585f40dc3ce98f06eea152da2aab5cfec91c81299a2235",
+            "source_url_candidates_count": 13
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 1,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-asic-companies/artifacts/request-1cafe5eb6f9efb0fecaa9586.json",
+            "purpose": "candidate_rules",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 21053,
+            "source_documentation_sha256": "fcb99c61bcc146081c585f40dc3ce98f06eea152da2aab5cfec91c81299a2235",
+            "source_url_candidates_count": 13
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 0,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-asic-companies/artifacts/request-2877afd773e3c10fea8a9913.json",
+            "purpose": "agent_decision",
+            "response_action": "probe",
+            "response_reason": "",
+            "source_documentation_chars": 21053,
+            "source_documentation_sha256": "fcb99c61bcc146081c585f40dc3ce98f06eea152da2aab5cfec91c81299a2235",
+            "source_url_candidates_count": 13
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 0,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-asic-companies/artifacts/request-2a98994f65f97463226eaaca.json",
+            "purpose": "candidate_manifest",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 21053,
+            "source_documentation_sha256": "fcb99c61bcc146081c585f40dc3ce98f06eea152da2aab5cfec91c81299a2235",
+            "source_url_candidates_count": 13
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 0,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-asic-companies/artifacts/request-3794358563b6374b786902d9.json",
+            "purpose": "candidate_manifest",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 21053,
+            "source_documentation_sha256": "fcb99c61bcc146081c585f40dc3ce98f06eea152da2aab5cfec91c81299a2235",
+            "source_url_candidates_count": 13
+          },
+          {
+            "catalogue_metadata_present": false,
+            "decision_turn": null,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-asic-companies/artifacts/request-41ad769b9a1530dd27eddfe6.json",
+            "purpose": "name_role_review",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 21053,
+            "source_documentation_sha256": "fcb99c61bcc146081c585f40dc3ce98f06eea152da2aab5cfec91c81299a2235",
+            "source_url_candidates_count": 0
+          },
+          {
+            "catalogue_metadata_present": false,
+            "decision_turn": null,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-asic-companies/artifacts/request-43f220312c1b9b74f1f0a0fa.json",
+            "purpose": "name_role_review",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 21053,
+            "source_documentation_sha256": "fcb99c61bcc146081c585f40dc3ce98f06eea152da2aab5cfec91c81299a2235",
+            "source_url_candidates_count": 0
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 2,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-asic-companies/artifacts/request-5d19b5b8c5e04905e5a0de8f.json",
+            "purpose": "agent_decision",
+            "response_action": "select",
+            "response_reason": "",
+            "source_documentation_chars": 21053,
+            "source_documentation_sha256": "fcb99c61bcc146081c585f40dc3ce98f06eea152da2aab5cfec91c81299a2235",
+            "source_url_candidates_count": 13
+          },
+          {
+            "catalogue_metadata_present": false,
+            "decision_turn": null,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-asic-companies/artifacts/request-69ca4477bd95bcf0162a9e14.json",
+            "purpose": "name_role_review",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 21053,
+            "source_documentation_sha256": "fcb99c61bcc146081c585f40dc3ce98f06eea152da2aab5cfec91c81299a2235",
+            "source_url_candidates_count": 0
+          },
+          {
+            "catalogue_metadata_present": false,
+            "decision_turn": null,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-asic-companies/artifacts/request-994818b8e65340de5c80444c.json",
+            "purpose": "name_role_review",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 21053,
+            "source_documentation_sha256": "fcb99c61bcc146081c585f40dc3ce98f06eea152da2aab5cfec91c81299a2235",
+            "source_url_candidates_count": 0
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": null,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-asic-companies/artifacts/request-a665d5bb2c04bb855af1f034.json",
+            "purpose": "inspect",
+            "response_action": null,
+            "response_reason": "The only structure is table_id 0 (native-query-records.json), a native business-record table of ASIC company register records with ACN, ABN, company name and status fields. The help file and data dictionary are documentation, but they are not part of the inventory as a separate table, so no exclusions are needed. Table 0 is selected.",
+            "source_documentation_chars": 21053,
+            "source_documentation_sha256": "fcb99c61bcc146081c585f40dc3ce98f06eea152da2aab5cfec91c81299a2235",
+            "source_url_candidates_count": 0
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 1,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-asic-companies/artifacts/request-d476b1f4e2520b3405e1ba88.json",
+            "purpose": "candidate_manifest",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 21053,
+            "source_documentation_sha256": "fcb99c61bcc146081c585f40dc3ce98f06eea152da2aab5cfec91c81299a2235",
+            "source_url_candidates_count": 13
+          }
+        ],
+        "onboarding_status": "complete",
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-asic-companies",
+        "policy_hash_checks": {
+          "capture": true,
+          "export": true,
+          "navigation": true,
+          "onboard_identity_policy": true,
+          "original_evidence_manifest": true,
+          "result": true
+        },
+        "source_documentation_same_between_acquisition_and_all_inference_requests": true,
+        "source_id": "real-asic-companies",
+        "task_status": "complete"
+      },
+      {
+        "acquisition_actions": [
+          {
+            "action": {
+              "action": "search",
+              "asset_id": "asset-7f2d1fcfd442dbe2ad81a0be",
+              "max_chars": 4000,
+              "query": "Income tax details",
+              "reason": "Need native field documentation for Name, ABN and income fields in the XLSX sheets; the captured navigation asset only exposes links, so search the original snapshot for field definitions.",
+              "reference_id": "ref-7ba1ed2e3a0f1dde72d573e3",
+              "reference_offset": 0,
+              "start": 0
+            },
+            "status": "completed"
+          },
+          {
+            "action": {
+              "action": "fetch",
+              "asset_id": "",
+              "max_chars": 12000,
+              "query": "",
+              "reason": "Native table headers include Name and ABN, but the captured documentation only says 'name' and does not confirm it is the registered legal name. Fetching the observed catalogue reference to check for a field definition before searching the captured original.",
+              "reference_id": "ref-7ba1ed2e3a0f1dde72d573e3",
+              "reference_offset": 0,
+              "start": 0
+            },
+            "status": "completed"
+          },
+          {
+            "action": {
+              "action": "search",
+              "asset_id": "asset-ad9621b6ec74075c63c50a7a",
+              "max_chars": 4000,
+              "query": "registered name",
+              "reason": "The captured original documentation says 'name' but does not confirm it is the registered legal name. Searching the fetched original for a field definition of Name or ABN before deciding whether a gap remains.",
+              "reference_id": "ref-7ba1ed2e3a0f1dde72d573e3",
+              "reference_offset": 0,
+              "start": 0
+            },
+            "status": "completed"
+          },
+          {
+            "action": {
+              "action": "search",
+              "asset_id": "asset-ad9621b6ec74075c63c50a7a",
+              "max_chars": 4000,
+              "query": "Australian Business Number",
+              "reason": "Prior search for registered name found nothing. Checking the fetched original once for an ABN or Name field definition before deciding whether the legal-name gap remains.",
+              "reference_id": "ref-7ba1ed2e3a0f1dde72d573e3",
+              "reference_offset": 0,
+              "start": 0
+            },
+            "status": "completed"
+          },
+          {
+            "action": {
+              "action": "finish",
+              "asset_id": "",
+              "max_chars": 12000,
+              "query": "",
+              "reason": "Catalogue description supports Name and ABN as tax entity fields, but no captured definition confirms Name is the registered legal name. Searches for registered name and Australian Business Number in the fetched original found nothing. Recording legal-name status as an unresolved gap rather than searching further.",
+              "reference_id": "",
+              "reference_offset": 0,
+              "start": 0
+            },
+            "status": "completed"
+          }
+        ],
+        "acquisition_status": "partial",
+        "acquisition_usage": {
+          "call_count": 5,
+          "cost_basis": "OpenRouter reported cost, not invoice",
+          "total_cost_usd": 0.0054594,
+          "total_tokens": 45466,
+          "wall_seconds": 26.794027791998815,
+          "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+        },
+        "candidate_status": "validated",
+        "effective_snapshot_created": false,
+        "evidence_root_unchanged": true,
+        "excerpt_count": 0,
+        "fetch_attempts": [
+          {
+            "asset_id": "asset-ad9621b6ec74075c63c50a7a",
+            "bytes": 554493,
+            "completed_utc": "2026-10-14T06:31:53.129045+00:00",
+            "final_url": "https://data.gov.au/data/dataset/corporate-transparency",
+            "max_bytes": 4000000,
+            "parent_sha256": "b1a6a2797f3b48b0eb4fac3af220aec6a2a2e39f22d69e7d27d9fe238a1bc872",
+            "reference_id": "ref-7ba1ed2e3a0f1dde72d573e3",
+            "response_status": 200,
+            "sha256": "34f0570a24cd1f767091dc72df54efa80fd2430741a4a60e353c8ff9f5d89ffe",
+            "started_utc": "2026-10-14T06:31:52.303762+00:00",
+            "status": "captured",
+            "url": "https://data.gov.au/data/dataset/c2524c87-cea4-4636-acac-599a82048a26"
+          }
+        ],
+        "gap": {
+          "fields": [
+            "entity.legal_name"
+          ],
+          "kind": "task_requirements_unresolved",
+          "reason": "The selected config is technically validated, but declared task fields remain unresolved."
+        },
+        "inference_requests": [
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 2,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-ato-corporate-tax/artifacts/request-0a788dac50a8abf61aa977d1.json",
+            "purpose": "agent_decision",
+            "response_action": "probe",
+            "response_reason": "",
+            "source_documentation_chars": 2183,
+            "source_documentation_sha256": "c245fa263b14db58beb34d307f329870a333b76388bb88caf41815339d9dd523",
+            "source_url_candidates_count": 5
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 3,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-ato-corporate-tax/artifacts/request-189dcb2c8fe0464a8b196a01.json",
+            "purpose": "agent_decision",
+            "response_action": "select",
+            "response_reason": "",
+            "source_documentation_chars": 2183,
+            "source_documentation_sha256": "c245fa263b14db58beb34d307f329870a333b76388bb88caf41815339d9dd523",
+            "source_url_candidates_count": 5
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": null,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-ato-corporate-tax/artifacts/request-2914b071d0830af53918dd33.json",
+            "purpose": "inspect",
+            "response_action": null,
+            "response_reason": "Tables 1 and 2 are native entity-level business record tables within the documented scope: the income tax details table holds name, ABN, income and tax payable for corporate tax entities, and the PRRT table holds name, ABN and PRRT payable for entities with PRRT payable amounts.",
+            "source_documentation_chars": 2183,
+            "source_documentation_sha256": "c245fa263b14db58beb34d307f329870a333b76388bb88caf41815339d9dd523",
+            "source_url_candidates_count": 0
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 1,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-ato-corporate-tax/artifacts/request-38b99040923c7705be9d4e36.json",
+            "purpose": "agent_decision",
+            "response_action": "inspect_field_evidence",
+            "response_reason": "",
+            "source_documentation_chars": 2183,
+            "source_documentation_sha256": "c245fa263b14db58beb34d307f329870a333b76388bb88caf41815339d9dd523",
+            "source_url_candidates_count": 5
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 0,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-ato-corporate-tax/artifacts/request-42e246e7c3c40f4d6450cc95.json",
+            "purpose": "candidate_rules",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 2183,
+            "source_documentation_sha256": "c245fa263b14db58beb34d307f329870a333b76388bb88caf41815339d9dd523",
+            "source_url_candidates_count": 5
+          },
+          {
+            "catalogue_metadata_present": false,
+            "decision_turn": null,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-ato-corporate-tax/artifacts/request-53591365bc0f73c238d68579.json",
+            "purpose": "name_role_review",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 2183,
+            "source_documentation_sha256": "c245fa263b14db58beb34d307f329870a333b76388bb88caf41815339d9dd523",
+            "source_url_candidates_count": 0
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 0,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-ato-corporate-tax/artifacts/request-5f934cf96b4da247cb178c75.json",
+            "purpose": "candidate_manifest",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 2183,
+            "source_documentation_sha256": "c245fa263b14db58beb34d307f329870a333b76388bb88caf41815339d9dd523",
+            "source_url_candidates_count": 5
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 0,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-ato-corporate-tax/artifacts/request-69ff832d9afe3cfe24ac963b.json",
+            "purpose": "agent_decision",
+            "response_action": "probe",
+            "response_reason": "",
+            "source_documentation_chars": 2183,
+            "source_documentation_sha256": "c245fa263b14db58beb34d307f329870a333b76388bb88caf41815339d9dd523",
+            "source_url_candidates_count": 5
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": null,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-ato-corporate-tax/artifacts/request-88f413d75edb69f5c9bf5164.json",
+            "purpose": "inspect",
+            "response_action": null,
+            "response_reason": "Selected table 1 (Income tax details: Name, ABN, Total income, Taxable income, Tax payable, Income year) and table 2 (PRRT details: Name, ABN, PRRT Payable) as native entity-level business records within the documented scope: the catalogue describes these reports as containing 'the name, ABN, total income, taxable income and tax payable for corporate tax entities' and 'the name, ABN and tax payable for any entity that has a petroleum resource rent tax (PRRT) payable amount'. Excluded table 0 as introductory: its sheet is 'Information' and its only native structure is the single field 'Corporate tax transparency: report of entity tax information' with 6 records, carrying no entity-level business records; its status is 'table' but it is a report title/information sheet rather than an entity record set.",
+            "source_documentation_chars": 2183,
+            "source_documentation_sha256": "c245fa263b14db58beb34d307f329870a333b76388bb88caf41815339d9dd523",
+            "source_url_candidates_count": 0
+          },
+          {
+            "catalogue_metadata_present": false,
+            "decision_turn": null,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-ato-corporate-tax/artifacts/request-9387fe7aa1fd63c10d887537.json",
+            "purpose": "name_role_review",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 2183,
+            "source_documentation_sha256": "c245fa263b14db58beb34d307f329870a333b76388bb88caf41815339d9dd523",
+            "source_url_candidates_count": 0
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 2,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-ato-corporate-tax/artifacts/request-9d40c293816816cebaba5f92.json",
+            "purpose": "candidate_manifest",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 2183,
+            "source_documentation_sha256": "c245fa263b14db58beb34d307f329870a333b76388bb88caf41815339d9dd523",
+            "source_url_candidates_count": 5
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 0,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-ato-corporate-tax/artifacts/request-aa7123c3c5befa26bec31ed2.json",
+            "purpose": "candidate_manifest",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 2183,
+            "source_documentation_sha256": "c245fa263b14db58beb34d307f329870a333b76388bb88caf41815339d9dd523",
+            "source_url_candidates_count": 5
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 2,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-ato-corporate-tax/artifacts/request-d73d4332f39bbd7bdae6043b.json",
+            "purpose": "candidate_rules",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 2183,
+            "source_documentation_sha256": "c245fa263b14db58beb34d307f329870a333b76388bb88caf41815339d9dd523",
+            "source_url_candidates_count": 5
+          }
+        ],
+        "onboarding_status": "partial",
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-ato-corporate-tax",
+        "policy_hash_checks": {
+          "capture": true,
+          "export": true,
+          "navigation": true,
+          "onboard_identity_policy": true,
+          "original_evidence_manifest": true,
+          "result": true
+        },
+        "source_documentation_same_between_acquisition_and_all_inference_requests": true,
+        "source_id": "real-ato-corporate-tax",
+        "task_status": "partial"
+      },
+      {
+        "acquisition_actions": [
+          {
+            "action": {
+              "action": "finish",
+              "asset_id": "",
+              "max_chars": 12000,
+              "query": "",
+              "reason": "Supplied documentation and native field list already support the relevant field meanings for licensee name, ACN, ABN and business address, so no further fetch is needed. Header row was flagged review_required, but the listed native fields are sufficient for this bounded capture.",
+              "reference_id": "",
+              "reference_offset": 0,
+              "start": 0
+            },
+            "status": "completed"
+          }
+        ],
+        "acquisition_status": "partial",
+        "acquisition_usage": {
+          "call_count": 1,
+          "cost_basis": "OpenRouter reported cost, not invoice",
+          "total_cost_usd": 0.0009543,
+          "total_tokens": 8051,
+          "wall_seconds": 4.0479325000196695,
+          "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+        },
+        "candidate_status": "validated",
+        "effective_snapshot_created": false,
+        "evidence_root_unchanged": true,
+        "excerpt_count": 0,
+        "fetch_attempts": [],
+        "gap": {
+          "fields": [
+            "entity.legal_name"
+          ],
+          "kind": "task_requirements_unresolved",
+          "reason": "The selected config is technically validated, but declared task fields remain unresolved."
+        },
+        "inference_requests": [
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 0,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-qbcc/artifacts/request-02540d007506589dd2d68219.json",
+            "purpose": "candidate_manifest",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 2213,
+            "source_documentation_sha256": "0a939922ab77caac11dc42d84fc5b0acb4f55f9772b7c4431dc1d4e182319d96",
+            "source_url_candidates_count": 5
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": null,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-qbcc/artifacts/request-2bafd7382420ca6a02438904.json",
+            "purpose": "inspect",
+            "response_action": null,
+            "response_reason": "The inventory contains a single readable table (table_id 0) from the QBCC Licensed Contractors Register, whose documented subject is QBCC Act licensees (licensed builders, contractors, licence holders) with native fields including Licensee Name, ACN, ABN and Licensee Business Address. It is a native business-record table, not a definitions or introductory table, so it is selected. No other tables exist to exclude.",
+            "source_documentation_chars": 2213,
+            "source_documentation_sha256": "0a939922ab77caac11dc42d84fc5b0acb4f55f9772b7c4431dc1d4e182319d96",
+            "source_url_candidates_count": 0
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 2,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-qbcc/artifacts/request-369c8a72c33bbeef0657720d.json",
+            "purpose": "agent_decision",
+            "response_action": "inspect_field_evidence",
+            "response_reason": "",
+            "source_documentation_chars": 2213,
+            "source_documentation_sha256": "0a939922ab77caac11dc42d84fc5b0acb4f55f9772b7c4431dc1d4e182319d96",
+            "source_url_candidates_count": 5
+          },
+          {
+            "catalogue_metadata_present": false,
+            "decision_turn": null,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-qbcc/artifacts/request-831b62c098403884c91a6150.json",
+            "purpose": "name_role_review",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 2213,
+            "source_documentation_sha256": "0a939922ab77caac11dc42d84fc5b0acb4f55f9772b7c4431dc1d4e182319d96",
+            "source_url_candidates_count": 0
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 3,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-qbcc/artifacts/request-8e3c59a1cd9d2688b151e887.json",
+            "purpose": "agent_decision",
+            "response_action": "select",
+            "response_reason": "",
+            "source_documentation_chars": 2213,
+            "source_documentation_sha256": "0a939922ab77caac11dc42d84fc5b0acb4f55f9772b7c4431dc1d4e182319d96",
+            "source_url_candidates_count": 5
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 0,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-qbcc/artifacts/request-95c1304a32da29a6743a5a65.json",
+            "purpose": "agent_decision",
+            "response_action": "probe",
+            "response_reason": "",
+            "source_documentation_chars": 2213,
+            "source_documentation_sha256": "0a939922ab77caac11dc42d84fc5b0acb4f55f9772b7c4431dc1d4e182319d96",
+            "source_url_candidates_count": 5
+          },
+          {
+            "catalogue_metadata_present": false,
+            "decision_turn": null,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-qbcc/artifacts/request-a3e541d4148d7659a67d39ae.json",
+            "purpose": "name_role_review",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 2213,
+            "source_documentation_sha256": "0a939922ab77caac11dc42d84fc5b0acb4f55f9772b7c4431dc1d4e182319d96",
+            "source_url_candidates_count": 0
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 0,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-qbcc/artifacts/request-cc14cfae2acd0be7a008936b.json",
+            "purpose": "candidate_manifest",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 2213,
+            "source_documentation_sha256": "0a939922ab77caac11dc42d84fc5b0acb4f55f9772b7c4431dc1d4e182319d96",
+            "source_url_candidates_count": 5
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 1,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-qbcc/artifacts/request-d7725853f8293a8d64693f96.json",
+            "purpose": "candidate_manifest",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 2213,
+            "source_documentation_sha256": "0a939922ab77caac11dc42d84fc5b0acb4f55f9772b7c4431dc1d4e182319d96",
+            "source_url_candidates_count": 5
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 1,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-qbcc/artifacts/request-d93bc49d9e608ff74142e475.json",
+            "purpose": "candidate_rules",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 2213,
+            "source_documentation_sha256": "0a939922ab77caac11dc42d84fc5b0acb4f55f9772b7c4431dc1d4e182319d96",
+            "source_url_candidates_count": 5
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 1,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-qbcc/artifacts/request-f853f0c392734927e647c8fd.json",
+            "purpose": "agent_decision",
+            "response_action": "probe",
+            "response_reason": "",
+            "source_documentation_chars": 2213,
+            "source_documentation_sha256": "0a939922ab77caac11dc42d84fc5b0acb4f55f9772b7c4431dc1d4e182319d96",
+            "source_url_candidates_count": 5
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 0,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-qbcc/artifacts/request-fd44ef47e4e71f21539e9c8e.json",
+            "purpose": "candidate_rules",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 2213,
+            "source_documentation_sha256": "0a939922ab77caac11dc42d84fc5b0acb4f55f9772b7c4431dc1d4e182319d96",
+            "source_url_candidates_count": 5
+          }
+        ],
+        "onboarding_status": "partial",
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-qbcc",
+        "policy_hash_checks": {
+          "capture": true,
+          "export": true,
+          "navigation": true,
+          "onboard_identity_policy": true,
+          "original_evidence_manifest": true,
+          "result": true
+        },
+        "source_documentation_same_between_acquisition_and_all_inference_requests": true,
+        "source_id": "real-qbcc",
+        "task_status": "partial"
+      },
+      {
+        "acquisition_actions": [
+          {
+            "action": {
+              "action": "fetch",
+              "asset_id": "",
+              "max_chars": 12000,
+              "query": "",
+              "reason": "Documentation confirms name, RSO reference and ABN or ACN but does not define Entity Type, Registration Status, Location or which number field is ABN versus ACN. Fetching the observed resource URL to obtain the original native workbook for header and value evidence.",
+              "reference_id": "ref-c81104d60f2e553be2288265",
+              "reference_offset": 0,
+              "start": 0
+            },
+            "status": "failed"
+          },
+          {
+            "action": {
+              "action": "finish",
+              "asset_id": "",
+              "max_chars": 12000,
+              "query": "",
+              "reason": "The workbook fetch failed on capture limits and no original native table is captured. The documentation supports the name, RSO reference and ABN or ACN concept, but not the meanings of Entity Type, Registration Status, Location, or which number is ABN versus ACN. Those gaps remain unresolved within this bounded capture.",
+              "reference_id": "",
+              "reference_offset": 0,
+              "start": 0
+            },
+            "status": "completed"
+          }
+        ],
+        "acquisition_status": "partial",
+        "acquisition_usage": {
+          "call_count": 2,
+          "cost_basis": "OpenRouter reported cost, not invoice",
+          "total_cost_usd": 0.0021022000000000002,
+          "total_tokens": 16038,
+          "wall_seconds": 9.846958375012036,
+          "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+        },
+        "candidate_status": "validated",
+        "effective_snapshot_created": false,
+        "evidence_root_unchanged": true,
+        "excerpt_count": 0,
+        "fetch_attempts": [
+          {
+            "completed_utc": "2026-10-14T06:33:56.823068+00:00",
+            "error": "Response status, media type or size is outside capture limits",
+            "error_type": "ValueError",
+            "max_bytes": 4000000,
+            "parent_sha256": "a013b997d9adecf342de2d2255ec7017bf988a06f7868d4e8981d547195488cf",
+            "reference_id": "ref-c81104d60f2e553be2288265",
+            "started_utc": "2026-10-14T06:33:56.638168+00:00",
+            "status": "failed",
+            "url": "https://storagesolutiondocsprod.blob.core.windows.net/register-documents-rso/rso-register.xlsx?timestamp=2026-10-09T10:20:01+10:00"
+          }
+        ],
+        "gap": {
+          "fields": [
+            "entity.legal_name"
+          ],
+          "kind": "task_requirements_unresolved",
+          "reason": "The selected config is technically validated, but declared task fields remain unresolved."
+        },
+        "inference_requests": [
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 0,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-suitable-operators/artifacts/request-628f7f8cbf4350d57ac5d3cd.json",
+            "purpose": "agent_decision",
+            "response_action": "probe",
+            "response_reason": "",
+            "source_documentation_chars": 1517,
+            "source_documentation_sha256": "c2127babf1928f3715481bf6ae3ce9ca214ac7f8a8d49d191d54fedc0c4ef2da",
+            "source_url_candidates_count": 5
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 1,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-suitable-operators/artifacts/request-6ab2d1121dc2491033382451.json",
+            "purpose": "candidate_rules",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 1517,
+            "source_documentation_sha256": "c2127babf1928f3715481bf6ae3ce9ca214ac7f8a8d49d191d54fedc0c4ef2da",
+            "source_url_candidates_count": 5
+          },
+          {
+            "catalogue_metadata_present": false,
+            "decision_turn": null,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-suitable-operators/artifacts/request-795bf29a4d7a081066b36fc5.json",
+            "purpose": "name_role_review",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 1517,
+            "source_documentation_sha256": "c2127babf1928f3715481bf6ae3ce9ca214ac7f8a8d49d191d54fedc0c4ef2da",
+            "source_url_candidates_count": 0
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": null,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-suitable-operators/artifacts/request-7f6e44c16f1f0ca9bcf70fd0.json",
+            "purpose": "inspect",
+            "response_action": null,
+            "response_reason": "The inventory has one readable table (table_id 0) from the Registered Suitable Operators sheet, which is the native business record register of suitable operators with customer names, business numbers and registration data, so it is in scope and selected.",
+            "source_documentation_chars": 1517,
+            "source_documentation_sha256": "c2127babf1928f3715481bf6ae3ce9ca214ac7f8a8d49d191d54fedc0c4ef2da",
+            "source_url_candidates_count": 0
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 1,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-suitable-operators/artifacts/request-8d10099a9af6e66ad66554ae.json",
+            "purpose": "candidate_manifest",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 1517,
+            "source_documentation_sha256": "c2127babf1928f3715481bf6ae3ce9ca214ac7f8a8d49d191d54fedc0c4ef2da",
+            "source_url_candidates_count": 5
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 0,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-suitable-operators/artifacts/request-9556a9844ceda88790ee0058.json",
+            "purpose": "candidate_manifest",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 1517,
+            "source_documentation_sha256": "c2127babf1928f3715481bf6ae3ce9ca214ac7f8a8d49d191d54fedc0c4ef2da",
+            "source_url_candidates_count": 5
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 2,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-suitable-operators/artifacts/request-9e0731ca3276c7664260423c.json",
+            "purpose": "agent_decision",
+            "response_action": "select",
+            "response_reason": "",
+            "source_documentation_chars": 1517,
+            "source_documentation_sha256": "c2127babf1928f3715481bf6ae3ce9ca214ac7f8a8d49d191d54fedc0c4ef2da",
+            "source_url_candidates_count": 5
+          },
+          {
+            "catalogue_metadata_present": false,
+            "decision_turn": null,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-suitable-operators/artifacts/request-d9454acdee3dbed6565f0b51.json",
+            "purpose": "name_role_review",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 1517,
+            "source_documentation_sha256": "c2127babf1928f3715481bf6ae3ce9ca214ac7f8a8d49d191d54fedc0c4ef2da",
+            "source_url_candidates_count": 0
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 0,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-suitable-operators/artifacts/request-e3b1605cac18546834727e4e.json",
+            "purpose": "candidate_rules",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 1517,
+            "source_documentation_sha256": "c2127babf1928f3715481bf6ae3ce9ca214ac7f8a8d49d191d54fedc0c4ef2da",
+            "source_url_candidates_count": 5
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 1,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-suitable-operators/artifacts/request-ea2bd9fc51e57eaa7be20877.json",
+            "purpose": "agent_decision",
+            "response_action": "probe",
+            "response_reason": "",
+            "source_documentation_chars": 1517,
+            "source_documentation_sha256": "c2127babf1928f3715481bf6ae3ce9ca214ac7f8a8d49d191d54fedc0c4ef2da",
+            "source_url_candidates_count": 5
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 0,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-suitable-operators/artifacts/request-fe7080cc8e653e90b2a12e83.json",
+            "purpose": "candidate_manifest",
+            "response_action": null,
+            "response_reason": null,
+            "source_documentation_chars": 1517,
+            "source_documentation_sha256": "c2127babf1928f3715481bf6ae3ce9ca214ac7f8a8d49d191d54fedc0c4ef2da",
+            "source_url_candidates_count": 5
+          }
+        ],
+        "onboarding_status": "partial",
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/six-source/real-suitable-operators",
+        "policy_hash_checks": {
+          "capture": true,
+          "export": true,
+          "navigation": true,
+          "onboard_identity_policy": true,
+          "original_evidence_manifest": true,
+          "result": true
+        },
+        "source_documentation_same_between_acquisition_and_all_inference_requests": true,
+        "source_id": "real-suitable-operators",
+        "task_status": "partial"
+      }
+    ],
+    "unseen_source": [
+      {
+        "acquisition_actions": [
+          {
+            "action": {
+              "action": "fetch",
+              "asset_id": "",
+              "max_chars": 12000,
+              "query": "",
+              "reason": "The captured column descriptions are empty, so the meanings of Business name, Auth Number, Contact Details and Licence No are unresolved. Fetching the observed official metadata reference to check for column definitions and any ABN or legal-name field.",
+              "reference_id": "ref-387fbd8f2b7541a9e0a7cda7",
+              "reference_offset": 0,
+              "start": 0
+            },
+            "status": "failed"
+          },
+          {
+            "action": {
+              "action": "fetch",
+              "asset_id": "",
+              "max_chars": 12000,
+              "query": "",
+              "reason": "The earlier fetch of the official metadata URL failed with an SSL certificate error and column descriptions are empty. Trying the observed Access Canberra program page to check whether it defines Business name, Auth Number, Contact Details or Licence No. No ABN or legal-name field is established yet.",
+              "reference_id": "ref-e8170c30b9a6d0d3ea99a20d",
+              "reference_offset": 0,
+              "start": 0
+            },
+            "status": "failed"
+          },
+          {
+            "action": {
+              "action": "finish",
+              "asset_id": "",
+              "max_chars": 12000,
+              "query": "",
+              "reason": "Column descriptions for Business name, Auth Number, Contact Details and Licence No are empty in the captured documentation, and no ABN, legal-name or column definition is established. Both observed metadata fetches failed (SSL verify error and HTTP 404), and the remaining observed reference is a Creative Commons licence page, which is not a field source. Finishing with these gaps unresolved rather than inferring field meanings.",
+              "reference_id": "",
+              "reference_offset": 0,
+              "start": 0
+            },
+            "status": "completed"
+          }
+        ],
+        "acquisition_status": "partial",
+        "acquisition_usage": {
+          "call_count": 3,
+          "cost_basis": "OpenRouter reported cost, not invoice",
+          "total_cost_usd": 0.0039953,
+          "total_tokens": 31857,
+          "wall_seconds": 18.82108379199053,
+          "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+        },
+        "candidate_status": "unavailable",
+        "effective_snapshot_created": false,
+        "evidence_root_unchanged": true,
+        "excerpt_count": 0,
+        "fetch_attempts": [
+          {
+            "completed_utc": "2026-10-14T06:37:52.286545+00:00",
+            "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>",
+            "error_type": "URLError",
+            "max_bytes": 4000000,
+            "parent_sha256": "598a94dc9c9bab6fc6d65298a539cd07eacd0748ee7c9e3afb3ed159471ef0e8",
+            "reference_id": "ref-387fbd8f2b7541a9e0a7cda7",
+            "started_utc": "2026-10-14T06:37:51.815810+00:00",
+            "status": "failed",
+            "url": "https://www.data.act.gov.au/api/views/gg97-ghvs.json"
+          },
+          {
+            "completed_utc": "2026-10-14T06:38:00.384688+00:00",
+            "error": "HTTP Error 404: Not Found",
+            "error_type": "HTTPError",
+            "max_bytes": 4000000,
+            "parent_sha256": "598a94dc9c9bab6fc6d65298a539cd07eacd0748ee7c9e3afb3ed159471ef0e8",
+            "reference_id": "ref-e8170c30b9a6d0d3ea99a20d",
+            "started_utc": "2026-10-14T06:37:59.177646+00:00",
+            "status": "failed",
+            "url": "https://www.accesscanberra.act.gov.au/app/services/pest_weed_control_operators/"
+          }
+        ],
+        "gap": {
+          "kind": "agent_stop",
+          "reason": "No candidate has been probed yet, and no supported mapping is evident in the supplied evidence. The declared required_fields list is empty, so task acceptance is not configured. Business name holds operating names with T/as trading-name markers, but the documentation gives no current or registered legal-name rule, so mapping it to legal_name would guess name semantics. Auth Number, Contact Details, Operation and Jurisdiction have no direct canonical ontology targets that the AST operations express: Auth Number is not documented as an ABN or ACN, Contact Details has no ontology field, and Operation is not an entity_type or industry_code the documentation defines. Licence No is blank in the sampled rows. Stopping avoids inventing values or guessing semantics."
+        },
+        "inference_requests": [
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": null,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/unseen-source/unseen-act-pest-weed/artifacts/request-4ddeb173f5558e23ef9f5770.json",
+            "purpose": "inspect",
+            "response_action": null,
+            "response_reason": "The source has one readable native table (table_id 0, native.csv, 149 records) listing ACT pest and weed control business operators with business name, operation, authorisation number, contact details, jurisdiction and licence fields. It is a business-record table in the Australian business scope and is not an introductory or definitions table, so it is included. No other tables exist to exclude.",
+            "source_documentation_chars": 923,
+            "source_documentation_sha256": "56012ced613d7e1ccf10d0f7f111b33a9cf7d51ed030c0b1a6a2792fe52d1f92",
+            "source_url_candidates_count": 0
+          },
+          {
+            "catalogue_metadata_present": true,
+            "decision_turn": 0,
+            "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/unseen-source/unseen-act-pest-weed/artifacts/request-9c9b0fdd082984908e21fbdd.json",
+            "purpose": "agent_decision",
+            "response_action": "stop",
+            "response_reason": "No candidate has been probed yet, and no supported mapping is evident in the supplied evidence. The declared required_fields list is empty, so task acceptance is not configured. Business name holds operating names with T/as trading-name markers, but the documentation gives no current or registered legal-name rule, so mapping it to legal_name would guess name semantics. Auth Number, Contact Details, Operation and Jurisdiction have no direct canonical ontology targets that the AST operations express: Auth Number is not documented as an ABN or ACN, Contact Details has no ontology field, and Operation is not an entity_type or industry_code the documentation defines. Licence No is blank in the sampled rows. Stopping avoids inventing values or guessing semantics.",
+            "source_documentation_chars": 923,
+            "source_documentation_sha256": "56012ced613d7e1ccf10d0f7f111b33a9cf7d51ed030c0b1a6a2792fe52d1f92",
+            "source_url_candidates_count": 4
+          }
+        ],
+        "onboarding_status": "partial",
+        "path": "/Users/zhegoalice.ai/Desktop/personal/firmable-submission/runs/unseen-source/unseen-act-pest-weed",
+        "policy_hash_checks": {
+          "capture": true,
+          "export": true,
+          "navigation": true,
+          "onboard_identity_policy": true,
+          "original_evidence_manifest": true,
+          "result": true
+        },
+        "source_documentation_same_between_acquisition_and_all_inference_requests": true,
+        "source_id": "unseen-act-pest-weed",
+        "task_status": "not_configured"
+      }
+    ]
+  },
+  "acquisition_real_six_source_risk_check": {
+    "current_members_equal_selected_r2": true,
+    "current_pair_reason_counts": {
+      "person_company_subject_conflict": 29
+    },
+    "distinct_native_records": 29,
+    "downstream_counts": {
+      "limitation": "Deterministic pipeline output; precision requires separate hand review.",
+      "link_count": 225,
+      "observation_count": 22925,
+      "profile_count": 50,
+      "profile_population": 225,
+      "threshold": 0.99,
+      "unlinked_count": 22278
+    },
+    "limitation": "Risk cases, not confirmed false links; no human link labels. This real run restores company types and exercises person/company conflicts; person/unknown remains covered by prior policy replay and anonymous regression, not this cohort alone.",
+    "none_of_risk_pairs_share_a_group": true,
+    "observations_binding_verified": true,
+    "pair_decisions_found": 29,
+    "pairs_accepted": 0,
+    "pairs_rejected": 29,
+    "records_in_linked_groups": 0,
+    "records_present_in_observations": 29,
+    "records_unlinked": 29,
+    "risk_pairs": 29,
+    "risk_records_by_source": {
+      "real-asic-companies": 9,
+      "real-qbcc": 20
+    },
+    "runtime_fingerprint": "e3061c95bd1865e826e92bc2bdf0a9bfac5017090c547e527341e0f7f4517d98",
+    "separate_unlinked_matches_links": true,
+    "unlinked_all_reason_counts": {
+      "anchor_group_rejected_by_pair_conflict": 29,
+      "person_company_subject_conflict": 29
+    },
+    "unlinked_primary_reason_counts": {
+      "person_company_subject_conflict": 29
+    }
+  },
+  "acquisition_score_regression": {
+    "limitation": "Only frozen labelled fields are accuracy-scored; coverage deltas for unlabelled fields are not correctness. No pooled accuracy, human gold or stability claim.",
+    "previous_runtime_fingerprint": "18984daebde13d47999f8bdbc3b4758074db27e0159799ee4506c185ff9e75b3",
+    "results": [
+      {
+        "abstention_checks": {},
+        "coverage": {
+          "entity.abn": 759
+        },
+        "coverage_change_vs_previous_real_run": {},
+        "guard_errors": {},
+        "metrics": {},
+        "source_id": "real-act-contracts-historical",
+        "status": "complete_output",
+        "task_status": "partial"
+      },
+      {
+        "abstention_checks": {},
+        "coverage": {
+          "entity.abn": 802,
+          "entity.trading_name": 888
+        },
+        "coverage_change_vs_previous_real_run": {},
+        "guard_errors": {},
+        "metrics": {
+          "entity.trading_name": {
+            "correct": 888,
+            "informative_emitted": 888,
+            "missed": 0,
+            "opportunities": 888,
+            "precision_within_labelled_opportunities": 1.0,
+            "recall": 1.0,
+            "wrong_emitted": 0
+          }
+        },
+        "source_id": "real-asic-business-names",
+        "status": "complete_output",
+        "task_status": "complete"
+      },
+      {
+        "abstention_checks": {},
+        "coverage": {
+          "entity.abn": 389,
+          "entity.acn": 389,
+          "entity.date_registered": 389,
+          "entity.entity_type": 386,
+          "entity.legal_name": 389,
+          "entity.status": 3
+        },
+        "coverage_change_vs_previous_real_run": {
+          "entity.entity_type": {
+            "current_informative": 386,
+            "delta": -3,
+            "previous_informative": 389
+          }
+        },
+        "guard_errors": {},
+        "metrics": {
+          "entity.legal_name": {
+            "correct": 389,
+            "informative_emitted": 389,
+            "missed": 0,
+            "opportunities": 389,
+            "precision_within_labelled_opportunities": 1.0,
+            "recall": 1.0,
+            "wrong_emitted": 0
+          }
+        },
+        "source_id": "real-asic-companies",
+        "status": "complete_output",
+        "task_status": "complete"
+      },
+      {
+        "abstention_checks": {},
+        "coverage": {
+          "entity.abn": 4400
+        },
+        "coverage_change_vs_previous_real_run": {},
+        "guard_errors": {},
+        "metrics": {},
+        "source_id": "real-ato-corporate-tax",
+        "status": "complete_output",
+        "task_status": "partial"
+      },
+      {
+        "abstention_checks": {},
+        "coverage": {
+          "address.full": 1000,
+          "entity.abn": 623,
+          "entity.acn": 326
+        },
+        "coverage_change_vs_previous_real_run": {},
+        "guard_errors": {},
+        "metrics": {},
+        "source_id": "real-qbcc",
+        "status": "complete_output",
+        "task_status": "partial"
+      },
+      {
+        "abstention_checks": {
+          "entity.entity_type": {
+            "abstained": 6714,
+            "opportunities": 6714,
+            "unsupported_emitted": 0
+          },
+          "entity.legal_name": {
+            "abstained": 15100,
+            "opportunities": 15100,
+            "unsupported_emitted": 0
+          }
+        },
+        "coverage": {
+          "address.locality": 14825,
+          "address.postcode": 14825,
+          "address.state": 14825,
+          "entity.abn": 299,
+          "entity.acn": 7901,
+          "entity.entity_type": 8184
+        },
+        "coverage_change_vs_previous_real_run": {},
+        "guard_errors": {},
+        "metrics": {
+          "entity.entity_type": {
+            "correct": 8184,
+            "informative_emitted": 8184,
+            "missed": 0,
+            "opportunities": 8184,
+            "precision_within_labelled_opportunities": 1.0,
+            "recall": 1.0,
+            "wrong_emitted": 0
+          }
+        },
+        "source_id": "real-suitable-operators",
+        "status": "complete_output",
+        "task_status": "partial"
+      }
+    ],
+    "status_counts": {
+      "complete_output": 6
+    }
+  },
+  "acquisition_score_replay_matches": true,
   "after_groups": 225,
   "before_groups": 232,
   "code_freeze": {
@@ -88,6 +1718,14 @@
     "labels_sha256": "6d5e8e0fad2e404b1fbdb12f76fd079ae39d92b8dbab63790b063dc4130f2e5d",
     "missing_output_guard": "N/A with frozen denominators; passed",
     "scorer_sha256": "a9cae67d578e97db719b7587ade6af1dfebffe6314bb6dfe64c1aababa0ed6ee"
+  },
+  "human_review_preparation": {
+    "html_js_syntax": "passed node --check",
+    "human_judgments": 0,
+    "precision": null,
+    "samples": 50,
+    "scorer_checks": "Blank/partial keep precision null; temporary 48 correct + 1 incorrect + 1 uncertain -> 0.96; missing reviewer, duplicate pair and modified evidence rejected. Temporary scripted judgments are not current human decisions.",
+    "visual_check": "Not performed: browser tool rejected file: URL; no bypass used."
   },
   "input_observations": 22925,
   "limitations": [
@@ -1414,5 +3052,190 @@
     "wrong labelled value counted",
     "missing labelled value counted",
     "failed extraction N/A"
-  ]
+  ],
+  "submission_clean_copy_check": {
+    "commands": [
+      {
+        "command": [
+          "uv",
+          "sync",
+          "--frozen"
+        ],
+        "exit_code": 0,
+        "wall_seconds": 0.12102691602194682
+      },
+      {
+        "command": [
+          "uv",
+          "run",
+          "python",
+          "-m",
+          "firmable_runtime",
+          "check"
+        ],
+        "exit_code": 0,
+        "wall_seconds": 16.638198999979068
+      },
+      {
+        "command": [
+          "uv",
+          "run",
+          "python",
+          "-m",
+          "firmable_runtime",
+          "build",
+          "--observations",
+          "outputs/observations/real-act-contracts-historical.jsonl",
+          "outputs/observations/real-asic-business-names.jsonl",
+          "outputs/observations/real-asic-companies.jsonl",
+          "outputs/observations/real-ato-corporate-tax.jsonl",
+          "outputs/observations/real-qbcc.jsonl",
+          "outputs/observations/real-suitable-operators.jsonl",
+          "--output-dir",
+          "runs/rebuild"
+        ],
+        "exit_code": 0,
+        "wall_seconds": 1.6693921250116546
+      }
+    ],
+    "dependency_cache": "Host uv cache available; network setup time on another machine may differ",
+    "has_preexisting_venv": false,
+    "kind": "clean-copy-offline-verification",
+    "log_sha256": "24156eaae736e02b45efc514f968a1fe3b16967356fd20e31cf911dbeb20f09e",
+    "paid_calls": 0,
+    "rebuilt_summary": {
+      "limitation": "Deterministic pipeline output; precision requires separate hand review.",
+      "link_count": 225,
+      "observation_count": 22925,
+      "profile_count": 50,
+      "profile_population": 225,
+      "threshold": 0.99,
+      "unlinked_count": 22278
+    },
+    "wall_seconds": 18.428810459008673
+  },
+  "submission_cohort_policy": "Current outputs replaced as one complete six-source cohort. Old r2 output bytes are preserved and hash-verified in the same archive under historical-r2/outputs/. Human review decisions remain empty.",
+  "submission_cohort_promotion": {
+    "changed_nonoutput_files": [
+      "scripts/prepare_review.py",
+      "tests/test_assessment.py",
+      "tests/test_ast_schema.py",
+      "evidence/selected-r2/manifest.json",
+      "evidence/index.json"
+    ],
+    "copied_source_files": 16,
+    "expected_runtime_fingerprint": "e3061c95bd1865e826e92bc2bdf0a9bfac5017090c547e527341e0f7f4517d98",
+    "historical_preservation": {
+      "all_original_hashes_match": true,
+      "archive": "evidence/evaluation-traces.tar.gz",
+      "files_verified": 20,
+      "member_prefix": "historical-r2/outputs/",
+      "temporary_backup": "/tmp/firmable-r2-output-backup"
+    },
+    "human_review": {
+      "all_decision_reviewer_notes_blank": true,
+      "csv_columns": [
+        "pair_id",
+        "decision",
+        "reviewer",
+        "notes"
+      ],
+      "human_reviewed": 0,
+      "limitation": "Pending human decisions. No labels inherited from earlier outputs.",
+      "links_sha256": "d81962bc25a9aa0e8aa8c3c97c691d716f9e56d2577b62dec14c9c46d3fdebbe",
+      "policy_version": "common-anchor-0.3-subject-review",
+      "precision": null,
+      "proposed_pair_population": 448,
+      "sample_observations_match_current_outputs": true,
+      "sample_size": 50,
+      "sampling": "Ascending SHA256(seed + ':' + pair_id), without replacement",
+      "seed": "firmable-link-review",
+      "threshold": 0.99
+    },
+    "kind": "current-six-source-output-promotion-receipt",
+    "limitations": [
+      "Config approvals remain synthetic; no human judgments were fabricated.",
+      "Historical r2 and current outputs remain separate coherent cohorts.",
+      "Withdrawal preserves existing entity keys and does not revalidate identity."
+    ],
+    "outputs": {
+      "configs/real-act-contracts-historical.json": "77ade1d618d62191d3ffdebb5137f12d47b1bfae39774487f8cc63a2d2ee3adb",
+      "configs/real-asic-business-names.json": "e121713f3bb7caebf15402310392c6e699320c132e2f2570ec1e6b545bc97520",
+      "configs/real-asic-companies.json": "ef6181a594856c9110208f66b90582fd0f56348d6d2a68c311330c4781a1d884",
+      "configs/real-ato-corporate-tax.json": "a1d3e7f2227925c149f5c6b8f81c87e23e6ca46550de0ff815936ea89e09b4a0",
+      "configs/real-qbcc.json": "83607679b80a2aba7d134be8b80e3d5880d9b96ee6e7a68cdd3f402a31770399",
+      "configs/real-suitable-operators.json": "400b3af36cc2f5e247304391cc8c6c647b286ac8114113f8a166a7f608e762ee",
+      "human-review/reviews.csv": "6584700c1e41ebdcecd54182f1e212f5926cdb1f8c25863923bf1ca0e8338efb",
+      "human-review/samples.jsonl": "3dc5ca3dd674debaf0ba44845148e0994e1c80881ea254c609e630655e14e2dd",
+      "human-review/summary.json": "743a5a60b32d3df1e4c9b34ba43d238d403c53c5e64ef185efb4c3e43abafa34",
+      "links.json": "d81962bc25a9aa0e8aa8c3c97c691d716f9e56d2577b62dec14c9c46d3fdebbe",
+      "observations/real-act-contracts-historical.jsonl": "da1a7d36f55e74e6038421270f4d3a20c3022f1a61761f4d73bceb4a29eca818",
+      "observations/real-asic-business-names.jsonl": "b88ac05400aa78a40c3e9689e2139d7fa94b2d9e122813355043cd6472a42898",
+      "observations/real-asic-companies.jsonl": "71133bb0670b75bd1977353a9ac735240972744ed72933b8df6c6fbd308469ca",
+      "observations/real-ato-corporate-tax.jsonl": "12d31cac96db938dd72a3c148106c5bfd1089e82319fd072cf85a252906b0670",
+      "observations/real-qbcc.jsonl": "fd8994340945fb04fd7e4125882b84b2dc1a748ce1180e5d8ee64cfa836979ee",
+      "observations/real-suitable-operators.jsonl": "4786bc94bf1feafd3537225ccb74ba9c7ca068d4dedea48a99a4b38a855652eb",
+      "profiles.json": "7c63cb867c00841f542373378d9262cf8ef1d46ed5e5c8a87c52e9bcc75709a7",
+      "summary.json": "855b9df4decd00aada8a7d92c0907edae86960812526baef91d1a1aacaf0f926",
+      "unlinked.json": "9eee7c19b052942e57d8e6cdbb679ab901a82044804ed19c55434dd8c705cf73",
+      "withdrawal/withdrawal.json": "a4456d9e9028336a5b257ff42b53ac6b9821392562a5fd2aa49679d0bb262efb"
+    },
+    "runtime_fingerprint": "e3061c95bd1865e826e92bc2bdf0a9bfac5017090c547e527341e0f7f4517d98",
+    "runtime_unchanged": true,
+    "source_completed_at": "2026-10-14T06:36:05.855728+00:00",
+    "source_run": "runs/six-source",
+    "tests": {
+      "static_check": "F401,F821,F811,F841 passed",
+      "test_assessment.py": {
+        "passed": 1,
+        "seconds": 4.825
+      },
+      "test_ast_schema.py": {
+        "passed": 6,
+        "seconds": 0.105
+      }
+    },
+    "whole_cohort_copy_verified": true,
+    "withdrawal": {
+      "fields_changed": 0,
+      "fields_lost": 730,
+      "identity_limitation": "Existing entity keys retained; source withdrawal does not revalidate identity",
+      "identity_review_required_count": 195,
+      "links_hash": "ef4926ac4615a4735906c464587c2fdc16c4a09c5fdaad1193ca742c8874b901",
+      "observations_hash": "c0d6d96b10af4625aecac3b4891f1662e8855518a6a16f447b651b75cac56ce6",
+      "observations_hash_scope": "Surviving current-cohort observations after removing the withdrawn source; links_hash retains the original full-cohort membership artifact.",
+      "profiles_affected": 195,
+      "profiles_dropped": 0,
+      "selection_policy_version": "evidence-order-0.2-informative",
+      "withdraw_source_id": "real-asic-companies"
+    }
+  },
+  "submission_current_output_bindings": {
+    "outputs/configs/real-act-contracts-historical.json": "77ade1d618d62191d3ffdebb5137f12d47b1bfae39774487f8cc63a2d2ee3adb",
+    "outputs/configs/real-asic-business-names.json": "e121713f3bb7caebf15402310392c6e699320c132e2f2570ec1e6b545bc97520",
+    "outputs/configs/real-asic-companies.json": "ef6181a594856c9110208f66b90582fd0f56348d6d2a68c311330c4781a1d884",
+    "outputs/configs/real-ato-corporate-tax.json": "a1d3e7f2227925c149f5c6b8f81c87e23e6ca46550de0ff815936ea89e09b4a0",
+    "outputs/configs/real-qbcc.json": "83607679b80a2aba7d134be8b80e3d5880d9b96ee6e7a68cdd3f402a31770399",
+    "outputs/configs/real-suitable-operators.json": "400b3af36cc2f5e247304391cc8c6c647b286ac8114113f8a166a7f608e762ee",
+    "outputs/human-review/REVIEW.html": "9da4aee753e09c3a752147ce600d42c562564b7f12abd78b7237f9676c672bb0",
+    "outputs/human-review/reviews.csv": "6584700c1e41ebdcecd54182f1e212f5926cdb1f8c25863923bf1ca0e8338efb",
+    "outputs/human-review/samples.jsonl": "3dc5ca3dd674debaf0ba44845148e0994e1c80881ea254c609e630655e14e2dd",
+    "outputs/human-review/summary.json": "743a5a60b32d3df1e4c9b34ba43d238d403c53c5e64ef185efb4c3e43abafa34",
+    "outputs/links.json": "d81962bc25a9aa0e8aa8c3c97c691d716f9e56d2577b62dec14c9c46d3fdebbe",
+    "outputs/observations/real-act-contracts-historical.jsonl": "da1a7d36f55e74e6038421270f4d3a20c3022f1a61761f4d73bceb4a29eca818",
+    "outputs/observations/real-asic-business-names.jsonl": "b88ac05400aa78a40c3e9689e2139d7fa94b2d9e122813355043cd6472a42898",
+    "outputs/observations/real-asic-companies.jsonl": "71133bb0670b75bd1977353a9ac735240972744ed72933b8df6c6fbd308469ca",
+    "outputs/observations/real-ato-corporate-tax.jsonl": "12d31cac96db938dd72a3c148106c5bfd1089e82319fd072cf85a252906b0670",
+    "outputs/observations/real-qbcc.jsonl": "fd8994340945fb04fd7e4125882b84b2dc1a748ce1180e5d8ee64cfa836979ee",
+    "outputs/observations/real-suitable-operators.jsonl": "4786bc94bf1feafd3537225ccb74ba9c7ca068d4dedea48a99a4b38a855652eb",
+    "outputs/profiles.json": "7c63cb867c00841f542373378d9262cf8ef1d46ed5e5c8a87c52e9bcc75709a7",
+    "outputs/summary.json": "855b9df4decd00aada8a7d92c0907edae86960812526baef91d1a1aacaf0f926",
+    "outputs/unlinked.json": "9eee7c19b052942e57d8e6cdbb679ab901a82044804ed19c55434dd8c705cf73",
+    "outputs/withdrawal/withdrawal.json": "a4456d9e9028336a5b257ff42b53ac6b9821392562a5fd2aa49679d0bb262efb"
+  },
+  "submission_scope_decision": {
+    "no_additional_paid_reruns": true,
+    "small_field_variation_accepted": true,
+    "user_direction": "Accept small instability; prioritise meeting assignment deliverables and submitting, stop further optimisation."
+  }
 }

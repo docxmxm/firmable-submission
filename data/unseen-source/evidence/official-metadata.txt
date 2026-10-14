@@ -1,22 +1,37 @@
-Dataset: Cooperatives registered in ACT
-Publisher: Access Canberra
-Description: This dataset contains information on cooperatives registered in the ACT under the Co-operatives National Law (ACT) Act 2017.
+Dataset: List of pest and weed control operators in the ACT
+Publisher: ACT Government
+Description: The Authorisation holder is authorised to use agricultural and veterinary chemicals for commercial purposes as specified in the Environmental Authorisation.
 License: {"name": "Creative Commons Attribution 4.0 International", "logoUrl": "images/licenses/cc30by.png", "termsLink": "http://creativecommons.org/licenses/by/4.0/legalcode"}
-Official metadata URL: https://www.data.act.gov.au/api/views/758m-5a8y.json
+Official metadata URL: https://www.data.act.gov.au/api/views/gg97-ghvs.json
 
 Original column metadata:
 
-Name: Coop Registeration Number
-Field: coop_registeration_number
+Name: Business name
+Field: business_name
 Type: text
 Description: 
 
-Name: Name of Cooperative
-Field: name_of_cooperative
+Name: Operation
+Field: operation
 Type: text
 Description: 
 
-Name: Registration Status
-Field: registration_status
+Name: Auth Number
+Field: auth_number
+Type: text
+Description: 
+
+Name: Contact Details
+Field: contact_details
+Type: text
+Description: 
+
+Name: Jurisdiction
+Field: jurisdiction
+Type: text
+Description: 
+
+Name: Licence No
+Field: licence_no
 Type: text
 Description: 

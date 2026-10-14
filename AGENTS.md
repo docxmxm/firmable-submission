@@ -3,7 +3,7 @@
 Read `README.md` and `docs/ARCHITECTURE.md` first. `firmable_runtime.workflow` is the public API and `python -m firmable_runtime` is the CLI.
 
 - Keep one runtime and one response contract. Do not create version/release directories or source-specific extraction branches.
-- The current six configs and observations are the complete pre-scope r2 cohort. Preserve their provenance and matching runtime identity; do not mix source-wise best runs or silently replace saved evidence during a refactor.
+- The current six configs and observations are the complete acquisition-connected cohort, bound in evidence/latest-six-source.json. Historical r2 outputs are retained in evidence/evaluation-traces.tar.gz under historical-r2/outputs/. Preserve both cohorts' provenance and matching runtime identities; do not mix source-wise best runs or silently replace saved evidence.
 - Improve general inference/execution capability. Do not edit mappings, aliases or native rows merely to pass evaluation.
 - Preserve raw records, stable locators, typed identifiers, subject attribution, field provenance and explicit abstention. Model judgments and validation flags cannot authorize ingestion.
 - Paid model calls require explicit user authorization for their scope. Reuse authorization already given; do not start paid runs as part of offline verification. Never resend an unknown outcome. Retain safe failed-call receipts and never commit credentials or raw CLI envelopes.

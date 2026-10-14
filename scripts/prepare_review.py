@@ -11,7 +11,9 @@ def main():
     output = root / "outputs"
     destination = output / "human-review"
     if destination.exists():
-        raise SystemExit("Review directory already exists; preserve existing decisions.")
+        raise SystemExit(
+            "Review directory already exists; preserve existing decisions."
+        )
     links_bytes = (output / "links.json").read_bytes()
     links = json.loads(links_bytes)
     observations = {}
@@ -28,8 +30,12 @@ def main():
             identity = json.dumps(endpoints, separators=(",", ":"))
             pair_id = hashlib.sha256(identity.encode()).hexdigest()
             assert pair_id not in pairs
-            pairs[pair_id] = {"pair_id": pair_id, "entity_key": entity["entity_key"], **pair}
-    seed = "firmable-pre-scope-r2-review-20261014"
+            pairs[pair_id] = {
+                "pair_id": pair_id,
+                "entity_key": entity["entity_key"],
+                **pair,
+            }
+    seed = "firmable-link-review"
     selected = sorted(
         pairs,
         key=lambda pair_id: hashlib.sha256((seed + ":" + pair_id).encode()).hexdigest(),
@@ -46,7 +52,9 @@ def main():
             }
             handle.write(json.dumps(sample, ensure_ascii=False) + "\n")
     with (destination / "reviews.csv").open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=["pair_id", "decision", "reviewer", "notes"])
+        writer = csv.DictWriter(
+            handle, fieldnames=["pair_id", "decision", "reviewer", "notes"]
+        )
         writer.writeheader()
         writer.writerows({"pair_id": pair_id} for pair_id in selected)
     summary = {

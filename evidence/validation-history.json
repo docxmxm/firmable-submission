@@ -1,16 +1,212 @@
 {
   "archive": "evidence/evaluation-traces.tar.gz",
-  "prior_reference": {
-    "archive_prefix": "before-general-fix",
+  "current": {
+    "archive_prefix": "acquisition-connected",
+    "decision": "Submit the coherent current cohort with limitations. Labelled fields retained; small Companies type coverage fluctuation accepted. Agent-directed link acquisition executed, but no new excerpts were obtained; preselected holdout produced no config. No further optimisation or paid reruns.",
+    "held_out": {
+      "calls": 5,
+      "fields": {
+        "unseen-act-pest-weed": null
+      },
+      "human_gold": false,
+      "human_link_reviews": 0,
+      "reported_cost_usd": 0.0063431,
+      "reported_tokens": 51643,
+      "runtime_fingerprint": "e3061c95bd1865e826e92bc2bdf0a9bfac5017090c547e527341e0f7f4517d98",
+      "source_acquisition": {
+        "unseen-act-pest-weed": {
+          "actions": [
+            "fetch",
+            "fetch",
+            "finish"
+          ],
+          "excerpt_count": 0,
+          "export_sha256": "98b528c8acb3afe65b2d6feab25f0bbe67d70fd0b57f0985d38d9442a6bd3df1",
+          "status": "partial",
+          "usage": {
+            "call_count": 3,
+            "cost_basis": "OpenRouter reported cost, not invoice",
+            "total_cost_usd": 0.0039953,
+            "total_tokens": 31857,
+            "wall_seconds": 18.82108379199053,
+            "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+          }
+        }
+      },
+      "started_at": "2026-10-14T06:37:46.959431+00:00",
+      "status_counts": {
+        "missing_output": 1
+      },
+      "wall_seconds": 27.980742084007943
+    },
     "six_sources": {
-      "runtime_fingerprint": "bec320c33a982dcfd5e31f9e0c8c74d68401ea0855643a07028855adbf5e40de",
-      "started_at": "2026-10-14T05:13:33.659324+00:00",
-      "calls": 75,
-      "reported_cost_usd": 0.1914494,
-      "wall_seconds": 220.76128620901727,
+      "calls": 87,
+      "fields": {
+        "real-act-contracts-historical": {
+          "entity.abn": 759
+        },
+        "real-asic-business-names": {
+          "entity.abn": 802,
+          "entity.trading_name": 888
+        },
+        "real-asic-companies": {
+          "entity.abn": 389,
+          "entity.acn": 389,
+          "entity.date_registered": 389,
+          "entity.entity_type": 386,
+          "entity.legal_name": 389,
+          "entity.status": 3
+        },
+        "real-ato-corporate-tax": {
+          "entity.abn": 4400
+        },
+        "real-qbcc": {
+          "address.full": 1000,
+          "entity.abn": 623,
+          "entity.acn": 326
+        },
+        "real-suitable-operators": {
+          "address.locality": 14825,
+          "address.postcode": 14825,
+          "address.state": 14825,
+          "entity.abn": 299,
+          "entity.acn": 7901,
+          "entity.entity_type": 8184
+        }
+      },
+      "human_gold": false,
+      "human_link_reviews": 0,
+      "reported_cost_usd": 0.2054033,
+      "reported_tokens": 1563821,
+      "runtime_fingerprint": "e3061c95bd1865e826e92bc2bdf0a9bfac5017090c547e527341e0f7f4517d98",
+      "source_acquisition": {
+        "real-act-contracts-historical": {
+          "actions": [
+            "fetch",
+            "search",
+            "search",
+            "search",
+            "fetch",
+            "search",
+            "finish"
+          ],
+          "excerpt_count": 0,
+          "export_sha256": "23379f74565b1e82f3b4feda6414afc8c608e2a596efa5edb1e52c066dcf2744",
+          "status": "partial",
+          "usage": {
+            "call_count": 7,
+            "cost_basis": "OpenRouter reported cost, not invoice",
+            "total_cost_usd": 0.0074121000000000005,
+            "total_tokens": 60945,
+            "wall_seconds": 31.443502124981023,
+            "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+          }
+        },
+        "real-asic-business-names": {
+          "actions": [
+            "search",
+            "finish"
+          ],
+          "excerpt_count": 0,
+          "export_sha256": "001c19f3f7e8b3c4a13edd24da50915d9671d05b4683973947cd8fb8c0fefab7",
+          "status": "partial",
+          "usage": {
+            "call_count": 2,
+            "cost_basis": "OpenRouter reported cost, not invoice",
+            "total_cost_usd": 0.0030527,
+            "total_tokens": 28463,
+            "wall_seconds": 9.368628707976313,
+            "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+          }
+        },
+        "real-asic-companies": {
+          "actions": [
+            "finish"
+          ],
+          "excerpt_count": 0,
+          "export_sha256": "001c19f3f7e8b3c4a13edd24da50915d9671d05b4683973947cd8fb8c0fefab7",
+          "status": "partial",
+          "usage": {
+            "call_count": 1,
+            "cost_basis": "OpenRouter reported cost, not invoice",
+            "total_cost_usd": 0.0020785,
+            "total_tokens": 19493,
+            "wall_seconds": 4.794863042014185,
+            "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+          }
+        },
+        "real-ato-corporate-tax": {
+          "actions": [
+            "search",
+            "fetch",
+            "search",
+            "search",
+            "finish"
+          ],
+          "excerpt_count": 0,
+          "export_sha256": "001c19f3f7e8b3c4a13edd24da50915d9671d05b4683973947cd8fb8c0fefab7",
+          "status": "partial",
+          "usage": {
+            "call_count": 5,
+            "cost_basis": "OpenRouter reported cost, not invoice",
+            "total_cost_usd": 0.0054594,
+            "total_tokens": 45466,
+            "wall_seconds": 26.794027791998815,
+            "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+          }
+        },
+        "real-qbcc": {
+          "actions": [
+            "finish"
+          ],
+          "excerpt_count": 0,
+          "export_sha256": "001c19f3f7e8b3c4a13edd24da50915d9671d05b4683973947cd8fb8c0fefab7",
+          "status": "partial",
+          "usage": {
+            "call_count": 1,
+            "cost_basis": "OpenRouter reported cost, not invoice",
+            "total_cost_usd": 0.0009543,
+            "total_tokens": 8051,
+            "wall_seconds": 4.0479325000196695,
+            "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+          }
+        },
+        "real-suitable-operators": {
+          "actions": [
+            "fetch",
+            "finish"
+          ],
+          "excerpt_count": 0,
+          "export_sha256": "bf61c46e9c1717a7c96e1fbe04f0569005595c83098dc5c4b8d10abc5ca6d526",
+          "status": "partial",
+          "usage": {
+            "call_count": 2,
+            "cost_basis": "OpenRouter reported cost, not invoice",
+            "total_cost_usd": 0.0021022000000000002,
+            "total_tokens": 16038,
+            "wall_seconds": 9.846958375012036,
+            "wall_time_basis": "Current process instance only; interrupted attempt time is unavailable"
+          }
+        }
+      },
+      "started_at": "2026-10-14T06:31:43.645641+00:00",
       "status_counts": {
         "complete_output": 6
       },
+      "wall_seconds": 262.23366004100535
+    }
+  },
+  "policy": "One active runtime and current run directories. All attempted cohorts remain counted; no best-per-source mixing or hidden retries.",
+  "previous_change_validation_usage": {
+    "calls": 165,
+    "reported_cost_usd": 0.414728,
+    "reported_tokens": 3116204,
+    "scope": "Both repair attempts, including both holdouts; excludes preceding reference run and older project development. Provider receipts, not invoice."
+  },
+  "prior_reference": {
+    "archive_prefix": "before-general-fix",
+    "six_sources": {
+      "calls": 75,
       "fields": {
         "real-act-contracts-historical": {
           "entity.abn": 759
@@ -43,21 +239,42 @@
         }
       },
       "human_gold": false,
-      "human_link_reviews": 0
+      "human_link_reviews": 0,
+      "reported_cost_usd": 0.1914494,
+      "runtime_fingerprint": "bec320c33a982dcfd5e31f9e0c8c74d68401ea0855643a07028855adbf5e40de",
+      "started_at": "2026-10-14T05:13:33.659324+00:00",
+      "status_counts": {
+        "complete_output": 6
+      },
+      "wall_seconds": 220.76128620901727
     }
   },
   "repair_attempts": [
     {
       "archive_prefix": "first-general-fix",
-      "six_sources": {
-        "runtime_fingerprint": "e8e29bf23ad9f2a153934e0f082c27043c3b559242d117cca5aa0276ef10a1cd",
-        "started_at": "2026-10-14T05:45:12.688252+00:00",
-        "calls": 83,
-        "reported_cost_usd": 0.2279006,
-        "wall_seconds": 252.29758995899465,
-        "status_counts": {
-          "complete_output": 6
+      "decision": "Do not promote as stable: BN trading names regressed 888 to 0. Keep its successful held-out result bound only to this runtime. Add general planner feedback for unchanged execution, binding/evidence changes and recurring diagnostics; retain existing semantic review criteria.",
+      "held_out": {
+        "calls": 10,
+        "fields": {
+          "unseen-act-nowaste": {
+            "entity.abn": 193,
+            "entity.acn": 158,
+            "entity.legal_name": 193,
+            "entity.trading_name": 127
+          }
         },
+        "human_gold": false,
+        "human_link_reviews": 0,
+        "reported_cost_usd": 0.0209386,
+        "runtime_fingerprint": "e8e29bf23ad9f2a153934e0f082c27043c3b559242d117cca5aa0276ef10a1cd",
+        "started_at": "2026-10-14T05:49:55.996291+00:00",
+        "status_counts": {
+          "complete_output": 1
+        },
+        "wall_seconds": 67.4039244580199
+      },
+      "six_sources": {
+        "calls": 83,
         "fields": {
           "real-act-contracts-historical": {
             "entity.abn": 759
@@ -91,100 +308,91 @@
           }
         },
         "human_gold": false,
-        "human_link_reviews": 0
-      },
-      "held_out": {
+        "human_link_reviews": 0,
+        "reported_cost_usd": 0.2279006,
         "runtime_fingerprint": "e8e29bf23ad9f2a153934e0f082c27043c3b559242d117cca5aa0276ef10a1cd",
-        "started_at": "2026-10-14T05:49:55.996291+00:00",
-        "calls": 10,
-        "reported_cost_usd": 0.0209386,
-        "wall_seconds": 67.4039244580199,
+        "started_at": "2026-10-14T05:45:12.688252+00:00",
         "status_counts": {
-          "complete_output": 1
+          "complete_output": 6
         },
+        "wall_seconds": 252.29758995899465
+      }
+    },
+    {
+      "archive_prefix": "current",
+      "decision": "Six-source labelled fields recovered, with four unresolved legal-name tasks. Frozen-runtime Cooperatives holdout failed to produce a validated config. Generalisation and repeatability remain unproven; retain the failure and do not replace it with the earlier NoWaste success.",
+      "held_out": {
+        "calls": 6,
         "fields": {
-          "unseen-act-nowaste": {
-            "entity.abn": 193,
-            "entity.acn": 158,
-            "entity.legal_name": 193,
-            "entity.trading_name": 127
+          "unseen-act-cooperatives": null
+        },
+        "human_gold": false,
+        "human_link_reviews": 0,
+        "reported_cost_usd": 0.0078227,
+        "runtime_fingerprint": "18984daebde13d47999f8bdbc3b4758074db27e0159799ee4506c185ff9e75b3",
+        "started_at": "2026-10-14T06:13:12.955328+00:00",
+        "status_counts": {
+          "missing_output": 1
+        },
+        "wall_seconds": 37.56474916599109
+      },
+      "six_sources": {
+        "calls": 66,
+        "fields": {
+          "real-act-contracts-historical": {
+            "entity.abn": 759
+          },
+          "real-asic-business-names": {
+            "entity.abn": 802,
+            "entity.trading_name": 888
+          },
+          "real-asic-companies": {
+            "entity.abn": 389,
+            "entity.acn": 389,
+            "entity.date_registered": 389,
+            "entity.entity_type": 389,
+            "entity.legal_name": 389,
+            "entity.status": 3
+          },
+          "real-ato-corporate-tax": {
+            "entity.abn": 4400
+          },
+          "real-qbcc": {
+            "address.full": 1000,
+            "entity.abn": 623,
+            "entity.acn": 326
+          },
+          "real-suitable-operators": {
+            "address.locality": 14825,
+            "address.postcode": 14825,
+            "address.state": 14825,
+            "entity.abn": 299,
+            "entity.acn": 7901,
+            "entity.entity_type": 8184
           }
         },
         "human_gold": false,
-        "human_link_reviews": 0
-      },
-      "decision": "Do not promote as stable: BN trading names regressed 888 to 0. Keep its successful held-out result bound only to this runtime. Add general planner feedback for unchanged execution, binding/evidence changes and recurring diagnostics; retain existing semantic review criteria."
+        "human_link_reviews": 0,
+        "reported_cost_usd": 0.1580661,
+        "runtime_fingerprint": "18984daebde13d47999f8bdbc3b4758074db27e0159799ee4506c185ff9e75b3",
+        "started_at": "2026-10-14T06:08:42.056930+00:00",
+        "status_counts": {
+          "complete_output": 6
+        },
+        "wall_seconds": 227.97379366701352
+      }
     }
   ],
-  "policy": "One active runtime and current run directories. All attempted cohorts remain counted; no best-per-source mixing or hidden retries.",
-  "current": {
-    "archive_prefix": "current",
-    "six_sources": {
-      "runtime_fingerprint": "18984daebde13d47999f8bdbc3b4758074db27e0159799ee4506c185ff9e75b3",
-      "started_at": "2026-10-14T06:08:42.056930+00:00",
-      "calls": 66,
-      "reported_cost_usd": 0.1580661,
-      "wall_seconds": 227.97379366701352,
-      "status_counts": {
-        "complete_output": 6
-      },
-      "fields": {
-        "real-act-contracts-historical": {
-          "entity.abn": 759
-        },
-        "real-asic-business-names": {
-          "entity.abn": 802,
-          "entity.trading_name": 888
-        },
-        "real-asic-companies": {
-          "entity.abn": 389,
-          "entity.acn": 389,
-          "entity.date_registered": 389,
-          "entity.entity_type": 389,
-          "entity.legal_name": 389,
-          "entity.status": 3
-        },
-        "real-ato-corporate-tax": {
-          "entity.abn": 4400
-        },
-        "real-qbcc": {
-          "address.full": 1000,
-          "entity.abn": 623,
-          "entity.acn": 326
-        },
-        "real-suitable-operators": {
-          "address.locality": 14825,
-          "address.postcode": 14825,
-          "address.state": 14825,
-          "entity.abn": 299,
-          "entity.acn": 7901,
-          "entity.entity_type": 8184
-        }
-      },
-      "human_gold": false,
-      "human_link_reviews": 0
-    },
-    "held_out": {
-      "runtime_fingerprint": "18984daebde13d47999f8bdbc3b4758074db27e0159799ee4506c185ff9e75b3",
-      "started_at": "2026-10-14T06:13:12.955328+00:00",
-      "calls": 6,
-      "reported_cost_usd": 0.0078227,
-      "wall_seconds": 37.56474916599109,
-      "status_counts": {
-        "missing_output": 1
-      },
-      "fields": {
-        "unseen-act-cooperatives": null
-      },
-      "human_gold": false,
-      "human_link_reviews": 0
-    },
-    "decision": "Six-source labelled fields recovered, with four unresolved legal-name tasks. Frozen-runtime Cooperatives holdout failed to produce a validated config. Generalisation and repeatability remain unproven; retain the failure and do not replace it with the earlier NoWaste success."
+  "retained_evaluations_usage": {
+    "calls": 332,
+    "reported_cost_usd": 0.8179238,
+    "reported_tokens": 6159482,
+    "scope": "Pre-change reference plus every attempt retained in this archive; excludes earlier project development and engineering."
   },
   "this_change_validation_usage": {
-    "calls": 165,
-    "reported_tokens": 3116204,
-    "reported_cost_usd": 0.414728,
-    "scope": "Both repair attempts, including both holdouts; excludes preceding reference run and older project development. Provider receipts, not invoice."
+    "calls": 92,
+    "reported_cost_usd": 0.2117464,
+    "reported_tokens": 1615464,
+    "scope": "Current acquisition-connected six-source and pest/weed executions, including acquisition; provider receipts, not invoice or total historical project cost."
   }
 }

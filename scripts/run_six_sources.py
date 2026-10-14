@@ -105,6 +105,7 @@ def main():
         "cost_guard_limitation": "Receipt-based stop with reservation; not a provider-enforced billing limit.",
         "unknown_outcome_policy": "Stop new calls globally; never resend an unknown outcome.",
         "labels_policy": "Frozen labels are read only by the subsequent scoring step, never by the planner.",
+        "source_acquisition": "Agent-directed reading of observed source links before inference; the agent may finish without fetching. Original inputs stay unchanged; acquired excerpts are separately hash-bound.",
     }
     atomic_json(root / "protocol.json", protocol)
     lock = threading.Lock()
@@ -173,6 +174,15 @@ def main():
                 task_status=onboard["task_status"],
                 candidate_status=onboard.get("candidate_status"),
             )
+            if onboard.get("source_acquisition"):
+                acquired = onboard["source_acquisition"]
+                result["source_acquisition"] = {
+                    key: acquired[key]
+                    for key in ("status", "excerpt_count", "usage", "export_sha256")
+                }
+                result["source_acquisition"]["actions"] = [
+                    a["action"]["action"] for a in acquired["actions"]
+                ]
             if onboard.get("candidate_status") != "validated":
                 result["status"] = "no_validated_candidate"
             else:
