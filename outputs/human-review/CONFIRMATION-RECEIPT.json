@@ -1,0 +1,31 @@
+{
+  "schema_version": "firmable-human-review-confirmation-v1",
+  "confirmed_at_utc": "2026-10-14T23:02:59.517568+00:00",
+  "user_confirmation": "全部做完了",
+  "reviewer": "zheluo",
+  "review_method": "human_ui_with_ai_prepared_evidence",
+  "interface": "HUMAN-REVIEW.html; isolated human-only browser draft; 18 human entries preloaded and 32 blank judgments",
+  "judgment_authorship": "Human supplied all 50 decisions; assistant exported and validated the completed page without selecting or changing judgments.",
+  "preloaded_human_decisions": 18,
+  "new_human_decisions": 32,
+  "preloaded_human_decisions_unchanged": true,
+  "ai_judgments_included": 0,
+  "original_packet_links_sha256": "01050fb2b5c7188949a8d333fea62f352d52f00b3d329dfe7537be268a3dbae6",
+  "final_links_sha256": "49665bc24523f1ede55297674d19ac6fe0f0fe89fb601866baaccdf822fe201e",
+  "samples_sha256": "da9fcd575f80e49b9d5518fc302e65a01e1af647786900a0487dc2ffb755db1f",
+  "reviews_sha256": "1bb798ee3f5a583c475bc5197d5345ca1188e23c48c9e53c1d25231e9ab66a19",
+  "binding_revalidation": {
+    "all_479_pair_contracts_equal": true,
+    "all_100_sample_observation_objects_equal": true,
+    "same_seed_policy_threshold_and_pair_ids": true
+  },
+  "decision_counts": {
+    "correct": 44,
+    "incorrect": 1,
+    "uncertain": 5,
+    "unreviewed": 0
+  },
+  "confirmed_correct_fraction_all_50": 0.88,
+  "uncertain_policy": "Retained in the denominator and never counted as correct.",
+  "scope_limit": "Sample of proposed links at 0.99; does not approve every link/profile or measure unlinked recall."
+}

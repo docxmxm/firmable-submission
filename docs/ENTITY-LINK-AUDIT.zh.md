@@ -1,5 +1,7 @@
 # 实体连接离线审核
 
+> Historical audit of the preserved submission at Git commit `f673ff9`. The current native replay and completed 50-case human audit are recorded in [current submission](../evidence/current-submission.json) and [current human score](../outputs/human-review/summary.json).
+
 2026-10-14。审核固定的六源 `outputs/`：225 个实体组、448 对跨源链接，以及 132 条因名称、主体或多标识冲突而拒连的高风险记录。审查范围共 779 条相关原始记录。仅使用原始数据、随附文档、现有配置和输出；没有模型 API 调用、外部补全或六源推理重跑。
 
 结论：修复两处通用连接契约问题。固定范围的离线复核保留全部 448 对旧链接，新增 31 对待审核提案；没有替换正式结果或填写人工判断。**目前仍为人工审核 0/50，precision 未知。**

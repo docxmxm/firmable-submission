@@ -1,12 +1,12 @@
 {
-  "schema_version": "firmable-submission-check-v1",
-  "checked_at_utc": "2026-10-14T22:32:26.104672+00:00",
-  "tested_index_tree": "2585ca418c9826050b2cbcb736d519a154215b54",
-  "scope": "Final selected publication files in a temporary clean checkout, without an existing virtual environment. Subsequent changes only refresh documentation and this verification inventory.",
+  "schema_version": "firmable-submission-check-v2",
+  "checked_at_utc": "2026-10-14T23:09:58.858703+00:00",
+  "tested_index_tree": "0a7726ff364439168929eff0f521b882faa74fd9",
+  "scope": "Final selected publication files in a temporary clean checkout; no existing virtual environment. Subsequent changes only refresh documentation and verification inventories.",
   "host_dependency_cache_available": true,
   "new_model_calls": 0,
   "static_check": "uvx ruff check firmable_runtime scripts tests --select F401,F821,F811,F841 passed",
-  "offline_tests": 478,
+  "offline_tests": 481,
   "checks": [
     {
       "check": "install_frozen",
@@ -16,12 +16,12 @@
         "--frozen"
       ],
       "exit_code": 0,
-      "wall_seconds": 0.115,
+      "wall_seconds": 0.055,
       "stdout": "",
-      "stderr": "Using CPython 3.12.13\nCreating virtual environment at: .venv\nInstalled 9 packages in 9ms\n + attrs==26.1.0\n + certifi==2026.7.22\n + jsonschema==4.26.0\n + jsonschema-specifications==2025.9.1\n + pypdf==6.20.1\n + pyyaml==6.0.3\n + referencing==0.37.0\n + rpds-py==2026.9.1\n + typing-extensions==4.16.0\n"
+      "stderr": "Using CPython 3.12.13\nCreating virtual environment at: .venv\nInstalled 9 packages in 10ms\n + attrs==26.1.0\n + certifi==2026.7.22\n + jsonschema==4.26.0\n + jsonschema-specifications==2025.9.1\n + pypdf==6.20.1\n + pyyaml==6.0.3\n + referencing==0.37.0\n + rpds-py==2026.9.1\n + typing-extensions==4.16.0\n"
     },
     {
-      "check": "offline_regression",
+      "check": "offline_regression_and_submission_replay",
       "command": [
         "uv",
         "run",
@@ -31,9 +31,23 @@
         "check"
       ],
       "exit_code": 0,
-      "wall_seconds": 20.689,
+      "wall_seconds": 28.924,
       "stdout": "",
-      "stderr": "......................................................................................................................................................................................................................................................................................................................................................................................................................invalid pdf header: b'data'\nEOF marker not found\nEOF marker not found\n........................................................................\n----------------------------------------------------------------------\nRan 478 tests in 20.099s\n\nOK\n"
+      "stderr": "......................................................................................................................................................................................................................................................................................................................................................................................................................invalid pdf header: b'data'\nEOF marker not found\nEOF marker not found\n...........................................................................\n----------------------------------------------------------------------\nRan 481 tests in 28.319s\n\nOK\n"
+    },
+    {
+      "check": "bound_human_audit",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "scripts/score_review.py",
+        "--check-only"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.272,
+      "stdout": "{\n  \"review_status\": \"complete\",\n  \"human_reviewed\": 50,\n  \"decision_counts\": {\n    \"correct\": 44,\n    \"incorrect\": 1,\n    \"uncertain\": 5,\n    \"unreviewed\": 0\n  },\n  \"precision\": 0.88,\n  \"precision_basis\": \"Conservative confirmed-correct fraction of all 50 supplied reviews; uncertain is nonconfirmed, never correct. Precision is null until all 50 decisions and reviewer names are supplied.\"\n}\n",
+      "stderr": ""
     },
     {
       "check": "rebuild_current_matcher",
@@ -52,23 +66,23 @@
         "outputs/observations/real-qbcc.jsonl",
         "outputs/observations/real-suitable-operators.jsonl",
         "--output-dir",
-        "runs/submission-verification-build"
+        "runs/verification-rebuild"
       ],
       "exit_code": 0,
-      "wall_seconds": 1.651,
+      "wall_seconds": 1.854,
       "stdout": "{\n  \"observation_count\": 22925,\n  \"link_count\": 250,\n  \"unlinked_count\": 22222,\n  \"profile_population\": 250,\n  \"profile_count\": 50,\n  \"threshold\": 0.99,\n  \"limitation\": \"Deterministic pipeline output; precision requires separate hand review.\"\n}\n",
       "stderr": ""
     }
   ],
-  "elapsed_seconds_including_copy": 22.881,
-  "saved_output_summary": {
+  "elapsed_seconds_including_copy": 31.529,
+  "submitted_output_summary": {
     "limitation": "Deterministic pipeline output; precision requires separate hand review.",
-    "link_count": 225,
+    "link_count": 250,
     "observation_count": 22925,
     "profile_count": 50,
-    "profile_population": 225,
+    "profile_population": 250,
     "threshold": 0.99,
-    "unlinked_count": 22278
+    "unlinked_count": 22222
   },
   "current_matcher_rebuild_summary": {
     "limitation": "Deterministic pipeline output; precision requires separate hand review.",
@@ -79,7 +93,41 @@
     "threshold": 0.99,
     "unlinked_count": 22222
   },
-  "version_boundary": "Saved outputs are e3061c95; current code is 9aa20f50. The current matcher rebuild does not replace the saved cohort.",
+  "derived_artifacts_byte_identical": {
+    "links.json": true,
+    "profiles.json": true,
+    "unlinked.json": true,
+    "summary.json": true
+  },
+  "native_config_replay": "All six source observation files checked byte-for-byte by SubmissionReplayTests.",
+  "human_review": {
+    "human_reviewed": 50,
+    "limitation": "A 50-pair sample at the recorded threshold, not model ground truth or a measurement of unlinked-record recall.",
+    "links_sha256": "49665bc24523f1ede55297674d19ac6fe0f0fe89fb601866baaccdf822fe201e",
+    "policy_version": "common-anchor-0.4-name-roles",
+    "precision": 0.88,
+    "proposed_pair_population": 479,
+    "sample_size": 50,
+    "samples_sha256": "da9fcd575f80e49b9d5518fc302e65a01e1af647786900a0487dc2ffb755db1f",
+    "sampling": "Ascending SHA256(seed + ':' + pair_id), without replacement",
+    "seed": "firmable-link-review",
+    "threshold": 0.99,
+    "reviews_sha256": "1bb798ee3f5a583c475bc5197d5345ca1188e23c48c9e53c1d25231e9ab66a19",
+    "review_status": "complete",
+    "decision_counts": {
+      "correct": 44,
+      "incorrect": 1,
+      "uncertain": 5,
+      "unreviewed": 0
+    },
+    "reviewers": [
+      "zheluo"
+    ],
+    "precision_basis": "Conservative confirmed-correct fraction of all 50 supplied reviews; uncertain is nonconfirmed, never correct. Precision is null until all 50 decisions and reviewer names are supplied.",
+    "judgment_origin": "Reviewer-supplied CSV judgments. This script generates no judgments and cannot attest that the entries were made by a human.",
+    "scored_at": "2026-10-14T23:02:59.516536+00:00"
+  },
+  "current_submission_receipt": "evidence/current-submission.json",
   "clean_directory_removed_after_check": true,
   "tested_content_sha256": {
     "data/assessment-inputs/ATTRIBUTION.md": "49aafe098302b42718e804fc99b55eaa407094e40e2157e176a937fa5a3f504a",
@@ -268,21 +316,22 @@
     "outputs/configs/real-ato-corporate-tax.json": "a1d3e7f2227925c149f5c6b8f81c87e23e6ca46550de0ff815936ea89e09b4a0",
     "outputs/configs/real-qbcc.json": "83607679b80a2aba7d134be8b80e3d5880d9b96ee6e7a68cdd3f402a31770399",
     "outputs/configs/real-suitable-operators.json": "400b3af36cc2f5e247304391cc8c6c647b286ac8114113f8a166a7f608e762ee",
-    "outputs/human-review/REVIEW.html": "9da4aee753e09c3a752147ce600d42c562564b7f12abd78b7237f9676c672bb0",
-    "outputs/human-review/reviews.csv": "6584700c1e41ebdcecd54182f1e212f5926cdb1f8c25863923bf1ca0e8338efb",
-    "outputs/human-review/samples.jsonl": "3dc5ca3dd674debaf0ba44845148e0994e1c80881ea254c609e630655e14e2dd",
-    "outputs/human-review/summary.json": "743a5a60b32d3df1e4c9b34ba43d238d403c53c5e64ef185efb4c3e43abafa34",
-    "outputs/links.json": "d81962bc25a9aa0e8aa8c3c97c691d716f9e56d2577b62dec14c9c46d3fdebbe",
+    "outputs/human-review/CONFIRMATION-RECEIPT.json": "dc7801ebf14651e6908166a4a69df4dbd76284bb7a48256e42cbce9975a5ca26",
+    "outputs/human-review/REVIEW.html": "2f049bfdb2d1fb7d263d05789bc63b7132b471b8c698c4c6a9797349f39e85c1",
+    "outputs/human-review/reviews.csv": "1bb798ee3f5a583c475bc5197d5345ca1188e23c48c9e53c1d25231e9ab66a19",
+    "outputs/human-review/samples.jsonl": "da9fcd575f80e49b9d5518fc302e65a01e1af647786900a0487dc2ffb755db1f",
+    "outputs/human-review/summary.json": "a91e51f870b956224122e627007acfb1cf6d9e1b3a6016316d84c1b5422bcf51",
+    "outputs/links.json": "49665bc24523f1ede55297674d19ac6fe0f0fe89fb601866baaccdf822fe201e",
     "outputs/observations/real-act-contracts-historical.jsonl": "da1a7d36f55e74e6038421270f4d3a20c3022f1a61761f4d73bceb4a29eca818",
     "outputs/observations/real-asic-business-names.jsonl": "b88ac05400aa78a40c3e9689e2139d7fa94b2d9e122813355043cd6472a42898",
     "outputs/observations/real-asic-companies.jsonl": "71133bb0670b75bd1977353a9ac735240972744ed72933b8df6c6fbd308469ca",
     "outputs/observations/real-ato-corporate-tax.jsonl": "12d31cac96db938dd72a3c148106c5bfd1089e82319fd072cf85a252906b0670",
     "outputs/observations/real-qbcc.jsonl": "fd8994340945fb04fd7e4125882b84b2dc1a748ce1180e5d8ee64cfa836979ee",
-    "outputs/observations/real-suitable-operators.jsonl": "4786bc94bf1feafd3537225ccb74ba9c7ca068d4dedea48a99a4b38a855652eb",
-    "outputs/profiles.json": "7c63cb867c00841f542373378d9262cf8ef1d46ed5e5c8a87c52e9bcc75709a7",
-    "outputs/summary.json": "855b9df4decd00aada8a7d92c0907edae86960812526baef91d1a1aacaf0f926",
-    "outputs/unlinked.json": "9eee7c19b052942e57d8e6cdbb679ab901a82044804ed19c55434dd8c705cf73",
-    "outputs/withdrawal/withdrawal.json": "a4456d9e9028336a5b257ff42b53ac6b9821392562a5fd2aa49679d0bb262efb",
+    "outputs/observations/real-suitable-operators.jsonl": "209ad038651976c95281dec895a09ad3384a4b5fa88d03a39c219458dc861018",
+    "outputs/profiles.json": "7d863577dd719dafe76e2d950649ffc56c9196cd53c12fba3bcfef61781df091",
+    "outputs/summary.json": "4d45c1baf87ff31cda4966785ab046aab0056912891a972b8785b71e2fd34623",
+    "outputs/unlinked.json": "e6b048ef4948462d90b051738b0a4d13250c025052c4aab24d004154637428e0",
+    "outputs/withdrawal/withdrawal.json": "582d641aa2dcfe78371aae9aceabe6ed030aed1302acd5956e7f4502723b6fc3",
     "pyproject.toml": "752ffcd2a26e4e53bfa6cfff65ad082f65d079809e3e31a050a4495275358ee9",
     "schema/firmable_ontology.yaml": "2a2d2db45cb0c5e7d022f6e2466c68271cc14704a09658e0d71b92ec1f130e23",
     "scripts/catalog.py": "4380496498df12fc0ba3464428c427f25d3daebfcc0a5183ec627e6601899c77",
@@ -333,11 +382,12 @@
     "tests/test_source_outline.py": "82a48e37f771354a6a23ca5f60446eab04025841fb3d71cc40c434455bdb07ce",
     "tests/test_source_tls.py": "5b084662c63960370b1f5eeca69bd854069d3287cb8d116f80a6cb7cf021a0e7",
     "tests/test_source_url_candidates.py": "bc3904bdb5cf7dde7ec20b2d553bbd1d945376d6f12dd1ae20d2e1cc7b30cec3",
+    "tests/test_submission_replay.py": "e240120b68a191413cf5e4c929c3fef91f1fe5668e1517650b59618b4642e12d",
     "tests/test_table_scope.py": "1a103a9c2a0cb1121f0a9b5aad8368941ea3487ac7985245bc4eacb4377f9349",
     "tests/test_typed_identifier_evidence.py": "4d44109a4f847f8935202a7a1c241c8d9c35b949f01ae1e1a12db3f9e11c4009",
     "tests/test_workflow.py": "b5cb21e688addde50f632b104ad4862488722d1485e3ea48fd42e363855a73fc",
     "uv.lock": "e563afbfd84040edde04bbf882202d6a1f9b5156e3a8868cf7af849626b29d35"
   },
-  "published_file_count": 424,
-  "publication_scope": "Necessary code, native inputs, deliverables, test fixtures and selected evidence. Full run working directories and internal review drafts excluded."
+  "published_file_count": 427,
+  "publication_scope": "Necessary code, native inputs, deliverables, test fixtures and selected evidence; full run working directories and internal drafts excluded."
 }

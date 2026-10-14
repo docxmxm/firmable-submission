@@ -1,5 +1,7 @@
 # 映射质量离线审核
 
+> Historical audit of the preserved submission at Git commit `f673ff9`. The current native replay and completed 50-case human audit are recorded in [current submission](../evidence/current-submission.json) and [current human score](../outputs/human-review/summary.json).
+
 2026-10-14。仅使用已有结果、原始数据、随附说明及工作簿说明页；模型调用 0，外部页面读取 0。此次为 AI 审核和确定性原始值对照，不是人工金标或审批。
 
 结论：确认并修复三处通用 harness 问题；另有 36 个已具备证据、原引擎也支持的字段值被 Agent 配置漏掉。四源没有法律名称输出，主要是名称角色证据不足，不能因此认定 harness 失败。QBCC 的标识归属仍需保留不确定性。

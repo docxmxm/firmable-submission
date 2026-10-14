@@ -1,8 +1,32 @@
-# Real-model validation — 14 October 2026
+# Results and validation
+
+## Current submission - 15 October 2026
+
+Runtime `9aa20f50` now reproduces the submitted observations and all downstream artifacts. It replays six unchanged model-generated configs from the original `e3061c95` inference, using original native snapshots and inherited snapshot ingestion times. No model calls, mapping edits, native-row edits or renewed approvals were introduced. [Current hashes and lineage](evidence/current-submission.json).
+
+| Active output | Count |
+|---|---:|
+| Observations | 22,925 |
+| Proposed entity groups | 250 |
+| Cross-source proposed pairs | 479 |
+| Unlinked records | 22,222 |
+| Submitted profiles / field values | 50 / 252 |
+| Human audit | 44 correct, 1 incorrect, 5 uncertain |
+| Conservative precision at policy threshold 0.99 | 44/50 = 88% |
+
+The five uncertain cases remain in the denominator. The single incorrect case remains visible in the proposal population; it was not dropped after sampling. The policy score is not calibrated. This is a fixed ABN-anchored sample (46 distinct anchors), with no ACN-only or unlinked-recall estimate. Profiles remain proposed merges, not human-approved identity clusters. [Human judgments](outputs/human-review/reviews.csv), [score](outputs/human-review/summary.json), [authorship and rebinding receipt](outputs/human-review/CONFIRMATION-RECEIPT.json).
+
+Five replayed source files are byte-identical to their original outputs. Suitable Operators gains locality/state/postcode on 183 records (549 values), each checked against explicit original location components; all earlier values and all raw records, locators, identifiers and timestamps remain unchanged. This establishes narrow value agreement, not new semantic gold. The 479 pair contracts and all 100 sampled observation objects are unchanged, allowing the original 18 human entries plus 32 new human judgments to be bound explicitly to the active population. The historical mixed AI audit is excluded.
+
+Withdrawal of Companies affects 220 of the 250 population profiles and loses 831 fields. Among the submitted 50, 42 are affected and 164 field values are lost. Membership stays fixed and identity review is flagged. The 50 profiles contain no conflicting field example.
+
+The prior 225-group submission and its empty human audit remain in Git commit `f673ff961b8cceb7afb3cf2fdeaa96998d0ed46e`. **Everything below describes the historical acquisition-connected experiment at that revision.** Its costs, approvals, field labels and failures remain unchanged; paths in historical receipts refer to that revision. Current replay does not establish better fresh-agent generalisation or reverse the later eight-source/holdout failures.
+
+## Historical real-model validation - 14 October 2026
 
 **Source-link acquisition is connected, but this run did not obtain new usable evidence or establish better generalisation.** The frozen runtime retained all 22,925 six-source observations: two complete tasks and four partial tasks. Labelled fields were retained; unlabelled Companies type coverage fell from 389 to 386. The new 149-row pest/weed source produced no validated config or formal observations; accuracy is **N/A**.
 
-The [six-source snapshot](evidence/latest-six-source.json), [holdout snapshot](evidence/latest-unseen-source.json), [validation history](evidence/validation-history.json) and [full trace archive](evidence/evaluation-traces.tar.gz) retain successes and failures. `outputs/` contains the complete current cohort. Old r2 outputs remain under archive prefix `historical-r2/outputs/`. Current traces use `acquisition-connected/`; earlier attempts retain their original prefixes, including the historical prefix `current/`.
+The [six-source snapshot](evidence/latest-six-source.json), [holdout snapshot](evidence/latest-unseen-source.json), [validation history](evidence/validation-history.json) and [full trace archive](evidence/evaluation-traces.tar.gz) retain successes and failures. At the preserved revision, `outputs/` contains that complete historical cohort. Old r2 outputs remain under archive prefix `historical-r2/outputs/`. Current traces use `acquisition-connected/`; earlier attempts retain their original prefixes, including the historical prefix `current/`.
 
 ## Harness change
 

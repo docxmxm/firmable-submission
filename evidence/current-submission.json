@@ -1,0 +1,170 @@
+{
+  "kind": "current-submission-runtime-replay-v1",
+  "prepared_at_utc": "2026-10-14T23:05:26.788825+00:00",
+  "runtime_hash": "9aa20f509bd42a8f9844cb8c7a051407e16a2becc946010b1863b8ef6cb9ba28",
+  "origin_inference_runtime": "e3061c95bd1865e826e92bc2bdf0a9bfac5017090c547e527341e0f7f4517d98",
+  "origin_submission_commit": "f673ff961b8cceb7afb3cf2fdeaa96998d0ed46e",
+  "method": "Replay all six unchanged model-generated configs against the original native snapshots using the current runtime; rebuild all downstream outputs from those observations. No new model inference or renewed config approval.",
+  "new_model_calls": 0,
+  "config_replay": [
+    {
+      "source_id": "real-act-contracts-historical",
+      "records": 1000,
+      "changed_record_count": 0,
+      "added_field_values": {},
+      "raw_locators_identifiers_names_and_times_unchanged": true,
+      "all_prior_canonical_values_retained": true,
+      "added_values_match_explicit_original_components": true,
+      "original_observations_sha256": "da1a7d36f55e74e6038421270f4d3a20c3022f1a61761f4d73bceb4a29eca818",
+      "replayed_observations_sha256": "da1a7d36f55e74e6038421270f4d3a20c3022f1a61761f4d73bceb4a29eca818"
+    },
+    {
+      "source_id": "real-asic-business-names",
+      "records": 1000,
+      "changed_record_count": 0,
+      "added_field_values": {},
+      "raw_locators_identifiers_names_and_times_unchanged": true,
+      "all_prior_canonical_values_retained": true,
+      "added_values_match_explicit_original_components": true,
+      "original_observations_sha256": "b88ac05400aa78a40c3e9689e2139d7fa94b2d9e122813355043cd6472a42898",
+      "replayed_observations_sha256": "b88ac05400aa78a40c3e9689e2139d7fa94b2d9e122813355043cd6472a42898"
+    },
+    {
+      "source_id": "real-asic-companies",
+      "records": 389,
+      "changed_record_count": 0,
+      "added_field_values": {},
+      "raw_locators_identifiers_names_and_times_unchanged": true,
+      "all_prior_canonical_values_retained": true,
+      "added_values_match_explicit_original_components": true,
+      "original_observations_sha256": "71133bb0670b75bd1977353a9ac735240972744ed72933b8df6c6fbd308469ca",
+      "replayed_observations_sha256": "71133bb0670b75bd1977353a9ac735240972744ed72933b8df6c6fbd308469ca"
+    },
+    {
+      "source_id": "real-ato-corporate-tax",
+      "records": 4436,
+      "changed_record_count": 0,
+      "added_field_values": {},
+      "raw_locators_identifiers_names_and_times_unchanged": true,
+      "all_prior_canonical_values_retained": true,
+      "added_values_match_explicit_original_components": true,
+      "original_observations_sha256": "12d31cac96db938dd72a3c148106c5bfd1089e82319fd072cf85a252906b0670",
+      "replayed_observations_sha256": "12d31cac96db938dd72a3c148106c5bfd1089e82319fd072cf85a252906b0670"
+    },
+    {
+      "source_id": "real-qbcc",
+      "records": 1000,
+      "changed_record_count": 0,
+      "added_field_values": {},
+      "raw_locators_identifiers_names_and_times_unchanged": true,
+      "all_prior_canonical_values_retained": true,
+      "added_values_match_explicit_original_components": true,
+      "original_observations_sha256": "fd8994340945fb04fd7e4125882b84b2dc1a748ce1180e5d8ee64cfa836979ee",
+      "replayed_observations_sha256": "fd8994340945fb04fd7e4125882b84b2dc1a748ce1180e5d8ee64cfa836979ee"
+    },
+    {
+      "source_id": "real-suitable-operators",
+      "records": 15100,
+      "changed_record_count": 183,
+      "added_field_values": {
+        "address.postcode": 183,
+        "address.locality": 183,
+        "address.state": 183
+      },
+      "raw_locators_identifiers_names_and_times_unchanged": true,
+      "all_prior_canonical_values_retained": true,
+      "added_values_match_explicit_original_components": true,
+      "original_observations_sha256": "4786bc94bf1feafd3537225ccb74ba9c7ca068d4dedea48a99a4b38a855652eb",
+      "replayed_observations_sha256": "209ad038651976c95281dec895a09ad3384a4b5fa88d03a39c219458dc861018"
+    }
+  ],
+  "review_binding_revalidation": {
+    "original_review_links_sha256": "01050fb2b5c7188949a8d333fea62f352d52f00b3d329dfe7537be268a3dbae6",
+    "current_links_sha256": "49665bc24523f1ede55297674d19ac6fe0f0fe89fb601866baaccdf822fe201e",
+    "all_479_pair_contracts_equal": true,
+    "all_100_sample_observation_objects_equal": true,
+    "samples_sha256": "da9fcd575f80e49b9d5518fc302e65a01e1af647786900a0487dc2ffb755db1f"
+  },
+  "summary": {
+    "limitation": "Deterministic pipeline output; precision requires separate hand review.",
+    "link_count": 250,
+    "observation_count": 22925,
+    "profile_count": 50,
+    "profile_population": 250,
+    "threshold": 0.99,
+    "unlinked_count": 22222
+  },
+  "cross_source_pairs": 479,
+  "profile_fields": 252,
+  "profile_conflict_fields": 0,
+  "human_review": {
+    "human_reviewed": 50,
+    "decision_counts": {
+      "correct": 44,
+      "incorrect": 1,
+      "uncertain": 5,
+      "unreviewed": 0
+    },
+    "precision": 0.88,
+    "threshold": 0.99,
+    "policy_version": "common-anchor-0.4-name-roles",
+    "links_sha256": "49665bc24523f1ede55297674d19ac6fe0f0fe89fb601866baaccdf822fe201e",
+    "samples_sha256": "da9fcd575f80e49b9d5518fc302e65a01e1af647786900a0487dc2ffb755db1f",
+    "reviews_sha256": "1bb798ee3f5a583c475bc5197d5345ca1188e23c48c9e53c1d25231e9ab66a19"
+  },
+  "withdrawal": {
+    "source_id": "real-asic-companies",
+    "population_profiles_affected": 220,
+    "population_fields_lost": 831,
+    "submitted_50_profiles_affected": 42,
+    "submitted_50_fields_lost": 164
+  },
+  "approval_limit": "Original synthetic approvals remain bound to their original inference identities. Offline replay and link human review are not renewed ingestion/config approvals.",
+  "quality_limit": "One incorrect and five uncertain sampled proposals remain visible. Profiles are proposed merges, not human-approved identity clusters. No unlinked recall or generalisation claim.",
+  "artifact_sha256": {
+    "outputs/configs/real-act-contracts-historical.json": "77ade1d618d62191d3ffdebb5137f12d47b1bfae39774487f8cc63a2d2ee3adb",
+    "outputs/configs/real-asic-business-names.json": "e121713f3bb7caebf15402310392c6e699320c132e2f2570ec1e6b545bc97520",
+    "outputs/configs/real-asic-companies.json": "ef6181a594856c9110208f66b90582fd0f56348d6d2a68c311330c4781a1d884",
+    "outputs/configs/real-ato-corporate-tax.json": "a1d3e7f2227925c149f5c6b8f81c87e23e6ca46550de0ff815936ea89e09b4a0",
+    "outputs/configs/real-qbcc.json": "83607679b80a2aba7d134be8b80e3d5880d9b96ee6e7a68cdd3f402a31770399",
+    "outputs/configs/real-suitable-operators.json": "400b3af36cc2f5e247304391cc8c6c647b286ac8114113f8a166a7f608e762ee",
+    "outputs/human-review/CONFIRMATION-RECEIPT.json": "dc7801ebf14651e6908166a4a69df4dbd76284bb7a48256e42cbce9975a5ca26",
+    "outputs/human-review/REVIEW.html": "2f049bfdb2d1fb7d263d05789bc63b7132b471b8c698c4c6a9797349f39e85c1",
+    "outputs/human-review/reviews.csv": "1bb798ee3f5a583c475bc5197d5345ca1188e23c48c9e53c1d25231e9ab66a19",
+    "outputs/human-review/samples.jsonl": "da9fcd575f80e49b9d5518fc302e65a01e1af647786900a0487dc2ffb755db1f",
+    "outputs/human-review/summary.json": "a91e51f870b956224122e627007acfb1cf6d9e1b3a6016316d84c1b5422bcf51",
+    "outputs/links.json": "49665bc24523f1ede55297674d19ac6fe0f0fe89fb601866baaccdf822fe201e",
+    "outputs/observations/real-act-contracts-historical.jsonl": "da1a7d36f55e74e6038421270f4d3a20c3022f1a61761f4d73bceb4a29eca818",
+    "outputs/observations/real-asic-business-names.jsonl": "b88ac05400aa78a40c3e9689e2139d7fa94b2d9e122813355043cd6472a42898",
+    "outputs/observations/real-asic-companies.jsonl": "71133bb0670b75bd1977353a9ac735240972744ed72933b8df6c6fbd308469ca",
+    "outputs/observations/real-ato-corporate-tax.jsonl": "12d31cac96db938dd72a3c148106c5bfd1089e82319fd072cf85a252906b0670",
+    "outputs/observations/real-qbcc.jsonl": "fd8994340945fb04fd7e4125882b84b2dc1a748ce1180e5d8ee64cfa836979ee",
+    "outputs/observations/real-suitable-operators.jsonl": "209ad038651976c95281dec895a09ad3384a4b5fa88d03a39c219458dc861018",
+    "outputs/profiles.json": "7d863577dd719dafe76e2d950649ffc56c9196cd53c12fba3bcfef61781df091",
+    "outputs/summary.json": "4d45c1baf87ff31cda4966785ab046aab0056912891a972b8785b71e2fd34623",
+    "outputs/unlinked.json": "e6b048ef4948462d90b051738b0a4d13250c025052c4aab24d004154637428e0",
+    "outputs/withdrawal/withdrawal.json": "582d641aa2dcfe78371aae9aceabe6ed030aed1302acd5956e7f4502723b6fc3"
+  },
+  "native_input_sha256": {
+    "data/assessment-inputs/real-act-contracts-historical/catalogue_metadata.json": "747b67be4325448de80baa2709716eee14193e0ba93ba7d9999f1878d47e317f",
+    "data/assessment-inputs/real-act-contracts-historical/evidence/README.md": "915b13a7f45953039fcf939e800cf74dd444ef42dfbc69d445d169314b6afa39",
+    "data/assessment-inputs/real-act-contracts-historical/evidence/native-records.json": "b5496e4f8676a694468be7b47e2247b05b78dc3e79821dfff65ebb069111c522",
+    "data/assessment-inputs/real-asic-business-names/catalogue_metadata.json": "f501478f680e2a9a618983a9d795a6c7f4ef26fe0cd4ee9d45be640929fbb19d",
+    "data/assessment-inputs/real-asic-business-names/evidence/README.md": "009172d7ff2744a3d904ca564aa8d952c4eaee1a3d5a1b02bb2fa21924b16bb6",
+    "data/assessment-inputs/real-asic-business-names/evidence/native-prefix.tsv": "70ebf0c95fab5b2d9274939ebe923867998189f1d6c894c35dee3a47795b5191",
+    "data/assessment-inputs/real-asic-business-names/evidence/official-help.txt": "323ae30a394cd89fbabc0ac42fb9c2c53e3ef13cfbb05ab1077f44731abd87d5",
+    "data/assessment-inputs/real-asic-companies/catalogue_metadata.json": "f28eb5d583a57891cca937e9753a786fc1c5258b77b7a02861c280c463729d25",
+    "data/assessment-inputs/real-asic-companies/evidence/README.md": "8ae2b76f59b19dc530a84d1c88ecebb18d5fc3099c14b4ead781f71996154e03",
+    "data/assessment-inputs/real-asic-companies/evidence/native-query-records.json": "a6f6a1fcf42af6ec00f756897a6330c70755e9886125b6c9499720175fa44655",
+    "data/assessment-inputs/real-asic-companies/evidence/official-help.md": "87d671520e0a1a9a233fbc4c6a5640d9a949052e674cb7d78fbede37af698c59",
+    "data/assessment-inputs/real-ato-corporate-tax/catalogue_metadata.json": "86417224d914b2abf3bd085b1a0dade9417571b4530a5da5b994d2dde6671fc2",
+    "data/assessment-inputs/real-ato-corporate-tax/evidence/README.md": "47132542a30e055c08a0a85a072e1e649b3c3b728081c4e277df394d4c0c8dff",
+    "data/assessment-inputs/real-ato-corporate-tax/evidence/download.xlsx": "d7772fa282c90be6aabaf5893c60d63bd0c896534b10256abed175f6a05fa754",
+    "data/assessment-inputs/real-qbcc/catalogue_metadata.json": "83c0d025b59314b517eda9cdc28fccb25cedc2fb2afb4ae0c1f9ae4fc4a70634",
+    "data/assessment-inputs/real-qbcc/evidence/README.md": "9245f34fd0ce4756f937b9f237cd4937c8566fd5b323ff502a338383bb526b2b",
+    "data/assessment-inputs/real-qbcc/evidence/native-prefix.csv": "7caa4ca3caf89004205317997c9ac28a93ea6519dce9e9cbc72071a637b5789e",
+    "data/assessment-inputs/real-suitable-operators/catalogue_metadata.json": "772e036dc019ffb7f904c08ab1b8245f7f33cc2d8492bee8238f3ffe349b0871",
+    "data/assessment-inputs/real-suitable-operators/evidence/README.md": "c2127babf1928f3715481bf6ae3ce9ca214ac7f8a8d49d191d54fedc0c4ef2da",
+    "data/assessment-inputs/real-suitable-operators/evidence/download.xlsx": "c82d2975289046ee2ae35bd7ae8fe642ece524d8fbae7438248b38a47e4aee24"
+  }
+}
