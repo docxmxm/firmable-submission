@@ -2,7 +2,22 @@
 
 ## Current submission - 15 October 2026
 
-Runtime `9aa20f50` now reproduces the submitted observations and all downstream artifacts. It replays six unchanged model-generated configs from the original `e3061c95` inference, using original native snapshots and inherited snapshot ingestion times. No model calls, mapping edits, native-row edits or renewed approvals were introduced. [Current hashes and lineage](evidence/current-submission.json).
+Final runtime: `8e891fe9b5b31724e194ee5951cb20fe5d8a1fe848c7a9dae946a70266806f8f`. It reproduces the six submitted observation files and downstream artifacts byte-for-byte, including the unchanged human-audit packet. Configs retain their original `e3061c95` inference lineage and synthetic approvals. Replaying them adds no model calls and does not renew approval. [Current hashes and lineage](evidence/current-submission.json).
+
+Additional frozen tests are reported separately from the six-source population:
+
+| Trial | Runtime | Result | Calls | Reported USD |
+|---|---|---|---:|---:|
+| AEMO NEM workbook | `9aa20f50` | Failed before candidate generation: reader/selection boundary | 6 | 0.0077097 |
+| NDIS all-provider CSV | `8e891fe9` | Native preparation exceeded 32 MiB bound | 0 | 0 |
+| NDIS SIL CSV, 557 rows | `8e891fe9` | Completed ABN onboarding and AST extraction; 557/557 source/checksum agreement | 8 | 0.0154342 |
+| WEM participants/facilities, 298 rows | `8e891fe9` | Readable; unresolved name role and no final candidate selection | 8 | 0.0172829 |
+
+The smaller SIL resource was separately selected through a recorded amendment before any model call; the original large-resource failure was retained. It proves one narrow ABN-only autonomous task, with synthetic approval, not broad name/subject capability. WEM has only a proposal probe, with no development validation or extraction; full-output semantic scores are N/A. A business-name definition is not independent trading-name ground truth. [Validation details and audit index](docs/NEW-SOURCE-VALIDATION.md).
+
+Generic reader/selection fixes passed 497 offline tests and independent physical-cell checks on exposed AEMO, CRICOS and Aged Care snapshots. No source-specific rule, hand-written mapping or native-row patch was used. These engineering checks do not reverse historical semantic regressions or establish an independent-publisher generalisation rate.
+
+The six-source snapshot and human-audit results below are unchanged; new sources are not added to that population.
 
 | Active output | Count |
 |---|---:|

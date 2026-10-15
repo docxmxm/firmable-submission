@@ -11,6 +11,7 @@ from pathlib import Path
 from .common import Failure, canonical, digest
 from .engine import ast_nodes, compile_ast, eval_ast
 from .execution import compile_config, pointer_get
+from .native import is_column_reference
 from .schema import check_response
 from .semantic_support import check_support, field_contexts, subject_support
 
@@ -264,7 +265,9 @@ def _review_evidence(
         found = (
             ref["quote"] in documentation
             if ref["kind"] == "documentation"
-            else ref["quote"] in inventory and ref["quote"] in mapping["source_fields"]
+            else ref["quote"] in inventory
+            and ref["quote"] in mapping["source_fields"]
+            and not is_column_reference(ref["quote"])
         )
         if found:
             refs.append(ref)
@@ -354,7 +357,7 @@ def _semantic_evidence(
             header = context["kind"] == "header"
             quote = context["text"]
             if (
-                quote == field and field in inventory
+                quote == field and field in inventory and not is_column_reference(field)
                 if header
                 else quote in documentation
             ):

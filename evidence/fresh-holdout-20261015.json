@@ -1,0 +1,120 @@
+{
+  "kind": "frozen-new-source-attempt-v1",
+  "recorded_at_utc": "2026-10-14T23:46:43.052242+00:00",
+  "status": "failed_before_candidate_generation",
+  "generalisation_pass": false,
+  "frozen_git_commit": "a4e39829ba540b8294c2bbdf23b1bb2b6333e71a",
+  "runtime_hash": "9aa20f509bd42a8f9844cb8c7a051407e16a2becc946010b1863b8ef6cb9ba28",
+  "source": {
+    "id": "holdout-aemo-nem-registration",
+    "title": "AEMO NEM Registration and Exemption List",
+    "publisher": "Australian Energy Market Operator",
+    "metadata_url": "https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/participate-in-the-market/registration",
+    "native_sha256": "6b264b17fb6aeb70891c9a2b3e120bbbd99ab032c67d3d586039eec06ccbf0ac",
+    "native_bytes": 785036,
+    "native_sheet_count": 13,
+    "readable_tables": 10,
+    "selection_at_utc": "2026-10-14T23:39:00.408279+00:00",
+    "selected_before_native_download": true,
+    "novelty_scope": "No matching source found in retained local tuning histories; not proof about deleted history or model pretraining. Selected on metadata/feasibility, not randomly."
+  },
+  "limits": {
+    "source_count": 1,
+    "trajectories": 1,
+    "max_model_calls": 40,
+    "max_new_send_seconds": 600,
+    "observed_cost_guard_usd": 0.5,
+    "inflight_reservation_usd": 0.25,
+    "cost_guard_limit": "Receipt-based guard, not a provider-enforced billing ceiling; one call may exceed its reservation.",
+    "config_edits": false,
+    "runtime_prompt_ontology_or_source_specific_edits": false,
+    "approval": "Synthetic experiment authorization only; no human config approval claimed.",
+    "unknown_outcome": "Stop new sends and never resume/resend.",
+    "all_failures_retained": true,
+    "model_gold": false
+  },
+  "usage": {
+    "new_model_calls": 6,
+    "input_tokens": 63232,
+    "output_tokens": 2773,
+    "total_tokens": 66005,
+    "reported_cost_usd": 0.0077097,
+    "wall_seconds": 21.868842459021835,
+    "all_six_responses_known_and_complete": true,
+    "unknown_outcomes": 0,
+    "budget_stop": null
+  },
+  "stages": {
+    "source_acquisition": "partial: five model calls, no exported excerpts",
+    "native_discovery": "13 sheets inventoried; 10 readable tables",
+    "table_selection": "invalid: two selected sheets are no_unambiguous_table",
+    "candidate_generation": "not_reached",
+    "probe_validation_revision": "not_reached",
+    "review_approval_extraction": "not_reached"
+  },
+  "failure": {
+    "kind": "validation_error",
+    "message": "Selected table is not a discovered native table",
+    "selected_unreadable_business_tables": [
+      {
+        "table_id": 1,
+        "sheet": "Registered Participants",
+        "status": "no_unambiguous_table"
+      },
+      {
+        "table_id": 7,
+        "sheet": "Exemption - Intermediary",
+        "status": "no_unambiguous_table"
+      }
+    ],
+    "primary_engineering_limits": [
+      "native header/table discovery",
+      "inspection/host selection contract alignment",
+      "recoverable feedback before candidate planning"
+    ],
+    "model_error": "Selected unreadable table IDs. One trial cannot attribute comparative model quality."
+  },
+  "outcomes": {
+    "validated_configs": 0,
+    "human_config_approvals": 0,
+    "synthetic_approvals": 0,
+    "formal_observations": 0,
+    "semantic_precision": null,
+    "semantic_recall": null,
+    "raw_output_fidelity": null,
+    "metrics_basis": "No config or output: N/A, not successful abstention or zero-error accuracy."
+  },
+  "integrity": {
+    "frozen_files_unchanged": 81,
+    "runtime_unchanged": true,
+    "native_bytes_unchanged": true,
+    "hand_config_edits": 0,
+    "source_specific_patches": 0,
+    "source_substitutions_after_native_read": 0,
+    "trajectory_restarts": 0,
+    "new_source_not_added_to_original_six": true
+  },
+  "evaluation": {
+    "preinference_labels_sha256": "6037817b6f4e6f45e94d6517ac9775ef43a36a85fa5ff0492dfbe9b0eb6c3106",
+    "source_agreement_cell_opportunities": 1716,
+    "human_gold": false,
+    "scope_clarification": "Post-run clarification distinguishes multiple-actor cells; its earlier timing wording was corrected explicitly. No semantic scores are computed."
+  },
+  "evidence_report": "runs/fresh-holdout-20261015/REPORT.md",
+  "full_evidence_archive": "evidence/fresh-holdout-20261015-trace.tar.gz",
+  "publication_permission_notice": "https://www.aemo.com.au/privacy-and-legal-notices/copyright-permissions",
+  "archive": {
+    "path": "evidence/fresh-holdout-20261015-trace.tar.gz",
+    "sha256": "ce28ff9c42d0c3a9088342c8dabcdd58d6056fb577c310020872d08b38c49cd3",
+    "bytes": 844624,
+    "file_count": 77,
+    "member_bytes_verified_against_local_files": true,
+    "credential_pattern_scan_findings": 0,
+    "scope": "Complete selected trial including original AEMO workbook and all execution/evaluation evidence; no unrelated runs or credentials."
+  },
+  "read_only_audit": {
+    "path_in_archive": "runs/fresh-holdout-20261015/audit.py",
+    "status": "passed",
+    "model_calls": 0
+  }
+}

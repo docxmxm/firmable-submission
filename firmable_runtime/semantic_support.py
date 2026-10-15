@@ -2,6 +2,8 @@
 
 import re
 
+from .native import is_column_reference
+
 
 def plain(text):
     text = re.sub(r"([a-z])([A-Z])", r"\1 \2", text)
@@ -308,7 +310,7 @@ def field_contexts(mapping, documentation, available_fields=()):
     contexts = []
     if not primary:
         return primary, contexts
-    if evidence == primary:
+    if evidence == primary and not is_column_reference(primary):
         contexts.append({"kind": "header", "text": primary})
     lines = documentation.splitlines()
     names = set(available_fields) | set(fields) | {primary}

@@ -11,7 +11,7 @@ import re
 from datetime import date, datetime, timezone
 
 from .common import Failure, utc_now
-from .native import field_state, field_value
+from .native import field_state, field_value, is_column_reference
 
 ENGINE_VERSION = "mvp-engine-0.9.27"
 DSL_VERSION = "bounded-ast-0.4"
@@ -995,7 +995,10 @@ def compile_mappings(
         quote_valid = (
             isinstance(evidence, str)
             and bool(evidence)
-            and (evidence in documentation or evidence in inventory)
+            and (
+                evidence in documentation
+                or (evidence in inventory and not is_column_reference(evidence))
+            )
         )
         if not quote_valid:
             issue(
@@ -1003,7 +1006,9 @@ def compile_mappings(
                 "Semantic evidence must be ONE exact contiguous quote from raw documentation or a real header; preserve punctuation and Markdown backticks",
                 "/semantic_evidence",
                 supplied_quote=evidence,
-                exact_header_quotes=[f for f in fields if f in inventory],
+                exact_header_quotes=[
+                    f for f in fields if f in inventory and not is_column_reference(f)
+                ],
                 raw_document_lines=[
                     {"line": n, "text": line}
                     for n, line in enumerate(documentation.splitlines(), 1)

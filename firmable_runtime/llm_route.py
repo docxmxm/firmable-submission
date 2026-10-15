@@ -12,7 +12,7 @@ from pathlib import Path
 
 from .common import Failure, byte_hash, digest
 from .engine import canonical_valid, extract_records
-from .native import field_state, field_value, leaf_fields
+from .native import field_state, field_value, is_column_reference, leaf_fields
 from .semantic_support import (
     _header_subject_words,
     address_support,
@@ -285,7 +285,10 @@ def validate_config(config, documentation):
         used.update(fields)
         if (
             mapping["semantic_evidence"] not in documentation
-            and mapping["semantic_evidence"] not in inventory
+            and (
+                mapping["semantic_evidence"] not in inventory
+                or is_column_reference(mapping["semantic_evidence"])
+            )
         ):
             raise Failure(
                 "validation_error",
@@ -615,6 +618,13 @@ def _check_review(
             )
         resolved[name] = []
         for ref in review[name]:
+            if ref["kind"] == "header" and is_column_reference(ref["field"]):
+                raise Failure(
+                    "validation_error",
+                    "A generated physical column ID is not an original native header",
+                    reason_code="unknown_review_header",
+                    offending_ref=copy.deepcopy(ref),
+                )
             # Evidence dependencies can differ from value dependencies, but
             # every cited field must be real in this original native record.
             if (

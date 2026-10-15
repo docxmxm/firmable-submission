@@ -22,6 +22,12 @@ must be among those dependencies. semantic_evidence is ONE exact contiguous quot
 that primary field's own original definition, or its exact native header. A companion
 flag's IF/THEN rule explains execution but cannot replace the primary field's definition.
 Read those additional conditions in the complete documentation and implement them.
+Keys prefixed native-column: locate duplicate, blank or unlabelled physical columns;
+reader_specs.columns retains their original headers and positions. These generated IDs
+are not native header quotations or proof of a canonical role or identifier owner.
+Keep ambiguous columns unmapped when original field-bound evidence is insufficient.
+Merged cells retain physical anchor values only; never fill a blank cell or infer a
+shared entity owner from spreadsheet formatting. Review merge_policy and merged_ranges.
 
 Use exactly these JSON shapes, with nested expression objects, never numeric input
 indices, field-name strings in input, or undocumented keys. The recursive response
@@ -63,6 +69,8 @@ MODEL_INSTRUCTIONS = {
     "inspect": """Select every in-scope native business-record table, excluding definitions
 and introductory tables. Required fields are a minimum output goal, not a table deduplication
 rule: another table containing the same headers can contain additional business records.
+Select only IDs whose native status is table, from readable_table_ids when supplied.
+Other statuses remain visible reader gaps or documentation, not executable records.
 Never exclude it solely because the selected table already has the needed fields, or to
 reduce cost. Use the source's documented subject and record scope, not sheet order.
 If scope_review is supplied, independently reconsider the prior selection against the full

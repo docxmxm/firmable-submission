@@ -95,7 +95,7 @@ class CoreTests(unittest.TestCase):
             )
             table = read_native(directory, path.name, "not-a-semantic-selector")[0]
             self.assertEqual(table["records"][0]["raw_record"]["Postcode"], "0800")
-            self.assertEqual(table["records"][1]["raw_record"]["Postcode"], "")
+            self.assertEqual(table["records"][1]["raw_record"]["Postcode"], " ")
             self.assertNotEqual(
                 table["records"][0]["source_record_id"],
                 table["records"][1]["source_record_id"],

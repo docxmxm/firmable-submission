@@ -11,7 +11,7 @@ import csv
 import io
 import re
 import zipfile
-from collections import defaultdict
+from collections import Counter, defaultdict
 from datetime import datetime, timedelta
 from pathlib import Path, PurePosixPath
 from urllib.parse import unquote, urlsplit
@@ -120,6 +120,14 @@ def field_value(raw, name, default=None):
     return state["value"] if state["present"] else default
 
 
+def is_column_reference(field):
+    """Reserved structural keys carry position, never invented header meaning."""
+    return (
+        isinstance(field, str)
+        and re.fullmatch(r"@*native-column:[0-9a-f]{64}", field) is not None
+    )
+
+
 def _record(source_id, path, file_sha, locator, raw):
     ident = {"file": path, "snapshot": file_sha, "locator": locator}
     return {
@@ -131,7 +139,7 @@ def _record(source_id, path, file_sha, locator, raw):
 
 
 def _header(rows, *, allow_trailing_empty_fields=False):
-    """First maximal-width unique text row, supporting title/description prefixes.
+    """First maximal-width text row, supporting title/description prefixes.
 
     This is a structural heuristic, not proof of business semantics. Its exact
     choice and ambiguity are reported for the runtime proposal and review.
@@ -140,8 +148,8 @@ def _header(rows, *, allow_trailing_empty_fields=False):
         return None
     candidates = []
     for index, (_, row) in enumerate(rows[:25]):
-        filled = [str(v).strip() for v in row]
-        if not filled or not all(filled) or len(set(filled)) != len(filled):
+        filled = [str(v).strip() for v in row if str(v).strip()]
+        if not filled:
             continue
         if any(re.fullmatch(r"[\d\s.,+:/-]+", item) for item in filled):
             continue
@@ -159,6 +167,19 @@ def _header(rows, *, allow_trailing_empty_fields=False):
         if not later or not (same_width or trailing_empty):
             continue
         candidates.append((len(row), -index, index))
+    if candidates:
+        return max(candidates)[2]
+    # Irregular headers still describe physical columns. Do not manufacture
+    # names for duplicates, blanks or data extending beyond the labelled row.
+    # This fallback is a reviewable structural proposal, not a semantic claim.
+    for index, (_, row) in enumerate(rows[:25]):
+        filled = [str(v).strip() for v in row if str(v).strip()]
+        if len(filled) < 2 or any(
+            re.fullmatch(r"[\d\s.,+:/-]+", item) for item in filled
+        ):
+            continue
+        if any(any(str(v).strip() for v in r) for _, r in rows[index + 1 :]):
+            candidates.append((len(filled), -index, index))
     return max(candidates)[2] if candidates else None
 
 
@@ -185,8 +206,32 @@ def _table(
             "row_count": len(rows),
             "details": details or {},
         }
-    physical, headers = rows[index]
-    headers = [str(v).strip() for v in headers]
+    physical, original_headers = rows[index]
+    headers = [str(v).strip() for v in original_headers]
+    width = max(len(headers), *(len(r) for _, r in rows[index + 1 :]))
+    counts = Counter(headers)
+    fields, columns = [], []
+    irregular = width > len(headers) or not all(headers) or len(counts) != len(headers)
+    for column in range(width):
+        label = headers[column] if column < len(headers) else ""
+        field = label
+        if not label or counts[label] > 1:
+            field = "native-column:" + digest(
+                {"file": path, "sheet": sheet, "column": column + 1}
+            )
+            while field in headers:
+                field = "@" + field
+        fields.append(field)
+        columns.append(
+            {
+                "source_field": field,
+                "column": column + 1,
+                "header": str(original_headers[column])
+                if column < len(original_headers)
+                else None,
+                "binding": "exact_header" if field == label else "physical_column_only",
+            }
+        )
     records = []
     gap = False
     previous_physical = physical
@@ -201,39 +246,49 @@ def _table(
             gap = bool(records)
             continue
         if gap or [str(v).strip() for v in values] == headers:
-            raise Failure(
-                "unsupported_format",
-                "Multiple or separated table regions are unsupported; use one contiguous table per sheet/file",
-                file=path,
-                row=row_number,
-            )
-        if len(values) > len(headers):
-            raise Failure(
-                "parse_error", "Data row wider than header", file=path, row=row_number
-            )
-        padded = list(values) + [""] * (len(headers) - len(values))
+            return {
+                "file": path,
+                "format": format_name,
+                "sheet": sheet,
+                "status": "unsupported_table",
+                "records": [],
+                "fields": [],
+                "row_count": len(rows),
+                "details": details or {},
+                "reader_issue": {
+                    "kind": "separated_or_repeated_table_regions",
+                    "row": row_number,
+                    "reason": "The table boundary is ambiguous; original bytes are retained and no rows from this table are emitted.",
+                },
+            }
+        padded = list(values) + [""] * (width - len(values))
         raw = dict(
             zip(
-                headers,
-                ["" if v is None or not str(v).strip() else str(v) for v in padded],
+                fields,
+                ["" if v is None else str(v) for v in padded],
             )
         )
         locator = {"row": row_number}
         if sheet is not None:
             locator["sheet"] = sheet
         records.append(_record(source_id, path, file_sha, locator, raw))
-    return {
+    result = {
         "file": path,
         "format": format_name,
         "sheet": sheet,
         "header_row": physical,
         "status": "table",
-        "fields": headers,
+        "fields": fields,
         "records": records,
         "row_count": len(records),
         "details": details or {},
-        "header_method": "first_maximal_width_unique_text_row; review_required",
+        "header_method": "text_header_with_physical_columns; review_required"
+        if irregular
+        else "first_maximal_width_unique_text_row; review_required",
     }
+    if irregular:
+        result["columns"] = columns
+    return result
 
 
 def _csv_tables(source_id, path, data):
@@ -446,10 +501,9 @@ def _xlsx_tables(source_id, path, data):
         if not target:
             raise Failure("parse_error", "Sheet relationship missing")
         root = xml(target)
-        if root.find("m:mergeCells", NS) is not None:
-            raise Failure(
-                "unsupported_format", "Merged worksheet cells require manual parsing"
-            )
+        merged = [
+            cell.get("ref", "") for cell in root.findall("m:mergeCells/m:mergeCell", NS)
+        ]
         rows, warnings = [], []
         for row in root.findall("m:sheetData/m:row", NS):
             if len(rows) >= MAX_ROWS:
@@ -568,21 +622,34 @@ def _xlsx_tables(source_id, path, data):
                 }
             )
             continue
-        tables.append(
-            _table(
-                source_id,
-                path,
-                byte_hash(data),
-                rows,
-                sheet=sheet.get("name"),
-                format_name="xlsx",
-                details={
-                    "date_system": "1904" if date1904 else "1900",
-                    "warnings": warnings,
-                },
-                sparse_physical_rows=True,
-            )
+        table = _table(
+            source_id,
+            path,
+            byte_hash(data),
+            rows,
+            sheet=sheet.get("name"),
+            format_name="xlsx",
+            details={
+                "date_system": "1904" if date1904 else "1900",
+                "warnings": warnings,
+            },
+            sparse_physical_rows=True,
         )
+        if merged:
+            for reference in merged:
+                match = re.fullmatch(
+                    r"[A-Z]+([1-9][0-9]*):[A-Z]+([1-9][0-9]*)", reference
+                )
+                if not match or int(match[1]) > int(match[2]):
+                    raise Failure(
+                        "parse_error", "Invalid merged-cell range", range=reference
+                    )
+            table["details"]["merged_ranges"] = merged
+            table["merged_ranges"] = merged
+            table["merge_policy"] = (
+                "physical_anchor_only; no_fill; header_and_subject_roles_require_review"
+            )
+        tables.append(table)
     return tables
 
 
@@ -615,6 +682,10 @@ def public_structure(tables):
                 "status",
                 "fields",
                 "header_method",
+                "columns",
+                "reader_issue",
+                "merged_ranges",
+                "merge_policy",
             }
         }
         for table in tables

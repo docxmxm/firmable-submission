@@ -1651,6 +1651,50 @@ def _validate_table_scope(runtime, structure, selected, exclusions, readable):
     return excluded
 
 
+def _inspect_tables(runtime, structure, requirements, discovery_ref):
+    """Correct known initial selection errors without discarding native scope."""
+    from .schema import INSPECT_SCHEMA
+
+    readable = {
+        i for i, table in enumerate(runtime.tables) if table["status"] == "table"
+    }
+    if not readable:
+        raise Failure("no_data", "No readable native table; retain the reader gap for review")
+    payload = {
+        "structures": structure,
+        "readable_table_ids": sorted(readable),
+        "source_documentation": runtime.docs,
+        "catalogue_metadata": runtime.input.get("catalogue_metadata", {}),
+        "task_requirements": requirements,
+    }
+    for attempt in range(3):
+        selection = None
+        try:
+            selection = runtime.model("inspect", payload, INSPECT_SCHEMA, [discovery_ref])
+            selected = selection["selected_table_ids"]
+            if len(set(selected)) != len(selected) or any(
+                type(i) is not int or i not in readable for i in selected
+            ):
+                raise Failure(
+                    "validation_error",
+                    "Selected table is not a discovered readable native table",
+                )
+            return selection
+        except Failure as exc:
+            if not _recoverable_response_failure(exc) or attempt == 2:
+                raise
+            payload = copy.deepcopy(payload)
+            payload["selection_correction"] = {
+                "attempt": attempt + 1,
+                "previous_response": selection,
+                "diagnostic": str(exc),
+                "response_validation": exc.details.get("response_validation"),
+                "readable_table_ids": sorted(readable),
+                "instruction": "Select only readable IDs. Unreadable structures remain visible as reader gaps; do not claim their records were checked or excluded on semantic grounds.",
+            }
+    raise AssertionError("Bounded initial table selection exhausted")
+
+
 def _check_table_scope(runtime, selection, structure, requirements, discovery_ref):
     """Require a complete, evidence-bound disposition of readable native tables."""
     from .schema import INSPECT_SCHEMA, check_response
@@ -1733,6 +1777,11 @@ def _check_table_scope(runtime, selection, structure, requirements, discovery_re
         **binding,
         "included_table_ids": selected,
         "exclusions": exclusions,
+        "unreadable_tables": [
+            copy.deepcopy(item)
+            for item in structure
+            if item["status"] not in {"table", "documentation_sheet"}
+        ],
         "discovered_readable_record_count": sum(
             len(runtime.tables[i]["records"]) for i in readable
         ),
@@ -1743,7 +1792,7 @@ def _check_table_scope(runtime, selection, structure, requirements, discovery_re
             len(runtime.tables[i]["records"]) for i in excluded
         ),
         "human_gold": False,
-        "limitation": "Complete table dispositions and exact quotations are host checked; business scope interpretation remains a fallible model judgment.",
+        "limitation": "Readable table dispositions and exact quotations are host checked; unreadable tables remain reader gaps, not semantic exclusions. Business scope interpretation remains a fallible model judgment.",
     }
     ref = runtime.artifact("table-scope", ledger)
     runtime.event("table_scope_checked", [discovery_ref], [ref])
@@ -1753,13 +1802,18 @@ def _check_table_scope(runtime, selection, structure, requirements, discovery_re
 def onboard_source(request, provider=None):
     from .runtime import Runtime, DSL_INSTRUCTIONS, refs
     from .provider import CcVibeProvider
-    from .schema import INSPECT_SCHEMA
     from .execution import table_schema
 
     requirements = freeze_requirements(request)
     provider = provider or CcVibeProvider()
     try:
         runtime = Runtime(request, provider)
+        if not any(table["status"] == "table" for table in runtime.tables):
+            raise Failure(
+                "no_data",
+                "No readable native table was discovered",
+                native_structure=public_structure(runtime.tables),
+            )
     except Failure as exc:
         if exc.kind not in {"unsupported_format", "no_data", "parse_error"}:
             raise
@@ -1776,7 +1830,11 @@ def onboard_source(request, provider=None):
                 requirements, None, [], {}, scope="native_discovery"
             ),
             "unresolved_requirements": requirements["required_fields"],
-            "gap": {"kind": "native_reader_gap", "reason": str(exc)},
+            "gap": {
+                "kind": "native_reader_gap",
+                "reason": str(exc),
+                "native_structure": exc.details.get("native_structure", []),
+            },
             "approval_required": True,
             "approval": None,
             "mapping_config": None,
@@ -1830,27 +1888,7 @@ def onboard_source(request, provider=None):
             "discovery", {"tables": structure, "data_files": runtime.paths}
         )
         runtime.event("native_discovery", [], [ref])
-        selection = runtime.model(
-            "inspect",
-            {
-                "structures": structure,
-                "source_documentation": runtime.docs,
-                "catalogue_metadata": request.get("catalogue_metadata", {}),
-                "task_requirements": requirements,
-            },
-            INSPECT_SCHEMA,
-            [ref],
-        )
-        selected = selection["selected_table_ids"]
-        if len(set(selected)) != len(selected) or any(
-            type(i) is not int
-            or not 0 <= i < len(runtime.tables)
-            or runtime.tables[i]["status"] != "table"
-            for i in selected
-        ):
-            raise Failure(
-                "validation_error", "Selected table is not a discovered native table"
-            )
+        selection = _inspect_tables(runtime, structure, requirements, ref)
         selected = _check_table_scope(runtime, selection, structure, requirements, ref)
         runtime.run.state["selected_tables"] = selected
     schema = table_schema(

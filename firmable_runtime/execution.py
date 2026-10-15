@@ -151,8 +151,6 @@ def discover(evidence_root, source_id):
         for item in manifest
         if Path(item["path"]).suffix.lower() in {".xlsx", ".csv", ".tsv", ".json"}
     ]
-    workbooks = [path for path in paths if Path(path).suffix.lower() == ".xlsx"]
-    paths = workbooks or paths
     if not paths:
         raise Failure("no_data", "No supported native source file was found")
     tables = []
