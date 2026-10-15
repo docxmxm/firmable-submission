@@ -51,6 +51,21 @@ The original six-source inference used 87 provider calls, 1,563,821 tokens and U
 
 ## Infer, review and extract a new source
 
+### Model API setup
+
+The repository includes the OpenRouter API client. With `--provider openrouter`, the CLI calls OpenRouter directly; no author-hosted service or local Claude CLI setup is needed. Use your own OpenRouter API key with sufficient credit and model access:
+
+```sh
+uv sync --frozen
+export OPENROUTER_API_KEY='YOUR_OPENROUTER_API_KEY'
+```
+
+The client sends `POST https://openrouter.ai/api/v1/chat/completions` with `Authorization: Bearer <key>`. It handles structured responses, streaming and usage receipts. The key is read from the environment; `.env` files are not loaded automatically. Do not commit your key.
+
+Specify `--provider openrouter` for both `infer` and `extract`; the CLI otherwise defaults to `ccvibe`. The default model is `anthropic/claude-haiku-5.5`, with Anthropic routing and low reasoning. `--model` can select another compatible Anthropic model available through OpenRouter. A successful request still depends on account credit, model availability and network access; inference may stop with unresolved mappings.
+
+### Source input and review
+
 Supported native inputs are **CSV, TSV, JSON and XLSX**. New-source evaluations are restricted to these formats. Put original native files and documentation in an evidence directory; keep catalogue metadata outside it and pass `--metadata` separately.
 
 - CSV/TSV: UTF-8 or BOM-marked UTF-16, quoted cells and multiline values. Header selection is a reviewable text-row heuristic. Duplicate/blank headers and extra unlabelled columns retain separate physical column IDs and original header/position metadata; generated IDs are not semantic evidence. Whitespace and leading zeroes are preserved.
@@ -59,20 +74,23 @@ Supported native inputs are **CSV, TSV, JSON and XLSX**. New-source evaluations 
 
 All supported native files in the directory are inventoried. Ambiguous separated table regions remain explicit unreadable tables, while other readable worksheets can proceed. Initial invalid table selections receive at most two content corrections; unknown model outcomes stop without resend. Input bounds remain 32 MiB per file, 64 MiB expanded XLSX, 100,000 rows per sheet/record array, and one million XLSX cells per workbook. Uncertain meaning or ownership still requires abstention and human review.
 
-For a new paid inference run, supply `OPENROUTER_API_KEY` locally without committing it. Declare required fields only when the source can support their roles; unsupported requirements remain partial:
+The example below makes fresh model calls to infer a mapping from the included Companies native snapshot and documentation. It does not reuse a saved mapping. For your own source, replace the source ID, evidence and metadata paths, required fields and run directory. Use a new run directory; declare required fields only when the source can support their roles. Unsupported requirements remain partial. After `review`, inspect the findings and substitute its actual fingerprint and your reviewer name in `approve`:
 
 ```sh
 uv run python -m firmable_runtime infer \
-  --provider openrouter --source-id seventh-source \
-  --evidence-root /path/to/native-evidence --run-dir runs/seventh-source \
-  --metadata /path/to/catalogue-metadata.json \
+  --provider openrouter --source-id reviewer-companies \
+  --evidence-root data/assessment-inputs/real-asic-companies/evidence \
+  --metadata data/assessment-inputs/real-asic-companies/catalogue_metadata.json \
+  --run-dir runs/reviewer-companies \
   --require-field entity.abn --require-field entity.legal_name
-uv run python -m firmable_runtime review --run-dir runs/seventh-source
-uv run python -m firmable_runtime approve --run-dir runs/seventh-source \
+uv run python -m firmable_runtime review --run-dir runs/reviewer-companies
+uv run python -m firmable_runtime approve --run-dir runs/reviewer-companies \
   --fingerprint FINGERPRINT_FROM_REVIEW --reviewer YOUR_NAME --notes 'Review findings'
 uv run python -m firmable_runtime extract \
-  --provider openrouter --run-dir runs/seventh-source
+  --provider openrouter --run-dir runs/reviewer-companies
 ```
+
+If inference produces a validated candidate, `review` exposes its mappings, examples and unresolved fields. Human approval is required before the `extract` command above can run. Run artifacts are saved in `runs/reviewer-companies/`, including `onboard.json`, `trace.json` and, after extraction, `observations.jsonl` and `extraction.json`. The API key is not written to these artifacts.
 
 `infer` and LLM-backed extraction make model calls. AST extraction does not. Inspect evidence, mappings and unresolved requirements before approving; changed evidence/config/ontology/runtime invalidates that approval. Requirements are caller-declared and frozen; a partial candidate retains its unresolved fields. Omit metadata when unavailable. Unknown paid outcomes stop without automatic resend.
 
